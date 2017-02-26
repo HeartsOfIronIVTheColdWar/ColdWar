@@ -1,0 +1,26 @@
+
+state={
+	id=764
+	name="STATE_764"
+
+	history={
+		owner = WGR
+		victory_points = {
+			3499 50 
+		}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 5
+
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		3499 
+	}
+	manpower=1780000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

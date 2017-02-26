@@ -1,0 +1,19 @@
+state={
+	id=758
+	name="STATE_758"
+	provinces={
+		1054 1081 4056 4086 7121 10085 11912 12060 12089 
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = KOR
+
+	}
+	manpower=8650000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

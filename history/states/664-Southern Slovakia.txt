@@ -1,0 +1,29 @@
+
+state={
+	id=664
+	name="STATE_664"
+	resources={
+		steel=20.000
+	}
+
+	history={
+		owner = CZE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		victory_points = {
+			6573 1 
+		}
+		add_core_of = CZE
+
+	}
+
+	provinces={
+		541 3537 3716 6561 11522 11679 
+	}
+	manpower=854300
+	buildings_max_level_factor=1.000
+	state_category=town
+}

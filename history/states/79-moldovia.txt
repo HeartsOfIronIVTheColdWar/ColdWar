@@ -1,0 +1,27 @@
+
+state={
+	id=79
+	name="STATE_79"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		victory_points = {
+			9716 1 
+		}
+		add_core_of = ROM
+
+	}
+
+	provinces={
+		723 565 3407 3577 3704 3724 3707  6584 6706 6729 9683 9716 11534 
+	}
+	manpower=2806400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

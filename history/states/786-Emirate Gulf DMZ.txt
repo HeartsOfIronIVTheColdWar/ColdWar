@@ -1,0 +1,15 @@
+state={
+	id=786
+	name="STATE_786"
+
+	history={
+		set_demilitarized_zone = yes
+
+	}
+
+	provinces={
+		1955 10850 12749 
+	}
+	manpower=1000000
+	state_category=rural
+}

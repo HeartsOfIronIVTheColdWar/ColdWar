@@ -1,0 +1,26 @@
+
+state={
+	id=543
+	name="STATE_543"
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			5222 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		2200 8180 8246 10993 12956 
+	}
+	manpower=3694611
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
