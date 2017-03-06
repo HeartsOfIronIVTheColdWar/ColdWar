@@ -12,68 +12,46 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				home_of_the_free
-				great_depression
-				undisturbed_isolation
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_strike_at_the_empire
-				USA_pearl_harbor_gambit
 			}
 		}
-
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
-				FRA_revise_versailles
 			}
 		}
-		
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
+				ENG_george_vi
 			}
 			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
 			}
 		}
-
 		"PRC"={
-			history = "ITA_GATHERING_STORM_DESC"
+			history = "PRC_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
+				RAJ_agrarian_society
 			}	
 			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
 			}		
 		}
-
-		"JAP"={
+		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				trotskyite_plot
 				home_of_revolution
+				SOV_great_patriotic_war_winner
+				SOV_rebuilding_the_nation
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_claims_on_baltic
-				SOV_war_with_uk
 			}	
 		}
 
@@ -83,122 +61,83 @@ bookmarks = {
 		
 		"WGR"={
 			minor = yes
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				state_shintoism
-			}	
-			focuses = {
-				southern_expansion_focus
-				divine_wind_focus
-				found_own_faction_focus
-			}			
-		}
-		
-		"SWE"={
-			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
+			history = "WGR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				sour_loser
-				general_staff
-			}
+			}	
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
-			}
+			}			
 		}
-
-		"ITA"={
+		"TUR"={
 			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
-				
 			}
 			focuses = {
-				POL_the_baltic_alliance
-				POL_draw_closer_to_britain
-				POL_seek_accommodation_with_germany
 			}
 		}
-
+		"EGY"={
+			minor = yes
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_quit_india_movement
+			}
+			focuses = {
+			}
+		}
+		"PAK"={
+			minor = yes
+			history = "PAK_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				CAN_great_depression_1
-				CAN_conscription_crisis
 			}
 			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
 			}
 		}
-
-		"AST"={
-			minor = yes
-			history = "AST_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				AST_great_depression_1
-			}
-			focuses = {
-				AST_never_another_gallipoli
-				AST_support_indonesian_uprising
-				AST_delegation_to_china
-			}
-		}
-		
 		"DDR"={
 			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
+			history = "DDR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				sour_loser
-				general_staff
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
 			}
 		}
 
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				NZL_bob_semple_tank
-				NZL_independent_new_zealand
-				NZL_maori_volunteers
-			}
-		}
-
-		"RAJ"={
-			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				RAJ_agrarian_society
-			}
-			focuses = {
-				RAJ_all_india_forward_bloc
-				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
-			}
-		}
+	}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
-	}
 }

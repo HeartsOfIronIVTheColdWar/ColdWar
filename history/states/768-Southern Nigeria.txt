@@ -5,6 +5,21 @@ state={
 	provinces={
 		1992 2050 4889 4952 7978 8034 10831 12731 12817 12900 
 	}
+	history={
+		owner = ENG
+		add_core_of = NIE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 0
+			industrial_complex = 1
+			2050 = {
+				naval_base = 2
+				}
+		}
+		victory_points = {
+			2050 1 
+		}
+	}
 	manpower=1000000
 	state_category=rural
 }

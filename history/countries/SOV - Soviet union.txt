@@ -1,141 +1,78 @@
 ﻿capital = 219
 
-oob = "SOV_1936"
+oob = "SOV_1950"
 
-set_research_slots = 3
+set_research_slots = 5
 
-# Starting tech
+add_political_power = 225
+
+#adding ministers, already have 2 set
+add_ideas = {
+	#laws
+	war_economy
+	extensive_conscription
+}
+
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_military_police = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
+	CAS1 = 1
+	improved_light_tank = 1 
+	basic_heavy_tank = 1    # Should be available in 1936 (T-35)
+	basic_medium_tank = 1 # Should be available in 1936 (T-28)
+	tactical_bomber1 = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	infantry_weapons2 = 1
+	support_weapons = 1
+	support_weapons2 = 1
 	paratroopers = 1
-	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	early_submarine = 1
 	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	transport = 1
-	mass_assault = 1
-	fleet_in_being = 1
+	basic_destroyer = 1
+	basic_heavy_cruiser = 1
+
+	#doctrines
+	pocket_defence = 1
+	defence_in_depth = 1
+	battlefleet_concentration = 1
+	submarine_operations = 1
+
+	#Air
+	formation_flying = 1		
+	dive_bombing = 1
+	direct_ground_support = 1
+
+	#electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_encryption = 1
+	basic_decryption = 1
+
+	#industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	synth_oil_experiments = 1
+	oil_plant = 1
+	improved_oil_plant = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#adding ministers, already have 2 set
-	add_ideas = {
-		SOV_vyacheslav_molotov
-		stalingrad_tractor_factory
-		tula_arms_plant
-		vladimir_kasatonov
-
-		#laws
-		war_economy
-		extensive_conscription
-	}
-
-
-
-	complete_national_focus = SOV_finish_five_year_plan
-	complete_national_focus = SOV_move_industry_to_urals
-	complete_national_focus = SOV_defense_of_moscow
-	complete_national_focus = SOV_production_effort
-	unlock_national_focus = SOV_stalin_constitution
-	unlock_national_focus = SOV_socialist_realism
-	complete_national_focus = SOV_nkvd_primacy
-	complete_national_focus = SOV_nkvd_divisions
-	complete_national_focus = SOV_improve_railway
-	complete_national_focus = SOV_transpolar_flights
-	complete_national_focus = SOV_ocean_going_navy
-	complete_national_focus = SOV_peoples_commissariat
-	complete_national_focus = SOV_anti_fascist_diplomacy
-	complete_national_focus = SOV_improve_stalin_line
-	complete_national_focus = SOV_claims_on_baltic
-	
-	#Soviet starts with 1 less focus, too many branches
-	
-	oob = "SOV_1939"
-	set_technology = {
-		CAS1 = 1
-		improved_light_tank = 1 
-		basic_heavy_tank = 1    # Should be available in 1936 (T-35)
-		basic_medium_tank = 1 # Should be available in 1936 (T-28)
-		tactical_bomber1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		basic_submarine = 1
-		basic_destroyer = 1
-		basic_heavy_cruiser = 1
-
-		#doctrines
-		pocket_defence = 1
-		defence_in_depth = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#Air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-}
-
-
-set_convoys = 50
-set_national_unity = 0.55
+set_convoys = 325
+set_national_unity = 0.8
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 4 #shared between all parties, should add to 100
+			popularity = 8 #shared between all parties, should add to 100
 		}
 
 		fascism = {
@@ -143,7 +80,7 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 96
+			popularity = 92
 		}
 	}
 	
@@ -193,9 +130,7 @@ add_to_faction = ALB
 add_to_faction = ROM
 add_to_faction = DDR
 
-
 add_ideas = {
-	trotskyite_plot
 	home_of_revolution
 }
 
@@ -206,7 +141,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {
-		
+		Iron_Grip
 	}
 }
 

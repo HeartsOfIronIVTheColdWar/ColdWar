@@ -4,6 +4,13 @@ state={
 	provinces={
 		10919 12762 12874 
 	}
+	history={
+		owner = FRA
+		add_core_of = BEN
+		buildings = {
+			infrastructure = 1
+		}
+	}
 	manpower=1000000
 	state_category=rural
 }

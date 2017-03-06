@@ -4,7 +4,7 @@ oob = "ENG_1936"
 
 set_research_slots = 4
 
-set_national_unity = 0.6
+set_national_unity = 0.8
 
 # Starting tech
 set_technology = {
@@ -86,38 +86,10 @@ if = {
 	}
 }
 
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#adding ministers
-	add_ideas = {
-		ENG_ernest_bevin
-		bernard_montgomery
-		rsaf_enfield
-		archibald_wavell
-		charles_portal
-		english_electric		
-
-		#laws
-		partial_economic_mobilisation
-		limited_conscription
-
-		ENG_george_vi
-	}
-
-	
 create_country_leader = {
-	name = "Neville Chamberlain"
+	name = "Clement Attlee"
 	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+	picture = "Portrait_Britain_Clement_Atlee.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

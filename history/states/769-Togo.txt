@@ -4,6 +4,13 @@ state={
 	provinces={
 		1951 12843 
 	}
+	history={
+		owner = FRA
+		add_core_of = TOG
+		buildings = {
+			infrastructure = 1
+		}
+	}
 	manpower=1000000
 	state_category=rural
 }

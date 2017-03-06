@@ -1,0 +1,67 @@
+﻿capital = 9
+
+oob = "CZE_1950"
+
+set_research_slots = 2
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 44
+		}
+
+		fascism = {
+			popularity = 3
+		}
+		
+		communism = {
+			popularity = 53
+		}
+	}
+	
+	ruling_party = communism
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Edvard Beneš" # Beneš if we get font support :)
+	desc = "POLITICS_EDVARD_BENES_DESC"
+	picture = "Portrait_Czech_Edvard_Benes.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jaroslav Krejčí"
+	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
+	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Klement Gottwald"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "Portrait_Czech_Klement_Gottwald.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Vojtěch Luža"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}

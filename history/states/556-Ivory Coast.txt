@@ -5,11 +5,10 @@ state={
 
 	history={
 		owner = FRA
+		add_core_of = MAL
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 1
 		}
-
 	}
 
 	provinces={

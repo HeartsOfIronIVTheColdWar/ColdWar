@@ -1,0 +1,20 @@
+focus_tree = {
+	id = RAJ_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RAJ
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = RAJ
+		}
+	}
+	
+	default = no
+
+}

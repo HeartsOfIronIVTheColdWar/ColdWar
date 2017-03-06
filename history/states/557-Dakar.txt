@@ -5,11 +5,10 @@ state={
 
 	history={
 		owner = FRA
+		add_core_of=MAU
 		buildings = {
 			infrastructure = 0
-
 		}
-
 	}
 
 	provinces={
