@@ -1,4 +1,12 @@
 ﻿l_english:
+ banana_republics:0 "Banana Republic"
+ banana_republics_desc:0 "This nations is exploited by multinational companies to produce fruit. The goverment is corrupt, and the people want change."
+ marshall_plan:0 "Marshall Plan"
+ marshall_plan_desc:0 "Europe lay in ruins but the US is untouched by the war. We have offered our support in rebuilding Europe."
+ FRA_dilemmes_coloniaux:0 "Dilemmes Coloniaux"
+ FRA_dilemmes_coloniaux_desc:0 "Our colonies are on the verge of rebellions. Rallies for independence are being held, and the people are demanding freedom, and our colonies have started to refuse work."
+ eastern_socialism:0 "Eastern Socialism"
+ eastern_socialism_desc:0 "Socialism, but in our way have saved China and will lead us on the path to communism."
  SOV_rebuilding_the_nation:0 "The Lost Generation"
  SOV_rebuilding_the_nation_desc:0 "The war against fascism was won, but at what cost? The youth of the nation stood up for Socialism, and paid the highest price. The time has come to rebuild, and to overcome."
  SOV_great_patriotic_war_winner:0 "Winner of the Great Patriotic War"

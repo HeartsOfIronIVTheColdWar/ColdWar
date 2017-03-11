@@ -12,6 +12,7 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				home_of_the_free
+				marshall_plan
 			}
 			focuses = {
 			}
@@ -20,6 +21,8 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				FRA_disjointed_government
+				FRA_dilemmes_coloniaux
 			}
 			focuses = {
 			}
@@ -38,6 +41,7 @@ bookmarks = {
 			history = "PRC_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				eastern_socialism
 				RAJ_agrarian_society
 			}	
 			focuses = {

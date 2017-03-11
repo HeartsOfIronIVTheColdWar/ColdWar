@@ -1,6 +1,6 @@
 ﻿capital = 16
 
-oob = "FRA_1936"
+oob = "FRA_1950"
 
 set_research_slots = 3
 
@@ -9,14 +9,9 @@ set_technology = {
 
 }
 
-1939.1.1 = {
-
-
-#adding ministers
 add_ideas = {
-
-	#laws
-	partial_economic_mobilisation
+	FRA_disjointed_government
+	FRA_dilemmes_coloniaux
 }
 
 set_convoys = 300
@@ -44,11 +39,6 @@ set_politics = {
 	elections_allowed = yes
 }
 
-add_ideas = {
-
-}
-
-#Order matters here Daladier will start as leaders because added last
 create_country_leader = {
 	name = "Vincent Auriol"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
@@ -56,7 +46,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
+		Impopular_Figurehead
 	}
 }
 
@@ -67,7 +57,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		stout_defender
+		Impopular_Figurehead
 	}
 }
 

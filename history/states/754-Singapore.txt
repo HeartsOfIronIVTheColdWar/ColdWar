@@ -5,7 +5,8 @@ state={
 		12299 
 	}
 	history={
-		owner = MAL
+		owner = ENG
+		add_core_of = MAL
 		victory_points = {
 			12299 10 
 		}
@@ -18,8 +19,6 @@ state={
 				coastal_bunker = 3
 			}
 		}
-		add_core_of = MAL
-
 	}
 	manpower=1500000
 	buildings_max_level_factor=1.000

@@ -1,54 +1,18 @@
 ﻿capital = 107
 
-oob = "YUG_1936"
-
-set_research_slots = 3
-
-add_ideas = {
-
-}
-
-add_ideas = {
-	limited_conscription
-}
-
 oob = "YUG_1950"
-set_technology = {
-	fighter1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	CAS1 = 1
-	naval_bomber1 = 1
-	interwar_artillery = 1
-	interwar_antiair = 1
-	infantry_weapons2 = 1
-	support_weapons = 1
-	basic_destroyer = 1
 
-	#doctrines
-	air_superiority = 1
-	fleet_in_being = 1
-	battlefleet_concentration = 1
-	convoy_sailing = 1
-	sup_delay = 1
+set_national_unity = 0.8
+set_research_slots = 3
+set_convoys = 85
+add_ideas = {
 
-	#electronics
-	electronic_mechanical_engineering = 1
-	radio = 1
-	radio_detection = 1
-	mechanical_computing = 1
-	computing_machine = 1
-
-	#industry
-	basic_machine_tools = 1
-	improved_machine_tools = 1
-	synth_oil_experiments = 1
-	oil_plant = 1
-	construction1 = 1
-	concentrated_industry = 1
 }
 
-set_convoys = 85
+set_technology = {
+	
+}
+
 set_politics = {
 
 	parties = {
@@ -72,8 +36,6 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
-
-set_national_unity = 0.6
 
 create_country_leader = {
 	name = "Prince Paul"
@@ -134,4 +96,3 @@ create_corps_commander = {
 	skill = 3
 	
 }
-

@@ -3,10 +3,24 @@
 oob = "USA_1936"
 
 set_research_slots = 4
+set_convoys = 850
+set_national_unity = 0.85
+
+add_ideas = {
+	free_trade
+	home_of_the_free
+	marshall_plan
+}
 
 # Starting tech
 set_technology = {
 
+}
+
+# DIPLOMACY
+set_autonomy = {
+	target = PHI
+	autonomous_state =  autonomy_puppet
 }
 
 #Monroe Doctrine
@@ -45,9 +59,6 @@ add_to_faction = ITA
 add_to_faction = DEN
 add_to_faction = POR
 
-set_convoys = 850
-set_national_unity = 0.85
-
 set_politics = {
 
 	parties = {
@@ -69,17 +80,6 @@ set_politics = {
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
-}
-
-add_ideas = {
-	free_trade
-	home_of_the_free
-}
-
-# DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
 }
 
 create_country_leader = {

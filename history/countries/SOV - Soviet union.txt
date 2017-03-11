@@ -132,12 +132,14 @@ add_to_faction = DDR
 
 add_ideas = {
 	home_of_revolution
+	SOV_great_patriotic_war_winner
+	SOV_rebuilding_the_nation
 }
 
 create_country_leader = {
 	name = "Joseph Stalin"
 	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	picture = "Portrait_Soviet_Joseph_Stalin_Old.dds"
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {

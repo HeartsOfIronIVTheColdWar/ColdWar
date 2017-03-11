@@ -7,61 +7,11 @@ set_research_slots = 2
 # Starting tech
 
 add_ideas = {
-	#laws
-	limited_conscription
-	partial_economic_mobilisation
+
 }
 
 set_technology = {
-	basic_light_tank = 1
-	tactical_bomber1 = 1
-	motorised_infantry = 1
-	support_weapons = 1
-	interwar_artillery = 1
-	basic_submarine = 1
-	basic_destroyer = 1
-
-	#doctrines
-	air_superiority = 1
-	grand_battle_plan = 1
-	trench_warfare = 1
-	fleet_in_being = 1
-	battlefleet_concentration = 1
-	convoy_sailing = 1
-
-	#electronics
-	electronic_mechanical_engineering = 1
-	radio = 1
-	radio_detection = 1
-	mechanical_computing = 1
-	computing_machine = 1
-
-	#industry
-	basic_machine_tools = 1
-	improved_machine_tools = 1
-	advanced_machine_tools = 1
-	synth_oil_experiments = 1
-	oil_plant = 1
-	improved_oil_plant = 1
-	construction1 = 1
-	construction2 = 1
-	construction3 = 1
-	construction4 = 1
-	concentrated_industry = 1
-	concentrated_industry2 = 1
-	concentrated_industry3 = 1
-	concentrated_industry4 = 1
-}
-
-create_equipment_variant = {
-	name = "PZL P.43"
-	type = CAS_equipment_1
-	upgrades = {
-			plane_cas_upgrade = 0
-			plane_range_upgrade = 1
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 1
-	}
+	
 }
 
 set_convoys = 60
@@ -95,7 +45,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
+		stalins_puppet
 	}
 }
 
@@ -117,7 +67,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		#
+		stalins_puppet
 	}
 }
 

@@ -59,11 +59,10 @@ leader_traits = {
 		}
 	}
 
-	inexperienced_imperialist = {
+	Impopular_Figurehead = {
 		random = no
-		political_power_factor = -0.3
-		unity_factor = 0.05
-		justify_war_goal_time = -0.25
+		political_power_factor = -0.1
+		unity_factor = -0.05
 		
 		ai_will_do = {
 			factor = 1

@@ -25,11 +25,6 @@ state={
 			7980 1.0 
 		}
 		add_core_of = ETH
-		1936.6.1 = {
-			owner = ITA
-			controller = ITA
-
-		}
 
 	}
 
