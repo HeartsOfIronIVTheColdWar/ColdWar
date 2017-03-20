@@ -3593,7 +3593,7 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	
-	### IRREGULAR WARFARE ###
+	### ASSYMETRIC WARFARE ###
 	
 	SpriteType = { #1
 		name = "GFX_asymmetric_warfare_medium"
@@ -3671,71 +3671,71 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	
-	### STRATEGIC WARFARE ###
+	### STRATEGIC THEOREM ###
 	
 	SpriteType = { #1
 		name = "GFX_strategic_theorem_medium"
-		texturefile = "gfx/interface/technologies/infiltration_in_depth.dds"
+		texturefile = "gfx/interface/technologies/c3i_theory.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #2
 		name = "GFX_strategic_deployments_medium"
-		texturefile = "gfx/interface/technologies/human_wave_offensive.dds"
+		texturefile = "gfx/interface/technologies/Mobile_Warfare.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #3
 		name = "GFX_prepared_defense_medium"
-		texturefile = "gfx/interface/technologies/mass_assault.dds"
+		texturefile = "gfx/interface/technologies/Prepared_Defense.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #4
 		name = "GFX_overwhelming_force_medium"
-		texturefile = "gfx/interface/technologies/guerilla_warfare.dds"
+		texturefile = "gfx/interface/technologies/Vast_Offensives.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #5
 		name = "GFX_operational_assault_medium"
-		texturefile = "gfx/interface/technologies/infiltration_assault.dds"
+		texturefile = "gfx/interface/technologies/Blitzkrieg.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #6
 		name = "GFX_army_reserve_training_medium"
-		texturefile = "gfx/interface/technologies/night_assault_tactics.dds"
+		texturefile = "gfx/interface/technologies/Mobile_Infantry.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #7
 		name = "GFX_large_scale_exercises_medium"
-		texturefile = "gfx/interface/technologies/volkssturm.dds"
+		texturefile = "gfx/interface/technologies/Tactical_Control.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #8
 		name = "GFX_infrastructural_reserve_medium"
-		texturefile = "gfx/interface/technologies/pocket_defence.dds"
+		texturefile = "gfx/interface/technologies/Central_Planning.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #9
 		name = "GFX_wartime_industry_medium"
-		texturefile = "gfx/interface/technologies/defence_in_depth.dds"
+		texturefile = "gfx/interface/technologies/Overwhelming_Firepower.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #10
 		name = "GFX_large_front_operations_medium"
-		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
+		texturefile = "gfx/interface/technologies/Large_Front_Operations.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #11
 		name = "GFX_strategic_cycles_medium"
-		texturefile = "gfx/interface/technologies/operational_concentration.dds"
+		texturefile = "gfx/interface/technologies/Tactical_Control.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #12
 		name = "GFX_spearpoints_medium"
-		texturefile = "gfx/interface/technologies/grand_battle_plan.dds"
+		texturefile = "gfx/interface/technologies/Modern_Blitzkrieg.dds"
 		alwaystransparent = yes
 	}
 	SpriteType = { #13
 		name = "GFX_concurrent_front_assaults_medium"
-		texturefile = "gfx/interface/technologies/central_planning.dds"
+		texturefile = "gfx/interface/technologies/Large_Front_Offensive.dds"
 		alwaystransparent = yes
 	}
 	

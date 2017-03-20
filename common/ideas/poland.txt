@@ -1,0 +1,48 @@
+ideas = {
+
+	country = {
+	
+		soviet_political_control = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_coup
+
+			modifier = {
+				communism_drift = 0.04
+				political_power_cost = 0.2
+				
+			}
+		}
+
+		war_crimes = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = general_staff
+
+			modifier = {
+				conscription_factor = -0.4
+				industrial_capacity_factory = -0.4 
+				
+			}
+		}
+	
+	}
+}

@@ -56,7 +56,7 @@ technology_categories = {
 	submarine_doctrine
 	air_equipment
 	cat_combined_operations
-	cat_irregular_warfare
+	cat_asymmetric_warfare
 	cat_strategic_theorem
 	cat_base_strike
 	cat_trade_interdiction

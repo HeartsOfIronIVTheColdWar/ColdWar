@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = SOV
 	country = {
 		factor = 0
@@ -9,1564 +9,1063 @@
 	}
 	default = no
 	focus = {
-		id = The 1950 Five Year Plan
+		id = SOV_The_1950_Five_Year_Plan
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 20,00
-		x = 5
+		cost = 20
+		x = 4
 		y = 0
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = DDR
+		id = SOV_DDR
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 5,00
+		cost = 5
+		x = 11
+		y = 0
+		
+		completion_reward = {
+			add_political_power = 75
+			DDR = {
+				add_political_power = 150
+			}
+			add_opinion_modifier = { target = DDR modifier = SOV_DDR_friendship }
+			DDR = {
+				add_opinion_modifier = { target = SOV modifier = SOV_DDR_friendship }
+			}
+		}
+	}
+	focus = {
+		id = SOV_Stalinism
+		icon = GFX_goal_continuous_suppression
+		cost = 0
 		x = 14
 		y = 0
-		ai_will_do = {
-			factor = 5
+		completion_reward = {
+			custom_effect_tooltip = SOV_Stalinism_tt
+			hidden_effect = {
+			}
+			
 		}
 
 	}
 	focus = {
-		id = Stalinism
-		icon = GFX_goal_continuous_suppression
-		cost = 0,00
-		x = 17
-		y = 0
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = newfocus_54
-		icon = GFX_goal_unknown
-		cost = 0,00
-		x = 40
-		y = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = Surplus Equipment
+		id = SOV_Surplus_Equipment
 		icon = GFX_goal_generic_trade
-		cost = 10,00
-		x = 35
-		y = 0
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = NKVD
-		icon = GFX_goal_continuous_suppression
-		cost = 10,00
+		cost = 10
 		x = 32
 		y = 0
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = The Thing
+		id = SOV_NKVD
+		icon = GFX_goal_continuous_suppression
+		cost = 10
+		x = 28
+		y = 0
+
+	}
+	focus = {
+		id = SOV_The_Thing
 		icon = GFX_focus_wonderweapons
-		cost = 1,00
-		x = 25
+		cost = 1
+		x = 22
 		y = 0
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = The Exchange
+		id = SOV_The_Exchange
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 1,00
-		x = 27
+		cost = 1
+		x = 24
 		y = 0
-		ai_will_do = {
-			factor = 15
-		}
 
 	}
 	focus = {
-		id = Heavy Factory Economy
+		id = SOV_heavy_factory_economy
 		icon = GFX_goal_generic_construct_civilian
-		cost = 15,00
+		cost = 15
 		prerequisite = {
-			focus = The 1950 Five Year Plan
+			focus = SOV_The_1950_Five_Year_Plan
 		}
 		mutually_exclusive = {
-			focus = Light Factory Economy
+			focus = SOV_light_factory_economy
 		}
-		x = 4
+		x = 3
 		y = 1
-		ai_will_do = {
-			factor = 5
+		completion_reward = {
+			add_ideas = heavy_factory_economy
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+				}
 		}
-
 	}
 	focus = {
-		id = Ural Mining Licenses
+		id = SOV_Ural_Mining_Licenses
 		icon = GFX_goal_generic_construction2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = Heavy Factory Economy
+			focus = SOV_heavy_factory_economy
 		}
-		x = 4
+		x = 3
 		y = 2
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = Remobilize the Farmers
+		id = SOV_Remobilize_the_Farmers
 		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = Ural Mining Licenses
+			focus = SOV_Ural_Mining_Licenses
 		}
 		x = 1
 		y = 3
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = Heavy Mechanics
+		id = SOV_Heavy_Mechanics
 		icon = GFX_goal_generic_production
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = Ural Mining Licenses
+			focus = SOV_Ural_Mining_Licenses
 		}
 		x = 3
 		y = 3
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = Heavy Plan Economy
+		id = SOV_Heavy_Plan_Economy
 		icon = GFX_goal_generic_production2
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = Heavy Mechanics
-			focus = Remobilize the Farmers
-			focus = Heavy Mechanics
+			focus = SOV_Heavy_Mechanics
+		}
+		prerequisite = {
+			focus = SOV_Remobilize_the_Farmers
 		}
 		x = 2
 		y = 4
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = Light Factory Economy
+		id = SOV_light_factory_economy
 		icon = GFX_goal_generic_consumer_goods
-		cost = 15,00
+		cost = 15
 		prerequisite = {
-			focus = The 1950 Five Year Plan
+			focus = SOV_The_1950_Five_Year_Plan
 		}
 		mutually_exclusive = {
-			focus = Heavy Factory Economy
+			focus = SOV_heavy_factory_economy
 		}
-		x = 6
+		x = 5
 		y = 1
-		ai_will_do = {
-			factor = 5
+		completion_reward = {
+			add_ideas = light_factory_economy
 		}
-
 	}
 	focus = {
-		id = The New Soviet Citizen
+		id = SOV_The_New_Soviet_Citizen
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = Light Factory Economy
+			focus = SOV_light_factory_economy
 		}
-		x = 6
+		x = 5
 		y = 2
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = International Trade
+		id = SOV_International_Trade
 		icon = GFX_goal_generic_trade
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = The New Soviet Citizen
+			focus = SOV_The_New_Soviet_Citizen
 		}
-		x = 7
+		x = 5
 		y = 3
-		ai_will_do = {
-			factor = 5
-		}
 
 	}
 	focus = {
-		id = The Economic Swings
+		id = SOV_The_Economic_Swings
 		icon = GFX_goal_generic_propaganda
-		cost = 15,00
+		cost = 15
 		prerequisite = {
-			focus = International Trade
-			focus = Heavy Mechanics
-		}
-		x = 5
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = Mixed Plan Economy
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 10,00
-		prerequisite = {
-			focus = International Trade
-		}
-		x = 8
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = Consumerism
-		icon = GFX_goal_generic_consumer_goods
-		cost = 10,00
-		prerequisite = {
-			focus = Mixed Plan Economy
-		}
-		x = 8
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = Sino-Soviet Alliance
-		icon = GFX_goal_generic_alliance
-		cost = 10,00
-		prerequisite = {
-			focus = DDR
-		}
-		x = 11
-		y = 1
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = Mutual Developement
-		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
-		prerequisite = {
-			focus = Sino-Soviet Alliance
-		}
-		x = 11
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = Sino-Soviet Naval Treaty
-		icon = GFX_goal_continuous_naval_production
-		cost = 10,00
-		prerequisite = {
-			focus = Mutual Developement
-		}
-		x = 11
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-	}
-	focus = {
-		id = One Class One People
-		icon = GFX_goal_generic_major_alliance
-		cost = 20,00
-		prerequisite = {
-			focus = Sino-Soviet Naval Treaty
-		}
-		x = 11
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Block Socialism
-		icon = GFX_goal_support_communism
-		cost = 10,00
-		prerequisite = {
-			focus = DDR
-		}
-		x = 14
-		y = 1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = War restoration
-		icon = GFX_goal_continuous_repairments
-		cost = 10,00
-		prerequisite = {
-			focus = Block Socialism
-		}
-		x = 13
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The Peoples Leaders
-		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
-		prerequisite = {
-			focus = Block Socialism
-		}
-		x = 15
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Block Policys
-		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 10,00
-		prerequisite = {
-			focus = The Peoples Leaders
-		}
-		prerequisite = {
-			focus = War restoration
-		}
-		x = 14
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = KOMINFORM
-		icon = GFX_focus_generic_join_comintern
-		cost = 10,00
-		prerequisite = {
-			focus = Block Policys
-		}
-		x = 14
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = China Joins KOMINFORM
-		icon = GFX_focus_generic_polish_deal
-		cost = 10,00
-		prerequisite = {
-			focus = One Class One People
-		}
-		prerequisite = {
-			focus = KOMINFORM
-		}
-		x = 11
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The Tito Question
-		icon = GFX_goal_generic_attack_allies
-		cost = 5,00
-		prerequisite = {
-			focus = KOMINFORM
-		}
-		x = 14
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Force of Will
-		icon = GFX_goal_continuous_restrict_freedom
-		cost = 2,00
-		prerequisite = {
-			focus = The Tito Question
-		}
-		mutually_exclusive = {
-			focus = Offer Independence
-		}
-		x = 13
-		y = 6
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Offer Independence
-		icon = GFX_goal_continuous_boost_freedom
-		cost = 2,00
-		prerequisite = {
-			focus = The Tito Question
-		}
-		mutually_exclusive = {
-			focus = Force of Will
-		}
-		x = 15
-		y = 6
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The Warsaw Pact
-		icon = GFX_goal_tfv_can_compromise_with_quebec
-		cost = 10,00
-		prerequisite = {
-			focus = Force of Will
-			focus = Offer Independence
-		}
-		x = 14
-		y = 7
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The Internationale
-		icon = GFX_goal_generic_position_armies
-		cost = 5,00
-		prerequisite = {
-			focus = DDR
-		}
-		x = 20
-		y = 1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Indian Anti-Capitalism
-		icon = GFX_focus_RAJ_british investors
-		cost = 10,00
-		prerequisite = {
-			focus = The Internationale
-		}
-		x = 17
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Socialistas Americanas
-		icon = GFX_goal_generic_war_with_comintern
-		cost = 10,00
-		prerequisite = {
-			focus = The Internationale
-		}
-		x = 20
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Assist Decolonization
-		icon = GFX_focus_RAJ_clamp_down_on_corruption
-		cost = 10,00
-		prerequisite = {
-			focus = The Internationale
-		}
-		x = 23
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Soviet Advisors
-		icon = GFX_focus_generic_soviet_politics
-		cost = 10,00
-		prerequisite = {
-			focus = Indian Anti-Capitalism
-			focus = Socialistas Americanas
-			focus = Assist Decolonization
-		}
-		x = 18
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Soviet Agricultural Board
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10,00
-		prerequisite = {
-			focus = Soviet Advisors
-		}
-		prerequisite = {
-			focus = Indian Anti-Capitalism
-		}
-		x = 17
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The Banana Republics
-		icon = GFX_focus_SAF_colonialist_crusade
-		cost = 5,00
-		prerequisite = {
-			focus = Socialistas Americanas
-		}
-		x = 20
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = African Socialism
-		icon = GFX_focus_SAF_german_coup
-		cost = 5,00
-		prerequisite = {
-			focus = Assist Decolonization
-		}
-		x = 22
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Asian Socialism
-		icon = GFX_goal_tfv_sever_ties_with_uk
-		cost = 5,00
-		prerequisite = {
-			focus = Assist Decolonization
-		}
-		x = 24
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Foreign Assistance
-		icon = GFX_goal_generic_improve_relations
-		cost = 1,00
-		prerequisite = {
-			focus = African Socialism
-			focus = Asian Socialism
-			focus = The Banana Republics
-		}
-		prerequisite = {
-			focus = Soviet Advisors
-		}
-		x = 20
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Industrial Planning Board
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
-		prerequisite = {
-			focus = Foreign Assistance
-		}
-		x = 21
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Socialist Movements
-		icon = GFX_goal_support_communism
-		cost = 5,00
-		prerequisite = {
-			focus = The Banana Republics
-		}
-		prerequisite = {
-			focus = African Socialism
-		}
-		prerequisite = {
-			focus = Asian Socialism
-		}
-		x = 22
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Support Coups
-		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 1,00
-		prerequisite = {
-			focus = African Socialism
-			focus = Asian Socialism
-			focus = The Banana Republics
-		}
-		x = 24
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Military Support
-		icon = GFX_goal_generic_small_arms
-		cost = 10,00
-		prerequisite = {
-			focus = Support Coups
-		}
-		x = 23
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Govermental support
-		icon = GFX_focus_generic_home_defense
-		cost = 10,00
-		prerequisite = {
-			focus = Industrial Planning Board
-			focus = Military Support
-		}
-		x = 21
-		y = 6
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Popular Support
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 10,00
-		prerequisite = {
-			focus = Military Support
-			focus = Industrial Planning Board
-		}
-		x = 23
-		y = 6
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Socialist Science
-		icon = GFX_focus_generic_socialist_science
-		cost = 10,00
-		prerequisite = {
-			focus = The Exchange
-		}
-		prerequisite = {
-			focus = The Thing
-		}
-		x = 26
-		y = 1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = МБР
-		icon = GFX_focus_rocketry
-		cost = 10,00
-		prerequisite = {
-			focus = Socialist Science
-		}
-		x = 26
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Soviet Navy
-		icon = GFX_goal_generic_build_navy
-		cost = 10,00
-		prerequisite = {
-			focus = Surplus Equipment
-		}
-		x = 30
-		y = 1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The Leningrad Shipyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10,00
-		prerequisite = {
-			focus = Soviet Navy
-		}
-		x = 29
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Black Sea Shipyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10,00
-		prerequisite = {
-			focus = Soviet Navy
-		}
-		x = 31
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Karl Marx
-		icon = GFX_goal_generic_navy_carrier
-		cost = 10,00
-		prerequisite = {
-			focus = Black Sea Shipyards
-		}
-		prerequisite = {
-			focus = The Leningrad Shipyards
-		}
-		x = 30
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = U-boot Improvements
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
-		prerequisite = {
-			focus = The Leningrad Shipyards
-			focus = Black Sea Shipyards
-			focus = Black Sea Shipyards
-		}
-		x = 28
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Coastal Fleets
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10,00
-		prerequisite = {
-			focus = The Leningrad Shipyards
-			focus = Black Sea Shipyards
-		}
-		x = 32
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Coastal Defense
-		icon = GFX_focus_generic_coastal_fort
-		cost = 10,00
-		prerequisite = {
-			focus = Coastal Fleets
-		}
-		x = 32
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Sverdlov Heavy Cruisers
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10,00
-		prerequisite = {
-			focus = Coastal Defense
-		}
-		x = 31
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The Red Army
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 0,00
-		prerequisite = {
-			focus = Surplus Equipment
-		}
-		x = 35
-		y = 1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Mechanization of the Army
-		icon = GFX_focus_NZL_bob_semple_tank
-		cost = 10,00
-		prerequisite = {
-			focus = The Red Army
-		}
-		x = 34
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Lessons of the War
-		icon = GFX_goal_generic_army_tanks
-		cost = 10,00
-		prerequisite = {
-			focus = The Red Army
-		}
-		x = 36
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Doctrine of Force
-		icon = GFX_goal_continuous_armor_production
-		cost = 10,00
-		prerequisite = {
-			focus = Mechanization of the Army
-		}
-		prerequisite = {
-			focus = Lessons of the War
-		}
-		x = 35
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Artillery Command
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10,00
-		prerequisite = {
-			focus = Doctrine of Force
-		}
-		x = 34
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Central Command
-		icon = GFX_goal_generic_radar
-		cost = 10,00
-		prerequisite = {
-			focus = Artillery Command
-		}
-		x = 35
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Fortify borders
-		icon = GFX_goal_generic_construct_military
-		cost = 10,00
-		prerequisite = {
-			focus = Doctrine of Force
-		}
-		x = 36
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Soviet Air Force
-		icon = GFX_goal_generic_build_airforce
-		cost = 10,00
-		prerequisite = {
-			focus = Surplus Equipment
-		}
-		x = 39
-		y = 1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Air and Land
-		icon = GFX_goal_generic_air_bomber
-		cost = 10,00
-		prerequisite = {
-			focus = Soviet Air Force
-		}
-		x = 38
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = The war above
-		icon = GFX_goal_generic_air_fighter2
-		cost = 10,00
-		prerequisite = {
-			focus = Soviet Air Force
-		}
-		x = 40
-		y = 2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Missile technology
-		icon = GFX_focus_rocketry
-		cost = 10,00
-		prerequisite = {
-			focus = The war above
-		}
-		prerequisite = {
-			focus = Air and Land
-		}
-		x = 39
-		y = 3
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Anti-Air missiles
-		icon = GFX_focus_generic_air_defense
-		cost = 10,00
-		prerequisite = {
-			focus = Missile technology
-		}
-		x = 39
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Exploit Siberia
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10,00
-		prerequisite = {
-			focus = The Economic Swings
-		}
-		x = 5
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Soviet Worker Unions
-		icon = GFX_focus_generic_soviet_politics
-		cost = 10,00
-		prerequisite = {
-			focus = Exploit Siberia
-		}
-		mutually_exclusive = {
-			focus = Forced Labour
-		}
-		x = 6
-		y = 6
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Forced Labour
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 10,00
-		prerequisite = {
-			focus = Exploit Siberia
-		}
-		mutually_exclusive = {
-			focus = Soviet Worker Unions
+			focus = SOV_International_Trade
+			focus = SOV_Heavy_Mechanics
 		}
 		x = 4
-		y = 6
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
+		y = 4
 
 	}
 	focus = {
-		id = Industrialized Gulags
-		icon = GFX_goal_tfv_can_forced_quebec_conscription
-		cost = 10,00
+		id = SOV_Exploit_Siberia
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
 		prerequisite = {
-			focus = Forced Labour
+			focus = SOV_The_Economic_Swings
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Soviet_Worker_Unions
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		prerequisite = {
+			focus = SOV_Exploit_Siberia
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Forced_Labour
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10
+		prerequisite = {
+			focus = SOV_Exploit_Siberia
 		}
 		x = 3
-		y = 7
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
+		y = 6
 
 	}
 	focus = {
-		id = Role Model Citizen
+		id = SOV_Mixed_Plan_economy
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = {
+			focus = SOV_International_Trade
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Consumerism
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = SOV_Mixed_Plan_economy
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Role_Model_Citizen
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = Soviet Worker Unions
+			focus = SOV_Soviet_Worker_Unions
 		}
-		x = 7
+		x = 6
 		y = 7
-		ai_will_do = {
-			factor = 5
+
+	}
+	focus = {
+		id = SOV_Sinosoviet_Alliance
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = SOV_DDR
 		}
+		x = 8
+		y = 1
+		available = {
+			is_puppet = no
+			has_government = communism 
+			PRC = {
+				NOT = { has_war_with = SOV }
+				has_government = communism 
+				NOT = { is_in_faction_with = USA }
 
-		available_if_capitulated = yes
-
+			} 
+		}
 		completion_reward = {
-			add_research_slot = 1
+			PRC = {
+				country_event = soviet.101
+			}
 		}
 
 	}
 	focus = {
-		id = Socialist Economic Miracle
+		id = SOV_Mutual_Developement
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = SOV_Sinosoviet_Alliance
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = SOV_SinoSoviet_Naval_Treaty
+		icon = GFX_goal_continuous_naval_production
+		cost = 10
+		prerequisite = {
+			focus = SOV_Mutual_Developement
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SOV_One_Class_One_People
+		icon = GFX_goal_generic_major_alliance
+		cost = 20
+		prerequisite = {
+			focus = SOV_SinoSoviet_Naval_Treaty
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SOV_China_Joins_KOMINFORM
+		icon = GFX_focus_generic_polish_deal
+		cost = 10
+		prerequisite = {
+			focus = SOV_One_Class_One_People
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = SOV_KOMINFORM
 		icon = GFX_focus_generic_join_comintern
-		cost = 10,00
+		cost = 10
 		prerequisite = {
-			focus = Role Model Citizen
-			focus = Industrialized Gulags
+			focus = SOV_DDR
 		}
-		prerequisite = {
-			focus = The 1955 Five Year Plan
-		}
-		x = 5
-		y = 8
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
+		x = 11
+		y = 1
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = KOMINFORM
+			custom_effect_tooltip = SOV_KOMINFORM_tt
+		}
+	}
+	focus = {
+		id = SOV_War_restoration
+		icon = GFX_goal_continuous_repairments
+		cost = 10
+		prerequisite = {
+			focus = SOV_KOMINFORM
+		}
+		mutually_exclusive = {
+			focus = SOV_The_Peoples_Leaders
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			every_other_country = {
+				limit = { 
+					is_in_faction_with = SOV
+				}
+				add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.3
+				uses = 3
+				category = construction_tech
+				}	
+
+
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_The_Peoples_Leaders
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = SOV_KOMINFORM
+		}
+		mutually_exclusive = {
+			focus = SOV_War_restoration
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			hidden_effect = {
+			BUL = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			HUN = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			CZE = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			POL = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			ALB = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			ROM = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			DDR = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			}
+			custom_effect_tooltip = SOV_Stalins_puppet_tt
+			custom_effect_tooltip = SOV_The_Peoples_Leaders_tt
 		}
 
 	}
 	focus = {
-		id = The 1955 Five Year Plan
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 20,00
+		id = SOV_The_Tito_Question
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
 		prerequisite = {
-			focus = Soviet Worker Unions
-			focus = Forced Labour
+			focus = SOV_The_Peoples_Leaders
+			focus = SOV_War_restoration
 		}
-		x = 5
-		y = 7
-		ai_will_do = {
-			factor = 5
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Force_of_Will
+		icon = GFX_goal_continuous_restrict_freedom
+		cost = 2
+		prerequisite = {
+			focus = SOV_The_Tito_Question
 		}
+		mutually_exclusive = {
+			focus = SOV_Offer_Independence
+		}
+		x = 10
+		y = 4
 
-		available_if_capitulated = yes
+	}
+	focus = {
+		id = SOV_Offer_Independence
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 2
+		prerequisite = {
+			focus = SOV_The_Tito_Question
+		}
+		mutually_exclusive = {
+			focus = SOV_Force_of_Will
+		}
+		x = 12
+		y = 4
 
+	}
+	focus = {
+		id = SOV_Block_Policys
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = SOV_Offer_Independence
+			focus = SOV_Force_of_Will
+		}
+		x = 11
+		y = 5
 		completion_reward = {
-			add_research_slot = 1
+			add_political_power = 100
+			every_other_country = {
+				limit = { 
+					is_in_faction_with = SOV
+				}
+				add_political_power = 150
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = SOV_pact_friendship
+				}
+				add_opinion_modifier = { 
+					target = FROM
+					modifier = SOV_pact_friendship
+				}
+			}
+			
 		}
 
 	}
 	focus = {
-		id = India Joins KOMINFORM
-		icon = GFX_focus_RAJ_seek_help_from_soviet
-		cost = 10,00
+		id = SOV_The_Warsaw_Pact
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		cost = 10
 		prerequisite = {
-			focus = Soviet Agricultural Board
+			focus = SOV_Block_Policys
 		}
+		x = 11
+		y = 6
+		completion_reward = {
+			dismantle_faction = yes
+			create_faction = "The Warsaw Pact"
+			custom_effect_tooltip = SOV_The_Warsaw_Pact_tt
+			hidden_effect = {
+			add_to_faction = BUL
+			add_to_faction = HUN
+			add_to_faction = CZE
+			add_to_faction = POL
+			add_to_faction = ALB
+			add_to_faction = ROM
+			add_to_faction = DDR
+			}
+			add_political_power = 120
+			
+		}
+	}
+	focus = {
+		id = SOV_The_Internationale
+		icon = GFX_goal_generic_position_armies
+		cost = 5
 		prerequisite = {
-			focus = KOMINFORM
+			focus = SOV_DDR
+		}
+		available = {
+			has_global_flag = SOV_Stalin_dead 
+			has_global_flag = SOV_De_stalinism 
 		}
 		x = 17
-		y = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
+		y = 1
 
 	}
 	focus = {
-		id = The Euroasian Defense Pact
-		icon = GFX_goal_anschluss
-		cost = 20,00
+		id = SOV_Indian_Anticapitalism
+		icon = GFX_focus_RAJ_british_investors
+		cost = 10
 		prerequisite = {
-			focus = India Joins KOMINFORM
-		}
-		prerequisite = {
-			focus = The Warsaw Pact
-		}
-		prerequisite = {
-			focus = China Joins KOMINFORM
+			focus = SOV_The_Internationale
 		}
 		x = 14
-		y = 8
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
+		y = 2
 
 	}
 	focus = {
-		id = Hunter Fleets
-		icon = GFX_goal_generic_navy_submarine
-		cost = 10,00
+		id = SOV_Socialistas_Americanas
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
 		prerequisite = {
-			focus = U-boot Improvements
+			focus = SOV_The_Internationale
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Assist_Decolonization
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Internationale
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Soviet_Advisors
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		prerequisite = {
+			focus = SOV_Indian_Anticapitalism
+			focus = SOV_Socialistas_Americanas
+			focus = SOV_Assist_Decolonization
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Soviet_Agricultural_Board
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = SOV_Indian_Anticapitalism
+		}
+		prerequisite = {
+			focus = SOV_Soviet_Advisors
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = SOV_The_Banana_Republics
+		icon = "gfx/interface/goals/focus_SAF_colonialist_crusade.dds"
+		cost = 5
+		prerequisite = {
+			focus = SOV_Socialistas_Americanas
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = SOV_African_socialism
+		icon = GFX_focus_SAF_german_coup
+		cost = 5
+		prerequisite = {
+			focus = SOV_Assist_Decolonization
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Asian_Socialism
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 5
+		prerequisite = {
+			focus = SOV_Assist_Decolonization
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Foreign_Assistance
+		icon = GFX_goal_generic_improve_relations
+		cost = 1
+		prerequisite = {
+			focus = SOV_The_Banana_Republics
+			focus = SOV_African_socialism
+			focus = SOV_Asian_Socialism
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Industrial_Planning_Board
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = SOV_Foreign_Assistance
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Socialist_Movements
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = SOV_Asian_Socialism
+		}
+		prerequisite = {
+			focus = SOV_African_socialism
+		}
+		prerequisite = {
+			focus = SOV_The_Banana_Republics
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Support_Coups
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 1
+		prerequisite = {
+			focus = SOV_Asian_Socialism
+			focus = SOV_African_socialism
+			focus = SOV_The_Banana_Republics
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Military_Support
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = SOV_Support_Coups
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Govermental_support
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SOV_Military_Support
+			focus = SOV_Industrial_Planning_Board
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Popular_Support
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = {
+			focus = SOV_Industrial_Planning_Board
+			focus = SOV_Military_Support
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Socialist_Science
+		icon = GFX_focus_generic_socialist_science
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Thing
+		}
+		prerequisite = {
+			focus = SOV_The_Exchange
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = SOV_ICBM
+		icon = GFX_focus_rocketry
+		cost = 10
+		prerequisite = {
+			focus = SOV_Socialist_Science
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Soviet_Navy
+		icon = GFX_goal_generic_build_navy
+		cost = 10
+		prerequisite = {
+			focus = SOV_Surplus_Equipment
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = SOV_The_Leningrad_Shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Navy
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Black_Sea_Shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Navy
 		}
 		x = 28
-		y = 4
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
+		y = 2
 
 	}
 	focus = {
-		id = Nuclear Submarines
-		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		id = SOV_Karl_Marx
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10
 		prerequisite = {
-			focus = Hunter Fleets
+			focus = SOV_Black_Sea_Shipyards
+		}
+		prerequisite = {
+			focus = SOV_The_Leningrad_Shipyards
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Uboot_Improvements
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Leningrad_Shipyards
+			focus = SOV_Black_Sea_Shipyards
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Coastal_Fleets
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = {
+			focus = SOV_Black_Sea_Shipyards
+			focus = SOV_The_Leningrad_Shipyards
 		}
 		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Coastal_Defense
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10
+		prerequisite = {
+			focus = SOV_Coastal_Fleets
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Sverdlov_Heavy_Cruisers
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = SOV_Coastal_Defense
+		}
+		x = 28
 		y = 5
-		ai_will_do = {
-			factor = 5
-		}
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
+	}
+	focus = {
+		id = SOV_The_Red_Army
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 0
+		prerequisite = {
+			focus = SOV_Surplus_Equipment
 		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = SOV_Mechanization_of_the_Army
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Red_Army
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Lessons_of_the_War
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Red_Army
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Doctrine_of_Force
+		icon = GFX_goal_continuous_armor_production
+		cost = 10
+		prerequisite = {
+			focus = SOV_Mechanization_of_the_Army
+		}
+		prerequisite = {
+			focus = SOV_Lessons_of_the_War
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Artillery_Command
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = SOV_Doctrine_of_Force
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Fortify_borders
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = SOV_Doctrine_of_Force
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Central_Command
+		icon = GFX_goal_generic_radar
+		cost = 10
+		prerequisite = {
+			focus = SOV_Artillery_Command
+			focus = SOV_Fortify_borders
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Soviet_Air_Force
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		prerequisite = {
+			focus = SOV_Surplus_Equipment
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = SOV_Air_and_Land
+		icon = GFX_goal_generic_air_bomber
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Air_Force
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = SOV_The_war_above
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Air_Force
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Missile_technology
+		icon = GFX_focus_rocketry
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_war_above
+		}
+		prerequisite = {
+			focus = SOV_Air_and_Land
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = SOV_AntiAir_missiles
+		icon = GFX_focus_generic_air_defense
+		cost = 10
+		prerequisite = {
+			focus = SOV_Missile_technology
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Industrialized_Gulags
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		cost = 10
+		prerequisite = {
+			focus = SOV_Forced_Labour
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Socialist_Economic_Miracle
+		icon = GFX_focus_generic_join_comintern
+		cost = 10
+		prerequisite = {
+			focus = SOV_Role_Model_Citizen
+			focus = SOV_Industrialized_Gulags
+		}
+		prerequisite = {
+			focus = SOV_The_1955_Five_Year_Plan
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = SOV_The_1955_Five_Year_Plan
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 20
+		prerequisite = {
+			focus = SOV_Forced_Labour
+			focus = SOV_Soviet_Worker_Unions
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = SOV_India_Joins_KOMINFORM
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		cost = 10
+		prerequisite = {
+			focus = SOV_offer_development
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = SOV_The_Euroasian_Defense_Pact
+		icon = GFX_goal_anschluss
+		cost = 20
+		prerequisite = {
+			focus = SOV_China_Joins_KOMINFORM
+		}
+		prerequisite = {
+			focus = SOV_India_Joins_KOMINFORM
+		}
+		prerequisite = {
+			focus = SOV_The_Warsaw_Pact
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Hunter_Fleets
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = SOV_Uboot_Improvements
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Nuclear_Submarines
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10
+		prerequisite = {
+			focus = SOV_Hunter_Fleets
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = SOV_offer_development
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Agricultural_Board
+		}
+		x = 14
+		y = 5
 
 	}
 }

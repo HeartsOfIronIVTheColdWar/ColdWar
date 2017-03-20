@@ -2,9 +2,9 @@ ideas = {
 
 	country = {
 	
-		anti_german_military = {
+		tito_stalin_split = {
 			
-			picture = generic_morale_bonus
+			picture = trotskyite_plot
 
 			allowed = {
 				always = no
@@ -19,7 +19,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				drift_defence_factor = 0.05
+				ai_join_ally_desire_factor = -60
+				unity_factor = 0.15
+				political_power_factor = -0.1
 			}
 		}
 	

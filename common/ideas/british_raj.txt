@@ -1,60 +1,9 @@
 ideas = {
 
 	hidden_ideas = {
-		RAJ_lions_of_the_great_war = {
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = 0.02
-			}
-		}
-
-		RAJ_indian_gurkhas = {
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = 0.02
-			}
-		}
 	}
 
 	country = {
-	
-		RAJ_azad_hind = {
-			picture = generic_morale_bonus
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				fascism_drift = 0.05
-			}
-		}
 
 		RAJ_marginalized_muslim_community = {
 		
@@ -395,8 +344,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				unity_weekly = 0.1
-				democratic_drift = 0.05
+				unity_weekly = 0.005
+				democratic_drift = 0.02
 			}
 		}
 	}

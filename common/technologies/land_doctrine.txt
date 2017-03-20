@@ -155,7 +155,11 @@ technologies = {
 	}
 	
 	artillery_barrage = { #Branch focused on combined army operations.
-	
+		
+		xor = {
+			tactical_support
+		}
+		
 		category_line_artillery = {
 			soft_attack = 0.15
 		}
@@ -401,9 +405,6 @@ technologies = {
 			max_organisation = 10
 			soft_attack = 0.10
 			default_morale = 0.2
-		}
-		amphibious = {
-			attack = 0.10
 		}
 		
 		path = {
@@ -1128,11 +1129,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
-			modifier = {
-				factor = 0.25
-				has_idea = FRA_victors_of_wwi
-			}
 		}
 		
 		ai_research_weights = {
@@ -1186,10 +1182,9 @@ technologies = {
 		xor = { prepared_defense }
 		
 		category_army = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 			hard_attack = 0.1
 		}
-		army_speed_factor = 0.10
 		planning_speed = 0.25
 		enable_tactic = tactic_unexpected_thrust
 		
@@ -1271,9 +1266,10 @@ technologies = {
 	}
 	
 	army_reserve_training  = {
-	
+		
+		conscription = 0.02
 		minimum_training_level = -0.25
-		land_reinforce_rate = 0.5
+		land_reinforce_rate = 0.05
 
 		
 		path = {
@@ -1344,9 +1340,10 @@ technologies = {
 	}
 	
 	infrastructural_reserve = {
-
+	
+		production_speed_infrastructure_factor = 0.15
 		industry_repair_factor = 0.50
-		army_speed_factor = 0.15
+		army_speed_factor = 0.2
 
 		path = {
 			leads_to_tech = wartime_industry 
@@ -1378,7 +1375,8 @@ technologies = {
 	}
 	
 	wartime_industry = {
-
+	
+		production_speed_arms_factory_factor = 0.15
 		conversion_cost_civ_to_mil_factor= -0.6
 		
 		path = {

@@ -1,67 +1,196 @@
 ﻿capital = 9
 
 oob = "CZE_1950"
-
 set_research_slots = 2
+set_convoys = 80
+set_national_unity = 0.55
 
-set_politics = {
+1950.1.1 = {
+	
+	oob = "CZE_1950"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+	set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 44
-		}
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
 
-		fascism = {
-			popularity = 3
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
 		}
 		
-		communism = {
-			popularity = 53
-		}
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
 	}
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+	}
+	set_technology = {
+	}
+}
+
+1960.1.1 = {
 	
-	ruling_party = communism
-	last_election = "1935.5.19"
-	election_frequency = 60
-	elections_allowed = no
-}
+	oob = "CZE_1960"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
 
-create_country_leader = {
-	name = "Edvard Beneš" # Beneš if we get font support :)
-	desc = "POLITICS_EDVARD_BENES_DESC"
-	picture = "Portrait_Czech_Edvard_Benes.dds"
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = socialism
 	traits = {
 		#
 	}
-}
-
-create_country_leader = {
-	name = "Jaroslav Krejčí"
-	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
-	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
+	}
+	set_technology = {
 	}
 }
 
-create_country_leader = {
-	name = "Klement Gottwald"
-	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "Portrait_Czech_Klement_Gottwald.dds"
+1970.1.1 = {
+	
+	oob = "CZE_1970"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = socialism
 	traits = {
 		#
 	}
+	}
+	set_technology = {
+	}
 }
 
-create_field_marshal = {
-	name = "Vojtěch Luža"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 3
+1980.1.1 = {
+	
+	oob = "CZE_1980"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+	}
+	set_technology = {
+	}
 }

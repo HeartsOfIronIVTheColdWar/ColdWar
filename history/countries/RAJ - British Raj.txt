@@ -1,120 +1,198 @@
 ﻿capital = 439
 
-oob = "RAJ_1936"
-
-# Starting tech
-set_technology = {
-}
-
+oob = "RAJ_1950"
+set_research_slots = 2
 set_convoys = 110
+set_national_unity = 0.55
 
-add_ideas = {
-	#laws
-	volunteer_only
-	low_economic_mobilisation
-	RAJ_agrarian_society
-}
-
-
-set_technology = {
+1950.1.1 = {
 	
-}
+	oob = "RAJ_1950"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+		RAJ_agrarian_society
+		RAJ_quit_india_movement
+	}
+	set_politics = {
 
-set_politics = {
+		parties = {
+			democratic = { 
+				popularity = 58
+			}
 
-	parties = {
-		democratic = { 
-			popularity = 58
-		}
+			fascism = {
+				popularity = 4
+			}
+			
+			communism = {
+				popularity = 18
+			}
 
-		fascism = {
-			popularity = 4
+			neutrality = {
+				popularity = 20
+			}
 		}
 		
-		communism = {
-			popularity = 18
-		}
-
-		neutrality = {
-			popularity = 20
+		ruling_party = democratic
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	create_country_leader = {
+		name = "Jawaharlal Nehru"
+		desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+		picture = gfx/leaders/RAJ/Portrait_India_Jawaharlal_Nehru.dds
+		expire = "1965.1.1"
+		ideology = socialism
+		traits = {
 		}
 	}
+	set_technology = {
+	}
+}
+
+1960.1.1 = {
 	
-	ruling_party = democratic
-	last_election = "1935.11.14"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "Lord Linlithgow"
-	desc = "POLITICS_LORD_LINLITHGOW_DESC"
-	picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
+	oob = "RAJ_1960"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
 	}
-}
 
-# REVISIT Unclear if appropriate for this ideology
-create_country_leader = {
-	name = "V. D. Savarkar"
-	desc = "POLITICS_VD_SAVARKAR_DESC"
-	picture = "GFX_RAJ_veer_savarkar"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
 		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
 	}
-}
-
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "GFX_RAJ_krishna_pillai"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "B. P. Sitaramayya"
-	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "GFX_RAJ_pattabhi_sitaramayya"
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		
+		#
+	}
+	}
+	set_technology = {
 	}
 }
 
-create_corps_commander = {
-	name = "Noel Beresford-Peirse"
-	gfx = "GFX_RAJ_noel_beresford_peirse"
-	traits = { panzer_leader }
-	skill = 3
+1970.1.1 = {
+	
+	oob = "RAJ_1970"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+	}
+	set_technology = {
+	}
 }
 
-create_corps_commander = {
-	name = "Frank Messervy"
-	gfx = "GFX_RAJ_frank_messervy"
-	traits = { hill_fighter }
-	skill = 3
-}
+1980.1.1 = {
+	
+	oob = "RAJ_1980"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
 
-create_corps_commander = {
-	name = "Douglas Gracey"
-	gfx = "GFX_RAJ_douglas_gracey"
-	traits = { desert_fox }
-	skill = 3
-}
+	set_politics = {
 
-create_navy_leader = {
-	name = "Herbert Fitzherbert"
-	gfx = "GFX_RAJ_herbert_fitzherbert"
-	traits = { }
-	skill = 3
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+	}
+	set_technology = {
+	}
 }

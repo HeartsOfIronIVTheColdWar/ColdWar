@@ -4,8 +4,13 @@ state={
 	provinces={
 		1830 7855 10679 
 	}
-	owner = USA
-	add_core_of = USA
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+		}		
 	manpower=100000
 	state_category=wasteland
 }

@@ -1,22 +1,28 @@
 ﻿capital = 608
 
 oob = "PRC_1950"
+set_research_slots = 2
+set_convoys = 80
+set_national_unity = 0.55
 
-# Starting tech
-set_technology = {
-
-}
-
-add_ideas = {
-	#laws
-	tot_economic_mobilisation
-	service_by_requirement
-	closed_economy
-	eastern_socialism
-	RAJ_agrarian_society
-}
+1950.1.1 = {
 	
-set_politics = {
+	oob = "PRC_1950"
+	add_opinion_modifier = { target = JAP modifier = hostile_status }
+	#declare_war_on = {
+	#	target = CHI
+	#	type = annex_everything
+	#}
+	add_ideas = {
+		#laws
+		tot_economic_mobilisation
+		service_by_requirement
+		closed_economy
+		#ideas
+		eastern_socialism
+		RAJ_agrarian_society
+	}
+	set_politics = {
 
 	parties = {
 		democratic = { 
@@ -34,14 +40,11 @@ set_politics = {
 	}
 	
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
-add_opinion_modifier = { target = CHI modifier = hostile_status }
-
-create_country_leader = {
+	create_country_leader = {
 	name = "Mao Zedong"
 	desc = "POLITICS_MAO_ZEDONG_DESC"
 	picture = "gfx/leaders/PRC/Portrait_China_Mao_Zedong_Old.dds"
@@ -50,11 +53,156 @@ create_country_leader = {
 	traits = {
 		Great_Leader
 	}
-}
-
-create_field_marshal = {
+	}
+	set_technology = {
+	}
+	create_field_marshal = {
 	name = "Mao Zedong"
 	portrait_path = "gfx/leaders/CHI/Portrait_China_Mao_Zedong.dds"
 	traits = { defensive_doctrine }
 	skill = 4
+}
+}
+
+1960.1.1 = {
+	
+	oob = "PRC_1960"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+	}
+	set_technology = {
+	}
+}
+
+1970.1.1 = {
+	
+	oob = "PRC_1970"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+	}
+	set_technology = {
+	}
+}
+
+1980.1.1 = {
+	
+	oob = "PRC_1980"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 0
+				banned = yes
+			}
+			
+			communism = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+	}
+	set_technology = {
+	}
 }

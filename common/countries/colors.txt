@@ -1,5 +1,13 @@
 #reload countrycolors
 
+DDR = {
+	color = rgb { 110 73 41 }
+	color_ui = rgb { 99  142  90 }
+}
+WGR = {
+	color = rgb { 44 110 41 }
+	color_ui = rgb { 99  142  90 }
+}
 BUR = {
 	color = rgb { 99  142  90 }
 	color_ui = rgb { 99  142  90 }

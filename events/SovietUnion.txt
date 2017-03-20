@@ -1,0 +1,55 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+country_event = {
+	id = sov.42
+	title = "Turkey wants to Join Comintern"
+	desc = "Turkey has decided to side with the rightful way of Communism, let them join the Comintern to establish a stronger relationship."
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We Welcome our new Turkish Allies!"
+		add_to_faction = FROM
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "SOV"
+				value = 200
+			}
+		}
+		}	
+	option = {
+		name = "We cannot let them join at this time."
+		ai_chance = { factor = 0 }
+			}
+}
+
+# tripartite_pact
+# anti_comintern_pact nations are asked to join pact, agreeing = relations with GER and hit with SOV
+
+country_event = {
+	id = soviet.101
+	title = soviet.101.t
+	desc = soviet.101.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.101.a		#join	
+		add_opinion_modifier = { target = SOV modifier = tripartite_pact_opinion }
+		add_ideas = Sinosoviet_Alliance_accepted
+	}
+	
+	option = {
+		name = soviet.101.b		#refuse
+		add_opinion_modifier = { target = SOV modifier = refused_tripartite_pact_opinion }
+	}
+
+}

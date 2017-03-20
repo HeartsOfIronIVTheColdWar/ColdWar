@@ -1,7 +1,8 @@
 ideas = {
 
 	country = {
-		george_v = {
+
+		colonial_protests = {
 			
 			allowed = {
 				original_tag = ENG
@@ -24,63 +25,12 @@ ideas = {
 			
 			removal_cost = -1
 			
-			traits = { popular_figurehead }
-			
-
-		}
-
-		ENG_king_edward = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-
-			allowed_civil_war = {
-				NOT ={
-					has_government = communism
-				}
-				NOT = {
-					any_other_country = {
-						original_tag = ENG
-						has_government = democratic 
-						NOT = {
-							tag = ROOT
-						}
-					}
-				}
-			}
-
-			picture = king_edward
-			
-			removal_cost = -1
+			picture = FRA_matignon_agreements
 			
 			modifier = {
-				unity_weekly = -0.001
+				political_power_cost = 0.15
+				industrial_capacity_factory = -0.1
 			}
-			
-
-		}
-
-		ENG_king_edward_fascism = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-
-			picture = king_edward
-			
-			removal_cost = -1
-			
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-
-			modifier = {
-				unity_factor = 0.05
-				drift_defence_factor = 0.5
-			}
-			
 
 		}
 
@@ -113,26 +63,6 @@ ideas = {
 			
 
 		}
-
-		ENG_the_war_to_end_all_wars = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			removal_cost = -1
-						
-			modifier = {
-				conscription_factor = -0.25
-				#conscription = -0.006
-			}
-		}
 		
 		stiff_upper_lip = {
 			
@@ -153,155 +83,6 @@ ideas = {
 			rule = {
 				can_create_factions = yes
 			}			
-		}
-
-		
-		
-		british_austerity_idea = {
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
-		
-		ENG_colonial_elite = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			picture = generic_research_bonus
-			
-			removal_cost = -1
-			
-			modifier = {
-				research_time_factor = -0.05
-			}
-		}
-		
-		british_fighter_discount = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-			
-			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		
-		british_arms_discount = {
-			
-			allowed = {
-				always = no
-			}
-			
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-
-			picture = generic_infantry_bonus
-			
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		
-		british_convoy_discount = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-			
-			equipment_bonus = {
-				destroyer = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				convoy = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		
-		indian_independence_promised_idea  = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			picture = generic_morale_bonus
-			
-			removal_cost = -1
-			
-			modifier = {
-				unity_factor = -0.1
-			}
-		}
-
-		ENG_continuation_of_politics = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			rule = {
-				can_boost_other_ideologies = yes
-			}
-
-			picture = FRA_scw_intervention_republicans_focus
-			
-			removal_cost = -1			
-			
 		}
 	}
 	

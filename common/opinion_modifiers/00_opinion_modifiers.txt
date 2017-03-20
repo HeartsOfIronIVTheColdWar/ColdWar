@@ -10,6 +10,18 @@
 
 opinion_modifiers = {
 
+	SOV_DDR_friendship = {
+		value = 25
+	}
+	
+	SOV_pact_friendship = {
+		value = 25
+	}
+	
+	SINO_SOV_defense_pact = {
+		value = 25
+	}
+	
 	seeks_aid = {
 		value = 80
 	}

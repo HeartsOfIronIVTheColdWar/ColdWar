@@ -3,7 +3,7 @@ bookmarks = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
 		date = 1950.1.1.12
-		picture = "GFX_select_date_1936"
+		picture = "GFX_select_date_1950"
 		default_country = "USA"
 		default = yes
 		
@@ -33,6 +33,7 @@ bookmarks = {
 			ideas = {
 				stiff_upper_lip
 				ENG_george_vi
+				colonial_protests
 			}
 			focuses = {
 			}
@@ -56,6 +57,9 @@ bookmarks = {
 				SOV_rebuilding_the_nation
 			}
 			focuses = {
+				SOV_Socialist_Economic_Miracle
+				SOV_The_Warsaw_Pact
+				SOV_Nuclear_Submarines
 			}	
 		}
 
@@ -68,6 +72,8 @@ bookmarks = {
 			history = "WGR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				allied_occupation
+				loser_of_the_second_world_war
 			}	
 			focuses = {
 			}			
@@ -106,6 +112,7 @@ bookmarks = {
 			history = "PAK_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				RAJ_agrarian_society
 			}
 			focuses = {
 			}
@@ -115,6 +122,7 @@ bookmarks = {
 			history = "YUG_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				tito_stalin_split
 			}
 			focuses = {
 			}
@@ -124,6 +132,8 @@ bookmarks = {
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				soviet_political_control
+				war_crimes
 			}
 			focuses = {
 			}
@@ -133,15 +143,16 @@ bookmarks = {
 			history = "DDR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				soviet_occupation
+				loser_of_the_second_world_war
 			}
 			focuses = {
 			}
 		}
 
-	}
-
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
+	}
 }
