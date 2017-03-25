@@ -1,0 +1,41 @@
+###########################
+# Syria Cold War Mod Events
+###########################
+
+add_namespace = syr
+
+# Egypt asks to annex Syria
+country_event = {
+	id = syr.uar
+	title = syr.uar.t
+	desc = syr.uar.d
+	picture = 
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+	}
+	
+	option = { 	
+		name = syr.uar.a
+		ai_chance = {
+			factor = 95
+		}
+		immediate =
+			news_event = { id = news.uar }
+	}
+	
+	option = { 	
+		name = syr.uar.b
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		EGY = { country_event = { id = egy.uar.no days = 1 }
+		}
+	}
+}
