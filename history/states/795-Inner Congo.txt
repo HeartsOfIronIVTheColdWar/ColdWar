@@ -1,6 +1,16 @@
 state={
 	id=795
 	name="STATE_795"
+	resources={
+		rubber=62
+	}
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = COG
+	}
 	provinces={
 		191 1516 1731 1817 1929 1968 2024 4515 7716 9986 10858 12795 12907 
 	}

@@ -18,32 +18,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 75
+				banned = no
 			}
 
 			fascism = {
-				popularity = 0
-				banned = yes
+				popularity = 15
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 10
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
-		last_election = "1950.1.1"
+		ruling_party = democratic 
+		last_election = "1946.4.18"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Elpidio Quirino"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_Phillipines_Elpidio_Quirino.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = democratic
 	traits = {
 		#
 	}

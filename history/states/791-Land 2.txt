@@ -1,6 +1,15 @@
 state={
 	id=791
 	name="STATE_791"
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BOT
+
+	}
 	provinces={
 		8214 12940 
 	}

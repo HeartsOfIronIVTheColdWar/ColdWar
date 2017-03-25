@@ -5,11 +5,12 @@ state={
 		898 959 3803 3852 3860 3904 6822 6922 6944 9899 11878 
 	}
 	history={
-		owner = KOR
+		owner = NKR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		add_core_of = NKR
 		add_core_of = KOR
 
 	}

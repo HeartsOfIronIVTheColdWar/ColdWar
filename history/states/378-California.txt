@@ -7,8 +7,9 @@ state={
 	state_category = metropolis
 	
 	resources={
-		oil=350
+		oil=178
 		aluminium=14
+		tungsten=18
 	}
 
 	history={
@@ -17,6 +18,7 @@ state={
 			infrastructure = 6
 			arms_factory = 2
 			industrial_complex = 6
+			synthetic_refinery = 6
 			dockyard = 2
 			air_base = 10
 			1562 = {

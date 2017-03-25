@@ -18,32 +18,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 92
+				banned = no 
 			}
 
 			fascism = {
-				popularity = 0
-				banned = yes
+				popularity = 2
+				banned = no 
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 6
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = democratic 
 		last_election = "1950.1.1"
 		election_frequency = 48
-		elections_allowed = no
+		elections_allowed = yes
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Gaston Eyskens"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_Belgium_Gaston_Eyskens.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberalism
 	traits = {
 		#
 	}

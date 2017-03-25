@@ -1,6 +1,15 @@
 state={
 	id=797
 	name="STATE_797"
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SAF
+
+	}
 	provinces={
 		1509 4528 5203 10442 10697 12419 
 	}

@@ -15,7 +15,7 @@ state={
 	history={
 		owner = ITA
 		victory_points = {
-			6788 10 
+			6788 20 
 		}
 		victory_points = {
 			6780 5 

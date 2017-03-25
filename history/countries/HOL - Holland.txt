@@ -13,31 +13,30 @@ set_national_unity = 0.55
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
-		sisu
 	}
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 0
+				popularity = 95
 				banned = yes
 			}
 
 			fascism = {
-				popularity = 0
+				popularity = 2
 				banned = yes
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 4
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
-		last_election = "1950.1.1"
+		ruling_party = democratic 
+		last_election = "1948.6.1"
 		election_frequency = 48
-		elections_allowed = no
+		elections_allowed = yes
 	}
 	if = {
 	limit = {
@@ -52,11 +51,11 @@ set_national_unity = 0.55
 	}
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Williem Drees"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_Netherlands_Willem_Drees.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberalism
 	traits = {
 		#
 	}

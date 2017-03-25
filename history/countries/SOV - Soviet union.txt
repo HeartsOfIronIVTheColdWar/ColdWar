@@ -10,10 +10,31 @@ set_national_unity = 0.8
 	oob = "SOV_1950"
 	
 	complete_national_focus = SOV_Stalinism
+	complete_national_focus = SOV_NKVD
+	complete_national_focus = SOV_The_Thing
+	add_opinion_modifier = { target = PRC modifier = same_ruling_party }
+	add_opinion_modifier = { target = PRC modifier = communists_in_government }
+	add_opinion_modifier = { target = USA modifier = hostile_status }
+	add_opinion_modifier = { target = ENG modifier = hostile_status }
+	add_opinion_modifier = { target = FRA modifier = hostile_status }
+	add_opinion_modifier = { target = ITA modifier = hostile_status }
+	add_opinion_modifier = { target = WGR modifier = hostile_status }
+	add_opinion_modifier = { target = YUG modifier = hostile_status }
+	add_opinion_modifier = { target = CAN modifier = hostile_status }
+	add_opinion_modifier = { target = AUS modifier = hostile_status }
+	add_opinion_modifier = { target = NZL modifier = hostile_status }
+	add_opinion_modifier = { target = YUG modifier = similar_ruling_party }
+	add_opinion_modifier = { target = FIN modifier = holds_our_cores }
+	add_opinion_modifier = { target = JAP modifier = holds_our_cores }
+	add_opinion_modifier = { target = JAP modifier = holds_our_claims }
+	add_opinion_modifier = { target = TUR modifier = hostile_status }
+	add_opinion_modifier = { target = PER modifier = hostile_status }
+	add_opinion_modifier = { target = RAJ modifier = seeks_aid }
+	add_opinion_modifier = { target = PAK modifier = seeks_aid }
 	
 	add_ideas = {
 		#laws
-		war_economy
+		low_economic_mobilisation
 		extensive_conscription
 		#ideas
 		home_of_revolution

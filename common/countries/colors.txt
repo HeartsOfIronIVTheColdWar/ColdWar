@@ -1,5 +1,10 @@
 #reload countrycolors
 
+NKR = {
+	color = rgb { 255 5 5 }
+	color_ui = rgb { 235 5 5 }
+}
+
 DDR = {
 	color = rgb { 110 73 41 }
 	color_ui = rgb { 99  142  90 }

@@ -132,6 +132,7 @@ SEN = "countries/Senegal.txt"
 SIL = "countries/Sierraleone.txt"
 TOG = "countries/Togo.txt"
 TUN = "countries/Tunisia.txt"
+NKR = "countries/North Korea.txt"
 
 
 

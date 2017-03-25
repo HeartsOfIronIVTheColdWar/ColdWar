@@ -13,22 +13,23 @@ set_national_unity = 0.55
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
+		bunkers_please
 	}
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 0
+				popularity = 11
 				banned = yes
 			}
 
 			fascism = {
-				popularity = 0
+				popularity = 4
 				banned = yes
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 85
 				#banned = no #default is no
 			}
 		}

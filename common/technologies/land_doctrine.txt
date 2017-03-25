@@ -9,6 +9,7 @@ technologies = {
 			soft_attack = 0.1
 			defense = 0.1
 		}
+		enable_tactic = tactic_preemptive_strike
 
 		path = {
 			leads_to_tech = army_interoperability
@@ -406,6 +407,7 @@ technologies = {
 			soft_attack = 0.10
 			default_morale = 0.2
 		}
+		enable_tactic = tactic_amphibious_assault
 		
 		path = {
 			leads_to_tech = vertical_envelopement 
@@ -441,7 +443,7 @@ technologies = {
 			defense = 0.15
 			default_morale = 0.4
 		}
-		enable_tactic = tactic_backhand_blow
+		enable_tactic = tactic_vertical_envelopement
 		
 		doctrine = yes	
 		research_cost = 3
@@ -472,7 +474,6 @@ technologies = {
 		}
 
 		air_cas_present_factor = 0.15
-		air_superiority_efficiency = 0.1
 		enable_tactic = tactic_overwhelming_fire
 		
 		path = {
@@ -762,7 +763,7 @@ technologies = {
 		category_line_artillery = {
 			soft_attack = 0.2
 		}
-		
+		local_factory_sabotage = 0.70
 		enable_tactic = tactic_overwhelming_fire
 		
 		path = {
@@ -828,7 +829,8 @@ technologies = {
 	
 	local_strongholds = {
 
-		max_dig_in = 20	
+		max_dig_in = 15	
+		enable_tactic = tactic_stronghold
 		
 		path = {
 			leads_to_tech = conscription_reserves 
@@ -1067,6 +1069,8 @@ technologies = {
 		max_planning = 0.3
 		planning_speed = 0.25
 		max_dig_in = 10
+		
+		enable_tactic = tactic_overwhelming_attack
 		
 		path = {
 			leads_to_tech = strategic_deployments

@@ -65,6 +65,7 @@ set_national_unity = 0.85
 	}
 	else = {
 		puppet = MAL
+		puppet = EGY
 		
 	}
 	}

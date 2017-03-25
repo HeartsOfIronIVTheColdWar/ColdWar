@@ -4,7 +4,7 @@ state = {
 	name = "STATE_744"
 	manpower = 321000
 	resources = {
-		tungsten = 8
+		aluminium = 26
 		steel = 12
 	}
 	
@@ -12,6 +12,9 @@ state = {
 	
 	history = {
 		owner = SWE
+		victory_points = {
+			9151 5 
+		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1

@@ -18,17 +18,17 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 46
+				banned = no
 			}
 
 			fascism = {
-				popularity = 0
-				banned = yes
+				popularity = 1
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 53
 				#banned = no #default is no
 			}
 		}
@@ -39,13 +39,13 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	name = "Klement Gottwald"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "Portrait_Czech_Klement_Gottwald.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = stalinism
 	traits = {
-		#
+		stalins_puppet
 	}
 	}
 	set_technology = {

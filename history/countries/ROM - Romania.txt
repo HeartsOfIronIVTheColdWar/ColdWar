@@ -39,15 +39,15 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	name = "Constantin Ion Parhon"
+	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+	picture = "Portrait_Romania_Constantin_Parhon.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = leninism
 	traits = {
-		#
+		stalins_puppet
 	}
-	}
+}
 	set_technology = {
 	}
 }

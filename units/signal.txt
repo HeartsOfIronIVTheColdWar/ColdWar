@@ -35,6 +35,7 @@ sub_units = {
 		
 		# Important Ability
 		initiative = 0.20
+		air_cas_present_factor = 0.14
 		
 		essential = {
 			support_equipment

@@ -2,6 +2,14 @@
 state={
 	id=779
 	name="STATE_779"
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
 	provinces={
 		4138 4961 7987 10900 12836 
 	}

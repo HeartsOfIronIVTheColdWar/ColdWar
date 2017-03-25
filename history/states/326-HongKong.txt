@@ -9,7 +9,7 @@ state=
 		owner = ENG
 		add_core_of = CHI
 		victory_points = {
-			10062 3 
+			10062 20
 		}
 		buildings = {
 			infrastructure = 5

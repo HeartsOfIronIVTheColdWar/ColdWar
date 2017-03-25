@@ -1,12 +1,18 @@
 state={
 	id=786
 	name="STATE_786"
-
+	resources={
+		oil=62
+	}
 	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
 		set_demilitarized_zone = yes
 
 	}
-
 	provinces={
 		1955 10850 12749 
 	}

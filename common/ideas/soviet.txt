@@ -1,6 +1,26 @@
 ideas = {
 	country = {
 		
+		bunkers_please = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Albania Only
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_wall_line
+			
+			modifier = {
+				production_speed_bunker_factor = 1
+    				production_speed_coastal_bunker_factor = 1    
+			}
+		} 
+
 		eastern_socialism = {
 			
 			removal_cost = -1
@@ -24,6 +44,67 @@ ideas = {
 			}
 		}
 		
+		SOV_consumer_goods = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				unity_factor = 0.10
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		SOV_Superior_Tanks = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				category_tanks = {
+					max_organisation = 5
+					breakthrough = 0.2
+				}
+			}
+		}
+		SOV_international_trade = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = Generic_goods_red_bonus
+			
+			modifier = {
+				local_resources_factor = 0.15
+				trade_opinion_factor = 0.5
+			}
+		}
+		
 		home_of_revolution = {
 			removal_cost = -1
 			
@@ -42,7 +123,7 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
-
+		
 		SOV_rebuilding_the_nation = {
 			removal_cost = -1
 
@@ -63,6 +144,24 @@ ideas = {
 			}
 		}
 		
+		SOV_remobilize_the_farmers = {
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				MONTHLY_POPULATION = 0.5
+			}
+		}
+		
 		SOV_great_patriotic_war_winner = {
 			removal_cost = -1
 
@@ -80,7 +179,7 @@ ideas = {
 				land_doctrine = 0.05
 			}
 			modifier = {
-				political_power_factor = 0.25
+				political_power_factor = 0.1
 				army_attack_factor = 0.2
 				army_defence_factor = 0.2 
 			}
@@ -111,11 +210,11 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = Generic_production_bonus		
+			picture = generic_production_bonus		
 
 			modifier = {
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = 0.20
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.1
 			}
 		}
 		heavy_factory_economy = {
@@ -126,10 +225,29 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = Generic_production_bonus	
+			picture = generic_production_bonus	
 
 			modifier = {
 				consumer_goods_factor = -0.1
+			}
+		}
+		international_trade = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				trade_opinion_factor = 0.2
 			}
 		}
 	}

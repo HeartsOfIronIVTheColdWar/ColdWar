@@ -1,4 +1,4 @@
-﻿capital = 764
+﻿capital = 51
 
 oob = "WGR_1950"
 set_research_slots = 2

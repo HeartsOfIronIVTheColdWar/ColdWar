@@ -10,6 +10,14 @@
 
 opinion_modifiers = {
 
+	SOV_Agricultural_board = {
+		value = 25
+	}
+	
+	SOV_offer_developement = {
+		value = 25
+	}
+
 	SOV_DDR_friendship = {
 		value = 25
 	}

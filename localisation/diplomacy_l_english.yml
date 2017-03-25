@@ -786,7 +786,9 @@
  unstable_alliance:0 "Unstable Alliance"
  SOV_DDR_friendship:0 "Soviet-German Socialist Friendship"
  SOV_pact_friendship:0 "Joint Block Policies"
- SINO_SOV_defense_pact:0 "Sino-Soviet Defense Pact
+ SINO_SOV_defense_pact:0 "Sino-Soviet Defense Pact"
+ SOV_offer_developement:0 "Aided Industrially"
+ SOV_Agricultural_board:0 "Agriculutral Aid"
  DIPLOMACY_HOSTILE_STATUS:0 "We are currently Hostile"
  faction_general_desc:0 "$COUNTRY|Y$ is in $FACTION|Y$ faction with other nations"
  faction_general_extended_desc:0 "$COUNTRY2|Y$ and $COUNTRY1|Y$ are in the same $FACTION|Y$ faction."

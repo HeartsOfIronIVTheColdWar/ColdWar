@@ -114,104 +114,6 @@ ideas = {
 			}
 		}
 
-		RAJ_princely_states = {
-
-			picture = generic_morale_bonus
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.1
-			}
-		}
-
-		RAJ_princely_states_election = {
-
-			picture = generic_morale_bonus
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.4
-			}
-		}
-
-		RAJ_princely_states_donations = {
-
-			picture = generic_production_bonus
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.4
-				consumer_goods_factor = -0.03
-			}
-		}
-
-		RAJ_princely_states_donations_troops = {
-
-			picture = generic_manpower_bonus
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.4
-				consumer_goods_factor = -0.03
-				conscription_factor = 0.05
-			}
-		}
 
 		RAJ_indian_gentlemen_officers = {
 
@@ -320,9 +222,48 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.69
+				conscription_factor = -0.75
 			}
 		}
+		
+		RAJ_agrarian_society_2 = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.5
+			}
+		}
+		
+		RAJ_agrarian_society_3 = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.25
+			}
+		}
+
 
 		RAJ_quit_india_movement = {
 		

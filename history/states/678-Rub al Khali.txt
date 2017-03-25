@@ -4,7 +4,9 @@ state={
 	name="STATE_678"
 	manpower=42
 	state_category = wasteland
-
+	resources={
+		oil=28
+	}
 	history={
 		owner = SAU
 		buildings = {

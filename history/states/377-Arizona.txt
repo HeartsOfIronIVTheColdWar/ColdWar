@@ -9,7 +9,6 @@ state={
 	resources={
 		steel=40
 		oil=10
-		aluminium=16
 	}
 
 	history={

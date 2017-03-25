@@ -18,17 +18,17 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 16
+				banned = no
 			}
 
 			fascism = {
-				popularity = 0
-				banned = yes
+				popularity = 26
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 68
 				#banned = no #default is no
 			}
 		}
@@ -39,11 +39,11 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Valko Cherkenkov"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_Bulgaria_Valko_Cherkenkov.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = stalinism
 	traits = {
 		#
 	}

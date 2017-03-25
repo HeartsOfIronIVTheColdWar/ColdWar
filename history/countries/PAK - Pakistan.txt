@@ -1,4 +1,4 @@
-﻿capital = 440
+﻿capital = 443
 
 oob = "PAK_1950"
 set_research_slots = 2

@@ -19,32 +19,35 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 25
+				banned = no
 			}
 
 			fascism = {
-				popularity = 0
-				banned = yes
+				popularity = 15
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 1
 				#banned = no #default is no
+			}
+			neutrality = {
+				popularity = 59
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = neutrality
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Chin Peng"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_Malaysia_Chin_Peng.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = despotism
 	traits = {
 		#
 	}

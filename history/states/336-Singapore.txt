@@ -5,13 +5,13 @@ state={
 	resources={
 		rubber=848.000
 		steel=32.000
-		tungsten=308.000
+		tungsten=15
 	}
 
 	history={
 		owner = MAL
 		victory_points = {
-			10297 1 
+			10297 20 
 		}
 		buildings = {
 			infrastructure = 3

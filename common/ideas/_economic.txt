@@ -230,15 +230,21 @@ ideas = {
 
 		free_trade = {
 			
+			available = {
+						has_government = democratic
+			}
 			
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			
 			modifier = {
 				min_export = 0.8
+				trade_opinion_factor = 0.5
+				production_factory_efficiency_gain_factor = 0.25
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
+				local_resources_factor = 0.15
 				research_time_factor = -0.08
 			}
 			
@@ -253,9 +259,12 @@ ideas = {
 			
 			modifier = {
 				min_export = 0.5
+				trade_opinion_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.15
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.1
 				research_time_factor = -0.04
 			}
 			
@@ -281,23 +290,21 @@ ideas = {
 					}
 					AND = {
 						NOT = { has_government = democratic }
-						OR = {
-							has_idea = partial_economic_mobilisation
-							has_idea = war_economy
-							has_idea = tot_economic_mobilisation
-						}
 					}
 				}
 			}
 		
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			
 			modifier = {
 				min_export = 0.25
+				trade_opinion_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
 				research_time_factor = -0.02
 			}
 			
@@ -320,22 +327,19 @@ ideas = {
 			
 			
 			available = {
-				has_war = yes
-				OR = { 
-					has_government = fascism
-					has_government = communism
-				}
 				OR = {
-					has_idea = war_economy
-					has_idea = tot_economic_mobilisation
-				}
-				OR = {
-					NOT = {	tag = SOV }
-					NOT = { has_opinion_modifier = MR_pact }
+					OR = { 
+						has_government = fascism
+						has_government = communism
+					}
+					OR = {
+						has_idea = war_economy
+						has_idea = tot_economic_mobilisation
+					}
 				}
 			}
 			
-			cost = 150
+			cost = 50
 			removal_cost = -1
 			
 			

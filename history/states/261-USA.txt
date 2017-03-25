@@ -3,7 +3,6 @@ state={
 	name="STATE_261"
 	resources={
 		steel=48.000
-		aluminium=16.000
 	}
 	
 	state_category = metropolis

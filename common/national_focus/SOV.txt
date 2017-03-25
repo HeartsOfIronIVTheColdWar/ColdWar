@@ -14,7 +14,230 @@ focus_tree = {
 		cost = 20
 		x = 4
 		y = 0
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			202 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			226 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			218 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			206 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
 
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_1950_infrastructure
+		}
 	}
 	focus = {
 		id = SOV_DDR
@@ -54,6 +277,15 @@ focus_tree = {
 		cost = 10
 		x = 32
 		y = 0
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = SOV }
+			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 35000 producer = SOV }
+			add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 15000 producer = SOV }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = SOV }
+			add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = SOV }
+			
+		}
+		
 
 	}
 	focus = {
@@ -70,6 +302,12 @@ focus_tree = {
 		cost = 1
 		x = 22
 		y = 0
+		available = { 
+			has_global_flag = SOV_the_thing
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_nuclear_interest
+		}
 
 	}
 	focus = {
@@ -78,7 +316,13 @@ focus_tree = {
 		cost = 1
 		x = 24
 		y = 0
-
+		available = {
+			has_government = communism 
+			has_global_flag = SOV_spies_selling_nukes
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_spies_safety
+		}
 	}
 	focus = {
 		id = SOV_heavy_factory_economy
@@ -95,11 +339,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = heavy_factory_economy
 			add_tech_bonus = {
-				name = construction_tech_bonus
+				name = industrial_bonus
 				bonus = 0.5
 				uses = 1
-				category = construction_tech
-				}
+				category = industry
+			}
 		}
 	}
 	focus = {
@@ -111,6 +355,79 @@ focus_tree = {
 		}
 		x = 3
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+			398 = {
+				limit = { is_in_home_area = yes }
+				add_resource = {
+					type = aluminium
+					amount = 42
+				}
+				add_resource = {
+					type = chromium
+					amount = 26
+				}
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+				}
+			}
+			397 = {
+				limit = { is_in_home_area = yes }
+				add_resource = {
+					type = aluminium
+					amount = 54
+				}
+				add_resource = {
+					type = steel
+					amount = 48
+				}
+				add_resource = {
+					type = tungsten
+					amount = 18
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+				}
+			}
+			573 = {
+				limit = { is_in_home_area = yes }
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			582 = {
+				limit = { is_in_home_area = yes }
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			581 = {
+				limit = { is_in_home_area = yes }
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+				}
+			}
+		}
+		
 
 	}
 	focus = {
@@ -122,8 +439,12 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
-
+		completion_reward = {
+			add_ideas = SOV_remobilize_the_farmers
+			
+		}
 	}
+	
 	focus = {
 		id = SOV_Heavy_Mechanics
 		icon = GFX_goal_generic_production
@@ -133,6 +454,49 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = arms_factory 
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = arms_factory 
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+		}
+
 
 	}
 	focus = {
@@ -163,6 +527,12 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_ideas = light_factory_economy
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
 		}
 	}
 	focus = {
@@ -174,7 +544,10 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
-
+		completion_reward = {
+			add_ideas = SOV_consumer_goods
+			
+		}
 	}
 	focus = {
 		id = SOV_International_Trade
@@ -185,6 +558,10 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
+		completion_reward = {
+			add_ideas = free_trade
+			
+		}
 
 	}
 	focus = {
@@ -208,6 +585,74 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+			576 = {
+				limit = { is_in_home_area = yes }
+				add_resource = {
+					type = steel
+					amount = 42
+				}
+				add_resource = {
+					type = tungsten
+					amount = 34
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			516 = {
+				limit = { is_in_home_area = yes }
+				add_resource = {
+					type = aluminium
+					amount = 62
+				}
+				add_resource = {
+					type = steel
+					amount = 48
+				}
+				add_resource = {
+					type = tungsten
+					amount = 72
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			644 = {
+				limit = { is_in_home_area = yes }
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+				add_resource = {
+					type = tungsten
+					amount = 54
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -281,13 +726,16 @@ focus_tree = {
 				NOT = { has_war_with = SOV }
 				has_government = communism 
 				NOT = { is_in_faction_with = USA }
-
-			} 
+			}
+			OR = {
+				has_global_flag = PRC_Civil_war_ended 
+				has_global_flag = PRC_Civil_war_standstill 
+			}  
+			custom_effect_tooltip = PRC_Mao_Discontent_tt
 		}
 		completion_reward = {
-			PRC = {
-				country_event = soviet.101
-			}
+			custom_effect_tooltip = SOV_Defense_pact_tt
+			
 		}
 
 	}
@@ -333,6 +781,18 @@ focus_tree = {
 		}
 		x = 8
 		y = 6
+		available = {
+			PRC = {
+				AND = {
+					custom_effect_tooltip = SOV_blankrow
+					has_government = communism
+					has_opinion = { target = SOV value > 99 }
+					has_army_manpower = { size > 500000 }
+					
+				 }
+
+			}
+		}
 
 	}
 	focus = {
@@ -539,7 +999,53 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 
+			}
+			add_opinion_modifier = { target = RAJ modifier = SOV_offer_developement }
+			RAJ = {
+				add_opinion_modifier = { target = SOV modifier = SOV_offer_developement }
+			}
+			
+		}
 	}
 	focus = {
 		id = SOV_Socialistas_Americanas
@@ -550,7 +1056,181 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
-
+		completion_reward = {
+			custom_effect_tooltip = SOV_Aid_americas
+			hidden_effect = {
+				if = {
+						limit = {
+							MEX = {
+								has_government = communism
+							}
+						}
+						MEX = {
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						}
+					}
+				if = {
+						limit = {
+							BRA = {
+								has_government = communism
+							}
+						}
+						BRA = {
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						}
+					}
+				if = {
+						limit = {
+							PAR = {
+								has_government = communism
+							}
+						}
+						PAR = {
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						}
+					}
+				if = {
+						limit = {
+							COL = {
+								has_government = communism
+							}
+						}
+						COL = {
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						}
+					}
+				if = {
+						limit = {
+							PAN = {
+								has_government = communism
+							}
+						}
+						PAN = {
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						}
+					}
+				if = {
+						limit = {
+							CUB = {
+								has_government = communism
+							}
+						}
+						CUB = {
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						}
+					}
+				if = {
+						limit = {
+							PRU = {
+								has_government = communism
+							}
+						}
+						PRU = {
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						}
+					}
+			}
+			custom_effect_tooltip = SOV_Aid_americas1
+			
+		}
 	}
 	focus = {
 		id = SOV_Assist_Decolonization
@@ -588,6 +1268,42 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
+		completion_reward = {
+				if = {
+					limit = {
+						RAJ = {
+							has_idea = RAJ_agrarian_society
+						}
+					}
+					swap_ideas = {
+						remove_idea = RAJ_agrarian_society
+						add_idea = RAJ_agrarian_society_2
+					}
+				}
+				if = {
+					limit = {
+						RAJ = {
+							has_idea = RAJ_agrarian_society_2
+						}
+					}
+					swap_ideas = {
+						remove_idea = RAJ_agrarian_society2
+						add_idea = RAJ_agrarian_society_3
+					}
+				}
+				if = {
+					limit = {
+						RAJ = {
+							has_idea = RAJ_agrarian_society_3
+						}
+					}
+						remove_idea = RAJ_agrarian_society3
+				}
+				add_opinion_modifier = { target = RAJ modifier = SOV_Agricultural_board }
+				RAJ = {
+					add_opinion_modifier = { target = SOV modifier = SOV_Agricultural_board }
+				}
+		}
 
 	}
 	focus = {
@@ -662,7 +1378,6 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
-
 	}
 	focus = {
 		id = SOV_Support_Coups
@@ -724,6 +1439,19 @@ focus_tree = {
 		}
 		x = 23
 		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.8
+				uses = 2
+				category = nuclear
+			}
+		}
 
 	}
 	focus = {
@@ -735,6 +1463,15 @@ focus_tree = {
 		}
 		x = 23
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.6
+				uses = 2
+				category = rocketry
+			}
+			custom_effect_tooltip = SOV_Space_Race
+		}
 
 	}
 	focus = {
@@ -746,6 +1483,15 @@ focus_tree = {
 		}
 		x = 27
 		y = 1
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = navy_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}	
+		}
 
 	}
 	focus = {
@@ -757,6 +1503,16 @@ focus_tree = {
 		}
 		x = 26
 		y = 2
+		completion_reward = {
+			195 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
 
 	}
 	focus = {
@@ -768,6 +1524,24 @@ focus_tree = {
 		}
 		x = 28
 		y = 2
+		completion_reward = {
+			197 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+			}
+			137 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
 
 	}
 	focus = {
@@ -782,6 +1556,19 @@ focus_tree = {
 		}
 		x = 27
 		y = 4
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
 
 	}
 	focus = {
@@ -794,6 +1581,17 @@ focus_tree = {
 		}
 		x = 25
 		y = 3
+		completion_reward = {
+			navy_experience = 25§§
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
 
 	}
 	focus = {
@@ -806,6 +1604,18 @@ focus_tree = {
 		}
 		x = 29
 		y = 3
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 2
+				technology = improved_destroyer
+				technology = advanced_destroyer
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+			}
+		}
 
 	}
 	focus = {
@@ -817,7 +1627,173 @@ focus_tree = {
 		}
 		x = 29
 		y = 4
-
+		completion_reward = {
+			hidden_effect = {
+				##North Sea##
+				213 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3134
+						instant_build = yes
+					}
+				}
+				214 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3338
+						instant_build = yes
+					}
+				}
+					##Leningrad and baltic##
+				195 = {	
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3151
+						instant_build = yes
+					}
+				}
+				146 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9206
+						instant_build = yes
+					}
+				}
+				191 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 4640
+						instant_build = yes
+					}
+				}
+				13 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3152
+						instant_build = yes
+					}
+				}
+				12 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9340
+						instant_build = yes
+					}
+				}
+				190 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9262
+						instant_build = yes
+					}
+				}
+				189 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6314
+						instant_build = yes
+					}
+				}
+				188 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6332
+						instant_build = yes
+					}
+				}
+				##Black Sea##
+				78 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6727
+						instant_build = yes
+					}
+				}
+				192 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 11670
+						instant_build = yes
+					}
+				}
+				197 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 11683
+						instant_build = yes
+					}
+				}
+				137 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3686
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9680
+						instant_build = yes
+					}
+				}
+				234 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9417
+						instant_build = yes
+					}
+				}
+				218 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 719
+						instant_build = yes
+					}
+				}
+				##Far East##
+				408 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 957
+						instant_build = yes
+					}
+				}
+				409 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9604
+						instant_build = yes
+					}
+				}
+				537 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 12446
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_building_many_forts
+		}
 	}
 	focus = {
 		id = SOV_Sverdlov_Heavy_Cruisers
@@ -828,17 +1804,36 @@ focus_tree = {
 		}
 		x = 28
 		y = 5
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 2
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
 
 	}
 	focus = {
 		id = SOV_The_Red_Army
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = SOV_Surplus_Equipment
 		}
 		x = 32
 		y = 1
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.4
+				uses = 2
+				category = land_doctrine
+			}
+		}
 
 	}
 	focus = {
@@ -850,6 +1845,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.6
+				uses = 2
+				technology = motorised_infantry
+			}
+		}
 
 	}
 	focus = {
@@ -861,6 +1864,39 @@ focus_tree = {
 		}
 		x = 33
 		y = 2
+		completion_reward = {
+			army_experience = 35
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.4
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
 
 	}
 	focus = {
@@ -875,6 +1911,12 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
+		available = { 
+			has_tech = large_front_operations
+		}
+		completion_reward = {
+			add_ideas = SOV_Superior_Tanks
+		}
 
 	}
 	focus = {
@@ -886,6 +1928,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
 
 	}
 	focus = {
@@ -920,7 +1970,22 @@ focus_tree = {
 		}
 		x = 36
 		y = 1
-
+		completion_reward = {
+			air_experience = 75
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+				category = medium_air
+			}
+		}
 	}
 	focus = {
 		id = SOV_Air_and_Land
@@ -931,7 +1996,22 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
-
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+				category = heavy_air
+			}
+		}
 	}
 	focus = {
 		id = SOV_The_war_above
@@ -942,6 +2022,21 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+		}
 
 	}
 	focus = {
@@ -956,6 +2051,17 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+			custom_effect_tooltip = SOV_Space_Race
+		}
 
 	}
 	focus = {
@@ -1016,6 +2122,18 @@ focus_tree = {
 		}
 		x = 14
 		y = 6
+		available = {
+			RAJ = {
+				AND = {
+					custom_effect_tooltip = SOV_blankrow
+					has_government = communism
+					has_opinion = { target = SOV value > 99 }
+					has_army_manpower = { size > 500000 }
+					
+				 }
+
+			}
+		}
 
 	}
 	focus = {
@@ -1033,6 +2151,24 @@ focus_tree = {
 		}
 		x = 11
 		y = 7
+		completion_reward = {
+			custom_effect_tooltip = SOV_The_Euroasian_Defense_Pact_tt
+			hidden_effect = {
+			dismantle_faction = yes
+			create_faction = "The Euro-Asian Defense Pact"
+			add_to_faction = BUL
+			add_to_faction = HUN
+			add_to_faction = CZE
+			add_to_faction = POL
+			add_to_faction = ALB
+			add_to_faction = ROM
+			add_to_faction = DDR
+			add_to_faction = PRC
+			add_to_faction = RAJ
+			}
+			add_political_power = 300
+			
+		}
 
 	}
 	focus = {
@@ -1044,6 +2180,25 @@ focus_tree = {
 		}
 		x = 25
 		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				uses = 1
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
 
 	}
 	focus = {
@@ -1055,7 +2210,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
-
+		completion_reward = {
+			custom_effect_tooltip = SOV_nucl_subs_unlocked
+		}
 	}
 	focus = {
 		id = SOV_offer_development
@@ -1066,6 +2223,93 @@ focus_tree = {
 		}
 		x = 14
 		y = 5
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_opinion_modifier = { target = RAJ modifier = SOV_offer_developement }
+			RAJ = {
+				add_opinion_modifier = { target = SOV modifier = SOV_offer_developement }
+			}
+			
+		}
 
 	}
 }
