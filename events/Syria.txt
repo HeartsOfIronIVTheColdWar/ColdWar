@@ -37,5 +37,6 @@ country_event = {
 		}
 		EGY = { country_event = { id = egy.uar.no days = 1 }
 		}
+		custom_effect_tooltip = GAME_OVER_TT
 	}
 }
