@@ -193,14 +193,17 @@ technologies = {
 	}
 	
 	floating_fortress = {
-		#Large, powerful gun armed ships are clearly the best ships
+		#Large, powerful gun armed ships are outdated
 		
 		# EFFECT #############
-		battleship = {
+		cruiser = {
+			max_organisation = 20
+		}
+		frigate = {
 			max_organisation = 20
 		}
 		
-		navy_capital_ship_defence_factor = 0.10
+		navy_screen_ship_defence_factor = 0.10
 		
 		########
 
@@ -1916,7 +1919,7 @@ technologies = {
 			max_organisation = 10
 			sub_detection = 0.1
 		}
-		light_cruiser = {
+		cruiser = {
 			max_organisation = 10
 			sub_detection = 0.1
 		}

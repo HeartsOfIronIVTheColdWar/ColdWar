@@ -1782,85 +1782,68 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/transport.dds"
 	}	
 	
+	##CRUISERS##
+	
 	SpriteType = {
-		name = "GFX_modern_light_cruiser_medium"
+		name = "GFX_modern_cruiser_medium"
 		texturefile = "gfx/interface/technologies/modern_light_cruiser.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_semi_modern_light_cruiser_medium"
+		name = "GFX_early_modern_cruiser_medium"
 		texturefile = "gfx/interface/technologies/semi_modern_light_cruiser.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_advanced_light_cruiser_medium"
+		name = "GFX_advanced_cruiser_medium"
 		texturefile = "gfx/interface/technologies/advanced_light_cruiser.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_improved_light_cruiser_medium"
+		name = "GFX_improved_cruiser_medium"
 		texturefile = "gfx/interface/technologies/improved_light_cruiser.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_basic_light_cruiser_medium"
+		name = "GFX_basic_cruiser_medium"
 		texturefile = "gfx/interface/technologies/basic_light_cruiser.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_modern_heavy_cruiser_medium"
-		texturefile = "gfx/interface/technologies/modern_heavy_cruiser.dds"
-	}	
+		name = "GFX_ww2_cruiser_medium"
+		texturefile = "gfx/interface/technologies/early_light_cruiser.dds"
+	}
+
+	##FRIGATES##
 	
 	SpriteType = {
-		name = "GFX_semi_modern_heavy_cruiser_medium"
-		texturefile = "gfx/interface/technologies/semi_modern_heavy_cruiser.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_advanced_heavy_cruiser_medium"
+		name = "GFX_modern_frigate_medium"
 		texturefile = "gfx/interface/technologies/advanced_heavy_cruiser.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_improved_heavy_cruiser_medium"
+		name = "GFX_early_modern_frigate_medium"
 		texturefile = "gfx/interface/technologies/improved_heavy_cruiser.dds"
 	}		
 	
 	SpriteType = {
-		name = "GFX_basic_heavy_cruiser_medium"
+		name = "GFX_advanced_frigate_medium"
 		texturefile = "gfx/interface/technologies/basic_heavy_cruiser.dds"
-	}	
+	}
 	
 	SpriteType = {
-		name = "GFX_heavy_battleship2_medium"
-		texturefile = "gfx/interface/technologies/heavy_battleship2.dds"
+		name = "GFX_basic_frigate_medium"
+		texturefile = "gfx/interface/technologies/early_heavy_cruiser.dds"
 	}	
 	
+	##BATTLESHIPS##
+	
 	SpriteType = {
-		name = "GFX_modern_battleship_medium"
-		texturefile = "gfx/interface/technologies/modern_battleship.dds"
+		name = "GFX_ww2_battleship_medium"
+		texturefile = "gfx/interface/technologies/early_battleship.dds"
 	}		
 	
-	SpriteType = {
-		name = "GFX_semi_modern_battleship_medium"
-		texturefile = "gfx/interface/technologies/semi_modern_battleship.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_advanced_battleship_medium"
-		texturefile = "gfx/interface/technologies/advanced_battleship.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_improved_battleship_medium"
-		texturefile = "gfx/interface/technologies/improved_battleship.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_basic_battleship_medium"
-		texturefile = "gfx/interface/technologies/basic_battleship.dds"
-	}	
+	##CARRIERS##
 	
 	SpriteType = {
 		name = "GFX_modern_carrier_medium"
@@ -1868,7 +1851,7 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_semi_modern_carrier_medium"
+		name = "GFX_early_modern_carrier_medium"
 		texturefile = "gfx/interface/technologies/semi_modern_carrier.dds"
 	}	
 	
@@ -1883,9 +1866,16 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_basic_carrier_medium"
+		name = "GFX_early_carrier_medium"
 		texturefile = "gfx/interface/technologies/basic_carrier.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww2_carrier_medium"
+		texturefile = "gfx/interface/technologies/early_carrier.dds"
 	}	
+	
+	##DESTROYERS##
 	
 	SpriteType = {
 		name = "GFX_modern_destroyer_medium"
@@ -1893,7 +1883,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_semi_modern_destroyer_medium"
+		name = "GFX_early_modern_destroyer_medium"
 		texturefile = "gfx/interface/technologies/semi_modern_destroyer.dds"
 	}	
 	
@@ -1911,6 +1901,13 @@ spriteTypes = {
 		name = "GFX_basic_destroyer_medium"
 		texturefile = "gfx/interface/technologies/basic_destroyer.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_ww2_destroyer_medium"
+		texturefile = "gfx/interface/technologies/early_destroyer.dds"
+	}	
+	
+	##CRUISERS##
 	
 	SpriteType = {
 		name = "GFX_modern_battlecruiser_medium"
@@ -1937,13 +1934,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/basic_battlecruiser.dds"
 	}		
 	
+	##SUBMARINES##
+	
 	SpriteType = {
 		name = "GFX_modern_submarine_medium"
 		texturefile = "gfx/interface/technologies/modern_submarine.dds"
 	}		
 	
 	SpriteType = {
-		name = "GFX_semi_modern_submarine_medium"
+		name = "GFX_early_modern_submarine_medium"
 		texturefile = "gfx/interface/technologies/semi_modern_submarine.dds"
 	}	
 	
@@ -1963,37 +1962,9 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_early_submarine_medium"
+		name = "GFX_ww2_submarine_medium"
 		texturefile = "gfx/interface/technologies/early_submarine.dds"
-	}	
-	SpriteType = {	
-		name = "GFX_early_carrier_medium"
-		texturefile = "gfx/interface/technologies/early_carrier.dds"
 	}		
-	SpriteType = {	
-		name = "GFX_heavy_battleship_medium"
-		texturefile = "gfx/interface/technologies/heavy_battleship.dds"
-	}
-	SpriteType = {	
-		name = "GFX_early_battleship_medium"
-		texturefile = "gfx/interface/technologies/early_battleship.dds"
-	}	
-	SpriteType = {	
-		name = "GFX_early_battlecruiser_medium"
-		texturefile = "gfx/interface/technologies/early_battlecruiser.dds"
-	}
-	SpriteType = {	
-		name = "GFX_early_heavy_cruiser_medium"
-		texturefile = "gfx/interface/technologies/early_heavy_cruiser.dds"
-	}
-	SpriteType = {	
-		name = "GFX_early_light_cruiser_medium"
-		texturefile = "gfx/interface/technologies/early_light_cruiser.dds"
-	}
-		SpriteType = {	
-		name = "GFX_early_destroyer_medium"
-		texturefile = "gfx/interface/technologies/early_destroyer.dds"
-	}
 	
 	### GERMAN EQUIPMENT ###
 

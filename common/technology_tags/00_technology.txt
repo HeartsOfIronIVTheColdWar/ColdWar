@@ -41,9 +41,11 @@ technology_categories = {
 	cv_tech
 	bc_tech
 	bb_tech
-	shbb_tech
 	ss_tech
 	tp_tech
+	ff_tech
+	ssn_tech
+	lph_tech
 	synth_resources
 	fleet_in_being_tree
 	encryption_tech

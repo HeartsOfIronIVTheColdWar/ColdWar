@@ -44,6 +44,10 @@ set_national_unity = 0.85
 		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
 		target = CAN
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
