@@ -1,5 +1,18 @@
 ﻿l_english:
  VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!"
+  
+  
+  
+  
+  
+  
+ VICTORY_POINTS_1951:0 "Lomé"
+ VICTORY_POINTS_10919:0 "Porto-Novo"
+ VICTORY_POINTS_1975:0 "Niamey"
+ VICTORY_POINTS_10836:0 "Ouagadougou"
+ VICTORY_POINTS_8122:0 "Yamoussoukro"
+ VICTORY_POINTS_1909:0 "Conakry"
+ VICTORY_POINTS_5034:0 "Nouakchott"
  VICTORY_POINTS_5037:0 "Mecca"
  VICTORY_POINTS_6127:0 "Uppsala"
  VICTORY_POINTS_11091:0 "Gävle"

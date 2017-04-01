@@ -6,7 +6,6 @@ set_convoys = 80
 set_national_unity = 0.55
 
 1950.1.1 = {
-	
 	oob = "JAP_1950"
 	add_ideas = {
 		#laws
@@ -20,33 +19,36 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 37
-				banned = yes
 			}
 
 			fascism = {
-				popularity = 62
-				banned = yes
+				popularity = 23
 			}
 			
 			communism = {
-				popularity = 1
-				#banned = no #default is no
+				popularity = 0
+				#banned = yes #default is no
+			}
+			
+			neutrality = { 
+				popularity = 40
 			}
 		}
-		
-		ruling_party = democratic 
-		last_election = "1948.10.15"
-		election_frequency = 48
-		elections_allowed = yes
+	
+	ruling_party = neutrality
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Shigeru Yoshida"
+	name = "Douglas MacArthur"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "Portrait_Japan_Shigeru_Yoshida.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	expire = "1964.1.1"
+	ideology = despotism
 	traits = {
 		#
+		iron_grip
 	}
 	}
 	set_technology = {

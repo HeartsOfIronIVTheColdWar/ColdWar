@@ -18,18 +18,21 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 25
+				banned = no
 			}
 
 			fascism = {
-				popularity = 0
-				banned = yes
+				popularity = 10
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 5
 				#banned = no #default is no
+			}
+			neutrality = {
+				popularity = 60
 			}
 		}
 		

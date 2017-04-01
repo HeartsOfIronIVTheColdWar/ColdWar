@@ -1355,7 +1355,7 @@ guiTypes = {
 				position = { x= 0 y= 0 }
 				size = { 
 					width=1700 height=1300 
-					min = { width=100%% height=100%% }
+					min = { width=138%% height=100%% }
 				}
 				clipping = no
 
@@ -1811,7 +1811,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1950"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1824,7 +1824,7 @@ guiTypes = {
 #					textureFile = ""
 #					font = "hoi_36header"
 #					borderSize = {x = 0 y = 4}
-#					text = "1935"
+#					text = "1950"
 #					maxWidth = 130
 #					maxHeight = 32
 #					format = left
@@ -1837,7 +1837,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1937"
+					text = "1951"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1850,7 +1850,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1952"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1863,7 +1863,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1941"
+					text = "1955"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1876,7 +1876,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1943"
+					text = "1957"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1889,7 +1889,7 @@ guiTypes = {
 #					textureFile = ""
 #					font = "hoi_36header"
 #					borderSize = {x = 0 y = 4}
-#					text = "1943"
+#					text = "1957"
 #					maxWidth = 130
 #					maxHeight = 32
 #					format = left
@@ -1911,7 +1911,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1950"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -1924,7 +1924,7 @@ guiTypes = {
 #					textureFile = ""
 #					font = "hoi_36header"
 #					borderSize = {x = 0 y = 4}
-#					text = "1935"
+#					text = "1949"
 #					maxWidth = 130
 #					maxHeight = 32
 #					format = left
@@ -2159,7 +2159,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 2100 height = 100% }
+				size = { width = 100% height = 100% }
 			}
 	
 	

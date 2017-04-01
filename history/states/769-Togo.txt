@@ -1,3 +1,4 @@
+
 state={
 	id=769
 	name="STATE_769"
@@ -9,6 +10,9 @@ state={
 		add_core_of = TOG
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			1951 3
 		}
 	}
 	manpower=1000000

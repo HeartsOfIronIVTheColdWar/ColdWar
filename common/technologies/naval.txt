@@ -178,7 +178,7 @@ technologies = {
 	ww2_cruiser = {
 
 		enable_equipments = { 
-			light_cruiser_1
+			cruiser_1
 		}
 		
 		path = {
@@ -208,7 +208,7 @@ technologies = {
 	basic_cruiser = {
 
 		enable_equipments = { 
-			light_cruiser_2
+			cruiser_2
 		}
 		
 		path = {
@@ -238,7 +238,7 @@ technologies = {
 	improved_cruiser = {
 
 		enable_equipments = { 
-			light_cruiser_3
+			cruiser_3
 		}	
 		
 		path = {
@@ -272,12 +272,12 @@ technologies = {
 	advanced_cruiser = {
 
 		enable_equipments = { 
-			light_cruiser_4
+			cruiser_4
 		}
 		
 		path = {
 			leads_to_tech = early_modern_cruiser 
-			research_cost_coeff = 0.75
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
@@ -302,12 +302,12 @@ technologies = {
 	early_modern_cruiser = {
 
 		enable_equipments = { 
-			light_cruiser_5
+			cruiser_5
 		}
 		
 		path = {
 			leads_to_tech = modern_cruiser 
-			research_cost_coeff = 0.75
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
@@ -332,7 +332,12 @@ technologies = {
 	modern_cruiser = {
 
 		enable_equipments = { 
-			light_cruiser_4
+			cruiser_6
+		}
+		
+		path = {
+			leads_to_tech = modern_frigate 
+			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2
@@ -446,7 +451,7 @@ technologies = {
 		
 		path = {
 			leads_to_tech = modern_frigate 
-			research_cost_coeff = 0.75
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
@@ -570,7 +575,7 @@ technologies = {
 		
 		path = {
 			leads_to_tech = basic_nuclear_submarine 
-			research_cost_coeff = 1
+			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2
@@ -688,7 +693,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1960
 		
@@ -718,7 +723,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1970
 		
@@ -748,7 +753,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1980
 		
@@ -773,7 +778,7 @@ technologies = {
 			nuclear_submarine_4
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1990
 		
@@ -803,7 +808,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1945
 		
@@ -825,7 +830,7 @@ technologies = {
 	early_carrier = {
 
 		enable_equipments = { 
-			carrier_1
+			carrier_2
 		}
 		
 		path = {
@@ -833,7 +838,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2
 
 		start_year = 1950
 		
@@ -865,7 +870,7 @@ technologies = {
 		
 		path = {
 			leads_to_tech = basic_helicopter_carrier 
-			research_cost_coeff = 1
+			research_cost_coeff = 0.75
 		}
 		
 		research_cost = 2
@@ -952,7 +957,6 @@ technologies = {
 		enable_equipments = { 
 			carrier_6
 		}
-
 		
 		research_cost = 2
 
@@ -1069,11 +1073,6 @@ technologies = {
 			helicopter_carrier_4
 		}
 		
-		path = {
-			leads_to_tech = advanced_carrier 
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 2
 
 		start_year = 1990
@@ -1184,11 +1183,6 @@ technologies = {
 		amphibious_invasion = 0.50
 		amphibious_invasion_defence = 0.75
 		naval_invasion_capacity = 100
-
-		path = {
-			leads_to_tech = token_for_tree_width 
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1990
@@ -1208,25 +1202,4 @@ technologies = {
 		}
 	}
 	
-	token_for_tree_width = {
-
-		amphibious_invasion = 0.01
-
-		research_cost = 2
-		start_year = 2000
-		
-		folder = {
-			name = naval_folder
-			position = { x = 0 y = 37 }
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-		
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-	}
 }
