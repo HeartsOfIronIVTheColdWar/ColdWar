@@ -2,6 +2,12 @@ on_actions = {
 	# country 
 	on_new_term_election = {
 		random_events = {
+			100 = usa.election52
+			100 = usa.election52t
+			100 = usa.election56e
+			100 = usa.election56s
+			100 = usa.election56t
+			
 		}
 		random_events = {
 		}
