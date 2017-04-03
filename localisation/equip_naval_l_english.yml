@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  naval_equipment:0 "Ships"
  submarine_1:0 "Diesel Submarine I"
  submarine_2:0 "Diesel Submarine II"
@@ -141,4 +141,3 @@ l_english:
  SOV_carrier_5:0 "Kuznetsov-class"
  SOV_carrier_6:0 "Ulyanovsk-class"
  SOV_helicopter_carrier_1:0 "Moskva-class"
- 
