@@ -13,7 +13,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1936
 		folder = {
 			name = electronics_folder
@@ -45,13 +45,14 @@ technologies = {
 
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.05
-		
+
 		path = {
 			leads_to_tech = radio_detection 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.5
+		start_year = 1936
 		
 		folder = {
 			name = electronics_folder
@@ -74,6 +75,7 @@ technologies = {
 		
 		categories = {
 			electronics
+			radar_tech
 		}
 	}
 	
@@ -90,7 +92,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.5
 		
 		folder = {
 			name = electronics_folder
@@ -112,12 +114,12 @@ technologies = {
 		# can build radars/radar boost in air/sea combat depends on radar level
 		
 		path = {
-			leads_to_tech = improved_decimetric_radar 
+			leads_to_tech = centimetric_radar 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
-		start_year = 1938
+		research_cost = 1
+		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
@@ -139,7 +141,7 @@ technologies = {
 		}
 	}
 	
-	improved_decimetric_radar = {
+	centimetric_radar = {
 
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
@@ -148,12 +150,12 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = centimetric_radar 
+			leads_to_tech = improved_centimetric_radar 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
-		start_year = 1939
+		research_cost = 1.5
+		start_year = 1945
 		
 		folder = {
 			name = electronics_folder
@@ -170,93 +172,6 @@ technologies = {
 		}
 	}
 	
-	centimetric_radar = {
-
-		# radar boost in air/sea combat depends on radar level
-		enable_building = {
-			building = radar_station
-			level = 4
-		}
-		
-		path = {
-			leads_to_tech = improved_centimetric_radar 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2.5
-		start_year = 1940
-		
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			electronics
-			radar_tech
-		}
-	}
-	
-	improved_centimetric_radar = {
-
-		# radar boost in air/sea combat depends on radar level
-		enable_building = {
-			building = radar_station
-			level = 5
-		}
-		
-		path = {
-			leads_to_tech = advanced_centimetric_radar 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2.5
-		start_year = 1941
-		
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = 12 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			electronics
-			radar_tech
-		}
-	}
-	
-	advanced_centimetric_radar = {
-
-		# radar boost in air/sea combat depends on radar level
-		enable_building = {
-			building = radar_station
-			level = 6
-		}		
-		
-		research_cost = 2.5
-		start_year = 1942
-		
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			electronics
-			radar_tech
-		}
-	}
 	
 	mechanical_computing = {
 
@@ -268,7 +183,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 0.5
 		
 		folder = {
 			name = electronics_folder
@@ -303,12 +218,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 0.5
 		start_year = 1938
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -351,12 +266,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 1
 		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 10 }
+			position = { x = 2 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -395,12 +310,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 1.5
 		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 14 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -430,12 +345,12 @@ technologies = {
 		# encryption 1
 		encryption = 1
 		
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1938
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -458,7 +373,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -476,12 +391,12 @@ technologies = {
 		# encryption 3
 		encryption = 1
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -499,12 +414,12 @@ technologies = {
 		# decryption 1
 		decryption = 1
 		
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 1938
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -522,12 +437,12 @@ technologies = {
 		# decryption 2
 		decryption = 1
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 10 }
+			position = { x = 4 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -550,7 +465,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 14 }
+			position = { x = 4 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -728,7 +643,7 @@ technologies = {
 	
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 2 }
+			position = { x = 6 y = 2 }
 		}
 		
 		start_year = 1944
@@ -812,7 +727,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 4 }
 		}
 
 		path = {

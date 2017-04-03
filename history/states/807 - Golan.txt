@@ -1,0 +1,23 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower = 344000
+	
+	state_category = rural
+
+	history={
+		owner = SYR
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+		add_core_of = SYR	
+
+	}
+
+
+	provinces={
+		1074
+	}
+}

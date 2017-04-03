@@ -1,5 +1,15 @@
 #reload countrycolors
 
+ISR = {
+	color = rgb { 0 15 235 }
+	color_ui = rgb { 0 15 235 }
+}
+
+PAL = {
+	color = rgb { 0 122 61 }
+	color_ui = rgb { 0 122 61 }
+}
+
 NKR = {
 	color = rgb { 255 5 5 }
 	color_ui = rgb { 235 5 5 }
@@ -355,14 +365,9 @@ EGY = {
 	color_ui = rgb { 230 230 70 }
 }
 
-PAL = {
-	color = rgb { 170  125  80 }
-	color_ui = rgb { 170  125  80 }
-}
-
 LEB = {
-	color = rgb { 130  150  60 }
-	color_ui = rgb { 130  150  60 }
+	color = rgb { 185s 13 24 }
+	color_ui = rgb { 145 13 24 }
 }
 
 JOR = {
