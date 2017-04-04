@@ -6,9 +6,9 @@ add_namespace = syr
 
 # Egypt asks to annex Syria
 country_event = {
-	id = syr.uar
-	title = syr.uar.t
-	desc = syr.uar.d
+	id = syr.1
+	title = syr.1.t
+	desc = syr.1.d
 	picture = 
 	
 	is_triggered_only = yes
@@ -18,17 +18,16 @@ country_event = {
 	}
 	
 	option = { 	
-		name = syr.uar.a
+		name = syr.1.a
 		ai_chance = {
 			factor = 95
 		}
 		immediate =
 			news_event = { id = news.uar }
-		custom_effect_tooltip = GAME_OVER_TT
 	}
 	
 	option = { 	
-		name = syr.uar.b
+		name = syr.1.b
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -36,7 +35,8 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		EGY = { country_event = { id = egy.uar.no days = 1 }
+		EGY = { country_event = { id = egy.1 days = 1 }
 		}
+		custom_effect_tooltip = GAME_OVER_TT
 	}
 }
