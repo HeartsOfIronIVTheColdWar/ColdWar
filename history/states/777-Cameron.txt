@@ -4,6 +4,10 @@ state={
 	name="STATE_777"
 	history={
 		owner = FRA
+		add_core_of = CAR
+		victory_points = {
+			2080 3 
+		}
 		buildings = {
 			infrastructure = 2
 

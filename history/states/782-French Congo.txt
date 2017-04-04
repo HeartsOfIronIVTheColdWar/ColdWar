@@ -3,6 +3,7 @@ state={
 	name="STATE_782"
 	history={
 		owner = FRA
+		add_core_of = SCO
 		buildings = {
 			infrastructure = 2
 

@@ -2,7 +2,8 @@ state={
 	id=798
 	name="STATE_798"
 	history={
-		owner = ENG
+		owner = SAF
+		add_core_of = SAF
 		buildings = {
 			infrastructure = 3
 

@@ -2,7 +2,11 @@ state={
 	id=781
 	name="STATE_781"
 	history={
-		owner = ENG
+		owner = BEL
+		add_core_of = RWA
+		victory_points = {
+			9962 3 
+		}
 		buildings = {
 			infrastructure = 3
 
@@ -10,7 +14,7 @@ state={
 
 	}
 	provinces={
-		8144 
+		9962 
 	}
 	manpower=1000000
 	state_category=rural

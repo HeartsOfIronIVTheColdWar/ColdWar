@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = SUD
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -21,7 +22,6 @@ state={
 		victory_points = {
 			12725 1 
 		}
-		add_core_of = EGY
 
 	}
 

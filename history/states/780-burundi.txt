@@ -2,7 +2,11 @@ state={
 	id=780
 	name="STATE_780"
 	history={
-		owner = ENG
+		owner = BEL
+		add_core_of = BUI
+		victory_points = {
+			2220 3 
+		}
 		buildings = {
 			infrastructure = 3
 
@@ -10,7 +14,7 @@ state={
 
 	}
 	provinces={
-		2176 
+		2220 
 	}
 	manpower=1000000
 	state_category=rural

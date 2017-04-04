@@ -4,6 +4,7 @@ state={
 	name="STATE_790"
 	history={
 		owner = ENG
+		add_core_of = ZIM
 		buildings = {
 			infrastructure = 3
 

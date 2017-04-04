@@ -5,6 +5,10 @@ state={
 
 	history={
 		owner = FRA
+		add_core_of = CAC
+		victory_points = {
+			12830 3 
+		}
 		buildings = {
 			infrastructure = 2
 

@@ -1,4 +1,4 @@
-﻿capital = 540
+﻿capital = 701
 
 oob = "GAM_1950"
 set_research_slots = 2

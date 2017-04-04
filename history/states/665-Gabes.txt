@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = FRA
+		add_core_of = TUN
 		buildings = {
 			infrastructure = 3
 

@@ -16,7 +16,10 @@ state={
 		victory_points = {
 			10929 1 
 		}
-		add_core_of = ZIM
+		victory_points = {
+			5199 3
+		}
+		add_core_of = ZAM
 
 	}
 

@@ -1,20 +1,142 @@
 #reload countrycolors
 
+TAN = {
+	color = rgb { 35 20 110 }
+	color_ui = rgb { 35 20 110 }
+}
+
+UGA = {
+	color = rgb { 120 25 25 }
+	color_ui = rgb { 120 25 25 }
+}
+
+ZAM = {
+	color = rgb { 67 5 5 }
+	color_ui = rgb { 67 5 5 }
+}
+
+MAD = {
+	color = rgb { 45 39 168 }
+	color_ui = rgb { 45 39 168 }
+}
+
+RWA = {
+	color = rgb { 102 102 5 }
+	color_ui = rgb { 102 102 5 }
+}
+
+SOM = {
+	color = rgb { 65 137 221 }
+	color_ui = rgb { 65 137 221 }
+}
+
+MAW = {
+	color = rgb { 168 39 5 }
+	color_ui = rgb { 168 39 5 }
+}
+
+CAC = {
+	color = rgb { 5 98 5 }
+	color_ui = rgb { 5 98 5 }
+}
+
+SUD = {
+	color = rgb { 45 135 169 }
+	color_ui = rgb { 45 135 169 }
+}
+
+SCO = {
+	color = rgb { 102 109 159 }
+	color_ui = rgb { 252 209 22 }
+}
+BEN = {
+	color = rgb { 252 209 22 }
+	color_ui = rgb { 252 209 22 }
+}
+BUF = {
+	color = rgb { 255 204 102 }
+	color_ui = rgb { 255 204 102 }
+}
+BUI = {
+	color = rgb { 210 16 52 }
+	color_ui = rgb { 210 16 52 }
+}
+CAR = {
+	color = rgb { 0 122 94 }
+	color_ui = rgb { 0 122 94 }
+}
+CHA = {
+	color = rgb { 0 38 100 }
+	color_ui = rgb { 0 38 100 }
+}
+GAM = {
+	color = rgb { 129 212 247 }
+	color_ui = rgb { 129 212 247 }
+}
+GHA = {
+	color = rgb { 50 50 50 }
+	color_ui = rgb { 50 50 50 }
+}
+MAI = {
+	color = rgb { 69 44 37 }
+	color_ui = rgb { 69 44 37 }
+}
+MAU = {
+	color = rgb { 146 42 141 }
+	color_ui = rgb { 146 42 141 }
+}
+NIE = {
+	color = rgb { 224 82 6 }
+	color_ui = rgb { 224 82 6 }
+}
+NIG = {
+	color = rgb { 0 135 81 }
+	color_ui = rgb { 0 135 81 }
+}
+SEN = {
+	color = rgb { 15 71 175 }
+	color_ui = rgb { 15 71 175 }
+}
+SIL = {
+	color = rgb { 219 173 108 }
+	color_ui = rgb { 219 173 108 }
+}
+TOG = {
+	color = rgb { 200 170 0 }
+	color_ui = rgb { 200 170 0 }
+}
+IVO = {
+	color = rgb { 240 240 240 }
+	color_ui = rgb { 240 240 240 }
+}
+GAB = {
+	color = rgb { 20 20 180 }
+	color_ui = rgb { 20 20 180 }
+}
+TUN = {
+	color = rgb { 210 15 15 }
+	color_ui = rgb { 210 15 15 }
+}
+MOR = {
+	color = rgb { 141 10 10 }
+	color_ui = rgb { 141 10 10 }
+}
+ALG = {
+	color = rgb { 13 140 13 }
+	color_ui = rgb { 13 140 13 }
+}
 ISR = {
 	color = rgb { 0 15 235 }
 	color_ui = rgb { 0 15 235 }
 }
-
 PAL = {
 	color = rgb { 0 122 61 }
 	color_ui = rgb { 0 122 61 }
 }
-
 NKR = {
 	color = rgb { 255 5 5 }
 	color_ui = rgb { 235 5 5 }
 }
-
 DDR = {
 	color = rgb { 110 73 41 }
 	color_ui = rgb { 99  142  90 }
