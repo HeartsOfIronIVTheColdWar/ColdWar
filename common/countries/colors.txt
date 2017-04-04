@@ -45,7 +45,7 @@ SUD = {
 	color_ui = rgb { 45 135 169 }
 }
 
-SCO = {
+WCO = {
 	color = rgb { 102 109 159 }
 	color_ui = rgb { 252 209 22 }
 }
