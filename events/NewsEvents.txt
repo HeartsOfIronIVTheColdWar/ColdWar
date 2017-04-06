@@ -6,8 +6,8 @@ add_namespace = news
 
 # 1952 Egyptian Revolution
 news_event = {
-	id = news.egyrevolution
-	title = news.egyrevolution.t
+	id = news.520723
+	title = news.520723.t
 	picture = GFX_news_event_egyrevolution
 	
 	major = yes
@@ -31,27 +31,27 @@ news_event = {
 	}
 	
 	desc = {
-		text = news.egyrevolution.d_egy
+		text = news.520723.d_egy
 		trigger = {
 			tag = EGY
 		}
 	}
 	
 	desc = {
-		text = news.egyrevolution.d_row
+		text = news.520723.d_row
 		trigger = {
 			NOT = { tag = EGY }
 		}
 	}
 	
 	option = {
-		name = news.egyrevolution.a
+		name = news.520723.a
 		trigger = {
 			tag = EGY
 		}
 	}
 	option = {
-		name = news.egyrevolution.b
+		name = news.520723.b
 		trigger = {
 			NOT = { tag = EGY }
 		}
@@ -60,8 +60,8 @@ news_event = {
 
 # SUEZ: Egypt seizes the Suez Canal
 news_event = {
-	id = news.suez1
-	title = news.suez1.t
+	id = news.1001
+	title = news.1001.t
 	picture = GFX_news_event_suez_1
 	
 	major = yes
@@ -75,28 +75,28 @@ news_event = {
 	}
 	
 	desc = {
-		text = news.suez1.d_egy
+		text = news.1001.d_egy
 		trigger = {
 			tag = EGY
 		}
 	}
 	
 	desc = {
-		text = news.suez1.d_eng
+		text = news.1001.d_eng
 		trigger = {
 			tag = ENG
 		}
 	}
 
 	desc = {
-		text = news.suez1.d_fra
+		text = news.1001.d_fra
 		trigger = {
 			tag = FRA
 		}
 	}	
 
 	desc = {
-		text = news.suez1.d_row
+		text = news.1001.d_row
 		trigger = {
 			NOT = {
 				OR = { 
@@ -108,53 +108,53 @@ news_event = {
 		}
 	}	
 	
-	option = 
-		name = news.suez1.a
+	option = {
+		name = news.1001.a
 		trigger = {
 			tag = EGY
 		}
 	}
 
-	option =
-		name = news.suez1.b1
+	option = {
+		name = news.1001.b1
 		trigger = {
 			tag = ENG
 		}
 		custom_effect_tooltip = suez1.b1.tt
-		FRA = { country_event = { id = fra.suez1 days = 1 }
+		FRA = { country_event = { id = fra.suez1 days = 1 } }
 	}
 	
-	option =
-		name = news.suez1.b2
+	option = {
+		name = news.1001.b2
 		trigger = {
 			tag = ENG
 		}
 		custom_effect_tooltip = suez1.b2.tt
 	}
 	
-	option =
-		name = news.suez1.c
+	option = {
+		name = news.1001.c
 		trigger = {
 			tag = FRA
 		}
 	}
 	
-	option =
-		name = news.suez1.d
+	option = {
+		name = news.1001.d
 		trigger = {
 			tag = USA
 		}
 	}
 	
-	option =
-		name = news.suez1.e
+	option = {
+		name = news.1001.e
 		trigger = {
 			tag = SOV
 		}
 	}
 
-	option =
-		name = news.suez1.f
+	option = {
+		name = news.1001.f
 		trigger = {
 			NOT = {
 				OR = {
@@ -167,11 +167,12 @@ news_event = {
 			}
 		}
 	}
+}
 	
 # United Arab Republic
 news_event = {
-	id = news.uar
-	title = news.uar.t
+	id = news.580201
+	title = news.580201.t
 	picture = 
 	
 	major = yes
@@ -190,27 +191,27 @@ news_event = {
 		}
 		
 	desc = {
-		text = news.uar.d_egy
+		text = news.580201.d_egy
 		trigger = {
 			tag = EGY
 		}
 	}
 	
 	desc = {
-		text = news.uar.d_row
+		text = news.580201.d_row
 		trigger = {
 			NOT = { tag = EGY }
 		}
 	}
 	
 	option = {
-		name = news.uar.a
+		name = news.580201.a
 		trigger = {
 			tag = EGY
 		}
 	}
 	option = {
-		name = news.uar.b
+		name = news.580201.b
 		trigger = {
 			NOT = { tag = EGY }
 		}
@@ -219,8 +220,8 @@ news_event = {
 
 # ROSENBERGS: clemency
 news_event = {
-	id = news.rosenbergsclemency
-	title = news.rosenbergsclemency.t
+	id = news.530211
+	title = news.530211.t
 	picture = 
 
 	major = yes
@@ -230,20 +231,20 @@ news_event = {
 	fire_only_once = yes
 	
 	desc = {
-		text = news.rosenbergsclemency.d_usa
+		text = news.530211.d_usa
 		trigger = {
 			tag = USA
 		}
 	}
 	
 	desc = {
-		text = news.rosenbergsclemency.d_sov
+		text = news.530211.d_sov
 		trigger = {
 			tag = SOV
 		}
 	
 	desc = {
-		text = news.rosenbergsclemency.d
+		text = news.530211.d
 		trigger = {
 			NOT = {
 				tag = USA
@@ -253,20 +254,20 @@ news_event = {
 	}
 
 	option = {
-		text = news.rosenbergsclemency.a
+		text = news.530211.a
 		trigger = {
 			tag = USA
 		}
 	}
 	
 	option = {
-		text = news.rosenbergsclemency.b
+		text = news.530211.b
 		trigger = {
 			tag = SOV
 		}
 	
 	option = {
-		text = news.rosenbergsclemency.c
+		text = news.530211.c
 		trigger = {
 			NOT = {
 				tag = USA
@@ -277,8 +278,8 @@ news_event = {
 	
 # ROSENBERGS: execution
 news_event = {
-	id = news.rosenbergsexecution
-	title = news.rosenbergsexecution.t
+	id = news.530619
+	title = news.530619.t
 	picture =
 	
 	major = yes
@@ -286,29 +287,29 @@ news_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		date > 1953.6.1
+		date > 1953.2.1
 		USA = { has_country_flag = rosenbergs3 }
 	}
 	
 	mean_time_to_happen = {
-		days = 30
+		days = 120
 	}
 
 	desc = {
-		text = news.rosenbergsexecution.d_usa
+		text = news.530619.d_usa
 		trigger = {
 			tag = USA
 		}
 	}
 	
 	desc = {
-		text = news.rosenbergsexecution.d_sov
+		text = news.530619.d_sov
 		trigger = {
 			tag = SOV
 		}
 	
 	desc = {
-		text = news.rosenbergsexecution.d
+		text = news.530619.d
 		trigger = {
 			NOT = {
 				tag = USA
@@ -318,20 +319,20 @@ news_event = {
 	}
 
 	option = {
-		text = news.rosenbergsexecution.a
+		text = news.530619.a
 		trigger = {
 			tag = USA
 		}
 	}
 	
 	option = {
-		text = news.rosenbergsexecution.b
+		text = news.530619.b
 		trigger = {
 			tag = SOV
 		}
 	
 	option = {
-		text = news.rosenbergsexecution.c
+		text = news.530619.c
 		trigger = {
 			NOT = {
 				tag = USA
