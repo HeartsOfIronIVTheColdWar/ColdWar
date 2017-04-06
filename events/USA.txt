@@ -284,7 +284,7 @@ country_event = {
 	
 	option = {
 		name = usa.10001.a
-		set_country_flag = red1
+		set_country_flag = usa.10001
 	}
 }
 
