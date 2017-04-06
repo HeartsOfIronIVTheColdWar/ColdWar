@@ -23,7 +23,8 @@ country_event = {
 			factor = 95
 		}
 		immediate =
-			news_event = { id = news.uar }
+			news_event = { id = news.580201 }
+		custom_effect_tooltip = GAME_OVER_TT
 	}
 	
 	option = { 	
@@ -37,6 +38,6 @@ country_event = {
 		}
 		EGY = { country_event = { id = egy.1 days = 1 }
 		}
-		custom_effect_tooltip = GAME_OVER_TT
+
 	}
 }
