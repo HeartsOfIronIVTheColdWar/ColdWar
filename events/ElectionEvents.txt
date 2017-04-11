@@ -102,8 +102,6 @@ country_event = {
 		OR = {
 			has_idea = low_economic_mobilisation
 			has_idea = civilian_economy
-			has_idea = isolation
-			has_idea = undisturbed_isolation
 			has_idea = volunteer_only
 			has_idea = disarmed_nation
 		}
@@ -118,14 +116,6 @@ country_event = {
 		if = {
 			limit = { has_idea = civilian_economy }
 			add_ideas = low_economic_mobilisation
-		}
-		if = {
-			limit = { has_idea = isolation }
-			add_ideas = civilian_economy
-		}
-		if = {
-			limit = { has_idea = undisturbed_isolation }
-			add_ideas = isolation
 		}
 		if = {
 			limit = { has_idea = volunteer_only }
@@ -164,8 +154,8 @@ country_event = {
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
-		NOT = { has_idea = fascism_defeated }
-		fascism > 0.15
+		NOT = { has_idea = autocratic_defeated }
+		autocratic > 0.15
 	}
 	
 	option = {
@@ -182,7 +172,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.1
 		}
 		set_country_flag = coalition_with_fascists
@@ -307,7 +297,7 @@ country_event = {
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		democratic < 0.5
-		fascism < 0.5
+		autocratic < 0.5
 		communism < 0.5
 	}
 	
@@ -321,7 +311,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.1
 		}
 		set_country_flag = coalition_with_fascists
@@ -382,7 +372,7 @@ country_event = {
 		has_government = democratic
 		has_country_flag = coalition_with_fascists
 		any_other_country = {
-			has_government = fascism
+			has_government = autocratic
 			is_faction_leader = yes
 		}
 	}
@@ -402,7 +392,7 @@ country_event = {
 		}
 		random_other_country = {
 			limit = {
-				has_government = fascism
+				has_government = autocratic
 				is_faction_leader = yes
 			}
 			add_opinion_modifier = {
@@ -411,7 +401,7 @@ country_event = {
 			}			
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.05
 		}
 	}
@@ -518,7 +508,7 @@ country_event = {
 
 	trigger = {
 		has_government = democratic
-		fascism > 0.5
+		autocratic > 0.5
 		is_puppet = no
 	}
 	
@@ -528,7 +518,7 @@ country_event = {
 			base = 75			
 		}
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = autocratic
 			elections_allowed = no
 		}
 	}
@@ -539,7 +529,7 @@ country_event = {
 			base = 35			
 		}
 		start_civil_war = {
-			ideology = fascism
+			ideology = autocratic
 			size = 0.5
 		}
 	}
@@ -584,7 +574,7 @@ country_event = {
 	}
 }
 
-# Magnate Favors Fascism
+# Magnate Favors autocratic
 country_event = {
 	id = election.13
 	title = election.13.t
@@ -614,7 +604,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.10
 		}
 	}
@@ -689,7 +679,7 @@ country_event = {
 			popularity = 0.05
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.05
 		}
 	}
@@ -750,7 +740,7 @@ country_event = {
 			popularity = 0.07
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.07
 		}
 	}
@@ -773,8 +763,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = fascism
-		fascism > 0.5
+		has_government = autocratic
+		autocratic > 0.5
 	}
 	
 	option = {
@@ -800,8 +790,8 @@ country_event = {
 			}
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = fascism
-		NOT = { fascism > 0.5 }
+		has_government = autocratic
+		NOT = { autocratic > 0.5 }
 	}
 	
 	option = {

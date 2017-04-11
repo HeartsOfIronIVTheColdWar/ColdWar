@@ -18,22 +18,22 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 14
+				banned = no
 			}
 
-			fascism = {
-				popularity = 0
-				banned = yes
+			autocratic = {
+				popularity = 84
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 2
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = autocratic
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -43,7 +43,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -67,12 +67,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -114,12 +114,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -162,12 +162,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {

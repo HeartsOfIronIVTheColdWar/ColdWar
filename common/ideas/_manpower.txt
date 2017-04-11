@@ -58,7 +58,7 @@ ideas = {
 				
 				OR = {
 					threat > 0.30
-					has_government = fascism
+					has_government = autocratic
 					has_government = communism
 					AND = {
 						has_war = yes
@@ -92,7 +92,7 @@ ideas = {
 			
 			available = {
 				OR = {
-					has_government = fascism
+					has_government = autocratic
 					has_government = communism
 					AND = {
 						has_war = yes

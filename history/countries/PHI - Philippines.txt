@@ -22,7 +22,7 @@ set_national_unity = 0.55
 				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 15
 				banned = no
 			}
@@ -43,7 +43,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Phillipines_Elpidio_Quirino.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = socialism
 	traits = {
 		#
 	}
@@ -67,12 +67,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -114,12 +114,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -162,12 +162,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {

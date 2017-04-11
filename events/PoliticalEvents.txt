@@ -259,11 +259,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = fascism
+				has_government = autocratic
 			}
 			start_civil_war = {
 				ruling_party = communism
-				ideology = fascism
+				ideology = autocratic
 				size = 0.6
 			}
 		}
@@ -285,7 +285,7 @@ country_event = {
 	}
 }
 
-# Fascism on the Rise
+# autocratic on the Rise
 country_event = {
 	id = political.7
 	title = political.7.t
@@ -295,24 +295,24 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_government = fascism }
+		NOT = { has_government = autocratic }
 	}
 	
 	# Seek government support
 	option = {
 		name = political.7.a
 		custom_effect_tooltip = political.7.a.tt
-		clr_country_flag = fascism_popular_movement
-		set_country_flag = fascism_political_movement
+		clr_country_flag = autocratic_popular_movement
+		set_country_flag = autocratic_political_movement
 	}
 
 	# Seek popular support
 	option = {
 		name = political.7.b
 		custom_effect_tooltip = political.7.b.tt
-		clr_country_flag = fascism_political_movement
-		clr_country_flag = fascism_government_support
-		set_country_flag = fascism_popular_movement
+		clr_country_flag = autocratic_political_movement
+		clr_country_flag = autocratic_government_support
+		set_country_flag = autocratic_popular_movement
 	}
 }
 
@@ -325,23 +325,23 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = fascist_demagogue
-		NOT = { has_government = fascism }
-		NOT = { has_country_flag = fascism_government_support }
+		NOT = { has_government = autocratic }
+		NOT = { has_country_flag = autocratic_government_support }
 	}
 	
 	mean_time_to_happen = {
 		days = 500
 		modifier = {
 			factor = 0.5
-			has_country_flag = fascism_political_movement
+			has_country_flag = autocratic_political_movement
 		}
 	}
 	
 	option = {
 		name = political.8.a
 		custom_effect_tooltip = political.2.a.tt
-		clr_country_flag = fascism_political_movement
-		set_country_flag = fascism_government_support
+		clr_country_flag = autocratic_political_movement
+		set_country_flag = autocratic_government_support
 	}
 }
 
@@ -354,9 +354,9 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = fascist_demagogue
-		NOT = { has_government = fascism }
-		has_country_flag = fascism_government_support
-		fascism > 0.3
+		NOT = { has_government = autocratic }
+		has_country_flag = autocratic_government_support
+		autocratic > 0.3
 		is_major = no
 		is_puppet = no
 	}
@@ -365,7 +365,7 @@ country_event = {
 		days = 100
 		modifier = {
 			factor = 0.5
-			fascism > 0.4
+			autocratic > 0.4
 		}
 	}
 
@@ -376,14 +376,14 @@ country_event = {
 	option = {
 		name = political.9.a
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = autocratic
 			elections_allowed = no
 		}
 		add_timed_idea = { idea = reign_of_terror days = 730 }
 	}
 }
 
-# Civil War for Fascism
+# Civil War for autocratic
 country_event = {
 	id = political.10
 	title = political.10.t
@@ -392,8 +392,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = fascist_demagogue
-		NOT = { has_government = fascism }
-		fascism > 0.25
+		NOT = { has_government = autocratic }
+		autocratic > 0.25
 		if = {
 			limit = {
 				has_dlc = "Together for Victory"
@@ -412,7 +412,7 @@ country_event = {
 		days = 365
 		modifier = {
 			factor = 0.75
-			has_country_flag = fascism_popular_movement
+			has_country_flag = autocratic_popular_movement
 		}
 	}
 	
@@ -423,17 +423,17 @@ country_event = {
 				has_government = democratic
 			}
 			if = {
-				limit = { fascism > 0.4 }
+				limit = { autocratic > 0.4 }
 				start_civil_war = {
-					ruling_party = fascism
+					ruling_party = autocratic
 					ideology = democratic
 					size = 0.6
 				}
 			}
 			if = {
-				limit = { NOT = { fascism > 0.4 } }
+				limit = { NOT = { autocratic > 0.4 } }
 				start_civil_war = {
-					ruling_party = fascism
+					ruling_party = autocratic
 					ideology = democratic
 					size = 0.7
 				}
@@ -444,17 +444,17 @@ country_event = {
 				has_government = communism
 			}
 			if = {
-				limit = { fascism > 0.4 }
+				limit = { autocratic > 0.4 }
 				start_civil_war = {
-					ruling_party = fascism
+					ruling_party = autocratic
 					ideology = communism
 					size = 0.6
 				}
 			}
 			if = {
-				limit = { NOT = { fascism > 0.4 } }
+				limit = { NOT = { autocratic > 0.4 } }
 				start_civil_war = {
-					ruling_party = fascism
+					ruling_party = autocratic
 					ideology = communism
 					size = 0.7
 				}
@@ -465,17 +465,17 @@ country_event = {
 				has_government = neutrality
 			}
 			if = {
-				limit = { fascism > 0.4 }
+				limit = { autocratic > 0.4 }
 				start_civil_war = {
-					ruling_party = fascism
+					ruling_party = autocratic
 					ideology = neutrality
 					size = 0.6
 				}
 			}
 			if = {
-				limit = { NOT = { fascism > 0.4 } }
+				limit = { NOT = { autocratic > 0.4 } }
 				start_civil_war = {
-					ruling_party = fascism
+					ruling_party = autocratic
 					ideology = neutrality
 					size = 0.7
 				}
@@ -498,8 +498,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = fascist_demagogue
-		NOT = { has_government = fascism }
-		fascism > 0.3
+		NOT = { has_government = autocratic }
+		autocratic > 0.3
 		NOT = { has_idea = fascist_assault_divisions }
 		if = {
 			limit = {
@@ -519,14 +519,14 @@ country_event = {
 		days = 365
 		modifier = {
 			factor = 0.5
-			has_country_flag = fascism_popular_movement
+			has_country_flag = autocratic_popular_movement
 		}
 	}
 	
 	option = {
 		name = political.11.a
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.05
 		}
 		add_ideas = fascist_assault_divisions
@@ -542,8 +542,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_with_trait = fascist_demagogue
-		NOT = { has_government = fascism }
-		fascism > 0.25
+		NOT = { has_government = autocratic }
+		autocratic > 0.25
 		any_neighbor_country = {
 			has_government = communism
 		}
@@ -553,14 +553,14 @@ country_event = {
 		days = 365
 		modifier = {
 			factor = 0.5
-			has_country_flag = fascism_popular_movement
+			has_country_flag = autocratic_popular_movement
 		}
 	}
 	
 	option = {
 		name = political.12.a
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = 0.2
 		}
 	}
@@ -714,8 +714,8 @@ country_event = {
 	option = {
 		name = political.17.a
 		if = {
-			limit = { has_government = fascism }
-			add_timed_idea = { idea = fascism_defeated days = 730 }
+			limit = { has_government = autocratic }
+			add_timed_idea = { idea = autocratic_defeated days = 730 }
 		}
 		if = {
 			limit = { has_government = communism }
@@ -743,8 +743,8 @@ country_event = {
 	picture = GFX_report_event_fascist_gathering
 
 	trigger = {
-		fascism > 0.5
-		NOT = { has_government = fascism }
+		autocratic > 0.5
+		NOT = { has_government = autocratic }
 		NOT = { has_idea = fascist_revolutionaries }
 		NOT = { has_idea = reign_of_terror }
 		is_puppet = no
@@ -758,7 +758,7 @@ country_event = {
 		name = political.18.a
 		add_political_power = -100
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = -0.10
 		}
 		add_timed_idea = {
@@ -778,7 +778,7 @@ country_event = {
 	option = {
 		name = political.18.c
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = autocratic
 			elections_allowed = no
 		}
 		add_national_unity = -0.05
@@ -890,8 +890,8 @@ country_event = {
 	option = {
 		name = political.20.c
 		if = {
-			limit = { has_government = fascism }
-			add_timed_idea = { idea = fascism_defeated days = 730 }
+			limit = { has_government = autocratic }
+			add_timed_idea = { idea = autocratic_defeated days = 730 }
 		}
 		if = {
 			limit = { has_government = communism }
@@ -915,7 +915,7 @@ country_event = {
 	picture = GFX_report_event_fascist_militia
 
 	trigger = {
-		fascism > 0.7
+		autocratic > 0.7
 		has_idea = fascist_revolutionaries
 	}
 
@@ -930,7 +930,7 @@ country_event = {
 	option = {
 		name = political.21.a
 		start_civil_war = {
-			ideology = fascism
+			ideology = autocratic
 			size = 0.5
 		}
 	}
@@ -942,7 +942,7 @@ country_event = {
 				has_government = democratic
 			}
 			start_civil_war = {
-				ruling_party = fascism
+				ruling_party = autocratic
 				ideology = democratic
 				size = 0.5
 			}
@@ -952,7 +952,7 @@ country_event = {
 				has_government = communism
 			}
 			start_civil_war = {
-				ruling_party = fascism
+				ruling_party = autocratic
 				ideology = communism
 				size = 0.5
 			}
@@ -962,7 +962,7 @@ country_event = {
 				has_government = neutrality
 			}
 			start_civil_war = {
-				ruling_party = fascism
+				ruling_party = autocratic
 				ideology = neutrality
 				size = 0.5
 			}
@@ -1019,11 +1019,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = fascism
+				has_government = autocratic
 			}
 			start_civil_war = {
 				ruling_party = communism
-				ideology = fascism
+				ideology = autocratic
 				size = 0.5
 			}
 		}
@@ -1089,12 +1089,12 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = fascism
+				has_government = autocratic
 			}
-			add_timed_idea = { idea = fascism_defeated days = 730 }			
+			add_timed_idea = { idea = autocratic_defeated days = 730 }			
 			start_civil_war = {
 				ruling_party = democratic
-				ideology = fascism
+				ideology = autocratic
 				size = 0.5
 			}
 		}
@@ -1121,7 +1121,7 @@ country_event = {
 	picture = GFX_report_event_fascists_posing
 
 	trigger = {
-		fascism < 0.3
+		autocratic < 0.3
 		has_idea = fascist_revolutionaries
 	}
 
@@ -1182,8 +1182,8 @@ country_event = {
 	id = political.27
 	title = political.27.t
 	desc = { 
-		text = political.27.d_fascism
-	 	trigger = { has_government = fascism }
+		text = political.27.d_autocratic
+	 	trigger = { has_government = autocratic }
 	}
 	desc = { 
 		text = political.27.d_communism
@@ -1193,7 +1193,7 @@ country_event = {
 
 	trigger = {
 		OR = {
-			has_government = fascism
+			has_government = autocratic
 			has_government = communism
 		}
 		has_idea = neutrality_idea

@@ -2,66 +2,6 @@ ideas = {
 
 	economy = { 
 		law = yes
-		undisturbed_isolation = {
-			
-			
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-		
-			modifier = {
-				consumer_goods_factor = 0.40
-				production_speed_industrial_complex_factor = -0.5
-				production_speed_arms_factory_factor = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
-				conversion_cost_mil_to_civ_factor = 0.5
-				generate_wargoal_tension = 1.00
-				join_faction_tension = 0.20
-				lend_lease_tension = 0.50
-				send_volunteers_tension = 0.20
-				guarantee_tension = 0.75
-			}
-			
-			allowed_to_remove = {
-				OR = {
-					threat > 0.5
-					has_war = yes
-				}
-			}
-			
-			cancel_if_invalid = no
-		}
-		
-		isolation = {
-			
-			
-			
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.35
-				production_speed_industrial_complex_factor = -0.4
-				production_speed_arms_factory_factor = -0.4
-				conversion_cost_civ_to_mil_factor= 0.4
-				conversion_cost_mil_to_civ_factor = 0.4
-				generate_wargoal_tension = 1.00
-				join_faction_tension = 0.20
-				send_volunteers_tension = 0.20
-				guarantee_tension = 0.5
-			}
-			allowed_to_remove = {
-				OR = {
-					threat > 0.75
-					has_war = yes					
-				}
-			}
-			
-			cancel_if_invalid = no
-		}
 		
 		civilian_economy = {
 			
@@ -87,10 +27,10 @@ ideas = {
 			
 			available = {
 				OR = {
-					has_government = fascism
+					has_government = autocratic
 					has_government = communism
 					has_war = yes
-					threat > 0.05
+					threat > 0.20
 				}			
 			}
 			
@@ -123,10 +63,10 @@ ideas = {
 			
 			available = {
 				OR = {
-					has_government = fascism
+					has_government = autocratic
 					has_government = communism
 					has_war = yes
-					threat > 0.15
+					threat > 0.50
 				}			
 			}
 
@@ -154,9 +94,9 @@ ideas = {
 			
 			
 			available = {
-				threat > 0.15
+				threat > 0.80
 				OR = {
-					has_government = fascism
+					has_government = autocratic
 					has_government = communism
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
@@ -164,7 +104,7 @@ ideas = {
 						any_enemy_country = {
 							ic_ratio = { 
 								tag = ROOT 
-								ratio > 0.4
+								ratio > 0.25
 							}
 						}
 					}
@@ -200,7 +140,6 @@ ideas = {
 			
 			available = {
 				has_war = yes
-				threat > 0.2
 				any_enemy_country = {
 					ic_ratio = { 
 						tag = ROOT 
@@ -329,7 +268,7 @@ ideas = {
 			available = {
 				OR = {
 					OR = { 
-						has_government = fascism
+						has_government = autocratic
 						has_government = communism
 					}
 					OR = {

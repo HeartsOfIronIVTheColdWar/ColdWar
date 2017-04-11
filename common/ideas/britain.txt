@@ -154,7 +154,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = autocratic
 				}
 			}
 			

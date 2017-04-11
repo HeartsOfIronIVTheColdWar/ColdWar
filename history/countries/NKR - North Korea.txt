@@ -18,11 +18,11 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 7
+				popularity = 12
 				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 2
 				banned = no
 			}
@@ -30,9 +30,6 @@ set_national_unity = 0.55
 			communism = {
 				popularity = 85
 				#banned = no #default is no
-			}
-			neutrality = {
-				popularity = 5
 			}
 		}
 		
@@ -69,35 +66,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 35
+				popularity = 12
 				banned = no
 			}
 
-			fascism = {
-				popularity = 15
+			autocratic = {
+				popularity = 2
 				banned = no
 			}
 			
 			communism = {
-				popularity = 0
-				#banned = yes #default is no
-			}
-			neutrality = {
-				popularity = 50
+				popularity = 85
+				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = neutrality 
+		ruling_party = communism 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Syngman Rhee"
+	name = "Kim Il Sung"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "Portrait_South_NKRea_Syngman_Rhee.dds"
+	picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = stalinism
 	traits = {
 		#
 	}
@@ -119,32 +113,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 12
+				banned = no
 			}
 
-			fascism = {
-				popularity = 0
-				banned = yes
+			autocratic = {
+				popularity = 2
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 85
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
-		last_election = "1950.1.1"
+		ruling_party = communism 
+		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
-	}	
+	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Kim Il Sung"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = stalinism
 	traits = {
 		#
 	}
@@ -167,32 +161,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
-				banned = yes
+				popularity = 12
+				banned = no
 			}
 
-			fascism = {
-				popularity = 0
-				banned = yes
+			autocratic = {
+				popularity = 2
+				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 85
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
-		last_election = "1950.1.1"
+		ruling_party = communism 
+		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Kim Il Sung"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = stalinism
 	traits = {
 		#
 	}

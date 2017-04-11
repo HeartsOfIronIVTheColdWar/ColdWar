@@ -20,12 +20,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 11
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 4
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -46,7 +46,7 @@ set_national_unity = 0.55
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		#
+		stalins_puppet
 	}
 	}
 	set_technology = {
@@ -68,12 +68,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -115,12 +115,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -163,12 +163,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {

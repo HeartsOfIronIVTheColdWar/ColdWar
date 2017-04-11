@@ -28,21 +28,17 @@ set_national_unity = 0.55
 				popularity = 37
 			}
 
-			fascism = {
-				popularity = 23
+			autocratic = {
+				popularity = 63
 			}
 			
 			communism = {
 				popularity = 0
 				#banned = yes #default is no
 			}
-			
-			neutrality = { 
-				popularity = 40
-			}
 		}
 	
-	ruling_party = neutrality
+	ruling_party = autocratic
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -52,7 +48,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_ZHANG_LAN_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -76,12 +72,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -123,12 +119,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -171,12 +167,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {

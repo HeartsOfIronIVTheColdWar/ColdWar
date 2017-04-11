@@ -18,35 +18,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 20
+				popularity = 64
 				banned = no
 			}
 
-			fascism = {
-				popularity = 24
+			autocratic = {
+				popularity = 36
 				banned = no
 			}
 			
 			communism = {
-				popularity = 16
+				popularity = 0
 				#banned = no #default is no
-			}
-			neutrality = {
-				popularity = 40
 			}
 		}
 		
-		ruling_party = neutrality
-		last_election = "1950.1.1"
+		ruling_party = democratic
+		last_election = "1948.1.1"
 		election_frequency = 48
-		elections_allowed = no
+		elections_allowed = yes
 	}
 	create_country_leader = {
 	name = "İsmet İnönü"
 	desc = "POLITICS_ISMET_INÖNÜ_DESC"
 	picture = "Portrait_Turkey_Ismet_Inonu.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = socialism
 	traits = {
 		#
 	}
@@ -70,12 +67,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -117,12 +114,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -165,12 +162,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {

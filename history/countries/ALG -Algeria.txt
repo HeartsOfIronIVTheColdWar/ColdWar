@@ -22,8 +22,8 @@ set_national_unity = 0.55
 				banned = no
 			}
 
-			fascism = {
-				popularity = 10
+			autocratic = {
+				popularity = 70
 				banned = no
 			}
 			
@@ -31,12 +31,9 @@ set_national_unity = 0.55
 				popularity = 5
 				#banned = no #default is no
 			}
-			neutrality = {
-				popularity = 60
-			}
 		}
 		
-		ruling_party = communism
+		ruling_party = autocratic
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -70,12 +67,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -117,12 +114,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -165,12 +162,12 @@ set_national_unity = 0.55
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {

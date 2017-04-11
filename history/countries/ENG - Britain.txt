@@ -20,7 +20,7 @@ set_national_unity = 0.85
 				popularity = 95
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 1
 			}
 			
@@ -104,16 +104,6 @@ set_national_unity = 0.85
 		}
 	}
 	create_country_leader = {
-		name = "Oswald Mosley"
-		desc = "POLITICS_OSWALD_MOSLEY_DESC"
-		picture = "Portrait_Britain_Oswald_Mosley.dds"
-		expire = "1965.1.1"
-		ideology = fascism_ideology
-		traits = {
-			
-		}
-	}
-	create_country_leader = {
 		name = "Rajani Palme Dutt"
 		desc = "POLITICS_PALME_DUTT_DESC"
 		picture = "Portrait_Britain_Palme_Dutt.dds"
@@ -143,12 +133,12 @@ set_national_unity = 0.85
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -190,12 +180,12 @@ set_national_unity = 0.85
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -238,12 +228,12 @@ set_national_unity = 0.85
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {

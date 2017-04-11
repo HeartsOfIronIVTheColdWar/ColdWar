@@ -18,7 +18,7 @@ set_national_unity = 0.8
 				popularity = 14
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 4
 			}
 			
@@ -64,12 +64,12 @@ set_national_unity = 0.8
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -111,12 +111,12 @@ set_national_unity = 0.8
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
@@ -159,12 +159,12 @@ set_national_unity = 0.8
 		parties = {
 			democratic = { 
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
-				banned = yes
+				banned = no
 			}
 			
 			communism = {
