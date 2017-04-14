@@ -78,11 +78,25 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
+			}		
+		}
+		
+		rationing = {
+			allowed = {
+				always = no
 			}
 			
-			rule = {
-				can_create_factions = yes
-			}			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_cost = 0.15
+				unity_factor = -0.10
+			}		
 		}
 	}
 	
