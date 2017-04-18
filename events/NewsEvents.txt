@@ -25,6 +25,9 @@ news_event = {
 				picture = "Portrait_Egypt_Mohammed_Naguib.dds"
 				expire = "1984.8.28"
 				ideology = despotic
+				traits = {
+				
+				}
 			}
 			set_party_name = { ideology = autocratic long_name = EGY_free_officers_movement name = EGY_free_officers }
 		}
