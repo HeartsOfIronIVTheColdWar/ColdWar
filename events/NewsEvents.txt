@@ -24,7 +24,7 @@ news_event = {
 				desc = "POLITICS_NAGUIB_DESC"
 				picture = "Portrait_Egypt_Mohammed_Naguib.dds"
 				expire = "1984.8.28"
-				ideology = despotic
+				ideology = despotism
 				traits = {
 				
 				}
