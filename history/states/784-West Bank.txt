@@ -5,7 +5,7 @@ state={
 		victory_points = {
 			1086 20 
 		}
-		owner = PAL
+		owner = JOR
 		buildings = {
 			infrastructure = 5
 

@@ -13,7 +13,6 @@ state={
 
 	history={
 		owner = YUG
-		add_core_of = MNT
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -22,9 +21,11 @@ state={
 			}
 		}
 		add_core_of = YUG
+		add_core_of = SER
+		add_core_of = MNT
 	}
 
 	provinces={
-		833 867 937 3922 6913 6940 9809 9821 9849 9874 11858 
+		937 3922 6913 9809 9821 11858 
 	}
 }

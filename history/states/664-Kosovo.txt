@@ -1,8 +1,8 @@
 
 state={
-	id=108
-	name="STATE_108" # Morava
-	manpower = 1533000
+	id=664
+	name="STATE_664" # Kosovo
+	manpower = 895500
 	
 	state_category = town
 	
@@ -13,13 +13,13 @@ state={
 	history={
 		owner = YUG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 		}
 		add_core_of = YUG
 		add_core_of = SER 
 	}
 
 	provinces={
-		630 3939 6970 6998 9602 9756 9906 11857 11868 11887 
+		6940 6953 9849 9874 9890 
 	}
 }
