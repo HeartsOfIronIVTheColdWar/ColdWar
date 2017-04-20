@@ -2,10 +2,10 @@ state={
 	id=763
 	name="STATE_763"
 	provinces={
-		1057 1060 1140 4191 10104 10754 10785 11951
+		1057 1060 1140 1994 4191 7985 10104 10754 10785 11951
 	}
 	history={
-		owner = ENG
+		owner = LBA
 		buildings = {
 			infrastructure = 0
 
