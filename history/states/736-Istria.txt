@@ -2,12 +2,12 @@ state={
 	id=736
 	name="STATE_736"
 	
-	state_category = city
+	state_category = enclave
 
 	history={
 		owner = YUG
-		add_core_of = ITA
 		add_core_of = YUG
+		add_core_of = CRO
 		buildings = {
 			infrastructure = 2
 			11735 = {
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		599 6626 11595 11735 
+		11735 
 	}
 	manpower=1063159
 	buildings_max_level_factor=1.000

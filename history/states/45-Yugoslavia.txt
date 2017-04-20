@@ -4,7 +4,7 @@ state={
 	name="STATE_45" # Vojvodina
 	manpower = 1026200
 	
-	state_category = rural
+	state_category = large_town
 
 	history={
 		owner = YUG
@@ -16,6 +16,6 @@ state={
 	}
 
 	provinces={
-		619 3617 3623 9608 9621 
+		614 619 3614 3617 3623 6643 9621 11577 11580 11787
 	}
 }
