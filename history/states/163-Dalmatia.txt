@@ -2,22 +2,26 @@ state=
 {
 	id=163
 	name="STATE_163"
-	manpower = 18000
+	manpower = 294748
+	resources = {
+		steel=50
+	}
 	
-	state_category = enclave
+	state_category = town
 	
 	history={
-		owner = YUG
-		add_core_of = YUG
-		add_core_of = CRO
+		owner = SAA
+		add_core_of = GER
+		add_core_of = WGR
+		add_core_of = SAA
 		buildings = {
-			infrastructure = 5
-			3943 = {
-				naval_base = 1
-			}
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 3
 		}
+		victory_points = { 11531 5 }
 	} 
 	provinces={	
-		3943 
+		11531
 	}
 }

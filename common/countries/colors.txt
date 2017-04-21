@@ -599,6 +599,13 @@ PAK = {
 	color = rgb { 21 38 66 }
 	color_ui = rgb { 21 38 66 }
 }
+TRI = {
+	color = rgb { 227  19  23 }
+	color_ui = rgb { 227  19  23 }
+}
+SAA = {
+	color = rgb { 244  42  65 }
+	color_ui = rgb { 244  42  65 }
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

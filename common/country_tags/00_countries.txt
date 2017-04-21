@@ -143,6 +143,8 @@ MAD = "countries/Madagascar.txt"
 ZAM = "countries/Zambia.txt"
 UGA = "countries/Uganda.txt"
 TAN = "countries/Tanzania.txt"
+TRI = "countries/Trieste.txt"
+SAA = "countries/Saarland.txt"
 
 
 

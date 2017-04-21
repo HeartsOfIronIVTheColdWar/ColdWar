@@ -4,7 +4,7 @@ state={
 	name="STATE_42"
 	manpower = 3027739
 	resources={
-		steel=100
+		steel=50
 		aluminium=24
 	}
 	
@@ -19,11 +19,12 @@ state={
 
 		}
 		add_core_of = GER
+		add_core_of = WGR
 		
 	}
 
 	provinces={
-		563 3423 3558 9575 11435 11470 11494 11531 11547 
+		563 3423 3558 9575 11435 11470 11494 11547 
 	}
 	
 	
