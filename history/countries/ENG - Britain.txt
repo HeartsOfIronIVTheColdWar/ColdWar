@@ -54,7 +54,7 @@ set_national_unity = 0.85
 		freedom_level = 0.4
 	}
 	set_autonomy = {
-		target = SWI
+		target = SAF
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}

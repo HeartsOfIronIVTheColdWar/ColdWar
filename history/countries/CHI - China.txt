@@ -18,7 +18,6 @@ set_national_unity = 0.55
 	#	target = PRC
 	#	type = annex_everything
 	#}
-	give_military_access = CHI
 	add_opinion_modifier = { target = JAP modifier = hostile_status }
 	add_opinion_modifier = { target = PRC modifier = hostile_status }
 	set_politics = {
@@ -44,9 +43,9 @@ set_national_unity = 0.55
 	elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Zhang Lan"
+	name = "Li Zongren"
 	desc = "POLITICS_ZHANG_LAN_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	picture = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
