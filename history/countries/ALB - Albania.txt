@@ -40,11 +40,11 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Enver Hoxha"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_Albania_Enver_Hoxha.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = stalinism
 	traits = {
 		stalins_puppet
 	}
