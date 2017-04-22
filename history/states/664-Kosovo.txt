@@ -15,8 +15,12 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			9890 3
+		}
 		add_core_of = YUG
-		add_core_of = SER 
+		add_core_of = SER
+		add_core_of = KOS
 	}
 
 	provinces={

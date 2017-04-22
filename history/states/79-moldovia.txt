@@ -11,8 +11,12 @@ state={
 			air_base = 2
 
 		}
+		victory_points = {
+			3707 5
+		}
 		add_core_of = SOV
 		add_core_of = ROM
+		add_core_of = MOL
 
 	}
 

@@ -606,6 +606,27 @@ TRI = {
 SAA = {
 	color = rgb { 244  42  65 }
 	color_ui = rgb { 244  42  65 }
+}
+BOS = {
+	color = rgb { 0  62  158 }
+	color_ui = rgb { 0  62  158 }
+}
+KOS = {
+	color = rgb { 207  165  80 }
+	color_ui = rgb { 207  165  80 }
+}
+MAC = {
+	color = rgb { 210  0  0 }
+	color_ui = rgb { 210  0  0 }
+}
+MOL = {
+	color = rgb { 176  127  85 }
+	color_ui = rgb { 176  127  85 }
+}
+SLV = {
+	color = rgb { 0  93  164 }
+	color_ui = rgb { 0  93  164 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

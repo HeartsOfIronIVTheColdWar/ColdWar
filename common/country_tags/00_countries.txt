@@ -145,6 +145,11 @@ UGA = "countries/Uganda.txt"
 TAN = "countries/Tanzania.txt"
 TRI = "countries/Trieste.txt"
 SAA = "countries/Saarland.txt"
+BOS = "countries/Bosnia.txt"
+KOS = "countries/Kosovo.txt"
+MAC = "countries/Macedonia.txt"
+MOL = "countries/Moldova.txt"
+SLV = "countries/Slovenia.txt"
 
 
 

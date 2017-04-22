@@ -20,6 +20,7 @@ state=
 			9627 3 
 		}
 		add_core_of = YUG
+		add_core_of = SLV
 	}
 	provinces={
 		596 599 665 3631 3654 6650 6672 9596 9627 11595 11612 	}
