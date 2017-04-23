@@ -29,7 +29,7 @@ news_event = {
 				
 				}
 			}
-			set_party_name = { ideology = autocratic long_name = EGY_free_officers_movement name = EGY_free_officers }
+			set_party_name = { ideology = autocratic long_name = EGY_free_officers_movement name = EGY_free_officers_movement }
 		}
 	}
 	
@@ -192,7 +192,31 @@ news_event = {
 				transfer_troops = yes } 
 			add_named_threat = { threat = 3 name = egy.1_threat_SYR }
 		}
-		
+		554 = {
+			if = {
+				limit = { is_core_of = SYR}
+				add_core_of = EGY
+			}
+		}
+		677 = {
+			if = {
+				limit = { is_core_of = SYR}
+				add_core_of = EGY
+			}
+		}
+		680 = {
+			if = {
+				limit = { is_core_of = SYR}
+				add_core_of = EGY
+			}
+		}
+		807 = {
+			if = {
+				limit = { is_core_of = SYR}
+				add_core_of = EGY
+			}
+		}
+	}
 	desc = {
 		text = news.580201.d_egy
 		trigger = {

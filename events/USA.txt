@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # USA Cold War Mod Events
 ###########################
 
@@ -374,20 +374,21 @@ country_event = {
 }
 
 # RED SCARE: Fall of McCarthy
-country_event = {
-	id
-	title
-	desc
-	picture
-	
-	trigger
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen
-	
-	option = {
-		
+# country_event = {
+#	id
+#	title
+#	desc
+#	picture
+#	
+#	trigger
+#	
+#	fire_only_once = yes
+#	
+#	mean_time_to_happen
+#	
+#	option = {
+#	}
+# }
 
 # ROSENBERGS: Arrest
 country_event = {
