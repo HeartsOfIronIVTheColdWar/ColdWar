@@ -1,8 +1,7 @@
-l_english:
- JAP_USA_autocratic:0 "Occupied Japan"
+﻿l_english:
+ JAP_subject:0 "Occupied Japan"
  EGY_REP_autocratic:0 "Egypt"
  EGY_REP_autocratic_DEF:0 "Egypt"
- EGY_REP_autocratic_ADJ:0 "Egyptian"
  UAR_autocratic:0 "United Arab Republic"
  UAR_autocratic_DEF:0 "The United Arab Republic"
  UAR_autocratic_ADJ:0 "UAR"
