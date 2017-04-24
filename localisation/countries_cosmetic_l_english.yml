@@ -8,6 +8,7 @@
  UAR_autocratic_ADJ:0 "UAR"
  SAA_subject:0 "Saar Protectorate"
  SAA_subject_DEF:0 "The Saar Protectorate"
+ CYR_autocratic:0 "Cyrenaica"
  INS_subject:0 "$OVERLORDADJ$ East Indies"
  INS_subject_DEF:0 "The $OVERLORDADJ$ East Indies"
  COG_subject:0 "$OVERLORDADJ$ Congo"
