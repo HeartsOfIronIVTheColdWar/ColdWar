@@ -20,6 +20,7 @@ state={
 
 		}
 		add_core_of = GER
+		add_core_of = DDR
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3

@@ -50,6 +50,7 @@ set_national_unity = 0.55
 	}
 	set_technology = {
 	}
+	puppet = PAL
 }
 
 1960.1.1 = {
