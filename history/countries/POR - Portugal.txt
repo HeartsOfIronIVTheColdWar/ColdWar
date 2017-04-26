@@ -48,7 +48,6 @@ set_national_unity = 0.55
 			#
 		}
 	}
-
 	set_technology = {
 	}
 }

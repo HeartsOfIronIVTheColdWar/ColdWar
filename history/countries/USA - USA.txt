@@ -95,6 +95,18 @@ set_national_unity = 0.85
 		ww2_destroyer = 1
 		base_strike = 1
 	}
+	create_field_marshal = {
+	name = "Arturo Rawson"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	traits = { inspirational_leader organisational_leader offensive_doctrine logistics_wizard old_guard defensive_doctrine fast_planner thorough_planner }
+	skill = 5
+	}
+	create_corps_commander = {
+	name = "Juan Pistarini"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = { urban_assault_specialist fortress_buster trickster winter_specialist trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger naval_invader }
+	skill = 5
+	}
 }
 
 1960.1.1 = {

@@ -43,9 +43,9 @@ set_national_unity = 0.55
 	elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Li Zongren"
+	name = "Chiang Kai Shek"
 	desc = "POLITICS_ZHANG_LAN_DESC"
-	picture = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
