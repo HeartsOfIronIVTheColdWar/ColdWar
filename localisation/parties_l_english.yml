@@ -287,6 +287,8 @@
  CHL_communism_party:0 "PCCh"
  CHL_communism_party_long:0 "Partido Comunista de Chile"
  ETH_autocratic_party:0 "Solomonic Dynasty"
+ ETH_communist_party:0 "Derg"
+ ETH_communist_party_long:0 "The Derg"
  ALB_autocratic_party:0 "House of Zogu"
  ALB_autocratic_party_long:0 "House of Zogu"
  BOL_democratic_party:0 "PL"

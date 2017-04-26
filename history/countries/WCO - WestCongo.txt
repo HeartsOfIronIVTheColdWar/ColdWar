@@ -18,22 +18,22 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 0
+				popularity = 50
 				banned = yes
 			}
 
-			fascism = {
-				popularity = 0
+			autocratic = {
+				popularity = 40
 				banned = yes
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 10
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = democratic
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
