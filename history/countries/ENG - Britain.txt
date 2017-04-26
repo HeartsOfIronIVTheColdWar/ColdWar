@@ -45,10 +45,6 @@ set_national_unity = 0.85
 		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
-		target = EGY
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
 		target = CAN
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
@@ -69,9 +65,7 @@ set_national_unity = 0.85
 		freedom_level = 0.2
 	}
 	else = {
-		puppet = MAL
-		puppet = EGY
-		
+		puppet = MAL		
 	}
 	}
 	create_country_leader = {

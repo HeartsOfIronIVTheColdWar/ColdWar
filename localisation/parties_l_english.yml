@@ -5,7 +5,7 @@
  democratic_noun:0 "Democracy"
  autocratic:0 "Autocratic"
  autocratic_noun:0 "Autocracy"
- autocratic_desc:0 "Totalitarian Regime"
+ autocratic_desc:0 "Authoritarian Regime"
  communism_desc:0 "Totalitarian Regime"
  democratic_desc:0 "Democratic Regime"
  conservatism:0 "Conservatism"
@@ -32,8 +32,6 @@
  falangism_desc:0 "An authoritarian ideology with traits of autocratic and conservatism, Falangism values national and Catholic identity."
  rexism:0 "Rexism"
  rexism_desc:0 "Strongly opposed to both liberal and communist ideals, Rexism is a staunchly conservative nationalist movement who advocate a corporatist economic policy. Employing increasingly populist and authoritarian rhetoric, their ideals are shifting closer to other fascist movements."
- neutrality:0 "Non-Aligned"
- neutrality_desc:0 "Authoritarian Regime"
  despotism:0 "Despotic"
  despotism_desc:0 "Despotism is a form of government in which a single person rules with absolute power."
  oligarchism:0 "Oligarchic"
@@ -92,7 +90,7 @@
  SPR_communism_party_long:0 "Partido Comunista de España"
  SPR_neutrality_party:0 "PRR"
  SPR_neutrality_party_long:0 "Partido Republicano Radical"
- POR_autocratic_party:0 "Estado Novo"
+ POR_autocratic_party:0 "National Union"
  POR_communism_party:0 "PCP"
  POR_communism_party_long:0 "Partido Comunista Português"
  POR_democratic_party:0 "PD"
@@ -202,7 +200,6 @@
  YUG_communism_party_long:0 "Komunisticna partija Jugoslavije"
  YUG_democratic_party:0 "Demokratska stranka"
  YUG_democratic_party_long:0 "Jugoslovanska demokratska stranka"
- YUG_neutrality_party:0 "Regency Council"
  YUG_autocratic_party:0 "JRZ"
  YUG_autocratic_party_long:0 "Jugoslovanska radikalna skupnost"
  SER_communism_party:0 "League of Communists"
@@ -213,7 +210,6 @@
  SER_autocratic_party_long:1 "Government of National Salvation"
  SER_neutrality_party:0 "Royalists"
  SER_neutrality_party_long:0 "Royalists"
- BUL_neutrality_party:0 "Tsar Boris loyalists"
  BUL_communism_party:0 "BCP"
  BUL_communism_party_long:0 "Bulgarian Communist Party"
  BUL_democratic_party:0 "UPPP"
@@ -410,12 +406,12 @@
  EGY_autocratic_party:0 "Muhammad Ali Dynasty"
  EGY_democratic_party:0 "Liberation Rally"
  EGY_free_officers_movement:0 "Free Officers Movement"
- PAL_autocratic_party:0 "Al-Muqaddas"
+ PAL_autocratic_party:0 "APG"
+ PAL_autocratic_party_long:0 "All-Palestine Government"
  PAL_communism_party:0 "NLL"
  PAL_communism_party_long:0 "National Liberation League"
  PAL_democratic_party:0 "SMC"
  PAL_democratic_party_long:0 "Supreme Muslim Council"
- PAL_neutrality_party:0 "Loyalists"
  ISR_communism_party:0 "Maki"
  ISR_democratic_party:0 "Mapai"
  ISR_autocratic_party:0 "Helpam"
@@ -431,7 +427,6 @@
  INS_autocratic_party:0 "New Order" #inspired by right wingers from 1960s
  INS_democratic_party:0 "PNI" #Indonesian National Party founded by Sukarno
  INS_communism_party:0 "PKI" #Partai Komunis Indonesia
- INS_neutrality_party:0 "Democrats" #made up, in reality this guy was a member of PNI 
  MAL_autocratic_party:0 "Panoceanic Unionists"
  MAL_democratic_party:0 "United Malays National Organisation" #or UMNO or PEKEMBAR
  MAL_communism_party:0 "Malayan Communist Party" #or MCP
@@ -443,7 +438,7 @@
  MNT_autocratic_party:0 "Greens"
  MNT_democratic_party:0 "Democracy League"
  MNT_communism_party:0 "Communist Party of Montenegro" #or KPCG
- MNT_neutrality_party:0 "Federalist Party" # Montenegrin ultra nationalists, start democtratic right wing but went full fascist collaboration in '41
+ MNT_neutrality_party:0 "Federalist Party" # Montenegrin ultra nationalists, start democratic right wing but went full fascist collaboration in '41
  UKR_autocratic_party:0 "OUN"
  UKR_democratic_party:0 "Ukrainian National Democratic Alliance" # or UNDO
  UKR_communism_party:0 "Communist Party of Ukraine"

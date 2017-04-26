@@ -16,7 +16,6 @@ state={
 		victory_points = {
 			6488 20.0 
 		}
-		add_core_of = GER
 		add_core_of = WGR
 
 		1939.1.1 = {

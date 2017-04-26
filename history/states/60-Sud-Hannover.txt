@@ -19,7 +19,6 @@ state={
 			industrial_complex = 1
 
 		}
-		add_core_of = GER
 		add_core_of = DDR
 		1939.1.1 = {
 			buildings = {
