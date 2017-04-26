@@ -39,15 +39,16 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = corporatism
-	traits = {
-		#
+		name = "António de Oliveira Salazar"
+		desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+		picture = "Portrait_Portugal_Antonio_de_Oliveira_Salazar.dds"
+		expire = "1970.7.27"
+		ideology = despotism
+		traits = {
+			#
+		}
 	}
-	}
+
 	set_technology = {
 	}
 }

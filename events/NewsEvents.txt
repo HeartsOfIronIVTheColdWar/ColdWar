@@ -176,7 +176,7 @@ news_event = {
 news_event = {
 	id = news.580201
 	title = news.580201.t
-	picture = 
+	picture = GFX_news_event_uar
 	
 	major = yes
 	
