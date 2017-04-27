@@ -39,7 +39,7 @@ country_event = {
 	id = usa.50
 	title = usa.50.t
 	desc = usa.50.d
-	picture = GFX_report_event_usa_election_generic
+	picture = GFX_report_event_hawaii
 	
 	trigger = {
 		tag = USA

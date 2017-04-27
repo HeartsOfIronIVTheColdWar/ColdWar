@@ -1,0 +1,23 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_event_egyrevolution"
+		texturefile = "gfx/event_pictures/news_event_egyrevolution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_suez_1"
+		texturefile = "gfx/event_pictures/news_event_suez_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_uar"
+		texturefile = "gfx/event_pictures/news_event_uar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_hawaii"
+		texturefile = "gfx/event_pictures/report_event_hawaii.dds"
+	}
+	
+}

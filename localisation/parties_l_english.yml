@@ -335,6 +335,8 @@
  IRE_neutrality_party_long:0 "Páirtí an Lucht Oibre"
  AFG_autocratic_party:0 "Barakzai"
  AFG_autocratic_party_long:0 "House of Barakzai"
+ AFG_communism_party:0 "PDPA"
+ AFG_communism_party_long:0 "People's Democratic Party of Afghanistan" # founded 1965, idk who the major communists in Afghanistan were before them though
  LUX_democratic_party:0 "Rietspartei"
  LUX_communism_party:0 "KPL"
  LUX_communism_party_long:0 "Kommunistesch Partei Lëtzebuerg"

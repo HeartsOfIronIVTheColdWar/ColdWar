@@ -5,6 +5,17 @@ set_research_slots = 2
 set_convoys = 80
 set_national_unity = 0.55
 
+if = { 
+	limit = { NOT = { has_dlc = "Together for Victory" } }
+	set_cosmetic_tag = CAN_ALY
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	set_cosmetic_tag = CAN_UK
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
 1950.1.1 = {
 	
 	oob = "CAN_1950"
