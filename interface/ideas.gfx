@@ -2938,5 +2938,9 @@ spriteTypes = {
 		name = "GFX_idea_nato_idea"
 		texturefile = "gfx/interface/ideas/nato_idea.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_rationing_idea"
+		texturefile = "gfx/interface/ideas/rationing_idea.dds"
+	}
 	
 }
