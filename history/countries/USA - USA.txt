@@ -12,6 +12,7 @@ set_national_unity = 0.85
 		free_trade
 		home_of_the_free
 		marshall_plan
+		nato_idea
 	}
 	set_politics = {
 

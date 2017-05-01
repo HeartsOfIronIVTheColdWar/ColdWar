@@ -13,6 +13,7 @@ set_national_unity = 0.85
 		ENG_george_vi
 		colonial_protests
 		rationing
+		nato_idea
 	}
 	set_politics = {
 

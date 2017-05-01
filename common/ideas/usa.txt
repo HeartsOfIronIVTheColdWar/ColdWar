@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 	
+	
+		nato_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = nato_idea
+			
+			modifier = {
+				communism_drift = 0.02
+				consumer_goods_factor = 0.05
+				
+			}
+		}
+	
 		banana_republics = {
 			
 			allowed = {

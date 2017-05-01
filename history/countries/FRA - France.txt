@@ -11,6 +11,7 @@ set_national_unity = 0.7
 	add_ideas = {
 		FRA_disjointed_government
 		FRA_dilemmes_coloniaux
+		nato_idea
 	}
 	set_politics = {
 
