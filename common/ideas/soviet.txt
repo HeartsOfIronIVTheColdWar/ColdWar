@@ -165,7 +165,7 @@ ideas = {
 		SOV_great_patriotic_war_winner = {
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = SOV_great_patriotic_war
 			
 			allowed = {
 				always = no # Added via event

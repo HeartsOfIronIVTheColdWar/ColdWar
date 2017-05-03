@@ -209,7 +209,7 @@ ideas = {
 
 		RAJ_agrarian_society = {
 
-			picture = generic_agrarian_society
+			picture = idea_generic_heavy_agrarian_society
 
 			allowed = {
 				original_tag = RAJ
@@ -247,7 +247,7 @@ ideas = {
 		
 		RAJ_agrarian_society_3 = {
 
-			picture = generic_agrarian_society
+			picture = idea_generic_light_agrarian_society
 
 			allowed = {
 				original_tag = RAJ

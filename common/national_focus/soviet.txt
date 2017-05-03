@@ -2077,7 +2077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Industrialized_Gulags
-		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		icon = GFX_goal_ussr_forced_labour
 		cost = 10
 		prerequisite = {
 			focus = SOV_Forced_Labour

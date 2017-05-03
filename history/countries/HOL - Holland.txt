@@ -13,7 +13,6 @@ set_national_unity = 0.55
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
-		nato_idea
 	}
 	set_politics = {
 

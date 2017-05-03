@@ -1,1 +1,35 @@
-﻿
+add_namespace = spr
+
+#EVENT FOR PACT OF MADRID
+country_event = {
+	id = spr.27
+	title = spr.27
+	desc = spr.27.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spr.27.a
+		
+		ROOT = {
+			give_military_access = USA
+		}
+		
+		USA = {
+			country_event = { id = usa.28 days = 1 }
+		}
+	}
+	
+	option = {
+		name = spr.27.b
+		
+		USA = {
+			add_opinion_modifier = {target = SPA modifier = refused_co_op_treaty}
+		}
+		
+		USA = {
+			country_event = { id = usa.29 days = 1 }
+		}
+	}
+}
