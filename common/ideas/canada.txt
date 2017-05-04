@@ -139,24 +139,24 @@ ideas = {
 			
 			modifier = {
 				communism_drift = -0.01
-				fascism_drift = -0.01
+				autocratic_drift = -0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
 
-		CAN_defence_of_canada_regulations_fascism = {
+		CAN_defence_of_canada_regulations_autocratic = {
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = autocratic
 			}
 
 			removal_cost = -1
 
-			picture = can_defence_of_canada_regulations_fascism
+			picture = can_defence_of_canada_regulations_autocratic
 			
 			modifier = {
 				democratic_drift = -0.01
@@ -181,7 +181,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = -0.01
-				fascism_drift = -0.01
+				autocratic_drift = -0.01
 				foreign_subversive_activites = -0.50
 			}
 		}
@@ -406,16 +406,16 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = fascism
+				 has_government = autocratic
 			}
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_autocratic_drift_bonus
 
 			modifier = {
 				democratic_drift = -0.1
-				fascism_drift = 0.2
+				autocratic_drift = 0.2
 			}
 		}
 
@@ -425,16 +425,16 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = fascism
+				 has_government = autocratic
 			}
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_autocratic_drift_bonus
 
 			modifier = {
 				democratic_drift = -0.1
-				fascism_drift = 0.2
+				autocratic_drift = 0.2
 				unity_factor = 0.05
 				conscription = 0.02
 			}
@@ -446,16 +446,16 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = fascism
+				 has_government = autocratic
 			}
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_autocratic_drift_bonus
 
 			modifier = {
 				democratic_drift = -0.1
-				fascism_drift = 0.2
+				autocratic_drift = 0.2
 				unity_factor = 0.05
 				conscription = 0.02
 				send_volunteer_divisions_required = -1
@@ -601,7 +601,7 @@ ideas = {
 			
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = autocratic
 				}
 			}
 			

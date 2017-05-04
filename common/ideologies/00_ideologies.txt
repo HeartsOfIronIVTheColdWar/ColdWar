@@ -183,7 +183,7 @@ ideologies = {
 		modifiers = {
 		}
 
-		ai_autocratic = yes # uses the autocratic AI behaviour
+		ai_fascism = yes # uses the autocratic AI behaviour
 	}
 	
 }

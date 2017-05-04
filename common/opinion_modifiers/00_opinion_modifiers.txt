@@ -9,7 +9,15 @@
 # trade = yes/no
 
 opinion_modifiers = {
-
+	
+	US_CW_dip_eff = { value = 50 }
+	
+	delclined_inv_to_NATO = { value = -25 }
+	
+	refused_co_op_treaty = { value = -100 }
+	
+	declines_peace_treaty = {value = -100 }
+	
 	SOV_Agricultural_board = {
 		value = 25
 	}

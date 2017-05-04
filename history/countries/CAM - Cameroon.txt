@@ -22,7 +22,7 @@ set_national_unity = 0.55
 				banned = yes
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
 				banned = yes
 			}
@@ -70,7 +70,7 @@ set_national_unity = 0.55
 				banned = yes
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
 				banned = yes
 			}
@@ -117,7 +117,7 @@ set_national_unity = 0.55
 				banned = yes
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
 				banned = yes
 			}
@@ -165,7 +165,7 @@ set_national_unity = 0.55
 				banned = yes
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
 				banned = yes
 			}

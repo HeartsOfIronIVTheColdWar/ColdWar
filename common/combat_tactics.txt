@@ -434,7 +434,6 @@ tactic_preemptive_strike = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		has_combat_modifier = AIR_SUPERIORITY
 		phase = no
 	}
 	

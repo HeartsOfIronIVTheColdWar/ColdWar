@@ -49,7 +49,6 @@ equipments = {
 
 	battleship_1 = {
 		archetype = battleship
-		parent = battleship_2
 		shore_bombardment = 12
 		priority = 60
 		

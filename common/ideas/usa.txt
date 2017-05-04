@@ -118,7 +118,7 @@ ideas = {
 		
 		ww2_reparations = {
 			allowed = {
-				allways = no
+				always = no
 			} 
 			
 			allowed_civil_war = {
@@ -159,7 +159,7 @@ ideas = {
 		banned_communism = {		
 			
 			allowed = {
-				allways = no
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -178,7 +178,7 @@ ideas = {
 		
 		liberty_focus = {
 			allowed = {
-				allways = no 
+				always = no 
 			}
 			
 			allowed_civil_war = {
@@ -196,7 +196,7 @@ ideas = {
 		
 		dereg_economy = {
 			allowed = {
-				allways = no 
+				always = no 
 			}
 			
 			allowed_civil_war = {
@@ -214,7 +214,7 @@ ideas = {
 		
 		military_indstry_investment = {
 			allowed = {
-				allways = no
+				always = no
 			}
 			
 			allowed_civil_war = {
@@ -233,7 +233,7 @@ ideas = {
 		
 		civilian_industry_investment = {
 			allowed = {
-				allways = no
+				always = no
 			}
 			
 			allowed_civil_war = {
@@ -252,7 +252,7 @@ ideas = {
 		
 		office_of_Defence_moblilisation = {
 			allowed = {
-				allways = no
+				always = no
 			}
 			
 			allowed_civil_war = {
@@ -271,7 +271,7 @@ ideas = {
 		
 		steel_worker_strikes = {
 			allowed = {
-				allways = no
+				always = no
 			}
 			
 			allowed_civil_war = {
@@ -291,7 +291,7 @@ ideas = {
 		
 		golden_age_of_capitalism  = {
 			allowed = {
-				allways = no
+				always = no
 			}
 			
 			allowed_civil_war = {
@@ -311,7 +311,7 @@ ideas = {
 		
 		commercial_industry_investment = {
 			allowed = {
-				allways = no
+				always = no
 			}
 			
 			allowed_civil_war = {
@@ -329,7 +329,7 @@ ideas = {
 		
 		heavy_industry = {
 			allowed = {
-				allways = no
+				always = no
 			}
 			
 			allowed_civil_war = {
@@ -439,24 +439,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.25
-			}		
-		}
-		
-		military_indstry_investment = {
-			allowed = {
-				always = no
-			}
-			
-			allowed_civil_war = {
-				has_government = democratic
-			}
-			
-			removal_cost = -1
-			
-			picture = generic_manpower_bonus 
-			
-			modifier = {
-				consumer_goods_factor = 0.1
 			}		
 		}
 		
@@ -609,7 +591,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = autocratic
 				}
 			}
 			

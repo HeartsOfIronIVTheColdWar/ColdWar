@@ -21,7 +21,7 @@ focus_tree = {
 		completion_reward = {
 			set_party_name = { ideology = communism long_name = DDR_merged_parties name = DDR_merged_parties_short }
 			add_popularity = { ideology = communism popularity = 0.2 }
-			add_popularity = { ideology = fascism popularity = -0.15 }
+			add_popularity = { ideology = autocratic popularity = -0.15 }
 		}
 	}
 	
@@ -273,44 +273,7 @@ focus_tree = {
 			factor = 50
 		}	
 		completion_reward = {
-			hidden_effect = {
-			set_capital = 64
-			start_civil_war = {
-				ruling_party = autocratic
-				ideology = communism
-				size = 0.5
-				capital = 64
-			}
-			random_other_country = {
-				limit = {
-					original_tag = DDR
-					has_government = communism
-				}
-				load_oob = "DDR_Civil_War"
-				set_equipment_fraction = 0.7
-				set_national_unity = 0.6
-				#country_event = { id = DDR.20 days = 1 }
-				add_popularity = {
-				ideology = communism
-				popularity = 1
-				}
-			}
-			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
-			
-			load_oob = "DDR_Civil_War"
-			set_equipment_fraction = 0.3
-			set_national_unity = 0.9
-			
-			set_popularity = {
-				ideology = democratic
-				popularity = 0.5
-				ideology = autocratic
-				popularity = 0.5
-			}
 
-			#country_event = { id = DDR.21 days = 7 }
-			}
 		}
 
 	}
@@ -1201,7 +1164,7 @@ focus_tree = {
 		}
 		x = 27
 		y = 4
-		ai_will_do = {-
+		ai_will_do = {
 			factor = 10
 		}	
 		completion_reward = {

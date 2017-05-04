@@ -150,7 +150,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_autocratic_drift_bonus
 			
 			modifier = {
 				autocratic_drift = 0.1
