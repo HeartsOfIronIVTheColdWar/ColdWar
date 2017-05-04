@@ -24,7 +24,7 @@ country_event = {
 		name = china.27.b
 		
 		USA = {
-			add_opinion_modifier = {target = SPA modifier = refused_co_op_treaty}
+			add_opinion_modifier = {target = CHI modifier = refused_co_op_treaty}
 		}
 		
 		USA = {

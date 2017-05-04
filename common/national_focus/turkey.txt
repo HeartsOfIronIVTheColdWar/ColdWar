@@ -16,45 +16,7 @@ focus_tree = {
 	}
 	
 	default = no
-
-	focus = {
-		id = USA_issue_war_bonds
-		icon = GFX_goal_generic_national_unity
-		available = {
-			OR = {
-				has_war_with = GER
-				has_war_with = JAP
-				has_war_with = ITA
-				has_war_with = SOV
-				has_war_with = FRA
-				has_war_with = ENG
-				any_other_country = {
-					has_offensive_war_with = ROOT
-					strength_ratio = {
-						tag = ROOT
-						ratio > 0.75
-					}
-				}
-				threat > 0.95
-			}
-		}
-		x = 1
-		y = 0
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = war_bonds_focus
-			if = {
-				limit = { has_idea = great_depression }
-				remove_ideas = great_depression
-			}
-		}
-	}
+	
 	focus = {
 		id = "Strengthen the Government"
 		icon = GFX_goal_generic_demand_territory
@@ -164,30 +126,30 @@ focus = {
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			USA = { 
-				if = {
-					limit = { NOT = { has_government = fascist } }
-					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
-				}
-			}
-			ENG = { 
-				if = {
-					limit = { NOT = { has_government = fascist } }
-					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
-				}
-			}
-			FRA = { 
-				if = {
-					limit = { NOT = { has_government = fascist } }
-					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
-				}
-			}
-			every_other_country = {
-				limit = { has_government = communism }
-				add_opinion_modifier = { target = TUR modifier = Democratic_Influence }
-			}
-		}
-
+#			USA = { 
+#				if = {
+#					limit = { NOT = { has_government = autocratic } }
+#					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
+#				}
+##			}
+#			ENG = { 
+#				if = {
+#					limit = { NOT = { has_government = autocratic } }
+#					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
+#				}
+#			}
+#			FRA = { 
+#				if = {
+#					limit = { NOT = { has_government = autocratic } }
+#					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
+#				}
+#			}
+#			every_other_country = {
+#				limit = { has_government = communism }
+#				add_opinion_modifier = { target = TUR modifier = Democratic_Influence }
+#			}
+#		}
+#
 }
 focus = {
 		id = "Support NATO"
@@ -411,7 +373,7 @@ focus = {
 
 		completion_reward = {
 			every_other_country = {
-				limit = { has_government = fascism }
+				limit = { has_government = autocratic }
 				add_opinion_modifier = { target = SOV modifier = anti_capitalist_diplomacy_focus }
 			}
 			USA = { 
@@ -950,9 +912,9 @@ focus = {
 		completion_reward = {
 			add_ideas = military_youth_focus
 			if = {
-				limit = { has_government = fascism }
+				limit = { has_government = autocratic }
 				add_popularity = {
-					ideology = fascism
+					ideology = autocratic
 					popularity = 0.2
 				}
 			}
@@ -1965,3 +1927,4 @@ focus = {
 			}
 		}
 	}
+}

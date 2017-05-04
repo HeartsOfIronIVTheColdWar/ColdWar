@@ -317,39 +317,39 @@ on_actions = {
 	}
 
 	#FROM is war target
-	on_declare_war = {
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						OR = {
-							has_idea = american_protection_drift_democratic
-							has_idea = american_protection_drift_communism
-							has_idea = american_protection_drift_autocratic
-							has_idea = american_protection_defence_democratic
-							has_idea = american_protection_defence_communism
-							has_idea = american_protection_defence_autocratic
-						}
-					}
-					NOT = { 
-						tag = USA
-						is_in_faction_with = USA # I guess USA will not go to war with someone they are in faction with
-						has_war_with = USA
-						#USA = { has_war_with = FROM } Should USA enforce peace in a nation it is already at war with?
-					}
-					OR = {
-						has_idea = american_protection_drift_democratic
-						has_idea = american_protection_drift_communism
-						has_idea = american_protection_drift_autocratic
-						has_idea = american_protection_defence_democratic
-						has_idea = american_protection_defence_communism
-						has_idea = american_protection_defence_autocratic
-					}
-				}				
-				FROM = { country_event = { id = usa.16 days = 1 } }
-			}
-		}
-	}
+#	on_declare_war = {
+#		effect = {
+#			if = {
+#				limit = {
+#					FROM = {
+#						OR = {
+#							has_idea = american_protection_drift_democratic
+#							has_idea = american_protection_drift_communism
+#							has_idea = american_protection_drift_autocratic
+#							has_idea = american_protection_defence_democratic
+#							has_idea = american_protection_defence_communism
+#							has_idea = american_protection_defence_autocratic
+#						}
+#					}
+#					NOT = { 
+#						tag = USA
+#						is_in_faction_with = USA # I guess USA will not go to war with someone they are in faction with
+#						has_war_with = USA
+#						#USA = { has_war_with = FROM } Should USA enforce peace in a nation it is already at war with?
+#					}
+#					OR = {
+#						has_idea = american_protection_drift_democratic
+#						has_idea = american_protection_drift_communism
+#						has_idea = american_protection_drift_autocratic
+#						has_idea = american_protection_defence_democratic
+#						has_idea = american_protection_defence_communism
+#						has_idea = american_protection_defence_autocratic
+#					}
+#				}				
+#				FROM = { country_event = { id = usa.16 days = 1 } }
+#			}
+#		}
+#	}
 	
 	# When a new faction is formed
 	on_faction_formed = {
@@ -432,9 +432,9 @@ on_actions = {
 					limit = { has_idea = fascist_revolutionaries }
 					remove_ideas = fascist_revolutionaries
 				}
-				if = {
-					limit = { has_idea = autocratic_defeated }
-					remove_ideas = autocratic_defeated
+#				if = {
+#					limit = { has_idea = autocratic_defeated }
+#					remove_ideas = autocratic_defeated
 				}
 				if = {
 					limit = { has_idea = anti_nazi_coup }
@@ -457,71 +457,71 @@ on_actions = {
 		}
 	}
 
-	on_coup_succeeded = {
-		effect = {
-			#Turn elections on for democracies created from coup
-			random_other_country = {
-				limit = {
-					has_government = democratic
-					original_tag = ROOT
-				}
-				set_politics = {
-					elections_allowed = yes
-				}
-			}
-		}
-	}
+#	on_coup_succeeded = {
+#		effect = {
+#			#Turn elections on for democracies created from coup
+#			random_other_country = {
+#				limit = {
+#					has_government = democratic
+#					original_tag = ROOT
+#				}
+#				set_politics = {
+#					elections_allowed = yes
+#				}
+#			}
+#		}
+#	}
 
-	#ROOT is winner #FROM gets annexed - This will also fire on_annex
-	on_civil_war_end = {
-		effect = {
-
-			#End of SCW
-			if = {
-				limit = {
-					FROM = {
-						original_tag = SPR
-					}
-					ROOT = {
-						original_tag = SPR
-						has_government = autocratic
-					}
-				}
-				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
-			}
-			#End of SCW
-			if = {
-				limit = {
-					FROM = {
-						original_tag = SPR
-					}
-				}
-				ROOT = {
-					set_country_flag = achievement_won_spanish_civil_war
-				}
-			}
-			if = {
-				limit = {
-					has_government = democratic			
-				}
-				set_politics = {
-					elections_allowed = yes
-				}
-			}
-		}
-	}
-
-	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
-	on_annex = {
-		effect = {
-			
-		}
-	}
-
-	#Not run on a specific country.
-	on_startup = {
-		effect = {
-			
-		}
-	}
+#	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+#	on_civil_war_end = {
+#		effect = {
+#
+#			#End of SCW
+#			if = {
+#				limit = {
+#					FROM = {
+#						original_tag = SPR
+#					}
+#					ROOT = {
+#						original_tag = SPR
+#						has_government = autocratic
+#					}
+#				}
+#				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+#			}
+#			#End of SCW
+#			if = {
+#				limit = {
+#					FROM = {
+#						original_tag = SPR
+#					}
+#				}
+#				ROOT = {
+#					set_country_flag = achievement_won_spanish_civil_war
+#				}
+#			}
+#			if = {
+#				limit = {
+#					has_government = democratic			
+#				}
+#				set_politics = {
+#					elections_allowed = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
+#	on_annex = {
+#		effect = {
+#			
+#		}
+#	}
+#
+#	#Not run on a specific country.
+#	on_startup = {
+#		effect = {
+#			
+#		}
+#	}
 }

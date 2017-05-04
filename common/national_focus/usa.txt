@@ -578,16 +578,11 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					GUA = {
-							if = {
-									NOT = {
-											ruling_party = fascism
-										}
-									set_politics = {
-											ruling_party = fascism
-										}
+							set_politics = {
+									ruling_party = autocratic
 								}
 							add_popularity = {
-									ideology = fascism
+									ideology = autocratic
 									popularity = 0.20
 								}
 						}
@@ -649,24 +644,19 @@ focus_tree = {
 		x = 15
 		y = 5
 			completion_reward = {
-					if = {
-							PER = {
-									has_government = neutrality
-								}
-							PER = {
-									start_civil_war = {
-											ideology = fascism
-											size = 0.5
-										}
-								}
-						}
+				PER = {
+						start_civil_war = {
+								ideology = autocratic
+								size = 0.5
+							}
+					}
 				}
 
 	}
 	focus = {
 		id = USA_liberty_focus
 		icon = GFX_goal_continuous_boost_freedom
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = USA_state_of_the_union
 		}
@@ -1101,7 +1091,7 @@ focus_tree = {
 					random_owned_controlled_state = {
 							add_resource = {
 									type = aluminium
-									ammount = 25
+									amount = 25
 								}
 							add_resource = {
 									type = steel
@@ -1206,7 +1196,7 @@ focus_tree = {
 									amount = 100
 								}
 						}
-					hiddden_effect = {
+					hidden_effect = {
 							country_event = {
 									id = usa.36
 									days = 1
