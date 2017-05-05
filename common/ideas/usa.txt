@@ -18,8 +18,8 @@ ideas = {
 			picture = nato_idea
 			
 			modifier = {
-				communism_drift = 0.02
-				consumer_goods_factor = 0.05
+				ai_call_ally_desire_factor = 100
+				ai_join_ally_desire_factor = 100
 				
 			}
 		}
@@ -47,8 +47,7 @@ ideas = {
 			}
 		}
 		
-		marshall_plan = {
-			
+		marshall_plan = {		
 			
 			allowed = {
 				always = no
@@ -71,25 +70,8 @@ ideas = {
 			}
 		}
 		
-		wartime_industry_focus = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.2
-			}
-		}
-
-		office_of_strategic_services = {
+		defence_production_act = {		
+			
 			allowed = {
 				always = no
 			}
@@ -100,13 +82,55 @@ ideas = {
 
 			removal_cost = -1
 			
-			research_bonus = {
-				decryption_tech = 0.05
-				encryption_tech = 0.05
-			}			
-
+			picture = generic_goods_red_bonus
+			
 			modifier = {
-				decryption_factor = 0.2
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = 0.20 
+				production_speed_industrial_complex_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				trade_opinion_factor = 0.5
+			}
+		}
+		
+		invested_in_economy = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = 0.20 
+				production_speed_industrial_complex_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				trade_opinion_factor = 0.5
+			}
+		}
+		
+		ww2_reparations = {
+			allowed = {
+				always = no
+			} 
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.4	
 			}
 		}
 		
@@ -131,168 +155,368 @@ ideas = {
 				drift_defence_factor = 0.3
 			}
 		}
-
-		# idea for the protect Amercians focus - USA democratic
-		american_influence_defence_democratic = {
-			allowed = { always = no	}
+				
+		banned_communism = {		
+			
+			allowed = {
+				always = no
+			}
 
 			allowed_civil_war = {
 				has_government = democratic
 			}
 
 			removal_cost = -1
-			picture = generic_democratic_drift_bonus
+			
+			picture = generic_goods_red_bonus
+			
 			modifier = {
-				drift_defence_factor = 0.5
+				communism_drift = -0.1 
+				unity_factor = -0.05
 			}
-		}
-		american_influence_drift_democratic = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			picture = generic_democratic_drift_bonus
-			modifier = {
-				democratic_drift = 0.05
-			}
-		} 
-		american_protection_defence_democratic = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			picture = generic_intel_bonus
-			modifier = {
-				drift_defence_factor = 0.5
-			}
-		}
-		american_protection_drift_democratic = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			picture = generic_intel_bonus
-			modifier = {
-				democratic_drift = 0.05
-			}			
-		}
-			# idea for the protect Amercians focus - USA communist
-		american_influence_defence_communism = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-			picture = generic_communism_drift_bonus
-			modifier = {
-				drift_defence_factor = 0.5
-			}
-		}
-		american_influence_drift_communism = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-			picture = generic_communism_drift_bonus
-			modifier = {
-				communism_drift = 0.05
-			}
-		} 
-		american_protection_defence_communism = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-			picture = generic_intel_bonus
-			modifier = {
-				drift_defence_factor = 0.5
-			}
-		}
-		american_protection_drift_communism = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-			picture = generic_intel_bonus
-			modifier = {
-				communism_drift = 0.05
-			}			
-		}
-			# idea for the protect Amercians focus - USA fascist
-		american_influence_defence_autocratic = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = autocratic
-			}
-
-			removal_cost = -1
-			picture = generic_autocratic_drift_bonus
-			modifier = {
-				drift_defence_factor = 0.5
-			}
-		}
-		american_influence_drift_autocratic = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = autocratic
-			}
-
-			removal_cost = -1
-			picture = generic_autocratic_drift_bonus
-			modifier = {
-				autocratic_drift = 0.05
-			}
-		} 
-		american_protection_defence_autocratic = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = autocratic
-			}
-
-			removal_cost = -1
-			picture = generic_intel_bonus
-			modifier = {
-				drift_defence_factor = 0.5
-			}
-		}
-		american_protection_drift_autocratic = {
-			allowed = { always = no	}
-
-			allowed_civil_war = {
-				has_government = autocratic
-			}
-
-			removal_cost = -1
-			picture = generic_intel_bonus
-			modifier = {
-				autocratic_drift = 0.05
-			}			
 		}
 		
-	
+		liberty_focus = {
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1 
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				unity_factor = 0.01 
+			}
+		}
+		
+		dereg_economy = {
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1 
+			
+			modifier = {
+				consumer_goods_factor = -0.2					
+			}
+		}
+		
+		military_indstry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.2				
+			}
+		}
+		
+		civilian_industry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.4				
+			}
+		}
+		
+		office_of_Defence_moblilisation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.4				
+			}
+		}
+		
+		steel_worker_strikes = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.4			
+				unity_factor = -0.1 				
+			}
+		}
+		
+		golden_age_of_capitalism  = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.4			
+				unity_factor = 0.1 				
+			}
+		}
+		
+		commercial_industry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1	
+			}
+		}
+		
+		heavy_industry = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1	
+			}	
+		}
+		
+		fair_deal = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = 0.20 
+				production_speed_industrial_complex_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				trade_opinion_factor = 0.5
+			}
+		}
+
+		NSA_idea = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+
+		US_pressure = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+
+		american_militarism = {		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus 
+			
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+		loans_to_mining_companies = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus 
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+			}		
+		}
+		
+		steel_industry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus 
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+			}		
+		}
+		
+		eisenhower_doctrine = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+
+			}
+		}
+		
+		mccarthy_doctrine = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+
+			}
+		}
+		
+		american_economic_miracle = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				unity_factor = 0.1
+			}
+		}
 	}
 	
 	
@@ -300,7 +524,6 @@ ideas = {
 	
 	political_advisor = {
 		earl_browder = {
-			
 			
 			allowed = {
 				original_tag = "USA"

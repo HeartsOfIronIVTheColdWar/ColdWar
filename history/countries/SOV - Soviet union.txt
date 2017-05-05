@@ -36,6 +36,7 @@ set_national_unity = 0.8
 		#laws
 		low_economic_mobilisation
 		extensive_conscription
+		limited_exports
 		#ideas
 		home_of_revolution
 		SOV_great_patriotic_war_winner

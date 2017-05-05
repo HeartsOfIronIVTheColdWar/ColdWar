@@ -269,7 +269,7 @@ news_event = {
 		trigger = {
 			tag = SOV
 		}
-	
+	}
 	desc = {
 		text = news.530211.d
 		trigger = {
@@ -292,7 +292,7 @@ news_event = {
 		trigger = {
 			tag = SOV
 		}
-	
+	}
 	option = {
 		text = news.530211.c
 		trigger = {
@@ -302,7 +302,7 @@ news_event = {
 			}
 		}
 	}
-	
+}
 # ROSENBERGS: execution
 news_event = {
 	id = news.530619

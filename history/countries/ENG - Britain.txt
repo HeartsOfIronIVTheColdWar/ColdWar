@@ -12,8 +12,7 @@ set_national_unity = 0.85
 		stiff_upper_lip
 		ENG_george_vi
 		colonial_protests
-		rationing
-		nato_idea
+		rationing_idea
 	}
 	set_politics = {
 

@@ -261,9 +261,9 @@ leader_traits = {
 	
 	fascist_demagogue = {
 		random = no
-		# Boosts Fascism
+		# Boosts autocratic
 		sprite = 13
-		fascism_drift = 0.1
+		autocratic_drift = 0.1
 		
 		ai_will_do = {
 			factor = 0

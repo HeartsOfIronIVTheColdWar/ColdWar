@@ -1,0 +1,46 @@
+add_namespace = nato
+
+#INVITATION TO NATO
+country_event = {
+	id = nato.1
+	title = nato.1.t 
+	desc = nato.1.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	#ACCEPTS INVITATION
+	option = {
+		name = nato.1.a
+		ai_chance = {
+			factor = 90
+		}
+		USA = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "USA"
+					value = 200
+				}
+			}
+			country_event = { id = usa.23 days = 1 }
+		}
+	}
+	
+	#DECLINES INVITATION
+	option = {
+	
+		name = nato.1.b
+		
+		ai_chance = {
+			factor = 10
+		}
+		
+		add_opinion_modifier = {target = USA modifier = delclined_inv_to_NATO }
+		
+		USA = {
+			country_event = { id = usa.24 days = 1 }
+		}
+	}
+}

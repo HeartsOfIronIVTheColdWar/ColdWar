@@ -1,0 +1,33 @@
+add_namespace = canada
+
+#NORAD AGREEMENT
+country_event = {
+	id = canada.1
+	title = canada.1.t
+	desc = canada.1.d
+	
+	is_triggered_only = yes
+	
+	#CANADA ACCEPTS (DECRYPTION BONUS, PERHAPS?) + CONSTRUCTION SPEED?
+	option = {
+		name = canada.1.a
+		
+		USA = {
+			add_ideas = NORAD_agreement
+			country_event = {id = usa.34 days = 1}
+		}
+		
+		add_ideas = NORAD_agreement
+		
+		
+	}
+	#CANADA DECLINES, MAKES U.S. DISLIKE CANADA
+	option = {
+		name = canada.1.b
+		
+		USA = {
+			country_event = {id = usa.35 days = 1}
+		}
+		
+	}
+}

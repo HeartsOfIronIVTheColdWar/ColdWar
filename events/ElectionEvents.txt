@@ -64,7 +64,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 10
-				can_lose_unity = yes
 			}
 		}
 		add_national_unity = -0.05
@@ -164,11 +163,9 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 2
-				can_lose_democracy_support = yes
 			}
 			modifier = {
 				add = 1
-				can_lose_unity = no
 			}
 		}
 		add_popularity = {
@@ -184,7 +181,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 10
-				can_lose_unity = yes
 			}
 		}
 		add_national_unity = -0.05
@@ -224,11 +220,9 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 2
-				can_lose_democracy_support = yes
 			}
 			modifier = {
 				add = 1
-				can_lose_unity = no
 			}
 			modifier = {
 				factor = 0
@@ -255,7 +249,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 10
-				can_lose_unity = yes
 			}
 			modifier = {
 				add = 1
@@ -307,7 +300,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 10
-				can_lose_democracy_support = yes
 			}
 		}
 		add_popularity = {
@@ -323,7 +315,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 10
-				can_lose_democracy_support = yes
 			}
 		}
 		add_popularity = {
@@ -339,7 +330,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 1
-				can_lose_democracy_support = no
 			}
 		}
 		add_popularity = {
@@ -383,11 +373,9 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 2
-				can_lose_democracy_support = yes
 			}
 			modifier = {
 				add = 1
-				can_lose_unity = no
 			}
 		}
 		random_other_country = {
@@ -412,7 +400,6 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 0
-				can_lose_unity = no
 			}
 		}
 		add_national_unity = -0.05
@@ -456,11 +443,9 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 2
-				can_lose_democracy_support = yes
 			}
 			modifier = {
 				add = 1
-				can_lose_unity = no
 			}
 		}
 		random_other_country = {
@@ -486,7 +471,6 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 0
-				can_lose_unity = no
 			}
 		}
 		add_national_unity = -0.05
@@ -600,7 +584,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 1
-				can_lose_democracy_support = yes
 			}
 		}
 		add_popularity = {
@@ -615,7 +598,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 1
-				can_lose_democracy_support = no
 			}
 		}
 		add_popularity = {
@@ -653,7 +635,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 10
-				can_lose_unity = yes
 			}
 		}
 		add_national_unity = 0.05
@@ -664,11 +645,9 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 3
-				can_lose_democracy_support = yes
 			}			
 			modifier = {
 				add = 1
-				can_lose_unity = no
 			}
 		}
 		name = election.14.b
@@ -712,7 +691,6 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 3
-				can_lose_democracy_support = no
 			}			
 		}
 		name = election.15.a
@@ -726,11 +704,9 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 10
-				can_lose_democracy_support = yes
 			}			
 			modifier = {
 				add = 1
-				can_lose_unity = no
 			}
 		}
 		add_political_power = 25

@@ -269,11 +269,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = autocratic
 			}
 			start_civil_war = {
 				ruling_party = communism
-				ideology = neutrality
+				ideology = autocratic
 				size = 0.6
 			}
 		}
@@ -462,13 +462,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = autocratic
 			}
 			if = {
 				limit = { autocratic > 0.4 }
 				start_civil_war = {
 					ruling_party = autocratic
-					ideology = neutrality
+					ideology = autocratic
 					size = 0.6
 				}
 			}
@@ -476,7 +476,7 @@ country_event = {
 				limit = { NOT = { autocratic > 0.4 } }
 				start_civil_war = {
 					ruling_party = autocratic
-					ideology = neutrality
+					ideology = autocratic
 					size = 0.7
 				}
 			}
@@ -959,11 +959,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = autocratic
 			}
 			start_civil_war = {
 				ruling_party = autocratic
-				ideology = neutrality
+				ideology = autocratic
 				size = 0.5
 			}
 		}
@@ -1029,11 +1029,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = autocratic
 			}
 			start_civil_war = {
 				ruling_party = communism
-				ideology = neutrality
+				ideology = autocratic
 				size = 0.5
 			}
 		}
@@ -1079,11 +1079,11 @@ country_event = {
 		name = political.23.b
 		if = {
 			limit = {
-				has_government = neutrality
+				has_government = autocratic
 			}
 			start_civil_war = {
 				ruling_party = democratic
-				ideology = neutrality
+				ideology = autocratic
 				size = 0.5
 			}
 		}
@@ -1196,7 +1196,7 @@ country_event = {
 			has_government = autocratic
 			has_government = communism
 		}
-		has_idea = neutrality_idea
+		has_idea = autocratic_idea
 	}
 
 	mean_time_to_happen = {
@@ -1205,7 +1205,7 @@ country_event = {
 
 	option = {
 		name = political.27.a
-		remove_ideas = neutrality_idea
+		remove_ideas = autocratic_idea
 	}
 }
 

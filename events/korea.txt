@@ -1,0 +1,35 @@
+add_namespace = korea
+
+country_event = {
+	id = korea.5
+	title = korea.5.t 
+	desc = korea.5.d 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		
+		name = korea.5.a 
+		
+		ROOT = {
+			give_military_access = USA
+		}
+		
+		USA = {
+			country_event = { id = usa.28 days = 1 }
+		}
+	}
+	
+	option = {
+		
+		name = korea.5.b 
+		
+		USA = {
+			add_opinion_modifier = {target = KOR modifier = refused_co_op_treaty}
+		}
+		
+		USA = {
+			country_event = { id = usa.29 days = 1 }
+		}
+	}
+}

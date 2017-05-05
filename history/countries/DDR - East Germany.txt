@@ -9,8 +9,14 @@ set_national_unity = 0.6
 	
 	oob = "DDR_1950"
 	add_ideas = {
+		#laws
+		partial_economic_mobilisation
+		limited_exports
+		disarmed_nation
+		#ideas
 		soviet_occupation
 		loser_of_the_second_world_war
+		
 	}
 	set_politics = {
 
@@ -46,6 +52,7 @@ set_national_unity = 0.6
 	}
 	set_technology = {
 	}
+	complete_national_focus = DDR_soviet_control
 }
 
 1960.1.1 = {

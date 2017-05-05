@@ -1,1 +1,34 @@
-﻿
+namespace = china 
+
+country_event = {
+	id = china.27
+	title = china.27
+	desc = china.27.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = china.27.a
+		
+		ROOT = {
+			give_military_access = USA
+		}
+		
+		USA = {
+			country_event = { id = usa.28 days = 1 }
+		}
+	}
+	
+	option = {
+		name = china.27.b
+		
+		USA = {
+			add_opinion_modifier = {target = CHI modifier = refused_co_op_treaty}
+		}
+		
+		USA = {
+			country_event = { id = usa.29 days = 1 }
+		}
+	}
+}

@@ -857,14 +857,14 @@ country_event = {
 		name = war_justification.301.c
 		trigger = {
 			OR = {
-				has_government = fascism
+				has_government = autocratic
 				has_government = neutrality
 			}
 		}
 		add_political_power = -30
 		add_national_unity = -0.03
 		add_popularity = {
-			ideology = fascism
+			ideology = autocratic
 			popularity = -0.05
 		}
 	}

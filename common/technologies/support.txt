@@ -1143,7 +1143,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
-			air_cas_present_factor = 0.8
 		}
 		
 		
@@ -1189,7 +1188,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
-			air_cas_present_factor = 0.8
 		}
 		path = {
 			leads_to_tech = tech_signal_company4
@@ -1232,7 +1230,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
-			air_cas_present_factor = 0.8
 		}
 
 		research_cost = 1.5

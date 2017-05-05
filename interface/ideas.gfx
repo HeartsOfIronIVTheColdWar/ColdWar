@@ -2939,8 +2939,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/nato_idea.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_SOV_great_patriotic_war"
+		texturefile = "gfx/interface/ideas/SOV_great_patriotic_war.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_rationing_idea"
 		texturefile = "gfx/interface/ideas/rationing_idea.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_idea_generic_heavy_agrarian_society"
+		texturefile = "gfx/interface/ideas/idea_generic_heavy_agrarian_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_generic_light_agrarian_society"
+		texturefile = "gfx/interface/ideas/idea_generic_light_agrarian_society.dds"
+	}
 }
