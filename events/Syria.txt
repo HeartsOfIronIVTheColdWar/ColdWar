@@ -2,33 +2,34 @@
 # Syria Cold War Mod Events
 ###########################
 
-add_namespace = syr
+add_namespace = syria
 
 # Egypt asks to annex Syria
 country_event = {
-	id = syr.1
-	title = syr.1.t
-	desc = syr.1.d
+	id = syria.1
+	title = syria.1.t
+	desc = syria.1.d
 	picture = 
 	
 	is_triggered_only = yes
+	
+	fire_only_once = yes
 
 	trigger = {
 		tag = SYR
 	}
 	
 	option = { 	
-		name = syr.1.a
+		name = syria.1.a
 		ai_chance = {
 			factor = 95
 		}
-		immediate =
-			news_event = { id = news.580201 }
+		news_event = { id = news.580201 }
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 	
 	option = { 	
-		name = syr.1.b
+		name = syria.1.b
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -36,7 +37,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		EGY = { country_event = { id = egy.1 days = 1 }
+		EGY = { country_event = { id = egypt.1 days = 1 }
 		}
 
 	}

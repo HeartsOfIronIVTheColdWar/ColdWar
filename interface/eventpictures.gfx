@@ -19,5 +19,24 @@ spriteTypes = {
 		name = "GFX_report_event_hawaii"
 		texturefile = "gfx/event_pictures/report_event_hawaii.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_alaska"
+		texturefile = "gfx/event_pictures/report_event_alaska.dds"
+	}
 	
+	spriteType = {
+		name = "GFX_news_event_coronation"
+		texturefile = "gfx/event_pictures/news_event_coronation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_suez_nasserwins"
+		texturefile = "gfx/event_pictures/news_event_suez_nasserwins.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_suez_nasserloses"
+		texturefile = "gfx/event_pictures/news_event_suez_nasserloses.dds"
+	}
 }

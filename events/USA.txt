@@ -4,12 +4,202 @@
 
 add_namespace = usa
 
+#USA GETS EVENT ABOUT COUNTRY ACCEPTING INVITATION TO NATO 
+country_event = {
+	id = usa.23
+	title = usa.23.t
+	desc = usa.23.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.23.a
+	}
+}
+#USA GETS EVENT ABOUT COUNTRY DECLINING INVITATION TO NATO 
+country_event = {
+	id = usa.24
+	title = usa.24.t 
+	desc = usa.24.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = usa.24.a
+	}
+}
+#USA GETS EVENT ABOUT COUNTRY ACCEPTING MARSHALL AID 
+country_event = {
+	id = usa.25
+	title = usa.25.t 
+	desc = usa.25.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = usa.25.a
+	}
+}
+#USA GETS EVENT ABOUT COUNTRY DECLINING MARSHALL AID 
+country_event = {
+	id = usa.26
+	title = usa.26.t 
+	desc = usa.26.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = usa.26.a
+	}
+}
+
+#____ ACCEPTS
+country_event = {
+	id = usa.28
+	title = usa.28.t
+	desc = usa.28.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.28.a
+	}
+}
+#____ SAYS NO
+country_event = {
+	id = usa.29
+	title = usa.29.t
+	desc = usa.29.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.29.a
+	}
+}
+#JAPAN ACCEPTS PEACE TREATY
+country_event = {
+	id = usa.30
+	title = usa.30.t
+	desc = usa.30.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.30.a
+	}
+}
+#JAPAN DECLININES PEACE TREATY
+country_event = {
+	id = usa.31 
+	title = usa.31.t
+	desc = usa.31.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.31.a
+	}
+}
+#JAPAN ACCEPTS TREATY WITH U.S.
+country_event = {
+	id = usa.32
+	title = usa.32.t
+	desc = usa.32.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.32.a
+	}
+}
+#JAPAN DECLININES TREATY WITH U.S.
+country_event = {
+	id = usa.33 
+	title = usa.33.t
+	desc = usa.33.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.33.a
+	}
+}
+#USA GETS EVENT FOR CANADA ACCEPTING TREATY
+country_event = {
+	id = usa.34 
+	title = usa.34.t
+	desc = usa.34.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.34.a
+		add_opinion_modifier = {target = CAN modifier = us_CW_dip_eff}
+	}
+}
+#USA GETS EVENT FOR CANADA DECLINING TREATY
+country_event = {
+	id = usa.35 
+	title = usa.35.t
+	desc = usa.35.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa.35.a
+			add_opinion_modifier = {target = CAN modifier = refused_co_op_treaty}
+	}
+}
+#REACTION TO NATIONALIZATION TO STEEL MILLS
+country_event = {
+	id = usa.36 
+	title = usa.36.t 
+	desc = usa.36.d 
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = usa.36.a
+		#DETERMINES HOW BIG STRIKE WILL BE 
+		
+		unity_factor = -0.10
+		
+		random_list = {
+			90 = {
+				add_timed_idea = {
+					idea = steel_worker_strikes
+					days = 360 
+				}
+				
+				add_timed_idea = {
+					idea = steel_worker_strikes
+					days = 360
+				}
+			}
+		}
+	}
+}
+
 # Admission of Alaska
 country_event = {
 	id = usa.49
 	title = usa.49.t
 	desc = usa.49.d
-	picture = GFX_report_event_usa_election_generic
+	picture = GFX_report_event_alaska
 	
 	trigger = {
 		tag = USA
