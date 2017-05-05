@@ -2,7 +2,8 @@ state={
 	id=753
 	name="STATE_753"
 	provinces={
-		1910 2041 
+		1910 2041
+		2084 # from Peshawar
 	}
 	history={
 		owner = PAK

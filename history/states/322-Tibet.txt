@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = PRC
+		owner = TIB
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -22,6 +22,8 @@ state={
 			5033 5 
 		}
 		add_core_of = TIB
+		add_core_of = CHI
+		add_core_of = PRC
 		
 		1951.10.1 = {
 			owner = PRC

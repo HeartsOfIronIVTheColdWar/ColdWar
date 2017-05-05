@@ -14,10 +14,13 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-
+		add_core_of = RAJ
+		add_core_of = CHI
+		add_core_of = TIB
+		add_core_of = PRC
 	}
 
 	provinces={
-		1116 1996 10810 12322 12730 
+		1996 10810 12730 
 	}
 }
