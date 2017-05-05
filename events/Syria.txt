@@ -14,11 +14,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> origin/master
 	trigger = {
 		tag = SYR
 	}
