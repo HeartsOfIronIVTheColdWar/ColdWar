@@ -48,9 +48,31 @@ focus_tree = {
 		x = 34
 		y = 0
 			completion_reward = {
-					army_experience = 10
-					navy_experience = 10
-					air_experience = 10
+					army_experience = 15
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
 				}
 
 	}
@@ -64,7 +86,7 @@ focus_tree = {
 		x = 8
 		y = 1
 			completion_reward = {
-					add_political_power = 50
+					add_political_power = 100
 				}
 
 	}
@@ -78,6 +100,7 @@ focus_tree = {
 		x = 4
 		y = 2
 			completion_reward = {
+			add_political_power = 50
 					add_opinion_modifier = {
 							target = JAP
 							modifier = US_CW_dip_eff
@@ -102,7 +125,9 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = USA_korea_war_intervention
@@ -113,9 +138,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-			completion_reward = {
+		completion_reward = {
 
-}
+		}
 
 	}
 	focus = {
@@ -127,15 +152,15 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
-			completion_reward = {
-					JAP = {
-							country_event = {
-									id = japan.23
-									days = 1
-								}
-						}
+		completion_reward = {
+			JAP = {
+				country_event = {
+					id = japan.23
+						days = 1
 				}
-
+			}
+			custom_effect_tooltip = USA_JAP_reconcile
+		}
 	}
 	focus = {
 		id = USA_sec_treaty_with_JAP
@@ -146,14 +171,15 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
-			completion_reward = {
-					JAP = {
-							country_event = {
-									id = japan.24
-									days = 1
-								}
-						}
+		completion_reward = {
+			JAP = {
+				country_event = {
+					id = japan.24
+						days = 1
 				}
+			}	
+			custom_effect_tooltip = USA_JAP_alliance
+		}
 
 	}
 	focus = {
@@ -165,12 +191,13 @@ focus_tree = {
 		}
 		x = 5
 		y = 5
-			completion_reward = {
-					add_opinion_modifier = {
-							target = CHI
-							modifier = US_CW_dip_eff
-						}
-				}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = CHI
+				modifier = US_CW_dip_eff
+			}
+#			Add event here?
+		}
 
 	}
 	focus = {
@@ -182,104 +209,104 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
-			completion_reward = {
-					ENG = {
-							country_event = {
-									id = marshallaid.1
-									days = 1
-								}
-						}
-					ICE = {
-							country_event = {
-									id = marshallaid.1
-									days = 2
-								}
-						}
-					IRE = {
-							country_event = {
-									id = marshallaid.1
-									days = 3
-								}
-						}
-					NOR = {
-							country_event = {
-									id = marshallaid.1
-									days = 4
-								}
-						}
-					SWE = {
-							country_event = {
-									id = marshallaid.1
-									days = 5
-								}
-						}
-					BEL = {
-							country_event = {
-									id = marshallaid.1
-									days = 6
-								}
-						}
-					HOL = {
-							country_event = {
-									id = marshallaid.1
-									days = 7
-								}
-						}
-					FRA = {
-							country_event = {
-									id = marshallaid.1
-									days = 8
-								}
-						}
-					POR = {
-							country_event = {
-									id = marshallaid.1
-									days = 9
-								}
-						}
-					SWI = {
-							country_event = {
-									id = marshallaid.1
-									days = 10
-								}
-						}
-					TUR = {
-							country_event = {
-									id = marshallaid.1
-									days = 11
-								}
-						}
-					GRE = {
-							country_event = {
-									id = marshallaid.1
-									days = 12
-								}
-						}
-					ITA = {
-							country_event = {
-									id = marshallaid.1
-									days = 13
-								}
-						}
-					WGR = {
-							country_event = {
-									id = marshallaid.1
-									days = 14
-								}
-						}
-					DEN = {
-							country_event = {
-									id = marshallaid.1
-									days = 15
-								}
-						}
-					LUX = {
-							country_event = {
-									id = marshallaid.1
-									days = 16
-								}
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = marshallaid.1
+					days = 1
+				}
+			}
+			ICE = {
+					country_event = {
+							id = marshallaid.1
+							days = 2
 						}
 				}
+			IRE = {
+					country_event = {
+							id = marshallaid.1
+							days = 3
+						}
+				}
+			NOR = {
+					country_event = {
+							id = marshallaid.1
+							days = 4
+						}
+				}
+			SWE = {
+					country_event = {
+							id = marshallaid.1
+							days = 5
+						}
+				}
+			BEL = {
+					country_event = {
+							id = marshallaid.1
+							days = 6
+						}
+				}
+			HOL = {
+					country_event = {
+							id = marshallaid.1
+							days = 7
+						}
+				}
+			FRA = {
+					country_event = {
+							id = marshallaid.1
+							days = 8
+						}
+				}
+			POR = {
+					country_event = {
+							id = marshallaid.1
+							days = 9
+						}
+				}
+			SWI = {
+					country_event = {
+							id = marshallaid.1
+							days = 10
+						}
+				}
+			TUR = {
+					country_event = {
+							id = marshallaid.1
+							days = 11
+						}
+				}
+			GRE = {
+					country_event = {
+							id = marshallaid.1
+							days = 12
+						}
+				}
+			ITA = {
+					country_event = {
+							id = marshallaid.1
+							days = 13
+						}
+				}
+			WGR = {
+					country_event = {
+							id = marshallaid.1
+							days = 14
+						}
+				}
+			DEN = {
+					country_event = {
+							id = marshallaid.1
+							days = 15
+						}
+				}
+			LUX = {
+					country_event = {
+							id = marshallaid.1
+							days = 16
+						}
+				}
+		}
 
 	}
 	focus = {
@@ -291,12 +318,12 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
-			completion_reward = {
-					add_opinion_modifier = {
-							target = SPR
-							modifier = US_CW_dip_eff
-						}
-				}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SPR
+				modifier = US_CW_dip_eff
+			}
+		}
 
 	}
 	focus = {
@@ -308,13 +335,15 @@ focus_tree = {
 		}
 		x = 7
 		y = 5
-			completion_reward = {
-					SPR = {
-							country_event = {
-									id = spr.27
-								}
-						}
+		completion_reward = {
+			SPR = {
+				country_event = {
+					id = spr.27
 				}
+			}
+			custom_effect_tooltip = USA_SPA_pact_of_madrid
+					
+		}
 
 	}
 	focus = {
@@ -326,29 +355,29 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-			completion_reward = {
-					add_opinion_modifier = {
-							target = TUR
-							modifier = US_CW_dip_eff
-						}
-					if = {
-							limit = {
-									TUR = {
-											is_in_faction = no
-										}
-								}
-							TUR = {
-									country_event = {
-											id = nato.1
-											days = 1
-										}
-								}
-						}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = TUR
+				modifier = US_CW_dip_eff
+			}
+			if = {
+				limit = {
+					TUR = {
+						is_in_faction = no
+					}
 				}
+				TUR = {
+					country_event = {
+							id = nato.1
+							days = 1
+					}
+				}
+			}
+		}
 
 	}
 	focus = {
-		id = USA_invte_greece
+		id = USA_invite_greece
 		icon = GFX_goal_generic_improve_relations
 		cost = 10
 		prerequisite = {
@@ -356,25 +385,25 @@ focus_tree = {
 		}
 		x = 9
 		y = 4
-			completion_reward = {
-					add_opinion_modifier = {
-							target = GRE
-							modifier = US_CW_dip_eff
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GRE
+				modifier = US_CW_dip_eff
+			}
+			if = {
+				limit = {
+					GRE = {
+						is_in_faction = no
+					}
+					}
+					GRE = {
+						country_event = {
+							id = nato.1
+							days = 1
 						}
-					if = {
-							limit = {
-									GRE = {
-											is_in_faction = no
-										}
-								}
-							GRE = {
-									country_event = {
-											id = nato.1
-											days = 1
-										}
-								}
-						}
-				}
+					}
+			}
+		}
 
 	}
 	focus = {
@@ -382,7 +411,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		cost = 10
 		prerequisite = {
-			focus = USA_invte_greece
+			focus = USA_invite_greece
 		}
 		x = 9
 		y = 5
@@ -549,7 +578,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_protect_buisness_intrests_abroad
+		id = USA_protect_business_interests_abroad
 		icon = GFX_goal_generic_political_pressure
 		cost = 10
 		prerequisite = {
@@ -572,7 +601,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		cost = 10
 		prerequisite = {
-			focus = USA_protect_buisness_intrests_abroad
+			focus = USA_protect_business_interests_abroad
 		}
 		x = 13
 		y = 5
@@ -590,7 +619,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_strenghten_HUAC
+		id = USA_strengthen_HUAC
 		icon = GFX_goal_demand_sudetenland
 		cost = 10
 		prerequisite = {
@@ -611,7 +640,7 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 10
 		prerequisite = {
-			focus = USA_strenghten_HUAC
+			focus = USA_strengthen_HUAC
 		}
 		x = 14
 		y = 2
@@ -639,7 +668,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		cost = 10
 		prerequisite = {
-			focus = USA_protect_buisness_intrests_abroad
+			focus = USA_protect_business_interests_abroad
 		}
 		x = 15
 		y = 5
@@ -726,125 +755,269 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
 									free_building_slots = {
-											building = infrastructure
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																			include_locked = yes
-																		}
-																}
-														}
-												}
-										}
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
 								}
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
+							}
 						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																			include_locked = yes
-																		}
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																			include_locked = yes
-																		}
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																			include_locked = yes
-																		}
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-						}
+					}
 				}
-
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = USA_commercial_industry
@@ -1384,7 +1557,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_reqruitment_drive
+		id = USA_recruitment_drive
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10
 		prerequisite = {
@@ -1568,7 +1741,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = strat_destruction
+		id = USA_strategic_destruction
 		icon = GFX_goal_generic_air_bomber
 		cost = 10
 		prerequisite = {
@@ -1592,14 +1765,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = heavy_bombing
+		id = USA_heavy_bombing
 		icon = GFX_goal_generic_air_fighter
 		cost = 10
 		prerequisite = {
 			focus = USA_jet_fighters
 		}
 		mutually_exclusive = {
-			focus = strat_destruction
+			focus = USA_strategic_destruction
 		}
 		x = 38
 		y = 4
@@ -1620,8 +1793,8 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		cost = 10
 		prerequisite = {
-			focus = heavy_bombing
-			focus = strat_destruction
+			focus = USA_heavy_bombing
+			focus = USA_strategic_destruction
 		}
 		x = 37
 		y = 5
@@ -1932,11 +2105,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = USA_marines_coar
+		id = USA_marines_corps
 		icon = GFX_goal_generic_amphibious_assault
 		cost = 10
 		prerequisite = {
-			focus = USA_reqruitment_drive
+			focus = USA_recruitment_drive
 		}
 		prerequisite = {
 			focus = USA_carrier_focus
@@ -1950,7 +2123,7 @@ focus_tree = {
 		icon = GFX_focus_generic_paratrooper
 		cost = 10
 		prerequisite = {
-			focus = USA_reqruitment_drive
+			focus = USA_recruitment_drive
 			focus = strat_destruction
 			focus = heavy_bombing
 		}
