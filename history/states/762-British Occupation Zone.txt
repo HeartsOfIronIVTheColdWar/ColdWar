@@ -3,7 +3,10 @@ state={
 	name="STATE_762"
 	
 	provinces={
-		653 3673 3674 6687 6690 9646 9648 9661 9679 11630 
+		653 3673 3674 6687 9646 9648 9679
+		668 671 6673 # from Tyrol
+		6691 9650 # from Upper Austria
+		11612 # from Slovenia (paradox got the border wrong i think)
 	}
 	history={
 		owner = ENG	
