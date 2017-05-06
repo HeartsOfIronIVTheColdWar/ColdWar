@@ -9,7 +9,7 @@ country_event = {
 	id = syria.1
 	title = syria.1.t
 	desc = syria.1.d
-	picture = 
+	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 	

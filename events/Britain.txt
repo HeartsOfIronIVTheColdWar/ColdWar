@@ -9,7 +9,7 @@ country_event = {
 	id = uk.10001
 	title = uk.10001.t
 	desc = uk.10001.d
-	picture = 
+	picture = GFX_report_event_polish_tanks_01
 	
 	trigger = {
 		tag = ENG
@@ -51,7 +51,7 @@ country_event = {
 	id = uk.10002
 	title = uk.10002.t
 	desc = uk.10002.d
-	picture = 
+	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 	

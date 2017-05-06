@@ -1,7 +1,7 @@
 
 state={
 	id=432
-	name="STATE_432"
+	name="STATE_432" #Assam
 	manpower = 8977100
 	
 	state_category = town
@@ -21,5 +21,6 @@ state={
 	provinces={
 		1497 1525 1553 1581 7455 10090 10349 10514 12366 12395
 		1116 12322 # from Arunachal Pradesh
+		997 1075 7634 # from East Bengal
 	}
 }
