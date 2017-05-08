@@ -31,8 +31,8 @@ set_national_unity = 0.85
 		}
 		
 		ruling_party = democratic
-		last_election = "1935.11.14"
-		election_frequency = 48
+		last_election = "1945.7.5"
+		election_frequency = 60
 		elections_allowed = yes 
 	}
 	# DIPLOMACY

@@ -42,6 +42,15 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
+	name = "Mostafa El-Nahas"
+	desc = "POLITICS_FAROUK_I_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+	create_country_leader = {
 	name = "Farouk I"
 	desc = "POLITICS_FAROUK_I_DESC"
 	picture = "Portrait_Egypt_Farouk_I.dds"
