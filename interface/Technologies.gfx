@@ -3,6 +3,27 @@ spriteTypes = {
 	### generic equipment archetypes ###
 
 	SpriteType = {
+		name = "GFX_archetype_MBT_1950_equipment_medium"
+		texturefile = "gfx/interface/archetype_modern_tank_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_archetype_MBT_1960_equipment_medium"
+		texturefile = "gfx/interface/archetype_modern_tank_equipment.dds"
+	}	
+	SpriteType = {
+		name = "GFX_archetype_MBT_1970_equipment_medium"
+		texturefile = "gfx/interface/archetype_modern_tank_equipment.dds"
+	}	
+	SpriteType = {
+		name = "GFX_archetype_MBT_1980_equipment_medium"
+		texturefile = "gfx/interface/archetype_modern_tank_equipment.dds"
+	}	
+	SpriteType = {
+		name = "GFX_archetype_MBT_1990_equipment_medium"
+		texturefile = "gfx/interface/archetype_modern_tank_equipment.dds"
+	}		
+	
+	SpriteType = {
 		name = "GFX_archetype_heavy_fighter_equipment_medium"
 		texturefile = "gfx/interface/archetype_heavy_fighter_equipment.dds"
 	}		
@@ -3175,7 +3196,346 @@ spriteTypes = {
 	}	
 
 	### Generic Tanks	###	
+	
+	########## 1950 APC ###############
 
+	SpriteType = {
+		name = "GFX_APC_1950_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1950_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	###### 1950 MBT ######
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1950_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	######################
+	
+	###### 1960 MBT ######
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1960_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	#################
+	
+	######## MBT 1970 #########
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1970_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	#######################
+	
+	########### MBT_1980 ############
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1980_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	##############
+	
+	########## MBT_1990 ############
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MBT_1990_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	########### 1950 IFV###########
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/antitank4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	###############################
+	
 	SpriteType = {
 		name = "GFX_basic_light_tank_medium"
 		texturefile = "gfx/interface/technologies/basic_light_tank.dds"

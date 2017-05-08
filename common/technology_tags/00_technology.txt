@@ -2,6 +2,21 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	MBT_1950
+	MBT_1960
+	MBT_1970
+	MBT_1980
+	MBT_1990
+	IFV_1950
+	IFV_1960
+	IFV_1970
+	IFV_1980
+	IFV_1990
+	APC_1950
+	APC_1960
+	APC_1970
+	APC_1980
+	APC_1990
 	light_air
 	medium_air
 	heavy_air

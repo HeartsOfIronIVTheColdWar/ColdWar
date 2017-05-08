@@ -1,0 +1,43 @@
+equipments = {
+
+	IFV_1980_equipment = {
+		is_archetype = yes
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		type =	mechanized
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		maximum_speed = 28
+		reliability = 0.8
+		
+		#Defensive Abilities
+		defense = 77
+		breakthrough = 23
+		hardness = 0.9
+		armor_value = 46
+
+		#Offensive Abilities
+		ap_attack = 46
+		air_attack = 4
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 18
+		resources = {
+			steel = 3
+			rubber = 1
+			oil = 2
+		}
+	}
+
+	# ~1980
+	IFV_1980_equipment_1 = {
+		archetype = IFV_1980_equipment
+		priority = 40
+		visual_level = 0
+	}
+}

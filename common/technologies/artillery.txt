@@ -54,6 +54,18 @@ technologies = {
 	
 	interwar_artillery = {
 
+		1950_armor = {
+			soft_attack = 0.12
+		}
+		MBT_1950_armor = {
+			soft_attack = 0.13
+		}
+		MBT_1950_tank = {
+			soft_attack = 0.11
+		}
+		modern_armor = {
+			soft_attack = 0.14
+		}
 		artillery = {
 			soft_attack = 0.1
 		}
@@ -77,6 +89,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			armor
 		}
 		
 		ai_will_do = {
