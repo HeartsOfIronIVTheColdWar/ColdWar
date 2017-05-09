@@ -6,15 +6,6 @@ technologies = {
 		enable_equipments = {
 			medium_tank_equipment_3 
 		}
-		
-		path = {
-			leads_to_tech = basic_light_tank
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = IFV_1950
-			research_cost_coeff = 1
-		}
 		path = {
 			leads_to_tech = MBT_1950
 			research_cost_coeff = 1
@@ -40,15 +31,73 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-
-	basic_light_tank = { #Panzer I
+	
+	mechanised_infantry3 = {
 
 		enable_equipments = {
-			light_tank_equipment_1 
+			mechanized_equipment_3
+		}
+		path = {
+			leads_to_tech = APC_1950
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1945
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	advanced_light_tank = { #Panther
+
+		enable_equipments = {
+			light_tank_equipment_3 
+		}
+		path = {
+			leads_to_tech = IFV_1950
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1945
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	APC_1950 = { #Panzer I
+
+		enable_equipments = {
+			APC_1950_equipment_1 
 		}
 		
 		path = {
-			leads_to_tech = improved_light_tank
+			leads_to_tech = APC_1960
 			research_cost_coeff = 1
 		}
 		
@@ -71,7 +120,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = armour_folder
-			position = { x = -8 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 		
 		sub_technologies = {
@@ -84,14 +133,16 @@ technologies = {
 		
 		categories = {
 			armor
-			cat_light_armor
+			APC_1950
 		}
 	}	
 	
 	APC_1950_basic_armor = {
 		
-		artillery = {
-			soft_attack = 0.1
+		APC_1950 = {
+			armor_value = 0.05
+			breakthrough = 0.1
+			hardness = 0.02
 		}
 		
 		path = {
@@ -105,7 +156,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -120,8 +171,10 @@ technologies = {
 	
 	APC_1950_improved_armor = {
 		
-		artillery = {
-			soft_attack = 0.15
+		APC_1950 = {
+			armor_value = 0.1
+			breakthrough = 0.15
+			hardness = 0.02
 		}
 		
 		path = {
@@ -135,7 +188,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 8 }
+			position = { x = 1 y = 8 }
 		}
 		
 		categories = {
@@ -150,8 +203,10 @@ technologies = {
 	
 	APC_1950_advanced_armor = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1950 = {
+			armor_value = 0.15
+			breakthrough = 0.2
+			hardness = 0.02
 		}
 		
 		research_cost = 1
@@ -160,7 +215,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 10 }
+			position = { x = 1 y = 10 }
 		}
 		
 		categories = {
@@ -175,8 +230,9 @@ technologies = {
 	
 	APC_1950_basic_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1950 = {
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		
 		path = {
@@ -190,7 +246,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 6 }
+			position = { x = 3 y = 6 }
 		}
 		
 		categories = {
@@ -205,8 +261,9 @@ technologies = {
 	
 	APC_1950_improved_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1950 = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		
 		path = {
@@ -220,7 +277,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 8 }
+			position = { x = 3 y = 8 }
 		}
 		
 		categories = {
@@ -235,8 +292,9 @@ technologies = {
 	
 	APC_1950_advanced_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1950 = {
+			soft_attack = 0.15
+			hard_attack = 0.15
 		}
 		
 		research_cost = 1
@@ -245,7 +303,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 10 }
+			position = { x = 3 y = 10 }
 		}
 		
 		categories = {
@@ -260,8 +318,9 @@ technologies = {
 	
 	APC_1950_basic_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1950 = {
+			maximum_speed = 0.1
+			reliability = 0.05
 		}
 		
 		path = {
@@ -275,7 +334,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 6 }
+			position = { x = -1 y = 6 }
 		}
 		
 		categories = {
@@ -290,8 +349,9 @@ technologies = {
 	
 	APC_1950_improved_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1950 = {
+			maximum_speed = 0.15
+			reliability = 0.05
 		}
 		
 		path = {
@@ -305,7 +365,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 8 }
+			position = { x = -1 y = 8 }
 		}
 		
 		categories = {
@@ -324,8 +384,9 @@ technologies = {
 	
 	APC_1950_advanced_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1950 = {
+			maximum_speed = 0.2
+			reliability = 0.05
 		}
 		
 		research_cost = 1
@@ -334,7 +395,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 10 }
+			position = { x = -1 y = 10 }
 		}
 		
 		categories = {
@@ -347,14 +408,14 @@ technologies = {
 		}
 	}
 	
-	improved_light_tank = { #Panzer II / APC 1960
+	APC_1960 = { #Panzer II / APC 1960
 
 		enable_equipments = {
-			light_tank_equipment_2 
+			APC_1960_equipment_1 
 		}
 		
 		path = {
-			leads_to_tech = advanced_light_tank
+			leads_to_tech = APC_1970
 			research_cost_coeff = 1
 		}
 		path = { #1960 armor
@@ -376,13 +437,10 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -8 y = 12 }
+			position = { x = 0 y = 12 }
 		}
 		
 		sub_technologies = {
-			improved_light_td
-			improved_light_art
-			improved_light_spaa
 		}
 		
 		ai_will_do = {
@@ -392,14 +450,16 @@ technologies = {
 		
 		categories = {
 			armor
-			cat_light_armor
+			APC_1960
 		}
 	}
 	
 	APC_1960_basic_armor = {
 		
-		artillery = {
-			soft_attack = 0.1
+		APC_1960 = {
+			armor_value = 0.05
+			breakthrough = 0.1
+			hardness = 0.02
 		}
 		
 		path = {
@@ -413,7 +473,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 14 }
+			position = { x = 1 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -428,8 +488,10 @@ technologies = {
 	
 	APC_1960_improved_armor = {
 		
-		artillery = {
-			soft_attack = 0.15
+		APC_1960 = {
+			armor_value = 0.1
+			breakthrough = 0.15
+			hardness = 0.02
 		}
 		
 		path = {
@@ -443,7 +505,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 16 }
+			position = { x = 1 y = 16 }
 		}
 		
 		categories = {
@@ -458,8 +520,10 @@ technologies = {
 	
 	APC_1960_advanced_armor = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1960 = {
+			armor_value = 0.15
+			breakthrough = 0.2
+			hardness = 0.02
 		}
 		
 		research_cost = 1
@@ -468,7 +532,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 18 }
+			position = { x = 1 y = 18 }
 		}
 		
 		categories = {
@@ -483,8 +547,9 @@ technologies = {
 	
 	APC_1960_basic_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1960 = {
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		
 		path = {
@@ -498,7 +563,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 14 }
+			position = { x = 3 y = 14 }
 		}
 		
 		categories = {
@@ -513,8 +578,9 @@ technologies = {
 	
 	APC_1960_improved_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1960 = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		
 		path = {
@@ -528,7 +594,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 16 }
+			position = { x = 3 y = 16 }
 		}
 		
 		categories = {
@@ -543,8 +609,9 @@ technologies = {
 	
 	APC_1960_advanced_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1960 = {
+			soft_attack = 0.15
+			hard_attack = 0.15
 		}
 		
 		research_cost = 1
@@ -553,7 +620,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 18 }
+			position = { x = 3 y = 18 }
 		}
 		
 		categories = {
@@ -568,8 +635,9 @@ technologies = {
 	
 	APC_1960_basic_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1960 = {
+			maximum_speed = 0.1
+			reliability = 0.05
 		}
 		
 		path = {
@@ -583,7 +651,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 14 }
+			position = { x = -1 y = 14 }
 		}
 		
 		categories = {
@@ -598,8 +666,9 @@ technologies = {
 	
 	APC_1960_improved_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1960 = {
+			maximum_speed = 0.15
+			reliability = 0.05
 		}
 		
 		path = {
@@ -613,7 +682,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 16 }
+			position = { x = -1 y = 16 }
 		}
 		
 		categories = {
@@ -632,8 +701,9 @@ technologies = {
 	
 	APC_1960_advanced_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1960 = {
+			maximum_speed = 0.2
+			reliability = 0.05
 		}
 		
 		research_cost = 1
@@ -642,7 +712,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 18 }
+			position = { x = -1 y = 18 }
 		}
 		
 		categories = {
@@ -655,72 +725,19 @@ technologies = {
 		}
 	}
 	
-	improved_light_art = {
+	APC_1970 = { #Leopard
 
 		enable_equipments = {
-			light_tank_artillery_equipment_2
-		}
-	
-		research_cost = 0.5
-		start_year = 1960
-		
-		ai_will_do = {
-			factor = 0
-
-			modifier = {
-				factor = 0
-				can_research = advanced_light_art
-			}
-
-			modifier = {
-				factor = 0
-				has_tech = advanced_light_art
-			}
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
-	improved_light_spaa = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_2
-		}
-	
-		research_cost = 0.5
-		start_year = 1960
-		
-		ai_will_do = {
-			factor = 0
-
-			modifier = {
-				factor = 0
-				can_research = advanced_light_spaa
-			}
-
-			modifier = {
-				factor = 0
-				has_tech = advanced_light_spaa
-			}
-		}
-		
-		categories = {
-			armor
-		}
-	}
-	
-	advanced_light_tank = { #Leopard
-
-		enable_equipments = {
-			light_tank_equipment_3 
+			APC_1970_equipment_1 
 		}	
+		path = { #1980 
+			leads_to_tech = APC_1980
+			research_cost_coeff = 1
+		}
 		path = { #1970 armor
 			leads_to_tech = APC_1970_basic_armor
 			research_cost_coeff = 1
 		}
-		
 		path = { #1970 turret
 			leads_to_tech = APC_1970_basic_turret
 			research_cost_coeff = 1
@@ -736,13 +753,10 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -8 y = 20 }
+			position = { x = 0 y = 20 }
 		}
 		
 		sub_technologies = {
-			advanced_light_td
-			advanced_light_art
-			advanced_light_spaa
 		}
 		
 		ai_will_do = {
@@ -752,13 +766,15 @@ technologies = {
 		
 		categories = {
 			armor
-			cat_light_armor
+			APC_1970
 		}
 	}
-		APC_1970_basic_armor = {
+	APC_1970_basic_armor = {
 		
-		artillery = {
-			soft_attack = 0.1
+		APC_1970 = {
+			armor_value = 0.05
+			breakthrough = 0.1
+			hardness = 0.02
 		}
 		
 		path = {
@@ -772,7 +788,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 22 }
+			position = { x = 1 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -787,8 +803,10 @@ technologies = {
 	
 	APC_1970_improved_armor = {
 		
-		artillery = {
-			soft_attack = 0.15
+		APC_1970 = {
+			armor_value = 0.1
+			breakthrough = 0.15
+			hardness = 0.02
 		}
 		
 		path = {
@@ -802,7 +820,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 24 }
+			position = { x = 1 y = 24 }
 		}
 		
 		categories = {
@@ -817,8 +835,10 @@ technologies = {
 	
 	APC_1970_advanced_armor = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1970 = {
+			armor_value = 0.15
+			breakthrough = 0.2
+			hardness = 0.02
 		}
 		
 		research_cost = 1
@@ -827,7 +847,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -7 y = 26 }
+			position = { x = 1 y = 26 }
 		}
 		
 		categories = {
@@ -842,8 +862,9 @@ technologies = {
 	
 	APC_1970_basic_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1970 = {
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		
 		path = {
@@ -857,7 +878,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 22 }
+			position = { x = 3 y = 22 }
 		}
 		
 		categories = {
@@ -872,8 +893,9 @@ technologies = {
 	
 	APC_1970_improved_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1970 = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		
 		path = {
@@ -887,7 +909,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 24 }
+			position = { x = 3 y = 24 }
 		}
 		
 		categories = {
@@ -902,8 +924,9 @@ technologies = {
 	
 	APC_1970_advanced_turret = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1970 = {
+			soft_attack = 0.15
+			hard_attack = 0.15
 		}
 		
 		research_cost = 1
@@ -912,7 +935,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -5 y = 26 }
+			position = { x = 3 y = 26 }
 		}
 		
 		categories = {
@@ -927,8 +950,9 @@ technologies = {
 	
 	APC_1970_basic_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1970 = {
+			maximum_speed = 0.1
+			reliability = 0.05
 		}
 		
 		path = {
@@ -942,7 +966,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 22 }
+			position = { x = -1 y = 22 }
 		}
 		
 		categories = {
@@ -957,8 +981,9 @@ technologies = {
 	
 	APC_1970_improved_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1970 = {
+			maximum_speed = 0.15
+			reliability = 0.05
 		}
 		
 		path = {
@@ -972,7 +997,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 24 }
+			position = { x = -1 y = 24 }
 		}
 		
 		categories = {
@@ -991,8 +1016,9 @@ technologies = {
 	
 	APC_1970_advanced_engine = {
 		
-		artillery = {
-			soft_attack = 0.2
+		APC_1970 = {
+			maximum_speed = 0.2
+			reliability = 0.05
 		}
 		
 		research_cost = 1
@@ -1001,7 +1027,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -9 y = 26 }
+			position = { x = -1 y = 26 }
 		}
 		
 		categories = {
@@ -1014,17 +1040,76 @@ technologies = {
 		}
 	}
 	
-	advanced_light_art = {
+	APC_1980 = { #Leopard
 
 		enable_equipments = {
-			light_tank_artillery_equipment_3
+			APC_1980_equipment_1 
 		}
-	
-		research_cost = 0.5
-		start_year = 1970
-	
+		path = { #1990 armor
+			leads_to_tech = APC_1990
+			research_cost_coeff = 1
+		}
+		path = { #1980 armor
+			leads_to_tech = APC_1980_basic_armor
+			research_cost_coeff = 1
+		}
+		
+		path = { #1980 turret
+			leads_to_tech = APC_1980_basic_turret
+			research_cost_coeff = 1
+		}
+		
+		path = { #1980 armor engine
+			leads_to_tech = APC_1980_basic_engine
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1980
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 28 }
+		}
+		
+		sub_technologies = {
+		}
+		
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
+			
+		}
+		
+		categories = {
+			armor
+			APC_1980
+		}
+	}
+	APC_1980_basic_armor = {
+		
+		APC_1980 = {
+			armor_value = 0.05
+			breakthrough = 0.1
+			hardness = 0.02
+		}
+		
+		path = {
+			leads_to_tech = APC_1980_improved_armor
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1983
+		
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+
 		}
 		
 		categories = {
@@ -1032,21 +1117,270 @@ technologies = {
 		}
 	}
 	
-	advanced_light_spaa = {
-
-		enable_equipments = {
-			light_tank_aa_equipment_3
-		}
-	
-		research_cost = 0.5
-		start_year = 1970
+	APC_1980_improved_armor = {
 		
-		ai_will_do = {
-			factor = 0
+		APC_1980 = {
+			armor_value = 0.1
+			breakthrough = 0.15
+			hardness = 0.02
+		}
+		
+		path = {
+			leads_to_tech = APC_1980_advanced_armor
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1986
+		
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 32 }
 		}
 		
 		categories = {
 			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+	
+	APC_1980_advanced_armor = {
+		
+		APC_1980 = {
+			armor_value = 0.15
+			breakthrough = 0.2
+			hardness = 0.02
+		}
+		
+		research_cost = 1
+
+		start_year = 1989
+		
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 34 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+	
+	APC_1980_basic_turret = {
+		
+		APC_1980 = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = APC_1980_improved_turret
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1983
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 30 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+	
+	APC_1980_improved_turret = {
+		
+		APC_1980 = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = APC_1980_advanced_turret
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1986
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 32 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+	
+	APC_1980_advanced_turret = {
+		
+		APC_1980 = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		
+		research_cost = 1
+
+		start_year = 1989
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 34 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+	
+	APC_1980_basic_engine = {
+		
+		APC_1980 = {
+			maximum_speed = 0.1
+			reliability = 0.05
+		}
+		
+		path = {
+			leads_to_tech = APC_1980_improved_engine
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1983
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 30 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+	
+	APC_1980_improved_engine = {
+		
+		APC_1980 = {
+			maximum_speed = 0.15
+			reliability = 0.05
+		}
+		
+		path = {
+			leads_to_tech = APC_1980_advanced_engine
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1986
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 32 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	APC_1980_advanced_engine = {
+		
+		APC_1980 = {
+			maximum_speed = 0.2
+			reliability = 0.05
+		}
+		
+		research_cost = 1
+
+		start_year = 1989
+		
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 34 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+
+	APC_1990 = { #Leopard
+
+		enable_equipments = {
+			APC_1990_equipment_1 
+		}
+		
+		research_cost = 2
+		start_year = 1990
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 36 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		
+		categories = {
+			armor
+			APC_1990
 		}
 	}
 	
@@ -2360,7 +2694,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 8 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 		
 		sub_technologies = {
@@ -2398,7 +2732,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -2430,7 +2764,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 8 }
+			position = { x = 1 y = 8 }
 		}
 		
 		categories = {
@@ -2457,7 +2791,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 10 }
+			position = { x = 1 y = 10 }
 		}
 		
 		categories = {
@@ -2489,7 +2823,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 6 }
+			position = { x = 3 y = 6 }
 		}
 		
 		categories = {
@@ -2521,7 +2855,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 8 }
+			position = { x = 3 y = 8 }
 		}
 		
 		categories = {
@@ -2548,7 +2882,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 10 }
+			position = { x = 3 y = 10 }
 		}
 		
 		categories = {
@@ -2579,7 +2913,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 6 }
+			position = { x = -1 y = 6 }
 		}
 		
 		categories = {
@@ -2610,7 +2944,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 8 }
+			position = { x = -1 y = 8 }
 		}
 		
 		categories = {
@@ -2636,7 +2970,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 10 }
+			position = { x = -1 y = 10 }
 		}
 		
 		categories = {
@@ -2721,7 +3055,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 8 y = 12 }
+			position = { x = 0 y = 12 }
 		}
 		
 		sub_technologies = {
@@ -2759,7 +3093,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 14 }
+			position = { x = 1 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -2791,7 +3125,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 16 }
+			position = { x = 1 y = 16 }
 		}
 		
 		categories = {
@@ -2818,7 +3152,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 18 }
+			position = { x = 1 y = 18 }
 		}
 		
 		categories = {
@@ -2850,7 +3184,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 14 }
+			position = { x = 3 y = 14 }
 		}
 		
 		categories = {
@@ -2882,7 +3216,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 16 }
+			position = { x = 3 y = 16 }
 		}
 		
 		categories = {
@@ -2909,7 +3243,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 18 }
+			position = { x = 3 y = 18 }
 		}
 		
 		categories = {
@@ -2940,7 +3274,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 14 }
+			position = { x = -1 y = 14 }
 		}
 		
 		categories = {
@@ -2971,7 +3305,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 16 }
+			position = { x = -1 y = 16 }
 		}
 		
 		categories = {
@@ -2997,7 +3331,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 18 }
+			position = { x = -1 y = 18 }
 		}
 		
 		categories = {
@@ -3079,7 +3413,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 8 y = 20 }
+			position = { x = 0 y = 20 }
 		}
 		
 		sub_technologies = {
@@ -3117,7 +3451,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 22 }
+			position = { x = 1 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -3149,7 +3483,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 24 }
+			position = { x = 1 y = 24 }
 		}
 		
 		categories = {
@@ -3176,7 +3510,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 26 }
+			position = { x = 1 y = 26 }
 		}
 		
 		categories = {
@@ -3208,7 +3542,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 22 }
+			position = { x = 3 y = 22 }
 		}
 		
 		categories = {
@@ -3240,7 +3574,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 24 }
+			position = { x = 3 y = 24 }
 		}
 		
 		categories = {
@@ -3267,7 +3601,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 26 }
+			position = { x = 3 y = 26 }
 		}
 		
 		categories = {
@@ -3298,7 +3632,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 22 }
+			position = { x = -1 y = 22 }
 		}
 		
 		categories = {
@@ -3329,7 +3663,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 24 }
+			position = { x = -1 y = 24 }
 		}
 		
 		categories = {
@@ -3355,7 +3689,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 26 }
+			position = { x = -1 y = 26 }
 		}
 		
 		categories = {
@@ -3433,7 +3767,7 @@ technologies = {
 		start_year = 1980
 		folder = {
 			name = armour_folder
-			position = { x = 8 y = 28 }
+			position = { x = 0 y = 28 }
 		}
 		
 		sub_technologies = {
@@ -3470,7 +3804,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 30 }
+			position = { x = 1 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -3502,7 +3836,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 32 }
+			position = { x = 1 y = 32 }
 		}
 		
 		categories = {
@@ -3529,7 +3863,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = 34 }
+			position = { x = 1 y = 34 }
 		}
 		
 		categories = {
@@ -3561,7 +3895,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 30 }
+			position = { x = 3 y = 30 }
 		}
 		
 		categories = {
@@ -3593,7 +3927,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 32 }
+			position = { x = 3 y = 32 }
 		}
 		
 		categories = {
@@ -3620,7 +3954,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 34 }
+			position = { x = 3 y = 34 }
 		}
 		
 		categories = {
@@ -3651,7 +3985,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 30 }
+			position = { x = -1 y = 30 }
 		}
 		
 		categories = {
@@ -3682,7 +4016,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 32 }
+			position = { x = -1 y = 32 }
 		}
 		
 		categories = {
@@ -3708,7 +4042,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = 34 }
+			position = { x = -1 y = 34 }
 		}
 		
 		categories = {
@@ -3769,7 +4103,7 @@ technologies = {
 		start_year = 1990
 		folder = {
 			name = armour_folder
-			position = { x = 8 y = 36 }
+			position = { x = 0 y = 36 }
 		}
 		
 		sub_technologies = {

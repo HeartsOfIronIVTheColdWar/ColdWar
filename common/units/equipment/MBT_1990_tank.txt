@@ -18,28 +18,29 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 18
-		reliability = 0.8
+		reliability = 0.7
 
 		#Defensive Abilities
 		defense = 22
 		breakthrough = 205
 		hardness = 0.98
-		armor_value = 70
+		armor_value = 316
 
 		#Offensive Abilities
 		soft_attack = 23
 		hard_attack = 23
-		ap_attack = 316
+		ap_attack = 317
 		air_attack = 35
 
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 25 
+		build_cost_ic = 32 
 		resources = {
-			oil = 1
+			oil = 2
 			steel = 3
-			chromium = 4
+			tungsten = 2
+			chromium = 1
 		}
 		
 	}
@@ -73,7 +74,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 18
-		reliability = 0.8
+		reliability = 0.7
 
 		#Defensive Abilities
 		defense = 20
@@ -87,11 +88,12 @@ equipments = {
 		ap_attack = 15
 		air_attack = 0
 		
-		build_cost_ic = 25
+		build_cost_ic = 32
 		resources = {
-			oil = 1
+			oil = 2
 			steel = 3
-			chromium = 4
+			tungsten = 2
+			chromium = 1
 		}
 		
 	}
@@ -126,7 +128,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 18
-		reliability = 0.8
+		reliability = 0.7
 
 		#Defensive Abilities
 		defense = 12
@@ -140,11 +142,12 @@ equipments = {
 		ap_attack = 49
 		air_attack = 125
 		
-		build_cost_ic = 25
+		build_cost_ic = 32
 		resources = {
-			oil = 1
+			oil = 2
 			steel = 3
-			chromium = 3
+			tungsten = 2
+			chromium = 1
 		}
 		
 	}
