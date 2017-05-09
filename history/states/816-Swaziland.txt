@@ -1,0 +1,22 @@
+
+state={
+	id=816
+	name="STATE_816" # Swaziland
+	manpower = 500000
+	state_category = pastoral
+	
+	history={
+		owner = SAF
+		add_core_of = SAF
+		victory_points = {
+			7900 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		7900
+	}
+}
