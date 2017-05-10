@@ -2,7 +2,7 @@
 state={
 	id=814
 	name="STATE_814" # Ogaden
-	manpower = 3000000
+	manpower = 300000
 	state_category = pastoral
 	
 	history={

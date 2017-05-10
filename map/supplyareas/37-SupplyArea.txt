@@ -1,0 +1,8 @@
+supply_area={
+	id=37
+	name="SUPPLYAREA_37" # Northern Romania
+	value=9
+	states={
+		72 76 83 84 
+	}
+}

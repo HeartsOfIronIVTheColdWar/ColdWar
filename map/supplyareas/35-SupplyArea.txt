@@ -1,0 +1,8 @@
+supply_area={
+	id=35
+	name="SUPPLYAREA_35" # Eastern Yugoslavia
+	value=10
+	states={
+		45 105 106 107 108 664 
+	}
+}
