@@ -627,6 +627,26 @@ SLV = {
 	color = rgb { 0  93  164 }
 	color_ui = rgb { 0  93  164 }
 }
+KAZ = {
+	color = rgb { 75  184  203 }
+	color_ui = rgb { 75  184  203 }
+}
+UZB = {
+	color = rgb { 30  181  58 }
+	color_ui = rgb { 30  181  58 }
+}
+KYR = {
+	color = rgb { 255  239  0 }
+	color_ui = rgb { 255  239  0 }
+}
+TAJ = {
+	color = rgb { 0  102  0 }
+	color_ui = rgb { 0  102  0 }
+}
+TRK = {
+	color = rgb { 179  27  52 }
+	color_ui = rgb { 179  27  52 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
