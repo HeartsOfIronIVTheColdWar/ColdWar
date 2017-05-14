@@ -154,6 +154,12 @@ UZB = "countries/Uzbekistan.txt"
 KYR = "countries/Kyrgyzstan.txt"
 TAJ = "countries/Tajikistan.txt"
 TRK = "countries/Turkmenistan.txt"
+KUW = "countries/Kuwait.txt"
+SYM = "countries/SouthYemen.txt"
+UAE = "countries/UAE.txt"
+DJI = "countries/Djibouti.txt"
+BHR = "countries/Bahrain.txt"
+QAT = "countries/Qatar.txt"
 
 
 

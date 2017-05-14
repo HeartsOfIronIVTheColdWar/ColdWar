@@ -1,0 +1,23 @@
+﻿###########################
+# Egypt Cold War Mod Events
+###########################
+
+add_namespace = egypt
+
+# Syria refuses annexation
+country_event = {
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = EGY
+	}
+	
+	option = { 	
+		name = egypt.1.a
+	}
+}

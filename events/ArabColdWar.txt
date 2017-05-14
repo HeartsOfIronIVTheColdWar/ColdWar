@@ -1,0 +1,40 @@
+﻿###########################
+# Arab Cold War Events
+###########################
+
+add_namespace = arab
+
+# Egypt announces arab nationalist policy
+country_event = {
+	id = arab.1
+	title = arab.1.t
+	desc = arab.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+
+	option = { 	
+		name = arab.1.a
+		trigger = {
+			NOT = { tag = SAU }
+		}
+		add_ideas = pro_egypt
+
+	}
+	
+	option = {
+		name = arab.1.b
+		trigger = {
+			NOT = { tag = SAU }
+		}
+		add_ideas = pro_saudi
+	}
+	
+	option = {
+		name = arab.1.c
+		trigger = {
+			tag = SAU
+		}
+	}
+}

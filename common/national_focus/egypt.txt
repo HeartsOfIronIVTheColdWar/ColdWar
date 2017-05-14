@@ -1,22 +1,603 @@
 focus_tree = {
-	id = EGY_focus
-	
+	id = egypt
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = EGY
-			has_dlc = "Together for Victory"
+		}
+	}
+	default = no
+	focus = {
+		id = EGY_free_officers
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = EGY_support_king
+		}
+		x = 2
+		y = 0
+
+	}
+	focus = {
+		id = EGY_general_petroleum_authority
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 23
+		y = 0
+
+	}
+	focus = {
+		id = EGY_lessons_of_1948
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = EGY_arab_nationalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = EGY_islamic_republic
+		}
+		x = 9
+		y = 0
+		available = {
+			OR = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Mohammed Naguib"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Gamal Abdel Nasser"
+				}
+			}
+		}
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = SAU
+						tag = IRQ
+						tag = LEB
+						tag = SYR
+						tag = SOM
+						tag = MOR
+						tag = ALG
+						tag = MAU
+						tag = LBA
+						tag = JOR
+						tag = TUN
+						tag = SUD
+						tag = PAL
+						tag = YEM
+						tag = OMA
+						#tag = KUW	656
+						#tag = UAE	658
+						#tag = QAT
+						#tag = BHR
+						#tag = SYM	659
+						#tag = DJI	268
+					}
+				}
+				country_event = arab.1
+			}
+		}
+	}
+	focus = {
+		id = EGY_abandon_sudan_claim
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = EGY_land_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 18
+		y = 0
+		completion_reward = {
+			swap_ideas = {
+				add_idea = RAJ_agrarian_society_3
+				remove_idea = RAJ_agrarian_society_2
+			}
 		}
 
-		#modifier = {
-		#	add = 10
-		#	original_tag = EGY
-		#	has_dlc = "Together for Victory"
-		#}
 	}
-	
-	default = no
+	focus = {
+		id = EGY_non-aligned
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 14
+		y = 0
 
-}		
+	}
+	focus = {
+		id = EGY_support_king
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = EGY_free_officers
+		}
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = EGY_islamic_republic
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = EGY_arab_nationalism
+		}
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = EGY_overthrow_government
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_free_officers
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			news_event = {
+				id = news.520723
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_brotherhood_coup
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_overthrow_government
+		}
+		mutually_exclusive = {
+			focus = EGY_ban_all_parties
+			focus = EGY_parliamentary_democracy
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = EGY_ban_all_parties
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_overthrow_government
+		}
+		mutually_exclusive = {
+			focus = EGY_brotherhood_coup
+			focus = EGY_parliamentary_democracy
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = EGY_nasser
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_ban_all_parties
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = EGY_parliamentary_democracy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_support_king
+			focus = EGY_overthrow_government
+		}
+		mutually_exclusive = {
+			focus = EGY_brotherhood_coup
+			focus = EGY_ban_all_parties
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = EGY_abolish_monarchy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_parliamentary_democracy
+			focus = EGY_ban_all_parties
+		}
+		mutually_exclusive = {
+			focus = EGY_constitutional_monarchy
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = EGY_constitutional_monarchy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_parliamentary_democracy
+		}
+		mutually_exclusive = {
+			focus = EGY_abolish_monarchy
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = EGY_pan_arabism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_arab_nationalism
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = EGY_seize_suez
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_arab_nationalism
+			focus = EGY_islamic_republic
+		}
+		x = 10
+		y = 1
+			completion_reward = {
+					custom_effect_tooltip = EGY_suez_tt
+					hidden_effect = {
+							news_event = {
+									id = news.1001
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = EGY_union_with_syria
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_pan_arabism
+		}
+		prerequisite = {
+			focus = EGY_seize_suez
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			SYR = {
+				country_event = {
+					id = syria.1
+				}
+			}
+		}
+		available = {
+			owns_state = 803
+		}
+
+	}
+	focus = {
+		id = EGY_invite_north_yemen
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_union_with_syria
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = EGY_arab_socialism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_non-aligned
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = EGY_recognize_PRC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_arab_socialism
+		}
+		mutually_exclusive = {
+			focus = EGY_recognize_ROC
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = EGY_USSR_treaty
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_recognize_PRC
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = EGY_ENG_agreement
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_non-aligned
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = EGY_recognize_ROC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_ENG_agreement
+		}
+		mutually_exclusive = {
+			focus = EGY_recognize_PRC
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = EGY_join_commonwealth
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_recognize_ROC
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = EGY_education_reform
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_land_reform
+		}
+		x = 18
+		y = 1
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = EGY_aswan_USSR_funding
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_education_reform
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = EGY_aswan_US_funding
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_education_reform
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = EGY_nuclear_program
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_aswan_USSR_funding
+			focus = EGY_aswan_US_funding
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = EGY_sinai_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = EGY_general_petroleum_authority
+		}
+		available = {
+			EGY = {
+				controls_state = 453
+			}
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 453
+			}
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = EGY_western_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = EGY_general_petroleum_authority
+		}
+		x = 23
+		y = 1
+		available = {
+			EGY = {
+				controls_state = 552
+			}
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 552
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_eastern_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = EGY_general_petroleum_authority
+		}
+		available = {
+			EGY = {
+				controls_state = 457
+			}
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 457
+			}
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = EGY_arab_petroleum_congress
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_sinai_oil
+		}
+		prerequisite = {
+			focus = EGY_western_oil
+		}
+		prerequisite = {
+			focus = EGY_eastern_oil
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = EGY_USSR_arms_deal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_lessons_of_1948
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = EGY_USA_arms_deal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_lessons_of_1948
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = EGY_purge_RCC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_abolish_monarchy
+		}
+		prerequisite = {
+			focus = EGY_nasser
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = EGY_dissolve_palestinian_govt
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_invite_north_yemen
+		}
+		available = {
+			PAL = { is_subject_of = EGY }
+			owns_state = 554
+		}
+		completion_reward = {
+			annex = PAL
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = EGY_join_warsaw_pact
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_USSR_treaty
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = EGY_join_NATO
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_join_commonwealth
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = EGY_JDECT
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_lessons_of_1948
+		}
+		x = 31
+		y = 1
+
+	}
+}
