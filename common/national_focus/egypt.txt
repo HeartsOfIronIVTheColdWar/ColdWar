@@ -1,5 +1,5 @@
 focus_tree = {
-	id = EGY_focus
+	id = EGY
 	
 	country = {
 		factor = 0
@@ -7,16 +7,22 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = EGY
-			has_dlc = "Together for Victory"
 		}
-
-		#modifier = {
-		#	add = 10
-		#	original_tag = EGY
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
+	focus = {
+		id = EGY_soviet_control
+		icon = GFX_goal_continuous_suppression
+		cost = 0
+		x = 9
+		y = 0
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_political_power = 150
+		}
 
+	}
 }		
