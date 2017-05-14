@@ -1,0 +1,19 @@
+
+state={
+	id=811
+	name="STATE_811" # Cape Juby
+	manpower = 10000
+	state_category = enclave
+	
+	history={
+		owner = SPR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		4920 8111
+	}
+}

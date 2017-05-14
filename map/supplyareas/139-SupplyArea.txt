@@ -1,9 +1,9 @@
 
 supply_area={
 	id=139
-	name="SUPPLYAREA_139"
+	name="SUPPLYAREA_139" # Mozambique
 	value=6
 	states={
-		544 802 789 788 
+		544 788 789
 	}
 }

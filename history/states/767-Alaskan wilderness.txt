@@ -11,6 +11,6 @@ state={
 		}
 		add_core_of = USA
 		}		
-	manpower=100000
+	manpower=1000 #100,000 is ridiculous, that's most of the population of alaska in 1950
 	state_category=wasteland
 }

@@ -98,7 +98,7 @@ LAO = "countries/Laos.txt"
 MNT = "countries/Montenegro.txt"
 UKR = "countries/Ukraine.txt"
 GEO = "countries/Georgia.txt"
-#KAZ = "countries/Kazakhstan.txt" #For a later time
+KAZ = "countries/Kazakhstan.txt"
 AZR = "countries/Azerbaijan.txt"
 ARM = "countries/Armenia.txt"
 BLR = "countries/Belarus.txt"
@@ -150,6 +150,10 @@ KOS = "countries/Kosovo.txt"
 MAC = "countries/Macedonia.txt"
 MOL = "countries/Moldova.txt"
 SLV = "countries/Slovenia.txt"
+UZB = "countries/Uzbekistan.txt"
+KYR = "countries/Kyrgyzstan.txt"
+TAJ = "countries/Tajikistan.txt"
+TRK = "countries/Turkmenistan.txt"
 
 
 

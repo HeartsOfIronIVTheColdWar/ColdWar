@@ -23,7 +23,7 @@ state={
 			1591 3 
 		}
 		add_core_of = SOV
-		#add_core_of = KAZ
+		add_core_of = KAZ
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4
@@ -33,7 +33,8 @@ state={
 	}
 
 	provinces={
-		1591 1825 4224 4686 7706 10148 10660 12583 12640 13147 
+		1591 4224 4686 7706 10148 10660 12583 12640 13147
+		10601 #from Tashkent
 	}
 	manpower=2563404
 }

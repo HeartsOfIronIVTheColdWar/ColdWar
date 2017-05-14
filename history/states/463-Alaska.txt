@@ -27,7 +27,7 @@ state={
 	provinces={
 		4833 4848 10707 13069 13091 13202 13203 
 	}
-	manpower=67500
+	manpower=138000 #1950 census for the entire state - but we're splitting it in the mod?
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

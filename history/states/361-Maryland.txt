@@ -2,7 +2,7 @@
 state={
 	id=361
 	name="STATE_361"
-	manpower = 2118394
+	manpower = 3190000 #maryland + DC in 1950 census
 	
 	state_category = city
 
@@ -33,6 +33,6 @@ state={
 	}
 
 	provinces={
-		3957 6823 6892 6929 6984 9758 9786 11892 
+		3957 6823 6892 6929 6984 9758 11892 
 	}
 }

@@ -41,24 +41,26 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}
+	
 	create_country_leader = {
-	name = "Mostafa El-Nahas"
-	desc = "POLITICS_FAROUK_I_DESC"
-	picture = ""
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
+		name = "Farouk I"
+		desc = "POLITICS_FAROUK_I_DESC"
+		picture = "Portrait_Egypt_Farouk_I.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			#
+		}
 	}
 	create_country_leader = {
-	name = "Farouk I"
-	desc = "POLITICS_FAROUK_I_DESC"
-	picture = "Portrait_Egypt_Farouk_I.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
+		name = "Mostafa El-Nahas"
+		desc = "POLITICS_FAROUK_I_DESC"
+		picture = "GFX_NZL_michael_joseph_savage"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
 	}
 	set_technology = {
 	}

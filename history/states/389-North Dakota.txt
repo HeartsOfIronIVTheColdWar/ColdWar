@@ -2,7 +2,7 @@
 state={
 	id=389
 	name="STATE_389"
-	manpower = 680844
+	manpower = 616000 #1950 census
 	state_category = rural
 	resources={
 		steel=24
