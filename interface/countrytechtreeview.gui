@@ -507,7 +507,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 1450 height = 1090 
+					width = 100%% height = 1090 
 					min = { width = 100%% height = 150%% }
 				}
 				clipping = no
@@ -704,25 +704,12 @@ guiTypes = {
 				size = { width = 600 height = 80% }				
 				orientation = center_up
 				origo = center_up
-			
-				instantTextBoxType = {
-					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_HEAVY"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
 
 				instantTextBoxType = {
 					name = "armour_subtitle_APC"
-					position = { x = 290 y = 170 }
+					position = { x = -420 y = -115 }
 					textureFile = ""
-					font = "hoi_33"
+					font = "hoi_30header"
 					borderSize = {x = 0 y = 4}
 					text = "ARMOUR_TITLE_APC"
 					maxWidth = 200
@@ -733,9 +720,9 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "armour_subtitle_MBT"
-					position = { x = 870 y = 200 }
+					position = { x = 440 y = -85 }
 					textureFile = ""
-					font = "hoi_33"
+					font = "hoi_30header"
 					borderSize = {x = 0 y = 4}
 					text = "ARMOUR_TITLE_MBT"
 					maxWidth = 200
@@ -746,9 +733,9 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "armour_subtitle_IFV"
-					position = { x = -270 y = 170 }
+					position = { x = 10 y = -115 }
 					textureFile = ""
-					font = "hoi_33"
+					font = "hoi_30header"
 					borderSize = {x = 0 y = 4}
 					text = "ARMOUR_TITLE_IFV"
 					maxWidth = 200
@@ -756,38 +743,26 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-
-				instantTextBoxType = {
-					name = "armour_subtitle_medium"
-					position = { x = 197 y = -43 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_MEDIUM"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_LIGHT"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}			
+		
 			}	
 
-				
 			gridboxtype = {
 				name = "advanced_medium_tank_tree"
-				position = { x = 10% y = 172 }
+				position = { x = 430 y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "advanced_light_tank_tree"
+				position = { x = 0 y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "mechanised_infantry3_tree"
+				position = { x = -430 y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

@@ -127,7 +127,7 @@ ideas = {
 		SOV_rebuilding_the_nation = {
 			removal_cost = -1
 
-			picture = anti_soviet_pact
+			picture = ENG_the_war_to_end_all_wars
 			
 			allowed = {
 				always = no # Added via event

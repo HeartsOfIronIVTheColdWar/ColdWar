@@ -1,5 +1,5 @@
 focus_tree = {
-	id = indian_focus
+	id = RAJ
 	
 	country = {
 		factor = 0
@@ -7,17 +7,25 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = RAJ
-			has_dlc = "Together for Victory"
 		}
 
-		#modifier = {
-		#	add = 10
-		#	original_tag = RAJ
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
+	
+	focus = {
+		id = RAJ_soviet_control
+		icon = GFX_goal_continuous_suppression
+		cost = 1
+		x = 0
+		y = 0
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_political_power = 150
+		}
 
+	}
 }		
 

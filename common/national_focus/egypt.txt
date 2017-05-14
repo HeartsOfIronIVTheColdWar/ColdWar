@@ -1,5 +1,10 @@
 focus_tree = {
+<<<<<<< HEAD
 	id = egypt
+=======
+	id = EGY
+	
+>>>>>>> origin/master
 	country = {
 		factor = 0
 		modifier = {
@@ -9,6 +14,7 @@ focus_tree = {
 	}
 	default = no
 	focus = {
+<<<<<<< HEAD
 		id = EGY_free_officers
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -601,3 +607,19 @@ focus_tree = {
 
 	}
 }
+=======
+		id = EGY_soviet_control
+		icon = GFX_goal_continuous_suppression
+		cost = 0
+		x = 9
+		y = 0
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_political_power = 150
+		}
+
+	}
+}		
+>>>>>>> origin/master
