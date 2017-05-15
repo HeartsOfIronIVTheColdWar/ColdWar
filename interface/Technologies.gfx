@@ -3216,94 +3216,94 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_APC_1950_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_improved_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_advanced_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_basic_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank1.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_improved_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_advanced_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank4.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_basic_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_improved_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_APC_1950_advanced_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
 	}
 	
 	###### 1950 MBT ######
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_improved_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_advanced_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_basic_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank1.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_improved_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_advanced_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank4.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_basic_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_improved_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1950_advanced_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
 	}
 	
 	######################
@@ -3312,47 +3312,47 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_improved_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_advanced_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_basic_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank1.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_improved_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_advanced_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank4.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_basic_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_improved_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1960_advanced_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
 	}
 	
 	#################
@@ -3361,47 +3361,47 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_improved_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_advanced_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_basic_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank1.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_improved_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_advanced_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank4.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_basic_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_improved_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1970_advanced_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
 	}
 	
 	#######################
@@ -3410,47 +3410,47 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_improved_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_advanced_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_basic_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank1.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_improved_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_advanced_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank4.dds"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_basic_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_improved_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_MBT_1980_advanced_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
 	}
 	
 	##############
@@ -3459,7 +3459,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_MBT_1990_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
 	}
 	
 	SpriteType = {

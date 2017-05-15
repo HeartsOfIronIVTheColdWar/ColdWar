@@ -53,7 +53,7 @@ guiTypes = {
 				position = { x= 0 y= 0 }
 				size = { 
 					width = 1400 height = 1275
-					min = { width = 100%% height = 200%% }
+					min = { width = 200%% height = 200%% }
 				}
 				clipping = no
 
@@ -79,7 +79,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "infantry_subtitle_specialists"
-					position = { x = 30 y = 1000 }
+					position = { x = 30 y = 900 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -102,6 +102,42 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+				instantTextBoxType = {
+					name = "infantry_subtitle_supportweapons_squad_weapons"
+					position = { x = 410 y = 315 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 0}
+					text = "INFANTRY_TITLE_SQUAD_WEAPONS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_subtitle_supportweapons_anti_tank_weapons"
+					position = { x = 410 y = 455 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 0}
+					text = "INFANTRY_TITLE_ANTI_TANK_WEAPONS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_subtitle_supportweapons_special_weapons"
+					position = { x = 410 y = 595 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 0}
+					text = "INFANTRY_TITLE_SPECIAL_WEAPONS"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
 				instantTextBoxType = {
 					name = "infantry_subtitle_motorized"
@@ -114,7 +150,8 @@ guiTypes = {
 					maxHeight = 62
 					format = left
 					Orientation = "UPPER_LEFT"
-				}								
+				}
+				
 				
 				instantTextBoxType = {
 					name = "infantry_year2"
@@ -269,11 +306,132 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+				instantTextBoxType = {
+					name = "infantry_year16"
+					position = { x = 1950 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1970"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year17"
+					position = { x = 2090 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1972"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year18"
+					position = { x = 2230 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1974"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year19"
+					position = { x = 2370 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1976"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year20"
+					position = { x = 2510 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1978"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year21"
+					position = { x = 2650 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1980"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year22"
+					position = { x = 2790 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1982"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year23"
+					position = { x = 2930 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1984"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year24"
+					position = { x = 3070 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1986"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year25"
+					position = { x = 3210 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1988"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "infantry_year26"
+					position = { x = 3350 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1990"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}		
 
 			}
 
 			gridboxtype = {
-				name = "support_weapons_tree"
+				name = "basic_infantry_equipment_tree"
 				position = { x = 128 y = 380 }
 				#size = { width = 420 height = 500 }
 				slotsize = { width = 70 height = 70 }
@@ -289,7 +447,7 @@ guiTypes = {
 			}	
 	
 			gridboxtype = {
-				name = "infantry_weapons1_tree"
+				name = "infantry_weapons_1_tree"
 				position = { x = 128 y = 210 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -305,21 +463,21 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 1100 }
+				position = { x = 140 y = 1010 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_mountaineers_tree"
-				position = { x = 140 y = 1210 }
+				position = { x = 140 y = 1115 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 1315 }
+				position = { x = 140 y = 1220 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}

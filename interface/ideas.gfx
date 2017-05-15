@@ -7,9 +7,73 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
 		noOfFrames = 14		
 	}
-
-	### new tfv nat spirit icons
-
+	###PRESS STUFF###
+	spriteType = {
+		name = "GFX_idea_free_press"
+		texturefile = "gfx/interface/ideas/idea_free_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_censored_press"
+		texturefile = "gfx/interface/ideas/idea_censored_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_resistance_press"
+		texturefile = "gfx/interface/ideas/idea_resistance_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_productive_press"
+		texturefile = "gfx/interface/ideas/idea_productive_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_call_for_volunteers_press"
+		texturefile = "gfx/interface/ideas/idea_call_for_volunteers_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_agressive_press"
+		texturefile = "gfx/interface/ideas/idea_agressive_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nationalism_press"
+		texturefile = "gfx/interface/ideas/idea_nationalism_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_security_press"
+		texturefile = "gfx/interface/ideas/idea_security_press.dds"
+	}
+	###FOREIGN ADVISORS###
+	spriteType = {
+		name = "GFX_idea_no_advisors"
+		texturefile = "gfx/interface/ideas/no_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_us_advisors"
+		texturefile = "gfx/interface/ideas/us_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ussr_advisors"
+		texturefile = "gfx/interface/ideas/soviet_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_uk_advisors"
+		texturefile = "gfx/interface/ideas/uk_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_france_advisors"
+		texturefile = "gfx/interface/ideas/france_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_advisors"
+		texturefile = "gfx/interface/ideas/chinese_advisors.dds"
+	}
+	
+	###IDEAS###
 	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
