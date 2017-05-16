@@ -311,7 +311,13 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-
+		completion_reward = {
+			YEM = {
+				country_event = {
+					id = arab.5
+				}
+			}
+		}
 	}
 	focus = {
 		id = EGY_arab_socialism

@@ -24,7 +24,7 @@ country_event = {
 		ai_chance = {
 			factor = 95
 		}
-		news_event = { id = news.580201 }
+		news_event = { id = news.580201 days = 1 }
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 	

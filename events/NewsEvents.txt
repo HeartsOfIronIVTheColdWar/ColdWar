@@ -241,6 +241,19 @@ news_event = {
 		name = news.580201.b
 		trigger = {
 			NOT = { tag = EGY }
+			NOT = { tag = IRQ }
+		}
+	}
+	option = {
+		name = news.580201.c
+		trigger = {
+			tag = IRQ
+		}
+		JOR = {
+			country_event = {
+				id = arab.2
+				days = 1
+			}
 		}
 	}
 }

@@ -38,3 +38,213 @@ country_event = {
 		}
 	}
 }
+
+# Arab Federation (Iraq asks Jordan to federate against the UAR)
+country_event = {
+	id = arab.2
+	title = arab.2.t
+	desc = arab.2.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JOR
+	}
+	
+	option = {
+		name = arab.2.a
+		IRQ = {
+			country_event = {
+				id = arab.3
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	
+	option = {
+		name = arab.2.b
+		IRQ = {
+			country_event = {
+				id = arab.4
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+# Arab Federation - Jordan accepts
+country_event = {
+	id = arab.3
+	title = arab.3.t
+	desc = arab.3.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRQ
+	}
+
+	immediate = {
+		IRQ = {
+			set_cosmetic_tag = ARF
+		 	annex_country = {
+				target = JOR
+				transfer_troops = yes
+			} 
+			add_named_threat = {
+				threat = 3
+				name = irq.1_threat_JOR
+			}
+		}
+		455 = {
+			if = {
+				limit = { is_core_of = JOR}
+				add_core_of = IRQ
+			}
+		}
+		784 = {
+			if = {
+				limit = { is_core_of = JOR}
+				add_core_of = IRQ
+			}
+		}
+	}
+	
+	option = {
+		name = arab.3.a
+	}
+}
+
+# Arab Federation - Jordan refuses
+country_event = {
+	id = arab.4
+	title = arab.3.t
+	desc = arab.3.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRQ
+	}
+	
+	option = {
+		name = arab.4.a
+	}
+}
+
+# United Arab States - UAR invites North Yemen into confederation
+country_event = {
+	id = arab.5
+	title = arab.5.t
+	desc = arab.5.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = YEM
+	}
+	
+	option = {
+		name = arab.5.a
+		EGY = {
+			country_event = arab.6
+			days = 1
+		}
+		ai_chance = {
+			factor = 95
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	
+	option = {
+		name = arab.5.b
+		EGY = {
+			country_event = arab.7
+			days = 1
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+# United Arab States - North Yemen accepts
+country_event = {
+	id = arab.6
+	title = arab.6.t
+	desc = arab.6.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EGY
+	}
+	
+	immediate = {
+		EGY = {
+			puppet = YEM
+			create_faction = "United Arab States"
+			add_to_faction = YEM
+			if = {
+				limit = {
+					PAL = is_subject_of = EGY
+				}
+				add_to_faction = PAL
+			}
+		}
+	}
+	
+	option = {
+		name = arab.6.a
+	}
+}
+
+# United Arab States - North Yemen refuses
+country_event = {
+	id = arab.7
+	title = arab.7.t
+	desc = arab.7.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EGY
+	}
+	
+	option = {
+		name = arab.7.a
+	}
+}
