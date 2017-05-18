@@ -93,11 +93,10 @@ bookmarks = {
 			history = "EGY_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			RAJ_agrarian_society
 			RAJ_agrarian_society_2
-			RAJ_agrarian_society_3
 			}
 			focuses = {
+			
 			}
 		}
 		"RAJ"={
