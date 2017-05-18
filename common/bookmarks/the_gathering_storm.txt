@@ -96,7 +96,9 @@ bookmarks = {
 			RAJ_agrarian_society_2
 			}
 			focuses = {
-			
+			EGY_seize_suez
+			EGY_islamic_republic
+			EGY_join_commonwealth
 			}
 		}
 		"RAJ"={
