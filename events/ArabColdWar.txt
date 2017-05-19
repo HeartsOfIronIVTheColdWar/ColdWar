@@ -20,6 +20,13 @@ country_event = {
 			NOT = { tag = SAU }
 		}
 		add_ideas = pro_egypt
+		add_opinion_modifier = { target = EGY modifier = pro_egypt }
+		reverse_add_opinion_modifier = { target = EGY modifier = pro_egypt }
+		add_opinion_modifier = { target = SAU modifier = anti_saudi }
+		reverse_add_opinion_modifier = { target = SAU modifier = anti_saudi }
+		ai_chance = {
+			
+		}
 
 	}
 	
@@ -29,6 +36,10 @@ country_event = {
 			NOT = { tag = SAU }
 		}
 		add_ideas = pro_saudi
+		add_opinion_modifier = { target = EGY modifier = anti_egypt }
+		reverse_add_opinion_modifier = { target = EGY modifier = anti_egypt }
+		add_opinion_modifier = { target = SAU modifier = pro_saudi }
+		reverse_add_opinion_modifier = { target = SAU modifier = pro_saudi }
 	}
 	
 	option = {
@@ -36,6 +47,8 @@ country_event = {
 		trigger = {
 			tag = SAU
 		}
+		add_opinion_modifier = { target = EGY modifier = rival_regional_power }
+		reverse_add_opinion_modifier = { target = EGY modifier = rival_regional_power }
 	}
 }
 

@@ -1,0 +1,39 @@
+ideas = {
+
+	country = {
+		pro_egypt = {
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+			
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		pro_saudi = {
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+			
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+	}
+}
