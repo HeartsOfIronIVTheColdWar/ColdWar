@@ -160,6 +160,7 @@ UAE = "countries/UAE.txt"
 DJI = "countries/Djibouti.txt"
 BHR = "countries/Bahrain.txt"
 QAT = "countries/Qatar.txt"
+SVN = "countries/SouthVietnam.txt"
 
 
 

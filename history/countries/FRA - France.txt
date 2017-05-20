@@ -57,6 +57,7 @@ set_national_unity = 0.7
 			puppet = SAA
 		}
 	}
+	puppet = SVN
 }
 
 1960.1.1 = {

@@ -1,0 +1,28 @@
+state={
+	id=834
+	name="STATE_834"
+	manpower = 80000
+	resources={
+		oil=36
+
+	}
+	state_category = rural
+	
+	history={
+		owner = ENG
+		add_core_of = QAT
+		victory_points = {
+			8051 1 
+		}
+		buildings = {
+			infrastructure = 2
+			8051 = {
+				naval_base = 2
+			}
+		}
+
+	}
+	provinces={
+		8051
+	}
+}

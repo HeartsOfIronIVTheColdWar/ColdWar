@@ -543,8 +543,13 @@ INS = {
 }
 
 VIN = {
-	color = rgb { 230  223  50 }
-	color_ui = rgb { 230  223  50 }
+	color = rgb { 218  37  29 }
+	color_ui = rgb { 218  37  29 }
+}
+
+SVN = {
+	color = rgb { 51  153  255 }
+	color_ui = rgb { 51  153  255 }
 }
 
 CAM = {
@@ -646,6 +651,30 @@ TAJ = {
 TRK = {
 	color = rgb { 179  27  52 }
 	color_ui = rgb { 179  27  52 }
+}
+KUW = {
+	color = rgb { 206  17  38 }
+	color_ui = rgb { 206  17  38 }
+}
+UAE = {
+	color = rgb { 144  169  90 }
+	color_ui = rgb { 144  169  90 }
+}
+QAT = {
+	color = rgb { 112  25  61 }
+	color_ui = rgb { 112  25  61 }
+}
+SYM = {
+	color = rgb { 128  195  230 }
+	color_ui = rgb { 128  195  230 }
+}
+BHR = {
+	color = rgb { 206  17  38 }
+	color_ui = rgb { 206  17  38 }
+}
+DJI = {
+	color = rgb { 18  173  43 }
+	color_ui = rgb { 18  173  43 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

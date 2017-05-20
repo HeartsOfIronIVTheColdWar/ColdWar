@@ -1,10 +1,7 @@
 focus_tree = {
-<<<<<<< HEAD
+
 	id = egypt
-=======
-	id = EGY
-	
->>>>>>> origin/master
+
 	country = {
 		factor = 0
 		modifier = {
@@ -14,7 +11,6 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-<<<<<<< HEAD
 		id = EGY_free_officers
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -81,12 +77,12 @@ focus_tree = {
 						tag = PAL
 						tag = YEM
 						tag = OMA
-						#tag = KUW	656
-						#tag = UAE	658
-						#tag = QAT
-						#tag = BHR
-						#tag = SYM	659
-						#tag = DJI	268
+						tag = KUW
+						tag = UAE
+						tag = QAT
+						tag = BHR
+						tag = SYM
+						tag = DJI
 					}
 				}
 				country_event = arab.1
@@ -613,19 +609,3 @@ focus_tree = {
 
 	}
 }
-=======
-		id = EGY_soviet_control
-		icon = GFX_goal_continuous_suppression
-		cost = 0
-		x = 9
-		y = 0
-		ai_will_do = {
-			factor = 0
-		}	
-		completion_reward = {
-			add_political_power = 150
-		}
-
-	}
-}		
->>>>>>> origin/master

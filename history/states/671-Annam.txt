@@ -3,13 +3,14 @@ state={
 	id=671
 	name="STATE_671"
 	resources={
-		chromium=8.000
-		tungsten=38.000
+		chromium=4.000
+		tungsten=18.000
 	}
 
 	history={
 		add_core_of = VIN
-		owner = FRA
+		add_core_of = SVN
+		owner = SVN
 		victory_points = {
 			4075 20
 		}
@@ -27,9 +28,9 @@ state={
 	}
 
 	provinces={
-		1073 1157 1185 1248 1302 4075 4119 4255 4379 4397 4529 7015 7093 7229 7280 7518 9948 10016 10075 10103 10129 10137 10180 10309 11909 11936 12008 12048 12065 12075 12297 12319 
+		1157 1185 4075 4119 12048
 	}
-	manpower=11528000
+	manpower=9000000
 	buildings_max_level_factor=1.000
 	state_category=town
 }
