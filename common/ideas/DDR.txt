@@ -1,7 +1,44 @@
 ideas = {
 
 	country = {
-	
+		DDR_capital_investements = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.2   
+			}
+		}
+		
+		DDR_reparation_funds = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_repair_factor = 0.5
+			}
+		}
+		
 		soviet_occupation = {
 			
 			allowed = {

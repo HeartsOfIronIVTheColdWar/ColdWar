@@ -1,0 +1,31 @@
+division_template = {
+	name = "Border Guards"		
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+units = {
+
+	division = {
+		name = "Border Guards Brigade 1"
+		location = 11305
+		division_template = "Border Guards"
+	}
+	division = {
+		name = "Border Guards Brigade 2"
+		location = 11359
+		division_template = "Border Guards"
+	}
+	division = {
+		name = "Border Guards Brigade 3"
+		location = 6524
+		division_template = "Border Guards"
+	}
+	division = {
+		name = "Border Guards Brigade 4"
+		location = 9375
+		division_template = "Border Guards"
+	}
+}

@@ -1,0 +1,26 @@
+division_template = {
+	name = "Volkspolizei See"		
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+units = {
+
+	division = {
+		name = "Volkspolizei See 1"
+		location = 3340
+		division_template = "Volkspolizei See"
+	}
+	division = {
+		name = "Volkspolizei See 2"
+		location = 321
+		division_template = "Volkspolizei See"
+	}
+	division = {
+		name = "Volkspolizei See 3"
+		location = 349
+		division_template = "Volkspolizei See"
+	}
+}

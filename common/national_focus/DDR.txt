@@ -17,7 +17,7 @@ focus_tree = {
 		y = 0
 		ai_will_do = {
 			factor = 100
-		}	
+		}
 		completion_reward = {
 			set_party_name = { ideology = communism long_name = DDR_merged_parties name = DDR_merged_parties_short }
 			add_popularity = { ideology = communism popularity = 0.2 }
@@ -26,30 +26,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = DDR_soviet_control
-		icon = GFX_goal_continuous_suppression
-		cost = 0
-		mutually_exclusive = {
-			focus = DDR_self_governance
-		}
-		x = 9
-		y = 0
-		ai_will_do = {
-			factor = 0
-		}	
-		completion_reward = {
-		}
-
-	}
-	
-	focus = {
 		id = DDR_self_governance
 		icon = GFX_goal_generic_support_communism
-		cost = 0
-		mutually_exclusive = {
-			focus = DDR_soviet_control
+		cost = 1
+		available = {
+			NOT = {
+				has_idea = soviet_occupation
+
+			}
 		}
-		x = 11
+		x = 10
 		y = 0
 		ai_will_do = {
 			factor = 0
@@ -388,7 +374,7 @@ focus_tree = {
 	focus = {
 		id = DDR_the_republic
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 0
+		cost = 1
 		prerequisite = {
 			focus = DDR_self_governance
 		}
@@ -648,13 +634,7 @@ focus_tree = {
 			hidden_effect = {
 				load_oob = "DDR_border_guards"
 			}
-			custom_effect_tooltip = DDR_border_guards
-			create_unit = { division = "name = DDR_borderguard1 division_template = DDR_border_guards starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_borderguard2 division_template = DDR_border_guards starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_borderguard3 division_template = DDR_border_guards starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_borderguard4 division_template = DDR_border_guards starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_borderguard5 division_template = DDR_border_guards starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_borderguard6 division_template = DDR_border_guards starting_experience_factor = 1.0" }
+			custom_effect_tooltip = DDR_border_guards_tt
 		}
 
 	}
@@ -672,13 +652,9 @@ focus_tree = {
 		}	
 		completion_reward = {
 			hidden_effect = {
-				load_oob = "DDR_coastguard"
+				load_oob = "DDR_Hauptverwaltung_Seepolizei"
 			}
-			custom_effect_tooltip = DDR_border_guards
-			create_unit = { division = "name = DDR_coastguard1 division_template = DDR_coastguard starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_coastguard2 division_template = DDR_coastguard starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_coastguard3 division_template = DDR_coastguard starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_coastguard4 division_template = DDR_coastguard starting_experience_factor = 1.0" }
+			custom_effect_tooltip = DDR_Hauptverwaltung_Seepolizei_tt
 		}
 
 	}
@@ -695,11 +671,10 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			custom_effect_tooltip = DDR_border_guards2
-			create_unit = { division = "name = DDR_coastguard5 division_template = DDR_coastguard starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_coastguard6 division_template = DDR_coastguard starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_coastguard7 division_template = DDR_coastguard starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_coastguard8 division_template = DDR_coastguard starting_experience_factor = 1.0" }
+			hidden_effect = {
+				load_oob = "DDR_Volkspolizei_See"
+			}
+			custom_effect_tooltip = DDR_Volkspolizei_See_tt
 		}
 
 	}
@@ -716,11 +691,10 @@ focus_tree = {
 			factor = 20
 		}	
 		completion_reward = {
-			create_unit = { division = "name = DDR_paramilitary_HVA6 division_template = DDR_paramilitary_HVA starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_paramilitary_HVA7 division_template = DDR_paramilitary_HVA starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_paramilitary_HVA8 division_template = DDR_paramilitary_HVA starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_paramilitary_HVA9 division_template = DDR_paramilitary_HVA starting_experience_factor = 1.0" }
-			create_unit = { division = "name = DDR_paramilitary_HVA10 division_template = DDR_paramilitary_HVA starting_experience_factor = 1.0" }
+			hidden_effect = {
+				load_oob = "DDR_Kasernierte_Volkspolizei"
+			}
+			custom_effect_tooltip = DDR_Kasernierte_Volkspolizei_tt
 		}
 
 	}
@@ -915,7 +889,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-		
+			add_ideas = DDR_capital_investements
 		}
 
 	}
@@ -932,7 +906,22 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-		
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
 		}
 
 	}
@@ -952,7 +941,41 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-		
+				60 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				61 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				62 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				64 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				65 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 		}
 
 	}
@@ -969,7 +992,22 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-		
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
 		}
 
 	}
@@ -987,7 +1025,29 @@ focus_tree = {
 			factor = 20
 		}	
 		completion_reward = {
-		
+			65 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			64 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = synth_bonus
+				bonus = 0.5
+				uses = 2
+				category = synth_resources
+			}
+			custom_effect_tooltip = JAP_synth_oil_focus_tt
 		}
 
 	}
@@ -1124,7 +1184,7 @@ focus_tree = {
 	focus = {
 		id = DDR_develop_countryside
 		icon = GFX_goal_generic_construction
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = DDR_aid_former_annexations
 		}
@@ -1134,7 +1194,22 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-		
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
 		}
 
 	}

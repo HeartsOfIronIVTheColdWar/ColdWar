@@ -132,7 +132,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_islamic_republic
-		icon = GFX_goal_unknown
+		icon = GFX_goal_EGY_islamic_republic
 		cost = 10.00
 		mutually_exclusive = {
 			focus = EGY_arab_nationalism
@@ -256,7 +256,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_seize_suez
-		icon = GFX_goal_unknown
+		icon = GFX_goal_EGY_seize_suez
 		cost = 10.00
 		prerequisite = {
 			focus = EGY_arab_nationalism
