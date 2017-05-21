@@ -193,6 +193,20 @@ country_event = {
 		}
 	}
 }
+#HIDDEN EVENT TO REMOVE IDEA ALLOWING FOR VOLUNTEERS
+country_event = {
+	id = usa.123234
+	title = usa.123234
+	desc = usa.123234
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = usa.123234.a 
+		
+		remove_ideas = USA_volunteer_forces
+	}
+}
 
 # Admission of Alaska
 country_event = {
@@ -807,3 +821,4 @@ country_event = {
 		set_country_flag = civilrights3
 	}
 }
+

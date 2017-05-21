@@ -10,10 +10,10 @@ focus_tree = {
 	default = no
 	focus = {
 		id = USA_state_of_the_union
-		icon = GFX_goal_generic_demand_territory
-		cost = 10
-		x = 13
-		y = 0
+			icon = GFX_goal_generic_demand_territory
+			x = 13 
+			y = 0
+		
 			completion_reward = {
 					add_political_power = 120
 				}
@@ -79,7 +79,7 @@ focus_tree = {
 	focus = {
 		id = USA_foreign_policy
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10
+		cost = 0
 		prerequisite = {
 			focus = USA_state_of_the_union
 		}
@@ -93,7 +93,7 @@ focus_tree = {
 	focus = {
 		id = USA_Asia
 		icon = GFX_goal_tripartite_pact
-		cost = 10
+		cost = 0
 		prerequisite = {
 			focus = USA_foreign_policy
 		}
@@ -132,16 +132,26 @@ focus_tree = {
 	focus = {
 		id = USA_korea_war_intervention
 		icon = GFX_goal_generic_major_war
-		cost = 10
+		cost = 0
+
+		x = 3
+		y = 3
+		
+		available = {
+			has_global_flag = KOREA_WAR_HAPPENED
+			
+			KOR = {
+				has_war_with = NKR
+			}
+		}
+		
 		prerequisite = {
 			focus = USA_Asia
 		}
-		x = 3
-		y = 3
+
 		completion_reward = {
-
+			add_ideas = USA_volunteer_forces
 		}
-
 	}
 	focus = {
 		id = USA_treaty_of_SF
@@ -1999,6 +2009,15 @@ focus_tree = {
 		id = USA_treaty_with_SK
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 10
+		
+		available = {
+			country_exists = KOR
+			
+			KOR = {
+				has_war = no
+			}
+		}
+		
 		prerequisite = {
 			focus = USA_korea_war_intervention
 		}
