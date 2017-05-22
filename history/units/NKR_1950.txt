@@ -1,0 +1,196 @@
+##### Division Templates #####
+
+division_template = {
+	name = "Infantry Division"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		logistic = { x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Armoured Division"
+	
+	regiments = {
+		advanced_medium_tank = { x = 0 y = 0 }
+		advanced_medium_tank = { x = 0 y = 1 }
+		advanced_medium_tank = { x = 1 y = 0 }		
+		IFV_1950 = { x = 0 y = 0 } = { x = 2 y = 0 }		
+		IFV_1950 = { x = 0 y = 0 } = { x = 2 y = 1 }	
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+	}
+}
+
+division_template = {
+	name = "Security Brigade"			# North Korean Border Guards
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = 	{
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Marine Division"			# Special Forces
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 } 
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade"		# Motor Rifle Division
+
+	regiments = {
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+	}
+}
+
+##### OOB #####
+
+units = {
+	##### KOREAN BORDER #####				
+	
+	division= {			
+		name = "1st Division"		
+		location = 11915
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "2nd Division"		
+		location = 848
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "3rd Guards Division"		
+		location = 848
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {			
+		name = "4th Division"		
+		location = 7155
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "5th Division"		
+		location = 4052
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "6th Division"		
+		location = 11915
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "7th Division"		
+		location = 7155
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "105th Armoured Brigade"		
+		location = 12040
+		division_template = "Armoured Division"
+	}
+	division= {			
+		name = "1st Security Brigade"		
+		location = 7070
+		division_template = "Security Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "3rd Security Brigade"		
+		location = 11915
+		division_template = "Security Brigade"
+	}
+	division= {			
+		name = "4th Security Brigade"		
+		location = 4004
+		division_template = "Security Brigade"
+	}
+	division= {			
+		name = "549th Marine Division"		
+		location = 848
+		division_template = "Marine Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "766th Special Forces Regiment"		
+		location = 848
+		division_template = "Marine Division"
+	}
+	division= {			
+		name = "12th Motorized Reconnaissance Regiment"		
+		location = 1148
+		division_template = "Motorized Brigade"
+	}
+	
+	##### WITHIN NORTH KOREA #####
+	
+	division= {			
+		name = "10th Division"		
+		location = 10083
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "13th Division"		
+		location = 978
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "15th Division"		
+		location = 9790
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division= {			
+		name = "2nd Security Brigade"		
+		location = 6944
+		division_template = "Security Brigade"
+	}
+	division= {			
+		name = "5th Security Brigade (Railway Security Brigade)"		
+		location = 11896
+		division_template = "Security Brigade"
+	}
+	
+}	
