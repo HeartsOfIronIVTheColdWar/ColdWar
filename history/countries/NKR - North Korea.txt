@@ -1,7 +1,7 @@
 capital = 527 #North Korea - Pyongyang
 
 oob = "NKR_1950"
-set_research_slots = 2
+set_research_slots = 3
 set_convoys = 80
 set_national_unity = 0.55
 
@@ -11,25 +11,29 @@ set_national_unity = 0.55
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
-		limited_conscription
+		extensive_conscription
 		#ideas
+		nkr_factionalism
 	}
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 12
+				popularity = 7
 				banned = no
 			}
 
-			autocratic = {
-				popularity = 2
+			fascism = {
+				popularity = 0
 				banned = no
 			}
 			
 			communism = {
-				popularity = 85
+				popularity = 87
 				#banned = no #default is no
+			}
+			neutrality = {
+				popularity = 5
 			}
 		}
 		
@@ -39,17 +43,32 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Kim Il Sung"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
+		name = "Kim Il-sung"
+		desc = "POLITICS_KIM_IL_SUNG_DESC"
+		picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
+		expire = "1994.1.1"
+		ideology = stalinism
+		traits = {
+			Iron_Grip
+		}
+	
 	}
 	set_technology = {
 	}
+	
+	add_namespace = {
+		name = "unit_leader_nkr"
+		type = unit_leader
+	}
+
+	create_corps_commander = {
+		name = "Yu Kyong-su"
+		id = 950
+		picture = "Portrait_Asia_Generic_land_4.dds"
+		traits = { trickster }
+		skill = 2
+	}
+
 }
 
 1960.1.1 = {
@@ -66,32 +85,35 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 12
+				popularity = 35
 				banned = no
 			}
 
-			autocratic = {
-				popularity = 2
+			fascism = {
+				popularity = 15
 				banned = no
 			}
 			
 			communism = {
-				popularity = 85
-				#banned = no #default is no
+				popularity = 0
+				#banned = yes #default is no
+			}
+			neutrality = {
+				popularity = 50
 			}
 		}
 		
-		ruling_party = communism 
+		ruling_party = neutrality 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Kim Il Sung"
+	name = "Syngman Rhee"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
+	picture = "Portrait_South_NKRea_Syngman_Rhee.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -113,32 +135,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 12
-				banned = no
+				popularity = 0
+				banned = yes
 			}
 
-			autocratic = {
-				popularity = 2
-				banned = no
+			fascism = {
+				popularity = 0
+				banned = yes
 			}
 			
 			communism = {
-				popularity = 85
+				popularity = 100
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism 
-		last_election = "1948.4.12"
+		ruling_party = communism
+		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
+	}	
 	create_country_leader = {
-	name = "Kim Il Sung"
+	name = "Michael Joseph Savage"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
+	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = socialism
 	traits = {
 		#
 	}
@@ -161,32 +183,32 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 12
-				banned = no
+				popularity = 0
+				banned = yes
 			}
 
-			autocratic = {
-				popularity = 2
-				banned = no
+			fascism = {
+				popularity = 0
+				banned = yes
 			}
 			
 			communism = {
-				popularity = 85
+				popularity = 100
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism 
-		last_election = "1948.4.12"
+		ruling_party = communism
+		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Kim Il Sung"
+	name = "Michael Joseph Savage"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
+	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = socialism
 	traits = {
 		#
 	}
