@@ -13,6 +13,7 @@ set_national_unity = 0.55
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
+		arab_monarchy
 	}
 	set_politics = {
 

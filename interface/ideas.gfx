@@ -73,6 +73,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/chinese_advisors.dds"
 	}
 	
+	###ARAB COLD WAR###
+	spriteType = {
+		name = "GFX_idea_EGY_revolution_triumphant"
+		texturefile = "gfx/interface/ideas/EGY_revolution_triumphant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_brotherhood"
+		texturefile = "gfx/interface/ideas/brotherhood.dds"
+	}
+	
 	###IDEAS###
 	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"

@@ -1,13 +1,70 @@
 ideas = {
 
 	country = {
+		arab_monarchy = {
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = idea_ast_abandon_the_westminster_system_fascism
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = -85
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		arab_nationalist = {
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = -85
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		islamist = {
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = brotherhood
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = -85
+				democratic_acceptance = -85
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
 		pro_egypt = {
 			
 			allowed = {
 				always = no # Triggered via event
 			}
 
-			picture = generic_fascism_drift_bonus
+			picture = EGY_revolution_triumphant
+			
+			removal_cost = -1
 			
 			modifier = {
 			
@@ -25,6 +82,8 @@ ideas = {
 			}
 
 			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
 			
 			modifier = {
 			

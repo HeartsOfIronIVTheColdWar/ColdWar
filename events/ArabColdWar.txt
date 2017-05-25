@@ -15,9 +15,10 @@ country_event = {
 
 
 	option = { 	
-		name = arab.1.a
+		name = arab.1.a # side with Egypt
 		trigger = {
 			NOT = { tag = SAU }
+			NOT = { is_subject_of = SAU }
 		}
 		add_ideas = pro_egypt
 		add_opinion_modifier = { target = EGY modifier = pro_egypt }
@@ -25,31 +26,94 @@ country_event = {
 		add_opinion_modifier = { target = SAU modifier = anti_saudi }
 		reverse_add_opinion_modifier = { target = SAU modifier = anti_saudi }
 		ai_chance = {
-			
+			base = 10
+			modifier = {
+				factor = 0.1
+				has_idea = arab_monarchy
+				NOT = { tag = YEM }
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					tag = YEM
+					tag = SYR
+					tag = SUD
+					has_idea = arab_nationalist
+				}
+			}
 		}
-
 	}
 	
 	option = {
-		name = arab.1.b
+		name = arab.1.b # side with Saudis
 		trigger = {
 			NOT = { tag = SAU }
+			NOT = { is_subject_of = EGY }
 		}
 		add_ideas = pro_saudi
 		add_opinion_modifier = { target = EGY modifier = anti_egypt }
 		reverse_add_opinion_modifier = { target = EGY modifier = anti_egypt }
 		add_opinion_modifier = { target = SAU modifier = pro_saudi }
 		reverse_add_opinion_modifier = { target = SAU modifier = pro_saudi }
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 5
+				has_idea = arab_monarchy
+				NOT = { tag = YEM }
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					tag = YEM
+					tag = SYR
+					tag = SUD
+					has_idea = arab_nationalist
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					tag = YEM
+					tag = SYR
+					tag = SUD
+					has_idea = arab_nationalist
+				}
+				is_historical_focus_on = yes
+			}
+		}
 	}
 	
 	option = {
-		name = arab.1.c
+		name = arab.1.c # Saudi option: we hate Egypt
 		trigger = {
 			tag = SAU
 		}
 		add_opinion_modifier = { target = EGY modifier = rival_regional_power }
 		reverse_add_opinion_modifier = { target = EGY modifier = rival_regional_power }
 	}
+	
+	option = {
+		name = arab.1.e # none of our business
+		trigger = {
+			NOT = { is_subject_of = SAU }
+			NOT = { is_subject_of = EGY }
+			OR = {
+				tag = SOM
+				tag = MOR
+				tag = ALG
+				tag = MAU
+				tag = TUN
+				tag = DJI
+			}
+		}
+		add_political_power = -50
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+
 }
 
 # Arab Federation (Iraq asks Jordan to federate against the UAR)
@@ -76,7 +140,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 95
+			base = 95
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
@@ -90,7 +154,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 5
+			base = 5
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
@@ -187,7 +251,7 @@ country_event = {
 			days = 1
 		}
 		ai_chance = {
-			factor = 95
+			base = 95
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
@@ -199,7 +263,7 @@ country_event = {
 			days = 1
 		}
 		ai_chance = {
-			factor = 5
+			base = 5
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes

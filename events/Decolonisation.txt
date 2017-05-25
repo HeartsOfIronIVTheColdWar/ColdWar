@@ -1,0 +1,136 @@
+﻿###########################
+# Decolonisation Events
+###########################
+
+add_namespace = decolonisation
+
+# Cyrenaica asks for Tripoli
+country_event = {
+	id = decolonisation.1
+	title = decolonisation.1.t
+	desc = decolonisation.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	trigger = {
+		tag = ENG
+		date > 1951.1.1
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 180
+	}
+	
+	option = {
+		name = decolonisation.1.a
+		ai_chance = {
+			factor = 95
+		}
+		effect_tooltip = {
+			LBA = {
+				if = {
+					limit = { ENG = { owns_state = 448 controls_state = 448 } }
+					transfer_state = 448
+				}
+				if = {
+					limit = { ENG = { owns_state = 661 controls_state = 661 } }
+					transfer_state = 661
+				}
+				if = {
+					limit = { ENG = { owns_state = 662 controls_state = 662 } }
+					transfer_state = 662
+				}
+			}
+		}
+		LBA = {country_event = { id = decolonisation.2} }
+	}
+}
+
+# UK gives Tripoli to Cyrenaica
+country_event = {
+	id = decolonisation.2
+	title = decolonisation.2.t
+	desc = decolonisation.2.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LBA
+	}
+	
+	option = {
+		name = decolonisation.2.a
+		if = {
+			limit = { 
+				ENG = { 
+					owns_state = 448
+					controls_state = 448 
+				}
+			}
+			transfer_state = 448
+			set_cosmetic_tag = LBA
+		}
+		if = {
+			limit = { 
+				ENG = { 
+					owns_state = 661
+					controls_state = 661 
+				}
+			}
+			transfer_state = 661
+		}
+		if = {
+			limit = { 
+				ENG = { 
+					owns_state = 662
+					controls_state = 662 
+				}
+			}
+			transfer_state = 662
+		}
+	}
+}
+
+# Egypt abandons Sudan claim
+country_event = {
+	id = decolonisation.3
+	title = decolonisation.3.t
+	desc = decolonisation.3.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ENG
+	}
+	
+	option = {
+		name = decolonisation.3.a
+		release = SUD
+		EGY = {
+			country_event = {
+				id = decolonisation.4 days = 1
+			}
+		}
+	}
+}
+
+# UK releases Sudan
+country_event = {
+	id = decolonisation.4
+	title = decolonisation.4.t
+	desc = decolonisation.4.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = EGY
+	}
+	
+	option = {
+		name = decolonisation.4.a
+	}
+}

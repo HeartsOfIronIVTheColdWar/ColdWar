@@ -792,7 +792,7 @@
  pro_egypt:0 "Pro-Egypt"
  anti_egypt:0 "Sided with Saudi Arabia against Egypt"
  pro_saudi:0 "Pro-Saudi"
- anti-saudi:0 "Sided with Egypt against Saudi Arabia"
+ anti_saudi:0 "Sided with Egypt against Saudi Arabia"
  rival_regional_power:0 "Rival regional power"
  DIPLOMACY_HOSTILE_STATUS:0 "We are currently Hostile"
  faction_general_desc:0 "$COUNTRY|Y$ is in $FACTION|Y$ faction with other nations"

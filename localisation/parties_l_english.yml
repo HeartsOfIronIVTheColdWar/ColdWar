@@ -410,6 +410,8 @@
  EGY_autocratic_party:0 "Muhammad Ali Dynasty"
  EGY_democratic_party:0 "Wafd"
  EGY_free_officers_movement:0 "Free Officers Movement"
+ EGY_brotherhood:0 "Brotherhood"
+ EGY_brotherhood_long:0 "The Society of Muslim Brothers"
  EGY_liberation_rally:0 "Liberation Rally"
  PAL_autocratic_party:0 "APG"
  PAL_autocratic_party_long:0 "All-Palestine Government"

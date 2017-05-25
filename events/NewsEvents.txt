@@ -30,6 +30,12 @@ news_event = {
 				}
 			}
 			set_party_name = { ideology = autocratic long_name = EGY_free_officers_movement name = EGY_free_officers_movement }
+			add_timed_idea = { idea = EGY_revolution_triumphant days = 180 }
+			add_ideas = { brotherhood }
+			swap_ideas = {
+				remove_idea = arab_monarchy
+				add_idea = arab_nationalist
+			}
 		}
 	}
 	
@@ -262,7 +268,7 @@ news_event = {
 news_event = {
 	id = news.530211
 	title = news.530211.t
-	picture = 
+	picture = GFX_news_event_001
 
 	major = yes
 
@@ -320,7 +326,7 @@ news_event = {
 news_event = {
 	id = news.530619
 	title = news.530619.t
-	picture =
+	picture = GFX_news_event_001
 	
 	major = yes
 
