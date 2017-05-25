@@ -31,8 +31,9 @@ leader_traits = {
 		cost = 1000
 		
 		modifier = {
-			supply_consumption_factor = -0.20
+			supply_consumption_factor = -0.2
 			attrition = -0.2
+			army_speed_factor = 0.1 
 		}
 		
 		ai_will_do = {
@@ -48,7 +49,8 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			combat_width_factor = -0.1
-			army_attack_factor = 0.1 
+			army_attack_factor = 0.15 
+			experience_loss_factor = -0.2
 		}
 		
 		ai_will_do = {
@@ -64,7 +66,8 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			max_dig_in_factor = 0.30
-			army_defence_factor = 0.1 
+			army_defence_factor = 0.2
+			max_dig_in = 10
 		}
 		
 		ai_will_do = {
@@ -82,7 +85,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			planning_speed = 0.25
+			planning_speed = 0.4
 		}
 		
 		ai_will_do = {
@@ -99,7 +102,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			max_planning = 0.25
+			max_planning = 0.4
 		}
 		
 		ai_will_do = {
@@ -117,6 +120,7 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			land_reinforce_rate = 0.05
+			army_org_factor = 0.2
 		}
 		
 		ai_will_do = {
@@ -132,7 +136,8 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			army_morale_factor = 0.15
+			army_morale_factor = 0.2
+			land_reinforce_rate = 0.05
 		}
 		
 		ai_will_do = {
@@ -158,7 +163,7 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			recon_factor = 0.25
-			movement = 0.10
+			army_speed_factor = 0.1 
 		}
 		
 		ai_will_do = {
@@ -192,9 +197,10 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			river = {
-				attack = 0.2
 				movement = 0.5
 			}
+			max_dig_in = 5
+			dig_in_speed_factor = 0.20 #20% bonus
 		}
 		
 		ai_will_do = {
@@ -214,6 +220,7 @@ leader_traits = {
 		modifier = {
 			fort = {
 				attack = 0.3
+				breakthrough = 0.2
 			}
 		}
 		
@@ -231,7 +238,7 @@ leader_traits = {
 		modifier = {
 			army_armor_speed_factor = 0.1 
 			army_armor_attack_factor = 0.15
-			army_armor_morale_factor = 0.15 
+			org_loss_when_moving = -0.25  
 		}
 		
 		ai_will_do = {
@@ -251,10 +258,9 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			out_of_supply_factor = -0.5
-			army_marine_attack_factor = 0.1
-			army_marine_defence_factor = 0.1
-			army_paratrooper_attack_factor = 0.1
-			army_paratrooper_defence_factor = 0.1
+			special_forces_attack_factor = 0.1
+			special_forces_defence_factor = 0.1
+			land_night_attack = 0.1
 		}
 		
 		ai_will_do = {
@@ -270,10 +276,10 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			desert = {
-				attrition = -0.25
 				movement = 0.1
 				attack = 0.15
 			}
+			heat_attrition_factor = -0.5
 		}
 		
 		ai_will_do = {
@@ -289,11 +295,11 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			marsh = {
-				attrition = -0.25
 				movement = 0.25
 				attack = 0.1
 				defence = 0.05
 			}
+			attrition = -0.2
 		}
 		
 		ai_will_do = {
@@ -311,7 +317,7 @@ leader_traits = {
 			mountain = {
 				movement = 0.15
 				attack = 0.1
-				defence = 0.20
+				defence = 0.2
 			}
 		}
 		
@@ -328,7 +334,7 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			hills = {
-				movement = 0.10
+				movement = 0.1
 				attack = 0.1
 				defence = 0.1
 			}
@@ -346,8 +352,8 @@ leader_traits = {
 		}
 		cost = 700
 		modifier = {
+			enemy_army_bonus_air_superiority_factor = -0.25
 			jungle = {
-				attrition = -0.25
 				movement = 0.25
 				attack = 0.1
 				defence = 0.1
@@ -407,23 +413,8 @@ leader_traits = {
 		}
 		cost = 100
 		modifier = {
-			amphibious_invasion = 0.3 # 30% faster invasions
-			invasion_preparation = -0.3
-			army_marine_attack_factor = 0.15
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	bearer_of_artillery = {
-		type = corps_commander
-		allowed = {
-			always = no # not gainable
-		}
-		modifier = {
-			army_artillery_attack_factor = 0.15
+			amphibious_invasion = 0.4 # 30% faster invasions
+			invasion_preparation = -0.4
 		}
 		
 		ai_will_do = {

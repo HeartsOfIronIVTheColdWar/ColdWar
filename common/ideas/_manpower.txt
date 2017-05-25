@@ -15,10 +15,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -1
-			}
-			disable_building = {
-					building = arms_factory
-					level = 1
+				production_speed_arms_factory_factor = -1
 			}
 			
 			cancel_if_invalid = no

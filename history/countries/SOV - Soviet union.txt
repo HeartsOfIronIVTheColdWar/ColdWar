@@ -112,6 +112,30 @@ set_national_unity = 0.8
 	add_to_faction = DDR
 	set_technology = {
 		strategic_theorem = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		motorised_infantry = 1
+		paratroopers = 1
+		tech_mountaineers = 1
+		advanced_medium_tank = 1
+		mechanised_infantry3 = 1
+		advanced_light_tank = 1
+		MBT_1950 = 1
+		IFV_1950 = 1
+	}
+	create_corps_commander = {
+	name = "Georgy Zhukov"
+	id = 410
+		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+	traits = { naval_invader urban_assault_specialist ranger jungle_rat hill_fighter trait_mountaineer swamp_fox desert_fox commando fortress_buster trait_engineer trickster winter_specialist panzer_leader  }
+	skill = 8
+	}
+	create_field_marshal = {
+		name = "Mikhail Tukhachevsky"
+		id = 401
+			picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+		traits = { inspirational_leader organisational_leader thorough_planner fast_planner defensive_doctrine logistics_wizard offensive_doctrine }
+		skill = 4
 	}
 }
 

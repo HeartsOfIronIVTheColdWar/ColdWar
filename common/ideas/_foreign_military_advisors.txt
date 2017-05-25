@@ -64,11 +64,11 @@ ideas = {
 			
 			ai_will_do = {
    				factor = 1
-
-   				modifier = {
-					factor = 10
-					has_government = democracy
+				modifier = {
+					factor = 3
+					has_government = democratic
 				}
+				
 				modifier = {
 					factor = 0
 					has_government = communism
@@ -117,14 +117,13 @@ ideas = {
 			
 			ai_will_do = {
    				factor = 1
-
-   				modifier = {
-					factor = 2
+				modifier = {
+					factor = 0
 					has_government = democratic
 				}
 				
 				modifier = {
-					factor = 10
+					factor = 3
 					has_government = communism
 				}
    			}
@@ -166,15 +165,14 @@ ideas = {
 				local_resources_factor = 0.25
 				
 				democratic_drift = 0.02
-				cemocratic_acceptance = 50
+				democratic_acceptance = 50
 				
 			}
 			
 			ai_will_do = {
    				factor = 1
-				
 				modifier = {
-					factor = 2
+					factor = 3
 					has_government = democratic
 				}
 				
@@ -220,7 +218,7 @@ ideas = {
 				trade_opinion_factor = 0.5 
 				
 				democratic_drift = 0.02
-				cemocratic_acceptance = 50
+				democratic_acceptance = 50
 				
 			}
 			
@@ -232,7 +230,7 @@ ideas = {
 				}
 				
 				modifier = {
-					factor = 2
+					factor = 0
 					has_government = communism
 				}
    			}
@@ -281,12 +279,12 @@ ideas = {
 			ai_will_do = {
    				factor = 1
 				modifier = {
-					factor = 1
+					factor = 0
 					has_government = democratic
 				}
 				
 				modifier = {
-					factor = 8
+					factor = 3
 					has_government = communism
 				}
    			}

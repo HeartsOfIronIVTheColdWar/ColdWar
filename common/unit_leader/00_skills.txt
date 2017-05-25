@@ -87,8 +87,8 @@ leader_skills = {
 		cost = 100
 		type = corps_commander
 		modifier = {
-			offence = 0.05
-			defence = 0.05
+			offence = 0.1
+			defence = 0.1
 		}
 	}
 		
@@ -96,8 +96,8 @@ leader_skills = {
 		cost = 200
 		type = corps_commander
 		modifier = {
-			offence = 0.1
-			defence = 0.1
+			offence = 0.2
+			defence = 0.2
 		}
 	}
 	
@@ -106,8 +106,8 @@ leader_skills = {
 		cost = 400
 		type = corps_commander
 		modifier = {
-			offence = 0.15
-			defence = 0.15
+			offence = 0.3
+			defence = 0.3
 		}
 	}
 	
@@ -115,8 +115,8 @@ leader_skills = {
 		cost = 800
 		type = corps_commander
 		modifier = {
-			offence = 0.2
-			defence = 0.2
+			offence = 0.4
+			defence = 0.4
 		}
 	}
 	
@@ -124,8 +124,8 @@ leader_skills = {
 		cost = 1600
 		type = corps_commander
 		modifier = {
-			offence = 0.25
-			defence = 0.25
+			offence = 0.5
+			defence = 0.5
 		}
 	}
 
@@ -133,8 +133,8 @@ leader_skills = {
 		cost = 3200
 		type = corps_commander
 		modifier = {
-			offence = 0.3
-			defence = 0.3
+			offence = 0.6
+			defence = 0.6
 		}
 	}
 
@@ -142,8 +142,8 @@ leader_skills = {
 		cost = 6400
 		type = corps_commander
 		modifier = {
-			offence = 0.35
-			defence = 0.35
+			offence = 0.7
+			defence = 0.7
 		}
 	}
 
@@ -151,8 +151,8 @@ leader_skills = {
 		cost = 12800
 		type = corps_commander
 		modifier = {
-			offence = 0.40
-			defence = 0.40
+			offence = 0.8
+			defence = 0.8
 		}
 	}
 
@@ -160,8 +160,8 @@ leader_skills = {
 		cost = 25600
 		type = corps_commander
 		modifier = {
-			offence = 0.45
-			defence = 0.45
+			offence = 0.9
+			defence = 0.9
 		}
 	}
 	
