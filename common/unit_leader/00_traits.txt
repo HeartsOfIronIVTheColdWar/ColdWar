@@ -136,8 +136,8 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			army_morale_factor = 0.2
 			land_reinforce_rate = 0.05
+			army_morale_factor = 0.2
 		}
 		
 		ai_will_do = {

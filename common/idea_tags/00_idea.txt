@@ -14,7 +14,7 @@ idea_categories = {
 		removal_cost = -1
 	}
 	
-	legislation = {
+	government = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
@@ -35,7 +35,6 @@ idea_categories = {
 
 		cost = 150
 		removal_cost = 0
-
 	}
 	research_production = {
 		slot = tank_manufacturer
@@ -47,7 +46,6 @@ idea_categories = {
 
 		cost = 150
 		removal_cost = 0
-
 	}
 	
 	military_staff = {
