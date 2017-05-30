@@ -1527,32 +1527,32 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = nuclear_effort
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = infrastructure_effort_2 }
-		x = 10
-		y = 5
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = nuclear_bonus
-				ahead_reduction = 0.5
-				category = nuclear
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
-		}
-	}
+#	focus = {
+#		id = nuclear_effort
+#		icon = GFX_focus_wonderweapons
+#		prerequisite = { focus = infrastructure_effort_2 }
+#		x = 10
+#		y = 5
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = nuclear_bonus
+#				ahead_reduction = 0.5
+#				category = nuclear
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
 
 	focus = {
 		id = extra_tech_slot
@@ -1605,7 +1605,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 4
 				category = electronics
-				category = nuclear
+				# category = nuclear
 				category = rocketry
 			}
 		}
@@ -1622,9 +1622,9 @@ focus_tree = {
 	focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 19
+		cost = 10.00
+		x = 30
 		y = 0
-		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1632,59 +1632,104 @@ focus_tree = {
 			add_political_power = 120
 		}
 	}
-
+	
 	focus = {
-		id = collectivist_ethos
-		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = political_effort }
-		mutually_exclusive = { focus = liberty_ethos}
+		id = diplomatic_effort
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		x = 20
+		y = 0
+
+	}
+	
+	focus = {
+		id = lean_SOV
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = diplomatic_effort
+		}
+		mutually_exclusive = {
+			focus = lean_USA
+		}
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = communism
-				has_government = neutrality
-			}
+			NOT = { has_government = democratic }
+			NOT = { is_subject = yes }
 		}
 		x = 18
 		y = 1
-		cost = 10
 
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_government = neutrality
-					}
-					has_idea = neutrality_idea
-				}
-			}
-		}
-
-		completion_reward = {
-			add_ideas = collectivist_ethos_focus
-		}
 	}
 
 	focus = {
-		id = nationalism_focus
-		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = collectivist_ethos }
-		mutually_exclusive = { focus = internationalism_focus }
-		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
+		id = soviet_advisors
+		icon = GFX_focus_generic_socialist_science
+		cost = 10.00
+		prerequisite = {
+			focus = lean_SOV
+		}
+		mutually_exclusive = {
+			focus = chinese_advisors
+		}
+		completion_reward = {
+			SOV = {
+				country_event = advisors.1
 			}
 		}
 		x = 16
 		y = 2
-		cost = 10
+
+	}
+	
+	focus = {
+		id = chinese_advisors
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = lean_SOV
+		}
+		mutually_exclusive = {
+			focus = soviet_advisors
+		}
+		completion_reward = {
+			PRC = {
+				country_event = advisors.1
+			}
+		}
+		x = 18
+		y = 2
+
+	}
+	
+	focus = {
+		id = join_warsaw_pact
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = chinese_advisors
+			focus = soviet_advisors
+		}
+		mutually_exclusive = {
+			focus = join_non_aligned_movement
+		}
+		x = 17
+		y = 3
+
+	}
+
+	focus = {
+		id = nationalism_focus
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = political_effort
+		}
+		mutually_exclusive = {
+			focus = internationalism_focus
+			focus = liberty_ethos
+		}
+		x = 30
+		y = 1
 
 		available_if_capitulated = yes
 
@@ -1695,14 +1740,14 @@ focus_tree = {
 				factor = 2
 				any_neighbor_country = {
 					is_major = yes
-					has_government = fascism
+					has_government = autocratic
 				}
 			}
 			modifier = {
 				factor = 0
 				AND = {
 					is_historical_focus_on = yes
-					NOT = { has_government = fascism }
+					NOT = { has_government = autocratic }
 				}
 			}
 		}
@@ -1714,24 +1759,26 @@ focus_tree = {
 	
 	focus = {
 		id = internationalism_focus
-		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = collectivist_ethos }
-		mutually_exclusive = { focus = nationalism_focus }
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = political_effort
+		}
+		mutually_exclusive = {
+			focus = nationalism_focus
+			focus = liberty_ethos
+		}
+		x = 28
+		y = 1
 		available = {
 			if = {
 				limit = { original_tag = CHI }
 				has_government = communism
 				else = {
-					OR = {
-						has_government = communism
-						has_government = neutrality
-					}
+					NOT = { has_government = democratic }
 				}
 			}
 		}
-		x = 18
-		y = 2
-		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1761,18 +1808,22 @@ focus_tree = {
 
 	focus = {
 		id = liberty_ethos
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = political_effort }
-		mutually_exclusive = { focus = collectivist_ethos }
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = political_effort
+		}
+		mutually_exclusive = {
+			focus = nationalism_focus
+			focus = internationalism_focus
+		}
+		x = 32
+		y = 1
 		available = {
 			OR = {
-				has_government = democratic
-				has_government = neutrality
+				NOT = { has_government = communism }
 			}
 		}
-		x = 20
-		y = 1
-		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1785,7 +1836,7 @@ focus_tree = {
 					is_major = yes
 					OR = {
 						has_government = communism
-						has_government = fascism
+						has_government = autocratic
 					}
 				}
 				NOT = {
@@ -1805,10 +1856,12 @@ focus_tree = {
 	focus = {
 		id = militarism
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = nationalism_focus }
-		x = 16
-		y = 3
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = nationalism_focus
+		}
+		x = 30
+		y = 2
 
 		available_if_capitulated = yes
 
@@ -1826,10 +1879,12 @@ focus_tree = {
 	focus = {
 		id = political_correctness
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = internationalism_focus }
-		x = 18
-		y = 3
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = internationalism_focus
+		}
+		x = 28
+		y = 2
 
 		available_if_capitulated = yes
 
@@ -1846,11 +1901,12 @@ focus_tree = {
 	focus = {
 		id = neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = liberty_ethos }
-		mutually_exclusive = { focus = interventionism_focus }
+		cost = 10.00
+		prerequisite = {
+			focus = diplomatic_effort
+		}
 		x = 20
 		y = 2
-		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1862,88 +1918,152 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-
+	
 	focus = {
-		id = interventionism_focus
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = liberty_ethos }
-		mutually_exclusive = { focus = neutrality_focus }
+		id = join_non_aligned_movement
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = neutrality_focus
+		}
+		mutually_exclusive = {
+			focus = join_NATO
+			focus = join_warsaw_pact
+		}
+		x = 20
+		y = 3
+
+	}
+	
+	focus = {
+		id = lean_USA
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = diplomatic_effort
+		}
+		mutually_exclusive = {
+			focus = lean_SOV
+		}
+		available = {
+			NOT = { has_government = communism }
+			NOT = { is_subject = yes }
+		}
 		x = 22
-		y = 2
-		cost = 10
+		y = 1
 
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_idea = neutrality_idea
+	}
+	
+	focus = {
+		id = US_advisors
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = lean_USA
+		}
+		mutually_exclusive = {
+			focus = UK_advisors
+			focus = french_advisors
+		}
+		completion_reward = {
+			USA = {
+				country_event = advisors.1
 			}
 		}
+		x = 22
+		y = 2
 
-		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}	
-			set_rule = { can_send_volunteers = yes }
-			add_political_power = 150
+	}
+	
+	focus = {
+		id = UK_advisors
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = lean_USA
 		}
+		mutually_exclusive = {
+			focus = US_advisors
+			focus = french_advisors
+		}
+		completion_reward = {
+			ENG = {
+				country_event = advisors.1
+			}
+		}
+		x = 24
+		y = 2
+
+	}
+	
+	focus = {
+		id = french_advisors
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = lean_USA
+		}
+		mutually_exclusive = {
+			focus = UK_advisors
+			focus = US_advisors
+		}
+		completion_reward = {
+			FRA = {
+				country_event = advisors.1
+			}
+		}
+		x = 26
+		y = 2
+
+	}
+	
+	focus = {
+		id = join_NATO
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = UK_advisors
+			focus = french_advisors
+			focus = US_advisors
+		}
+		mutually_exclusive = {
+			focus = join_non_aligned_movement
+		}
+		x = 24
+		y = 3
+
 	}
 
 	focus = {
 		id = military_youth
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = militarism }
-		x = 16
-		y = 4
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = militarism
+		}
+		x = 30
+		y = 3
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = military_youth_focus
-			if = {
-				limit = { has_government = fascism }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.2
 			}
-			if = {
-				limit = { has_government = communism }
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = deterrence
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = neutrality_focus }
-		x = 20
-		y = 3
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = deterrence
 		}
 	}
 
 	focus = {
 		id = volunteer_corps
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = interventionism_focus }
-		x = 22
-		y = 3
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = liberty_ethos
+		}
+		x = 32
+		y = 2
 
 		available_if_capitulated = yes
 
@@ -1955,10 +2075,12 @@ focus_tree = {
 	focus = {
 		id = paramilitarism
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = military_youth }
-		x = 16
-		y = 5
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = military_youth
+		}
+		x = 30
+		y = 4
 
 		available_if_capitulated = yes
 
@@ -1970,10 +2092,12 @@ focus_tree = {
 	focus = {
 		id = indoctrination_focus
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = political_correctness }
-		x = 18
-		y = 4
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = political_correctness
+		}
+		x = 28
+		y = 3
 
 		available_if_capitulated = yes
 
@@ -1986,10 +2110,12 @@ focus_tree = {
 	focus = {
 		id = foreign_expeditions
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = volunteer_corps }
-		x = 22
-		y = 4
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = volunteer_corps
+		}
+		x = 32
+		y = 3
 
 		available_if_capitulated = yes
 
@@ -2001,7 +2127,12 @@ focus_tree = {
 	focus = {
 		id = why_we_fight
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = foreign_expeditions focus = deterrence }
+		cost = 10.00
+		prerequisite = {
+			focus = foreign_expeditions
+		}
+		x = 32
+		y = 4
 		available = { 
 			OR = { 
 				threat > 0.75 
@@ -2010,10 +2141,6 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
-		
-		x = 20
-		y = 5
-		cost = 10
 
 		available_if_capitulated = yes
 
@@ -2032,30 +2159,20 @@ focus_tree = {
 	focus = {
 		id = political_commissars
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = indoctrination_focus }
-		available = {
+		cost = 10.00
+		prerequisite = {
+			focus = indoctrination_focus
 		}
-		x = 18
-		y = 5
-		cost = 10
+		x = 28
+		y = 4
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = political_commissars_focus
-			if = {
-				limit = { has_government = fascism }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-			}
-			if = {
-				limit = { has_government = communism }
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
-				}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
 			}
 			add_political_power = 200
 		}
@@ -2064,10 +2181,14 @@ focus_tree = {
 	focus = {
 		id = ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = paramilitarism focus = political_commissars }
-		x = 17
-		y = 6
-		cost = 10
+		cost = 10.00
+		prerequisite = {
+			focus = political_commissars
+			focus = paramilitarism
+			focus = why_we_fight
+		}
+		x = 30
+		y = 5
 
 		available_if_capitulated = yes
 
@@ -2076,17 +2197,20 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 			}
-			hidden_effect = {
-				set_rule = { can_use_kamikaze_pilots = yes }
-			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
 	}
 	
 	focus = {
 		id = technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ideological_fanaticism focus = why_we_fight }
+		cost = 10.00
+		prerequisite = {
+			focus = join_non_aligned_movement
+			focus = join_warsaw_pact
+			focus = join_NATO
+		}
+		x = 20
+		y = 4
 		available = {
 			has_war = yes
 			is_in_faction = yes
@@ -2097,10 +2221,7 @@ focus_tree = {
 					num_of_factories > 50
 				}
 			}
-		}		
-		x = 19
-		y = 7
-		cost = 10
+		}
 
 		available_if_capitulated = yes
 

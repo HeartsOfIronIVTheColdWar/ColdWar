@@ -1,0 +1,109 @@
+﻿###########################
+# Advisor Events
+###########################
+
+add_namespace = advisors
+
+# [FROM] requests advisors from [ROOT]
+country_event = {
+	id = advisors.1
+	title = advisors.1.t
+	desc = { 
+		text = advisors.1.d
+	}
+
+	picture = GFX_report_event_advisor_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = advisors.1.a
+		ai_chance = {
+			base = 95
+		}
+		from = {
+			country_event = {
+				id = advisors.2
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = advisors.1.b
+		ai_chance = {
+			base = 5
+		}
+		from = {
+			country_event = {
+				id = advisors.3
+				days = 1
+			}
+		}
+	}
+}
+
+# Request accepted
+country_event = {
+	id = advisors.2
+	title = advisors.2.t
+	desc = { 
+		text = advisors.2.d
+	}
+
+	picture = GFX_report_event_advisor_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = advisors.2.a
+		if = {
+			limit = {
+				from = { tag = SOV }
+			}
+			add_ideas = ussr_advisors
+		}
+		if = {
+			limit = {
+				from = { tag = USA }
+			}
+			add_ideas = us_advisors
+		}
+		if = {
+			limit = {
+				from = { tag = ENG }
+			}
+			add_ideas = uk_advisors
+		}
+		if = {
+			limit = {
+				from = { tag = FRA }
+			}
+			add_ideas = france_advisors
+		}
+		if = {
+			limit = {
+				from = { tag = PRC }
+			}
+			add_ideas = prc_advisors
+		}
+		add_opinion_modifier =  { target = from modifier = sent_advisors }
+	}
+}
+
+# Request refused
+country_event = {
+	id = advisors.3
+	title = advisors.3.t
+	desc = { 
+		text = advisors.3.d
+	}
+
+	picture = GFX_report_event_advisor_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = advisors.3.a
+		add_opinion_modifier =  { target = from modifier = no_advisors }
+	}
+}

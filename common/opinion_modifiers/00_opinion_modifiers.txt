@@ -58,6 +58,14 @@ opinion_modifiers = {
 		value = -50
 	}
 	
+	sent_advisors = {
+		value = 50
+	}
+	
+	no_advisors = {
+		value = -50
+	}
+	
 	seeks_aid = {
 		value = 80
 	}

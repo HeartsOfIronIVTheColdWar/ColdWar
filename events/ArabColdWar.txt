@@ -41,6 +41,15 @@ country_event = {
 					has_idea = arab_nationalist
 				}
 			}
+			modifier = {
+				factor = 0
+				OR = {
+					tag = IRQ
+					tag = JOR
+				}
+				has_idea = arab_monarchy
+				is_historical_focus_on = yes
+			}
 		}
 	}
 	

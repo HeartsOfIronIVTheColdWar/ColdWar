@@ -93,12 +93,14 @@ bookmarks = {
 			history = "EGY_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			RAJ_agrarian_society_2
+			arab_monarchy
+			political_instability
+			british_influence
 			}
 			focuses = {
-			EGY_seize_suez
-			EGY_islamic_republic
-			EGY_join_commonwealth
+				EGY_seize_suez
+				EGY_islamic_republic
+				EGY_join_commonwealth
 			}
 		}
 		"RAJ"={
@@ -122,14 +124,16 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"YUG"={
+		"NKR"={
 			minor = yes
-			history = "YUG_GATHERING_STORM_DESC"
+			history = "NKR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				tito_stalin_split
 			}
 			focuses = {
+				NKR_war
+				NKR_originofjuche
+				NKR_peacefulreunion
 			}
 		}
 		"POL"={

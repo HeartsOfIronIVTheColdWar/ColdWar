@@ -138,7 +138,7 @@ ideas = {
 			}
 		}
 
-		fascist_influence = {
+		autocratic_influence = {
 			
 			allowed = {
 				always = no
@@ -222,7 +222,43 @@ ideas = {
 		
 		# Generic Focus Ideas
 
+		british_influence = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = stiff_upper_lip
+			
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.05
+			}
+		}
 		
+		political_instability = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = -0.25
+				unity_factor = -0.10
+			}
+		}
 		
 		everest_expedition = {
 			allowed = {
@@ -239,27 +275,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.01
-			}
-		}
-		
-		
-		collectivist_ethos_focus = {
-			
-		
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-		
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-
-			modifier = {
-				democratic_drift = -0.02
 			}
 		}
 	
@@ -279,7 +294,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				trade_opinion_factor = 0.2
+				democratic_drift = 0.1
 			}
 		}
 	
@@ -437,6 +452,7 @@ ideas = {
 			removal_cost = -1
 	
 			modifier = {
+				drift_defence_factor = 0.5
 				#generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
 				#lend_lease_tension = 0.50
