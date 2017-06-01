@@ -321,6 +321,18 @@
  SOV_support_weapons2:0 "DP & RM-38"
  SOV_support_weapons3:0 "DS-39 & 82-PM-41"
  SOV_support_weapons4:0 "SG-43 Goryunov & 120-PM-43"
+ FRA_infantry_equipment_1:0 "MAS 38"
+ FRA_infantry_equipment_1_short:0 "MAS 38"
+ FRA_infantry_equipment_2:0 "MAS 49"
+ FRA_infantry_equipment_2_short:0 "MAS 49"
+ FRA_infantry_equipment_3:0 "FSA MAS 49/56"
+ FRA_infantry_equipment_3_short:0 "FSA MAS 49/56"
+ FRA_infantry_equipment_4:0 "FAMAS Type 62"
+ FRA_infantry_equipment_4_short:0 "FAMAS Type 62"
+ FRA_infantry_equipment_5:0 "FAMAS F1"
+ FRA_infantry_equipment_5_short:0 "FAMAS F1"
+ FRA_infantry_equipment_6:0 "FAMAS G2"
+ FRA_infantry_equipment_6_short:0 "FAMAS G2"
  
  
  #tanks
