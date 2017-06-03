@@ -557,7 +557,7 @@ ideas = {
 
 	### HEAD OF STATE ###
 	
-	head_of_state = {
+	minister_of_internal_affairs = {
 		
 		
 		
