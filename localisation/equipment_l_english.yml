@@ -333,7 +333,11 @@
  FRA_infantry_equipment_5_short:0 "FAMAS F1"
  FRA_infantry_equipment_6:0 "FAMAS G2"
  FRA_infantry_equipment_6_short:0 "FAMAS G2"
- 
+ FRA_motorized_equipment_0:0 "Citroën U23"
+ FRA_motorized_equipment_1:0 "Berliet GLR"
+ FRA_motorized_equipment_2:0 "Berliet GBC 8 KT"
+ FRA_motorized_equipment_3:0 "Renault-Saviem TRM4000"
+ FRA_motorized_equipment_4:0 "Renault TRM10000" 
  
  #tanks
 
