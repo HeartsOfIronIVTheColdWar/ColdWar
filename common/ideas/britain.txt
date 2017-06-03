@@ -1,7 +1,5 @@
 ideas = {
-
 	country = {
-
 		rationing_idea = {
 			
 			allowed = {
@@ -104,439 +102,89 @@ ideas = {
 		}
 	}
 	
+###ADVISORS AND STAFF###
 	
-	political_advisor = {
-		
-		harry_pollitt = {
-			allowed = {
-				original_tag = ENG
-			}
-			
+#GOES FROM TOP TO BOTTOM:
 
-			
-			traits = { communist_revolutionary }
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
+
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
+
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
+
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
 	
-			on_add = {
-				country_event = political.1
-			}
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
 	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		clement_attlee = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+	head_of_state = {
 		
-		john_beckett = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = autocratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		ENG_philip_kerr = {
-			
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { silent_workhorse }
-		}
-
-		ENG_nevile_henderson = {
-			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { backroom_backstabber }
-		}
-
-		ENG_maxwell_aitken = {
-			
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { war_industrialist }
-		}
-
-		ENG_leslie_hore_belisha = {
-			
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { armaments_organizer }
-		}
-
-		ENG_ernest_bevin = {
-			
-			picture = generic_political_advisor_europe_6
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			traits = { quartermaster_general }
-		}
-	}
 		
-	# MILITARY
-	army_chief = {
-		john_vereker = {
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		
-		edmund_ironside = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		alan_brooke = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { army_chief_maneuver_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}		
-	}
-	navy_chief = {
-
-		ernle_chatfield = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		dudley_pound = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { navy_chief_decisive_battle_1 }
-			# REVISIT Secondary trait for anti-sub efforts?
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		andrew_cunningham = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { navy_chief_naval_aviation_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	air_chief = {
-
-		cyril_newall = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		charles_portal = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { air_chief_night_operations_2 }
-			# REVISIT Stratetic bombing as secondary trait?
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		edward_ellington = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { air_chief_safety_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
-	high_command = {
-
-		archibald_wavell = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		claude_auchinleck = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		kenneth_anderson = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	###MINISTER OF INTERNATIONAL AFFAIRS###
 	
-		sholto_douglas = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	minister_of_international_affairs = {
 		
-		trafford_leigh_mallory = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		
-		frederick_bowhill = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
+	}
 
-			
-			traits = { air_naval_strike_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		
-		louis_mountbatten = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { navy_amphibious_assault_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		henry_harwood = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		max_horton = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			traits = { navy_submarine_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-	}		}
+	###INTELLIGENCE MINISTER###
 	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
 	
-	naval_manufacturer = {
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
 		
 		designer = yes
-		
-		yarrow_shipbuilders = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-						
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { convoy_escort_naval_manufacturer }
-
-		}
-		
-		harland_wolff = {
+		vickers_armstrong_eng = {
 			
 			allowed = {
 				original_TAG = ENG
@@ -545,50 +193,21 @@ ideas = {
 
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				armor = 0.10
 			}
 			
-			traits = { pacific_fleet_naval_manufacturer }
-		}
-		
-		cammell_laird = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
+			traits = { medium_tank_manufacturer }
 			
 			modifier = {
 			}
 		}
-		
-		john_brown_company = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-		}	
 	}
 	
+	###AIRCRAFT MANUFACTURER###
+	
 	aircraft_manufacturer = {
-			
-		designer = yes
 		
+		designer = yes
 		supermarine = {
 			
 			allowed = {
@@ -676,13 +295,54 @@ ideas = {
 			
 			modifier = {
 			}
-		}			
+		}
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+		aioc = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		english_electric = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
 	}
+	
+	###MATERIEL MANUFACTURER###
 	
 	materiel_manufacturer = {
 			
 		designer = yes
-		
 		rsaf_enfield = {
 			
 			allowed = {
@@ -737,49 +397,27 @@ ideas = {
 			}
 		}
 	}
-	industrial_concern = {
-				
-		aioc = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-			
-
-			
-			research_bonus = {
-				industry = 0.10
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-			}
-		}
-		
-		english_electric = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-			
-
-			
-			research_bonus = {
-				electronics = 0.10
-			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
-			}
-		}
-		
-	}	
-
 	
-	tank_manufacturer = {
-		vickers_armstrong_eng = {
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		yarrow_shipbuilders = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+		
+		harland_wolff = {
 			
 			allowed = {
 				original_TAG = ENG
@@ -788,139 +426,78 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.10
+				naval_equipment = 0.10
 			}
 			
-			traits = { medium_tank_manufacturer }
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+		
+		cammell_laird = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
 			
 			modifier = {
 			}
+		}
+		
+		john_brown_company = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
 		}
 	}
+	
+	###THEORIST
 	
 	theorist = {	
 	
-		bernard_montgomery = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_grand_battle_plan = 0.10
-			}
-			
-			traits = { grand_battle_plan_expert }
-		}
-		
-		harold_alexander = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		james_somerville = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_fleet_in_being = 0.10
-			}
-			
-			traits = { grand_fleet_proponent }
-		}
-		
-		tom_phillips = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-		
-		hugh_dowding = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		arthur_harris = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_strategic_destruction = 0.10
-			}
-			
-			traits = { victory_through_airpower }
-		}
-		
-		james_chadwick = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			research_bonus = {
-				nuclear = 0.10
-			}
-			
-			traits = { nuclear_scientist }
-		}
-		
-		frank_whittle = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-			
-
-			
-			research_bonus = {
-				rocketry = 0.10
-			}
-			
-			traits = { rocket_scientist }
-		}
 	}
 
+###ROW 4:###
 
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }
-
+	
+	

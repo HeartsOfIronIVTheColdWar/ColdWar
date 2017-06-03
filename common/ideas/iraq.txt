@@ -1,255 +1,154 @@
 ideas = {
-	# MILITARY
-
-
-	political_advisor = {
-
-		IRQ_ali_abn_hussein = {
-
-			picture = generic_political_advisor_arab_2
-
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		IRQ_nuri_as_said = {
-
-			picture = generic_political_advisor_arab_1
-				
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { armaments_organizer }
-		}
-
-		IRQ_amir_al_illah = {
-
-			picture = generic_political_advisor_arab_3
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { prince_of_terror }
-		}
-	}
-
-	army_chief = {
-
-		IRQ_fawsi_al_kaukji = {
-
-			picture = generic_army_arab_3
-			
-			allowed = {
-				original_tag = IRQ
-			}		
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		IRQ_abdullah = {
-
-			picture = generic_army_arab_2
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-
-		IRQ_khaled_al_dalabeeh = {
-
-			picture = generic_air_arab_3
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		IRQ_abdullah_al-tell = {
-
-			picture = generic_air_arab_3
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		IRQ_jamil_al_midfai = {
-
-			picture = generic_navy_arab_2
-			
-			allowed = {
-				original_tag = IRQ
-			}
-					
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		IRQ_hamdi_al_pachachi = {
-
-			picture = generic_navy_arab_1
-			
-			allowed = {
-				original_tag = IRQ
-			}
-					
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		IRQ_ali_mahmud_al_shaykh = {
-			
-			picture = generic_navy_arab_1
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { navy_amphibious_assault_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	country = {
 		
-		IRQ_fahmi_said = {
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-			picture = generic_air_arab_3
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		IRQ_bakr_sidqi = {
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			picture = generic_army_arab_1
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { army_entrenchment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		IRQ_taha_al_ahmani = {
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			picture = generic_navy_arab_2
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
 	}	
-
-	theorist = {
-		IRQ_mustafa_al_quidsi = {
-			
-			picture = generic_army_arab_2
-
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		IRQ_iskandar_al-shami = {
-
-			picture = generic_navy_arab_1
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}	
-
-		IRQ_ali_ben_jawad = {
-
-			picture = generic_air_arab_1
-			
-			allowed = {
-				original_tag = IRQ
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
 	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

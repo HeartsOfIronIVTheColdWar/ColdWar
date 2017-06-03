@@ -1,260 +1,154 @@
 ideas = {
+	country = {
+		
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-	political_advisor = {
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		SHX_wang_zuanxu = {
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			picture = generic_political_advisor_asia_2
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { fortification_engineer }
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		SHX_fu_zuoyi = {
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			picture = generic_political_advisor_asia_3
-				
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { silent_workhorse }
-		}
+###ROW 2:###
 
-		SHX_qu_yangke = {
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
 
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { prince_of_terror }
-		}
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
 	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
 
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
 	army_chief = {
 		
-		SHX_yan_xishan = {
-			
-			picture = generic_army_asia_2
-
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { army_chief_morale_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-
-		SHX_kong_fang = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 	}
-
-	air_chief = {
-		
-
-		SHX_yang_lu = {
-			
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-
-		SHX_cheng_zhao = {
-
-			picture = generic_air_asia_3
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { air_chief_night_operations_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
+	
+	###NAVY CHIEF###
+	
 	navy_chief = {
 		
-
-		SHX_sun_li = {
-			
-			picture = generic_navy_asia_1
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-
-		SHX_peng_dong = {
-
-			picture = generic_navy_asia_3
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
 	
 	high_command = {
-
-		SHX_huang_peng = {
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		
-		SHX_zhang_shen = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SHX_min_lan_tung_tin = {
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { army_artillery_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SHX_tan_fang = {
-
-			picture = generic_air_asia_1
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SHX_zhu_ting = {
-
-			picture = generic_air_asia_3
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 	}
 	
-
-
-	theorist = {
-		SHX_ma_tian = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		SHX_wang_li_sun = { 
-
-			picture = generic_air_asia_3
-			
-			allowed = {
-				original_tag = SHX
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-	}
-
-
-
 }

@@ -1,289 +1,98 @@
 ideas = {
-
-	political_advisor = {
-
-		HOL_willem_schermerhorn = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		HOL_saul_de_groot = {
-
-			picture = generic_political_advisor_europe_3
-				
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { prince_of_terror }
-		}
-
-		HOL_louis_beel = {
-
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
+	country = {
+		
 	}
-
 	
-	# MILITARY
-	army_chief = {
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-		HOL_izaak_rijnders = {
-			
-			picture = generic_army_europe_4
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-			
-			traits = { army_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-		HOL_hein_ter_poorten = {
-			
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
 		
-		HOL_henri_winkelman = {
-			
-			picture = generic_army_europe_2
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
 	}
 
-	air_chief = {
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
 		
-		HOL_hendrik_van_oyen = {
-			
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HOL_petrus_wilhelmus_best = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { air_chief_night_operations_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 	}
 
-	navy_chief = {
-
-		HOL_karel_doorman = {
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-
-			
-			traits = { navy_chief_decisive_battle_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		
-		HOL_conrad_helfrich = {
-			
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-
-	high_command = {
-
-		HOL_maarten_belzer = {
-
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { army_concealment_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		HOL_claes_douw_van_der_krap = {
-
-			picture = generic_air_europe_2
-
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { air_naval_strike_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HOL_bernhard_coltof = {
-
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HOL_nico_van_straaten = {
-
-			picture = generic_army_europe_2
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}		
-	}	
-
-	theorist = {
-		HOL_izaak_reynders = {
-			
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = HOL
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		HOL_marius_raaijmakers = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		HOL_johannes_furstner = {
-
-			picture = generic_navy_europe_3
-			
-			allowed = {
-				original_tag = HOL
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
 
 	}
-
-
-	#TECHNOLOGUY
-
-	aircraft_manufacturer = { 
-			
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
 		designer = yes
 		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
 		fokker = {
 			
 			picture = generic_air_manufacturer_3
@@ -331,64 +140,48 @@ ideas = {
 				factor = 1
 			}
 		}
-	}
+	}	
 	
-	naval_manufacturer = { 
-		
-		designer = yes
-		
-		nsm_amsterdam = {
-			
-			picture = generic_naval_manufacturer_1
-
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+		HOL_royal_dutch_shell = {
 			
 			allowed = {
 				original_tag = HOL
 			}
+
+			picture = generic_industrial_concern_1
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				industry = 0.10
+				
 			}
 			
-			equipment_bonus = {
-				# fast ships! go go go
-			}
-			
-			traits = { naval_manufacturer }
-			
-			modifier = {
-			}
+			traits = { industrial_concern }
 		}
 
-		#wilton_fijenoord = {
-		#	
-		#	picture = generic_naval_manufacturer_2
-		#
-		#	
-		#	allowed = {
-		#		original_tag = HOL
-		#	}
-		#	
-		#	research_bonus = {
-		#		naval_equipment = 0.10
-		#	}
-		#	
-		#	equipment_bonus = {
-		#		# submarines, light cruisers you name it!
-		#	}
-		#	
-		#	traits = { naval_manufacturer }
-		#	
-		#	modifier = {
-		#	}
-		#}
+		HOL_philips = {
+			
+			allowed = {
+				original_tag = HOL
+			}
+
+			picture = generic_electronics_concern_1
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}		
 	}
 	
+	###MATERIEL MANUFACTURER###
 	
 	materiel_manufacturer = {
-		
+			
 		designer = yes
-
 		HOL_DAF_trucks = {
 			
 			picture = generic_motorized_equipment_manufacturer_3
@@ -453,38 +246,90 @@ ideas = {
 		#	}
 		#}
 	}
-
-	industrial_concern = {
 	
-		HOL_royal_dutch_shell = {
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		nsm_amsterdam = {
+			
+			picture = generic_naval_manufacturer_1
+
 			
 			allowed = {
 				original_tag = HOL
 			}
-
-			picture = generic_industrial_concern_1
 			
 			research_bonus = {
-				industry = 0.10
-				
+				naval_equipment = 0.10
 			}
 			
-			traits = { industrial_concern }
+			equipment_bonus = {
+				# fast ships! go go go
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
 		}
 
-		HOL_philips = {
-			
-			allowed = {
-				original_tag = HOL
-			}
-
-			picture = generic_electronics_concern_1
-			
-			research_bonus = {
-				electronics = 0.10
-			}
-			
-			traits = { electronics_concern }
-		}		
+		#wilton_fijenoord = {
+		#	
+		#	picture = generic_naval_manufacturer_2
+		#
+		#	
+		#	allowed = {
+		#		original_tag = HOL
+		#	}
+		#	
+		#	research_bonus = {
+		#		naval_equipment = 0.10
+		#	}
+		#	
+		#	equipment_bonus = {
+		#		# submarines, light cruisers you name it!
+		#	}
+		#	
+		#	traits = { naval_manufacturer }
+		#	
+		#	modifier = {
+		#	}
+		#}
+		
 	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

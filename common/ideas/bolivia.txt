@@ -1,251 +1,154 @@
 ideas = {
-	# MILITARY
-
-
-	political_advisor = {
-
-		BOL_jose_maria_gutierrez = {
-
-			picture = generic_political_advisor_south_america_1
-
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { armaments_organizer }
-		}
-
-		BOL_enrique_finot = {
-
-			picture = generic_political_advisor_south_america_3
-				
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { fortification_engineer }
-		}
-
-		BOL_german_busch_beccera = {
-
-			picture = generic_political_advisor_south_america_2
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { popular_figurehead }
-		}
-	}
-
-	army_chief = {
-
-		BOL_gualberto_villarroel_lopez = {
-
-			picture = generic_army_south_america_3
-			
-			allowed = {
-				original_tag = BOL
-			}		
-			
-			traits = { army_chief_old_guard }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BOL_roberto_hinojosa = {
-
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { army_chief_morale_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-
-		BOL_jose_santos_quinteros = {
-
-			picture = generic_air_south_america_3
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BOL_david_toro_ruilova = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		BOL_gil_ibarra_juarez = {
-
-			picture = generic_navy_south_america_3
-			
-			allowed = {
-				original_tag = BOL
-			}
-					
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		BOL_eusebio_ayala = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = BOL
-			}
-					
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		BOL_tomas_monje_gutierrez = {
-			
-			picture = generic_army_south_america_2
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	country = {
 		
-		BOL_carlos_altamirano = {
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-			picture = generic_army_south_america_5
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { army_artillery_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		BOL_fabian_vaca_chavez = {
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { air_naval_strike_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		BOL_julian_montellano_carrasco = {
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
 	}	
-
-	theorist = {
-		BOL_enrique_baldivieso_aparicio = {
-			
-			picture = generic_army_south_america_1
-
-			allowed = {
-				original_tag = BOL
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		BOL_hector_bilbao_roja = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}	
-
-		BOL_alberto_ostria_gutierrez = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = BOL
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
 	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

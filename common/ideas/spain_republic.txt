@@ -1,358 +1,97 @@
 ideas = {
-
-	political_advisor = {
-
-		SPR_augusto_barcia_trelles = {
-
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-			traits = { ideological_crusader }
-		}
-
-		SPR_francisco_largo_caballero = {
-
-			picture = generic_air_europe_1
-				
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		SPR_dolores_ibarruri = {
-
-			picture = dolores_ibarruri
-				
-			allowed = {
-				original_tag = SPR				
-				NOT = { has_government = autocratic }
-			}
-			
-			traits = { communist_revolutionary }
-		}
-
-		SPR_diego_martinez_barrio = {
-
-			picture = generic_navy_europe_1
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	}
-
-	theorist = {
-
-		SPR_nicolas_molero = {
-					
-					
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-			picture = generic_army_europe_3
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		SPR_andres_saborit_colomer = {
-					
-					
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-			picture = generic_navy_europe_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-	# MILITARY
-	army_chief = {
-
-		SPR_carlos_masquelet_lacaci = {
-			
-			picture = generic_army_europe_4
-			
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
+	country = {
 		
-		SPR_vincente_rojo_lluch = {
-			
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { army_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPR_fransisco_franco = {
-			
-			picture = francisco_franco
-			
-			allowed = {
-				original_tag = SPR
-			}
-			
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = spr_franco_unavailable_tooltip
-					OR = {
-						has_government = autocratic
-						AND = {
-							NOT = { has_government = communism }
-							NOT = {
-								any_other_country = {
-									NOT = {
-										tag = ROOT
-									}
-									original_tag = SPR
-									has_government = autocratic
-								}
-							}
-						}
-					}
-				}
-			}
-
-			
-			traits = { army_chief_offensive_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-
-		SPR_ignacio_hidalgo_cisneros = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { air_chief_safety_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-			
-		SPR_andres_garcia_calle = {
-			
-			picture = generic_air_europe_3
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { air_chief_ground_support_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	navy_chief = {
-			
-		SPR_louis_gonzalez_ubieta = {
-			
-			picture = generic_navy_europe_1
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { navy_chief_naval_aviation_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPR_indalecio_prieto_tuero = {
-			
-			picture = generic_navy_europe_2
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-			
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
+###ADVISORS AND STAFF###
 	
-	high_command = {
+#GOES FROM TOP TO BOTTOM:
+
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
+
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
+
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
+
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
 		
-		SPR_jose_miaja = {
-			
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPR_diego_hidalgo_duran = {
-			
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { army_concealment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-		SPR_miguel_buiza_femandez_palacios = {
-			
-			picture = generic_navy_europe_2
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPR_antonio_azarola_gresillon = {
-			
-			picture = generic_navy_europe_2
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = autocratic }
-			}
-			
-
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
+		
 	}
 	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
 	
-	naval_manufacturer = { 			
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
 		
 		designer = yes
 		
-		secn = {
-			
-			picture = generic_naval_manufacturer_3
-
-			
-			allowed = {
-				original_tag = SPR
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				# fast and well armed
-			}
-			
-			traits = { naval_manufacturer }
-			
-			modifier = {
-				# Weak defence vs air
-			}
-		}
 	}
 	
-	aircraft_manufacturer = { 		
-			
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
 		designer = yes
 		
 		casa = {
@@ -378,5 +117,86 @@ ideas = {
 				factor = 1
 			}
 		}
+		
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
 	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+
+		secn = {
+			
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# fast and well armed
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+				# Weak defence vs air
+			}
+		}		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }
+	

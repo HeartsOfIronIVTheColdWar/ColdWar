@@ -73,6 +73,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/chinese_advisors.dds"
 	}
 	
+	###FREEDOM LAWS###
+	spriteType = {
+		name = "GFX_idea_anarchism"
+		texturefile = "gfx/interface/ideas/icon_anarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_libertarian"
+		texturefile = "gfx/interface/ideas/icon_libertarianism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_free"
+		texturefile = "gfx/interface/ideas/icon_free.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_surveillance_state"
+		texturefile = "gfx/interface/ideas/icon_surveillance_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mass_surveillance"
+		texturefile = "gfx/interface/ideas/icon_mass_surveillance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_police_state"
+		texturefile = "gfx/interface/ideas/icon_police_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_martial_law"
+		texturefile = "gfx/interface/ideas/icon_martial_law.dds"
+	}
+	
 	###ARAB COLD WAR###
 	spriteType = {
 		name = "GFX_idea_EGY_revolution_triumphant"

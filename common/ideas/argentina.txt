@@ -1,251 +1,154 @@
 ideas = {
-	# MILITARY
-
-
-	political_advisor = {
-
-		ARG_ramon_castillo = {
-
-			picture = generic_political_advisor_south_america_2
-
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { quartermaster_general }
-		}
-
-		ARG_luis_podesta_costa = {
-
-			picture = generic_political_advisor_south_america_1
-				
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { backroom_backstabber }
-		}
-
-		ARG_manuel_maria_de_iriondo = {
-
-			picture = generic_political_advisor_south_america_3
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { prince_of_terror }
-		}
-	}
-
-	army_chief = {
-
-		ARG_manuel_a_rodriguez = {
-
-			picture = generic_army_south_america_3
-			
-			allowed = {
-				original_tag = ARG
-			}		
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ARG_pedro_pablo_ramirez = {
-
-			picture = generic_army_south_america_2
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-
-		ARG_antonio_parodi = {
-
-			picture = generic_air_south_america_3
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ARG_jose_tamborni = {
-
-			picture = generic_air_south_america_2
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { air_chief_night_operations_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		ARG_pedro_s_casal = {
-
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = ARG
-			}
-					
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		ARG_heriberto_la_galine = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = ARG
-			}
-					
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		ARG_francisco_m_velez = {
-			
-			picture = generic_army_south_america_1
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	country = {
 		
-		ARG_thomas_martinez = {
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		ARG_uribaldi_diaz_brittenberg = {
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		ARG_eleazar_videla = {
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			traits = { navy_capital_ship_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
 	}	
-
-	theorist = {
-		ARG_agustin_pedro_justo = {
-			
-			picture = generic_army_south_america_5
-
-			allowed = {
-				original_tag = ARG
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		ARG_edelmiro_farrell = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}	
-
-		ARG_hortensio_quijano = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = ARG
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
 	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

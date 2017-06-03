@@ -1,6 +1,105 @@
 spriteTypes = {	
 
-	### generic equipment archetypes ###
+	###SUPPORT WEAPONS ICONS###
+	SpriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/support_weapons5.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons6_medium"
+		texturefile = "gfx/interface/technologies/support_weapons6.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons7_medium"
+		texturefile = "gfx/interface/technologies/support_weapons7.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons8_medium"
+		texturefile = "gfx/interface/technologies/support_weapons8.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons9_medium"
+		texturefile = "gfx/interface/technologies/support_weapons9.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons10_medium"
+		texturefile = "gfx/interface/technologies/support_weapons10.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons11_medium"
+		texturefile = "gfx/interface/technologies/support_weapons11.dds"
+	}
+	
+	
+	###RIFLE IMPROVEMENT ICONS###
+	
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_1_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_2_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_3_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_4_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_5_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_6_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_7_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_7.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_8_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_8.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_9_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_9.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_10_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_10.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_11_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_11.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_12_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_12.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_13_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_13.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_14_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_14.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_15_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_15.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_improvements_16_medium"
+		texturefile = "gfx/interface/technologies/icon_rifle_improvement_16.dds"
+	}
+	
+
+	###GENERIC EQUIPMENT ARCHETYPES###
 	SpriteType = {
 		name = "GFX_SOV_MBT_1980_medium"
 		texturefile = "gfx/interface/technologies/SOV_MBT_1980.dds"
@@ -201,8 +300,34 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
-		name = "GFX_infantry_weapons_medium"
+		name = "GFX_infantry_weapons_1_medium"
 		texturefile = "gfx/interface/technologies/infantry_equipment_0.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_4_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_5_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons_6_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
 	}		
 	
 	SpriteType = {

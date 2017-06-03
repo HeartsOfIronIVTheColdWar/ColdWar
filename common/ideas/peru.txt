@@ -1,336 +1,154 @@
 ideas = {
-
-	political_advisor = {
-
-		PRU_armando_reveredo_iglesias = {
-
-			picture = generic_political_advisor_south_america_1
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { war_industrialist }
-		}
-
-		PRU_oscar_miro_quesada = {
-
-			picture = generic_political_advisor_south_america_2
-				
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { silent_workhorse }
-		}
-
-		PRU_reynaldo_vinatea = {
-
-			picture = generic_political_advisor_south_america_1
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { ideological_crusader }
-		}
-
-		PRU_jose_bustamante_y_rivero = {
-
-			picture = generic_political_advisor_south_america_3
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-	}
-
-	theorist = {
-
-		PRU_luis_ramirez_ortiz = {
-					
-			picture = generic_army_south_america_1
-
-			allowed = {
-				original_tag = PRU
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		PRU_romulo_frias = {
-					
-			picture = generic_air_south_america_1
-				
-			allowed = {
-				original_tag = PRU
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		PRU_ernesto_scroth = {
-					
-					
-			allowed = {
-				original_tag = PRU
-			}
-			
-			picture = generic_political_advisor_south_america_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-
-	high_command = {
-
-		PRU_eloy_g_ureta = {
-
-			picture = generic_army_south_america_1
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		PRU_rafael_escardo = {
-
-			picture = generic_army_south_america_2
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		PRU_eduardo_montero_rojas = {
-
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		PRU_luis_navarrete = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { navy_carrier_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		PRU_fernando_m_quesada_blanco = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { air_strategic_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		PRU_alberto_lopez_flores = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-			traits = { air_airborne_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	# MILITARY
-	army_chief = {
-
-		PRU_oscar_benavides_larrea = {
-			
-			picture = generic_army_south_america_2
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	country = {
 		
-		PRU_oscar_gilardi = {
-			
-			picture = generic_army_south_america_5
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		PRU_vladimiro_lopez_trigoso = {
-			
-			picture = generic_army_south_america_3
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		PRU_manuel_odria_amoretti = {
-			
-			picture = generic_army_south_america_2
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
 	}
 
-	air_chief = {
-
-		PRU_paul_de_beaudiez = {
-			
-			picture = generic_air_south_america_3
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-
-			
-			traits = { air_chief_safety_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		PRU_eduardo_cantabria_gomez = {
-			
-			picture = generic_air_south_america_2
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
 	}
 
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
 	navy_chief = {
-
-		PRU_alberto_roque_saldias = {
-			
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-
-			
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		PRU_felipe_tudela = {
-			
-			picture = generic_navy_south_america_3
-			
-			allowed = {
-				original_tag = PRU
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

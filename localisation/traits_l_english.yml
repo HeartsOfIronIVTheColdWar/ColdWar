@@ -1,4 +1,9 @@
 ﻿l_english:
+ civilian_economy_trait:0 "Good when at Peace, and keeps the population happy."
+ low_economic_mobilisation_trait:0 "Civilian production is good, but just in case."
+ partial_economic_mobilisation_trait:0 "Trouble is brewing, and we are at a crossroad."
+ war_economy_trait:0 "Good for war, but cripples civilian industry."
+ tot_economic_mobilisation_trait:0 "Total war means total dedication to military production."
  nonaligned:0 "Non-Aligned"
  benevolent_dictator:0 "Benevolent Dictator"
  anti_communist:0 "Anti-Communist"

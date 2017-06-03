@@ -179,6 +179,7 @@ ideas = {
 				land_doctrine = 0.05
 			}
 			modifier = {
+				unity_factor = 0.50
 				political_power_factor = 0.1
 				army_attack_factor = 0.2
 				army_defence_factor = 0.2 
@@ -265,7 +266,7 @@ ideas = {
 #	INDIVIDUAL FREEDOMS
 
 ###ROW 2:###
-#	HEAD OF STATE
+#	MINISTER OF INTERNAL AFFAIRS
 #	MINISTER OF INTERNATIONAL AFFAIRS
 #	INTELLIGENCE MINISTER
 #	EDUCATION MINISTER
@@ -289,111 +290,12 @@ ideas = {
 #	HIGH COMMAND
 	
 ###ROW 1:###
-	
-	###INDUSTRIAL COMPLEX###
-	
-	industrial_complex = {
-	
-		SOV_vyacheslav_molotov = {
-			
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
-
-		SOV_nikolai_voznesensky = {
-			
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			traits = { captain_of_industry }
-		}
-	}
-	
-	###INDIVIDUAL FREEDOMS###
-	
-	individual_freedoms = {
-	
-		mikhail_kalinin = {
-			
-			
-			allowed = {
-				original_tag = "SOV"
-			}
-			available = 
-			{
-				NOT = { has_country_flag = purged_kalinin }
-				NOT = { has_country_flag = counter_purge }
-			}
-			
-
-			
-			traits = { popular_figurehead }
-		}
-
-		SOV_lavrentiy_beria = {
-			
-			picture = generic_army_europe_4
-			
-			allowed = {
-				original_tag = SOV
-			}
-
-			available = 
-			{
-				custom_trigger_tooltip = {
-					tooltip =  SOV_beria_idea
-					has_country_flag = purge_2_group_a
-				}
-				NOT = { 
-					has_country_flag = counter_purge
-				}
-			}
-			
-			traits = { ideological_crusader }
-		}
-	}
 
 ###ROW 2:###
 
 	### HEAD OF STATE ###
 	
-	head_of_state = {
-	
-		mikhail_kalinin = {
-			
-			
-			allowed = {
-				original_tag = "SOV"
-			}
-			available = 
-			{
-				NOT = { has_country_flag = purged_kalinin }
-				NOT = { has_country_flag = counter_purge }
-			}
-			
-
-			
-			traits = { popular_figurehead }
-		}
-		
-		SOV_vyacheslav_molotov = {
-			
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
+	minister_of_internal_affairs = {
 		
 		nikita_khrushchev = {
 			
@@ -401,15 +303,32 @@ ideas = {
 			allowed = {
 				original_tag = "SOV"
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purged_khrushchev }
-				NOT = { has_country_flag = counter_purge }
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
 			}
 			
-
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		georgy_malenkov = {
 			
-			traits = { communist_revolutionary }
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			traits = { armaments_organizer quartermaster_general }
 	
 			on_add = {
 				country_event = political.1
@@ -425,93 +344,232 @@ ideas = {
 				factor = 0
 			}
 		}
-	}
-	
-	###MINISTER OF INTERNATIONAL AFFAIRS###
-	
-	minister_of_international_affairs = {
-	
-		mikhail_kalinin = {
+		
+		leonid_brezhnev = {
 			
 			
 			allowed = {
 				original_tag = "SOV"
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purged_kalinin }
-				NOT = { has_country_flag = counter_purge }
+			
+			traits = { captain_of_industry ideological_crusader }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
 			}
 			
-
-			
-			traits = { popular_figurehead }
+			ai_will_do = {
+				factor = 0
+			}
 		}
-
-		SOV_lavrentiy_beria = {
+		
+		lavrentiy_beria = {
 			
-			picture = generic_army_europe_4
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = "SOV"
 			}
-
-			available = 
-			{
-				custom_trigger_tooltip = {
-					tooltip =  SOV_beria_idea
-					has_country_flag = purge_2_group_a
-				}
-				NOT = { 
-					has_country_flag = counter_purge
+			
+			traits = { prince_of_terror brutal}
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
 				}
 			}
 			
-			traits = { ideological_crusader }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		vjatjeslav_molotov = {
+			
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			traits = { smooth_talking_charmer popular_figurehead }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		andrey_vyshinsky = {
+			
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			traits = { prince_of_terror }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dmitri_shepilov = {
+			
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			traits = { backroom_backstabber indomitable_perseverance }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		andrei_gromyko = {
+			
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			traits = { silent_workhorse smooth_talking_charmer }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 
 	###INTELLIGENCE MINISTER###
 	
 	intelligence_minister = {
-	
-		mikhail_kalinin = {
+		
+		viktor_abakumov = {
 			
 			
 			allowed = {
 				original_tag = "SOV"
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purged_kalinin }
-				NOT = { has_country_flag = counter_purge }
+			
+			traits = { interrogator brutal }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
 			}
 			
-
-			
-			traits = { popular_figurehead }
+			ai_will_do = {
+				factor = 1
+			}
 		}
-
-		SOV_lavrentiy_beria = {
+		
+		sergei_ogoltsov = {
 			
-			picture = generic_army_europe_4
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = "SOV"
 			}
-
-			available = 
-			{
-				custom_trigger_tooltip = {
-					tooltip =  SOV_beria_idea
-					has_country_flag = purge_2_group_a
-				}
-				NOT = { 
-					has_country_flag = counter_purge
+			
+			traits = { prince_of_terror }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
 				}
 			}
 			
-			traits = { ideological_crusader }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		semyon_ignatyev = {
+			
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			traits = { silent_workhorse }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 
@@ -519,87 +577,128 @@ ideas = {
 	
 	education_minister = {
 	
-		mikhail_kalinin = {
+		ivan_kairov = {
 			
 			
 			allowed = {
 				original_tag = "SOV"
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purged_kalinin }
-				NOT = { has_country_flag = counter_purge }
+			
+			traits = { recruiter }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
 			}
 			
-
-			
-			traits = { popular_figurehead }
+			ai_will_do = {
+				factor = 1
+			}
 		}
-
-		SOV_lavrentiy_beria = {
+		
+		yevgeniy_afanasenko = {
 			
-			picture = generic_army_europe_4
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = "SOV"
 			}
-
-			available = 
-			{
-				custom_trigger_tooltip = {
-					tooltip =  SOV_beria_idea
-					has_country_flag = purge_2_group_a
-				}
-				NOT = { 
-					has_country_flag = counter_purge
+			
+			traits = { indocrinator }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
 				}
 			}
 			
-			traits = { ideological_crusader }
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 	
 	###UNITED NATIONS AMBASSADOR###
 	
 	united_nations_ambassador = {
-	
-		mikhail_kalinin = {
+		yakov_malik = {
 			
 			
 			allowed = {
 				original_tag = "SOV"
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purged_kalinin }
-				NOT = { has_country_flag = counter_purge }
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
 			}
 			
-
-			
-			traits = { popular_figurehead }
+			ai_will_do = {
+				factor = 1
+			}
 		}
-
-		SOV_lavrentiy_beria = {
+		
+		valerian_zorin = {
 			
-			picture = generic_army_europe_4
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = "SOV"
 			}
-
-			available = 
-			{
-				custom_trigger_tooltip = {
-					tooltip =  SOV_beria_idea
-					has_country_flag = purge_2_group_a
-				}
-				NOT = { 
-					has_country_flag = counter_purge
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
 				}
 			}
 			
-			traits = { ideological_crusader }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		andrey_vyshinsky = {
+			
+			
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 	

@@ -1,251 +1,154 @@
 ideas = {
-	# MILITARY
-
-
-	political_advisor = {
-
-		VEN_manuel_diaz_rodriguez = {
-
-			picture = generic_political_advisor_south_america_1
-
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { war_industrialist }
-		}
-
-		VEN_romulo_gallegos_freire = {
-
-			picture = generic_political_advisor_south_america_3
-				
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { popular_figurehead }
-		}
-
-		VEN_isidoro_ruiz_tuerro = {
-
-			picture = generic_political_advisor_south_america_2
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { quartermaster_general }
-		}
-	}
-
-	army_chief = {
-
-		VEN_isaias_medina_angarita = {
-
-			picture = generic_army_south_america_4
-			
-			allowed = {
-				original_tag = VEN
-			}		
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		VEN_tomas_contreras_villalobos = {
-
-			picture = generic_army_south_america_5
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { army_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-
-		VEN_david_lopez_henriques = {
-
-			picture = generic_air_south_america_3
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { air_chief_all_weather_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		VEN_miguel_diaz_fraile = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		VEN_humberto_santabria_villa = {
-
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = VEN
-			}
-					
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		VEN_carlos_molina_talavayo = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = VEN
-			}
-					
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		VEN_victor_sanchez_croes = {
-			
-			picture = generic_army_south_america_1
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	country = {
 		
-		VEN_carlos_delgado_chalbaud = {
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-			picture = generic_army_south_america_3
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		VEN_roberto_de_luca_varesano = {
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		VEN_carlos_ramos_diaz = {
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			picture = generic_navy_south_america_2
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			traits = { navy_submarine_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
 	}	
-
-	theorist = {
-		VEN_carlos_garcia_mendoza = {
-			
-			picture = generic_army_south_america_3
-
-			allowed = {
-				original_tag = VEN
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		VEN_antonio_casas_gonzalez = {
-
-			picture = generic_navy_south_america_1
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}	
-
-		VEN_jose_polares_pavon = {
-
-			picture = generic_air_south_america_1
-			
-			allowed = {
-				original_tag = VEN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
 	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

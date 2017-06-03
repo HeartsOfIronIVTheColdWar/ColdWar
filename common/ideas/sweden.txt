@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-	
+		
 		en_svensk_tiger = {
 			
 			allowed = {
@@ -20,317 +20,88 @@ ideas = {
 				enemy_justify_war_goal_time = 0.1
 			}
 		}
+	}
 	
-	}
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-	political_advisor = {
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		SWE_thorwald_bergquist = {
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-			traits = { compassionate_gentleman }
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		SWE_osten_unden = {
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			picture = generic_political_advisor_europe_2
+###ROW 2:###
 
-			allowed = {
-				original_tag = SWE
-			}
-			
-			traits = { silent_workhorse }
-		}
-
-		SWE_ernst_wigforss = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-			traits = { captain_of_industry }
-		}
-	}
-
-	theorist = {
-
-		SWE_helge_jung = {
-					
-					
-			allowed = {
-				original_tag = SWE
-			}
-			
-			picture = generic_army_europe_2
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		SWE_erik_palmstierna = {
-					
-					
-			allowed = {
-				original_tag = SWE
-			}
-			
-			picture = generic_political_advisor_europe_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-	# MILITARY
-	army_chief = {
-
-		SWE_olof_thornell = {
-			
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_old_guard }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_ivar_holmquist = {
-			
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_per_sylvan = {
-			
-			picture = generic_army_europe_6
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_defensive_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_oscar_nygren = {
-			
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
+	### HEAD OF STATE ###
+	
+	head_of_state = {
 		
-
-		SWE_bengt_nordenskiold = {
-			
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_torsten_friis = {
-			
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_chief_all_weather_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
+		
+		
 	}
-
-	navy_chief = {
-
-		SWE_gosta_ehrensvard = {
-			
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_fabian_tamm = {
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_charles_de_champs = {
-			
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	high_command = {
-
-		SWE_axel_rappe = {
-			
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_artillery_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	
-		SWE_archibald_douglas = {
-			
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_axel_ljungdahl = {
-			
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_helge_stromback = {
-			
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
 	}
 
-	tank_manufacturer = { 
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
 		
 		designer = yes
 		
@@ -353,88 +124,29 @@ ideas = {
 				# notable tanks L-120 and L-60, lighter tanks as well as the medium tank Stridsvagn m/42, that was mobile and well protected.
 			}
 		}
-
+		
 	}
 	
-	naval_manufacturer = { 
-			
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
 		designer = yes
 		
-		marinvarkstaderna = { #Karlskrona
-			
-			picture = generic_naval_manufacturer_1
-
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				# mer research
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		gotaverken = {
-			
-			picture = generic_naval_manufacturer_2
-
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				# worlds biggest shipyard by launched gross tonnes
-			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		kockums = {
-			
-			picture = generic_naval_manufacturer_3
-
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			 
-			equipment_bonus = {
-				# submarines and battleships
-			}
-			
-			traits = { raiding_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
 	}
-
-
+	
+	###MATERIEL MANUFACTURER###
+	
 	materiel_manufacturer = {
-		
+			
 		designer = yes
-	
+		
 		bofors = {
 			
 			picture = generic_artillery_manufacturer_1
@@ -502,4 +214,114 @@ ideas = {
 		}
 		
 	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+
+		marinvarkstaderna = { #Karlskrona
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# mer research
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		gotaverken = {
+			
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# worlds biggest shipyard by launched gross tonnes
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		kockums = {
+			
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			 
+			equipment_bonus = {
+				# submarines and battleships
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}	
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

@@ -1,266 +1,154 @@
 ideas = {
-	# MILITARY
-
-
-	political_advisor = {
-
-		LIB_william_s_tubman = {
-
-			picture = generic_political_advisor_african_2
-
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { prince_of_terror }
-		}
-
-		LIB_albert_porte = {
-
-			picture = generic_political_advisor_african_1
-				
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		LIB_arthur_sweetser = {
-
-			picture = generic_political_advisor_african_3
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
-	}
-
-	army_chief = {
-
-		LIB_benjamin_o_davis = {
-
-			picture = generic_army_african_4
-			
-			allowed = {
-				original_tag = LIB
-			}		
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		LIB_iver_virgin = {
-
-			picture = generic_army_african_5
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-
-		LIB_won_loy_chan = {
-
-			picture = generic_air_african_3
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		LIB_george_remond = {
-
-			picture = generic_air_african_3
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		LIB_reginald_brandon = {
-
-			picture = generic_navy_african_2
-			
-			allowed = {
-				original_tag = LIB
-			}
-					
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		LIB_james_brooks = {
-
-			picture = generic_navy_african_3
-			
-			allowed = {
-				original_tag = LIB
-			}
-					
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		LIB_john__r_fox = {
-			
-			picture = generic_army_african_1
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	country = {
 		
-		LIB_edgar_cailloux = {
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-			picture = generic_army_african_3
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-		LIB_benton_stukes = {
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-			picture = generic_army_african_2
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { army_armored_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-		LIB_samuel_nell = {
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-			picture = generic_air_african_2
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
 
-		LIB_andre_fields = {
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
 
-			picture = generic_navy_african_2
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			traits = { navy_capital_ship_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
 	}	
-
-	theorist = {
-		LIB_aaron_pinn = {
-			
-			picture = generic_army_african_2
-
-			allowed = {
-				original_tag = LIB
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-		
-		LIB_stewart_holland = {
-
-			picture = generic_navy_african_3
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}	
-
-		LIB_joseph_smith = {
-
-			picture = generic_air_african_2
-			
-			allowed = {
-				original_tag = LIB
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
 	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

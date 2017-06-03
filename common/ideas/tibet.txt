@@ -1,255 +1,154 @@
 ideas = {
-
-	political_advisor = {
-
-		TIB_taktra_rinpoche = {
-
-			picture = generic_political_advisor_asia_3
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		TIB_jigme_taring = {
-
-			picture = generic_political_advisor_asia_1
-				
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { war_industrialist }
-		}
-
-		TIB_reting_rimpoche = {
-
-			picture = generic_political_advisor_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-	}
-
-	theorist = {
-		TIB_gyato_wangdu = {
-
-			picture = generic_army_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
+	country = {
 		
-		TIB_sampo_tsewang_rigzin = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		TIB_chama_samphe = {
-					
-					
-			allowed = {
-				original_tag = TIB
-			}
-			
-			picture = generic_political_advisor_asia_3
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-
-	high_command = {
-
-		TIB_khemey_sonam_wangdi = {
-
-			picture = generic_army_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_regrouping_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		TIB_chaghoe_namgyal_dorje = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TIB_tenpa_jamyang = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TIB_jamyang_rabten = {
-
-			picture = generic_navy_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { navy_anti_submarine_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	army_chief = {
-		
-		TIB_lobsang_tenzin = {
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TIB_jampal_rabgye_rinpoche = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-			traits = { army_chief_morale_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-		
-		TIB_bapa_yeshe = {
-			
-			picture = generic_air_asia_1
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TIB_chodak_karma = {
-			
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = TIB
-			}
-			
-
-			
-			traits = { air_chief_safety_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
-	navy_chief = {
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-		TIB_lhalu_tsewang_dorje = {
-			
-			picture = generic_navy_asia_3
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-			allowed = {
-				original_tag = TIB
-			}
-					
-			traits = { navy_chief_naval_aviation_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-		TIB_sogyal_rinpoche = {
-			
-			picture = generic_navy_asia_2
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-			allowed = {
-				original_tag = TIB
-			}
-					
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
 	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

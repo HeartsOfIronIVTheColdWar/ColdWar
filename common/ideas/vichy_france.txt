@@ -1,271 +1,154 @@
 ideas = {
-	political_advisor = {
-
-		VIC_pierre_laval = {
-
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		VIC_marius_viple = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-			traits = { popular_figurehead }
-		}
-
-		VIC_rene_bousquet = {
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-	}
-
-	theorist = {
-
-		VIC_charles_huntziger = {
-					
-					
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-			picture = generic_army_europe_4
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
-
-		VIC_lucien_lacaze = {
-					
-					
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-			picture = generic_navy_europe_1
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-	# MILITARY
-	army_chief = {
-
-		VIC_eugene_bridoux = {
-			
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-			traits = { army_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		VIC_maxime_weygand = {
-			
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-			traits = { army_chief_defensive_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
+	country = {
 		
-
-		VIC_jean_marie_bergeret = {
-			
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-
-			
-			traits = { air_chief_safety_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		VIC_jean_romatet = {
-			
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 	}
-
-	navy_chief = {
-
-		VIC_jean_francois_darlan = {
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-
-			
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		VIC_jean_marie_abrial = {
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-
-			
-			traits = { navy_anti_submarine_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-
-		VIC_jean_francois_jannekeyn = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
-
-			
-			traits = { air_naval_strike_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	
-		VIC_jean_de_laborde = {
-			
-			picture = generic_navy_europe_2
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-			
-			traits = { navy_capital_ship_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-		VIC_marcel_bruno_gensoul = {
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-			
-			traits = { navy_screen_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
 
-		VIC_pierre_le_gloan = {
-			
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = FRA
-				has_government = autocratic
-			}
-			
+###ROW 2:###
 
-			
-			traits = { air_air_superiority_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
 	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }

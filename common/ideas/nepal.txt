@@ -1,270 +1,154 @@
 ideas = {
-
-	political_advisor = {
-
-		NEP_sidney_r_planter = {
-
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { popular_figurehead }
-		}
-
-		NEP_w_r_parker_gill = {
-
-			picture = generic_political_advisor_asia_2
-				
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		NEP_william_stevenson_meyer = {
-
-			picture = generic_political_advisor_asia_3
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { ideological_crusader }
-		}
-	}
-
-	theorist = {
-		NEP_robert_mainwaring = {
-
-			picture = generic_army_asia_4
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
+	country = {
 		
-		NEP_gehendra_rana = { 
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
-		NEP_h_t_s_collins = {
-					
-					
-			allowed = {
-				original_tag = NEP
-			}
-			
-			picture = generic_political_advisor_asia_3
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-	}
-
-	high_command = {
-
-		NEP_khusbu_singh = {
-
-			picture = generic_army_asia_1 #there are no pictures of women in that are suitable
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		NEP_birsha_gurung = {
-
-			picture = generic_army_asia_3 #there are no pictures of women in that are suitable
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_cavalry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NEP_hira_rana = {
-
-			picture = generic_army_asia_5
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NEP_gagan_lama = {
-
-			picture = generic_navy_asia_2
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	army_chief = {
-		
-		NEP_mohan_rana = {
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NEP_baber_rana = {
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NEP_l_m_potter = {
-
-			picture = generic_army_asia_2
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-			traits = { army_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-		
-		NEP_kiran_rana = {
-			
-			picture = generic_air_asia_1
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-
-			
-			traits = { air_chief_safety_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NEP_walter_morriano = {
-			
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = NEP
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	
-	navy_chief = {
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
 
-		NEP_rudra_rana = {
-			
-			picture = generic_navy_asia_1
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
 
-			allowed = {
-				original_tag = NEP
-			}
-					
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	UNITED NATIONS AMBASSADOR
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
 
-		NEP_alaap_lokesh = {
-			
-			picture = generic_navy_asia_3
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
 
-			allowed = {
-				original_tag = NEP
-			}
-					
-			traits = { navy_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	head_of_state = {
+		
+		
+		
 	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
 }
