@@ -25,7 +25,7 @@ default = {
 GER = {
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
-			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Tobias Staffan Marco Karl
 		}
 	}
 	female = {
@@ -36,7 +36,41 @@ GER = {
 		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
 		Beisswenger Duttmann Wilbs Berglen Behrmann 
 		}
-	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red knight" "Reeste" }
+	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+
+WGR = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+
+DDR = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
 
 
@@ -750,7 +784,7 @@ IRE = {
 SWI = {
 	male = {
 		names = { 
-			Adolf Alexander Eduard Ernst Franz Hans Johann Josef Konstantin Martin
+			Alexander Eduard Ernst Franz Hans Johann Josef Konstantin Martin
 			Melchior Robert Rudolf Ulrich Wilhelm Augusto Enrico Flavio Giuseppe Vincenzo
 			Antoine Charles Emmanuel Guillaume Gustave Henri Hugo Louis Marc Paul
 		
@@ -1079,6 +1113,43 @@ AST = {
 	
 	 }
 	callsigns = { }
+
+	ace = {
+		name = Leslie
+		callsign = Les
+		surname = Clisby
+		type = fighter
+	}
+	ace = {
+		name = "John"
+		callsign = Wad
+		surname = Waddy
+		type = fighter
+	}
+	ace = {
+		name = Keith
+		callsign = Bluey
+		surname = Truscott
+		type = fighter
+	}
+	ace = {
+		name = Paterson
+		callsign = Pat
+		surname = Hughes
+		type = fighter
+	}
+	ace = {
+		name = Adrian
+		callsign = Tim
+		surname = Goldsmith
+		type = fighter
+	}
+	ace = {
+		name = Clive
+		callsign = Killer
+		surname = Caldwell
+		type = fighter
+	}
 }
 NZL = {
 	male = {
@@ -1096,6 +1167,32 @@ NZL = {
 	callsigns = { }
 }
 
+INS_HOL = {
+	male = {
+		names = { 
+			Adriaan Albert Anthony Antonius Berend Bodo Carsten Christiaan Cornelis Dirk Ferdinand Freek Frits Gerard Godfried Govert Hendrik Henri Jacob Jacobus Jan "Jan Willem" Johan Johannes Laurens Mathias Matthijs Nicolaas Peter Petrus Philippus Pieter Quirinus Sijmen Theodorus Tjerk Willem
+		 }
+	}
+	
+	female = {
+		names = { Coba Corrie Frieda Hannie Helena Ina Jet Joke Miep Reina Truus }
+	}
+
+	surnames = { 
+	Boers "'t Mannetje" Best "Bischoff van Heemskerk" "de Visser" "den Hollander" "den Ouden" "Jacometti" "van den Bent" "van den Briel" "van den Hof" "van der Bijl" "van Helsdingen" "van Liempd" "van Setten" "van Voorst tot Voorst" "van Zinnicq Bergmann" "Wittert van Hoogland" Bosch Bruggink Bruinier Buijs Buurman Carstens "den Breejen" Elias Folmer Giesen Ham Harberts Hilberdink Hoogewerff Hoving Jaapies Janssen Jolles Kaak Kraak Krouwel Kuiper Landzaat Leegstra Lukkien Maas Migchelbrink Reijnierse Rijnders Roelofsen Sandberg Scherpenhuijzen Schippers Steen Tebrunsvelt Varwijk Verhoef Visscher Vos Winkelman
+	  }
+}
+
+INS = {
+	male = {
+		names = { Joko Fauzi Prabowo Ali Soemarno Henk Widji Teuku Hadi Azwar Mustafa Zaini Abdul Anak Ida Dewa }
+	}
+	female = {
+		names = { Diah Siti }
+	}
+	surnames = { Widodo Bowo Subianto Sadikin Sosroatmodjo Ngantung Permatasari Damono Wibowo Thukul Hartinah Gunawan Haryanto Suprianto Sabara Abubakar "Bagus Oka" "Bagus Mantra" Martha}
+	callsigns = { }
+}
 
 BHU = {
 	male = {
@@ -1129,7 +1226,8 @@ NEP = {
 	surnames = { Thapa "Singh Thapa" Singh Rana "Bahadur Rana"  }
 	callsigns = { }
 }
-RAJ = {
+
+MAL_UK = {
 	male = {
 		names = { Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert
 			Colin Cyril David Donald Douglas Edmund Edward Fairfax  Francis
@@ -1141,7 +1239,7 @@ RAJ = {
 	female = {
 		names = { Elizabeth Anne }
 	}
-	surnames = { 	Allenby Battemberg Beatty Beresford Brown Buller Butler Campbell Cardigan Churchill
+	surnames = { 	Allenby Battenberg Beatty Beresford Brown Buller Butler Campbell Cardigan Churchill
 			Cochrane Cockburn Dundas Fisher French Gough Grant Grenfell Haig Murphy
 			Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery
 			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin
@@ -1151,6 +1249,44 @@ RAJ = {
 	callsigns = { }
 }
 
+RAJ = { #good
+	male = {
+		names = { 
+			Mohandas Narendra Dalbir Bipin Subrata Amarjeet Sanjiv Ravi Praveen Surinder Balwant Sarath Amit
+			Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj
+			Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+			Jawaharlal Gulzarilal "Lal Bahadur" Morarji Charan Rajiv Vishwanath Chandra Pamulaparti Venkata Narasimha Atal Bihari Inder Manmohan Rahul Salman
+		}
+	}
+	female = {
+		names = { Indira Priyanka Priti }
+	}
+	surnames = { 
+		Nehru Gandhi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand
+		Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan
+		Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		Nanda Shastri Desai Shekhar Rao Vajpayee Gowda Gujral Patel
+	}
+	callsigns = { }
+}
+
+PAK = { #good
+	male = {
+		names = { 
+			Syad Ahmad Aga Nawab Maulvi Karamat Abdul Nasir Maulana Bhai Hussain Malik Raees Choudhry Rahmat
+			Liaquat Ali Khawaja Muhammad "Muhammad Ali" Chaudhry Huseyn Shaheed Ibrahim Ismail Ayub Nurul Zulfikar Ghulam Mustafa Nawaz Balakh Sher
+			Meraj "Muhammad Khan" Zafarullah Shaukat Yousef Raza Raja Hazir Iskander Fazal Farooq Pervez Imran
+		}
+	}
+	female = {
+		names = { Benazir Sayeeda }
+	}
+	surnames = { 
+		Khan Ali Malik Nabiullah Sadiq Shafi Pirbhai Ahmed Baig Johar
+		Nazimuddin Warsi Bogra Suhrawardy Chundrigar Amin Bhutto Junejo Sharif Mazari Qureshi Khalid Jamali Shujaat Aziz Soomro Gillani Ashraf Khoso Musharraf
+	}
+	callsigns = { }
+}
 
 PHI = {
 	male = {
@@ -1189,57 +1325,7 @@ CHI = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-GXC = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
 PRC = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-SHX = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-XSM = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-SIK = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-YUN = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -1259,28 +1345,8 @@ MON = {
 	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an }
 	callsigns = { }
 }
-MEN = {
-	male = {
-		names = {  Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an }
-	callsigns = { }
-}
-TAN = {
-	male = {
-		names = {  Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an }
-	callsigns = { }
-}
 
-NKR = {
+KOR = { #good
 	male = {
 		names = { Kim Choe Yang Pak Ri Kang Yon Hong Hwang Lee Ju Park No O Chun Jeong Yu Baek Yim Choi Han Dae Rim }
 	}
@@ -1291,6 +1357,31 @@ NKR = {
 		Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol Kwon-mu 
 		Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun Sang-hee Jang-yop
 	}
+	callsigns = { }
+}
+
+NKR = { #good
+	male = {
+		names = { Kim Choe Yang Pak Ri Kang Yon Hong Hwang Lee Ju Park No O Chun Jeong Yu Baek Yim Choi Han Dae Rim }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+		Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol Kwon-mu 
+		Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun Sang-hee Jang-yop
+	}
+	callsigns = { }
+}
+
+MAL = {
+	male = {
+		names = { Najib Muhammad Tengku Kadir "Tengku Kadir" Embok Eunos Ibrahim Pak Pandir Rashid Ahmad Nordin Abdul Amin Lokman Yaacob Elyas Mazlan }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Razak Yusof Ali Suloh Abdullah Yaacob Sako Maidin Boestamam Aziz Latiff Omar }
 	callsigns = { }
 }
 
@@ -1329,6 +1420,90 @@ ETH = {
 	 }
 	callsigns = { }
 }
+ANG = {
+	male = {
+		names = { 
+			José Eduardo Henrique Alberto Joaquim Dinho Demosthenes Amos Kafundanga Jeremias Valdemar Mendes Rodrigues Agostinho Viriato Nito
+		   }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+		"dos Santos" Tiago "N'zita" Vinama Chingunji Chilingutila Chitunda Chidondo "de Carvalho" Mingas Neto "da Cruz" Alves
+	 }
+	callsigns = { }
+}
+BOT = {
+	male = {
+		names = { 
+			Seretse Goitsebeng Maphiri Sekgoma Quett Ketumile Joni Ian Tebogo Dikgakgamatso
+		   }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+		Khama Masire Mogae Segokgo
+	 }
+	callsigns = { }
+}
+COG = {
+	male = {
+		names = { 
+			 Mobutu Joseph Patrice Antoine Laurent Albert Moise Etienne Nzimbi Ngbale Jérôme
+		   }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+	  	 Kasavubu Lumumba Gizenga Delvaux Mbariko Tshombo Kimba Mobutu Ileo Adoula Anany Bamba Mahamba Bangala Efomi Kasa-Vubu
+	 }
+	callsigns = { }
+}
+KEN = {
+	male = {
+		names = { 
+			Uhuru William Ekwee Justin Githu Dedan Jomo Warũhiũ Koitalel Kango Onyango Musa
+		   }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+	  	Kenyatta Ruto Ethuro Muturi Muigai Kimathi Itote Samoei Muchai Obama Mwariama Mathenge
+	 }
+	callsigns = { }
+}
+MZB = {
+	male = {
+		names = { 
+			José Eduardo Henrique Alberto Joaquim Dinho Demosthenes Amos Kafundanga Jeremias Valdemar Mendes Rodrigues Agostinho Viriato Nito
+		   }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+	  	"dos Santos" Tiago "N'zita" Vinama Chingunji Chilingutila Chitunda Chidondo "de Carvalho" Mingas Neto "da Cruz" Alves Machel
+	 }
+	callsigns = { }
+}
+ZIM = {
+	male = {
+		names = { 
+			Desmond Abel Kadungure Sekuru Robert Lobengula Joshua Dumiso Leopold Joseph Gabriel Mqabuko Nyongolo Thomas Letswansto Ndabaningi
+		   }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+	  	Tutu Muzorewa Nkomo Mapondera Kaguvi Khumalo Dabengwa Msika Takawira Masuku Sithole Tekere Nkala Nyagumbo
+	 }
+	callsigns = { }
+}
 SAF = {
 	male = {
 		names = { 
@@ -1338,7 +1513,43 @@ SAF = {
 	female = {
 		names = { }
 	}
-	surnames = { Cilliers Botha Joubert Kruger Duquesne Potgieter "van Rensburg" "de la Rey" Theron "de Wet" Pretorius Retief "de Beer" Uys  }
+	surnames = { Cilliers Botha Joubert Kruger Duquesne Potgieter "van Rensburg" "de la Rey" Theron "de Wet" Pretorius Retief "de Beer" Uys }
+	callsigns = { }
+}
+RSA = { #post-apartheid south africa - good, if a little short
+	male = {
+		names = { 
+			Desmond Nelson Thabo Kgalema Jacob Mangosuthu Steve
+		  }
+	}
+	female = {
+		names = { Ivy Winnie }
+	}
+	surnames = { Tutu Mandela Mbeki Matsepe Casaburri Motlanthe Zuma Madikizela Buthelezi Biko }
+	callsigns = { }
+}
+NIE = { #good
+	male = {
+		names = { 
+			Nnamdi Johnson Yakubu Murtala Olesugun Shehu Muhammadu Ibrahim Ernest Sani Abdulsalami Umaru Goodluck
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Azikiwe Aguiyi Ironsi Gowon Mohammed Obasanjo Shagari Buhari Babangida Shonekan Abacha Abubakar Yar'Adua Jonathan Balewa }
+	callsigns = { }
+}
+UGA = { #good
+	male = {
+		names = { 
+			John Edward Milton Idi Yusuf Godfrey Paulo Bazilio Tito Yoweri
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Sentamu Mutesa Obote Amin Lule Binaisa Muwanga Okello Olara Museveni }
 	callsigns = { }
 }
 

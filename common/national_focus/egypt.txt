@@ -21,7 +21,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_general_petroleum_authority
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		completion_reward = {
 			add_tech_bonus = {
