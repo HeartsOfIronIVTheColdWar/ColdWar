@@ -22,7 +22,7 @@ default = {
 ###############################################################
 # The Majors
 ###############################################################
-GER = {
+GER = { #need to revisit
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Tobias Staffan Marco Karl
@@ -39,7 +39,7 @@ GER = {
 	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
 
-WGR = {
+WGR = { #need to revisit
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Tobias Staffan Marco Karl
@@ -56,7 +56,7 @@ WGR = {
 	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
 
-DDR = {
+DDR = { #need to revisit
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Tobias Staffan Marco Karl
@@ -330,15 +330,19 @@ ICE = {
 		names = {
 			Aage Astrathur Baldur Björn Dagbjartur Eggthor Freyr Hjörtur Lórens Oddleifur Sturlaugr Vagn Ögrim
 		}
+		surnames = {
+			Thorarensen Blöndal Aagesson Astrathursson Baldursson Björnsson Eggthorsson Hjörtursson Oddleifsson Vagnsson
+		}
 	}
 	female = {
 		names = {
 			Árný Arnfrithur Bjarnhildur Boghildur Dómhildur Drótt Freydís Gunnrún Rafney
 		}
+		surnames = {
+			Thorarensdottir Blöndal Aagesdottir Astrathursdottir Baldursdottir Björnsdottir Eggthorsdottir Hjörtursdottir Oddleifsdottir Vagnsdottir
+		}
 	}
-	surnames = {
-		Thorarensen Blöndal Aagesson Astrathursson Baldursson Björnsson Eggthorsson Hjörtursson Oddleifsson Vagnsson
-	}
+
 	callsigns = { }
 }
 
@@ -725,7 +729,7 @@ CZE = {
 AUS = {
 	male = {
 		names = {  Ezekiel Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
-			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl  }
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Tobias Staffan Marco Karl  }
 	}
 	female = {
 		names = { Sandra }
@@ -969,7 +973,7 @@ YEM = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
-			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
 			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
 		}
 	}
@@ -985,13 +989,15 @@ YEM = {
 	
 	}
 }
-EGY = {
+EGY = {  #need to revisit
 	male = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
-			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
+			#
+			Omar
 		}
 	}
 	female = {
@@ -1003,7 +1009,8 @@ EGY = {
 			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
 			"al-Najdi" "al-Hijazi"   
-	
+			#
+			Sharif
 	}
 	callsigns = { }
 }
@@ -1012,7 +1019,7 @@ SYR = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
-			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
 			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
 		}
 	}
@@ -1034,7 +1041,7 @@ LEB = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
-			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
 			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
 		}
 	}
@@ -1056,7 +1063,7 @@ JOR = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
-			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
 			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
 		}
 	}
@@ -1073,12 +1080,12 @@ JOR = {
 	}
 	callsigns = { }
 }
-LBA = {
+LBA = { #need to revisit
 	male = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
-			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
 			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
 		}
 	}
@@ -1092,6 +1099,108 @@ LBA = {
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
 			"al-Najdi" "al-Hijazi"   
 	
+	}
+	callsigns = { }
+}
+MOR = { #need to revisit
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+	callsigns = { }
+}
+ALG = { #need to revisit
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+	callsigns = { }
+}
+TUN = { #need to revisit
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+	callsigns = { }
+}
+PAL = { #need to revisit
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+	callsigns = { }
+}
+ISR = { #needs expanding
+	male = {
+		names = {  
+			David Moshe Levi Yigal Golda Yitzhak Menachem Shimon Benjamin Ehud Ariel Haim Ron Daniel Isaac Uri Jacob
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Ben-Gurion Sharett Eshkol Allon Meir Rabin Begin Shamir Peres Netanyahu Barak Sharon Olmert Levine Ben-Israel
 	}
 	callsigns = { }
 }
@@ -1451,15 +1560,15 @@ BOT = {
 COG = {
 	male = {
 		names = { 
-			 Mobutu Joseph Patrice Antoine Laurent Albert Moise Etienne Nzimbi Ngbale Jérôme
-		   }
+			Mobutu Joseph Patrice Antoine Laurent Albert Moise Etienne Nzimbi Ngbale Jérôme Dikembe
+		}
 	}
 	female = {
 		names = { }
 	}
 	surnames = {
-	  	 Kasavubu Lumumba Gizenga Delvaux Mbariko Tshombo Kimba Mobutu Ileo Adoula Anany Bamba Mahamba Bangala Efomi Kasa-Vubu
-	 }
+		Kasavubu Lumumba Gizenga Delvaux Mbariko Tshombo Kimba Mobutu Ileo Adoula Anany Bamba Mahamba Bangala Efomi Kasa-Vubu Mutombo
+	}
 	callsigns = { }
 }
 KEN = {
@@ -1531,13 +1640,13 @@ RSA = { #post-apartheid south africa - good, if a little short
 NIE = { #good
 	male = {
 		names = { 
-			Nnamdi Johnson Yakubu Murtala Olesugun Shehu Muhammadu Ibrahim Ernest Sani Abdulsalami Umaru Goodluck
+			Nnamdi Johnson Yakubu Murtala Olesugun Shehu Muhammadu Ibrahim Ernest Sani Abdulsalami Umaru Goodluck Akeem
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { Azikiwe Aguiyi Ironsi Gowon Mohammed Obasanjo Shagari Buhari Babangida Shonekan Abacha Abubakar Yar'Adua Jonathan Balewa }
+	surnames = { Azikiwe Aguiyi Ironsi Gowon Mohammed Obasanjo Shagari Buhari Babangida Shonekan Abacha Abubakar Yar'Adua Jonathan Balewa Olajuwon }
 	callsigns = { }
 }
 UGA = { #good
