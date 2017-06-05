@@ -2,36 +2,82 @@ leader_traits = {
 	###COLD WAR STUFF###
 	
 	###TEXT FOR THE LAWS###
-	civilian_economy_trait = {
-		random = no
-		ai_will_do = {
-			factor = 1
+	
+		###ECONOMY###
+		civilian_economy_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
 		}
-	}
-	low_economic_mobilisation_trait = {
-		random = no
-		ai_will_do = {
-			factor = 1
+		low_economic_mobilisation_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
 		}
-	}
-	partial_economic_mobilisation_trait = {
-		random = no
-		ai_will_do = {
-			factor = 1
+		partial_economic_mobilisation_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
 		}
-	}
-	war_economy_trait = {
-		random = no
-		ai_will_do = {
-			factor = 1
+		war_economy_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
 		}
-	}
-	tot_economic_mobilisation_trait = {
-		random = no
-		ai_will_do = {
-			factor = 1
+		tot_economic_mobilisation_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
 		}
-	}
+	
+		###INDIVIDUAL FREEDOMS###
+		anarchism_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		libertarian_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		free_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		surveillance_state_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		mass_surveillance_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		police_state_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		martial_law_trait = {
+			random = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	
 	recruiter = {
 		random = no

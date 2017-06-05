@@ -1,5 +1,11 @@
 ﻿l_english:
- SOV_minister_of_internal_affairs:0 "STALINS MOTHER"
+ anarchism_trait:0 "When a state collapses not much else is managable."
+ libertarian_trait:0 "Absolute freedom with a minimum amount of laws."
+ free_trait:0 "Freedom, rights and liability."
+ surveillance_state_trait:0 "Freedom under surveillance."
+ mass_surveillance_trait:0 "Informers and surveillance keeps us safe."
+ police_state_trait:0 "Bare minimum of freedoms under strict control."
+ martial_law_trait:0 "State of Emergency and total control."
  minister_of_internal_affairs:0 "Minister of Internal Affairs"
  minister_of_international_affairs:0 "Minister of International Affairs"
  intelligence_minister:0 "Intelligence Minister"

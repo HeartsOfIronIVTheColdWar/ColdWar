@@ -148,8 +148,8 @@ focus = {
 #				limit = { has_government = communism }
 #				add_opinion_modifier = { target = TUR modifier = Democratic_Influence }
 #			}
-#		}
-#
+		}
+
 }
 focus = {
 		id = "Support NATO"
@@ -335,9 +335,9 @@ focus = {
 					category = infantry_weapons
 					category = artillery
 				}				
-}
-}
-}
+			}
+		}
+	}
 focus = {
 		id = "Socialist Ideals"
 		icon = GFX_goal_molotov_ribbentrop_pact
