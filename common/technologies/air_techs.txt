@@ -1,13 +1,13 @@
 technologies = {
 
-	1945_fighter = {
+	fighter_1945 = {
 	
 		enable_equipments = {
 			fighter_equipment_0
 		}
 	
 		path = {
-			leads_to_tech = 1950_fighter
+			leads_to_tech = fighter_1950
 			research_cost_coeff = 1
 		}
 		
@@ -55,14 +55,14 @@ technologies = {
 		}
 	}
 	
-	1950_fighter = {
+	fighter_1950 = {
 	
 		enable_equipments = {
 			fighter_equipment_1
 		}
 	
 		path = {
-			leads_to_tech = 1960_fighter
+			leads_to_tech = fighter_1960
 			research_cost_coeff = 1
 		}
 		
@@ -94,7 +94,7 @@ technologies = {
 	cv_1950_fighter = {
 
 		enable_equipments = {
-			cv_fighter_equipment_1
+			cv_jet_fighter_equipment_0
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -110,14 +110,14 @@ technologies = {
 		}
 	}
 	
-	1960_fighter = {
+	fighter_1960 = {
 	
 		enable_equipments = {
 			fighter_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = 1970_fighter
+			leads_to_tech = fighter_1970
 			research_cost_coeff = 1
 		}
 		
@@ -149,7 +149,7 @@ technologies = {
 	cv_1960_fighter = {
 
 		enable_equipments = {
-			cv_fighter_equipment_2
+			cv_jet_fighter_equipment_1
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -165,14 +165,14 @@ technologies = {
 		}
 	}
 	
-	1970_fighter = {
+	fighter_1970 = {
 	
 		enable_equipments = {
 			fighter_equipment_3
 		}
 	
 		path = {
-			leads_to_tech = 1980_MCA
+			leads_to_tech = MCA_1980
 			research_cost_coeff = 1
 		}
 		
@@ -204,7 +204,7 @@ technologies = {
 	cv_1970_fighter = {
 
 		enable_equipments = {
-			cv_fighter_equipment_3
+			cv_jet_fighter_equipment_2
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -220,14 +220,14 @@ technologies = {
 		}
 	}
 	
-	1945_CAS = {
+	CAS_1945 = {
 	
 		enable_equipments = {
 			CAS_equipment_0
 		}
 	
 		path = {
-			leads_to_tech = 1950_CAS
+			leads_to_tech = CAS_1950
 			research_cost_coeff = 1
 		}
 		
@@ -275,14 +275,14 @@ technologies = {
 		}
 	}
 	
-	1950_CAS = {
+	CAS_1950 = {
 	
 		enable_equipments = {
 			CAS_equipment_1
 		}
 	
 		path = {
-			leads_to_tech = 1960_CAS
+			leads_to_tech = CAS_1960
 			research_cost_coeff = 1
 		}
 		
@@ -330,14 +330,14 @@ technologies = {
 		}
 	}
 	
-	1960_CAS = {
+	CAS_1960 = {
 	
 		enable_equipments = {
 			CAS_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = 1970_CAS
+			leads_to_tech = CAS_1970
 			research_cost_coeff = 1
 		}
 		
@@ -385,14 +385,14 @@ technologies = {
 		}
 	}
 	
-	1970_CAS = {
+	CAS_1970 = {
 	
 		enable_equipments = {
 			CAS_equipment_3
 		}
 	
 		path = {
-			leads_to_tech = 1980_MCA
+			leads_to_tech = MCA_1980
 			research_cost_coeff = 1
 		}
 		
@@ -440,14 +440,14 @@ technologies = {
 		}
 	}
 	
-	1980_MCA = {
+	MCA_1980 = {
 	
 		enable_equipments = {
 			MCA_equipment_0
 		}
 	
 		path = {
-			leads_to_tech = 1990_MCA
+			leads_to_tech = MCA_1990
 			research_cost_coeff = 1
 		}
 		
@@ -495,7 +495,7 @@ technologies = {
 		}
 	}
 	
-	1990_MCA = {
+	MCA_1990 = {
 	
 		enable_equipments = {
 			MCA_equipment_1
@@ -545,14 +545,14 @@ technologies = {
 		}
 	}
 	
-	1945_strategic_bomber = {
+	strategic_bomber_1945 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_0
 		}
 	
 		path = {
-			leads_to_tech = 1950_strategic_bomber
+			leads_to_tech = strategic_bomber_1950
 			research_cost_coeff = 1
 		}
 
@@ -577,14 +577,14 @@ technologies = {
 		}
 	}
 	
-	1950_strategic_bomber = {
+	strategic_bomber_1950 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_1
 		}
 	
 		path = {
-			leads_to_tech = 1960_strategic_bomber
+			leads_to_tech = strategic_bomber_1960
 			research_cost_coeff = 1
 		}
 
@@ -609,14 +609,14 @@ technologies = {
 		}
 	}
 	
-	1960_strategic_bomber = {
+	strategic_bomber_1960 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = 1970_strategic_bomber
+			leads_to_tech = strategic_bomber_1970
 			research_cost_coeff = 1
 		}
 
@@ -641,14 +641,14 @@ technologies = {
 		}
 	}
 	
-	1970_strategic_bomber = {
+	strategic_bomber_1970 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_3
 		}
 	
 		path = {
-			leads_to_tech = 1980_strategic_bomber
+			leads_to_tech = strategic_bomber_1980
 			research_cost_coeff = 1
 		}
 
@@ -673,14 +673,14 @@ technologies = {
 		}
 	}
 	
-	1980_strategic_bomber = {
+	strategic_bomber_1980 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_4
 		}
 	
 		path = {
-			leads_to_tech = 1990_strategic_bomber
+			leads_to_tech = strategic_bomber_1990
 			research_cost_coeff = 1
 		}
 
@@ -705,7 +705,7 @@ technologies = {
 		}
 	}
 	
-	1990_strategic_bomber = {
+	strategic_bomber_1990 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_5
@@ -731,4 +731,5 @@ technologies = {
 			}
 		}
 	}
+	
 }
