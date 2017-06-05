@@ -1177,7 +1177,7 @@ country_event = {
 	}
 }
 
-# Remove neutral foreign policy if fascist or commie
+# Remove neutral foreign policy if autocratic or commie
 country_event = {
 	id = political.27
 	title = political.27.t
@@ -1196,7 +1196,7 @@ country_event = {
 			has_government = autocratic
 			has_government = communism
 		}
-		has_idea = autocratic_idea
+		has_idea = neutrality_idea
 	}
 
 	mean_time_to_happen = {
@@ -1205,7 +1205,7 @@ country_event = {
 
 	option = {
 		name = political.27.a
-		remove_ideas = autocratic_idea
+		remove_ideas = neutrality_idea
 	}
 }
 

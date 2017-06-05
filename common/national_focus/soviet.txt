@@ -1215,7 +1215,7 @@ focus_tree = {
 						}
 					}
 					swap_ideas = {
-						remove_idea = RAJ_agrarian_society2
+						remove_idea = RAJ_agrarian_society_2
 						add_idea = RAJ_agrarian_society_3
 					}
 				}
