@@ -94,8 +94,7 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 			arab_monarchy
-#			political_instability
-			arab_nationalist
+			political_instability
 			british_influence
 			}
 			focuses = {

@@ -256,8 +256,7 @@ country_event = {
 	option = {
 		name = arab.5.a
 		EGY = {
-			country_event = arab.6
-			days = 1
+			country_event = { id = arab.6 days = 1 }
 		}
 		ai_chance = {
 			base = 95
@@ -268,8 +267,7 @@ country_event = {
 	option = {
 		name = arab.5.b
 		EGY = {
-			country_event = arab.7
-			days = 1
+			country_event = { id = arab.7 days = 1 }
 		}
 		ai_chance = {
 			base = 5
@@ -303,7 +301,7 @@ country_event = {
 			add_to_faction = YEM
 			if = {
 				limit = {
-					PAL = is_subject_of = EGY
+					PAL = { is_subject_of = EGY }
 				}
 				add_to_faction = PAL
 			}

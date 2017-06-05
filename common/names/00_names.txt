@@ -102,9 +102,9 @@ ENG = { #should be pretty good, i redid them somewhat and stole some from USA
 			Cochrane Cockburn Fisher French Gough Grant Murphy
 			Hamilton Harding Hope Lyons Madden Milne Montgomery
 			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour
-			Smith Stewart Tyrwhitt Williams Windsor Wolseley Wood Leiper
+			Smith Stewart Tyrwhitt Williams Windsor Wolseley Wood
 			#
-			Alexander Anderson Blake Cameron Castle Collins Cooper Cox David Davis Hague Harper Howard
+			Alexander Anderson Blake Cameron Castle Collins Cooper Cox David Davis Dean Hague Harper Howard
 			Hughes MacDonald Neville Nicholls Palmer Richards Richardson Savage Skinner Stephens Stephenson
 			Thatcher Woodward
 			#
@@ -1421,14 +1421,14 @@ PAK = { #good
 		names = { 
 			Syad Ahmad Aga Nawab Maulvi Karamat Abdul Nasir Maulana Bhai Hussain Malik Raees Choudhry Rahmat
 			Liaquat Ali Khawaja Muhammad "Muhammad Ali" Chaudhry Huseyn Shaheed Ibrahim Ismail Ayub Nurul Zulfikar Ghulam Mustafa Nawaz Balakh Sher
-			Meraj "Muhammad Khan" Zafarullah Shaukat Yousef Raza Raja Hazir Iskander Fazal Farooq Pervez Imran
+			Meraj "Muhammad Khan" Zafarullah Shaukat Yousef Raza Raja Hazir Iskander Fazal Farooq Pervez Imran Sadiq
 		}
 	}
 	female = {
 		names = { Benazir Sayeeda }
 	}
 	surnames = { 
-		Khan Ali Malik Nabiullah Sadiq Shafi Pirbhai Ahmed Baig Johar
+		Khan Ali Malik Nabiullah Shafi Pirbhai Ahmed Baig Johar
 		Nazimuddin Warsi Bogra Suhrawardy Chundrigar Amin Bhutto Junejo Sharif Mazari Qureshi Khalid Jamali Shujaat Aziz Soomro Gillani Ashraf Khoso Musharraf
 	}
 	callsigns = { }
@@ -1496,7 +1496,9 @@ KOR = { #good
 	male = {
 		names = { Kim Choe Yang Pak Ri Kang Yon Hong Hwang Lee Ju Park No O Chun Jeong Yu Baek Yim Choi Han Dae Rim }
 		surnames = {
-			Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol 			      Kwon-mu Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun                         Sang-hee Jang-yop
+			Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol
+			Kwon-mu Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun
+			Sang-hee Jang-yop
 		}
 	}
 	female = {
@@ -1513,7 +1515,9 @@ NKR = { #good
 	male = {
 		names = { Kim Choe Yang Pak Ri Kang Yon Hong Hwang Lee Ju Park No O Chun Jeong Yu Baek Yim Choi Han Dae Rim }
 		surnames = {
-			Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol 			      Kwon-mu Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun 			     Sang-hee Jang-yop
+			Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol
+			Kwon-mu Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun
+			Sang-hee Jang-yop
 		}
 	}
 	female = {

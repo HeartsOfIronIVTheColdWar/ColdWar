@@ -14,27 +14,27 @@ news_event = {
 	
 	is_triggered_only = yes
 	
-	fire_only_once = yes
-	
 	immediate = {
-		EGY = {
-			set_cosmetic_tag = EGY_REP
-			create_country_leader = {
-				name = "Mohammed Naguib"
-				desc = "POLITICS_NAGUIB_DESC"
-				picture = "Portrait_Egypt_Mohammed_Naguib.dds"
-				expire = "1984.8.28"
-				ideology = despotism
-				traits = {
+		hidden_effect = {
+			EGY = {
+				set_cosmetic_tag = EGY_REP
+				create_country_leader = {
+					name = "Mohammed Naguib"
+					desc = "POLITICS_NAGUIB_DESC"
+					picture = "Portrait_Egypt_Mohammed_Naguib.dds"
+					expire = "1984.8.28"
+					ideology = despotism
+					traits = {
 				
+					}
 				}
-			}
-			set_party_name = { ideology = autocratic long_name = EGY_free_officers_movement name = EGY_free_officers_movement }
-			add_timed_idea = { idea = EGY_revolution_triumphant days = 180 }
-			add_ideas = { brotherhood }
-			swap_ideas = {
-				remove_idea = arab_monarchy
-				add_idea = arab_nationalist
+				set_party_name = { ideology = autocratic long_name = EGY_free_officers_movement name = EGY_free_officers_movement }
+				add_timed_idea = { idea = EGY_revolution_triumphant days = 180 }
+				add_ideas = { brotherhood }
+				swap_ideas = {
+					remove_idea = arab_monarchy
+					add_idea = arab_nationalist
+				}
 			}
 		}
 	}
@@ -76,8 +76,6 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-	
-	fire_only_once = yes
 	
 	immediate = {
 		EGY = { transfer_state = 803 }
@@ -130,7 +128,7 @@ news_event = {
 			tag = ENG
 		}
 		custom_effect_tooltip = suez1.b1.tt
-		FRA = { country_event = { id = fra.suez1 days = 1 } }
+		FRA = { country_event = { id = suez.1 days = 1 } }
 	}
 	
 	option = {
@@ -188,41 +186,42 @@ news_event = {
 	
 	is_triggered_only = yes
 	
-	fire_only_once = yes
-	
 	immediate = {
-		EGY = {
-			set_cosmetic_tag = UAR
-		 	annex_country = {
-				target = SYR
-				transfer_troops = yes } 
-			add_named_threat = { threat = 3 name = egy.1_threat_SYR }
-		}
-		554 = {
-			if = {
-				limit = { is_core_of = SYR}
-				add_core_of = EGY
+		hidden_effect = {
+			EGY = {
+				set_cosmetic_tag = UAR
+				annex_country = {
+					target = SYR
+					transfer_troops = yes } 
+				add_named_threat = { threat = 3 name = egy.1_threat_SYR }
 			}
-		}
-		677 = {
-			if = {
-				limit = { is_core_of = SYR}
-				add_core_of = EGY
+			554 = {
+				if = {
+					limit = { is_core_of = SYR}
+					add_core_of = EGY
+				}
 			}
-		}
-		680 = {
-			if = {
-				limit = { is_core_of = SYR}
-				add_core_of = EGY
+			677 = {
+				if = {
+					limit = { is_core_of = SYR}
+					add_core_of = EGY
+				}
 			}
-		}
-		807 = {
-			if = {
-				limit = { is_core_of = SYR}
-				add_core_of = EGY
+			680 = {
+				if = {
+					limit = { is_core_of = SYR}
+					add_core_of = EGY
+				}
+			}
+			807 = {
+				if = {
+					limit = { is_core_of = SYR}
+					add_core_of = EGY
+				}
 			}
 		}
 	}
+	
 	desc = {
 		text = news.580201.d_egy
 		trigger = {
