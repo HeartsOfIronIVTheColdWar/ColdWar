@@ -1509,13 +1509,17 @@ KOR = { #good
 NKR = { #good
 	male = {
 		names = { Kim Choe Yang Pak Ri Kang Yon Hong Hwang Lee Ju Park No O Chun Jeong Yu Baek Yim Choi Han Dae Rim }
+		surnames = {
+			Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol 			      Kwon-mu 
+			Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun Sang-hee 			Jang-yop
+		}
 	}
 	female = {
-		names = { }
-	}
-	surnames = {
-		Jong-il Jong-un Yong-gon Pyong-so Chol-hae Yong-chol Kyu-chang Kyok-sik Kyong-hui Rak-gyom Doo-hwan Kwan-chol Kwon-mu 
-		Yong-sik Jae-kyung Yong-gil Jong-rin Soon-jin Jun-kyu Young-hee Kyeong-doo Jong-oh Chang-guk Heung-sun Sang-hee Jang-yop
+		names = { Kim Choe Yang Pak Ri Kang Yon Hong Hwang Lee Ju Park No O Chun Jeong Yu Baek Yim Choi Han Dae Rim }
+		surnames = {
+			Un-jong Kum-ae Sun-hi Ok-im Yong-suk Yong-hui Yong-myong Byong-uk Song-hui Kum-suk Jong-ae Hyang-mi Bong-sil
+			Ok-song Gwang-suk Yong-ae Hye-rim Song-wol Sol-ju Sul-song
+		}
 	}
 	callsigns = { }
 }
