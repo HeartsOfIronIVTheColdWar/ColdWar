@@ -53,6 +53,16 @@ set_national_unity = 0.55
 		}
 	
 	}
+	create_country_leader = {
+		name = "Choe Yong-gon"
+		desc = "POLITICS_KIM_IL_SUNG_DESC"
+		picture = "Portrait_North_Korea_Kim_Il_Sung.dds"
+		expire = "1976.1.1"
+		ideology = socialism
+		traits = {
+			stout_defender
+		}
+	}
 	set_technology = {
 		asymmetric_warfare = 1
 		infantry_weapons_1 = 1
