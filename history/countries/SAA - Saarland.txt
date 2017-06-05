@@ -1,4 +1,4 @@
-capital = 163
+﻿capital = 163
 
 oob = "SAA_1950"
 set_research_slots = 2

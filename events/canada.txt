@@ -1,4 +1,4 @@
-add_namespace = canada
+﻿add_namespace = canada
 
 #NORAD AGREEMENT
 country_event = {

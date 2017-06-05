@@ -1,4 +1,4 @@
-add_namespace = japan
+﻿add_namespace = japan
 
 #PEACE TREATY WITH USA
 country_event = {

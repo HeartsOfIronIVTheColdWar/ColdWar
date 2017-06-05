@@ -1,4 +1,4 @@
-namespace = china 
+﻿namespace = china 
 
 country_event = {
 	id = china.27

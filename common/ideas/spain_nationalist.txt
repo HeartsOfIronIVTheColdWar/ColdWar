@@ -22,45 +22,6 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
-
-		SPA_luis_valdes_cavanillas = {
-
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = SPR
-				has_government = autocratic
-			}
-			
-			traits = { prince_of_terror }
-		}
-
-		SPA_tomas_garciano_goni = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = SPR
-				has_government = autocratic
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		SPA_fidel_davila_arrondo = {
-
-			picture = generic_army_europe_4
-
-			allowed = {
-				original_tag = SPR
-				has_government = autocratic
-			}
-			
-			traits = { war_industrialist }
-		}
-	}
-
 	theorist = {
 
 	SPA_jose_enrique_varela = {

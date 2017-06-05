@@ -1,4 +1,4 @@
-add_namespace = nato
+﻿add_namespace = nato
 
 #INVITATION TO NATO
 country_event = {

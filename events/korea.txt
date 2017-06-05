@@ -1,4 +1,4 @@
-add_namespace = korea
+﻿add_namespace = korea
 
 #UN VOLUNTEERS
 country_event = {

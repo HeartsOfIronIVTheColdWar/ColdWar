@@ -18,7 +18,7 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			IFV_1950
+			category_IFV_1950
 		}
 
 

@@ -79,10 +79,10 @@ ideas = {
 			picture = FRA_factory_strikes
 			
 			modifier = {
-				category_tanks = {
-					max_organisation = 5
-					breakthrough = 0.2
-				}
+#				category_tanks = {
+#					max_organisation = 5
+#					breakthrough = 0.2
+#				}
 			}
 		}
 		SOV_international_trade = {

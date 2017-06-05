@@ -596,7 +596,7 @@ technologies = {
 		}
 		
 		categories = {
-			strategic_bomber
+			heavy_air
 		}
 		
 		ai_will_do = {
@@ -628,7 +628,7 @@ technologies = {
 		}
 		
 		categories = {
-			strategic_bomber
+			heavy_air
 		}
 		
 		ai_will_do = {
@@ -660,7 +660,7 @@ technologies = {
 		}
 		
 		categories = {
-			strategic_bomber
+			heavy_air
 		}
 		
 		ai_will_do = {
@@ -692,7 +692,7 @@ technologies = {
 		}
 		
 		categories = {
-			strategic_bomber
+			heavy_air
 		}
 		
 		ai_will_do = {
@@ -719,7 +719,7 @@ technologies = {
 		}
 		
 		categories = {
-			strategic_bomber
+			heavy_air
 		}
 		
 		ai_will_do = {

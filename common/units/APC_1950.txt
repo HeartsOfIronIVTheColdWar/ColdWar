@@ -18,7 +18,7 @@ sub_units = {
 			category_front_line
 			category_all_infantry
 			category_army
-			APC_1950
+			category_APC_1950
 		}
 
 		combat_width = 2

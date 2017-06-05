@@ -1,4 +1,4 @@
-capital = 736
+﻿capital = 736
 
 oob = "TRI_1950"
 set_research_slots = 2

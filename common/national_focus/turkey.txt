@@ -42,9 +42,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			TUR = {
-				add_opinion_modifier = { target = SOV modifier = ger_tur_diplomacy_focus }
-		}
+#			TUR = {
+#				add_opinion_modifier = { target = SOV modifier = ger_tur_diplomacy_focus }
+#		}
 	}
 }
 	focus = {
@@ -73,7 +73,7 @@ focus = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+#			add_ideas = liberty_ethos_focus
 		}
 	}
 	focus = {
@@ -86,8 +86,8 @@ focus = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = internationalism
-			add_ideas = collectivist_ethos_focus
+#			add_ideas = internationalism
+#			add_ideas = collectivist_ethos_focus
 		}
 	}
 focus = {
@@ -131,7 +131,7 @@ focus = {
 #					limit = { NOT = { has_government = autocratic } }
 #					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
 #				}
-##			}
+#			}
 #			ENG = { 
 #				if = {
 #					limit = { NOT = { has_government = autocratic } }
@@ -205,7 +205,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = indoctrination_focus
+#			add_ideas = indoctrination_focus
 			add_political_power = 150
 		}
 	}
@@ -237,7 +237,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = deterrence
+#			add_ideas = deterrence
 		}
 	}
 	focus = {
@@ -251,7 +251,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = indoctrination_focus
+#			add_ideas = indoctrination_focus
 			add_political_power = 150
 		}
 	}
@@ -275,7 +275,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = why_we_fight_focus
+#			add_ideas = why_we_fight_focus
 			hidden_effect = {
 				if = {
 					set_rule = { can_create_factions = yes }
@@ -871,11 +871,11 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}			
-			add_ideas = militarism_focus
+#	#		if = {
+#				limit = { has_idea = neutrality_idea }
+#				remove_ideas = neutrality_idea
+#			}			
+#			add_ideas = militarism_focus
 			army_experience = 20
 		}
 	}
@@ -891,10 +891,10 @@ focus = {
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
+#				limit = { has_idea = neutrality_idea }
+#				remove_ideas = neutrality_idea
 			}			
-			add_ideas = paramilitarism_focus
+#			add_ideas = paramilitarism_focus
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
 		}
@@ -910,7 +910,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = military_youth_focus
+#			add_ideas = military_youth_focus
 			if = {
 				limit = { has_government = autocratic }
 				add_popularity = {
@@ -965,7 +965,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = volunteer_corps_focus
+#			add_ideas = volunteer_corps_focus
 		}
 	}
 	focus = {
@@ -979,7 +979,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = foreign_expeditions_focus
+#			add_ideas = foreign_expeditions_focus
 		}
 	}
 

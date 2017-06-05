@@ -1,4 +1,4 @@
-add_namespace = marshallaid
+﻿add_namespace = marshallaid
 
 #EVENT FOR MARSHALL AID
 country_event = {
