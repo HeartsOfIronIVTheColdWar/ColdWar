@@ -377,9 +377,6 @@ technologies = {
 
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	APC_1950_advanced_engine = {
@@ -694,9 +691,6 @@ technologies = {
 
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	APC_1960_advanced_engine = {
@@ -1009,9 +1003,6 @@ technologies = {
 
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	APC_1970_advanced_engine = {
@@ -1325,9 +1316,6 @@ technologies = {
 
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	APC_1980_advanced_engine = {

@@ -80,7 +80,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_national_unity = -0.05
-			add_ideas = DDR_stasi
+#			add_ideas = DDR_stasi
 		}
 
 	}
@@ -223,7 +223,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			add_ideas = DDR_widerstand
+#			add_ideas = DDR_widerstand
 			DDR = { country_event = { id = DDR.5 days = 1 } }
 		}
 
@@ -324,7 +324,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_national_unity = -0.1
-			add_ideas = DDR_acceptance_of_socialism
+#			add_ideas = DDR_acceptance_of_socialism
 			hidden_effect = {
 				DDR = { country_event = { id = DDR.2 days = 1 } }
 			}
@@ -562,7 +562,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			add_ideas = DDR_ideology_defense
+#			add_ideas = DDR_ideology_defense
 			add_national_unity = 0.02
 		}
 
@@ -776,7 +776,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_anti_demonstration_laws
 			focus = DDR_police_forces
-			has_global_flag = DDR_riots
+#			has_global_flag = DDR_riots
 		}
 		x = 18
 		y = 2
@@ -1243,7 +1243,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			add_ideas = DDR_reparation
+#			add_ideas = DDR_reparation
 		
 		}
 

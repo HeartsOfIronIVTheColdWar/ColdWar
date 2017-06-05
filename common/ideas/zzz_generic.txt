@@ -557,117 +557,119 @@ ideas = {
 				foreign_subversive_activites = -0.75
 			}			
 		}
-	}
-	
-	political_advisor = {
-		# POLITICAL	
-		generic_communist_revolutionary = {
+	}	
+###COLD WAR ADVISORS
+	minister_of_internal_affairs = {
+		
+		yakov_malik4 = {
 			
-			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF} }
-				NOT = {
-					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
-				}
-				
-			}
-
-			available = {
-				if = {
-					limit = { 
-						original_tag = NZL
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = NZL_the_lee_affair
-				}
-			}
-			
-			traits = { communist_revolutionary }
+			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {
 				country_event = political.1
 			}
 	
 			do_effect = {
-				NOT = {
-					has_government = communism
-				}
+			
 			}
-	
+			
 			ai_will_do = {
-				factor = 0
-			}
-		}
-			
-		generic_democratic_reformer = {
-			
-			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF } }
-				NOT = {
-					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
-				}
-				
-			}
-			
-			available = {
-				if = {
-					limit = { 
-						original_tag = NZL
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = NZL_strengthen_the_commonwealth
-						has_completed_focus = NZL_constitution_amendment_act
-					}
-				}
-			}
-
-			
-			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
+				factor = 1
 			}
 		}
 		
-		generic_autocratic_demagogue = {
-			
-			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF } }
-				NOT = {
-					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
-				}
 
-			}
 		
-			traits = { autocratic_demagogue }
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		yakov_malik3 = {
+			
+			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {
-				country_event = political.7
+				country_event = political.1
 			}
 	
 			do_effect = {
-				NOT = {
-					has_government = autocratic
-				}
+			
 			}
-	
+			
 			ai_will_do = {
-				factor = 0
+				factor = 1
 			}
 		}
 	}
-		
+
+	###INTELLIGENCE MINISTER###
 	
+	intelligence_minister = {
+		
+		yakov_malik2 = {
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+			
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+		yakov_malik1 = {
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+			
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	###UNITED NATIONS AMBASSADOR###
+	
+	united_nations_ambassador = {
+		
+		yakov_malik = {
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+			
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 
 	# TECHNOLOGY
 	tank_manufacturer = { 
@@ -933,36 +935,6 @@ ideas = {
 			}
 			
 			traits = { artillery_manufacturer }
-		}
-	}
-
-	political_advisor = {
-
-		generic_captain_of_industry = {
-
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
-			}
-			
-			traits = { captain_of_industry }
-		}
-		
-		generic_fortification_engineer = {
-
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
-			}
-			
-			traits = { fortification_engineer }
-		}
-
-		generic_war_industrialist = {
-
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
-			}
-			
-			traits = { war_industrialist }
 		}
 	}
 

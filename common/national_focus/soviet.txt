@@ -34,13 +34,11 @@ focus_tree = {
 				category = industry
 			}
 			202 = {
-				limit = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
-				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -49,13 +47,13 @@ focus_tree = {
 				}
 			}
 			226 = {
-				limit = {
+
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
-				}
+				
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -64,13 +62,12 @@ focus_tree = {
 				}
 			}
 			218 = {
-				limit = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
-				}
+				
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -79,13 +76,13 @@ focus_tree = {
 				}
 			}
 			206 = {
-				limit = {
+			
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
-				}
+				
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -96,17 +93,6 @@ focus_tree = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					if = {
-						limit = { is_controlled_by = ROOT }
 
 						add_building_construction = {
 							type = infrastructure
@@ -117,7 +103,8 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
+
 						add_building_construction = {
 							type = infrastructure
 							level = 2
@@ -127,7 +114,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = infrastructure
 							level = 2
@@ -137,27 +124,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = infrastructure
 							level = 2
@@ -167,7 +134,27 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+
 						add_building_construction = {
 							type = infrastructure
 							level = 2
@@ -177,7 +164,17 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					if = {
+
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -187,7 +184,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -197,7 +194,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -207,7 +204,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -217,7 +214,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -227,7 +224,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -363,7 +360,7 @@ focus_tree = {
 				category = excavation_tech
 			}
 			398 = {
-				limit = { is_in_home_area = yes }
+
 				add_resource = {
 					type = aluminium
 					amount = 42
@@ -383,7 +380,7 @@ focus_tree = {
 				}
 			}
 			397 = {
-				limit = { is_in_home_area = yes }
+
 				add_resource = {
 					type = aluminium
 					amount = 54
@@ -403,7 +400,7 @@ focus_tree = {
 				}
 			}
 			573 = {
-				limit = { is_in_home_area = yes }
+
 				add_building_construction = {
 							type = infrastructure
 							level = 2
@@ -411,7 +408,7 @@ focus_tree = {
 				}
 			}
 			582 = {
-				limit = { is_in_home_area = yes }
+
 				add_building_construction = {
 							type = infrastructure
 							level = 2
@@ -419,7 +416,7 @@ focus_tree = {
 				}
 			}
 			581 = {
-				limit = { is_in_home_area = yes }
+
 				add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -457,7 +454,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = industrial_complex
 							level = 3
@@ -467,7 +464,7 @@ focus_tree = {
 				}
 			random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = industrial_complex
 							level = 3
@@ -477,7 +474,7 @@ focus_tree = {
 				}
 			random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = arms_factory 
 							level = 3
@@ -487,7 +484,7 @@ focus_tree = {
 				}
 			random_owned_controlled_state = {
 					if = {
-						limit = { is_controlled_by = ROOT }
+
 						add_building_construction = {
 							type = arms_factory 
 							level = 3
@@ -593,7 +590,7 @@ focus_tree = {
 				category = excavation_tech
 			}
 			576 = {
-				limit = { is_in_home_area = yes }
+
 				add_resource = {
 					type = steel
 					amount = 42
@@ -609,7 +606,7 @@ focus_tree = {
 				}
 			}
 			516 = {
-				limit = { is_in_home_area = yes }
+
 				add_resource = {
 					type = aluminium
 					amount = 62
@@ -629,7 +626,7 @@ focus_tree = {
 				}
 			}
 			644 = {
-				limit = { is_in_home_area = yes }
+
 				add_resource = {
 					type = aluminium
 					amount = 12

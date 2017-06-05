@@ -8,6 +8,47 @@
 
 #Name is how you refer to the rule in adjecencies.csv
 
+#Tiran Strait
+adjacency_rule
+{
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12073 }
+	
+	icon = 5388
+	offset = { 4 0 8 }
+	
+
+	name = "TIRAN_STRAIT"
+}
+
 #Suez Canal
 adjacency_rule
 {
@@ -366,7 +407,7 @@ adjacency_rule
 	required_provinces = { 12299 }
 	
 	icon = 5539
-	offset = { -17 0 -15 }
+	offset = { -14 0 8 }
 	
 
 	name = "MALACCA_STRAIT"
@@ -407,7 +448,7 @@ adjacency_rule
 	required_provinces = { 1342 10279 }
 	
 	icon = 2714
-	offset = { 19 0 26 }
+	offset = { 0 0 0 }
 	
 
 	name = "SUNDA_STRAIT"

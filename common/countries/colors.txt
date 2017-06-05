@@ -155,6 +155,7 @@ GER = {
 }
 ENG = {
 	color = rgb { 201 56 93 }
+#	color = rgb { 124 120 178 } FRANCO-BRITISH UNION COLOR
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
@@ -167,6 +168,7 @@ SWE = {
 }
 FRA = {
 	color = rgb { 57 113 228 }
+#	color = rgb { 124 120 178 } FRANCO-BRITISH UNION COLOR
 	color_ui = rgb { 74 147 255 }
 }
 LUX = {

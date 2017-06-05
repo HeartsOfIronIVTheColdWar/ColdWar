@@ -1,7 +1,13 @@
 spriteTypes = {	
 
-
-
+	spriteType = {
+		name = "GFX_idea_arab_nationalist"
+		texturefile = "gfx/interface/ideas/idea_arab_nationalist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arab_monarchy"
+		texturefile = "gfx/interface/ideas/idea_arab_monarchy.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"

@@ -17,6 +17,7 @@ set_national_unity = 0.55
 		arab_monarchy
 		political_instability
 		british_influence
+		arab_nationalist
 	}
 	set_politics = {
 

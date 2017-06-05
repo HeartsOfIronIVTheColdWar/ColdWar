@@ -3418,7 +3418,7 @@
 3417;44;15;58;land;false;forest;1
 3418;44;15;208;land;false;hills;1
 3419;44;16;232;sea;false;ocean;0
-3420;44;17;240;sea;false;ocean;0
+3420;44;17;240;sea;true;ocean;0
 3421;44;18;23;land;true;plains;1
 3422;44;18;68;land;true;plains;1
 3423;44;18;173;land;false;forest;1
