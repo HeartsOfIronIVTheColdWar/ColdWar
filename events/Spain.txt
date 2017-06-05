@@ -1,4 +1,4 @@
-add_namespace = spr
+﻿add_namespace = spr
 
 #EVENT FOR PACT OF MADRID
 country_event = {
