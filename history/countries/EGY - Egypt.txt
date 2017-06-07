@@ -17,7 +17,6 @@ set_national_unity = 0.55
 		arab_monarchy
 		political_instability
 		british_influence
-		arab_nationalist
 	}
 	set_politics = {
 
@@ -66,7 +65,22 @@ set_national_unity = 0.55
 	}
 	set_technology = {
 	}
+	
 	puppet = PAL
+	
+	##FIELD MARSHALS
+	## inspirational_leader organisational_leader thorough_planner fast_planner defensive_doctrine logistics_wizard offensive_doctrine
+	
+	##GENERALS / CORPSCOMMANDERS
+	## naval_invader urban_assault_specialist ranger jungle_rat hill_fighter trait_mountaineer swamp_fox desert_fox commando fortress_buster trait_engineer trickster winter_specialist panzer_leader
+	
+	create_corps_commander = {
+		name = "Mohammed Naguib"
+			picture = "Portrait_Egypt_Mohammed_Naguib.dds"
+		traits = { urban_assault_specialist }
+		skill = 3 
+	}
+	
 }
 
 1960.1.1 = {

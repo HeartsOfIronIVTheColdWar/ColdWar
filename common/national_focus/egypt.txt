@@ -182,6 +182,15 @@ focus_tree = {
 			focus = EGY_parliamentary_democracy
 			focus = EGY_islamic_republic
 		}
+		completion_reward = {
+			remove_ideas = {
+				brotherhood
+				political_instability
+			}
+			add_ideas = {
+				one_party_state
+			}
+		}
 		x = 4
 		y = 2
 

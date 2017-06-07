@@ -83,7 +83,7 @@ ENG = { #should be pretty good, i redid them somewhat and stole some from USA
 			Percy Reginald Richard Robert Russell Stanley Thomas William Zachary Jake
 			#
 			Alisdair Arnold Bradley Brian Callum Clement Clive Dennis Ernest Harold Howard Jack Jonathan
-			Luke Mark Melvyn Michael Nicholas Oliver Peter Rudolph Simon Stephen Stuart Ted
+			Lloyd Luke Mark Melvyn Michael Nicholas Oliver Peter Rudolph Simon Stephen Stuart Ted
 			Timothy Walter
 			#
 			Adam Samuel Joshua Matthew 
@@ -98,15 +98,16 @@ ENG = { #should be pretty good, i redid them somewhat and stole some from USA
 	female = {
 		names = { Elizabeth Anne Mary Margaret Audrey Barbara }
 	}
-	surnames = { 	Allenby Beatty Brown Butler Campbell Cardigan Churchill
+	surnames = {
+			Allenby Beatty Brown Butler Campbell Cardigan Churchill
 			Cochrane Cockburn Fisher French Gough Grant Murphy
 			Hamilton Harding Hope Lyons Madden Milne Montgomery
 			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour
 			Smith Stewart Tyrwhitt Williams Windsor Wolseley Wood
 			#
 			Alexander Anderson Blake Cameron Castle Collins Cooper Cox David Davis Dean Hague Harper Howard
-			Hughes MacDonald Neville Nicholls Palmer Richards Richardson Savage Skinner Stephens Stephenson
-			Thatcher Woodward
+			Hughes Lloyd MacDonald Neville Nicholls Palmer Richards Richardson Savage Skinner Stephens Stephenson
+			Thatcher Webber Woodward
 			#
 			Jones Taylor Wilson Evans Walker White
 			Chamberlain Powell Abbott Abercrombie Allen Ames Andrews Appleton

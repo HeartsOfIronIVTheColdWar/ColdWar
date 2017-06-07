@@ -46,7 +46,7 @@ set_national_unity = 0.55
 		expire = "1994.1.1"
 		ideology = stalinism
 		traits = {
-			Iron_Grip
+			iron_grip
 		}
 	
 	}
