@@ -61,7 +61,7 @@ technologies = {
 		
 		folder = {
 			name = support_folder
-			position = { x = 11 y = 9 } # x = 12 y = 0
+			position = { x = 0 y = 0 } # x = 12 y = 0
 		}
 		
 		ai_will_do = {
@@ -531,10 +531,6 @@ technologies = {
 			leads_to_tech = improved_rocket_engines 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = jet_engines 
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1944
@@ -639,25 +635,114 @@ technologies = {
 		}
 	}
 	
-	jet_engines = {
-	
-		folder = {
-			name = electronics_folder
-			position = { x = 6 y = 2 }
-		}
-		
-		start_year = 1944
-		research_cost = 2
-
+	helicopter_engines = {
 		folder = {
 			name = air_techs_folder
-			position = { x = 2 y = 11 }
+			position = { x = 0 y = 0 }
 		}
+		
+		start_year = 1947
+		research_cost = 2
+		
+		desc = "HELICOPTER_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = HELICOPTER_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines = {
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		path = {
+			leads_to_tech = improved_jet_engines_1 
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1947
+		research_cost = 2
 		
 		desc = "JET_ENGINES_SPECIAL"
 
 		on_research_complete = {
 			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	improved_jet_engines_1 = {
+	
+		path = {
+			leads_to_tech = improved_jet_engines_2 
+			research_cost_coeff = 1
+		}
+		start_year = 1944
+		research_cost = 2
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	improved_jet_engines_2 = {
+	
+		path = {
+			leads_to_tech = improved_jet_engines_3 
+			research_cost_coeff = 1
+		}
+		start_year = 1944
+		research_cost = 2
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	improved_jet_engines_3 = {
+	
+		start_year = 1944
+		research_cost = 2
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 9 }
 		}
 		
 		ai_will_do = {

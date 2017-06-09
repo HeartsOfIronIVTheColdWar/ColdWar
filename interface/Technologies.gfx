@@ -1,5 +1,5 @@
 spriteTypes = {	
-
+	
 	###SUPPORT WEAPONS ICONS###
 	SpriteType = {
 		name = "GFX_support_weapons5_medium"
@@ -1633,7 +1633,10 @@ spriteTypes = {
 	
 
 	### engineering TECH ###
-
+	SpriteType = {
+		name = "GFX_helicopter_engines_medium"
+		texturefile = "gfx/interface/technologies/helicopter_engines.dds"
+	}
 	SpriteType = {
 		name = "GFX_nukes_medium"
 		texturefile = "gfx/interface/technologies/nukes.dds"
