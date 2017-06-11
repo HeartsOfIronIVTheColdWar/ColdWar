@@ -513,6 +513,26 @@ ideas = {
 				unity_factor = 0.1
 			}
 		}
+		USA_segregation = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				conscription_factor = -0.3
+				unity_factor = -0.3
+				political_power_gain = -0.1
+			}
+
+		}
 	}
 	
 ###ADVISORS AND STAFF###

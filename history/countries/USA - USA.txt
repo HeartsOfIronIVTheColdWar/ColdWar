@@ -13,6 +13,7 @@ set_national_unity = 0.85
 		home_of_the_free
 		marshall_plan
 		nato_idea
+		USA_segregation
 	}
 	set_politics = {
 
