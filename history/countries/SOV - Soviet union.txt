@@ -70,7 +70,7 @@ set_national_unity = 0.8
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {
-		Iron_Grip
+		iron_grip
 	}
 	}
 	set_autonomy = {
