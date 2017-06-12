@@ -724,18 +724,18 @@ technologies = {
 	}
 	
 	improved_jet_engines_1 = {
-        	jet_fighter = {
-           		air_range = 0.5
-        	}
+        jet_fighter = {
+           	air_range = 0.5
+        }
 		jet_strat_bomber = {
-            		air_range = 0.5
-        	}
-        	jet_cas = {
-            		air_range = 0.5
-        	}
+            air_range = 0.5
+        }
+        jet_cas = {
+            air_range = 0.5
+        }
 		mca = {
-            		air_range = 0.5
-        	}
+            air_range = 0.5
+        }
         path = {
             leads_to_tech = improved_jet_engines_2 
             research_cost_coeff = 1
@@ -755,8 +755,9 @@ technologies = {
         categories = {
             rocketry
             jet_technology
-        	}
-    	}
+        }
+    }
+	
 	improved_jet_engines_2 = {
 	
 		path = {
@@ -782,22 +783,38 @@ technologies = {
 	}
 	improved_jet_engines_3 = {
 	
-		start_year = 1944
-		research_cost = 2
+		jet_fighter = {
+           	air_range = 0.5
+        }
+		jet_strat_bomber = {
+            air_range = 0.5
+        }
+        jet_cas = {
+            air_range = 0.5
+        }
+		mca = {
+            air_range = 0.5
+        }
+        path = {
+            leads_to_tech = improved_jet_engines_2 
+            research_cost_coeff = 1
+        }
+        start_year = 1944
+        research_cost = 2
 
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = 9 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
-		}
+        folder = {
+            name = air_techs_folder
+            position = { x = 0 y = 3 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            jet_technology
+        }
 	}
 	
 	atomic_research = {
