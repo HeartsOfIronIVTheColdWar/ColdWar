@@ -18,6 +18,9 @@ technology_categories = {
 	APC_1980
 	APC_1990
 	jet_fighter
+	jet_strat_bomber
+	jet_cas
+	mca
 	light_air
 	medium_air
 	heavy_air
