@@ -1,4 +1,38 @@
 technologies = {
+	
+	hejhej = {
+
+		# small boost to research speed
+		research_time_factor = -0.02
+		
+		research_cost = 0.5
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 0 } # x = 12 y = 0
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 3
+				date > "1936.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
 	electronic_mechanical_engineering = {
 
 		# small boost to research speed

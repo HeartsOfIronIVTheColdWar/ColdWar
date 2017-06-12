@@ -1,5 +1,69 @@
 spriteTypes = {	
-	
+	###ARTILLERY STUFF###
+	SpriteType = {
+		name = "GFX_artillery_1950_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_artillery_1970_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_artillery_1990_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_antiair_1950_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_antiair_1970_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_antiair_1990_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1950_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1960_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1970_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1980_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1990_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1950_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1960_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1970_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1980_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1990_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
 	###SUPPORT WEAPONS ICONS###
 	SpriteType = {
 		name = "GFX_support_weapons5_medium"
