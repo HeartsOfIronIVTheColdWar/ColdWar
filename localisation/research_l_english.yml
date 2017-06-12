@@ -769,6 +769,8 @@
  tank_landing_craft_desc:0 "Advanced Landing craft means that our boys can get on the beach quicker and more effectively during an invasion."
  motorized_rocket_unit:0 "Motorized Rocket Artillery"
  mot_rockets_research:1 "Motorized Rocket Artillery Research Time"
+ improved_jet_engines_1:0 "Aerial refuelling"
+ improved_jet_engines_3:0 "Improved aerial refuelling"
  UNLOCK_DIVISION_TEMPLATE:0 "Unlocks a free §HDivision Template§!"
  INFANTRY_TITLE_WEAPONS:0 "RIFLES"
  INFANTRY_TITLE_SPECIAL:0 "SPECIAL FORCES"
