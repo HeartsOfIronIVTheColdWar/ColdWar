@@ -781,6 +781,7 @@ technologies = {
 			jet_technology
 		}
 	}
+	
 	improved_jet_engines_3 = {
 	
 		jet_fighter = {
@@ -814,7 +815,7 @@ technologies = {
         categories = {
             rocketry
             jet_technology
-        }
+        	}
 	}
 	
 	atomic_research = {
