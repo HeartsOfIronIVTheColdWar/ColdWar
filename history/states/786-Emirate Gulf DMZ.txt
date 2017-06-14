@@ -10,12 +10,12 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = SAU
-		set_demilitarized_zone = yes
 
 	}
 	provinces={
-		1955 10850 12749 
+		2057 4974 4968 5027 5058 5099 7970 7995 8004 8101 10815 10850 10892 10901 10923 12455 12749 12813
 	}
 	manpower=1000000
 	state_category=rural
+	impassable = yes
 }

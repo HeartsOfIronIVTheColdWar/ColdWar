@@ -13,8 +13,9 @@ state={
 
 	}
 	provinces={
-		4138 4961 7987 10900 12836 
+		4138 4961 7987 8103 10900 12836 
 	}
 	manpower=1000000
 	state_category=rural
+	impassable = yes
 }

@@ -5,6 +5,7 @@ state={
 	manpower = 312000
 	
 	state_category = pastoral
+	impassable = yes
 
 	history={
 		owner = FRA

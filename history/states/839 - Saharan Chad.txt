@@ -1,0 +1,19 @@
+
+state={
+	id=839
+	name="STATE_839"
+
+	history={
+		owner = FRA
+		add_core_of = CHA
+
+	}
+
+	provinces={
+		4902 5136 10893
+	}
+	manpower=1482744
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+}

@@ -4,6 +4,7 @@ state={
 	name="STATE_562" # Okhotsk
 	manpower = 126961
 	state_category = wasteland
+	impassable = yes
 
 	history={
 		owner = SOV

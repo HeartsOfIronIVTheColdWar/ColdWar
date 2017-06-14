@@ -1,0 +1,26 @@
+
+state={
+	id=838
+	name="STATE_838"
+	manpower = 0
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = TIB
+
+		add_core_of = TIB
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		1951.10.1 = {
+			owner = PRC
+			controller = PRC
+		}
+	}
+
+	provinces={
+		12807
+	}
+}
