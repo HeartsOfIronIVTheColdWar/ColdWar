@@ -17,9 +17,9 @@ division_template = {
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 2 y = 3 }
 		
-		modern_armor = { x = 0 y = 4 }
-		modern_armor = { x = 1 y = 4 }
-		modern_armor =  {x = 2 y = 4 }
+		MBT_1950 = { x = 0 y = 4 }
+		MBT_1950 = { x = 1 y = 4 }
+		MBT_1950 =  {x = 2 y = 4 }
 
 	}
 	support = {
@@ -71,9 +71,9 @@ division_template = {
 		MBT_1950 = { x = 0 y = 1}
 		MBT_1950 = { x = 0 y = 2}
 		
-		mechanized = { x = 1 y = 0}
-		mechanized = { x = 1 y = 1}
-		mechanized = { x = 1 y = 2}
+		APC_1950 = { x = 1 y = 0}
+		APC_1950 = { x = 1 y = 1}
+		APC_1950 = { x = 1 y = 2}
 
 	}
 	support = {
@@ -89,12 +89,10 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
+
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
+
 	}
 	support = {
 		recon = { x = 0 y = 0 }      

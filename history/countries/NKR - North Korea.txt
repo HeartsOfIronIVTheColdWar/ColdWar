@@ -71,11 +71,16 @@ set_national_unity = 0.55
 		advanced_light_tank = 1
 		MBT_1950 = 1
 		IFV_1950 = 1
+		APC_1950 = 1
 		tech_support = 1
 		tech_engineers = 1
 		tech_recon = 1
 		tech_military_police = 1
 		tech_logistics_company = 1
+		gw_artillery = 1
+		artillery4 = 1
+		tech_support = 1
+		antiair5 = 1
 		
 	}
 	

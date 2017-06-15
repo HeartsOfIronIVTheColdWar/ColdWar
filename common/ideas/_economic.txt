@@ -229,8 +229,6 @@ ideas = {
 				encryption = -5
 			}
 			
-			default = yes
-			
 			cancel_if_invalid = no
 		}
 		
@@ -295,7 +293,9 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-
+			
+			default = yes
+			
 			ai_will_do = {
    				factor = 1
 

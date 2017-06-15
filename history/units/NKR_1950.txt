@@ -24,9 +24,9 @@ division_template = {
 	name = "Armoured Division"
 	
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-		medium_armor = { x = 0 y = 2 }		
+		MBT_1950 = { x = 0 y = 0 }
+		MBT_1950 = { x = 0 y = 1 }
+		MBT_1950 = { x = 0 y = 2 }		
 		IFV_1950 = { x = 1 y = 0 }		
 		IFV_1950 = { x = 1 y = 1 }	
 	}
