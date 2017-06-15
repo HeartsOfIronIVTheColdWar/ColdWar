@@ -24,6 +24,7 @@ if = {
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
+		nato_idea
 	}
 	set_politics = {
 

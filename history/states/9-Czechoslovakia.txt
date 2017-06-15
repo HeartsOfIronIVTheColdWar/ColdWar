@@ -2,7 +2,10 @@
 state={
 	id=9
 	name="STATE_9"
-
+	resources={
+		steel=16
+	}
+	
 	history={
 		owner = CZE
 		victory_points = {
@@ -12,9 +15,9 @@ state={
 			6418 5 
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 8
 			arms_factory = 6
-			industrial_complex = 1
+			industrial_complex = 2
 			anti_air_building = 5
 			air_base = 5
 

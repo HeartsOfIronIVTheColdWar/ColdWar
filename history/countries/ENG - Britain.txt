@@ -13,6 +13,7 @@ set_national_unity = 0.85
 		ENG_george_vi
 		colonial_protests
 		rationing_idea
+		nato_idea
 	}
 	set_politics = {
 
@@ -36,38 +37,38 @@ set_national_unity = 0.85
 		elections_allowed = yes 
 	}
 	# DIPLOMACY
-	if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = CAN
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = SAF
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = AST
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
-	set_autonomy = {
-		target = NZL
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
-	else = {
-		puppet = MAL		
-	}
-	}
+#	if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = MAL
+#		autonomous_state = autonomy_colony
+#	}
+#	set_autonomy = {
+#		target = CAN
+#		autonomous_state = autonomy_dominion
+#		freedom_level = 0.4
+#	}
+#	set_autonomy = {
+#		target = SAF
+#		autonomous_state = autonomy_dominion
+#		freedom_level = 0.4
+#	}
+#	set_autonomy = {
+#		target = AST
+#		autonomous_state = autonomy_dominion
+#		freedom_level = 0.2
+#	}
+#	set_autonomy = {
+#		target = NZL
+#		autonomous_state = autonomy_dominion
+#		freedom_level = 0.2
+#	}
+#	else = {
+#		puppet = MAL		
+#	}
+#	}
 	create_country_leader = {
 	name = "Winston Churchill"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
@@ -77,16 +78,6 @@ set_national_unity = 0.85
 	traits = {
 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
 	}
-	}
-	create_country_leader = {
-		name = "Stanley Baldwin"
-		desc = "POLITICS_STANLEY_BALDWIN_DESC"
-		picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-		expire = "1938.1.1"
-		ideology = liberalism
-		traits = {
-			
-		}
 	}
 	create_country_leader = {
 		name = "Clement Attlee"

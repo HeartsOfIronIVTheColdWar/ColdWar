@@ -1403,6 +1403,7 @@ RAJ = { #good
 			Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj
 			Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
 			Jawaharlal Gulzarilal "Lal Bahadur" Morarji Charan Rajiv Vishwanath Chandra Pamulaparti Venkata Narasimha Atal Bihari Inder Manmohan Rahul Salman Neeraj Sunder
+			Deepak
 		}
 	}
 	female = {
@@ -1412,7 +1413,7 @@ RAJ = { #good
 		Nehru Gandhi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand
 		Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan
 		Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
-		Nanda Shastri Desai Shekhar Rao Vajpayee Gowda Gujral Patel Katwala
+		Nanda Shastri Desai Shekhar Rao Vajpayee Gowda Gujral Patel Katwala Varadkar Chopra
 	}
 	callsigns = { }
 }
@@ -1715,13 +1716,13 @@ NIE = { #good
 UGA = { #good
 	male = {
 		names = { 
-			John Edward Milton Idi Yusuf Godfrey Paulo Bazilio Tito Yoweri
+			John Edward Milton Idi Yusuf Godfrey Paulo Bazilio Tito Yoweri Patrick
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { Sentamu Mutesa Obote Amin Dada Lule Binaisa Muwanga Okello Olara Museveni }
+	surnames = { Sentamu Mutesa Obote Amin Dada Lule Binaisa Muwanga Okello Olara Museveni Otema }
 	callsigns = { }
 }
 MAW = { #good

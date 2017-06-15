@@ -11,6 +11,7 @@ set_national_unity = 0.7
 	add_ideas = {
 		FRA_disjointed_government
 		FRA_dilemmes_coloniaux
+		nato_idea
 	}
 	set_politics = {
 
@@ -45,19 +46,19 @@ set_national_unity = 0.7
 	}
 	set_technology = {
 	}
-	if = {
-		limit = {
-			has_dlc = "Together for Victory"
-		}
-		set_autonomy = {
-			target = SAA
-			autonomous_state = autonomy_integrated_puppet
-		}
-		else = {
-			puppet = SAA
-		}
-	}
-	puppet = SVN
+#	if = {
+#		limit = {
+#			has_dlc = "Together for Victory"
+#		}
+#		set_autonomy = {
+#			target = SAA
+#			autonomous_state = autonomy_integrated_puppet
+#		}
+#		else = {
+#			puppet = SAA
+#		}
+#	}
+#	puppet = SVN
 }
 
 1960.1.1 = {
