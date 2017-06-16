@@ -1,8 +1,8 @@
 supply_area={
 	id=216
-	name="SUPPLYAREA_216" #Chady
+	name="SUPPLYAREA_216" #Chad
 	value=1
 	states={
-		515 
+		515 839
 	}
 }

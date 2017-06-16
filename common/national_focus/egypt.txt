@@ -95,7 +95,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_support_king
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_royal_dictatorship
 		cost = 10.00
 		mutually_exclusive = {
 			focus = EGY_free_officers
@@ -317,7 +317,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_abolish_monarchy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_abdicate
 		cost = 10.00
 		prerequisite = {
 			focus = EGY_parliamentary_democracy
@@ -346,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_constitutional_monarchy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rom_handle_king
 		cost = 10.00
 		prerequisite = {
 			focus = EGY_parliamentary_democracy
@@ -490,7 +490,7 @@ focus_tree = {
 	}
 	focus = {
 		id = EGY_nuclear_program
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 10.00
 		prerequisite = {
 			focus = EGY_aswan_USSR_funding
