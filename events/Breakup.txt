@@ -1,0 +1,189 @@
+﻿###########################
+# Breakup Events
+###########################
+
+add_namespace = breakup
+
+# Growing separatist movement
+country_event = {
+	id = breakup.1
+	title = breakup.1.t
+	trigger = {
+		OR = {
+			has_idea = low_stability
+			has_idea = very_low_stability
+			has_idea = disaster
+		}
+		OR = {
+			tag = ENG
+			tag = CAN
+			tag = SOV
+			tag = YUG
+			tag = SPR
+			has_cosmetic_tag = UAR
+		}
+		NOT = {
+			has_idea = separatism
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+		modifier = {
+			factor = 0.5
+			has_idea = very_low_stability
+		}
+		modifier = {
+			factor = 0.1
+			has_idea = disaster
+		}
+	}
+	
+	desc = {
+		text = breakup.1.d
+	}
+	picture = GFX_news_event_001
+	
+	immediate = {
+		add_ideas = separatism
+	}
+
+	
+	option = {
+		name = breakup.1.a
+		add_political_power = -50
+	}
+}
+
+# Separatists demand referendum
+country_event = {
+	id = breakup.2
+	title = breakup.2.t
+	trigger = {
+		OR = {
+			has_idea = low_stability
+			has_idea = very_low_stability
+			has_idea = disaster
+		}
+		OR = {
+			tag = ENG
+			tag = CAN
+			tag = SOV
+			tag = YUG
+			tag = SPR
+			has_cosmetic_tag = UAR
+		}
+		has_idea = separatism
+		has_government = democratic
+	}
+	
+	mean_time_to_happen = {
+		days = 360
+		modifier = {
+			factor = 10
+			has_idea = low_stability
+		}
+		modifier = {
+			factor = 0.5
+			has_idea = disaster
+		}
+	}
+	
+	desc = {
+		text = breakup.2.d
+	}
+	picture = GFX_news_event_001
+	
+	option = { #sure
+		name = breakup.2.a
+		swap_ideas = {
+			remove_idea = separatism
+			add_idea = separatists_promised_referendum
+		}
+		country_event = { days = 360 id = breakup.4 }
+	}
+	
+	option = { #no way
+		name = breakup.2.b
+		swap_ideas = {
+			remove_idea = separatism
+			add_idea = separatism_intensifies
+		}
+		add_political_power = -150
+	}
+}
+
+# Separatism dies down
+country_event = {
+	id = breakup.3
+	title = breakup.3.t
+	trigger = {
+		OR = {
+			has_idea = high_stability
+			has_idea = very_high_stability
+		}
+		OR = {
+			tag = ENG
+			tag = CAN
+			tag = SOV
+			tag = YUG
+			tag = SPR
+			has_cosmetic_tag = UAR
+		}
+		OR = {
+			has_idea = separatism
+			has_idea = separatism_intensifies
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+		modifier = {
+			factor = 0.5
+			has_idea = very_high_stability
+		}
+		modifier = {
+			factor = 5
+			has_idea = separatism_intensifies
+		}
+	}
+	
+	desc = {
+		text = breakup.3.d
+	}
+	picture = GFX_news_event_001
+	
+	option = {
+		name = breakup.3.a
+		remove_ideas = separatism
+	}
+}
+
+# Referendum on independence
+country_event = {
+	id = breakup.4
+	title = breakup.4.t
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			50 = { ROOT = { country_event = { id = breakup.5 } } }
+			50 = { ROOT = { country_event = { id = breakup.6 } } }
+		}
+	}
+	
+	option = {
+		name = breakup.4.a
+	}
+}
+
+# Referendum passes
+country_event = {
+	id = breakup.5
+}
+
+# Referendum fails
+country_event = {
+	id = breakup.6
+}

@@ -1231,14 +1231,14 @@ ISR = { #needs expanding
 	male = {
 		names = {  
 			David Moshe Levi Yigal Golda Yitzhak Menachem Shimon Binyamin Ehud Ariel Chaim Ron Daniel Isaac Uri Jacob Avi
-			Israel Abraham Mordechai
+			Israel Abraham Mordechai Aaron
 		}
 	}
 	female = {
 		names = { }
 	}
 	surnames = { 
-		Sharett Eshkol Allon Meir Rabin Begin Shamir Peres Netanyahu Barak Sharon Olmert Ben-Israel
+		Sharett Eshkol Allon Meir Rabin Begin Shamir Peres Netanyahu Barak Sharon Olmert Ben-Israel Yerushalmi
 	}
 	callsigns = { }
 }
@@ -1423,7 +1423,7 @@ PAK = { #good
 		names = { 
 			Syad Ahmad Aga Nawab Maulvi Karamat Abdul Nasir Maulana Bhai Hussain Malik Raees Choudhry Rahmat
 			Liaquat Ali Khawaja Muhammad "Muhammad Ali" Chaudhry Huseyn Shaheed Ibrahim Ismail Ayub Nurul Zulfikar Ghulam Mustafa Nawaz Balakh Sher
-			Meraj "Muhammad Khan" Zafarullah Shaukat Yousef Raza Raja Hazir Iskander Fazal Farooq Pervez Imran Sadiq Anjem Sajid
+			Meraj "Muhammad Khan" Zafarullah Shaukat Yousef Raza Raja Hazir Iskander Fazal Farooq Pervez Imran Sadiq Anjem Sajid Kumail Humayun
 		}
 	}
 	female = {
@@ -1432,6 +1432,7 @@ PAK = { #good
 	surnames = { 
 		Khan Ali Malik Nabiullah Shafi Pirbhai Ahmed Baig Johar
 		Nazimuddin Warsi Bogra Suhrawardy Chundrigar Amin Bhutto Junejo Sharif Mazari Qureshi Khalid Jamali Shujaat Aziz Soomro Gillani Ashraf Khoso Musharraf Javid Shah
+		Nanjiani
 	}
 	callsigns = { }
 }

@@ -15,3 +15,71 @@
 #		example_effect = yes
 #	}
 #
+
+raise_stability = {
+	if = {
+		limit = { has_idea = disaster }
+		swap_ideas = { remove_idea = disaster add_idea = very_low_stability }
+		else = {
+			if = {
+				limit = { has_idea = very_low_stability }
+				swap_ideas = { remove_idea = very_low_stability add_idea = low_stability }
+				else = {
+					if = {
+						limit = { has_idea = low_stability }
+						swap_ideas = { remove_idea = low_stability add_idea = average_stability }
+						else = {
+							if = {
+								limit = { has_idea = average_stability }
+								swap_ideas = { remove_idea = average_stability add_idea = high_stability }
+								else = {
+									if = {
+										limit = { has_idea = high_stability }
+										swap_ideas = { remove_idea = high_stability add_idea = very_high_stability }
+										else = {
+											add_political_power = 150
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+lower_stability = {
+	if = {
+		limit = { has_idea = very_high_stability }
+		swap_ideas = { remove_idea = very_high_stability add_idea = high_stability }
+		else = {
+			if = {
+				limit = { has_idea = high_stability }
+				swap_ideas = { remove_idea = high_stability add_idea = average_stability }
+				else = {
+					if = {
+						limit = { has_idea = average_stability }
+						swap_ideas = { remove_idea = average_stability add_idea = low_stability }
+						else = {
+							if = {
+								limit = { has_idea = low_stability }
+								swap_ideas = { remove_idea = low_stability add_idea = very_low_stability }
+								else = {
+									if = {
+										limit = { has_idea = very_low_stability }
+										swap_ideas = { remove_idea = very_low_stability add_idea = disaster }
+										else = {
+											add_political_power = -150
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
