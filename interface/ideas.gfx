@@ -1,5 +1,17 @@
 spriteTypes = {	
 	spriteType = {
+		name = "GFX_idea_elektronorgtechnica"
+		texturefile = "gfx/interface/ideas/idea_elorg.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mashpriborintorg"
+		texturefile = "gfx/interface/ideas/idea_mashpriborintorg.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_su_155"
+		texturefile = "gfx/interface/ideas/idea_su_155.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_zionist_restoration"
 		texturefile = "gfx/interface/ideas/zionist_restoration.dds"
 	}

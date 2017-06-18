@@ -849,6 +849,25 @@ ideas = {
 			modifier = {
 			}
 		}
+
+		elektronorgtechnica = {
+		
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				computing_tech = 0.1
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
 		
 		leningrad_polytechnical_institute = {
 			
@@ -860,10 +879,48 @@ ideas = {
 
 			
 			research_bonus = {
-				electronics = 0.10
+				radar_tech = 0.10
 			}
 			
 			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		mashpriborintorg = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				encryption_tech = 0.10
+				decryption_tech = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+
+		su_155 = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				construction_tech = 0.10
+			}
+			
+			traits = { industrial_concern }
 			
 			modifier = {
 			}
