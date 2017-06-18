@@ -16,7 +16,32 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
 		noOfFrames = 14		
 	}
-	###PRESS STUFF###
+	###STABILITY###
+	spriteType = {
+		name = "GFX_idea_high_stability"
+		texturefile = "gfx/interface/stability_very_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_very_low_stability"
+		texturefile = "gfx/interface/stability_very_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_average_stability"
+		texturefile = "gfx/interface/stability_average.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_disaster_stability"
+		texturefile = "gfx/interface/stability_disaster.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_low_stability"
+		texturefile = "gfx/interface/stability_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_very_high_stability"
+		texturefile = "gfx/interface/stability_high2.dds"
+	}
+	###PRESS LAWS###
 	spriteType = {
 		name = "GFX_idea_free_press"
 		texturefile = "gfx/interface/ideas/idea_free_press.dds"
