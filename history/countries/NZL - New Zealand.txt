@@ -39,9 +39,9 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Sidney Holland"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
+	picture = "Portrait_New_Zealand_Sidney_Holland.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
