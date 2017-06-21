@@ -3,6 +3,6 @@ supply_area={
 	name="SUPPLYAREA_355" # Israel & Palestine
 	value=8
 	states={
-		454 784 806
+		454 784 806 841
 	}
 }

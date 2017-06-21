@@ -20,11 +20,10 @@ state={
 		}
 
 		add_core_of = EGY
-	
-	set_demilitarized_zone = yes
 	}
 
 	provinces={
-		1112 4161 10002 10099 11922 11979 12073 
+		1112 4161 10002 10099 11922 11979 12073
+		1143 10127 12764 #from western egypt
 	}
 }
