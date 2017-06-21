@@ -14,6 +14,7 @@ set_national_unity = 0.55
 		extensive_conscription
 		#ideas
 		nkr_factionalism
+		nkr_illiterate_country
 	}
 	set_politics = {
 
