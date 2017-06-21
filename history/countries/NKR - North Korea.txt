@@ -92,7 +92,6 @@ set_national_unity = 0.55
 
 	create_corps_commander = {
 		name = "Yu Kyong-su"
-		id = 950
 		picture = "Portrait_North_Korea_Yu_Kyong_Su.dds"
 		traits = { trickster }
 		skill = 2
@@ -100,7 +99,6 @@ set_national_unity = 0.55
 	
 	create_corps_commander = {
 		name = "Kang Kon"
-		id = 951
 		picture = "Portrait_North_Korea_Kang_Gun.dds"
 		traits = { trait_engineer urban_assault_specialist }
 		skill = 3
@@ -108,7 +106,6 @@ set_national_unity = 0.55
 	
 	create_corps_commander = {
 		name = "Kim Chaek"
-		id = 952
 		picture = "Portrait_North_Korea_Kim_Chaek.dds"
 		traits = {  }
 		skill = 1
@@ -116,7 +113,6 @@ set_national_unity = 0.55
 	
 	create_corps_commander = {
 		name = "Kim Chol-man"
-		id = 953
 		picture = "Portrait_Asia_Generic_land_4.dds"
 		traits = {  }
 		skill = 1
@@ -124,7 +120,6 @@ set_national_unity = 0.55
 	
 	create_corps_commander = {
 		name = "Ri Ul-sol"
-		id = 954
 		picture = "Portrait_Asia_Generic_land_4.dds"
 		traits = {  }
 		skill = 2
