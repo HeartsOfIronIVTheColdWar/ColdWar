@@ -1,18 +1,18 @@
 on_actions = {
 	# country 
-#	on_new_term_election = {
-#		random_events = {
-#			100 = usa.election521
-#			100 = usa.election522
-#			100 = usa.election561
-#			100 = usa.election562
-#			100 = usa.election563	
-#		}
-#		random_events = {
-#		}
-#		random_events = {
-#		}
-#	}
+	on_new_term_election = {
+		random_events = {
+			100 = usa.521
+			100 = usa.522
+			100 = usa.561
+			100 = usa.562
+			100 = usa.563	
+		}
+		random_events = {
+		}
+		random_events = {
+		}
+	}
 
 	# Ace pilots
 	# country, FROM = ace
