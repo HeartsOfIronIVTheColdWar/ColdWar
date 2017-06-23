@@ -3,7 +3,6 @@ state={
 	name="STATE_332"
 	
 	state_category = wasteland
-	impassable = yes
 
 	history={
 		owner = CAN
@@ -15,12 +14,11 @@ state={
 			}
 		}
 		add_core_of = CAN
-		
 
 	}
 
 	provinces={
-		490 1426 1657 1712 1785 3208 3691 4666 6740 7364 10176 12147 12600 13196 
+		1426 1785 4720 4787 12503 13165 13180 
 	}
 	manpower=22179
 	buildings_max_level_factor=1.000
