@@ -278,7 +278,44 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
+
+		
+		separatism = {
+			allowed = {
+				always = no
+			}
 			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				unity_factor = -0.10
+			}
+		}
+		
+		separatism = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				unity_factor = -0.20
+				political_power_gain = -0.25
+			}
+		}
 		
 		everest_expedition = {
 			allowed = {
