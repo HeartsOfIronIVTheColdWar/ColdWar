@@ -1,10 +1,8 @@
-﻿###########################
+﻿﻿###########################
 # Breakup Events
 ###########################
 
 add_namespace = breakup
-
-####### SEPARATISM IDEA DOES NOT EXCIST; FIX line 48, 109 #### - Gunnar
 
 # Growing separatist movement
 country_event = {
@@ -25,7 +23,7 @@ country_event = {
 			has_cosmetic_tag = UAR
 		}
 		NOT = {
-#			has_idea = separatism
+			has_idea = separatism
 		}
 	}
 	
@@ -47,7 +45,7 @@ country_event = {
 	picture = GFX_news_event_001
 	
 	immediate = {
-#		add_ideas = separatism
+		add_ideas = separatism
 	}
 
 	
@@ -75,7 +73,7 @@ country_event = {
 			tag = SPR
 			has_cosmetic_tag = UAR
 		}
-#		has_idea = separatism
+		has_idea = separatism
 		has_government = democratic
 	}
 	
@@ -99,7 +97,7 @@ country_event = {
 	option = { #sure
 		name = breakup.2.a
 		swap_ideas = {
-#			remove_idea = separatism
+			remove_idea = separatism
 			add_idea = separatists_promised_referendum
 		}
 		country_event = { days = 360 id = breakup.4 }
@@ -108,8 +106,8 @@ country_event = {
 	option = { #no way
 		name = breakup.2.b
 		swap_ideas = {
-#			remove_idea = separatism
-#			add_idea = separatism_intensifies
+			remove_idea = separatism
+			add_idea = separatism_intensifies
 		}
 		add_political_power = -150
 	}
@@ -133,8 +131,8 @@ country_event = {
 			has_cosmetic_tag = UAR
 		}
 		OR = {
-#			has_idea = separatism
-#			has_idea = separatism_intensifies
+			has_idea = separatism
+			has_idea = separatism_intensifies
 		}
 	}
 	
@@ -146,7 +144,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 5
-#			has_idea = separatism_intensifies
+			has_idea = separatism_intensifies
 		}
 	}
 	
@@ -157,7 +155,7 @@ country_event = {
 	
 	option = {
 		name = breakup.3.a
-#		remove_ideas = separatism
+		remove_ideas = separatism
 	}
 }
 
@@ -183,9 +181,27 @@ country_event = {
 # Referendum passes
 country_event = {
 	id = breakup.5
+	title = breakup.5.t
+	is_triggered_only = yes
+	desc = {
+		text = breakup.5.d
+	}
+	
+	option = {
+		name = breakup.5.a
+	}
 }
 
 # Referendum fails
 country_event = {
 	id = breakup.6
+	title = breakup.6.t
+	is_triggered_only = yes
+	desc = {
+		text = breakup.6.d
+	}
+	
+	option = {
+		name = breakup.6.a
+	}
 }
