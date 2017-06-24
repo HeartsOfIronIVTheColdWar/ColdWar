@@ -220,7 +220,6 @@ leader_traits = {
 		modifier = {
 			fort = {
 				attack = 0.3
-				breakthrough = 0.2
 			}
 		}
 		

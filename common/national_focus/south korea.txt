@@ -1,0 +1,19 @@
+focus_tree = {
+	id = south_korea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	default = no
+	focus = {
+		id = KOR_firstthreeyear
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10 
+		x = 4
+		y = 0
+
+	}
+}

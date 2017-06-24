@@ -1839,9 +1839,6 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
-		available = { 
-			has_tech = large_front_operations
-		}
 		completion_reward = {
 			add_ideas = SOV_Superior_Tanks
 		}

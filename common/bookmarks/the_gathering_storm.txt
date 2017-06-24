@@ -79,10 +79,10 @@ bookmarks = {
 			focuses = {
 			}			
 		}
-		"TUR"={
+		"KOR"={
 			minor = yes
-			history = "TUR_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = autocratic
 			ideas = {
 			}
 			focuses = {
@@ -91,7 +91,7 @@ bookmarks = {
 		"EGY"={
 			minor = yes
 			history = "EGY_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = autocratic
 			ideas = {
 			arab_monarchy
 			political_instability
@@ -117,9 +117,19 @@ bookmarks = {
 		"PAK"={
 			minor = yes
 			history = "PAK_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = autocratic
 			ideas = {
 				RAJ_agrarian_society
+			}
+			focuses = {
+			}
+		}
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+
 			}
 			focuses = {
 			}
@@ -129,22 +139,13 @@ bookmarks = {
 			history = "NKR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				nkr_factionalism
+				nkr_illiterate_country
 			}
 			focuses = {
 				NKR_war
 				NKR_originofjuche
 				NKR_peacefulreunion
-			}
-		}
-		"POL"={
-			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				soviet_political_control
-				war_crimes
-			}
-			focuses = {
 			}
 		}
 		"DDR"={
