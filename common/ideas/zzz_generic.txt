@@ -1,7 +1,6 @@
 ideas = {
 
-	hidden_ideas = {
-
+	hidden_ideas = {	
 		idea_continuous_naval_production = {
 			allowed = {
 				always = no
@@ -298,7 +297,7 @@ ideas = {
 			}
 		}
 		
-		separatism = {
+		separatism_intensifies = {
 			allowed = {
 				always = no
 			}
@@ -315,6 +314,20 @@ ideas = {
 				unity_factor = -0.20
 				political_power_gain = -0.25
 			}
+		}
+		
+		separatists_promised_referendum
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
 		}
 		
 		everest_expedition = {

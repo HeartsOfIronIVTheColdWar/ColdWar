@@ -299,20 +299,20 @@ news_event = {
 	}
 
 	option = {
-		text = news.530211.a
+		name = news.530211.a
 		trigger = {
 			tag = USA
 		}
 	}
 	
 	option = {
-		text = news.530211.b
+		name = news.530211.b
 		trigger = {
 			tag = SOV
 		}
 	}
 	option = {
-		text = news.530211.c
+		name = news.530211.c
 		trigger = {
 			NOT = {
 				tag = USA
@@ -364,20 +364,20 @@ news_event = {
 	}
 
 	option = {
-		text = news.530619.a
+		name = news.530619.a
 		trigger = {
 			tag = USA
 		}
 	}
 	
 	option = {
-		text = news.530619.b
+		name = news.530619.b
 		trigger = {
 			tag = SOV
 		}
 	
 	option = {
-		text = news.530619.c
+		name = news.530619.c
 		trigger = {
 			NOT = {
 				tag = USA

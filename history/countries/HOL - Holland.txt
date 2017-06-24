@@ -39,18 +39,6 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = yes
 	}
-	if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = INS
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = INS
-	}
-	}
 	create_country_leader = {
 	name = "Williem Drees"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"

@@ -617,15 +617,15 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
-			completion_reward = {
-					annex = PAL
-				}
-			available = {
-					PAL = {
-							is_subject_of = EGY
-						}
-					owns_state = 554
-				}
+		completion_reward = {
+			annex_country = PAL
+		}
+		available = {
+			PAL = {
+				is_subject_of = EGY
+			}
+			owns_state = 554
+		}
 
 	}
 	focus = {
