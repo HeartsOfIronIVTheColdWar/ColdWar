@@ -66,7 +66,6 @@ set_national_unity = 0.55
 		infantry_weapons_1 = 1
 		motorised_infantry = 1
 		marines = 1
-		medium_armor = 1
 		advanced_medium_tank = 1
 		mechanised_infantry3 = 1
 		advanced_light_tank = 1
@@ -145,21 +144,19 @@ set_national_unity = 0.55
 				banned = no
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 15
 				banned = no
 			}
 			
 			communism = {
-				popularity = 0
+				popularity = 50
 				#banned = yes #default is no
 			}
-			neutrality = {
-				popularity = 50
-			}
+
 		}
 		
-		ruling_party = neutrality 
+		ruling_party = communism 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
@@ -195,7 +192,7 @@ set_national_unity = 0.55
 				banned = yes
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
 				banned = yes
 			}
@@ -243,7 +240,7 @@ set_national_unity = 0.55
 				banned = yes
 			}
 
-			fascism = {
+			autocratic = {
 				popularity = 0
 				banned = yes
 			}

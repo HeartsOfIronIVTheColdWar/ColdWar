@@ -755,15 +755,6 @@ technologies = {
 		}
 		
 		###########
-
-		path = {
-			leads_to_tech = battlefield_support
-			research_cost_coeff = 1
-		}
-		
-		xor = {
-			dedicated_artillery_observers
-		}
 	
 		research_cost = 2
 		start_year = 1960

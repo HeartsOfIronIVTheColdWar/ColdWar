@@ -18,8 +18,8 @@
 
 raise_stability = {
 	if = {
-		limit = { has_idea = disaster }
-		swap_ideas = { remove_idea = disaster add_idea = very_low_stability }
+		limit = { has_idea = disaster_stability }
+		swap_ideas = { remove_idea = disaster_stability add_idea = very_low_stability }
 		else = {
 			if = {
 				limit = { has_idea = very_low_stability }
@@ -69,7 +69,7 @@ lower_stability = {
 								else = {
 									if = {
 										limit = { has_idea = very_low_stability }
-										swap_ideas = { remove_idea = very_low_stability add_idea = disaster }
+										swap_ideas = { remove_idea = very_low_stability add_idea = disaster_stability }
 										else = {
 											add_political_power = -150
 										}
