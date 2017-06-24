@@ -18,7 +18,6 @@ ideas = {
 			modifier = {
 				ai_call_ally_desire_factor = 100
 				ai_join_ally_desire_factor = 100
-				
 			}
 		}
 	
@@ -527,8 +526,8 @@ ideas = {
 			picture = saf_history_of_segregation
 
 			modifier = {
-				conscription_factor = -0.3
-				unity_factor = -0.3
+				conscription_factor = -0.1
+				unity_factor = -0.15
 				political_power_gain = -0.1
 			}
 
