@@ -15,9 +15,12 @@ set_national_unity = 0.55
 	#}
 	add_ideas = {
 		#laws
-		tot_economic_mobilisation
-		service_by_requirement
+		extensive_conscription
 		closed_economy
+		mass_surveillance
+		war_economy
+		very_low_stability
+		nationalism_press
 		#ideas
 		eastern_socialism
 		RAJ_agrarian_society

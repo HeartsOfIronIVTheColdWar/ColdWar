@@ -316,7 +316,7 @@ ideas = {
 			}
 		}
 		
-		separatists_promised_referendum
+		separatists_promised_referendum = {
 			allowed = {
 				always = no
 			}

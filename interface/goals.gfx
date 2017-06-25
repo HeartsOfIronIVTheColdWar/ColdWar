@@ -1,5 +1,12 @@
 spriteTypes = {	
-
+	SpriteType = {
+	name = "GFX_goal_USA_american_economic_miracle"
+	texturefile = "gfx/interface/goals/goal_USA_america_economic_miracle.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_USA_strategic_air_command"
+	texturefile = "gfx/interface/goals/focus_USA_strategic_air_command.dds"			
+	}	
 	#### Generic continuous goal icons
 	
 	SpriteType = {

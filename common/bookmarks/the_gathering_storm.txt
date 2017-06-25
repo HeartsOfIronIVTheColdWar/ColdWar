@@ -15,6 +15,9 @@ bookmarks = {
 				marshall_plan
 			}
 			focuses = {
+				USA_foreign_policy
+				USA_ban_communism
+				USA_strategic_air_command
 			}
 		}
 		"FRA"={

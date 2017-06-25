@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_the_army
-		icon = GFX_goal_generic_build_tank
+		icon = idea_hun_treaty_of_trianon
 		cost = 10
 		x = 34
 		y = 0
@@ -1438,7 +1438,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_landforce_focus
-		icon = GFX_goal_rhineland
+		icon = idea_hun_treaty_of_trianon
 		cost = 10
 		prerequisite = {
 			focus = USA_the_army
@@ -1452,7 +1452,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_land_doctrine
-		icon = GFX_goal_generic_army_doctrines
+		icon = idea_hun_secret_rearmament
 		cost = 10
 		prerequisite = {
 			focus = USA_landforce_focus
@@ -1664,7 +1664,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_strategic_air_command
-		icon = GFX_goal_unknown
+		icon = GFX_goal_USA_strategic_air_command
 		cost = 10
 		prerequisite = {
 			focus = USA_nsc_68
@@ -2093,7 +2093,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_american_economic_miracle
-		icon = GFX_goal_generic_soviet_construction
+		icon = GFX_goal_USA_american_economic_miracle
 		cost = 10
 		prerequisite = {
 			focus = USA_research_slot
