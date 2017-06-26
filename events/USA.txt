@@ -175,9 +175,7 @@ country_event = {
 	option = {
 		name = usa.36.a
 		#DETERMINES HOW BIG STRIKE WILL BE 
-		
-		unity_factor = -0.10
-		
+				
 		random_list = {
 			90 = {
 				add_timed_idea = {
@@ -702,7 +700,8 @@ country_event = {
 		name = usa.10102.a
 		set_country_flag = rosenbergs2
 		clr_country_flag = rosenbergs1
-	}
+	}	
+}
 
 # ROSENBERGS: Appeal for clemency
 country_event = {
@@ -746,7 +745,7 @@ country_event = {
 		clr_country_flag = rosenbergs2
 		news_event = { hours = 1 id = news.rosenbergsclemency }
 		}
-	}
+}
 
 # Brown v. Board of Education
 country_event = {

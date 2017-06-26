@@ -1,8 +1,31 @@
-﻿###########################
+###########################
 # Cold War Mod News Events
 ###########################
 
 add_namespace = news
+# 1952 Summer Olympics 
+
+news_event = {
+	id = news.520719
+	title = news.520719.t 
+	picture = GFX_olympics_1952
+	desc = news.520719.d 
+	
+	trigger = {
+	
+		date > 1952.7.19 
+	}	
+	
+	major = yes 
+	
+	is_triggered_only = yes 
+	
+	fire_only_once = yes 
+		
+	option = {
+		name = news.520719.a 
+	}
+}
 
 # 1952 Egyptian Revolution
 news_event = {
@@ -384,4 +407,4 @@ news_event = {
 				tag = SOV
 			}
 		}
-	}
+}
