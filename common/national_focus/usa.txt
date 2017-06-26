@@ -1663,7 +1663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_strategic_air_command
-		icon = GFX_goal_unknown
+		icon = GFX_goal_USA_strategic_air_command
 		cost = 10
 		prerequisite = {
 			focus = USA_nsc_68
