@@ -1,4 +1,28 @@
-spriteTypes = {	
+spriteTypes = {
+	SpriteType = {
+	name = "GFX_goal_fatherland_liberation_war"
+	texturefile = "gfx/interface/goals/goal_fatherland_liberation_war.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_korean_unification"
+	texturefile = "gfx/interface/goals/goal_korean_unification.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_focus_origins_of_juche"
+	texturefile = "gfx/interface/goals/focus_origins_of_juche.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_focus_socialist_economic_miracle"
+	texturefile = "gfx/interface/goals/focus_socialist_economic_miracle.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_focus_important_paper"
+	texturefile = "gfx/interface/goals/focus_important_paper.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_USA_veteran_initiative"
+	texturefile = "gfx/interface/goals/focus_USA_veteran_initiative.dds"			
+	}	
 	SpriteType = {
 	name = "GFX_goal_USA_american_economic_miracle"
 	texturefile = "gfx/interface/goals/goal_USA_america_economic_miracle.dds"			

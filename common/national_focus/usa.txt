@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_the_army
-		icon = idea_hun_treaty_of_trianon
+		icon = "gfx/interface/goals/focus_important_paper.dds"
 		cost = 10
 		x = 34
 		y = 0
@@ -1452,7 +1452,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_land_doctrine
-		icon = idea_hun_secret_rearmament
+		icon = GFX_focus_USA_veteran_initiative
 		cost = 10
 		prerequisite = {
 			focus = USA_landforce_focus

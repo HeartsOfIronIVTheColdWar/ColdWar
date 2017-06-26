@@ -2013,7 +2013,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Socialist_Economic_Miracle
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_focus_socialist_economic_miracle
 		cost = 10
 		prerequisite = {
 			focus = SOV_Role_Model_Citizen

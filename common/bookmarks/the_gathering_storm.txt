@@ -15,7 +15,7 @@ bookmarks = {
 				marshall_plan
 			}
 			focuses = {
-				USA_foreign_policy
+				USA_american_economic_miracle
 				USA_ban_communism
 				USA_strategic_air_command
 			}
@@ -148,7 +148,7 @@ bookmarks = {
 			focuses = {
 				NKR_war
 				NKR_originofjuche
-				NKR_peacefulreunion
+				NKR_reunifiedkorea
 			}
 		}
 		"DDR"={

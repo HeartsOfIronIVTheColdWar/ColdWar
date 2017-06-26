@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NKR_war
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_fatherland_liberation_war
 		cost = 10 
 		prerequisite = {
 			focus = NKR_onekorea
@@ -288,7 +288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NKR_reunifiedkorea
-		icon = GFX_goal_tfv_burn_the_royal_portraits
+		icon = GFX_goal_korean_unification
 		cost = 10 
 		prerequisite = {
 			focus = NKR_claimkorea
@@ -336,7 +336,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NKR_originofjuche
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_focus_origins_of_juche
 		cost = 10 
 		prerequisite = {
 			focus = NKR_purgetraitor
