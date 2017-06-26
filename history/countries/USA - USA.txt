@@ -104,6 +104,7 @@ set_national_unity = 0.85
 		MBT_1950 = 1
 		IFV_1950 = 1
 		APC_1950 = 1
+		carrier_1 = 1 
 	}
 	create_field_marshal = {
 	name = "Arturo Rawson"

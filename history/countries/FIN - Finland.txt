@@ -14,6 +14,8 @@ set_national_unity = 0.55
 		limited_conscription
 		#ideas
 		sisu
+		FIN_wartime_reparations
+		FIN_reparations_industry
 	}
 	set_politics = {
 
@@ -40,9 +42,9 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Urho Kekkonen"
+	name = "Juho Paasikivi"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "Portrait_Finland_Urho_Kekkonen.dds"
+	picture = "Portrait_Finland_Juho_Kusti_Paasikivi.dds"
 	expire = "1986.8.31"
 	ideology = liberalism
 	traits = {
