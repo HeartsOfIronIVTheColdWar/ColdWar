@@ -2081,7 +2081,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_american_economic_miracle
-		icon = GFX_Goal_USA_american_economic_miracle
+		icon = GFX_goal_USA_american_economic_miracle
 		cost = 10
 		prerequisite = {
 			focus = USA_research_slot
