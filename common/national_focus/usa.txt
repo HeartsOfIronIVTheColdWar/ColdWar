@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_the_army
-		icon = "gfx/interface/goals/focus_important_paper.dds"
+		icon = GFX_goal_generic_build_tank
 		cost = 10
 		x = 34
 		y = 0
@@ -700,7 +700,7 @@ focus_tree = {
 			focus = USA_state_of_the_union
 		}
 		mutually_exclusive = {
-			focus = USA_strenghten_HUAC
+			focus = USA_strengthen_HUAC
 		}
 		x = 17
 		y = 1
@@ -721,8 +721,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
+		completion_reward = {
 			add_ideas = fair_deal
-
+		}
 	}
 	focus = {
 		id = USA_deregulated_economy
@@ -747,8 +748,6 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = USA_deregulated_economy
-		}
-		prerequisite = {
 			focus = USA_fair_deal
 		}
 		x = 17
@@ -1438,7 +1437,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_landforce_focus
-		icon = idea_hun_treaty_of_trianon
+		icon = GFX_goal_rhineland
 		cost = 10
 		prerequisite = {
 			focus = USA_the_army
@@ -1452,7 +1451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_land_doctrine
-		icon = GFX_focus_USA_veteran_initiative
+		icon = GFX_goal_generic_army_doctrines
 		cost = 10
 		prerequisite = {
 			focus = USA_landforce_focus
@@ -1664,7 +1663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_strategic_air_command
-		icon = GFX_goal_USA_strategic_air_command
+		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
 			focus = USA_nsc_68
@@ -1757,19 +1756,14 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_jet_fighters
 		}
-		mutually_exclusive = {
-			focus = heavy_bombing
-		}
 		x = 36
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
-							name = heavy_bombers_bonus
+							name = figher_bonus
 							bonus = 0.5
 							uses = 1
-							technology = strategic_bomber1
-							technology = strategic_bomber2
-							technology = strategic_bomber3
+							technology = cv_1950_fighter
 						}
 				}
 
@@ -1781,9 +1775,6 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_jet_fighters
 		}
-		mutually_exclusive = {
-			focus = USA_strategic_destruction
-		}
 		x = 38
 		y = 4
 			completion_reward = {
@@ -1792,8 +1783,7 @@ focus_tree = {
 							bonus = 0.5
 							uses = 1
 							technology = heavy_fighter1
-							technology = heavy_fighter2
-							technology = heavy_fighter3
+							technology = heavy_air_1950
 						}
 				}
 
@@ -1948,7 +1938,6 @@ focus_tree = {
 							ahead_reduction = 1
 							uses = 1
 							technology = early_carrier
-							technology = basic_carrier
 							technology = improved_carrier
 							technology = advanced_carrier
 						}
@@ -1997,7 +1986,6 @@ focus_tree = {
 					add_tech_bonus = {
 							name = submarine_bonus
 							bonus = 0.5
-							technology = early_submarine
 							technology = basic_submarine
 							technology = improved_submarine
 							technology = advanced_submarine
@@ -2093,7 +2081,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_american_economic_miracle
-		icon = GFX_goal_USA_american_economic_miracle
+		icon = GFX_Goal_USA_american_economic_miracle
 		cost = 10
 		prerequisite = {
 			focus = USA_research_slot
@@ -2143,8 +2131,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = USA_recruitment_drive
-			focus = strat_destruction
-			focus = heavy_bombing
+
+		}	
+		prerequisite = {
+			focus = USA_helicopters
 		}
 		x = 33
 		y = 6
