@@ -21,6 +21,32 @@ ideas = {
 				army_core_defence_factor = 0.2
 			}
 		}
+		
+		FIN_wartime_reparations = {
+			allowed = {
+				always = no 
+			}
+			
+			picture = 
+			
+			removal_cost = -1 
+			
+			modifier = {
+				
+			}
+		}
+		
+		FIN_reparations_industry = {
+			allowed = {
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				
+			}
+		}
 	}
 	
 ###ADVISORS AND STAFF###
@@ -66,8 +92,6 @@ ideas = {
 	### HEAD OF STATE ###
 	
 	minister_of_internal_affairs = {
-		
-		
 		
 	}
 	
