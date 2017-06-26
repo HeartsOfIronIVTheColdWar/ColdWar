@@ -870,6 +870,8 @@
  FIN_antti_hackzell:0 "Antti Hackzell"
  FIN_vaino_valve:0 "Väinö Valve"
  FIN_akseli_anttila:0 "Akseli Anttila"
+ FIN_wartime_reparations:0 "War Reparations"
+ FIN_reparations_industry:0 "War Reparations Industry"
  BUL_hristo_lukov:0 "Hristo Lukov"
  BUL_vasil_boydev:0 "Vasil Boydev"
  BUL_nikola_hadzipetkov:0 "Nikola Hadzipetkov"
@@ -2474,3 +2476,4 @@
  polymer_corporation:0 "Polymer Corporation"
  inglis_company:0 "John Inglis and Company"
  small_arms_limited:0 "Small Arms Limited"
+

@@ -1,4 +1,13 @@
 ﻿l_english:
+ finland.501701.t:0 "1950 Presidential Election"
+ finland.501701.d:0 "The 1950 Presidential election is the first time since 1937 the Finnish people get elect the electors, who in turn, will choose who will be the next president of Finland. The presidential race has three main candidates, Kekkonen, the Agrarian candidate for President, J. K. Paasikivi, the current President of Finland and Mauno Pekkala, the People's Democratic League candidate for President. Who will the electors elect?"
+ finland.501701.a:0 "Paasikivi"
+ finland.501701.b:0 "Pekkala"
+ finland.501701.c:0 "Kekkonen"
+ finland.561701.t:0 "1956 Presidental Election"
+ news.520719.t:0 "The Games of The XV Olympiad"
+ news.520719.d:0 "The fifeenth Olympic Games were recently held in Helsinki, Finland. The games were attended by atheletes from 69 different nations. \n\nThe American atheletes saw the most success, winning 40 gold metals, 19 siver medals and 17 bronze medals, while the Soviets came in second with 22 gold medals, 30 silver medals and 19 bronze medals."
+ news.520719.a:0 "The Games are concluded."
  usa.49.t:0 "The Admission of Alaska to the Union"
  usa.49.d:0 "test"
  usa.49.a:0 "The Last Frontier has been brought into the Union."
@@ -484,4 +493,5 @@
  country_capitulated.0.a:0 "Great news!"
  country_capitulated.0.b:0 "These are dark times"
  country_capitulated.0.c:0 "Uncertain times"
- GAME_OVER_TT:0 "§RThe game will end for you.§!"
+GAME_OVER_TT:0 "§RThe game will end for you.§!"
+ 
