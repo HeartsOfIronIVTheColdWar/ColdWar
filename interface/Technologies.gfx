@@ -162,8 +162,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/icon_rifle_improvement_16.dds"
 	}
 	
-
-	###GENERIC EQUIPMENT ARCHETYPES###
+	###GENERIC EQUIPMENT ARCHETYPES### Not completed, uses SOV stuff as placeholder - Gunnar
 	SpriteType = {
 		name = "GFX_SOV_MBT_1980_medium"
 		texturefile = "gfx/interface/technologies/SOV_MBT_1980.dds"
@@ -532,7 +531,82 @@ spriteTypes = {
 	}	
 	
 	### infantry tech	###
+	
+	###New support techs from Cold War ###
 
+	SpriteType = {
+		name = "GFX_tech_logistics_company6_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company_6.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_tech_logistics_company5_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company_5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_maintenance_company5_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company_5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_maintenance_company6_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company_6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_signal_company5_medium"
+		texturefile = "gfx/interface/technologies/tech_signal_company_5.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_tech_signal_company6_medium"
+		texturefile = "gfx/interface/technologies/tech_signal_company_6.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_military_police5_medium"
+		texturefile = "gfx/interface/technologies/tech_military_police_company_5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_military_police6_medium"
+		texturefile = "gfx/interface/technologies/tech_military_police_company_6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_engineers5_medium"
+		texturefile = "gfx/interface/technologies/engineer_company_5.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_tech_engineers6_medium"
+		texturefile = "gfx/interface/technologies/engineer_company_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_engineers_flamethrowers_1_medium"
+		texturefile = "gfx/interface/technologies/engineer_company_flamethrower_1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_tech_recon5_medium"
+		texturefile = "gfx/interface/technologies/recon_company_5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_recon6_medium"
+		texturefile = "gfx/interface/technologies/recon_company_6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_field_hospital5_medium"
+		texturefile = "gfx/interface/technologies/tech_field_hospital_company_5.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_tech_field_hospital6_medium"
+		texturefile = "gfx/interface/technologies/tech_field_hospital_company_6.dds"
+	}		
+	
+	### Vanilla Support Companies ###
+	
 	SpriteType = {
 		name = "GFX_tech_maintenance_company4_medium"
 		texturefile = "gfx/interface/technologies/tech_maintenance_company4.dds"
@@ -3402,7 +3476,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/USA_superheavy_tank.dds"
 	}	
 
-	### Generic Tanks	###	
+	### Tank/armor Improvements	###	
+	
+	#### APC ####
 	
 	########## 1950 APC ###############
 
@@ -3450,6 +3526,339 @@ spriteTypes = {
 		name = "GFX_APC_1950_advanced_engine_medium"
 		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
 	}
+	
+	########## 1960 APC ###############
+
+	SpriteType = {
+		name = "GFX_APC_1960_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1960_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
+	}
+	
+	########## 1970 APC ###############
+
+	SpriteType = {
+		name = "GFX_APC_1970_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1970_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
+	}
+	
+	########## 1980 APC ###############
+
+	SpriteType = {
+		name = "GFX_APC_1980_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_APC_1980_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
+	}
+
+	### Infantry Fighting Vehicles ###
+	
+	########## 1950 IFV ###############
+
+	SpriteType = {
+		name = "GFX_IFV_1950_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1950_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
+	}
+	
+	########## 1960 IFV ###############
+
+	SpriteType = {
+		name = "GFX_IFV_1960_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1960_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
+	}
+	
+	########## 1970 IFV ###############
+
+	SpriteType = {
+		name = "GFX_IFV_1970_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1970_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
+	}
+	
+	########## 1980 IFV ###############
+
+	SpriteType = {
+		name = "GFX_IFV_1980_basic_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_improved_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_advanced_armor_medium"
+		texturefile = "gfx/interface/technologies/MBT_chassis_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_basic_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_improved_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_advanced_turret_medium"
+		texturefile = "gfx/interface/technologies/MBT_gun_upgrade_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_basic_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_improved_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IFV_1980_advanced_engine_medium"
+		texturefile = "gfx/interface/technologies/MBT_engine_upgrade_3.dds"
+	}
+	
+	### Main Battle Tanks ###
 	
 	###### 1950 MBT ######
 	
@@ -3691,53 +4100,6 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_MBT_1990_advanced_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}
-	
-	########### 1950 IFV###########
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_basic_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_improved_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_advanced_armor_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_basic_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_improved_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_advanced_turret_medium"
-		texturefile = "gfx/interface/technologies/antitank4.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_basic_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_improved_engine_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_IFV_1950_advanced_engine_medium"
 		texturefile = "gfx/interface/technologies/antitank3.dds"
 	}
 	

@@ -125,7 +125,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DDR_aid_former_annexations
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_focus_DDR_aid_former_annexations
 		cost = 50
 		x = 27
 		y = 0
@@ -1070,7 +1070,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DDR_the_fourth_reich
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_focus_DDR_the_fourth_reich
 		cost = 10
 		prerequisite = {
 			focus = DDR_fuhrer
@@ -1121,7 +1121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DDR_Nationale_Volksarmee
-		icon = GFX_goal_tfv_can_compromise_with_quebec
+		icon = GFX_goal_focus_DDR_Nationale_Volksarmee
 		cost = 10
 		prerequisite = {
 			focus = DDR_artillery_and_mortars

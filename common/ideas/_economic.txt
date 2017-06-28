@@ -213,8 +213,10 @@ ideas = {
 		
 		anarchism = {
 			
-		
-			cost = 150
+			available = {
+				always = no
+			}
+			cost = 0
 			removal_cost = -1
 			level = 1
 			traits = { anarchism_trait }
@@ -459,7 +461,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				local_resources_factor = 0.15
-				research_time_factor = -0.08
+				research_time_factor = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -479,7 +481,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
 				local_resources_factor = 0.1
-				research_time_factor = -0.04
+				research_time_factor = -0.03
 			}
 			
 			default = yes
@@ -519,7 +521,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
 				local_resources_factor = 0.05
-				research_time_factor = -0.02
+				research_time_factor = -0.01
 			}
 			
 			cancel_if_invalid = no

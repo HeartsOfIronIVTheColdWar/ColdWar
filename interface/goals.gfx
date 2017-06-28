@@ -1,8 +1,23 @@
 spriteTypes = {
+
+	### DDR ###
+	SpriteType = {
+	name = "GFX_goal_focus_DDR_Nationale_Volksarmee"
+	texturefile = "gfx/interface/goals/focus_DDR_Nationale_Volksarmee.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_DDR_the_fourth_reich"
+	texturefile = "gfx/interface/goals/focus_DDR_the_fourth_reich.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_DDR_aid_former_annexations"
+	texturefile = "gfx/interface/goals/focus_DDR_aid_former_annexations.dds"			
+	}
+	### North Korea ###
 	SpriteType = {
 	name = "GFX_goal_fatherland_liberation_war"
 	texturefile = "gfx/interface/goals/goal_fatherland_liberation_war.dds"			
-	}	
+	}
 	SpriteType = {
 	name = "GFX_goal_korean_unification"
 	texturefile = "gfx/interface/goals/goal_korean_unification.dds"			
@@ -11,10 +26,18 @@ spriteTypes = {
 	name = "GFX_goal_focus_origins_of_juche"
 	texturefile = "gfx/interface/goals/focus_origins_of_juche.dds"			
 	}	
+	
+	### USSR ###
 	SpriteType = {
 	name = "GFX_goal_focus_socialist_economic_miracle"
 	texturefile = "gfx/interface/goals/focus_socialist_economic_miracle.dds"			
-	}	
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_nuclear_submarines"
+	texturefile = "gfx/interface/goals/focus_nuclear_submarines2.dds"			
+	}
+	
+	### USA ###
 	SpriteType = {
 	name = "GFX_goal_focus_important_paper"
 	texturefile = "gfx/interface/goals/focus_important_paper.dds"			
@@ -31,6 +54,7 @@ spriteTypes = {
 	name = "GFX_goal_USA_strategic_air_command"
 	texturefile = "gfx/interface/goals/focus_USA_strategic_air_command.dds"			
 	}	
+	
 	#### Generic continuous goal icons
 	
 	SpriteType = {

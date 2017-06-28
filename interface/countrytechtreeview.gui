@@ -486,7 +486,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "support_folder"
 			position = { x=0 y=47 }
-			size = { width = 100%% height = 100%% }
+			size = { width = 120%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
@@ -577,7 +577,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year7"
-					position = { x = 1703 y = 50 }
+					position = { x = 1783 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1980"
@@ -589,7 +589,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year8"
-					position = { x = 2123 y = 50 }
+					position = { x = 2203 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1990"
@@ -604,7 +604,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=150 y=640 }
-				size = { width = 2103 height = 430 }
+				size = { width = 2148 height = 430 }
 				clipping = no
 			
 				background = {
@@ -616,7 +616,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg_2"
 				position = { x=160 y=920 }
-				size = { width = 2083 height = 140 }
+				size = { width = 2128 height = 140 }
 				clipping = no
 			
 				background = {
@@ -632,9 +632,9 @@ guiTypes = {
 				format = "LEFT"
 			}
 			gridboxtype = {
-				name = "hejhej_tree"
-				position = { x = 800 y = 500 }
-				slotsize = { width= 400 height= 400 }
+				name = "electronic_mechanical_engineering_tree"
+				position = { x = 380 y = 930 }
+				slotsize = { width= 70 height= 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
