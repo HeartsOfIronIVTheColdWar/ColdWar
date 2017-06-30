@@ -27,6 +27,116 @@ news_event = {
 	}
 }
 
+### Sino-Soviet mutual developements ###
+news_event = { #Sino-Soviet news event
+	id = news.1002
+	title = news.1002.t
+	
+	desc = {
+		text = news.1002.d_sinosov
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	desc = {
+		text = news.1002.d_rest
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	desc = {
+		text = news.1002.d_supers
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+	}
+	
+	picture = GFX_report_event_sinosoviet_mutual_developement
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1002.a
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = news.1002.b
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	option = {
+		name = news.1002.c
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+	}
+}
+news_event = { #Scrub countries event
+	id = news.1003
+	title = news.1002.t
+	desc = news.1003.d
+
+	picture = GFX_report_event_sinosoviet_mutual_developement
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1003.a
+	}
+}
+news_event = { #Superpowers event
+	id = news.1004
+	title = news.1002.t
+	desc = news.1004.d
+
+	picture = GFX_report_event_sinosoviet_mutual_developement
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1004.a
+	}
+}
+
 # 1952 Egyptian Revolution
 news_event = {
 	id = news.520723

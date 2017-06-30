@@ -1,6 +1,62 @@
 ideas = {
 	country = {
 		
+		sino_soviet_aid = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+		sino_soviet_aid1 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		} 
+		sino_soviet_developement = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				unity_factor = 0.1
+			}
+		} 
+		
 		bunkers_please = {
 			
 			removal_cost = -1

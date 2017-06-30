@@ -1,5 +1,20 @@
 spriteTypes = {
 
+	### SOVIET AND SOVIET RELATED EVENTS ###
+	
+	spriteType = {
+		name = "GFX_report_event_sinosoviet_treaty"
+		texturefile = "gfx/event_pictures/report_event_sinosoviet_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sinosoviet_mutual_developement"
+		texturefile = "gfx/event_pictures/report_event_sinosoviet_mutual_developement.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sinosoviet_mutual_developement_consideration"
+		texturefile = "gfx/event_pictures/report_event_sinosoviet_mutual_developement_consideration.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_news_event_egyrevolution"
 		texturefile = "gfx/event_pictures/news_event_egyrevolution.dds"

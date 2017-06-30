@@ -656,15 +656,11 @@ focus_tree = {
 				has_government = communism 
 				NOT = { is_in_faction_with = USA }
 			}
-			OR = {
-				has_global_flag = PRC_Civil_war_ended 
-				has_global_flag = PRC_Civil_war_standstill 
-			}  
 #			custom_effect_tooltip = PRC_Mao_Discontent_tt
 		}
 		completion_reward = {
-#			custom_effect_tooltip = SOV_Defense_pact_tt
-			
+			PRC = { country_event = { id = soviet.1000 days = 1 } }
+			custom_effect_tooltip = SOV_sino_soviet_aid_effects_tt
 		}
 
 	}
@@ -675,8 +671,26 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Sinosoviet_Alliance
 		}
+		available = {
+			is_puppet = no
+			has_government = communism 
+			PRC = {
+				NOT = { has_war_with = SOV }
+				has_government = communism 
+				NOT = { is_in_faction_with = USA }
+			}
+			OR = {
+				has_global_flag = PRC_Civil_war_ended 
+				has_global_flag = PRC_Civil_war_standstill 
+			}  
+#			custom_effect_tooltip = PRC_Mao_Discontent_tt
+		}
 		x = 8
 		y = 2
+		completion_reward = {
+			PRC = { country_event = { id = soviet.1001 days = 1 } }
+			custom_effect_tooltip = SOV_sino_soviet_aid_effects_tt
+		}
 
 	}
 	focus = {

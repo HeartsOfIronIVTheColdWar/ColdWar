@@ -1,4 +1,6 @@
 ﻿l_english:
+ sino_soviet_aid:0 "Sino-Soviet Aid"
+ sino_soviet_aid1:0 "Sino-Soviet Aid"
  stability:0 "Stability"
  very_high_stability:0 "Very High Stability"
  high_stability:0 "High Stability"
@@ -2476,4 +2478,3 @@
  polymer_corporation:0 "Polymer Corporation"
  inglis_company:0 "John Inglis and Company"
  small_arms_limited:0 "Small Arms Limited"
-

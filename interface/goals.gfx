@@ -2,15 +2,15 @@ spriteTypes = {
 
 	### DDR ###
 	SpriteType = {
-	name = "GFX_goal_focus_DDR_Nationale_Volksarmee"
+	name = "GFX_goal_DDR_Nationale_Volksarmee"
 	texturefile = "gfx/interface/goals/focus_DDR_Nationale_Volksarmee.dds"			
 	}
 	SpriteType = {
-	name = "GFX_goal_focus_DDR_the_fourth_reich"
+	name = "GFX_goal_DDR_the_fourth_reich"
 	texturefile = "gfx/interface/goals/focus_DDR_the_fourth_reich.dds"			
 	}
 	SpriteType = {
-	name = "GFX_goal_focus_DDR_aid_former_annexations"
+	name = "GFX_goal_DDR_aid_annexations"
 	texturefile = "gfx/interface/goals/focus_DDR_aid_former_annexations.dds"			
 	}
 	### North Korea ###

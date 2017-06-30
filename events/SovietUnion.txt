@@ -3,9 +3,75 @@
 ###########################
 
 add_namespace = soviet
-
 country_event = {
-	id = sov.42
+	id = soviet.1000
+	title = soviet.1000.t
+	desc = soviet.1000.d 
+	picture = GFX_report_event_sinosoviet_treaty
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = "The Treaty of Friendship, Alliance and Mutual Assistance."
+		PRC = { 
+			set_country_flag = SOV_sino_soviet_help
+			add_timed_idea = {
+				idea = sino_soviet_aid
+				days = 730
+		}
+		}
+		SOV = { 
+			set_country_flag = SOV_sino_soviet_help1
+			add_timed_idea = {
+				idea = sino_soviet_aid1
+				days = 730
+			}
+		}
+	}
+	option = { #Refuse
+		name = "We will deal with our problems ourselves."
+	}
+}
+country_event = {
+	id = soviet.1001
+	title = soviet.1001.t
+	desc = soviet.1001.d 
+	picture = GFX_report_event_sinosoviet_mutual_developement_consideration
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		ai_chance = {
+			base = 10
+		}
+		name = "The Sino-Soviet Treaty of Mutual Developement!"
+		PRC = { 
+			set_country_flag = SOV_sino_soviet_developement_accepted
+			add_ideas = {
+				idea = sino_soviet_developement
+			}
+			give_military_access = SOV
+		}
+		SOV = { 
+			set_country_flag = SOV_sino_soviet_developement_accepted
+			add_ideas = {
+				idea = sino_soviet_developement
+			}
+			give_military_access = PRC
+		}
+		hidden_effect = {
+			country_event = { hours = 6 id = news.1002 }
+		}
+	}
+	option = { #Refuse
+		ai_chance = {
+			base = 0
+		}
+		name = "We have our own cause and will form our own path."
+	}
+}
+country_event = {
+	id = soviet.42
 	title = "Turkey wants to Join Comintern"
 	desc = "Turkey has decided to side with the rightful way of Communism, let them join the Comintern to establish a stronger relationship."
 	picture = GFX_report_event_degaulle_churchill

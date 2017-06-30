@@ -509,8 +509,8 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.1
-				unity_factor = 0.1
+				trade_opinion_factor = 0.5
+				industrial_capacity_factory = 0.15
 			}
 		}
 		USA_segregation = { 
