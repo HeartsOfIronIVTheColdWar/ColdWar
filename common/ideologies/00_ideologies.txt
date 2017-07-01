@@ -79,6 +79,9 @@ ideologies = {
 			
 			maoism = {
 			}
+			
+			juche = {
+			}
 		}
 		
 		dynamic_faction_names = {
