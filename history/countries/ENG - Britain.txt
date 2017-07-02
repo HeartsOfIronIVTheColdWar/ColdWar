@@ -36,7 +36,64 @@ set_national_unity = 0.85
 		election_frequency = 60
 		elections_allowed = yes 
 	}
-	# DIPLOMACY
+	# DIPLOMACY / PUPPETS
+#	if = {
+#		limit = {
+#			has_dlc = "Together for Victory"
+#		}
+#		set_autonomy = {
+#			target = GHA
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		set_autonomy = {
+#			target = SIL
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		set_autonomy = {
+#			target = UGA
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		set_autonomy = {
+#			target = MAW
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		set_autonomy = {
+#			target = ZAM
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		set_autonomy = {
+#			target = KEN
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		set_autonomy = {
+#			target = GAM
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		set_autonomy = {
+#			target = MAL
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.2
+#		}
+#		else = {
+#			puppet = SIL
+#			puppet = UGA
+#			puppet = GHA
+#			puppet = MAW
+#			puppet = ZAM
+#			puppet = KEN
+#			puppet = GAM
+#			puppet = MAL
+#		}
+#	}
+	
+
 #	if = {
 #	limit = {
 #		has_dlc = "Together for Victory"

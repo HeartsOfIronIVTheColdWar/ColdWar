@@ -207,15 +207,12 @@ focus_tree = {
 		x = 32
 		y = 0
 		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = SOV }
-			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 35000 producer = SOV }
-			add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 15000 producer = SOV }
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = SOV }
-			add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = SOV }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 85000 producer = SOV }
 			
+			add_equipment_to_stockpile = { type = modern_tank_equipment_0 amount = 6000 producer = SOV }
+			add_equipment_to_stockpile = { type = motorized_equipment_0 amount = 9000 producer = SOV }
+			add_equipment_to_stockpile = { type = mechanized_equipment_0 amount = 6000 producer = SOV }		
 		}
-		
-
 	}
 	focus = {
 		id = SOV_NKVD
@@ -717,7 +714,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_China_Joins_KOMINFORM
-		icon = GFX_focus_generic_polish_deal
+		icon = GFX_goal_focus_SOV_PRC_euroasian
 		cost = 10
 		prerequisite = {
 			focus = SOV_One_Class_One_People
@@ -2077,7 +2074,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_The_Euroasian_Defense_Pact
-		icon = GFX_goal_anschluss
+		icon = GFX_goal_focus_SOV_euroasia
 		cost = 20
 		prerequisite = {
 			focus = SOV_China_Joins_KOMINFORM

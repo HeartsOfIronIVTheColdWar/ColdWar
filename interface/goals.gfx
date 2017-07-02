@@ -36,7 +36,14 @@ spriteTypes = {
 	name = "GFX_goal_focus_nuclear_submarines"
 	texturefile = "gfx/interface/goals/focus_nuclear_submarines2.dds"			
 	}
-	
+	SpriteType = {
+	name = "GFX_goal_focus_SOV_euroasia"
+	texturefile = "gfx/interface/goals/focus_SOV_euroasia.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_SOV_PRC_euroasian"
+	texturefile = "gfx/interface/goals/focus_SOV_PRC_euroasian.dds"			
+	}
 	### USA ###
 	SpriteType = {
 	name = "GFX_goal_focus_important_paper"
@@ -54,7 +61,11 @@ spriteTypes = {
 	name = "GFX_goal_USA_strategic_air_command"
 	texturefile = "gfx/interface/goals/focus_USA_strategic_air_command.dds"			
 	}	
-	
+	SpriteType = {
+	name = "GFX_focus_usa_truman"
+	texturefile = "gfx/interface/goals/focus_usa_truman.dds"			
+	}	
+
 	#### Generic continuous goal icons
 	
 	SpriteType = {

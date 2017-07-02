@@ -7,7 +7,7 @@ state={
 		rubber=4
 	}
 	history={
-		owner = ENG
+		owner = UGA
 		victory_points = {
 			12989 3 
 		}

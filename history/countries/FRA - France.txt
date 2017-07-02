@@ -52,13 +52,20 @@ set_national_unity = 0.7
 #		}
 #		set_autonomy = {
 #			target = SAA
-#			autonomous_state = autonomy_integrated_puppet
+#			autonomous_state = autonomy_protectoratecolonies
+#			freedom_level = 0.5
+#		}
+#		set_autonomy = {
+#			target = SVN
+#			autonomous_state = autonomy_puppetcolonies
+#			freedom_level = 0.2
 #		}
 #		else = {
 #			puppet = SAA
+#			puppet = SVN
 #		}
 #	}
-#	puppet = SVN
+
 }
 
 1960.1.1 = {

@@ -1,6 +1,6 @@
-﻿﻿###########################
+﻿######################
 # Breakup Events
-###########################
+############################
 
 add_namespace = breakup
 
@@ -48,7 +48,6 @@ country_event = {
 		add_ideas = separatism
 	}
 
-	
 	option = {
 		name = breakup.1.a
 		add_political_power = -50

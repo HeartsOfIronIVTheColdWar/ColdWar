@@ -5,14 +5,14 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=22.000
+		chromium=40
 	}
 
 	history={
 		owner = SOV
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 3
 		}
 		add_core_of = SOV
 		add_core_of = KAZ

@@ -1,4 +1,5 @@
-From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+﻿From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+10904;1889;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;
 8866;3420;;-1;-1;-1;-1;-1;TIRAN_STRAIT;
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas

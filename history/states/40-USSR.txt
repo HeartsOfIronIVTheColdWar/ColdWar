@@ -3,7 +3,9 @@ state={
 	id=40
 	name="STATE_40" # Barnaul
 	manpower = 2107451
-	
+	resources={
+		steel=22
+	}
 	state_category = large_town
 
 	history={

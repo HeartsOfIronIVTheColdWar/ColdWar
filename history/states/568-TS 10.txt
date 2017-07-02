@@ -3,7 +3,9 @@ state={
 	id=568
 	name="STATE_568" # Krasnoyarsk
 	manpower = 1726427
-	
+	resources={
+		steel=26
+	}
 	state_category = town
 
 	history={

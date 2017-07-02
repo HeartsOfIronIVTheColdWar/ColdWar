@@ -49,10 +49,7 @@ set_national_unity = 0.85
 	}
 	}
 	#NATO
-	set_autonomy = {
-		target = JAP
-		autonomous_state =  autonomy_puppet
-	}
+	puppet = JAP
 	give_military_access = ENG
 	give_military_access = FRA
 	give_military_access = HOL

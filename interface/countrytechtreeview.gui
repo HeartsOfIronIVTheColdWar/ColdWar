@@ -2016,7 +2016,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1951"
+					text = "1960"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2029,7 +2029,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1953"
+					text = "1970"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2042,7 +2042,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1955"
+					text = "1980"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2055,7 +2055,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1957"
+					text = "1990"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -2227,6 +2227,18 @@ guiTypes = {
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
 					text = "INDUSTRY_TITLE_CONSTRUCTION"
+					maxWidth = 250
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "industry_subtitle_military_construction"
+					position = { x = 1400 y = 255  }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "INDUSTRY_TITLE_MILITARY_CONSTRUCTION"
 					maxWidth = 250
 					maxHeight = 62
 					format = center

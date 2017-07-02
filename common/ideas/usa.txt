@@ -337,7 +337,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.1
 			}	
 		}
 		
@@ -413,10 +413,11 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = generic_manpower_bonus 
+			picture = idea_hun_secret_rearmament 
 			
 			modifier = {
-				conscription = 0.05
+				conscription_factor = 0.1
+				conscription = 0.005
 			}
 		}
 		
@@ -434,7 +435,7 @@ ideas = {
 			picture = generic_manpower_bonus 
 			
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.1
 			}		
 		}
 		
@@ -452,7 +453,7 @@ ideas = {
 			picture = generic_manpower_bonus 
 			
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.1
 			}		
 		}
 		
