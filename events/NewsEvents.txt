@@ -270,6 +270,7 @@ news_event = {
 			tag = ENG
 		}
 		custom_effect_tooltip = suez1.b2.tt
+		FRA = { country_event = { id = suez.2 days = 1 } }
 	}
 	
 	option = {

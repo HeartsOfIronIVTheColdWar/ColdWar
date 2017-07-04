@@ -1,0 +1,41 @@
+﻿###########################
+# Suez Crisis Events
+###########################
+
+add_namespace = suez
+
+#uk is upset
+country_event = {
+	id = suez.1
+	title = suez.1.t
+	desc = suez.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = suez.1.a
+	}
+	
+	option = {
+		name = suez.1.b
+	}
+}
+
+#uk doesn't care
+country_event = {
+	id = suez.2
+	title = suez.2.t
+	desc = suez.2.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = suez.2.a
+	}
+	
+	option = {
+		name = suez.2.b
+	}
+}
