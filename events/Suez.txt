@@ -15,10 +15,16 @@ country_event = {
 	
 	option = {
 		name = suez.1.a
+		ISR = {
+			country_event = { id = suez.3 days = 1 }
+		}
 	}
 	
 	option = {
 		name = suez.1.b
+		hidden_effect = {
+			set_global_flag = suez_france_out
+		}
 	}
 }
 
@@ -33,9 +39,70 @@ country_event = {
 	
 	option = {
 		name = suez.2.a
+		ISR = {
+			country_event = { id = suez.3 days = 1 }
+		}
 	}
 	
 	option = {
 		name = suez.2.b
+		hidden_effect = {
+			set_global_flag = suez_france_out
+		}
+		ENG = {
+			country_event = { id = suez.4 days = 1 }
+		}
+	}
+}
+
+#israel invited to Sèvres
+country_event = {
+	id = suez.3
+	title = suez.3.t
+	picture = GFX_report_event_polish_tanks_01
+	
+	desc = {
+		text = suez.3.d_uk
+		trigger = {
+			NOT = {
+				has_global_flag = suez_uk_out
+			}
+		}
+	}
+	
+	desc = {
+		text = suez.3.d_nouk
+		trigger = {
+			has_global_flag = suez_uk_out
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = suez.3.a
+	}
+	
+	option = {
+		name = suez.3.b
+	}
+}
+
+#france refuses to join, uk must decide whether to act without them
+country_event = {
+	id = suez.4
+	title = suez.4.t
+	desc = suez.4.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = suez.4.a
+	}
+
+	
+	option = {
+		name = suez.4.b
 	}
 }

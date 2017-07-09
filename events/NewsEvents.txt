@@ -24,6 +24,28 @@ news_event = {
 		
 	option = {
 		name = news.520719.a 
+		trigger = {
+			NOT = {
+				OR = {
+					tag = USA
+					tag = SOV
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = news.520719.b
+		trigger = {
+			tag = USA
+		}
+	}
+	
+	option = {
+		name = news.520719.c
+		trigger = {
+			tag = SOV
+		}
 	}
 }
 
@@ -255,7 +277,7 @@ news_event = {
 		}
 	}
 
-	option = {
+	option = { #take action
 		name = news.1001.b1
 		trigger = {
 			tag = ENG
@@ -264,13 +286,16 @@ news_event = {
 		FRA = { country_event = { id = suez.1 days = 1 } }
 	}
 	
-	option = {
+	option = { #let it go
 		name = news.1001.b2
 		trigger = {
 			tag = ENG
 		}
 		custom_effect_tooltip = suez1.b2.tt
 		FRA = { country_event = { id = suez.2 days = 1 } }
+		hidden_effect = {
+			set_global_flag = suez_uk_out
+		}
 	}
 	
 	option = {
