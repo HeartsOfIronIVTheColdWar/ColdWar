@@ -85,15 +85,58 @@ country_event = {
 	
 	option = {
 		name = suez.3.b
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = suez_uk_out }
+				}
+				set_global_flag = suez_israel_out
+				ENG = {
+					country_event = { id = suez.4 days = 1 }
+				}
+				else = {
+					clr_global_flag = suez_uk_out
+					clr_global_flag = suez_france_out
+					clr_global_flag = suez_israel_out
+					set_global_flag = suez_egypt_wins
+				}
+			}
+		}
 	}
 }
 
-#france refuses to join, uk must decide whether to act without them
+#france/israel refuses to join, uk must decide whether to act without them
 country_event = {
 	id = suez.4
-	title = suez.4.t
-	desc = suez.4.d
 	picture = GFX_report_event_polish_tanks_01
+	
+	title = {
+		text = suez.4.t_nofrance
+		trigger = {
+			has_global_flag = suez_france_out
+		}
+	}
+	
+	title = {
+		text = suez.4.t_noisrael
+		trigger = {
+			has_global_flag = suez_israel_out
+		}
+	}
+	
+	desc = {
+		text = suez.4.d_nofrance
+		trigger = {
+			has_global_flag = suez_france_out
+		}
+	}
+	
+	desc = {
+		text = suez.4.d_noisrael
+		trigger = {
+			has_global_flag = suez_israel_out
+		}
+	}
 	
 	is_triggered_only = yes
 	
