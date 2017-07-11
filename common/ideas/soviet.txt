@@ -200,24 +200,6 @@ ideas = {
 			}
 		}
 		
-		SOV_remobilize_the_farmers = {
-			removal_cost = -1
-
-			picture = FRA_national_mobilization_focus
-			
-			allowed = {
-				always = no # Added via event
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			modifier = {
-				MONTHLY_POPULATION = 0.5
-			}
-		}
-		
 		SOV_great_patriotic_war_winner = {
 			removal_cost = -1
 
@@ -259,21 +241,7 @@ ideas = {
 				decryption_factor = 0.2
 			}
 		}
-		light_factory_economy = {
-			allowed = {
-				always = no
-				has_government = communism
-			}
-
-			removal_cost = -1
-			
-			picture = generic_production_bonus		
-
-			modifier = {
-				consumer_goods_factor = 0.05
-				industrial_capacity_factory = 0.1
-			}
-		}
+###LEFT BRANCH OF 1950 ECONOMIC TREE ###
 		heavy_factory_economy = {
 			allowed = {
 				always = no
@@ -288,6 +256,42 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
+		heavy_plan_economy = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus	
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				trade_opinion_factor = -0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		SOV_remobilize_the_farmers = {
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				conscription = 0.1 
+				MONTHLY_POPULATION = 0.5
+			}
+		}
+		
+###RIGHT BRANCH OF 1950 ECONOMIC TREE ###
 		international_trade = {
 			
 			
@@ -304,9 +308,109 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
+				trade_opinion_factor = 0.4
+			}
+		}
+		light_factory_economy = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus		
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		light_factory_economy2 = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus	
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				unity_factor = 0.1
+			}
+		}
+		light_factory_economy3 = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus	
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = 0.25
+				production_speed_industrial_complex_factor = 0.15
+				unity_factor = 0.2
+			}
+		}
+		SOV_consumerism = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus	
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				unity_factor = 0.2
+				trade_opinion_factor = 0.4
+				production_factory_efficiency_gain_factor = 0.25				
+			}
+		}
+###ECONOMIC TREE AFTER MERGE###
+		SOV_comecon = { #Renamed to COMECON reconstitution
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus	
+
+			modifier = {
+				political_power_factor = -0.1
+				trade_opinion_factor = 0.05
+			}
+		}
+		SOV_comecon2 = { #Renamed to COMECON reconstitution
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus	
+
+			modifier = {
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.1
 				trade_opinion_factor = 0.2
 			}
 		}
+
+	
 	}
 	
 ###ADVISORS AND STAFF###
