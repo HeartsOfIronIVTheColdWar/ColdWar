@@ -42,6 +42,7 @@ set_national_unity = 0.8
 		SOV_great_patriotic_war_winner
 		SOV_rebuilding_the_nation
 		SOV_comecon
+		SOV_deadhand
 	}
 	set_politics = {
 

@@ -29,6 +29,18 @@ spriteTypes = {
 	
 	### USSR ###
 	SpriteType = {
+	name = "GFX_goal_ussr_forced_labour"
+	texturefile = "gfx/interface/goals/focus_SOV_forced_labour.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_SOV_rolemodelcitizens"
+	texturefile = "gfx/interface/goals/focus_SOV_rolemodelcitizens.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_SOV_comecon"
+	texturefile = "gfx/interface/goals/focus_SOV_comecon.dds"			
+	}
+	SpriteType = {
 	name = "GFX_goal_focus_socialist_economic_miracle"
 	texturefile = "gfx/interface/goals/focus_socialist_economic_miracle.dds"			
 	}

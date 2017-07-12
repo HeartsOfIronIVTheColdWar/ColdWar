@@ -1,6 +1,19 @@
 ideas = {
 	country = {
-		
+		SOV_deadhand = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_SOV_deadhand	
+
+			modifier = {
+				political_power_factor = 0.01
+			}
+		}
 		sino_soviet_aid = {
 			
 			removal_cost = -1
@@ -267,7 +280,7 @@ ideas = {
 			picture = generic_production_bonus	
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.1
 				trade_opinion_factor = -0.2
 				production_factory_max_efficiency_factor = 0.1
 			}
@@ -286,7 +299,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.1 
+				conscription = 0.005 
 				MONTHLY_POPULATION = 0.5
 			}
 		}
@@ -386,7 +399,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = generic_production_bonus	
+			picture = GFX_idea_SOV_comecon	
 
 			modifier = {
 				political_power_factor = -0.1
@@ -401,7 +414,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = generic_production_bonus	
+			picture = GFX_idea_SOV_comecon	
 
 			modifier = {
 				political_power_factor = 0.05
@@ -409,6 +422,24 @@ ideas = {
 				trade_opinion_factor = 0.2
 			}
 		}
+		SOV_Gulags = { #Renamed to COMECON reconstitution
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_SOV_comecon	
+
+			modifier = {
+				political_power_factor = -0.1
+				unity_factor = -0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		
 
 	
 	}

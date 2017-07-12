@@ -1,4 +1,18 @@
-spriteTypes = {	
+spriteTypes = {
+
+###SOVIET###
+	spriteType = {
+		name = "GFX_idea_USA_mad"
+		texturefile = "gfx/interface/ideas/idea_mad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_deadhand"
+		texturefile = "gfx/interface/ideas/idea_deadhand.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_comecon"
+		texturefile = "gfx/interface/ideas/idea_comecon.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_elektronorgtechnica"
 		texturefile = "gfx/interface/ideas/idea_elorg.dds"
@@ -11,6 +25,7 @@ spriteTypes = {
 		name = "GFX_idea_su_155"
 		texturefile = "gfx/interface/ideas/idea_su_155.dds"
 	}
+###MIDDLE EAST###
 	spriteType = {
 		name = "GFX_idea_zionist_restoration"
 		texturefile = "gfx/interface/ideas/zionist_restoration.dds"
