@@ -37,12 +37,13 @@ set_national_unity = 0.8
 		low_economic_mobilisation
 		extensive_conscription
 		limited_exports
+		surveillance_state
 		#ideas
 		home_of_revolution
 		SOV_great_patriotic_war_winner
 		SOV_rebuilding_the_nation
 		SOV_comecon
-		SOV_deadhand
+#		SOV_deadhand
 	}
 	set_politics = {
 

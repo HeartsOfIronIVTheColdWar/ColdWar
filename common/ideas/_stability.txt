@@ -33,7 +33,6 @@ ideas = {
    			}
 			
 			cancel_if_invalid = no
-			default = yes
 		}
 		
 		high_stability = {
@@ -80,7 +79,8 @@ ideas = {
 		}
 		
 		average_stability = {
-						
+			
+			default = yes			
 			cost = 0
 			removal_cost = -1
 			

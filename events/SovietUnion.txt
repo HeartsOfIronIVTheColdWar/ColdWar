@@ -4,6 +4,132 @@
 
 add_namespace = soviet
 
+###Soviet-Yugoslav events###
+country_event = { #Tito Question
+	id = soviet.620
+	title = soviet.620.t
+	desc = soviet.620.d 
+	picture = GFX_report_event_tito_stalin
+
+	is_triggered_only = yes
+	
+	option = { #Propose a beneficiant offer for them
+		name = "We will offer economic assistance and autonomy."
+		ai_chance = {
+			base = 2
+		}
+		hidden_effect = {
+			set_global_flag = SOV_friendly_offer
+		}
+	}
+	option = { #Demand they join or else / forcefull offer
+		name = "There will be no offer, they join or face the consequences."
+		ai_chance = {
+			base = 2
+		}
+		hidden_effect = {
+			set_global_flag = SOV_forcefull_offer
+		}		
+	}
+	option = { #Disregard as waste of time
+		name = "Tito is a waste of time, leave the sly dog be."
+		ai_chance = {
+			base = 6
+		}
+		unlock_national_focus = SOV_Block_Policys
+		hidden_effect = {
+			set_global_flag = tito_skipped
+		}
+	}
+}
+country_event = { #Offer independence
+	id = soviet.625
+	title = soviet.625.t
+	desc = soviet.625.d 
+	picture = GFX_report_event_tito_stalin
+
+	is_triggered_only = yes
+	
+	option = { #Friendly offer
+		name = "A kind offer of cooperation between socialist nations."
+		ai_chance = {
+			base = 10
+		}
+		YUG = country_event = { hours = 6 id = soviet.626 }
+	}
+}
+country_event = { #Tito Question
+	id = soviet.626
+	title = soviet.626.t
+	desc = soviet.626.d 
+	picture = GFX_report_event_tito_stalin
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = "We accept."
+		ai_chance = {
+			base = 4
+		}
+		YUG = add_ideas = YUG_economic_assistance
+		SOV = { add_to_faction = YUG }
+		
+	}
+	option = { #Decline
+	name = "We will forge our own path."
+		ai_chance = {
+		base = 6
+	}
+	}
+}
+country_event = { #Force of Will
+	id = soviet.630
+	title = soviet.630.t
+	desc = soviet.630.d 
+	picture = GFX_report_event_tito_stalin
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = "Send the Ultimatum to Tito himself."
+		ai_chance = {
+			base = 10
+		}
+		YUG = { country_event = { hours = 6 id = soviet.631 } }
+	}
+}
+country_event = { #Force of Will
+	id = soviet.631
+	title = soviet.631.t
+	desc = soviet.631.d 
+	picture = GFX_report_event_tito_stalin
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = "We accept..."
+		ai_chance = {
+			base = 2
+		}
+		SOV = { add_to_faction = YUG }
+		SOV = { puppet = YUG }
+	}
+	option = { #Decline
+		name = "Tell Stalin to go to hell."
+		ai_chance = {
+			base = 8
+		}
+		SOV =  {
+			create_wargoal = {
+				type = puppet_wargoal_focus 
+				target = YUG
+				generator = owned_states
+			}
+		}
+	}
+}
+
+###Sino-Soviet treaties###
 country_event = { #First SinoSoviet focus on the Soviet focus tree
 	id = soviet.1000
 	title = soviet.1000.t
@@ -147,5 +273,26 @@ country_event = { #Fifth SinoSoviet focus on the Soviet focus tree
 	}
 	option = { #Refuse
 		name = "As there are no immideate treats there is no need for a alliance."
+	}
+}
+country_event = { #Fifth SinoSoviet focus on the Soviet focus tree
+	id = soviet.1100
+	title = soviet.1100.t
+	desc = soviet.1100.d 
+	picture = GFX_report_event_sinosoviet_treaty
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = "We accept!"
+		SOV = { add_to_faction = RAJ }
+		RAJ = { add_ideas = sino_soviet_integration }
+		SOV = { add_ideas = sino_soviet_integration }
+		hidden_effect = {
+			country_event = { hours = 6 id = news.1004 }
+		}
+	}
+	option = { #Refuse
+		name = "This is just a cheap offer to make us join their faction."
 	}
 }

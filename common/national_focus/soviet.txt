@@ -18,6 +18,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_fifth_five_year_plan
 			hidden_effect = {			
 				set_country_flag = { flag = SOV_fifth_five_year_plan_inaction days = 1825 value = 1 }
+#				Add event chain start here for the five year plan			
 			}
 		}
 	}
@@ -102,7 +103,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_spies_safety
 			set_global_flag = SOV_spies_gives_information
 			hidden_effect = {
-				USA = { country_event = { id = soviet.601} }
+#				USA = { country_event = { id = soviet.601} }
 			}
 		}
 	}
@@ -568,6 +569,7 @@ focus_tree = {
 		x = 6
 		y = 7
 		completion_reward = {
+			add_ideas = SOV_role_model
 			SOV = { country_event = { id = soviet.610 days = 1 } }
 			custom_effect_tooltip = SOV_role_model
 		}
@@ -774,7 +776,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			SOV = { country_event = { id = soviet.620 days = 1 } }
-			custom_effect_tooltip = SOV_the_tito_question
+			custom_effect_tooltip = SOV_the_tito_question_tt
 		}
 		
 
@@ -789,13 +791,23 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_Offer_Independence
 		}
+		bypass = { 
+			has_global_flag = tito_skipped
+		}
 		x = 10
 		y = 4
-		completion_reward = {
-			SOV = { country_event = { id = soviet.630 days = 1 } }
-			custom_effect_tooltip = SOV_forcefull_offer
-		}
 
+		available = {
+			AND = {
+				has_global_flag = SOV_forcefull_offer
+				NOT = {
+					has_global_flag = tito_skipped
+				}
+			}
+		}
+		completion_reward = {
+			SOV = { country_event = { hours = 6 id = soviet.630 } }
+		}
 	}
 	focus = {
 		id = SOV_Offer_Independence
@@ -807,13 +819,22 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_Force_of_Will
 		}
+		bypass = { 
+			has_global_flag = tito_skipped
+		}
 		x = 12
 		y = 4
+		available = {
+			AND = {
+				has_global_flag = SOV_friendly_offer
+				NOT = {
+					has_global_flag = tito_skipped
+				}
+			}
+		}
 		completion_reward = {
 			SOV = { country_event = { id = soviet.625 days = 1 } }
-			custom_effect_tooltip = SOV_friendly_offer
 		}
-
 	}
 	focus = {
 		id = SOV_Block_Policys
@@ -968,174 +989,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SOV_Aid_americas
 			hidden_effect = {
-				if = {
-					limit = {
-						MEX = {
-							communism > 0.25
-						}
-					}
-					MEX = {
-						random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
-						}
-						random_owned_controlled_state = {
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-						}
-					}
-				}
-				if = {
-						limit = {
-							BRA = {
-								communism > 0.25
-							}
-						}
-						BRA = {
-						random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
-						}
-						random_owned_controlled_state = {
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-						}
-						}
-					}
-				if = {
-						limit = {
-							PAR = {
-								communism > 0.25
-							}
-						}
-						PAR = {
-						random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
-						}
-						random_owned_controlled_state = {
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-						}
-						}
-					}
-				if = {
-						limit = {
-							COL = {
-								communism > 0.25
-							}
-						}
-						COL = {
-						random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
-						}
-						random_owned_controlled_state = {
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-						}
-						}
-					}
-				if = {
-						limit = {
-							PAN = {
-								communism > 0.25
-							}
-						}
-						PAN = {
-							random_owned_controlled_state = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-							}
-							random_owned_controlled_state = {
-								add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-							}
-						}
-					}
-				if = {
-						limit = {
-							CUB = {
-								communism > 0.25
-							}
-						}
-						CUB = {
-						random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
-						}
-						random_owned_controlled_state = {
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-						}
-						}
-					}
-				if = {
-						limit = {
-							PRU = {
-								communism > 0.25
-							}
-						}
-						PRU = {
-						random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-								type = industrial_complex
-								level = 1
-								instant_build = yes
-							}
-						}
-						random_owned_controlled_state = {
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-						}
-						}
-					}
+
 			}
 			custom_effect_tooltip = SOV_Aid_americas1
 			
@@ -1476,8 +1330,7 @@ focus_tree = {
 			navy_experience = 50
 			add_tech_bonus = {
 				name = capital_ships_bonus
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 0.7
 				uses = 1
 				technology = early_carrier
 				technology = basic_carrier
@@ -1498,7 +1351,7 @@ focus_tree = {
 		x = 25
 		y = 3
 		completion_reward = {
-			navy_experience = 25§§
+			navy_experience = 25
 			add_tech_bonus = {
 				name = ss_bonus
 				bonus = 0.5
@@ -1528,8 +1381,9 @@ focus_tree = {
 				uses = 2
 				technology = improved_destroyer
 				technology = advanced_destroyer
-				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
+				technology = improved_cruiser
+				technology = advanced_cruiser
+				technology = basic_frigate
 			}
 		}
 
@@ -1724,10 +1578,11 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 0.5
-				uses = 2
-				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
+				bonus = 0.7
+				uses = 1
+				technology = advanced_cruiser
+				technology = early_modern_cruiser
+				technology = modern_cruiser
 			}
 		}
 
@@ -1765,8 +1620,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 0.6
-				uses = 2
+				uses = 1
 				technology = motorised_infantry
+				technology = IFV_1950
+				technology = APC_1950
 			}
 		}
 
@@ -1784,31 +1641,25 @@ focus_tree = {
 			army_experience = 35
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 0.2
 				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.4
+				bonus = 0.2
 				uses = 2
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 0.2
 				uses = 1
 				category = artillery
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
-				uses = 1
-				category = motorized_equipment
-			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 0.4
 				uses = 1
 				category = armor
 			}
@@ -1845,7 +1696,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = artillery
 			}
 		}
@@ -1860,6 +1711,14 @@ focus_tree = {
 		}
 		x = 33
 		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
 
 	}
 	focus = {
@@ -1872,6 +1731,36 @@ focus_tree = {
 		}
 		x = 32
 		y = 5
+		completion_reward = {
+			188 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+			89 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+			131 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+			137 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1989,7 +1878,30 @@ focus_tree = {
 		}
 		x = 36
 		y = 4
-
+		completion_reward = {
+			64 = {
+				add_building_construction = {
+					type = anti_air_building  
+					level = 2
+					instant_build = yes
+				}
+			}
+			61 = {
+				add_building_construction = {
+					type = anti_air_building  
+					level = 2
+					instant_build = yes
+				}
+			}
+			9 = {
+				add_building_construction = {
+					type = anti_air_building  
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = SOV_anti_air_op
+		}
 	}
 	focus = {
 		id = SOV_Industrialized_Gulags

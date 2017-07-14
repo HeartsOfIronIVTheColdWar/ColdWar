@@ -6,6 +6,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_sinosoviet_naval_treaty_small.dds"
 	}
 	spriteType = {
+		name = "GFX_report_event_tito_stalin"
+		texturefile = "gfx/event_pictures/report_event_tito_stalin.dds"
+	}
+	spriteType = {
 		name = "GFX_report_event_sinosoviet_treaty"
 		texturefile = "gfx/event_pictures/report_event_sinosoviet_treaty.dds"
 	}
