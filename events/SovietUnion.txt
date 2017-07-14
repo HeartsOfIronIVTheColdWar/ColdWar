@@ -3,7 +3,8 @@
 ###########################
 
 add_namespace = soviet
-country_event = {
+
+country_event = { #First SinoSoviet focus on the Soviet focus tree
 	id = soviet.1000
 	title = soviet.1000.t
 	desc = soviet.1000.d 
@@ -12,6 +13,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #Accept
+		ai_chance = {
+			base = 10
+		}
 		name = "The Treaty of Friendship, Alliance and Mutual Assistance."
 		PRC = { 
 			set_country_flag = SOV_sino_soviet_help
@@ -29,10 +33,13 @@ country_event = {
 		}
 	}
 	option = { #Refuse
+		ai_chance = {
+			base = 0
+		}
 		name = "We will deal with our problems ourselves."
 	}
 }
-country_event = {
+country_event = { #Second SinoSoviet focus on the Soviet focus tree
 	id = soviet.1001
 	title = soviet.1001.t
 	desc = soviet.1001.d 
@@ -42,7 +49,7 @@ country_event = {
 	
 	option = { #Accept
 		ai_chance = {
-			base = 10
+			base = 5
 		}
 		name = "The Sino-Soviet Treaty of Mutual Developement!"
 		PRC = { 
@@ -59,63 +66,86 @@ country_event = {
 			}
 			give_military_access = PRC
 		}
+		837 = { set_state_name = "Liaodong" }
+		PRC = { transfer_state = 837 }
+		hidden_effect = {
+			country_event = { hours = 6 id = news.1001 }
+		}
+	}
+	option = { #Refuse
+		ai_chance = {
+			base = 5
+		}
+		name = "We have our own cause and will form our own path."
+	}
+}
+country_event = { #third SinoSoviet focus on the Soviet focus tree
+	id = soviet.1002
+	title = soviet.1002.t
+	desc = soviet.1002.d 
+	picture = GFX_report_event_sinosoviet_naval_treaty_small
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		ai_chance = {
+			base = 3
+		}
+		name = "We proudly accept the joint action of our nations navies."
+		837 = { set_state_name = "Port Arthur" }
+		SOV = { transfer_state = 837 }
+		SOV = send_equipment = { target = PRC type = convoy_1 amount = 130 }
+		608 = { add_building_construction = { type = dockyard level = 3 instant_build = yes } }
+		609 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
 		hidden_effect = {
 			country_event = { hours = 6 id = news.1002 }
 		}
 	}
 	option = { #Refuse
 		ai_chance = {
-			base = 0
+			base = 7
 		}
-		name = "We have our own cause and will form our own path."
+		name = "There will be no naval treaty, we will defend ourselves."
 	}
 }
-country_event = {
-	id = soviet.42
-	title = "Turkey wants to Join Comintern"
-	desc = "Turkey has decided to side with the rightful way of Communism, let them join the Comintern to establish a stronger relationship."
-	picture = GFX_report_event_degaulle_churchill
+country_event = { #fourth SinoSoviet focus on the Soviet focus tree
+	id = soviet.1003
+	title = soviet.1003.t
+	desc = soviet.1003.d 
+	picture = GFX_report_event_sinosoviet_treaty
 
 	is_triggered_only = yes
 	
-	option = {
-		name = "We Welcome our new Turkish Allies!"
-		add_to_faction = FROM
-		FROM = {
-			add_ai_strategy = {
-				type = alliance
-				id = "SOV"
-				value = 200
-			}
+	option = { #Accept
+		name = "The Sino-Soviet Defense Treaty"
+		PRC = add_ideas = sino_soviet_military_defense_pact
+		SOV = add_ideas = sino_soviet_military_defense_pact
+		hidden_effect = {
+			country_event = { hours = 6 id = news.1003 }
 		}
-		}	
-	option = {
-		name = "We cannot let them join at this time."
-		ai_chance = { factor = 0 }
-			}
+	}
+	option = { #Refuse
+		name = "As for now we have no need for closer integration."
+	}
 }
-
-# tripartite_pact
-# anti_comintern_pact nations are asked to join pact, agreeing = relations with GER and hit with SOV
-
-country_event = {
-	id = soviet.101
-	title = soviet.101.t
-	desc = soviet.101.d
-	picture = GFX_report_event_hitler_croatia_handshake
-	
+country_event = { #Fifth SinoSoviet focus on the Soviet focus tree
+	id = soviet.1004
+	title = soviet.1004.t
+	desc = soviet.1004.d 
+	picture = GFX_report_event_sinosoviet_treaty
 
 	is_triggered_only = yes
 	
-	option = {
-		name = soviet.101.a		#join	
-		add_opinion_modifier = { target = SOV modifier = tripartite_pact_opinion }
-		add_ideas = Sinosoviet_Alliance_accepted
+	option = { #Accept
+		name = "The Sino-Soviet Alliance of Defence and Economic Integration"
+		SOV = { add_to_faction = PRC }
+		PRC = { add_ideas = sino_soviet_integration }
+		SOV = { add_ideas = sino_soviet_integration }
+		hidden_effect = {
+			country_event = { hours = 6 id = news.1004 }
+		}
 	}
-	
-	option = {
-		name = soviet.101.b		#refuse
-		add_opinion_modifier = { target = SOV modifier = refused_tripartite_pact_opinion }
+	option = { #Refuse
+		name = "As there are no immideate treats there is no need for a alliance."
 	}
-
 }

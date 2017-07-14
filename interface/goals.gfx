@@ -29,6 +29,14 @@ spriteTypes = {
 	
 	### USSR ###
 	SpriteType = {
+	name = "GFX_goal_focus_SOV_africa"
+	texturefile = "gfx/interface/goals/focus_SOV_africa.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_SOV_banana"
+	texturefile = "gfx/interface/goals/focus_SOV_banana.dds"			
+	}
+	SpriteType = {
 	name = "GFX_goal_ussr_forced_labour"
 	texturefile = "gfx/interface/goals/focus_SOV_forced_labour.dds"			
 	}

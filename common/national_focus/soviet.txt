@@ -16,6 +16,9 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			custom_effect_tooltip = SOV_fifth_five_year_plan
+			hidden_effect = {			
+				set_country_flag = { flag = SOV_fifth_five_year_plan_inaction days = 1825 value = 1 }
+			}
 		}
 	}
 	focus = {
@@ -570,7 +573,7 @@ focus_tree = {
 		}
 
 	}
-	focus = {
+	focus = { #First SinoSoviet focus on the Soviet focus tree
 		id = SOV_Sinosoviet_Alliance
 		icon = GFX_goal_generic_alliance
 		cost = 10
@@ -595,7 +598,7 @@ focus_tree = {
 		}
 
 	}
-	focus = {
+	focus = { #Second SinoSoviet focus on the Soviet focus tree
 		id = SOV_Mutual_Developement
 		icon = GFX_goal_generic_improve_relations
 		cost = 10
@@ -603,24 +606,21 @@ focus_tree = {
 			focus = SOV_Sinosoviet_Alliance
 		}
 		available = {
-			is_puppet = no
 			has_government = communism 
 			PRC = {
 				NOT = { has_war_with = SOV }
-				has_government = communism 
-				NOT = { is_in_faction_with = USA }
+				has_government = communism  
 			}
 			OR = {
 				has_global_flag = PRC_Civil_war_ended 
 				has_global_flag = PRC_Civil_war_standstill 
 			}  
-#			custom_effect_tooltip = PRC_Mao_Discontent_tt
 		}
 		x = 8
 		y = 2
 		completion_reward = {
 			PRC = { country_event = { id = soviet.1001 days = 1 } }
-			custom_effect_tooltip = SOV_sino_soviet_aid_effects_tt
+			custom_effect_tooltip = SOV_sino_soviet_second_aid_effects_tt
 		}
 
 	}
@@ -675,7 +675,6 @@ focus_tree = {
 		completion_reward = {
 			PRC = { country_event = { id = soviet.1004 days = 1 } }
 			custom_effect_tooltip = SOV_china_joins_faction
-			SOV = { add_to_faction = PRC }
 		}
 
 	}
@@ -1222,7 +1221,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_The_Banana_Republics
-		icon = "gfx/interface/goals/focus_SAF_colonialist_crusade.dds"
+		icon = GFX_goal_focus_SOV_banana
 		cost = 5
 		prerequisite = {
 			focus = SOV_Socialistas_Americanas
@@ -1233,7 +1232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_African_socialism
-		icon = GFX_focus_SAF_german_coup
+		icon = GFX_goal_focus_SOV_africa
 		cost = 5
 		prerequisite = {
 			focus = SOV_Assist_Decolonization
@@ -2034,10 +2033,14 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
+		available = {
+			NOT = {
+				has_country_flag = SOV_fifth_five_year_plan_inaction
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = SOV_sixth_five_year_plan
 		}
-
 	}
 	focus = {
 		id = SOV_India_Joins_KOMINFORM

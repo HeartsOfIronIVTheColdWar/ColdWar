@@ -422,7 +422,7 @@ ideas = {
 				trade_opinion_factor = 0.2
 			}
 		}
-		SOV_Gulags = { #Renamed to COMECON reconstitution
+		SOV_Gulags = {
 			allowed = {
 				always = no
 				has_government = communism
@@ -437,6 +437,23 @@ ideas = {
 				unity_factor = -0.15
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.1
+			}
+		}
+		SOV_economic_miracle = { 
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_SOV_comecon	
+
+			modifier = {
+				unity_factor = 0.2
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		
