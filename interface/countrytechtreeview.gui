@@ -3037,21 +3037,26 @@ guiTypes = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 710 height = 1100
+					width = 900 height = 1100
 					min = { width= 150%% height = 200%% }
 				}
 				
 				iconType = {
 					name ="engineering_techtree_bg"
 					spriteType = "GFX_engineering_techtree_bg"
+					position = { x=1450 y=0 }
+				}
+
+				iconType = {
+					name ="engineering_techtree_bg2"
+					spriteType = "GFX_techtree_engineering_tab2"
 					position = { x=0 y=0 }
-				}		
+				}			
 
 				iconType = {
 					name ="wonderweapons_bg"
 					spriteType = "GFX_wonderweapons_bg"
 					position = { x=870 y=0 }
-					allwaystransparent = yes
 				}	
 				
 			}			

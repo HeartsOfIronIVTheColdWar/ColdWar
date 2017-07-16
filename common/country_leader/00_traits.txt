@@ -1008,12 +1008,12 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			motorized = {
-				soft_attack = 0.1
+				maximum_speed = 0.1
 				reliability = 0.1
 				build_cost_ic = -0.1
 			}
 			mechanized = {
-				speed = 0.1
+				maximum_speed = 0.1
 				reliability = 0.1
 				build_cost_ic = -0.1
 			}				

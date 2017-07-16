@@ -92,29 +92,6 @@ technologies = {
 			
 		}
 	}
-	tech_engineers_flamethrowers_1 = {
-
-		engineer = {
-			soft_attack = 2
-		}
-
-		research_cost = 1.5
-		start_year = 1945
-		folder = {
-			name = support_folder
-			position = { x = 1 y = 4 }
-		}
-		
-		categories = {
-			support_tech
-			engineers_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-		}
-	}	
 	tech_engineers2 = {
 
 		engineer = {
@@ -129,6 +106,10 @@ technologies = {
 		
 		path = {
 			leads_to_tech = tech_engineers3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_engineers_flamethrowers_2
 			research_cost_coeff = 1
 		}
 
@@ -161,6 +142,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = tech_engineers4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_engineers_flamethrowers_3
 			research_cost_coeff = 1
 		}		
 
@@ -195,6 +180,10 @@ technologies = {
 			leads_to_tech = tech_engineers5
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_engineers_flamethrowers_4
+			research_cost_coeff = 1
+		}
 		research_cost = 1.5
 		start_year = 1970
 		folder = {
@@ -219,6 +208,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = tech_engineers6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_engineers_flamethrowers_5
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
@@ -259,7 +252,121 @@ technologies = {
 			factor = 1
 		}
 	}
-	
+	tech_engineers_flamethrowers_1 = {
+
+		engineer = {
+			soft_attack = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 4 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}	
+	tech_engineers_flamethrowers_2 = {
+
+		engineer = {
+			soft_attack = 0.5
+		}
+
+		research_cost = 1.5
+		start_year = 1955
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	tech_engineers_flamethrowers_3 = {
+
+		engineer = {
+			soft_attack = 0.5
+		}
+
+		research_cost = 1.5
+		start_year = 1965
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}	
+	tech_engineers_flamethrowers_4 = {
+
+		engineer = {
+			soft_attack = 0.5
+		}
+
+		research_cost = 1.5
+		start_year = 1975
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 16 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}	
+	tech_engineers_flamethrowers_5 = {
+
+		engineer = {
+			soft_attack = 0.5
+		}
+
+		research_cost = 1.5
+		start_year = 1985
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}	
 	tech_recon = {
 
 		enable_subunits = {

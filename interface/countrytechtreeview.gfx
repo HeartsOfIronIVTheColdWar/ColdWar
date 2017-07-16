@@ -156,6 +156,11 @@ spriteTypes = {
 		textureFile = "gfx//interface//techtree_engineering_tab.dds"
 		noOfFrames = 2		
 	}
+	spriteType = {
+		name = "GFX_techtree_engineering_tab2"
+		textureFile = "gfx//interface//engineering_techtree_bg2.dds"
+		allwaystransparent = yes
+	}
 
 	spriteType = {
 		name = "GFX_industry_folder_tab"
