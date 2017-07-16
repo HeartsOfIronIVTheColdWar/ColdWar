@@ -25,6 +25,9 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = suez_france_out
 		}
+		ENG = {
+			country_event = { id = suez.4 days = 1 }
+		}
 	}
 }
 
@@ -48,9 +51,6 @@ country_event = {
 		name = suez.2.b
 		hidden_effect = {
 			set_global_flag = suez_france_out
-		}
-		ENG = {
-			country_event = { id = suez.4 days = 1 }
 		}
 	}
 }
@@ -85,6 +85,9 @@ country_event = {
 	
 	option = {
 		name = suez.3.b
+		FRA = {
+			country_event = { id = suez.5 days = 1}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -147,5 +150,17 @@ country_event = {
 	
 	option = {
 		name = suez.4.b
+	}
+}
+
+#france is informed israel refused the invitation
+country_event = {
+	id = suez.5
+	title = suez.5.t
+	picture = GFX_report_event_polish_tanks_01
+	desc = suez.5.d
+	
+	option = {
+		name = suez.5.a
 	}
 }

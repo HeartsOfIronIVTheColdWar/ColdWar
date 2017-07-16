@@ -131,9 +131,9 @@ country_event = { #Force of Will
 
 ###Sino-Soviet treaties###
 country_event = { #First SinoSoviet focus on the Soviet focus tree
-	id = soviet.1000
-	title = soviet.1000.t
-	desc = soviet.1000.d 
+	id = soviet.6000
+	title = soviet.6000.t
+	desc = soviet.6000.d 
 	picture = GFX_report_event_sinosoviet_treaty
 
 	is_triggered_only = yes
@@ -166,9 +166,9 @@ country_event = { #First SinoSoviet focus on the Soviet focus tree
 	}
 }
 country_event = { #Second SinoSoviet focus on the Soviet focus tree
-	id = soviet.1001
-	title = soviet.1001.t
-	desc = soviet.1001.d 
+	id = soviet.6001
+	title = soviet.6001.t
+	desc = soviet.6001.d 
 	picture = GFX_report_event_sinosoviet_mutual_developement_consideration
 
 	is_triggered_only = yes
@@ -206,9 +206,9 @@ country_event = { #Second SinoSoviet focus on the Soviet focus tree
 	}
 }
 country_event = { #third SinoSoviet focus on the Soviet focus tree
-	id = soviet.1002
-	title = soviet.1002.t
-	desc = soviet.1002.d 
+	id = soviet.6002
+	title = soviet.6002.t
+	desc = soviet.6002.d 
 	picture = GFX_report_event_sinosoviet_naval_treaty_small
 
 	is_triggered_only = yes
@@ -235,9 +235,9 @@ country_event = { #third SinoSoviet focus on the Soviet focus tree
 	}
 }
 country_event = { #fourth SinoSoviet focus on the Soviet focus tree
-	id = soviet.1003
-	title = soviet.1003.t
-	desc = soviet.1003.d 
+	id = soviet.6003
+	title = soviet.6003.t
+	desc = soviet.6003.d 
 	picture = GFX_report_event_sinosoviet_treaty
 
 	is_triggered_only = yes
@@ -255,9 +255,9 @@ country_event = { #fourth SinoSoviet focus on the Soviet focus tree
 	}
 }
 country_event = { #Fifth SinoSoviet focus on the Soviet focus tree
-	id = soviet.1004
-	title = soviet.1004.t
-	desc = soviet.1004.d 
+	id = soviet.6004
+	title = soviet.6004.t
+	desc = soviet.6004.d 
 	picture = GFX_report_event_sinosoviet_treaty
 
 	is_triggered_only = yes
@@ -276,9 +276,9 @@ country_event = { #Fifth SinoSoviet focus on the Soviet focus tree
 	}
 }
 country_event = { #Fifth SinoSoviet focus on the Soviet focus tree
-	id = soviet.1100
-	title = soviet.1100.t
-	desc = soviet.1100.d 
+	id = soviet.6100
+	title = soviet.6100.t
+	desc = soviet.6100.d 
 	picture = GFX_report_event_sinosoviet_treaty
 
 	is_triggered_only = yes
