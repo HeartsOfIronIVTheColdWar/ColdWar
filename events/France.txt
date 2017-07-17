@@ -1,1 +1,63 @@
-﻿
+﻿###########################
+# France Cold War Mod Events
+###########################
+
+add_namespace = fra
+
+
+##### FLAVOUR EVENTS
+
+# US DoS asks to lift ban on Coca Cola
+country_event = {
+	id = fra.501
+	title = fra.501.t
+	desc = fra.501.d
+	picture = 
+	
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = {
+		name = fra.501.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		hidden_effect = {
+			USA = { country_event = { days = 2 id = usa.10303 } }
+		}
+	}
+	
+	option = {
+		name = fra.501.b
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = {
+			USA = { country_event = { days = 2 id = usa.10302 } }
+		}
+	}
+}
+
+# US lower financial aid as sanction
+country_event = {
+	id = fra.502
+	title = fra.502.t
+	desc = fra.502.d
+	picture = 
+	
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = {
+		name = fra.502.a
+		FRA = {
+			add_timed_idea = { FRA_US_lowered_aid days = 365 }
+		}
+	}
+}

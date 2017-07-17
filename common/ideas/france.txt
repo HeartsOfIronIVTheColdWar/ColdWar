@@ -1,5 +1,6 @@
 ideas = {
 	country = {
+	
 		FRA_disjointed_government = {
 			
 			allowed = {
@@ -42,20 +43,27 @@ ideas = {
 			}
 		}		
 
-		FRA_strengthen_government_support_focus = {
-				picture = generic_pp_unity_bonus
-				allowed = {
-					always = no # Added via focus
-				}
-
-				allowed_civil_war = {
-					has_government = democratic
-				}
-
-				modifier = {
-					unity_weekly = 0.002
-				}
+		FRA_US_lowered_aid = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		
 		}
+	
 	}
 	
 ###ADVISORS AND STAFF###
