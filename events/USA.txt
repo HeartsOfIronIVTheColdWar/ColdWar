@@ -826,7 +826,7 @@ country_event = {
 	id = usa.10301
 	title = usa.10301.t
 	desc = usa.10301.d
-	picture = 
+	picture = GFX_report_event_james_farley
 	
 	trigger = {
 		tag = USA
