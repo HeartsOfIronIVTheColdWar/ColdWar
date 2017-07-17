@@ -308,7 +308,7 @@ technologies = {
 		start_year = 1965
 		folder = {
 			name = support_folder
-			position = { x = 1 y = 12 }
+			position = { x = 1 y = 14 }
 		}
 		
 		categories = {
@@ -331,7 +331,7 @@ technologies = {
 		start_year = 1975
 		folder = {
 			name = support_folder
-			position = { x = 1 y = 16 }
+			position = { x = 1 y = 20 }
 		}
 		
 		categories = {
@@ -354,7 +354,7 @@ technologies = {
 		start_year = 1985
 		folder = {
 			name = support_folder
-			position = { x = 1 y = 20 }
+			position = { x = 1 y = 26 }
 		}
 		
 		categories = {

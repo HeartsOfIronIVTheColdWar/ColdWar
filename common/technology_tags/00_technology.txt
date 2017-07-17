@@ -2,6 +2,11 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	MBT_1950_art
+	MBT_1960_art
+	MBT_1970_art
+	MBT_1980_art
+	MBT_1990_art
 	MBT_1950
 	MBT_1960
 	MBT_1970

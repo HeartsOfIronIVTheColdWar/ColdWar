@@ -23,6 +23,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_wonderweapons_bg"
 		textureFile = "gfx//interface//wonderweapons_bg.dds"
+		allwaystransparent = yes	
 	}
 	
 	corneredTileSpriteType = {
