@@ -25,7 +25,17 @@ spriteTypes = {
 		name = "GFX_report_event_sinosoviet_mutual_developement_consideration"
 		texturefile = "gfx/event_pictures/report_event_sinosoviet_mutual_developement_consideration.dds"
 	}
+	###FRENCH EVENTS###
+	spriteType = {
+		name = "GFX_report_event_james_farley"
+		texturefile = "gfx/event_pictures/report_event_james_farley.dds"
+	}
 	
+	
+	
+	
+	
+	###ARAB EVENTS####
 	spriteType = {
 		name = "GFX_news_event_egyrevolution"
 		texturefile = "gfx/event_pictures/news_event_egyrevolution.dds"

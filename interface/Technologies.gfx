@@ -64,6 +64,27 @@ spriteTypes = {
 		name = "GFX_SPART_1990_medium"
 		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
 	}
+	###NAVAL ICONS###
+	SpriteType = {
+		name = "GFX_nuclear_ship_reactor_medium"
+		texturefile = "gfx/interface/technologies/nuclear_ship_reactor.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/improved_carrier_nuclear_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/advanced_carrier_nuclear_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_modern_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/early_modern_carrier_nuclear_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/modern_carrier_nuclear_engine.dds"
+	}
 	###SUPPORT WEAPONS ICONS###
 	SpriteType = {
 		name = "GFX_support_weapons5_medium"
