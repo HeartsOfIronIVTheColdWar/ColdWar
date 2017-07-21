@@ -70,6 +70,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/nuclear_ship_reactor.dds"
 	}
 	SpriteType = {
+		name = "GFX_basic_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/basic_nuclear_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/advanced_nuclear_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_modern_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/early_modern_nuclear_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/modern_nuclear_submarine.dds"
+	}
+	SpriteType = {
 		name = "GFX_improved_carrier_nuclear_engine_medium"
 		texturefile = "gfx/interface/technologies/improved_carrier_nuclear_engine.dds"
 	}
@@ -184,6 +200,74 @@ spriteTypes = {
 	}
 	
 	###GENERIC EQUIPMENT ARCHETYPES### Not completed, uses SOV stuff as placeholder - Gunnar
+	
+	###USA###
+	SpriteType = {
+		name = "GFX_USA_MBT_1990_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_MBT_1980_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_MBT_1970_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_MBT_1960_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_MBT_1950_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1950.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_IFV_1990_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_IFV_1980_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_IFV_1970_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_IFV_1960_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_IFV_1950_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1950.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_APC_1990_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_APC_1980_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_APC_1970_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_APC_1960_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_APC_1950_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1950.dds"
+	}
+	
+	###SOVIET###
+	SpriteType = {
+		name = "GFX_SOV_MBT_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_MBT_1990.dds"
+	}
 	SpriteType = {
 		name = "GFX_SOV_MBT_1980_medium"
 		texturefile = "gfx/interface/technologies/SOV_MBT_1980.dds"
@@ -200,6 +284,47 @@ spriteTypes = {
 		name = "GFX_SOV_MBT_1950_medium"
 		texturefile = "gfx/interface/technologies/SOV_MBT_1950.dds"
 	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_IFV_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1950_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1950.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_APC_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_APC_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_APC_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_APC_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_APC_1950_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1950.dds"
+	}	
+	####ELSE###
 	SpriteType = {
 		name = "GFX_archetype_MBT_1950_equipment_1_medium"
 		texturefile = "gfx/interface/archetype_modern_tank_equipment.dds"

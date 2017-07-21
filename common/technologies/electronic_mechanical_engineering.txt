@@ -265,7 +265,7 @@ technologies = {
 		air_detection = 0.05
 		
 		path = {
-			leads_to_tech = radar_1980 
+			leads_to_tech = radar_1990 
 			research_cost_coeff = 1
 		}
 		
@@ -430,7 +430,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = 1950_computing_machine 
+			leads_to_tech = computing_machine_1950 
 			research_cost_coeff = 1
 		}
 		
