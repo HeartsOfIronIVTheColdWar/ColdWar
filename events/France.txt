@@ -7,6 +7,7 @@ add_namespace = fra
 
 ##### FLAVOUR EVENTS
 
+### Coca Cola event chain
 # US DoS asks to lift ban on Coca Cola
 country_event = {
 	id = fra.501
@@ -61,3 +62,204 @@ country_event = {
 		}
 	}
 }
+
+### Strikes in factories (random event)
+# Construction company strikes
+country_event = {
+	id = fra.510
+	title = fra.510.t
+	desc = fra.510.d
+	picture = 
+	
+	trigger = {
+		tag = FRA
+		FRA = { NOT = { has_country_flag = fra_strike1 } }
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = fra.510.a
+		set_country_flag = { fra_strike1 days = 120 }
+		add_timed_idea = { FRA_construction_company_strike days = 30 }
+	}
+	
+	option = {
+		name = fra.510.b
+		set_country_flag = { fra_strike1 days = 365 }
+		add_timed_idea = { FRA_construction_company_deal days = 270 }
+	}
+}
+
+# Weapons manufacturer strikes
+country_event = {
+	id = fra.511
+	title = fra.511.t
+	desc = fra.511.d
+	picture = 
+	
+	trigger = {
+		tag = FRA
+		FRA = { NOT = { has_country_flag = fra_strike2 } }
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = fra.510.a
+		set_country_flag = { fra_strike2 days = 120 }
+		add_timed_idea = { FRA_weapons_manufacturer_strike days = 30 }
+	}
+	
+	option = {
+		name = fra.510.b
+		set_country_flag = { fra_strike2 days = 365 }
+		add_timed_idea = { FRA_weapons_manufacturer_deal days = 270 }
+	}
+}
+
+# Civil service strikes
+#country_event = {
+#	id = fra.512
+#	title = fra.512.t
+#	desc = fra.512.d
+#	picture = 
+#	
+#	trigger = {
+#		tag = FRA
+#		FRA = { NOT = { has_country_flag = fra_strike3 } }
+#	}
+#	
+#	option = {
+#		name = fra.510.a
+#		set_country_flag = { fra_strike3 days = 120 }
+#		add_timed_idea = { FRA_civil_service_strike days = 30 }
+#	}
+#	
+#	option = {
+#		name = fra.510.b
+#		set_country_flag = { fra_strike3 days = 365 }
+#		add_timed_idea = { FRA_civil_service_deal days = 270 }
+#	}
+#}
+
+### Dominici affair
+# Drummond family bodies found
+country_event = {
+	id = fra.520
+	title = fra.520.t
+	desc = fra.520.d
+	picture = 
+	
+	trigger = {
+		tag = FRA
+		FRA = { NOT = { has_country_flag = dominici_affair_1 } }
+		date > 1952.8.4
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = fra.520.a
+		set_country_flag = { dominici_affair_1 }
+	}
+}
+
+# Gaston Dominici confesses
+country_event = {
+	id = fra.521
+	title = fra.521.t
+	desc = fra.521.d
+	picture = 
+	
+	trigger = {
+		tag = FRA
+		has_country_flag = dominici_affair_1
+		FRA = { NOT = { has_country_flag = dominici_affair_2 } }
+		date > 1953.11.15
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = fra.521.a
+		set_country_flag = dominici_affair_2 
+		clr_country_flag = dominici_affair_1
+	}
+}
+
+# Gaston Dominici sentenced to death
+country_event = {
+	id = fra.522
+	title = fra.522.t
+	desc = fra.522.d
+	picture = 
+	
+	trigger = {
+		tag = FRA
+		has_country_flag = dominici_affair_2
+		FRA = { NOT = { has_country_flag = dominici_affair_3 } }
+		date > 1954.11.28
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = fra.522.a
+		set_country_flag = dominici_affair_3
+		clr_country_flag = dominici_affair_2
+	}
+}
+
+# Commute the death sentence ?
+country_event = {
+	id = fra.523
+	title = fra.523.t
+	desc = fra.523.d
+	picture = 
+	
+	trigger = {
+		tag = FRA
+		has_country_flag = dominici_affair_3
+		FRA = { 
+			AND = {
+				NOT = { has_country_flag = dominici_affair_4 } 
+				NOT = { has_country_flag = dominici_affair_5 }
+			}
+		}
+		date > 1955.1.1
+	}
+	
+	mean_time_to_happen = {
+		days = 180
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = fra.523.a
+		set_country_flag = { dominici_affair_4 }
+	}
+	
+	option = {
+		name = fra.523.b
+		set_country_flag = { dominici_affair_5 }
+	}
+}
+
