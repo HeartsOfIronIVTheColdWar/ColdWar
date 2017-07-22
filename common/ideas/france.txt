@@ -63,6 +63,94 @@ ideas = {
 			}
 		
 		}
+		
+		FRA_construction_company_strike = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				production_speed_buildings_factor = -0.90
+			}
+		
+		}
+		
+		FRA_construction_company_deal = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.20
+			}
+		
+		}
+		
+		FRA_weapons_manufacturer_strike = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				industrial_capacity_factory = -0.95
+				industrial_capacity_dockyard = -0.95
+			}
+		
+		}
+		
+		FRA_weapons_manufacturer_deal = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+			}
+		
+		}
 	
 	}
 	
