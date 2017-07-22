@@ -110,13 +110,13 @@ country_event = {
 	}
 	
 	option = {
-		name = fra.510.a
+		name = fra.511.a
 		set_country_flag = { fra_strike2 days = 120 }
 		add_timed_idea = { FRA_weapons_manufacturer_strike days = 30 }
 	}
 	
 	option = {
-		name = fra.510.b
+		name = fra.511.b
 		set_country_flag = { fra_strike2 days = 365 }
 		add_timed_idea = { FRA_weapons_manufacturer_deal days = 270 }
 	}
