@@ -682,7 +682,9 @@ technologies = {
 			leads_to_tech = advanced_nuclear_submarine 
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			nuclear_ship_reactor = 1
+		}
 		research_cost = 2
 
 		start_year = 1960
