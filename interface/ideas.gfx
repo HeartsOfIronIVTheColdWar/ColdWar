@@ -25,6 +25,83 @@ spriteTypes = {
 		name = "GFX_idea_su_155"
 		texturefile = "gfx/interface/ideas/idea_su_155.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_black_sea_shipyard"
+		texturefile = "gfx/interface/ideas/black_sea_shipyard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sevmash_design_bureau"
+		texturefile = "gfx/interface/ideas/sevmash_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_almaz_design_bureau"
+		texturefile = "gfx/interface/ideas/almaz_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tirotex_design_bureau"
+		texturefile = "gfx/interface/ideas/tirotex_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vostok_w"
+		texturefile = "gfx/interface/ideas/vostok_w.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yevgeniy_afanasenko"
+		texturefile = "gfx/interface/ideas/yevgeniy_afanasenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ivan_kairov"
+		texturefile = "gfx/interface/ideas/ivan_kairov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yakov_malik"
+		texturefile = "gfx/interface/ideas/yakov_malik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_valerian_zorin"
+		texturefile = "gfx/interface/ideas/valerian_zorin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_andrei_gromyko"
+		texturefile = "gfx/interface/ideas/idea_andrei_gromyko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_andrey_vyshinsky"
+		texturefile = "gfx/interface/ideas/idea_andrey_vyshinsky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_georgy_malenkov"
+		texturefile = "gfx/interface/ideas/idea_georgy_malenkov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lavrentiy_beria"
+		texturefile = "gfx/interface/ideas/idea_lavrentiy_beria.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_leonid_brezhnev"
+		texturefile = "gfx/interface/ideas/idea_leonid_brezhnev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_semyon_ignatyev"
+		texturefile = "gfx/interface/ideas/idea_semyon_ignatyev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sergei_ogoltsov"
+		texturefile = "gfx/interface/ideas/idea_sergei_ogoltsov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_viktor_abakumov"
+		texturefile = "gfx/interface/ideas/idea_viktor_abakumov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vjatjeslav_molotov"
+		texturefile = "gfx/interface/ideas/idea_vjatjeslav_molotov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dmitri_shepilov"
+		texturefile = "gfx/interface/ideas/idea_dmitri_shepilov.dds"
+	}
+	
 ###MIDDLE EAST###
 	spriteType = {
 		name = "GFX_idea_zionist_restoration"

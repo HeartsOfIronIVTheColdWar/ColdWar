@@ -530,10 +530,10 @@ ideas = {
 				original_tag = "SOV"
 			}
 			
-			traits = { silent_workhorse backroom_backstabber }
+			traits = { reformer backroom_backstabber }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -557,7 +557,7 @@ ideas = {
 			traits = { armaments_organizer quartermaster_general }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -581,7 +581,7 @@ ideas = {
 			traits = { captain_of_industry ideological_crusader }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -605,7 +605,7 @@ ideas = {
 			traits = { prince_of_terror brutal}
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -635,7 +635,7 @@ ideas = {
 			traits = { smooth_talking_charmer popular_figurehead }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -656,10 +656,10 @@ ideas = {
 				original_tag = "SOV"
 			}
 			
-			traits = { prince_of_terror }
+			traits = { prince_of_terror adjudicator }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -683,7 +683,7 @@ ideas = {
 			traits = { backroom_backstabber indomitable_perseverance }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -707,7 +707,7 @@ ideas = {
 			traits = { silent_workhorse smooth_talking_charmer }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -736,7 +736,7 @@ ideas = {
 			traits = { interrogator brutal }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -760,7 +760,7 @@ ideas = {
 			traits = { prince_of_terror }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -784,7 +784,7 @@ ideas = {
 			traits = { silent_workhorse }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -813,7 +813,7 @@ ideas = {
 			traits = { recruiter }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -837,7 +837,7 @@ ideas = {
 			traits = { indocrinator }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -855,6 +855,7 @@ ideas = {
 	###UNITED NATIONS AMBASSADOR###
 	
 	united_nations_ambassador = {
+	
 		yakov_malik = {
 			
 			
@@ -862,10 +863,10 @@ ideas = {
 				original_tag = "SOV"
 			}
 			
-			traits = { silent_workhorse backroom_backstabber }
+			traits = { backroom_backstabber nerves_of_steel }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -886,10 +887,10 @@ ideas = {
 				original_tag = "SOV"
 			}
 			
-			traits = { silent_workhorse backroom_backstabber }
+			traits = { negotiator nerves_of_steel }
 	
 			on_add = {
-				country_event = political.1
+#				country_event = political.1
 			}
 	
 			do_effect = {
@@ -1159,6 +1160,43 @@ ideas = {
 			
 		designer = yes
 		
+		vostok_w = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		tirotex_design_bureau = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { support_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
 		grabin_design_bureau = {
 			
 			
@@ -1238,12 +1276,12 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			traits = { coastal_defence_naval_manufacturer }
+			traits = { atlantic_fleet_naval_manufacturer }
 			
 			modifier = {
 			}
 		}
-		nevskoye_design_bureau1 = {
+		sevmash_design_bureau = {
 			
 			
 			allowed = {
@@ -1261,7 +1299,7 @@ ideas = {
 			modifier = {
 			}
 		}
-		nevskoye_design_bureau3 = {
+		almaz_design_bureau = {
 			
 			
 			allowed = {
@@ -1274,7 +1312,25 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			traits = { atlantic_fleet_naval_manufacturer }
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		black_sea_shipyard = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
 			
 			modifier = {
 			}
@@ -1286,40 +1342,6 @@ ideas = {
 	###THEORIST
 	
 	theorist = {	
-	
-			
-		mikhail_tukhachevsky = {
-			
-			allowed = {
-				original_tag = SOV
-
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_mass_assault = 0.10
-			}
-			
-			# PURGED
-			traits = { mass_assault_expert }
-		}
-		
-		boris_shaposhnikov = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-
-			
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-			
-			traits = { military_theorist }
-		}
 		
 		georgy_zhukov = {
 			
@@ -1331,10 +1353,11 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mass_assault = 0.10
+				cat_strategic_theorem = 0.10
+				
 			}
 			
-			traits = { mass_assault_expert }
+			traits = { strategic_theorem_theorist }
 		}
 		
 		sergey_gorshkov = {
@@ -1344,28 +1367,13 @@ ideas = {
 
 			}
 			
-			cost = 150
-			
-			research_bonus = {
-				naval_doctrine = 0.07
-			}
-			
-			traits = { naval_theorist }
-		}
-		
-		vladimir_tributs = {
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
 			cost = 250
 			
 			research_bonus = {
-				cat_fleet_in_being = 0.10
+				naval_doctrine = 0.1
 			}
 			
-			traits = { grand_fleet_proponent}
+			traits = { naval_virtuoso }
 		}
 		
 		sergei_rudenko = {
@@ -1422,7 +1430,7 @@ ideas = {
 			}
 
 			
-			traits = { rocket_scientist }
+			traits = { rocket_scientist space_race }
 		}
 	}
 

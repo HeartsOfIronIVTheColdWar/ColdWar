@@ -2306,6 +2306,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "military_construction1_tree"
+				position = { x = 1490 y = 312 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 			
 			iconType = {
 				name = "highlight_industry_2"

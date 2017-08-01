@@ -2156,6 +2156,30 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_construction5_medium"
 		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
+	}
+	SpriteType = {
+		name = "GFX_military_construction1_medium"
+		texturefile = "gfx/interface/technologies/basic_construction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_military_construction2_medium"
+		texturefile = "gfx/interface/technologies/improved_construction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_military_construction3_medium"
+		texturefile = "gfx/interface/technologies/advanced_construction.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_military_construction4_medium"
+		texturefile = "gfx/interface/technologies/improved_conversion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_military_construction5_medium"
+		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}	
 	
 	### NAVAL TECH ###

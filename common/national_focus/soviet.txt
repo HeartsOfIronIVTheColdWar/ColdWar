@@ -570,7 +570,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			add_ideas = SOV_role_model
-			SOV = { country_event = { id = soviet.610 days = 1 } }
 			custom_effect_tooltip = SOV_role_model
 		}
 
@@ -595,7 +594,7 @@ focus_tree = {
 #			custom_effect_tooltip = PRC_Mao_Discontent_tt
 		}
 		completion_reward = {
-			PRC = { country_event = { id = soviet.1000 days = 1 } }
+			PRC = { country_event = { id = soviet.6000 days = 1 } }
 			custom_effect_tooltip = SOV_sino_soviet_aid_effects_tt
 		}
 
@@ -621,7 +620,7 @@ focus_tree = {
 		x = 8
 		y = 2
 		completion_reward = {
-			PRC = { country_event = { id = soviet.1001 days = 1 } }
+			PRC = { country_event = { id = soviet.6001 days = 1 } }
 			custom_effect_tooltip = SOV_sino_soviet_second_aid_effects_tt
 		}
 
@@ -636,7 +635,7 @@ focus_tree = {
 		x = 8
 		y = 3
 		completion_reward = {
-			PRC = { country_event = { id = soviet.1002 days = 1 } }
+			PRC = { country_event = { id = soviet.6002 days = 1 } }
 			custom_effect_tooltip = SOV_sino_soviet_naval_treaty
 		}
 
@@ -651,7 +650,7 @@ focus_tree = {
 		x = 8
 		y = 4
 		completion_reward = {
-			PRC = { country_event = { id = soviet.1003 days = 1 } }
+			PRC = { country_event = { id = soviet.6003 days = 1 } }
 			custom_effect_tooltip = SOV_sino_soviet_defense_pact
 		}
 
@@ -675,7 +674,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			PRC = { country_event = { id = soviet.1004 days = 1 } }
+			PRC = { country_event = { id = soviet.6004 days = 1 } }
 			custom_effect_tooltip = SOV_china_joins_faction
 		}
 
@@ -1974,7 +1973,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			RAJ = { country_event = { id = soviet.1100 days = 1 } }
+			RAJ = { country_event = { id = soviet.6100 days = 1 } }
 			custom_effect_tooltip = SOV_india_joins_faction
 			SOV = { add_to_faction = RAJ }
 		}
