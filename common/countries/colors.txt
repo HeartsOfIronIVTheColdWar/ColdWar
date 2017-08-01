@@ -413,6 +413,10 @@ PAR = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 74 147 255 }
 }
+XIN = {
+	color = rgb { 71 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
 CUB = {
 	color = rgb { 140 65 166 }
 	color_ui = rgb { 140 65 166 }
