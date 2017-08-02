@@ -81,6 +81,9 @@ country_event = {
 	
 	option = {
 		name = suez.3.a
+		FRA = {
+			country_event = { id = suez.6 days = 1}
+		}
 	}
 	
 	option = {
@@ -160,7 +163,97 @@ country_event = {
 	picture = GFX_report_event_polish_tanks_01
 	desc = suez.5.d
 	
+	is_triggered_only = yes
+	
 	option = {
 		name = suez.5.a
+	}
+}
+
+#france is informed israel accepted the invitation
+country_event = {
+	id = suez.6
+	title = suez.6.t
+	picture = GFX_report_event_polish_tanks_01
+	desc = suez.6.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			FRA = {
+				country_event = { id = suez.7 days = 7 }
+			}
+			ISR = {
+				country_event = { id = suez.7 days = 7 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = suez_uk_out
+					}
+				}
+				ENG = {
+					country_event = { id = suez.7 days = 7 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = suez.6.a
+	}
+}
+
+#Sèvres: start of conference
+country_event = {
+	id = suez.7
+	title = suez.7.t
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	desc = {
+		trigger = {
+			tag = ISR
+		}
+		text = suez.7.d_isr
+	}
+	
+	desc = {
+		trigger = {
+			tag = FRA
+		}
+		text = suez.7.d_fra
+	}
+	
+	desc = {
+		trigger = {
+			tag = ENG
+		}
+		text = suez.7.d_eng
+	}
+	
+	option = {
+		trigger = {
+			tag = ISR
+		}
+		name = suez.7.a
+	}
+
+	option = {
+		trigger = {
+			tag = ISR
+		}
+		name = suez.7.b
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				tag = ISR
+			}
+		}
+		name = suez.7.c
 	}
 }

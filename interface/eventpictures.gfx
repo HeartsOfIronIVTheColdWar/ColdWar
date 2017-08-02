@@ -35,15 +35,10 @@ spriteTypes = {
 	
 	
 	
-	###ARAB EVENTS####
+	###ARAB EVENTS###
 	spriteType = {
 		name = "GFX_news_event_egyrevolution"
 		texturefile = "gfx/event_pictures/news_event_egyrevolution.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_news_event_suez_1"
-		texturefile = "gfx/event_pictures/news_event_suez_1.dds"
 	}
 
 	spriteType = {
@@ -51,6 +46,24 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_uar.dds"
 	}
 	
+	
+	###SUEZ EVENTS###	
+	spriteType = {
+		name = "GFX_news_event_suez_1"
+		texturefile = "gfx/event_pictures/news_event_suez_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_suez_nasser_wins"
+		texturefile = "gfx/event_pictures/news_event_suez_nasser_wins.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_suez_egypt_loses"
+		texturefile = "gfx/event_pictures/news_event_suez_egypt_loses.dds"
+	}
+	
+	###AMERICAN EVENTS###	
 	spriteType = {
 		name = "GFX_report_event_hawaii"
 		texturefile = "gfx/event_pictures/report_event_hawaii.dds"
@@ -64,16 +77,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_coronation"
 		texturefile = "gfx/event_pictures/news_event_coronation.dds"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_suez_nasserwins"
-		texturefile = "gfx/event_pictures/news_event_suez_nasserwins.dds"
-	}
-
-	spriteType = {
-		name = "GFX_news_event_suez_nasserloses"
-		texturefile = "gfx/event_pictures/news_event_suez_nasserloses.dds"
 	}
 	
 	spriteType = {

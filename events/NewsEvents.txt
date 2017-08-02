@@ -428,6 +428,7 @@ news_event = {
 	id = news.1001
 	title = news.1001.t
 	picture = GFX_news_event_suez_1
+	####NEED TO ADD ANOTHER PICTURE FOR IF NASSER ISN'T LEADER OF EGYPT
 	
 	major = yes
 	
@@ -534,6 +535,47 @@ news_event = {
 			}
 		}
 	}
+}
+
+#SUEZ: Egypt wins
+news_event = {
+	id = news.1008
+	title = news.1008.t
+	picture = GFX_news_event_suez_nasser_wins
+	####NEED TO ADD ANOTHER PICTURE FOR IF NASSER ISN'T LEADER OF EGYPT
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = suez_egypt_wins
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = news.1008.a
+	}
+	
+}
+
+#SUEZ: Egypt loses
+news_event = {
+	id = news.1009
+	title = news.1009.t
+	picture = GFX_news_event_suez_egypt_wins
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = suez_egypt_loses
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = news.1009.a
+	}
+	
 }
 	
 # United Arab Republic
