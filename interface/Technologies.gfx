@@ -64,6 +64,43 @@ spriteTypes = {
 		name = "GFX_SPART_1990_medium"
 		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
 	}
+	###NAVAL ICONS###
+	SpriteType = {
+		name = "GFX_nuclear_ship_reactor_medium"
+		texturefile = "gfx/interface/technologies/nuclear_ship_reactor.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/basic_nuclear_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/advanced_nuclear_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_modern_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/early_modern_nuclear_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_nuclear_submarine_medium"
+		texturefile = "gfx/interface/technologies/modern_nuclear_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/improved_carrier_nuclear_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/advanced_carrier_nuclear_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_modern_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/early_modern_carrier_nuclear_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_carrier_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/modern_carrier_nuclear_engine.dds"
+	}
 	###SUPPORT WEAPONS ICONS###
 	SpriteType = {
 		name = "GFX_support_weapons5_medium"
@@ -163,6 +200,74 @@ spriteTypes = {
 	}
 	
 	###GENERIC EQUIPMENT ARCHETYPES### Not completed, uses SOV stuff as placeholder - Gunnar
+	
+	###USA###
+	SpriteType = {
+		name = "GFX_USA_MBT_1990_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_MBT_1980_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_MBT_1970_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_MBT_1960_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_MBT_1950_medium"
+		texturefile = "gfx/interface/technologies/USA_MBT_1950.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_IFV_1990_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_IFV_1980_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_IFV_1970_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_IFV_1960_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_IFV_1950_medium"
+		texturefile = "gfx/interface/technologies/USA_IFV_1950.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_APC_1990_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_APC_1980_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_APC_1970_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_APC_1960_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_APC_1950_medium"
+		texturefile = "gfx/interface/technologies/USA_APC_1950.dds"
+	}
+	
+	###SOVIET###
+	SpriteType = {
+		name = "GFX_SOV_MBT_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_MBT_1990.dds"
+	}
 	SpriteType = {
 		name = "GFX_SOV_MBT_1980_medium"
 		texturefile = "gfx/interface/technologies/SOV_MBT_1980.dds"
@@ -179,6 +284,47 @@ spriteTypes = {
 		name = "GFX_SOV_MBT_1950_medium"
 		texturefile = "gfx/interface/technologies/SOV_MBT_1950.dds"
 	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_IFV_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_IFV_1950_medium"
+		texturefile = "gfx/interface/technologies/SOV_IFV_1950.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_APC_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1990.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_APC_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1980.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_APC_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1970.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_APC_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1960.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_APC_1950_medium"
+		texturefile = "gfx/interface/technologies/SOV_APC_1950.dds"
+	}	
+	####ELSE###
 	SpriteType = {
 		name = "GFX_archetype_MBT_1950_equipment_1_medium"
 		texturefile = "gfx/interface/archetype_modern_tank_equipment.dds"
@@ -433,102 +579,52 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
 	}	
 	
-	### artillery tech	###
-
-	SpriteType = {
-		name = "GFX_antitank5_medium"
-		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
-	}	
+	### artillery tech	###	
 	
 	SpriteType = {
-		name = "GFX_antitank4_medium"
-		texturefile = "gfx/interface/technologies/antitank5.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_antitank3_medium"
-		texturefile = "gfx/interface/technologies/antitank3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_antitank2_medium"
-		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_antitank1_medium"
-		texturefile = "gfx/interface/technologies/antitank2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_antiair5_medium"
-		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_antiair4_medium"
-		texturefile = "gfx/interface/technologies/antiair5.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_antiair3_medium"
+		name = "GFX_antiair_1970_air_attack_medium"
 		texturefile = "gfx/interface/technologies/antiair2.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_antiair2_medium"
-		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_antiair1_medium"
+		name = "GFX_antiair_1950_air_attack_medium"
 		texturefile = "gfx/interface/technologies/antiair1.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_rocket_artillery4_medium"
-		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_rocket_artillery3_medium"
-		texturefile = "gfx/interface/technologies/rocket_artillery3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_rocket_artillery2_medium"
-		texturefile = "gfx/interface/technologies/rocket_artillery2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_artillery5_medium"
-		texturefile = "gfx/interface/technologies/artillery5.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_artillery4_medium"
-		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_artillery3_medium"
+		name = "GFX_artillery_1970_soft_attack_medium"
 		texturefile = "gfx/interface/technologies/artillery3.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_artillery2_medium"
+		name = "GFX_artillery_1950_soft_attack_medium"
 		texturefile = "gfx/interface/technologies/artillery2.dds"
 	}	
-	
-	SpriteType = {
-		name = "GFX_artillery1_medium"
-		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
-	}	
-	
+
 	SpriteType = {
 		name = "GFX_interwar_artillery_medium"
 		texturefile = "gfx/interface/technologies/artillery1.dds"
+	}
+	###ARTILLERY DOCTRINES###
+	SpriteType = {
+		name = "GFX_dedicated_artillery_observers_medium"
+		texturefile = "gfx/interface/technologies/centralized_fire_control.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_air_artillery_integration_medium"
+		texturefile = "gfx/interface/technologies/ground_support_integration.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_airbombing_reliance_medium"
+		texturefile = "gfx/interface/technologies/battlefield_support.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_artillery_standarization_medium"
+		texturefile = "gfx/interface/technologies/artillery_standardization.dds"
+	}
 	
 	### infantry tech	###
 	
@@ -2059,6 +2155,30 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_construction5_medium"
+		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
+	}
+	SpriteType = {
+		name = "GFX_military_construction1_medium"
+		texturefile = "gfx/interface/technologies/basic_construction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_military_construction2_medium"
+		texturefile = "gfx/interface/technologies/improved_construction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_military_construction3_medium"
+		texturefile = "gfx/interface/technologies/advanced_construction.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_military_construction4_medium"
+		texturefile = "gfx/interface/technologies/improved_conversion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_military_construction5_medium"
 		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}	
 	

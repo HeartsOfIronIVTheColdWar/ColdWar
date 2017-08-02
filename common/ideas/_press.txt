@@ -27,7 +27,6 @@ ideas = {
    			}
 			
 			cancel_if_invalid = no
-			default = yes
 		}
 		
 		censored_press = {
@@ -68,7 +67,7 @@ ideas = {
 					has_government = autocratic
 				}
    			}
-			
+			default = yes
 			cancel_if_invalid = no
 		}
 		

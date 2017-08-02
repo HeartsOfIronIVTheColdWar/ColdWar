@@ -76,6 +76,10 @@ technologies = {
 			leads_to_tech = artillery_1970 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = artillery_1950_soft_attack 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -84,6 +88,28 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	artillery_1950_soft_attack = {
+		category_line_artillery = {
+			soft_attack = 0.15
+		}
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 8 }
 		}
 		
 		categories = {
@@ -105,6 +131,10 @@ technologies = {
 			leads_to_tech = artillery_1990 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = artillery_1970_soft_attack 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -113,6 +143,28 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	artillery_1970_soft_attack = {
+		category_line_artillery = {
+			soft_attack = 0.15
+		}
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 16 }
 		}
 		
 		categories = {
@@ -148,6 +200,7 @@ technologies = {
 		}
 		
 	}
+
 	SPART_1950 = {
 		
 		enable_equipments = {
@@ -160,6 +213,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = SPART_1950_soft_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SPART_1950_speed
 			research_cost_coeff = 1
 		}
 		
@@ -183,6 +240,10 @@ technologies = {
 	}
 	SPART_1950_soft_attack = {
 		
+		category_MBT_1950_art = {
+			soft_attack = 0.2
+		}
+		
 		research_cost = 1
 		
 		start_year = 1950
@@ -190,6 +251,30 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPART_1950_speed = {
+		
+		category_MBT_1950_art = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = 8 }
 		}
 		
 		categories = {
@@ -215,6 +300,10 @@ technologies = {
 			leads_to_tech = SPART_1960_soft_attack
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = SPART_1960_speed
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -235,7 +324,9 @@ technologies = {
 		
 	}
 	SPART_1960_soft_attack = {
-		
+		category_MBT_1960_art = {
+			soft_attack = 0.2
+		}
 		research_cost = 1
 		
 		start_year = 1960
@@ -243,6 +334,28 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPART_1960_speed = {
+		category_MBT_1960_art = {
+			maximum_speed = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = 12 }
 		}
 		
 		categories = {
@@ -268,6 +381,10 @@ technologies = {
 			leads_to_tech = SPART_1970_soft_attack
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = SPART_1970_speed
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -288,7 +405,9 @@ technologies = {
 		
 	}
 	SPART_1970_soft_attack = {
-		
+		category_MBT_1970_art = {
+			soft_attack = 0.2
+		}
 		research_cost = 1
 		
 		start_year = 1970
@@ -296,6 +415,28 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 16 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPART_1970_speed = {
+		category_MBT_1970_art = {
+			maximum_speed = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = 16 }
 		}
 		
 		categories = {
@@ -321,6 +462,10 @@ technologies = {
 			leads_to_tech = SPART_1980_soft_attack
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = SPART_1980_speed
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -341,7 +486,9 @@ technologies = {
 		
 	}
 	SPART_1980_soft_attack = {
-		
+		category_MBT_1980_art = {
+			soft_attack = 0.1
+		}
 		research_cost = 1
 		
 		start_year = 1980
@@ -349,6 +496,28 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 7 y = 20 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPART_1980_speed = {
+		category_MBT_1980_art = {
+			maximum_speed = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = 20 }
 		}
 		
 		categories = {
@@ -428,6 +597,10 @@ technologies = {
 			leads_to_tech = antiair_1970 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = antiair_1950_air_attack 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -436,6 +609,31 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -6 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	antiair_1950_air_attack = {
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -5 y = 8 }
 		}
 		
 		categories = {
@@ -456,6 +654,10 @@ technologies = {
 			leads_to_tech = antiair_1990 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = antiair_1970_air_attack 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -464,6 +666,31 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -6 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	antiair_1970_air_attack = {
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -5 y = 16 }
 		}
 		
 		categories = {
@@ -509,6 +736,14 @@ technologies = {
 			leads_to_tech = SPAA_1960
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = SPAA_1950_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SPAA_1950_speed
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -517,6 +752,54 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -2 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1950_air_attack = {
+		
+		category_MBT_1950_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1950_speed = {
+		
+		category_MBT_1950_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 8 }
 		}
 		
 		categories = {
@@ -538,6 +821,14 @@ technologies = {
 			leads_to_tech = SPAA_1970
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = SPAA_1960_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SPAA_1960_speed
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -546,6 +837,54 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -2 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1960_air_attack = {
+		
+		category_MBT_1960_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1960_speed = {
+		
+		category_MBT_1960_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 12 }
 		}
 		
 		categories = {
@@ -567,6 +906,14 @@ technologies = {
 			leads_to_tech = SPAA_1980
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = SPAA_1970_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SPAA_1970_speed
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
@@ -575,6 +922,54 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -2 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1970_air_attack = {
+		
+		category_MBT_1970_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1970_speed = {
+		
+		category_MBT_1970_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 16 }
 		}
 		
 		categories = {
@@ -596,6 +991,14 @@ technologies = {
 			leads_to_tech = SPAA_1990
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = SPAA_1980_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SPAA_1980_speed
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		
@@ -604,6 +1007,54 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -2 y = 18 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1980_air_attack = {
+		
+		category_MBT_1980_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	SPAA_1980_speed = {
+		
+		category_MBT_1980_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 20 }
 		}
 		
 		categories = {

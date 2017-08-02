@@ -3,7 +3,7 @@ technologies = {
 	electronic_mechanical_engineering = {
 
 		# small boost to research speed
-		research_time_factor = -0.02
+		research_time_factor = -0.01
 		
 		path = {
 			leads_to_tech = radio 
@@ -85,7 +85,7 @@ technologies = {
 		# 
 		enable_building = {
 			building = radar_station
-			level = 1
+			level = 2
 		}
 		
 		path = {
@@ -138,7 +138,7 @@ technologies = {
 		
 		enable_building = {
 			building = radar_station
-			level = 2
+			level = 3
 		}
 	}
 	
@@ -147,11 +147,11 @@ technologies = {
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
 			building = radar_station
-			level = 3
+			level = 4
 		}
 		
 		path = {
-			leads_to_tech = improved_centimetric_radar 
+			leads_to_tech = radar_1950 
 			research_cost_coeff = 1
 		}
 		
@@ -172,12 +172,151 @@ technologies = {
 			radar_tech
 		}
 	}
+	radar_1950 = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 5
+		}
+		
+		path = {
+			leads_to_tech = radar_1960 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1950
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar_1960 = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+		
+		path = {
+			leads_to_tech = radar_1970 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar_1970 = {
+
+		# radar boost in air/sea combat depends on radar level
+		air_detection = 0.05
+		
+		path = {
+			leads_to_tech = radar_1980 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar_1980 = {
+
+		# radar boost in air/sea combat depends on radar level
+		air_detection = 0.05
+		
+		path = {
+			leads_to_tech = radar_1990 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1980
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	radar_1990 = {
+
+		# radar boost in air/sea combat depends on radar level
+		air_detection = 0.05
+		
+		research_cost = 1.5
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
 	
-	
+##################################
+###COMPUTING START################
+##################################
+
 	mechanical_computing = {
 
 		# small boost to research speed
-		research_time_factor = -0.03
+		research_time_factor = -0.01
 		
 		path = {
 			leads_to_tech = computing_machine 
@@ -204,7 +343,7 @@ technologies = {
 	computing_machine = {
 
 		# small boost to research speed
-		research_time_factor = -0.03
+		research_time_factor = -0.02
 		
 		path = {
 			leads_to_tech = improved_computing_machine 
@@ -229,16 +368,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 6
-			
-			modifier = {
-				factor = 3
-				date > "1938.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1939.1.1"
-			}
 		}
 		
 		categories = {
@@ -252,7 +381,7 @@ technologies = {
 	improved_computing_machine = {
 
 		# small boost to research speed
-		research_time_factor = -0.05
+		research_time_factor = -0.02
 		
 		path = {
 			leads_to_tech = advanced_computing_machine 
@@ -277,16 +406,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
-			
-			modifier = {
-				factor = 3
-				date > "1940.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1941.1.1"
-			}
 		}
 		
 		categories = {
@@ -300,7 +419,7 @@ technologies = {
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_time_factor = -0.05
+		research_time_factor = -0.03
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -310,9 +429,13 @@ technologies = {
 			leads_to_tech = advanced_decryption 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = computing_machine_1950 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1945
 		
 		folder = {
 			name = electronics_folder
@@ -321,16 +444,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
-			
-			modifier = {
-				factor = 3
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1943.1.1"
-			}
 		}
 		
 		categories = {
@@ -340,6 +453,191 @@ technologies = {
 			computing_tech
 		}
 	}
+	computing_machine_1950 = {
+
+		# small boost to research speed
+		research_time_factor = -0.03
+		
+		path = {
+			leads_to_tech = encryption_1950
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = decryption_1950 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = computing_machine_1960 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1950
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	computing_machine_1960 = {
+
+		# small boost to research speed
+		research_time_factor = -0.03
+		
+		path = {
+			leads_to_tech = encryption_1960 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = decryption_1960 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = computing_machine_1970 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	computing_machine_1970 = {
+
+		# small boost to research speed
+		research_time_factor = -0.03
+		
+		path = {
+			leads_to_tech = encryption_1970 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = decryption_1970 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = computing_machine_1980 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	computing_machine_1980 = {
+
+		# small boost to research speed
+		research_time_factor = -0.03
+		
+		path = {
+			leads_to_tech = encryption_1980 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = decryption_1980 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = computing_machine_1990 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1980
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	computing_machine_1990 = {
+
+		# small boost to research speed
+		research_time_factor = -0.03
+		
+		path = {
+			leads_to_tech = encryption_1990 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = decryption_1990 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+##################################
+###ENCRYPTION START###############
+##################################
 	
 	basic_encryption = {
 
@@ -398,6 +696,116 @@ technologies = {
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	encryption_1950 = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1.5
+		start_year = 1950
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	encryption_1960 = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	encryption_1970 = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	encryption_1980 = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1.5
+		start_year = 1980
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	encryption_1990 = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1.5
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 26 }
 		}
 		
 		ai_will_do = {
@@ -478,6 +886,120 @@ technologies = {
 			decryption_tech
 		}
 	}
+	decryption_1950 = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1950
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	decryption_1960 = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1960
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	decryption_1970 = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1970
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	decryption_1980 = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1980
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	decryption_1990 = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1990
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+##################################
+###ROCKETS / SPACE START##########
+##################################
 	
 	experimental_rockets = {
 
@@ -590,7 +1112,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 1949
 		
 		folder = {
 			name = electronics_folder
@@ -606,154 +1128,10 @@ technologies = {
 		}
 	}
 	
-	helicopter_engines = {
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		start_year = 1947
-		research_cost = 2
-		
-		desc = "HELICOPTER_ENGINES_SPECIAL"
-
-		on_research_complete = {
-			custom_effect_tooltip = HELICOPTER_ENGINES_RESEARCHED
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
-		}
-	}
 	
-	jet_engines = {
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = 0 }
-		}
-		path = {
-			leads_to_tech = improved_jet_engines_1 
-			research_cost_coeff = 1
-		}
-		
-		start_year = 1947
-		research_cost = 2
-		
-		desc = "JET_ENGINES_SPECIAL"
-
-		on_research_complete = {
-			custom_effect_tooltip = JET_ENGINES_RESEARCHED
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
-		}
-	}
-	
-	improved_jet_engines_1 = {
-        jet_fighter = {
-           	air_range = 0.5
-        }
-		jet_strat_bomber = {
-            air_range = 0.5
-        }
-        jet_cas = {
-            air_range = 0.5
-        }
-		mca = {
-            air_range = 0.5
-        }
-        path = {
-            leads_to_tech = improved_jet_engines_2 
-            research_cost_coeff = 1
-        }
-        start_year = 1944
-        research_cost = 2
-
-        folder = {
-            name = air_techs_folder
-            position = { x = 0 y = 3 }
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        categories = {
-            rocketry
-            jet_technology
-        }
-    }
-	
-	improved_jet_engines_2 = {
-	
-		path = {
-			leads_to_tech = improved_jet_engines_3 
-			research_cost_coeff = 1
-		}
-		start_year = 1944
-		research_cost = 2
-
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
-		}
-	}
-	
-	improved_jet_engines_3 = {
-	
-		jet_fighter = {
-           	air_range = 0.5
-        }
-		jet_strat_bomber = {
-            air_range = 0.5
-        }
-        jet_cas = {
-            air_range = 0.5
-        }
-		mca = {
-            air_range = 0.5
-        }
-        path = {
-            leads_to_tech = improved_jet_engines_2 
-            research_cost_coeff = 1
-        }
-        start_year = 1944
-        research_cost = 2
-
-        folder = {
-            name = air_techs_folder
-            position = { x = 0 y = 3 }
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        categories = {
-            rocketry
-            jet_technology
-        	}
-	}
+#######################################
+####NUCLEAR RESEARCH#########
+#######################################	
 	
 	atomic_research = {
 
@@ -819,7 +1197,10 @@ technologies = {
 			leads_to_tech = nukes 
 			research_cost_coeff = 1
 		}
-		
+		path = {
+			leads_to_tech = nuclear_ship_reactor 
+			research_cost_coeff = 1
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -831,6 +1212,30 @@ technologies = {
 		enable_building = {
 			building = nuclear_reactor
 			level = 1
+		}
+	}
+	nuclear_ship_reactor = {
+
+		# can build reactors for submarines / aircraft carriers
+		
+		start_year = 1955
+		research_cost = 3
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 10 }
+		}
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			nuclear
 		}
 	}
 
@@ -853,5 +1258,170 @@ technologies = {
 		categories = {
 			nuclear
 		}
+	}
+	
+	
+#######################################
+####ENGINE RESEARCH / AIR TREE#########
+#######################################	
+	
+	helicopter_engines = {
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		start_year = 1947
+		research_cost = 2
+		
+		desc = "HELICOPTER_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = HELICOPTER_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	jet_engines = {
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		path = {
+			leads_to_tech = improved_jet_engines_1 
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1950
+		research_cost = 2
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	improved_jet_engines_1 = {
+        jet_fighter = {
+           	air_range = 0.5
+        }
+		jet_strat_bomber = {
+            air_range = 0.5
+        }
+        jet_cas = {
+            air_range = 0.5
+        }
+		mca = {
+            air_range = 0.5
+        }
+        path = {
+            leads_to_tech = improved_jet_engines_2 
+            research_cost_coeff = 1
+        }
+        start_year = 1965
+        research_cost = 2
+
+        folder = {
+            name = air_techs_folder
+            position = { x = 0 y = 3 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            jet_technology
+        }
+    }
+	
+	improved_jet_engines_2 = {
+        jet_fighter = {
+           	air_range = 0.25
+        }
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        jet_cas = {
+            air_range = 0.25
+        }
+		mca = {
+            air_range = 0.25
+        }
+		path = {
+			leads_to_tech = improved_jet_engines_3 
+			research_cost_coeff = 1
+		}
+		start_year = 1944
+		research_cost = 2
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
+	
+	improved_jet_engines_3 = {
+	
+		jet_fighter = {
+           	air_range = 0.25
+        }
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        jet_cas = {
+            air_range = 0.25
+        }
+		mca = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = improved_jet_engines_2 
+            research_cost_coeff = 1
+        }
+        start_year = 1980
+        research_cost = 2
+
+        folder = {
+            name = air_techs_folder
+            position = { x = 0 y = 3 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            jet_technology
+        	}
 	}
 }

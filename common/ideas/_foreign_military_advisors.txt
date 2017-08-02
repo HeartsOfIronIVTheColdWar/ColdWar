@@ -54,7 +54,6 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = 0.15
-				research_time_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.15
 				
 				democratic_drift = 0.02
@@ -108,7 +107,6 @@ ideas = {
 				training_time_army_factor = -0.15
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.15
-				industry_free_repair_factor = 0.5
 				
 				communism_drift = 0.02
 				communism_acceptance = 50
@@ -158,11 +156,10 @@ ideas = {
 			}
 
 			modifier = {
-				encryption = 2
-				decryption = 2 
 				army_org_factor = 0.1 
-				air_detection = 0.2
 				local_resources_factor = 0.25
+				trade_opinion_factor = 0.5 
+				
 				
 				democratic_drift = 0.02
 				democratic_acceptance = 50
@@ -213,9 +210,9 @@ ideas = {
 
 			modifier = {
 				global_building_slots_factor = 0.2
+				local_resources_factor = 0.25
 				production_speed_air_base_factor = 0.15
 				production_speed_naval_base_factor = 0.15
-				trade_opinion_factor = 0.5 
 				
 				democratic_drift = 0.02
 				democratic_acceptance = 50

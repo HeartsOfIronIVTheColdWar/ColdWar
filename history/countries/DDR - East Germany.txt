@@ -16,6 +16,7 @@ set_national_unity = 0.6
 		#ideas
 		soviet_occupation
 		loser_of_the_second_world_war
+		SOV_comecon
 		
 	}
 	set_politics = {

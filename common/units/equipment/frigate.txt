@@ -3,10 +3,9 @@ equipments = {
 	frigate = {
 		is_archetype = yes
 		is_buildable = no
-		type = capital_ship
-		group_by = archetype
+		type = screen_ship
 		
-		interface_category = interface_category_capital_ships
+		interface_category = interface_category_screen_ships
 
 		upgrades = {
 			ship_reliability_upgrade
@@ -50,7 +49,10 @@ equipments = {
 	frigate_1 = {
 		archetype = frigate
 		priority = 40
-		
+		type = { 
+			screen_ship
+			anti_air
+		}
 	}
 	
 	frigate_2 = {
@@ -116,7 +118,10 @@ equipments = {
 		max_strength = 200
 		
 		port_capacity_usage = 1
-
+		type = { 
+			screen_ship
+			anti_air
+		}
 		build_cost_ic = 5000
 		resources = {
 			oil = 2
@@ -152,7 +157,10 @@ equipments = {
 		max_strength = 225
 		
 		port_capacity_usage = 1
-
+		type = { 
+			screen_ship
+			anti_air
+		}
 		build_cost_ic = 5400
 		resources = {
 			oil = 2

@@ -18,8 +18,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
 				production_speed_arms_factory_factor = -0.5
-				conversion_cost_civ_to_mil_factor= 0.5
-				conversion_cost_mil_to_civ_factor = 0.5
+				conversion_cost_mil_to_civ_factor = -0.5
 			}
 			
 			default = yes
@@ -49,8 +48,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.25
 				production_speed_infrastructure_factor = 0.1
 				production_speed_arms_factory_factor = -0.25
-				conversion_cost_civ_to_mil_factor= 0.25
-				conversion_cost_mil_to_civ_factor = 0.25
+				conversion_cost_mil_to_civ_factor = -0.25
 			}
 			
 			cancel_if_invalid = no
@@ -129,10 +127,10 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = -0.25
 				production_speed_infrastructure_factor = -0.1
 				production_speed_arms_factory_factor = 0.25
 				conversion_cost_civ_to_mil_factor= -0.25
-				conversion_cost_mil_to_civ_factor = -0.25
 			}
 			
 			cancel_if_invalid = no
@@ -170,10 +168,10 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.10
 				conscription = -0.03
+				production_speed_industrial_complex_factor = -0.5
 				production_speed_infrastructure_factor = -0.2
 				production_speed_arms_factory_factor = 0.5
 				conversion_cost_civ_to_mil_factor= -0.5
-				conversion_cost_mil_to_civ_factor = -0.5
 			}
 			
 			ai_will_do = {

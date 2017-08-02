@@ -24,16 +24,38 @@ news_event = {
 		
 	option = {
 		name = news.520719.a 
+		trigger = {
+			NOT = {
+				OR = {
+					tag = USA
+					tag = SOV
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = news.520719.b
+		trigger = {
+			tag = USA
+		}
+	}
+	
+	option = {
+		name = news.520719.c
+		trigger = {
+			tag = SOV
+		}
 	}
 }
 
 ### Sino-Soviet mutual developements ###
-news_event = { #Sino-Soviet news event
-	id = news.1002
-	title = news.1002.t
+news_event = { #Sino-Soviet news event first focus
+	id = news.6001
+	title = news.6001.t
 	
 	desc = {
-		text = news.1002.d_sinosov
+		text = news.6001.d_sinosov
 		trigger = {
 			OR = {
 				tag = SOV
@@ -42,7 +64,7 @@ news_event = { #Sino-Soviet news event
 		}
 	}
 	desc = {
-		text = news.1002.d_rest
+		text = news.6001.d_rest
 		trigger = {
 			NOT = {
 				OR = { 
@@ -56,7 +78,7 @@ news_event = { #Sino-Soviet news event
 		}
 	}
 	desc = {
-		text = news.1002.d_supers
+		text = news.6001.d_supers
 		trigger = {
 			OR = {
 				tag = ENG
@@ -73,7 +95,7 @@ news_event = { #Sino-Soviet news event
 	is_triggered_only = yes
 	
 	option = {
-		name = news.1002.a
+		name = news.6001.a
 		trigger = {
 			OR = {
 				tag = SOV
@@ -82,7 +104,7 @@ news_event = { #Sino-Soviet news event
 		}
 	}
 	option = {
-		name = news.1002.b
+		name = news.6001.b
 		trigger = {
 			NOT = {
 				OR = { 
@@ -96,7 +118,7 @@ news_event = { #Sino-Soviet news event
 		}
 	}
 	option = {
-		name = news.1002.c
+		name = news.6001.c
 		trigger = {
 			OR = {
 				tag = ENG
@@ -106,25 +128,119 @@ news_event = { #Sino-Soviet news event
 		}
 	}
 }
-news_event = { #Scrub countries event
-	id = news.1003
-	title = news.1002.t
-	desc = news.1003.d
-
-	picture = GFX_report_event_sinosoviet_mutual_developement
+news_event = { #Sino-Soviet news event second focus
+	id = news.6002
+	title = news.6002.t
+	desc = {
+		text = news.6002.d_sinosov
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	desc = {
+		text = news.6002.d_rest
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	desc = {
+		text = news.6002.d_supers
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+	}
+	
+	picture = GFX_report_event_sinosoviet_naval_treaty
 	
 	major = yes
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = news.1003.a
+		name = news.6002.a
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = news.6002.b
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	option = {
+		name = news.6002.c
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
 	}
 }
 news_event = { #Superpowers event
-	id = news.1004
-	title = news.1002.t
-	desc = news.1004.d
+	id = news.6003
+	title = news.6003.t
+	desc = {
+		text = news.6003.d_sinosov
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	desc = {
+		text = news.6003.d_rest
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	desc = {
+		text = news.6003.d_supers
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+	}
 
 	picture = GFX_report_event_sinosoviet_mutual_developement
 	
@@ -133,7 +249,114 @@ news_event = { #Superpowers event
 	is_triggered_only = yes
 	
 	option = {
-		name = news.1004.a
+		name = news.6003.a
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = news.6003.b
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	option = {
+		name = news.6003.c
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+	}
+}
+news_event = { #Superpowers event
+	id = news.6004
+	title = news.6004.t
+	desc = {
+		text = news.6004.d_sinosov
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	desc = {
+		text = news.6004.d_rest
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	desc = {
+		text = news.6004.d_supers
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+	}
+
+	picture = GFX_report_event_sinosoviet_mutual_developement
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.6004.a
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = news.6004.b
+		trigger = {
+			NOT = {
+				OR = { 
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
+	}
+	option = {
+		name = news.6004.c
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
 	}
 }
 
@@ -255,7 +478,7 @@ news_event = {
 		}
 	}
 
-	option = {
+	option = { #take action
 		name = news.1001.b1
 		trigger = {
 			tag = ENG
@@ -264,13 +487,16 @@ news_event = {
 		FRA = { country_event = { id = suez.1 days = 1 } }
 	}
 	
-	option = {
+	option = { #let it go
 		name = news.1001.b2
 		trigger = {
 			tag = ENG
 		}
 		custom_effect_tooltip = suez1.b2.tt
 		FRA = { country_event = { id = suez.2 days = 1 } }
+		hidden_effect = {
+			set_global_flag = suez_uk_out
+		}
 	}
 	
 	option = {

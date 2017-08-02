@@ -633,6 +633,14 @@ ideas = {
 		
 		yakov_malik4 = {
 			
+			allowed = {
+				NOT = { OR = { tag = USA tag = ENG tag = SOV tag = FRA tag = NKR tag = KOR tag = EGY tag = PRC tag = WGR tag = DDR tag = RAJ tag = PAK tag = YUG} }
+				NOT = {
+					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+				}
+				
+			}
+			
 			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {
@@ -657,7 +665,13 @@ ideas = {
 	minister_of_international_affairs = {
 		
 		yakov_malik3 = {
-			
+			allowed = {
+				NOT = { OR = { tag = USA tag = ENG tag = SOV tag = FRA tag = NKR tag = KOR tag = EGY tag = PRC tag = WGR tag = DDR tag = RAJ tag = PAK tag = YUG} }
+				NOT = {
+					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+				}
+				
+			}
 			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {
@@ -679,7 +693,13 @@ ideas = {
 	intelligence_minister = {
 		
 		yakov_malik2 = {
-			
+			allowed = {
+				NOT = { OR = { tag = USA tag = ENG tag = SOV tag = FRA tag = NKR tag = KOR tag = EGY tag = PRC tag = WGR tag = DDR tag = RAJ tag = PAK tag = YUG} }
+				NOT = {
+					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+				}
+				
+			}
 			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {
@@ -701,7 +721,13 @@ ideas = {
 	education_minister = {
 	
 		yakov_malik1 = {
-			
+			allowed = {
+				NOT = { OR = { tag = USA tag = ENG tag = SOV tag = FRA tag = NKR tag = KOR tag = EGY tag = PRC tag = WGR tag = DDR tag = RAJ tag = PAK tag = YUG} }
+				NOT = {
+					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+				}
+				
+			}
 			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {
@@ -723,7 +749,13 @@ ideas = {
 	united_nations_ambassador = {
 		
 		yakov_malik = {
-			
+			allowed = {
+				NOT = { OR = { tag = USA tag = ENG tag = SOV tag = FRA tag = NKR tag = KOR tag = EGY tag = PRC tag = WGR tag = DDR tag = RAJ tag = PAK tag = YUG} }
+				NOT = {
+					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+				}
+				
+			}
 			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {

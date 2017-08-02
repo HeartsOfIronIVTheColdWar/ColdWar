@@ -11,6 +11,7 @@ sub_unit_categories = {
 	category_fighter
 	category_heavy_fighter
 	category_cas
+	category_mca
 	category_IFV_1950
 	category_IFV_1960
 	category_IFV_1970
@@ -26,4 +27,14 @@ sub_unit_categories = {
 	category_MBT_1970
 	category_MBT_1980
 	category_MBT_1990
+	category_MBT_1950_art
+	category_MBT_1960_art
+	category_MBT_1970_art
+	category_MBT_1980_art
+	category_MBT_1990_art
+	category_MBT_1950_aa
+	category_MBT_1960_aa
+	category_MBT_1970_aa
+	category_MBT_1980_aa
+	category_MBT_1990_aa
 }

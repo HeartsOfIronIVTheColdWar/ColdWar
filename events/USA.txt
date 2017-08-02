@@ -821,3 +821,95 @@ country_event = {
 	}
 }
 
+# Coca Cola informs US DoS of the French ban
+country_event = {
+	id = usa.10301
+	title = usa.10301.t
+	desc = usa.10301.d
+	picture = GFX_report_event_james_farley
+	
+	trigger = {
+		tag = USA
+		date > 1950.2.1
+		date < 1950.12.1
+		FRA = {
+			has_government = democratic
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = usa.10301.a
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = {
+		name = usa.10301.b
+		ai_chance = {
+			factor = 60
+		}
+		hidden_effect = {
+			FRA = { country_event = { days = 5 id = fra.501 } }
+		}
+	}
+}
+
+# France lift ban on Coca Cola
+country_event = {
+	id = usa.10302
+	title = usa.10302.t
+	desc = usa.10302.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.10302.a
+	}
+}
+
+# France maintains ban on Coca Cola
+country_event = {
+	id = usa.10303
+	title = usa.10303.t
+	desc = usa.10303.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa.10303.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = {
+		name = usa.10303.b
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = {
+			FRA = { country_event = { days = 1 id = fra.502 } }
+		}
+	}
+}

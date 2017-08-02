@@ -13,6 +13,7 @@ bookmarks = {
 			ideas = {
 				nato_idea
 				marshall_plan
+				USA_mad
 			}
 			focuses = {
 				USA_american_economic_miracle

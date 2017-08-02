@@ -1388,7 +1388,237 @@ technologies = {
 				}
 			}
 		}
-	}			
+	}
+	military_construction1 = {
+		
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
+		production_speed_anti_air_building_factor = 0.1
+		production_speed_air_base_factor = 0.1
+		production_speed_naval_base_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		production_speed_radar_station_factor = 0.1
+
+		path = {
+			leads_to_tech = military_construction2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1950
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 5
+				date > "1950.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1960.1.1"
+			}
+		}
+	}
+	
+	military_construction2 = {
+
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
+		production_speed_anti_air_building_factor = 0.1
+		production_speed_air_base_factor = 0.1
+		production_speed_naval_base_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		production_speed_radar_station_factor = 0.1
+		
+		path = {
+			leads_to_tech = military_construction3 
+			research_cost_coeff = 1
+		}		
+		
+		research_cost = 2
+		start_year = 1960
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 3
+				date > "1960.1.1"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1960.1.6"
+			}
+		}
+	}	
+	
+	military_construction3 = {
+
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
+		production_speed_anti_air_building_factor = 0.1
+		production_speed_air_base_factor = 0.1
+		production_speed_naval_base_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		production_speed_radar_station_factor = 0.1
+		
+		path = {
+			leads_to_tech = military_construction4 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1970
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 1.5
+				has_war = yes
+			}
+			
+			modifier = {
+				factor = 0.5
+				NOT = { has_war = yes }
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1970.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1954.1.1"
+			}
+		}
+	}
+
+	military_construction4 = {
+
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
+		production_speed_anti_air_building_factor = 0.1
+		production_speed_air_base_factor = 0.1
+		production_speed_naval_base_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		production_speed_radar_station_factor = 0.1
+		
+		path = {
+			leads_to_tech = military_construction5 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1980
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 3
+				date > "1980.1.1"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1980.1.6"
+			}
+		}
+	}
+
+
+	military_construction5 = {
+	
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
+		production_speed_anti_air_building_factor = 0.1
+		production_speed_air_base_factor = 0.1
+		production_speed_naval_base_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		production_speed_radar_station_factor = 0.1
+		
+		research_cost = 2
+		start_year = 1990
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 3
+				date > "1990.1.1"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1990.1.6"
+			}
+		}
+	}
+			
 
 	
 }

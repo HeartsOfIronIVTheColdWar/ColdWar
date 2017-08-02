@@ -6,7 +6,7 @@ equipments = {
 		is_archetype = yes
 		picture = archetype_infantry_equipment		
 		type = {
-			infantry_weapons
+			infantry
 		}
 		is_buildable = no
 		type = infantry

@@ -1,10 +1,21 @@
 spriteTypes = {
 
 	### SOVIET AND SOVIET RELATED EVENTS ###
-	
+	spriteType = {
+		name = "GFX_report_event_sinosoviet_naval_treaty_small"
+		texturefile = "gfx/event_pictures/report_event_sinosoviet_naval_treaty_small.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tito_stalin"
+		texturefile = "gfx/event_pictures/report_event_tito_stalin.dds"
+	}
 	spriteType = {
 		name = "GFX_report_event_sinosoviet_treaty"
 		texturefile = "gfx/event_pictures/report_event_sinosoviet_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sinosoviet_naval_treaty"
+		texturefile = "gfx/event_pictures/report_event_sinosoviet_naval_treaty.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_sinosoviet_mutual_developement"
@@ -14,7 +25,17 @@ spriteTypes = {
 		name = "GFX_report_event_sinosoviet_mutual_developement_consideration"
 		texturefile = "gfx/event_pictures/report_event_sinosoviet_mutual_developement_consideration.dds"
 	}
+	###FRENCH EVENTS###
+	spriteType = {
+		name = "GFX_report_event_james_farley"
+		texturefile = "gfx/event_pictures/report_event_james_farley.dds"
+	}
 	
+	
+	
+	
+	
+	###ARAB EVENTS####
 	spriteType = {
 		name = "GFX_news_event_egyrevolution"
 		texturefile = "gfx/event_pictures/news_event_egyrevolution.dds"

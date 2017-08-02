@@ -1,6 +1,8 @@
 equipments = {
 
 	carrier = {
+		year = 1922
+		
 		is_archetype = yes
 		is_buildable = no
 		type = carrier
@@ -53,11 +55,15 @@ equipments = {
 	}
 
 	carrier_1 = {
+		year = 1945
+		
 		archetype = carrier
 		priority = 70
 	}
 
 	carrier_2 = {
+		year = 1950
+		
 		archetype = carrier
 		parent = carrier_1
 		priority = 70
@@ -95,6 +101,8 @@ equipments = {
 	}
 
 	carrier_3 = {
+		year = 1960
+
 		archetype = carrier
 		parent = carrier_2
 		priority = 70
@@ -132,6 +140,8 @@ equipments = {
 	}
 
 	carrier_4 = {
+		year = 1970
+	
 		archetype = carrier
 		parent = carrier_3
 		priority = 70
@@ -169,40 +179,42 @@ equipments = {
 	}
 	
 	carrier_5 = {
+		year = 1980
+	
 		archetype = carrier
 		parent = carrier_4
 		priority = 70
 		
 		ap_attack = 0
 		attack = 2
-		fire_range = 17
+		fire_range = 18
 		torpedo_attack = 0
 		carrier_size = 85
 		
-		anti_air_attack = 14
+		anti_air_attack = 16
 		
-		armor_value = 13
-		evasion = 14
+		armor_value = 14
+		evasion = 16
 		
-		surface_detection = 30
+		surface_detection = 40
 		sub_detection = 5
 		surface_visibility = 30
-		naval_speed = 32
+		naval_speed = 34
 		reliability = 0.90
 
-		naval_range = 6000
+		naval_range = 7000
 		
-		max_strength = 400
+		max_strength = 450
 		
 		port_capacity_usage = 2
 
-		build_cost_ic = 11000
+		build_cost_ic = 11750
 		resources = {
 			oil = 2
 			steel = 5
-			chromium = 2
+			chromium = 3
 		}		
-		manpower = 6000
+		manpower = 6500
 	}
 	
 	carrier_6 = {
@@ -212,33 +224,33 @@ equipments = {
 		
 		ap_attack = 0
 		attack = 2
-		fire_range = 17
+		fire_range = 19
 		torpedo_attack = 0
 		carrier_size = 85
 		
-		anti_air_attack = 14
+		anti_air_attack = 18
 		
-		armor_value = 13
-		evasion = 14
+		armor_value = 15
+		evasion = 18
 		
-		surface_detection = 30
+		surface_detection = 50
 		sub_detection = 5
 		surface_visibility = 30
-		naval_speed = 32
+		naval_speed = 34
 		reliability = 0.90
 
-		naval_range = 6000
+		naval_range = 8000
 		
-		max_strength = 400
+		max_strength = 500
 		
 		port_capacity_usage = 2
 
-		build_cost_ic = 11000
+		build_cost_ic = 12500
 		resources = {
-			oil = 2
+			oil = 3
 			steel = 5
-			chromium = 2
+			chromium = 3
 		}		
-		manpower = 6000
+		manpower = 8000
 	}
 }

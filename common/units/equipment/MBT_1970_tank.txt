@@ -61,6 +61,11 @@ equipments = {
 			armor
 			artillery
 		}
+		categories = {
+			category_front_line
+			category_army
+			category_MBT_1970_art
+		}
 		group_by = archetype
 		
 		interface_category = interface_category_armor
