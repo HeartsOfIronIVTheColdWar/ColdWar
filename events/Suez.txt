@@ -13,15 +13,26 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
+	option = { #help uk
 		name = suez.1.a
+		ai_chance = {
+			base = 95
+			### MAYBE ADD SOMETHING WHERE IT DEPENDS HOW MUCH THEY LIKE THE UK AND/OR EGYPT?
+		}
 		ISR = {
 			country_event = { id = suez.3 days = 1 }
 		}
 	}
 	
-	option = {
+	option = { #do nothing
 		name = suez.1.b
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		hidden_effect = {
 			set_global_flag = suez_france_out
 		}
@@ -42,6 +53,10 @@ country_event = {
 	
 	option = {
 		name = suez.2.a
+		ai_chance = {
+			base = 75
+			###LESS LIKELY TO TAKE ACTION IF UK DOESN'T WANT TO
+		}
 		ISR = {
 			country_event = { id = suez.3 days = 1 }
 		}
@@ -49,6 +64,13 @@ country_event = {
 	
 	option = {
 		name = suez.2.b
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		hidden_effect = {
 			set_global_flag = suez_france_out
 		}
@@ -81,6 +103,9 @@ country_event = {
 	
 	option = {
 		name = suez.3.a
+		ai_chance = {
+			base = 95
+		}
 		FRA = {
 			country_event = { id = suez.6 days = 1}
 		}
@@ -90,6 +115,13 @@ country_event = {
 		name = suez.3.b
 		FRA = {
 			country_event = { id = suez.5 days = 1}
+		}
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 		hidden_effect = {
 			if = {

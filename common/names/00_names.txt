@@ -1231,14 +1231,14 @@ ISR = { #needs expanding
 	male = {
 		names = {  
 			David Moshe Levi Yigal Golda Yitzhak Menachem Shimon Binyamin Ehud Ariel Chaim Ron Daniel Isaac Uri Jacob Avi
-			Israel Abraham Mordechai Aaron
+			Israel Abraham Mordechai Aaron Pinhas
 		}
 	}
 	female = {
 		names = { }
 	}
 	surnames = { 
-		Sharett Eshkol Allon Meir Rabin Begin Shamir Peres Netanyahu Barak Sharon Olmert Ben-Israel Yerushalmi
+		Sharett Eshkol Allon Meir Rabin Begin Shamir Peres Netanyahu Barak Sharon Olmert Ben-Israel Yerushalmi Dayan Lavon
 	}
 	callsigns = { }
 }
