@@ -19,14 +19,14 @@ state={
 
 		}
 		add_core_of = YUG
-    add_core_of = CRO
+		add_core_of = CRO
 
 	}
 
 	provinces={
 		11735
 	}
-	manpower=1410219
+	manpower=208055
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 }
