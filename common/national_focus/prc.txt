@@ -127,7 +127,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = remove_critics
+		id = PRC_remove_critics
 		icon = GFX_focus_cze_german_puppet
 		cost = 0,00
 		prerequisite = {
@@ -579,7 +579,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		cost = 0,00
 		prerequisite = {
-			focus = remove_critics
+			focus = PRC_remove_critics
 		}
 		x = 3
 		y = 8
