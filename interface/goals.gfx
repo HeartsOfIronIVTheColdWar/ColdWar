@@ -1,5 +1,11 @@
 spriteTypes = {
 
+	### PRC ###
+	SpriteType = {
+	name = "GFX_goal_PRC_100_flowers"
+	texturefile = "gfx/interface/goals/focus_PRC_100_flowers.dds"			
+	}
+	
 	### DDR ###
 	SpriteType = {
 	name = "GFX_goal_DDR_Nationale_Volksarmee"
