@@ -5,7 +5,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = GHA
+		owner = ENG
 		add_core_of = GHA
 		victory_points = {
 			10862 1 

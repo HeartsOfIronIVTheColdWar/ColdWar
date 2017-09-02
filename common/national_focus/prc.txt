@@ -14,10 +14,6 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 0
-		
-		completion_reward = {
-			add_political_power = 100
-		}
 
 	}
 	focus = {
@@ -26,35 +22,22 @@ focus_tree = {
 		cost = 10
 		x = 27
 		y = 0
-		
-		completion_reward = {
-			add_timed_idea = {
-				idea = PRC_reconstruction_idea
-				days = 365
-			}
-		}
 
 	}
 	focus = {
 		id = PRC_the_army
 		icon = GFX_goal_demand_sudetenland
-		cost = 0
+		cost = 10
 		x = 18
 		y = 0
-		completion_reward = {
-			army_experience = 10
-		}
 
 	}
 	focus = {
 		id = PRC_internal_politics
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_politics
-		}
-		completion_reward = {
-			add_political_power = 50
 		}
 		x = 2
 		y = 1
@@ -63,12 +46,9 @@ focus_tree = {
 	focus = {
 		id = PRC_the_three_year_campagin
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_internal_politics
-		}
-		completion_reward = {
-			add_ideas = PRC_3_year_campagin_idea
 		}
 		x = 2
 		y = 2
@@ -77,21 +57,18 @@ focus_tree = {
 	focus = {
 		id = PRC_corruption
 		icon = GFX_focus_rom_parties_end
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_three_year_campagin
 		}
 		x = 1
 		y = 3
-		
-		completion_reward = {
-			
-		}
+
 	}
 	focus = {
 		id = PRC_bureacracy
 		icon = GFX_focus_renounce_the_treaty_of_triannon
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_three_year_campagin
 		}
@@ -102,7 +79,7 @@ focus_tree = {
 	focus = {
 		id = PRC_the_five_year_campagin
 		icon = GFX_focus_generic_self_management
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_bureacracy
 		}
@@ -116,7 +93,7 @@ focus_tree = {
 	focus = {
 		id = PRC_bribery
 		icon = GFX_focus_generic_concessions
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_five_year_campagin
 		}
@@ -127,7 +104,7 @@ focus_tree = {
 	focus = {
 		id = PRC_taxes
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_five_year_campagin
 		}
@@ -138,7 +115,7 @@ focus_tree = {
 	focus = {
 		id = PRC_100_flowers
 		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_bribery
 		}
@@ -152,7 +129,7 @@ focus_tree = {
 	focus = {
 		id = PRC_remove_critics
 		icon = GFX_focus_cze_german_puppet
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_100_flowers
 		}
@@ -166,7 +143,7 @@ focus_tree = {
 	focus = {
 		id = PRC_KMT_off_mainland
 		icon = GFX_focus_SAF_colonialist_crusade
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_politics
 		}
@@ -177,21 +154,28 @@ focus_tree = {
 	focus = {
 		id = PRC_invade_tibet
 		icon = GFX_goal_generic_major_war
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_KMT_off_mainland
 		}
 		mutually_exclusive = {
 			focus = PRC_pressure_tibet
 		}
+		will_lead_to_war_with = ALB
 		x = 6
 		y = 2
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TIB
+			}
+		}
 
 	}
 	focus = {
 		id = PRC_SOV_treaty
 		icon = GFX_focus_generic_polish_deal
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_KMT_off_mainland
 		}
@@ -202,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = PRC_intervene_in_KOR_war
 		icon = GFX_goal_generic_position_armies
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_SOV_treaty
 		}
@@ -213,7 +197,7 @@ focus_tree = {
 	focus = {
 		id = PRC_trust_in_the_east
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_intervene_in_KOR_war
 		}
@@ -228,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = PRC_total_isolation
 		icon = GFX_focus_generic_self_management
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_intervene_in_KOR_war
 		}
@@ -243,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = PRC_pressure_tibet
 		icon = GFX_goal_generic_military_deal
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_KMT_off_mainland
 		}
@@ -252,12 +236,17 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
-
+		available = {
+			country_exists = TIB
+		}
+		completion_reward = {
+			TIB = { country_event = { id = china.3 } }
+		}
 	}
 	focus = {
 		id = PRC_our_own_faction
 		icon = GFX_goal_generic_attack_allies
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_intervene_in_KOR_war
 		}
@@ -272,7 +261,7 @@ focus_tree = {
 	focus = {
 		id = PRC_invite_north_vietnam
 		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 10
+		cost = 110
 		prerequisite = {
 			focus = PRC_our_own_faction
 		}
@@ -283,7 +272,7 @@ focus_tree = {
 	focus = {
 		id = PRC_invite_NKR
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_our_own_faction
 		}
@@ -294,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = PRC_military
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_army
 		}
@@ -305,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = PRC_establish_the_PVA
 		icon = GFX_goal_tripartite_pact
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_military
 		}
@@ -316,7 +305,7 @@ focus_tree = {
 	focus = {
 		id = PRC_begin_modernisation
 		icon = GFX_goal_generic_production
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_military
 		}
@@ -327,7 +316,7 @@ focus_tree = {
 	focus = {
 		id = PRC_doctrine
 		icon = GFX_goal_generic_army_doctrines
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_begin_modernisation
 		}
@@ -338,7 +327,7 @@ focus_tree = {
 	focus = {
 		id = PRC_doctrine_2
 		icon = GFX_goal_generic_small_arms
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_doctrine
 		}
@@ -349,7 +338,7 @@ focus_tree = {
 	focus = {
 		id = PRC_gun_research
 		icon = GFX_focus_secret_rearmament
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_begin_modernisation
 		}
@@ -360,7 +349,7 @@ focus_tree = {
 	focus = {
 		id = PRC_artillery
 		icon = GFX_goal_generic_army_artillery2
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_gun_research
 		}
@@ -371,7 +360,7 @@ focus_tree = {
 	focus = {
 		id = PRC_motorized
 		icon = GFX_goal_generic_army_motorized
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_gun_research
 		}
@@ -382,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = PRC_tanks
 		icon = GFX_goal_generic_army_tanks
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_motorized
 		}
@@ -393,7 +382,7 @@ focus_tree = {
 	focus = {
 		id = PRC_complete_modernisation
 		icon = GFX_goal_generic_air_production
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_doctrine_2
 		}
@@ -410,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = PRC_the_airforce
 		icon = GFX_goal_generic_air_fighter
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_army
 		}
@@ -421,7 +410,7 @@ focus_tree = {
 	focus = {
 		id = PRC_expand_airbases
 		icon = GFX_goal_generic_build_airforce
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_airforce
 		}
@@ -432,7 +421,7 @@ focus_tree = {
 	focus = {
 		id = PRC_SOV_liciences
 		icon = GFX_focus_generic_license_production
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expand_airbases
 		}
@@ -443,7 +432,7 @@ focus_tree = {
 	focus = {
 		id = PRC_air_doctrine_1
 		icon = GFX_goal_generic_air_doctrine
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expand_airbases
 		}
@@ -454,7 +443,7 @@ focus_tree = {
 	focus = {
 		id = PRC_air_doctrine_2
 		icon = GFX_goal_generic_air_fighter2
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_air_doctrine_1
 		}
@@ -465,7 +454,7 @@ focus_tree = {
 	focus = {
 		id = PRC_establish_PLAN
 		icon = GFX_goal_generic_navy_battleship
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_the_army
 		}
@@ -476,7 +465,7 @@ focus_tree = {
 	focus = {
 		id = PRC_request_naval_advisors
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_establish_PLAN
 		}
@@ -487,7 +476,7 @@ focus_tree = {
 	focus = {
 		id = PRC_expand_naval_bases
 		icon = GFX_goal_generic_build_navy
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_request_naval_advisors
 		}
@@ -498,7 +487,7 @@ focus_tree = {
 	focus = {
 		id = PRC_naval_sharing
 		icon = GFX_goal_continuous_increase_nu
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expand_naval_bases
 		}
@@ -509,7 +498,7 @@ focus_tree = {
 	focus = {
 		id = PRC_buy_SOV_boats
 		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expand_naval_bases
 		}
@@ -520,7 +509,7 @@ focus_tree = {
 	focus = {
 		id = PRC_expands_naval_bases_2
 		icon = GFX_goal_generic_build_navy
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_buy_SOV_boats
 		}
@@ -534,7 +523,7 @@ focus_tree = {
 	focus = {
 		id = PRC_naval_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expands_naval_bases_2
 		}
@@ -545,7 +534,7 @@ focus_tree = {
 	focus = {
 		id = PRC_1953_5_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_reconstruction
 		}
@@ -556,7 +545,7 @@ focus_tree = {
 	focus = {
 		id = PRC_expand_agriculture
 		icon = GFX_goal_generic_construction2
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_1953_5_plan
 		}
@@ -567,7 +556,7 @@ focus_tree = {
 	focus = {
 		id = PRC_commerical_industry_1
 		icon = GFX_goal_generic_consumer_goods
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expand_agriculture
 		}
@@ -578,7 +567,7 @@ focus_tree = {
 	focus = {
 		id = PRC_civilian_investement
 		icon = GFX_goal_generic_construct_civilian
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expand_agriculture
 		}
@@ -589,7 +578,7 @@ focus_tree = {
 	focus = {
 		id = PRC_civilian_investement_2
 		icon = GFX_goal_generic_construction
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_civilian_investement
 		}
@@ -600,7 +589,7 @@ focus_tree = {
 	focus = {
 		id = PRC_purge_the_right
 		icon = GFX_goal_generic_CAS
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_remove_critics
 		}
@@ -611,7 +600,7 @@ focus_tree = {
 	focus = {
 		id = PRC_commercial_industry_2
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_commerical_industry_1
 		}
@@ -622,7 +611,7 @@ focus_tree = {
 	focus = {
 		id = PRC_1958_5_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_civilian_investement_2
 		}
@@ -636,7 +625,7 @@ focus_tree = {
 	focus = {
 		id = PRC_the_great_leap
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_1958_5_plan
 		}
@@ -650,7 +639,7 @@ focus_tree = {
 	focus = {
 		id = PRC_join_KOMINFORM
 		icon = GFX_focus_generic_join_comintern
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_trust_in_the_east
 		}
@@ -661,7 +650,7 @@ focus_tree = {
 	focus = {
 		id = PRC_embrace_critics
 		icon = GFX_goal_generic_improve_relations
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_100_flowers
 		}
@@ -675,7 +664,7 @@ focus_tree = {
 	focus = {
 		id = PRC_reforms
 		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_embrace_critics
 		}
@@ -686,7 +675,7 @@ focus_tree = {
 	focus = {
 		id = PRC_air_doctrine_3
 		icon = GFX_goal_generic_air_bomber
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_anti_air
 		}
@@ -697,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = PRC_buy_SOV_planes
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_SOV_liciences
 			focus = PRC_air_doctrine_1
@@ -709,7 +698,7 @@ focus_tree = {
 	focus = {
 		id = PRC_anti_air
 		icon = GFX_focus_generic_air_defense
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_air_doctrine_2
 			focus = PRC_buy_SOV_planes
@@ -721,7 +710,7 @@ focus_tree = {
 	focus = {
 		id = PRC_army_modernzation
 		icon = GFX_goal_generic_military_sphere
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_naval_doctrine
 		}
@@ -738,7 +727,7 @@ focus_tree = {
 	focus = {
 		id = PRC_expand_steel_mills
 		icon = GFX_goal_generic_production2
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_1953_5_plan
 		}
@@ -749,7 +738,7 @@ focus_tree = {
 	focus = {
 		id = PRC_military_industry_1
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_expand_steel_mills
 		}
@@ -760,7 +749,7 @@ focus_tree = {
 	focus = {
 		id = PRC_military_industry_2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0
+		cost = 10
 		prerequisite = {
 			focus = PRC_military_industry_1
 		}

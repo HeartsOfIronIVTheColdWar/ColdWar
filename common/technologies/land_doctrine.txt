@@ -927,7 +927,10 @@ technologies = {
 	
 	international_support = {
 		
-		out_of_supply_factor = -0.35
+		send_volunteers_tension = -0.50
+		lend_lease_tension = -0.50 
+		join_faction_tension = -0.3
+		subversive_activites_upkeep = -0.25 
 		
 		path = {
 			leads_to_tech = covert_arms_production 

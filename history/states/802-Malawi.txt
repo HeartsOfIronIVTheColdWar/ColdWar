@@ -2,7 +2,7 @@ state={
 	id=802
 	name="STATE_802"
 	history={
-		owner = MAW
+		owner = ENG
 		add_core_of = MAW
 		victory_points = {
 			12986 3 

@@ -200,8 +200,7 @@ spriteTypes = {
 	}
 	
 	###GENERIC EQUIPMENT ARCHETYPES### Not completed, uses SOV stuff as placeholder - Gunnar
-	
-	###USA###
+
 	SpriteType = {
 		name = "GFX_USA_MBT_1990_medium"
 		texturefile = "gfx/interface/technologies/USA_MBT_1990.dds"
@@ -261,6 +260,68 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_USA_APC_1950_medium"
 		texturefile = "gfx/interface/technologies/USA_APC_1950.dds"
+	}
+
+	###USA###
+	SpriteType = {
+		name = "GFX_MBT_1990_medium"
+		texturefile = "gfx/interface/technologies/generic_MBT.dds"
+	}
+	SpriteType = {
+		name = "GFX_MBT_1980_medium"
+		texturefile = "gfx/interface/technologies/generic_MBT.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MBT_1970_medium"
+		texturefile = "gfx/interface/technologies/generic_MBT.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MBT_1960_medium"
+		texturefile = "gfx/interface/technologies/generic_MBT.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MBT_1950_medium"
+		texturefile = "gfx/interface/technologies/generic_MBT.dds"
+	}
+	SpriteType = {
+		name = "GFX_IFV_1990_medium"
+		texturefile = "gfx/interface/technologies/generic_IFV.dds"
+	}
+	SpriteType = {
+		name = "GFX_IFV_1980_medium"
+		texturefile = "gfx/interface/technologies/generic_IFV.dds"
+	}	
+	SpriteType = {
+		name = "GFX_IFV_1970_medium"
+		texturefile = "gfx/interface/technologies/generic_IFV.dds"
+	}	
+	SpriteType = {
+		name = "GFX_IFV_1960_medium"
+		texturefile = "gfx/interface/technologies/generic_IFV.dds"
+	}	
+	SpriteType = {
+		name = "GFX_IFV_1950_medium"
+		texturefile = "gfx/interface/technologies/generic_IFV.dds"
+	}
+	SpriteType = {
+		name = "GFX_APC_1990_medium"
+		texturefile = "gfx/interface/technologies/generic_APC.dds"
+	}
+	SpriteType = {
+		name = "GFX_APC_1980_medium"
+		texturefile = "gfx/interface/technologies/generic_APC.dds"
+	}	
+	SpriteType = {
+		name = "GFX_APC_1970_medium"
+		texturefile = "gfx/interface/technologies/generic_APC.dds"
+	}	
+	SpriteType = {
+		name = "GFX_APC_1960_medium"
+		texturefile = "gfx/interface/technologies/generic_APC.dds"
+	}	
+	SpriteType = {
+		name = "GFX_APC_1950_medium"
+		texturefile = "gfx/interface/technologies/generic_APC.dds"
 	}
 	
 	###SOVIET###
