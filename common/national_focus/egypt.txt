@@ -618,7 +618,7 @@ focus_tree = {
 		x = 4
 		y = 7
 		completion_reward = {
-			annex_country = PAL
+			annex_country = { target = PAL }
 		}
 		available = {
 			PAL = {

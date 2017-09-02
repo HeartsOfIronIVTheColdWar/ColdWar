@@ -764,7 +764,7 @@ news_event = {
 		trigger = {
 			tag = SOV
 		}
-	
+	}
 	desc = {
 		text = news.530619.d
 		trigger = {
@@ -787,7 +787,7 @@ news_event = {
 		trigger = {
 			tag = SOV
 		}
-	
+	}
 	option = {
 		name = news.530619.c
 		trigger = {
@@ -796,4 +796,5 @@ news_event = {
 				tag = SOV
 			}
 		}
+	}
 }
