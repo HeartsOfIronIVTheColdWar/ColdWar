@@ -1,0 +1,70 @@
+﻿division_template = {
+	name = "National Guard Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+	#	antitank = { x = 0 y = 1 } 	#not a thing in this mod apparently	
+	}
+}
+division_template = {
+	name = "Infantry Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 } 		
+	#	antitank = { x = 0 y = 2 } 	#not a thing in this mod apparently	
+	}
+}
+
+units = {
+	division = {
+		name = "26th National Guard Brigade"
+		location = 4088 # Gaza
+		division_template = "National Guard Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "5th Brigade"
+		location = 4161 # Rafah
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "6th Brigade"
+		location = 10002 # Abu Ageila
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "9th Reserve Brigade"
+		location = 10002 # Abu Ageila
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "1st National Guard Brigade"
+		location = 10002 # Abu Ageila
+		division_template = "National Guard Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}	
+	
+	10002
+}
+
+### Starting Production ###
+instant_effect = {
+
+}

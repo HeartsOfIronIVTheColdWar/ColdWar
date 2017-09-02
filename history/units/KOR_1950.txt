@@ -1,5 +1,5 @@
 division_template = {
-	name = "Infantry Division"
+	name = "CGC"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -10,25 +10,82 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "Infantry Division 1"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division 2"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+
 units = {
 	division = {			
-		name = "Infantry 1"		
+		name = "Capital Guard Command"		
 		location = 7125
-		division_template = "Infantry Division"
-		start_experience_factor = 0.0
+		division_template = "CGC"
+		start_experience_factor = 1.0
 	}
 	
 	division = {			
-		name = "Infantry 2"		
-		location = 7125
-		division_template = "Infantry Division"
-		start_experience_factor = 0.0
+		name = "1st Infantry Division"		
+		location = 1003
+		division_template = "Infantry Division 1"
+		start_experience_factor = 1.0
 	}
 	
 	division = {			
-		name = "Infantry 3"		
-		location = 4056
-		division_template = "Infantry Division"
-		start_experience_factor = 0.0
+		name = "2nd Infantry Division"		
+		location = 11977
+		division_template = "Infantry Division 1"
+		start_experience_factor = 1.0
 	}
+	
+	division = {			
+		name = "6th Infantry Division"		
+		location = 10036
+		division_template = "Infantry Division 1"
+		start_experience_factor = 1.0
+	}
+	
+	division = {			
+		name = "7th Infantry Division"		
+		location = 7125
+		division_template = "Infantry Division 1"
+		start_experience_factor = 1.0
+	}
+	
+	division = {			
+		name = "3rd Infantry Division"		
+		location = 4086
+		division_template = "Infantry Division 2"
+		start_experience_factor = 1.0
+	}
+	
+	division = {			
+		name = "5th Infantry Division"		
+		location = 4126
+		division_template = "Infantry Division 2"
+		start_experience_factor = 1.0
+	}
+	
+	division = {			
+		name = "8th Infantry Division"		
+		location = 12011
+		division_template = "Infantry Division 2"
+		start_experience_factor = 1.0
+	}
+	
+
 }

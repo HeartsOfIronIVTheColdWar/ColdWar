@@ -1,0 +1,348 @@
+add_namespace = korea
+#Foreign relations
+country_event = {
+#1950 elections
+id = korea.1
+title = korea.1.t
+desc = korea.1.d
+picture = gfx_?
+
+is_triggered_only = yes
+
+option = {
+	name = korea.1.a
+	ai_chance = {
+	factor = 25
+	}
+	hidden_effect = {set_country_flag = unification_government}
+}
+
+option = {
+	name = korea.1.b
+	ai_chance = {
+	factor = 75
+	}
+	hidden_effect = {set_country_flag = anti_war_government}
+}
+}
+
+country_event = {
+#US help in invasion
+id = korea.2
+title = korea.2.t
+desc = korea.2.d
+picture = gfx_?
+
+is_triggered_only = yes
+
+option = {
+	name = korea.2.a
+	ai_chance = {
+	factor = 90
+	}
+	KOR = {
+	load_oob = KOR_USA
+	country_event = {id = korea.6 days = 1 }
+}
+
+}
+
+option = {
+	name = korea.2.b
+	ai_chance = {
+	factor = 10
+	}
+	KOR = {
+	country_event = {id = korea.7 days = 1 }
+}
+}
+}
+
+country_event = {
+#Commonwealth help in invasion
+id = korea.3
+title = korea.3.t
+desc = korea.3.d
+picture = gfx_?
+
+is_triggered_only = yes
+
+option = {
+	name = korea.3.a
+	ai_chance = {
+	factor = 80
+	}
+	KOR = {
+	load_oob = KOR_CMNWLTH
+	country_event = {id = korea.6 days = 1 }
+}
+	
+}
+
+option = {
+	name = kor.3.b
+	ai_chance = {
+	factor = 20
+	}
+		KOR = {
+	country_event = {id = korea.7 days = 1 }
+}
+}
+}
+country_event = {
+#French help in invasion
+id = korea.4
+title = korea.4.t
+desc = korea.4.d
+picture = gfx_?
+
+is_triggered_only = yes
+
+option = {
+	name = korea.4.a
+	ai_chance = {
+	factor = 65
+	}
+	KOR = {
+	load_oob = KOR_FRA
+	country_event = {id = korea.6 days = 1 }
+}
+	
+}
+
+option = {
+	name = korea.4.b
+	ai_chance = {
+	factor = 35
+	}
+		KOR = {
+	country_event = {id = korea.7 days = 1 }
+}
+}
+}
+country_event = {
+#Filipino help in invasion
+id = korea.5
+title = korea.5.t
+desc = korea.5.d
+picture = gfx_?
+
+is_triggered_only = yes
+
+option = {
+	name = korea.5.a
+	ai_chance = {
+	factor = 70
+	}
+	KOR = {
+	load_oob = KOR_PHI
+	country_event = {id = korea.6 days = 1 }
+}
+	
+}
+
+option = {
+	name = korea.5.b
+	ai_chance = {
+	factor = 40
+	}
+		KOR = {
+	country_event = {id = korea.7 days = 1 }
+}
+}
+}
+country_event = {
+#Country helps
+id = korea.6
+title = korea.6.t
+desc = korea.6.d
+picture = gfx_?
+
+is_triggered_only = yes
+
+option = {
+	name = korea.6.a
+	ai_chance = {
+	factor = 1
+	}
+	
+}
+}
+
+country_event = {
+#Country doesn't help
+id = korea.7
+title = korea.7.t
+desc = korea.7.d
+picture = gfx_?
+
+is_triggered_only = yes
+
+option = {
+	name = korea.7.a
+	ai_chance = {
+	factor = 1
+	}
+	
+}
+}
+country_event = {
+#Seoul conference
+id = korea.8
+title = korea.8.t
+desc = korea.8.d
+picture = gfx_?
+
+is_triggered_only = yes 
+
+option = {
+	name = korea.8.a
+	ai_chance = {
+	factor = 6
+	}
+	NKR = {add_opinion_modifier = {target = KOR modifier = seoul_conference}}
+	KOR = {add_opinion_modifier = {target = NKR modifier = seoul_conference}}
+	set_country_flag = seoul_conference
+	}
+	
+option = {
+	name = korea.8.b
+	ai_chance = {
+	factor = 4
+	}
+	NKR = {add_opinion_modifier = {target = KOR modifier = seoul_conference_denied}}
+	KOR = {add_opinion_modifier = {target = NKR modifier = seoul_conference_denied}}
+}
+}
+country_event = {
+#Elections
+id = korea.9
+title = korea.9.t
+desc = korea.9.d
+picture = gfx_?
+
+is_triggered_only = yes 
+
+option = {
+	name = korea.9.a
+	ai_chance = {
+	factor = 6
+	}
+	KOR = {
+	country_event = {days = 1
+	id = korea.9.1}
+	}
+
+	
+option = {
+	name = korea.9.b
+	ai_chance = {
+	factor = 4
+	}
+	KOR = {
+	country_event = {days = 1
+	id = korea.9.2}
+	}
+}
+}
+}
+country_event = {
+#Elections (KOR)
+id = korea.9.1
+title = korea.9.1.t
+desc = korea.9.1.d
+picture = gfx_?
+
+is_triggered_only = yes 
+
+option = {
+	name = korea.9.1.a
+	ai_chance = {
+	factor = 6
+	}
+	random_list = {
+	60 = {
+	KOR = {
+	annex_country = {target = NKR}}
+	}
+	40 = {
+	
+	}
+	}
+
+	}
+
+
+}
+country_event = {
+#Denied
+id = korea.9.2
+title = korea.9.2.t
+desc = korea.9.2.d
+picture = gfx_?
+
+is_triggered_only = yes 
+
+option = {
+	name = korea.9.2.a
+	ai_chance = {
+	factor = 6
+	}
+	add_wargoal = {target = NKR type = annex_everything}
+
+	}
+
+
+}
+#Syngman Rhee president
+id = korea.10
+title = korea.10.t
+desc = korea.10.d
+picture = gfx_?
+
+is_triggered_only = yes 
+
+option = {
+	name = korea.10.a
+	ai_chance = {
+	factor = 6
+	}
+
+
+	}
+
+
+}
+#Fair elections
+id = korea.11
+title = korea.11.t
+desc = korea.11.d
+picture = gfx_?
+
+is_triggered_only = yes 
+
+option = {
+	name = korea.11.a
+	ai_chance = {
+	factor = 4
+	}
+	set_country_flag = syngman_rhee
+
+	}
+option = {
+	name = korea.11.b
+	ai_chance = {
+	factor = 3
+	}
+	set_country_flag = a_new_president
+
+	}
+option = {
+	name = korea.11.c
+	ai_chance = {
+	factor = 3
+	}
+	set_country_flag = a_new_president
+
+	}
+}

@@ -5,6 +5,15 @@ set_research_slots = 2
 set_convoys = 80
 set_national_unity = 0.55
 
+	set_technology = {
+		infantry_weapons_1 = 1
+		motorised_infantry = 1
+		tech_mountaineers = 1
+		tech_support = 1
+		gw_artillery = 1
+		artillery4 = 1
+	}
+
 1950.1.1 = {
 	
 	oob = "PAL_1950"
