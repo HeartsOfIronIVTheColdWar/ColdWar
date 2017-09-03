@@ -180,6 +180,9 @@ country_event = {
 	
 	option = {
 		name = suez.4.a
+		LBA = {
+			country_event = { id = suez.8 days = 7 }
+		}
 	}
 
 	
@@ -287,5 +290,69 @@ country_event = {
 			}
 		}
 		name = suez.7.c
+	}
+}
+
+#UK asks Libya for help
+country_event = {
+	id = suez.8
+	title = suez.8.t
+	desc = suez.8.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = { #yes we'll help
+		name = suez.8.a
+		add_state_claim = 452
+		add_state_claim = 552
+		create_wargoal = {
+			type = take_state_focus
+			target = EGY
+			generator = { 452 552 }
+		}
+		ENG = { 
+			send_equipment = { target = LBA type = infantry_equipment amount = 5000 }
+		}
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 0
+				448 = { is_owned_by = ENG }
+			}
+			modifier = {
+				factor = 0
+				has_idea = pro_egypt
+			}
+		}
+	}
+	
+	option = { #fuck off
+		name = suez.8.b
+		ENG = {
+			country_event = { id = suez.9 days = 7 }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0.1
+				has_idea = pro_saudi
+			}
+		}
+	}
+}
+
+#Libya refuses to help
+country_event = {
+	id = suez.9
+	title = suez.9.t
+	desc = suez.9.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = suez.9.a
+		set_global_flag = suez_uk_out
 	}
 }

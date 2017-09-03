@@ -70,7 +70,6 @@ country_event = {
 				}
 			}
 			transfer_state = 448
-			set_cosmetic_tag = LBA
 		}
 		if = {
 			limit = { 
@@ -132,5 +131,80 @@ country_event = {
 	
 	option = {
 		name = decolonisation.4.a
+	}
+}
+
+# Cyrenaica asks for Fezzan
+country_event = {
+	id = decolonisation.5
+	title = decolonisation.5.t
+	desc = decolonisation.5.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	trigger = {
+		tag = FRA
+		owns_state = 273
+		controls_state = 273
+		date > 1951.1.1
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 180
+	}
+	
+	option = {
+		name = decolonisation.5.a
+		ai_chance = {
+			factor = 95
+		}
+		effect_tooltip = {
+			LBA = {
+				transfer_state = 273
+			}
+		}
+		LBA = { country_event = { id = decolonisation.6 } }
+	}
+}
+
+# France gives Fezzan to Cyrenaica
+country_event = {
+	id = decolonisation.6
+	title = decolonisation.6.t
+	desc = decolonisation.6.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LBA
+	}
+	
+	option = {
+		name = decolonisation.6.a
+		transfer_state = 273
+	}
+}
+
+# Libya unified at last
+country_event = {
+	id = decolonisation.7
+	title = decolonisation.7.t
+	desc = decolonisation.7.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LBA
+		owns_state = 273
+		owns_state = 448
+		owns_state = 450
+	}	
+
+	option = {
+		name = decolonisation.7.a
+		set_cosmetic_tag = LBA	
 	}
 }

@@ -1739,16 +1739,16 @@ MAW = { #good
 	callsigns = { }
 }
 
-GHA = { 
+GHA = { #good
 	male = {
 		names = { 
-			Samuel
+			Samuel Kwame Joseph Akwasi Raphael Nii Edward Ignatius Fred Jerry Hilla John Nana
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { Gyimah }
+	surnames = { Gyimah Nkrumah Ankrah Afrifa Ollennu Akufo-Addo Acheampong Akuffo Rawlings Limann Kufuor Mills Mahama }
 	callsigns = { }
 }
 

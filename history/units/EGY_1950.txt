@@ -65,6 +65,6 @@ units = {
 }
 
 ### Starting Production ###
-instant_effect = {
-
-}
+#instant_effect = {
+#
+#}
