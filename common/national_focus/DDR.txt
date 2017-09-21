@@ -13,7 +13,7 @@ focus_tree = {
 		id = DDR_a_new_kind_of_socialism
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		cost = 10
-		x = 6
+		x = 3
 		y = 0
 		ai_will_do = {
 			factor = 100
@@ -35,7 +35,7 @@ focus_tree = {
 
 			}
 		}
-		x = 10
+		x = 6
 		y = 0
 		ai_will_do = {
 			factor = 0
@@ -51,7 +51,7 @@ focus_tree = {
 		id = DDR_HVA
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 20
-		x = 16
+		x = 12
 		y = 0
 		ai_will_do = {
 			factor = 50
@@ -73,7 +73,7 @@ focus_tree = {
 		id = DDR_stasi
 		icon = GFX_goal_generic_secret_weapon
 		cost = 20
-		x = 19
+		x = 16
 		y = 0
 		ai_will_do = {
 			factor = 40
@@ -88,7 +88,7 @@ focus_tree = {
 		id = DDR_rebuilding_the_east
 		icon = GFX_goal_continuous_non_factory_construct
 		cost = 20
-		x = 25
+		x = 19
 		y = 0
 		ai_will_do = {
 			factor = 50
@@ -127,7 +127,7 @@ focus_tree = {
 		id = DDR_aid_former_annexations
 		icon = GFX_goal_DDR_aid_annexations
 		cost = 50
-		x = 27
+		x = 21
 		y = 0
 		ai_will_do = {
 			factor = 50
@@ -199,7 +199,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DDR_status_quo
 		}
-		x = 5
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 3
@@ -217,7 +217,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_widerstand
 		}
-		x = 3
+		x = 1
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -235,7 +235,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_resistance_movements
 		}
-		x = 3
+		x = 1
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -253,7 +253,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_the_traitors
 		}
-		x = 3
+		x = 1
 		y = 4
 		ai_will_do = {
 			factor = 50
@@ -273,7 +273,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DDR_fuhrer
 		}
-		x = 2
+		x = 0
 		y = 5
 		ai_will_do = {
 			factor = 8
@@ -297,7 +297,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DDR_allied_intervention
 		}
-		x = 4
+		x = 2
 		y = 5
 		ai_will_do = {
 			factor = 2
@@ -317,7 +317,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DDR_widerstand
 		}
-		x = 7
+		x = 4
 		y = 1
 		ai_will_do = {
 			factor = 7
@@ -339,7 +339,7 @@ focus_tree = {
 			focus = DDR_status_quo
 			focus = DDR_widerstand
 		}
-		x = 6
+		x = 3
 		y = 2
 		ai_will_do = {
 			factor = 100
@@ -359,7 +359,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_the_stalin_note
 		}
-		x = 6
+		x = 3
 		y = 3
 		ai_will_do = {
 			factor = 100
@@ -378,7 +378,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_self_governance
 		}
-		x = 10
+		x = 6
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -400,7 +400,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_the_republic
 		}
-		x = 10
+		x = 6
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -417,7 +417,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Unification_of_socialism
 		}
-		x = 9
+		x = 5
 		y = 4
 		ai_will_do = {
 			factor = 10
@@ -434,7 +434,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Unification_of_socialism
 		}
-		x = 9
+		x = 5
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -451,7 +451,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Unification_of_socialism
 		}
-		x = 11
+		x = 7
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -536,7 +536,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_border_protection
 		}
-		x = 11
+		x = 7
 		y = 4
 		ai_will_do = {
 			factor = 10
@@ -556,7 +556,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_new_allies
 		}
-		x = 10
+		x = 7
 		y = 5
 		ai_will_do = {
 			factor = 10
@@ -574,7 +574,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_HVA
 		}
-		x = 13
+		x = 11
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -625,7 +625,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_HVA
 		}
-		x = 15
+		x = 9
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -645,7 +645,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_border_guards
 		}
-		x = 15
+		x = 9
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -665,7 +665,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Hauptverwaltung_Seepolizei
 		}
-		x = 14
+		x = 9
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -685,8 +685,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_HVA
 		}
-		x = 16
-		y = 3
+		x = 12
+		y = 2
 		ai_will_do = {
 			factor = 20
 		}	
@@ -705,8 +705,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Kasernierte_Volkspolizei 
 		}
-		x = 18
-		y = 6
+		x = 11
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}	
@@ -722,8 +722,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_aeroclub 
 		}
-		x = 16
-		y = 7
+		x = 11
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}	
@@ -742,7 +742,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_stasi
 		}
-		x = 17
+		x = 13
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -759,7 +759,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_stasi
 		}
-		x = 19
+		x = 15
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -778,7 +778,7 @@ focus_tree = {
 			focus = DDR_police_forces
 #			has_global_flag = DDR_riots
 		}
-		x = 18
+		x = 14
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -795,8 +795,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Kasernierte_Volkspolizei 
 		}
-		x = 16
-		y = 4
+		x = 13
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}	
@@ -812,8 +812,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_small_arms_production
 		}
-		x = 16
-		y = 5
+		x = 13
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}	
@@ -829,8 +829,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_stasi
 		}
-		x = 21
-		y = 1
+		x = 16
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}	
@@ -846,8 +846,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_purge_antisocialists
 		}
-		x = 21
-		y = 2
+		x = 16
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}	
@@ -863,8 +863,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_forced_unions
 		}
-		x = 21
-		y = 3
+		x = 16
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}	
@@ -883,7 +883,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_aid_former_annexations
 		}
-		x = 24
+		x = 18
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -900,7 +900,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_capital_investements
 		}
-		x = 24
+		x = 18
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -935,7 +935,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_rebuilding_the_east
 		}
-		x = 26
+		x = 20
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -986,7 +986,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_infrastructural_aid
 		}
-		x = 26
+		x = 20
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -1019,7 +1019,7 @@ focus_tree = {
 			focus = DDR_rebuild_factories
 			focus = DDR_Berlin
 		}
-		x = 25
+		x = 19
 		y = 4
 		ai_will_do = {
 			factor = 20
@@ -1058,7 +1058,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_allied_intervention
 		}
-		x = 2
+		x = 0
 		y = 6
 		ai_will_do = {
 			factor = 5
@@ -1075,7 +1075,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_fuhrer
 		}
-		x = 4
+		x = 2
 		y = 6
 		ai_will_do = {
 			factor = 100
@@ -1092,27 +1092,13 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Nationale_Volksarmee
 		}
+		prerequisite = {
+			focus = DDR_luftstreitkrafte
+		}
 		x = 12
-		y = 8
+		y = 7
 		ai_will_do = {
 			factor = 10
-		}	
-		completion_reward = {
-		
-		}
-
-	}
-	focus = {
-		id = DDR_revitalize_the_military
-		icon = GFX_focus_generic_commonwealth_build_infantry
-		cost = 10
-		prerequisite = {
-			focus = DDR_defense_against_capitalism
-		}
-		x = 11
-		y = 6
-		ai_will_do = {
-			factor = 20
 		}	
 		completion_reward = {
 		
@@ -1127,13 +1113,10 @@ focus_tree = {
 			focus = DDR_artillery_and_mortars
 		}
 		prerequisite = {
-			focus = DDR_coastal_defense
-		}
-		prerequisite = {
-			focus = DDR_revitalize_the_military
+			focus = DDR_defense_against_capitalism
 		}
 		x = 13
-		y = 7
+		y = 6
 		ai_will_do = {
 			factor = 20
 		}	
@@ -1148,13 +1131,13 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		cost = 10
 		prerequisite = {
-			focus = DDR_Nationale_Volksarmee
-		}
-		prerequisite = {
 			focus = DDR_airbases
 		}
-		x = 14
-		y = 8
+		prerequisite = {
+			focus = DDR_defense_against_capitalism
+		}
+		x = 11
+		y = 6
 		ai_will_do = {
 			factor = 20
 		}	
@@ -1171,8 +1154,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_Volkspolizei_See
 		}
-		x = 14
-		y = 5
+		x = 9
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1188,7 +1171,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_aid_former_annexations
 		}
-		x = 28
+		x = 22
 		y = 2
 		ai_will_do = {
 			factor = 10
@@ -1220,7 +1203,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_develop_countryside
 		}
-		x = 28
+		x = 22
 		y = 3
 		ai_will_do = {
 			factor = 10
@@ -1237,13 +1220,33 @@ focus_tree = {
 		prerequisite = {
 			focus = DDR_new_building_permits
 		}
-		x = 27
+		x = 21
 		y = 4
 		ai_will_do = {
 			factor = 10
 		}	
 		completion_reward = {
 #			add_ideas = DDR_reparation
+		
+		}
+
+	}
+	focus = {
+		id = DDR_economic_regrowth
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = DDR_reparation_funds
+		}
+		prerequisite = {
+			focus = DDR_petrochemicals
+		}
+		x = 20
+		y = 5
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
 		
 		}
 

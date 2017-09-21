@@ -11,6 +11,8 @@ set_national_unity = 0.6
 	add_ideas = {
 		allied_occupation
 		loser_of_the_second_world_war
+		WGR_paperclip
+		bundesbank_1
 	}
 	set_politics = {
 
@@ -53,7 +55,7 @@ set_national_unity = 0.6
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
-		limited_conscription
+		disarmed_nation
 		#ideas
 	}
 

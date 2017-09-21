@@ -22,6 +22,214 @@ ideas = {
 				industrial_capacity_factory = 0.2   
 			}
 		}
+		
+		allied_occupation_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				conscription_factor = -0.3
+				democratic_drift = 0.02
+				industrial_capacity_factory = 0.1   
+			}
+		}
+		
+		repair_the_autonahn = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		WGR_paperclip = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				research_time_factor = 0.10
+			}
+		}
+		
+		bundesbank_1 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		
+		bundesbank_2 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		bundesbank_3 = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		
+		bundesgrenzschutz = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				conscription = 0.003
+			}
+		}
+		
+		bundesgrenzschutz_expanded = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				conscription = 0.0045
+			}
+		}
+		
+		a_new_bundeswehr = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				army_morale_factor = 0.10
+				conscription = 0.0075
+			}
+		}
+		
+		bundeswehr_schutz = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				army_morale_factor = 0.10
+				conscription = 0.01
+				dig_in_speed_factor = 0.02
+				max_dig_in = 10
+			}
+		}
+		
+		bundeswehr_befreier = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				army_morale_factor = 0.10
+				conscription = 0.01
+				army_attack_factor = 0.1
+				org_loss_when_moving = -0.05
+			}
+		}
 	}
 	
 ###ADVISORS AND STAFF###

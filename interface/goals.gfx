@@ -1,4 +1,28 @@
 spriteTypes = {
+	SpriteType = { 
+		name = "GFX_focus_goal_green_water"
+		texturefile = "gfx/interface/goals/goal_green_water.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_generic_army_IFV"
+		texturefile = "gfx/interface/goals/goal_generic_army_IFV.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_generic_army_APC"
+		texturefile = "gfx/interface/goals/goal_generic_army_APC.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_wgr_coal_and_steel"
+		texturefile = "gfx/interface/goals/focus_wgr_coal_and_steel.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_blue_navy"
+		texturefile = "gfx/interface/goals/goal_blue_navy.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_elite_marines"
+		texturefile = "gfx/interface/goals/focus_elite_marines.dds"
+	}
 
 	### PRC ###
 	SpriteType = {
@@ -914,7 +938,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_focus_secret_rearmament"
+		name = "GFX_focus_elite_marines"
 		texturefile = "gfx/interface/goals/focus_secret_rearmament.dds"
 	}
 	

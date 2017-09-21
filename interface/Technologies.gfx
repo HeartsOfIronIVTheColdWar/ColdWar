@@ -24,6 +24,26 @@ spriteTypes = {
 		name = "GFX_antiair_1990_medium"
 		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
 	}
+	## Anti Air improvement Icons ##
+		
+	SpriteType = {
+		name = "GFX_SPAA_1950_air_attack_medium"
+		texturefile = "gfx/interface/technologies/antiair11.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1960_air_attack_medium"
+		texturefile = "gfx/interface/technologies/antiair12.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1970_air_attack_medium"
+		texturefile = "gfx/interface/technologies/antiair13.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPAA_1980_air_attack_medium"
+		texturefile = "gfx/interface/technologies/antiair14.dds"
+	}
+	### SPAA ###
+	
 	SpriteType = {
 		name = "GFX_SPAA_1950_medium"
 		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
