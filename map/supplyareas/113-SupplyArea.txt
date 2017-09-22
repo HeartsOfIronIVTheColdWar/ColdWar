@@ -4,6 +4,6 @@ supply_area={
 	name="SUPPLYAREA_113" # Sinai & Suez
 	value=7
 	states={
-		453 803
+		453 803 845 846
 	}
 }

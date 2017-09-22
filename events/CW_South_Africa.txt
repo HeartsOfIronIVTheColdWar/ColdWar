@@ -1,0 +1,29 @@
+﻿###########################
+# South African Events
+###########################
+
+add_namespace = southafrica
+
+#The death of Jan Smuts
+country_event = {
+	id = southafrica.1
+	title = southafrica.1.t
+	desc = southafrica.1.d
+
+	picture = GFX_report_event_advisor_read_write
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAF
+		date > 1950.9.1
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = southafrica.1.a
+	}
+}

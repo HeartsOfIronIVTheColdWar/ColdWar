@@ -205,6 +205,6 @@ country_event = {
 
 	option = {
 		name = decolonisation.7.a
-		set_cosmetic_tag = LBA	
+		drop_cosmetic_tag = yes
 	}
 }

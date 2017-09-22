@@ -274,6 +274,22 @@ country_event = {
 			tag = ISR
 		}
 		name = suez.7.a
+		ai_chance = {
+			base = 90
+		}
+		immediate = {
+			FRA = {
+				country_event = { id = suez.10 days = 1 }
+			}
+			if = {
+				limit = {
+					NOT = has_global_flag = suez_uk_out
+				}
+				ENG = {
+					country_event = { id = suez.10 days = 1 }
+				}
+			}
+		}
 	}
 
 	option = {
@@ -281,6 +297,9 @@ country_event = {
 			tag = ISR
 		}
 		name = suez.7.b
+		ai_chance = {
+			base = 10
+		}
 	}
 	
 	option = {
@@ -354,5 +373,300 @@ country_event = {
 	option = {
 		name = suez.9.a
 		set_global_flag = suez_uk_out
+	}
+}
+
+#Sèvres: Israel presents the Ben-Gurion Plan
+country_event = {
+	id = suez.10
+	title = suez.10.t
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	desc = {
+		trigger = {
+			tag = FRA
+			NOT = has_global_flag = suez_uk_out
+		}
+		text = suez.10.d_fra_uk
+	}
+	
+	desc = {
+		trigger = {
+			tag = FRA
+			has_global_flag = suez_uk_out
+		}
+		text = suez.10.d_fra_nouk
+	}
+	
+	desc = {
+		trigger = {
+			tag = ENG
+		}
+		text = suez.10.d_eng
+	}
+	
+	option = { #sounds good
+		name = suez.10.a
+		if = {
+			limit = {
+				tag = FRA
+				}
+			set_global_flag = suez_fra_approves_ben_gurion_plan
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			set_global_flag = suez_uk_approves_ben_gurion_plan
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0
+				OR = {
+					has_global_flag = suez_uk_out
+					historical_focus = yes
+				}
+			}
+			modifier = {
+				factor = 0.1
+				tag = ENG
+			}
+		}
+	}
+	
+	option = { #veto
+		name = suez.10.b
+		if = {
+			limit = {
+				tag = FRA
+			}
+			set_global_flag = suez_fra_rejects_ben_gurion_plan
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			set_global_flag = suez_uk_rejects_ben_gurion_plan
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+}
+
+#Sèvres: Ben-Gurion Plan approved
+country_event = {
+	id = suez.11
+	title = suez.11.t
+	picture = GFX_report_event_polish_tanks_01
+	
+	trigger = {
+		tag = ISR
+		has_global_flag = suez_fra_approves_ben_gurion_plan
+		OR = {
+			has_global_flag = suez_uk_approves_ben_gurion_plan
+			has_global_flag = suez_uk_out
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	desc = {
+		trigger = {
+			has_global_flag = suez_uk_out
+		}
+		text = suez.11.d_nouk
+	}
+	
+	desc = {
+		trigger = {
+			has_global_flag = suez_uk_approves_ben_gurion_plan
+		}
+		text = suez.11.d_uk
+	}
+	
+	option = {
+		name = suez.11.a
+		IRQ = {
+			country_event = { id = suez.13 days = 7 }
+		}
+	}
+}
+
+#Sèvres: Ben-Gurion Plan rejected
+country_event = {
+	id = suez.12
+	title = suez.12.t
+	picture = GFX_report_event_polish_tanks_01
+	
+	trigger = {
+		tag = ISR
+		OR = {
+			has_global_flag = suez_fra_rejects_ben_gurion_plan
+			has_global_flag = suez_uk_rejects_ben_gurion_plan
+		}
+		OR = {
+			has_global_flag = suez_fra_rejects_ben_gurion_plan
+			has_global_flag = suez_fra_approves_ben_gurion_plan
+		}
+		OR = {
+			has_global_flag = suez_uk_rejects_ben_gurion_plan
+			has_global_flag = suez_uk_approves_ben_gurion_plan
+			has_global_flag = suez_uk_out
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	desc = {
+		trigger = {
+			has_global_flag = suez_uk_out
+		}
+		text = suez.12.d_nouk
+	}
+	
+	desc = {
+		trigger = {
+			has_global_flag = suez_uk_rejects_ben_gurion_plan
+			has_global_flag = suez_fra_approves_ben_gurion_plan
+		}
+		text = suez.12.d_uk
+	}
+	
+	desc = {
+		trigger = {
+			has_global_flag = suez_fra_rejects_ben_gurion_plan
+			has_global_flag = suez_uk_approves_ben_gurion_plan
+		}
+		text = suez.12.d_fra
+	}
+	
+	
+	desc = {
+		trigger = {
+			has_global_flag = suez_uk_rejects_ben_gurion_plan
+			has_global_flag = suez_fra_rejects_ben_gurion_plan
+		}
+		text = suez.12.d_both
+	}
+	
+	option = {
+		name = suez.12.a
+	}
+	
+	option = {
+		name = suez.12.b
+		set_global_flag = suez_israel_out
+	}
+}
+
+#The Ben-Gurion Plan is put to Iraq
+country_event = {
+	id = suez.13
+	title = suez.13.t
+	picture = GFX_report_event_polish_tanks_01
+	desc = suez.13.d
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = IRQ
+	}
+	
+	
+	option = { #yes please
+		name = suez.13.a
+		JOR = {
+			country_event = { id = suez.14 days = 10 }
+		}
+		ISR = {
+			country_event = { id = suez.15 days = 7 }
+		}
+		FRA = {
+			country_event = { id = suez.15 days = 7 }
+		}
+		if = {
+			limit = {
+				NOT = { has_global_flag = suez_uk_out }
+			}
+			ENG = {
+				country_event = { id = suez.15 days = 7 }
+			}
+		}
+	}
+	
+	option = { #fuck off
+		name = suez.13.b
+		ISR = {
+			country_event = { id = suez.16 days = 7 }
+		}
+		FRA = {
+			country_event = { id = suez.16 days = 7 }
+		}
+		if = {
+			limit = {
+				NOT = { has_global_flag = suez_uk_out }
+			}
+			ENG = {
+				country_event = { id = suez.16 days = 7 }
+			}
+		}
+	}
+}
+
+#Iraq asks Jordan to federate
+country_event = {
+	id = suez.14
+	title = suez.14.t
+	picture = GFX_report_event_polish_tanks_01
+	desc = suez.14.d
+	
+	is_triggered_only = yes
+	
+	option = { #sure
+		name = suez.14.a
+	}
+	
+	option = { #no
+		name = suez.14.b
+	}
+}
+
+#Iraq agrees to the Ben-Gurion Plan
+country_event = {
+	id = suez.15
+	title = suez.15.t
+	picture = GFX_report_event_polish_tanks_01
+	desc = suez.15.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = suez.15.a
+	}
+}
+
+#Iraq rejects the Ben-Gurion Plan
+country_event = {
+	id = suez.16
+	title = suez.16.t
+	picture = GFX_report_event_polish_tanks_01
+	desc = suez.16.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = suez.16.a
 	}
 }

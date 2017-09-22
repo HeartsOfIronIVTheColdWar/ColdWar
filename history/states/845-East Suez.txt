@@ -1,7 +1,7 @@
-state=
-{
-	id=803
-	name="STATE_803"
+
+state={
+	id=845
+	name="STATE_845"
 	manpower = 250000
 	
 	state_category = town
@@ -10,13 +10,7 @@ state=
 		owner = ENG
 		buildings = {
 			infrastructure = 10
-			air_base = 4
-			12049 = {
-				naval_base = 2
-			}
-		}
-		victory_points = {
-			12049 1
+			air_base = 2
 		}
 
 		add_core_of = EGY
@@ -24,6 +18,6 @@ state=
 	}
 
 	provinces={
-		4073 12049
+		1155 9947
 	}
 }
