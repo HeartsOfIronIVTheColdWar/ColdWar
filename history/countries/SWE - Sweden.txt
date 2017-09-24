@@ -13,6 +13,8 @@ set_national_unity = 0.55
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
+		SWE_en_svensk_tiger
+		SWE_mobiliseringsfarrod
 	}
 	set_politics = {
 

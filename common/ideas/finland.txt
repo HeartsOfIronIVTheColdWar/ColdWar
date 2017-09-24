@@ -17,6 +17,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.25
 				attrition = -0.1
+				winter_attrition_factor = -0.25
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
 			}
@@ -32,7 +33,8 @@ ideas = {
 			removal_cost = -1 
 			
 			modifier = {
-				
+				consumer_goods_factor = 0.2
+				min_export = 0.2
 			}
 		}
 		
@@ -44,7 +46,8 @@ ideas = {
 			removal_cost = -1 
 			
 			modifier = {
-				
+				production_factory_efficiency_gain_factor 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 	}

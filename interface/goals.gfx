@@ -1,4 +1,6 @@
 spriteTypes = {
+
+	###GENERIC###
 	SpriteType = { 
 		name = "GFX_focus_goal_green_water"
 		texturefile = "gfx/interface/goals/goal_green_water.dds"
@@ -22,6 +24,42 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_elite_marines"
 		texturefile = "gfx/interface/goals/focus_elite_marines.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_cze_german_puppet"
+		texturefile = "gfx/interface/goals/focus_cze_german_puppet.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_non_aligned_movement"
+		texturefile = "gfx/interface/goals/focus_non_aligned_movement.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_NATO_goal"
+		texturefile = "gfx/interface/goals/focus_NATO_goal.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_ENG_advisors"
+		texturefile = "gfx/interface/goals/goal_ENG_advisors.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_FRA_advisors"
+		texturefile = "gfx/interface/goals/goal_FRA_advisors.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_USA_advisors"
+		texturefile = "gfx/interface/goals/goal_USA_advisors.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_PRC_advisors"
+		texturefile = "gfx/interface/goals/goal_PRC_advisors.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_goal_SOV_advisors"
+		texturefile = "gfx/interface/goals/goal_SOV_advisors.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_generic_concessions"
+	texturefile = "gfx/interface/goals/focus_generic_concessions.dds"			
 	}
 
 	### PRC ###

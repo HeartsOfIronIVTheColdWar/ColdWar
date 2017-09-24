@@ -1,5 +1,23 @@
 spriteTypes = {
 
+###FIN###
+	spriteType = {
+		name = "GFX_idea_FIN_reparations_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_central_management.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FIN_wartime_reparations"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+	}
+###SWE###
+	spriteType = {
+		name = "GFX_idea_SWE_en_svensk_tiger"
+		texturefile = "gfx/interface/ideas/SWE_en_svensk_tiger.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_mobiliseringsfarrod"
+		texturefile = "gfx/interface/ideas/idea_generic_local_self_management.dds"
+	}	
 ###SOVIET###
 	spriteType = {
 		name = "GFX_idea_USA_mad"
