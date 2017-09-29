@@ -412,7 +412,7 @@ leader_traits = {
 		}
 		cost = 100
 		modifier = {
-			amphibious_invasion = 0.4 # 30% faster invasions
+			amphibious_invasion = 0.4 # 40% faster invasions
 			invasion_preparation = -0.4
 		}
 		

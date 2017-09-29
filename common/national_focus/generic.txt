@@ -5,9 +5,13 @@ focus_tree = {
 	}
 	default = yes
 	
-	
-	
-	
+#############################################
+#####GENERIC FOCUS TREE######################
+#############################################
+
+#############################
+#####INDUSTRIAL TREE#########
+#############################
 	focus = {
 		id = industrial_effort
 		icon = GFX_goal_generic_production
@@ -24,28 +28,11 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			add_timed_idea = { idea = industrial_investements days = 365 }
 		}
 
 		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}				
-			}
+			factor = 5
 		}
 	}
 
@@ -88,6 +75,36 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -495,6 +512,36 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -662,37 +709,13 @@ focus_tree = {
 		}
 	}
 
-#	focus = {
-#		id = nuclear_effort
-#		icon = GFX_focus_wonderweapons
-#		prerequisite = { focus = infrastructure_effort_2 }
-#		x = 10
-#		y = 5
-#		cost = 10
-#
-#		available_if_capitulated = yes
-#
-#		completion_reward = {
-#			add_tech_bonus = {
-#				name = nuclear_bonus
-#				ahead_reduction = 0.5
-#				category = nuclear
-#			}
-#		}
-#
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				factor = 0.25
-#				always = yes
-#			}
-#		}
-#	}
-
 	focus = {
 		id = extra_tech_slot
 		icon = GFX_focus_research
 		prerequisite = { focus = infrastructure_effort_2 }
+		available = {
+			num_of_factories > 15
+		}
 		x = 25
 		y = 5
 		cost = 10
@@ -747,7 +770,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 4
 				category = electronics
-				# category = nuclear
 				category = rocketry
 			}
 		}
@@ -760,7 +782,10 @@ focus_tree = {
 			}
 		}
 	}
-
+	
+#############################
+#####DIPLOMATIC TREE#########
+#############################
 	
 	focus = {
 		id = diplomatic_effort
@@ -768,6 +793,10 @@ focus_tree = {
 		cost = 10.00
 		x = 33
 		y = 0
+		completion_reward = {
+			add_political_power = 150
+			add_national_unity = 0.05
+		}
 
 	}
 	
@@ -784,6 +813,14 @@ focus_tree = {
 		available = {
 			NOT = { has_government = democratic }
 			NOT = { is_subject = yes }
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_opinion_modifier = { target = ENG modifier = eastern_leanings_bad }
+			add_opinion_modifier = { target = USA modifier = eastern_leanings_bad }
+			add_opinion_modifier = { target = FRA modifier = eastern_leanings_bad }
+			add_opinion_modifier = { target = PRC modifier = eastern_leanings }
+			add_opinion_modifier = { target = SOV modifier = eastern_leanings }
 		}
 		x = 31
 		y = 1
@@ -862,7 +899,7 @@ focus_tree = {
 				limit = { NOT = { has_idea = neutrality_idea } }
 				add_ideas = neutrality_idea
 			}
-			add_political_power = 150
+			add_political_power = 100
 		}
 	}
 	
@@ -876,6 +913,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = join_NATO
 			focus = join_warsaw_pact
+		}
+		if = {
+			limit = { NOT = { has_idea = non_aligned_movement_member } }
+			add_ideas = non_aligned_movement_member
+			remove_ideas = neutrality_idea
 		}
 		x = 33
 		y = 3
@@ -896,6 +938,14 @@ focus_tree = {
 			NOT = { has_government = communism }
 			NOT = { is_subject = yes }
 		}
+		completion_reward = {
+			add_political_power = 50
+			add_opinion_modifier = { target = ENG modifier = western_leanings }
+			add_opinion_modifier = { target = USA modifier = western_leanings }
+			add_opinion_modifier = { target = FRA modifier = western_leanings }
+			add_opinion_modifier = { target = PRC modifier = western_leanings_bad }
+			add_opinion_modifier = { target = SOV modifier = western_leanings_bad }
+		}
 		x = 35
 		y = 1
 
@@ -909,10 +959,70 @@ focus_tree = {
 			focus = UK_advisors
 			focus = french_advisors
 		}
-		prerequisite = {
-			num_of_factories < 10
+		available = {
+			num_of_factories < 15
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 37
 		y = 3
@@ -926,10 +1036,70 @@ focus_tree = {
 			focus = chinese_advisors
 			focus = soviet_advisors
 		}
-		prerequisite = {
-			num_of_factories < 10
+		available = {
+			num_of_factories < 15
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 29
 		y = 3
@@ -943,6 +1113,97 @@ focus_tree = {
 			focus = seek_industrial_aid_COM
 		}
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			SOV = { puppet = ROOT }
 		}
 		x = 29
 		y = 5
@@ -1085,13 +1346,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					original_research_slots < 3
+					original_research_slots > 2
 				}
 				add_research_slot = 1
 			}
 			if = {
 				limit = {
-					original_research_slots > 2
+					original_research_slots < 3
 				}
 				add_tech_bonus = {
 					name = electronics_bonus
@@ -1115,15 +1376,24 @@ focus_tree = {
 			}			
 		}
 	}
+	
+	
+
+#############################
+###ARMY START################
+#############################
 	focus = {
 		id = army_effort_1
 		icon = GFX_focus_generic_license_production
 		cost = 10
 		x = 6
 		y = 0
-
+		completion_reward = {
+			create_corps_commander = { name = ROOT gfx = ROOT traits = { trait_engineer } skill = 3 }
+			army_experience = 15
+		}
 	}
-	###ARTILLERY###
+###ARTILLERY###
 	focus = {
 		id = artillery
 		icon = GFX_goal_generic_army_artillery
@@ -1133,6 +1403,14 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
 
 	}
 	focus = {
@@ -1144,41 +1422,14 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
-
-	}
-	focus = {
-		id = spart_2
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = spart_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = spart_bonus
+				bonus = 0.5
+				uses = 1
+				category = spart_artillery
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 1
-		y = 8
-
-	}
-	focus = {
-		id = spart_3
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10
-		prerequisite = {
-			focus = spart_2
-		}
-		x = 1
-		y = 4
-
-	}
-	focus = {
-		id = spart_4
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = spart_3
-		}
-		x = 1
-		y = 9
-
 	}
 	focus = {
 		id = artillery_1
@@ -1189,44 +1440,16 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
-
-	}
-	focus = {
-		id = artillery_2
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10
-		prerequisite = {
-			focus = artillery_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 2
-		y = 7
-
 	}
-	focus = {
-		id = artillery_3
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10
-		prerequisite = {
-			focus = artillery_2
-		}
-		x = 2
-		y = 3
-
-	}
-	focus = {
-		id = artillery_4
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10
-		prerequisite = {
-			focus = artillery_3
-		}
-		x = 2
-		y = 8
-
-	}
-	#### MOTORIZED ###
-	
+#### MOTORIZED ###
 	focus = {
 		id = motorization_2
 		icon = GFX_goal_generic_army_motorized
@@ -1236,55 +1459,15 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
-
-	}
-	focus = {
-		id = motorization_3
-		icon = GFX_goal_generic_army_motorized
-		cost = 10
-		prerequisite = {
-			focus = motorization_2
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				technology = motorised_infantry
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 3
-		y = 6
-
 	}
-	focus = {
-		id = motorization_4
-		icon = GFX_goal_generic_army_motorized
-		cost = 10
-		prerequisite = {
-			focus = motorization_3
-		}
-		x = 3
-		y = 2
-
-	}
-	focus = {
-		id = motorization_5
-		icon = GFX_goal_generic_army_motorized
-		cost = 10
-		prerequisite = {
-			focus = motorization_4
-		}
-		x = 3
-		y = 7
-
-	}
-	focus = {
-		id = motorization_6
-		icon = GFX_goal_generic_army_motorized
-		cost = 10
-		prerequisite = {
-			focus = motorization_5
-		}
-		x = 3
-		y = 9
-
-	}
-	
-	### APC / IFV ###
+###APC / IFV###
 	focus = {
 		id = mechanization
 		icon = GFX_focus_NZL_bob_semple_tank
@@ -1294,7 +1477,13 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				technology = motorised_infantry
+			}
+		}
 	}
 	focus = {
 		id = apc_1
@@ -1308,7 +1497,13 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = apc_bonus
+				bonus = 0.6
+				technology = APC_1950
+			}
+		}
 	}
 	focus = {
 		id = apc_developement_1
@@ -1319,74 +1514,14 @@ focus_tree = {
 		}
 		x = 4
 		y = 3
-
-	}
-	focus = {
-		id = apc_2
-		icon = GFX_focus_goal_generic_army_APC
-		cost = 10
-		prerequisite = {
-			focus = apc_developement_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = apc_bonus
+				bonus = 0.4
+				uses = 3
+				technology = APC_1950
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 4
-		y = 6
-
-	}
-	focus = {
-		id = apc_developement_2
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = apc_2
-		}
-		x = 4
-		y = 8
-
-	}
-	focus = {
-		id = apc_3
-		icon = GFX_focus_goal_generic_army_APC
-		cost = 10
-		prerequisite = {
-			focus = apc_developement_2
-		}
-		x = 4
-		y = 2
-
-	}
-	focus = {
-		id = apc_developement_3
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = apc_3
-		}
-		x = 4
-		y = 4
-
-	}
-	focus = {
-		id = apc_4
-		icon = GFX_focus_goal_generic_army_APC
-		cost = 10
-		prerequisite = {
-			focus = apc_developement_3
-		}
-		x = 4
-		y = 7
-
-	}
-	focus = {
-		id = apc_developement_4
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = apc_4
-		}
-		x = 4
-		y = 9
-
 	}
 	focus = {
 		id = ifv_1
@@ -1400,7 +1535,13 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = ifv_bonus
+				bonus = 0.6
+				technology = IFV_1950
+			}			
+		}
 	}
 	focus = {
 		id = ifv_developement_1
@@ -1411,76 +1552,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
-	}
-	focus = {
-		id = ifv_2
-		icon = GFX_focus_goal_generic_army_IFV
-		cost = 10
-		prerequisite = {
-			focus = ifv_developement_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = ifv_bonus
+				bonus = 0.4
+				uses = 3
+				technology = IFV_1950
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 6
-		y = 6
-
 	}
-	focus = {
-		id = ifv_developement_2
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = ifv_2
-		}
-		x = 6
-		y = 8
-
-	}
-	focus = {
-		id = ifv_3
-		icon = GFX_focus_goal_generic_army_IFV
-		cost = 10
-		prerequisite = {
-			focus = ifv_developement_2
-		}
-		x = 6
-		y = 2
-
-	}
-	focus = {
-		id = ifv_developement_3
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = ifv_3
-		}
-		x = 6
-		y = 4
-
-	}
-	focus = {
-		id = ifv_4
-		icon = GFX_focus_goal_generic_army_IFV
-		cost = 10
-		prerequisite = {
-			focus = ifv_developement_3
-		}
-		x = 6
-		y = 7
-
-	}
-	focus = {
-		id = ifv_developement_4
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = ifv_4
-		}
-		x = 6
-		y = 9
-
-	}
-	
-	### TANK ###
+###TANK###
 	focus = {
 		id = tank_1
 		icon = GFX_goal_generic_army_tanks
@@ -1490,7 +1571,14 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.6
+				uses = 1
+				category = MBT_1950
+			}
+		}
 	}
 	focus = {
 		id = armor_developement_1
@@ -1501,7 +1589,14 @@ focus_tree = {
 		}
 		x = 8
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.4
+				uses = 2
+				category = MBT_1950
+			}
+		}
 	}
 	focus = {
 		id = armor_developement_2
@@ -1512,107 +1607,16 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
-
-	}
-	focus = {
-		id = armor_effort_2
-		icon = GFX_goal_generic_army_tanks
-		cost = 10
-		allow_branch = { date > 1959.12.31 }
-		x = 8
-		y = 2
-
-	}
-	focus = {
-		id = armor_developement_3
-		icon = GFX_goal_continuous_armor_production
-		cost = 10
-		prerequisite = {
-			focus = armor_effort_2
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.4
+				uses = 2
+				category = MBT_1950
+			}
 		}
-		x = 8
-		y = 8
-
 	}
-	focus = {
-		id = armor_developement_4
-		icon = GFX_goal_continuous_armor_production
-		cost = 10
-		prerequisite = {
-			focus = armor_developement_3
-		}
-		x = 8
-		y = 0
-
-	}
-	focus = {
-		id = armor_effort_3
-		icon = GFX_goal_generic_army_tanks
-		cost = 10
-		prerequisite = {
-			focus = armor_developement_4
-		}
-		x = 8
-		y = 3
-
-	}
-	focus = {
-		id = armor_developement_5
-		icon = GFX_goal_continuous_armor_production
-		cost = 10
-		prerequisite = {
-			focus = armor_effort_3
-		}
-		x = 8
-		y = 4
-
-	}
-	focus = {
-		id = armor_developement_6
-		icon = GFX_goal_continuous_armor_production
-		cost = 10
-		prerequisite = {
-			focus = armor_developement_5
-		}
-		x = 8
-		y = 5
-
-	}
-	focus = {
-		id = armor_effort_4
-		icon = GFX_goal_generic_army_tanks
-		cost = 10
-		prerequisite = {
-			focus = armor_developement_6
-		}
-		x = 8
-		y = 8
-
-	}
-	focus = {
-		id = armor_developement_7
-		icon = GFX_goal_continuous_armor_production
-		cost = 10
-		prerequisite = {
-			focus = armor_effort_4
-		}
-		x = 8
-		y = 9
-
-	}
-	focus = {
-		id = armor_developement_8
-		icon = GFX_goal_continuous_armor_production
-		cost = 10
-		prerequisite = {
-			focus = armor_developement_7
-		}
-		x = 8
-		y = 9
-
-	}
-	###DOCTRINES###
-	
+###DOCTRINES###
 	focus = {
 		id = doctrine_1
 		icon = GFX_goal_generic_army_doctrines
@@ -1622,7 +1626,16 @@ focus_tree = {
 		}
 		x = 7
 		y = 1
-
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			create_corps_commander = { name = "McLovin" gfx = "WhiteDude" traits = { trait_engineer } skill = 3 }
+		}
 	}
 	focus = {
 		id = doctrine_2
@@ -1631,73 +1644,23 @@ focus_tree = {
 		prerequisite = {
 			focus = doctrine_1
 		}
-		x = 7
-		y = 6
-
-	}
-	focus = {
-		id = doctrine_3
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10
-		allow_branch = { date > 1959.12.31 }
-		x = 7
-		y = 6
-
-	}
-	focus = {
-		id = doctrine_4
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10
-		prerequisite = {
-			focus = doctrine_3
-		}
-		x = 7
-		y = 1
-
-	}
-	focus = {
-		id = doctrine_5
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10
-		prerequisite = {
-			focus = doctrine_4
-		}
-		x = 7
-		y = 2
-
-	}
-	focus = {
-		id = doctrine_6
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10
-		prerequisite = {
-			focus = doctrine_5
+		available = {
+		date > 1955.1.1
 		}
 		x = 7
 		y = 6
-
-	}
-	focus = {
-		id = doctrine_7
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10
-		prerequisite = {
-			focus = doctrine_6
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			create_corps_commander = { name = "McLovinDeluxe" gfx = "WhiteDude" traits = { trait_engineer } skill = 4 }
 		}
-		x = 7
-		y = 7
 	}
-	focus = {
-		id = doctrine_8
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10
-		prerequisite = {
-			focus = doctrine_7
-		}
-		x = 7
-		y = 10
-	}
-	### SMALL ARMS
+###SMALL ARMS###
 	focus = {
 		id = small_arms_1
 		icon = GFX_goal_generic_small_arms
@@ -1707,7 +1670,14 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
 	}
 	focus = {
 		id = support_1
@@ -1718,7 +1688,14 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.65
+				uses = 1
+				category = support_tech
+			}
+		}
 	}
 	focus = {
 		id = small_arms_d_1
@@ -1729,107 +1706,14 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
-
-	}
-	focus = {
-		id = small_arms_2
-		icon = GFX_goal_generic_small_arms
-		cost = 10
-		prerequisite = {
-			focus = small_arms_d_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.35
+				uses = 2
+				category = infantry_weapons
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 10
-		y = 6
-
-	}
-	focus = {
-		id = support_2
-		icon = GFX_goal_generic_build_tank
-		cost = 10
-		prerequisite = {
-			focus = small_arms_2
-		}
-		x = 11
-		y = 7
-
-	}
-	focus = {
-		id = small_arms_d_2
-		icon = GFX_goal_continuous_reduce_training_time
-		cost = 10
-		prerequisite = {
-			focus = small_arms_2
-		}
-		x = 04
-		y = 00
-
-	}
-	focus = {
-		id = small_arms_3
-		icon = GFX_goal_generic_small_arms
-		cost = 10
-		prerequisite = {
-			focus = small_arms_d_2
-		}
-		x = 04
-		y = 02
-
-	}
-	focus = {
-		id = arms_developement_3
-		icon = GFX_goal_continuous_reduce_training_time
-		cost = 10
-		prerequisite = {
-			focus = small_arms_3
-		}
-		x = 04
-		y = 05
-
-	}
-	focus = {
-		id = small_arms_4
-		icon = GFX_goal_generic_small_arms
-		cost = 10
-		prerequisite = {
-			focus = arms_developement_3
-		}
-		x = 04
-		y = 07
-
-	}
-	focus = {
-		id = arms_developement_4
-		icon = GFX_goal_continuous_reduce_training_time
-		cost = 10
-		prerequisite = {
-			focus = small_arms_4
-		}
-		x = 04
-		y = 9
-
-	}
-	focus = {
-		id = support_3
-		icon = GFX_goal_generic_build_tank
-		cost = 10
-		prerequisite = {
-			focus = small_arms_3
-		}
-		x = 03
-		y = 03
-
-	}
-	focus = {
-		id = support_4
-		icon = GFX_goal_generic_build_tank
-		cost = 10
-		prerequisite = {
-			focus = small_arms_4
-		}
-		x = 03
-		y = 08
-
 	}
 ###SPECIAL FORCES ###
 	focus = {
@@ -1841,7 +1725,15 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.6
+				uses = 1
+				category = mountaineers_tech
+			}
+			create_corps_commander = { name = "McLovinGrande" gfx = "WhiteDude" traits = { commando } skill = 3 }
+		}
 	}
 	focus = {
 		id = paratroopers_1
@@ -1852,73 +1744,14 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-
-	}
-	focus = {
-		id = special_forces_2
-		icon = GFX_goal_generic_special_forces
-		cost = 10
-		prerequisite = {
-			focus = small_arms_2
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 1
+				category = para_tech
+			}
 		}
-		x = 06
-		y = 7
-
-	}
-	focus = {
-		id = paratroopers_2
-		icon = GFX_focus_generic_paratrooper
-		cost = 10
-		prerequisite = {
-			focus = special_forces_2
-		}
-		x = 05
-		y = 8
-
-	}
-	focus = {
-		id = special_forces_3
-		icon = GFX_goal_generic_special_forces
-		cost = 10
-		prerequisite = {
-			focus = small_arms_3
-		}
-		x = 06
-		y = 03
-
-	}
-	focus = {
-		id = paratroopers_3
-		icon = GFX_focus_generic_paratrooper
-		cost = 10
-		prerequisite = {
-			focus = special_forces_3
-		}
-		x = 05
-		y = 04
-
-	}
-	focus = {
-		id = paratroopers_4
-		icon = GFX_focus_generic_paratrooper
-		cost = 10
-		prerequisite = {
-			focus = special_forces_4
-		}
-		x = 05
-		y = 09
-
-	}
-	focus = {
-		id = special_forces_4
-		icon = GFX_goal_generic_special_forces
-		cost = 10
-		prerequisite = {
-			focus = small_arms_4
-		}
-		x = 06
-		y = 08
-
 	}
 ### NAVY ###
 	focus = {
@@ -1927,7 +1760,112 @@ focus_tree = {
 		cost = 10
 		x = 16
 		y = 0
-
+		complete_tooltip = {
+			navy_experience = 50
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			navy_experience = 50
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
 	}
 	focus = {
 		id = green_water_navy
@@ -1941,7 +1879,10 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
-
+		completion_reward = {
+			navy_experience = 50
+			create_navy_leader = { name = "Boaty McBoatface" gfx = "GFX_BoatfacesFace" traits = { fly_swatter blockade_runner } skill = 3 }
+		}
 	}
 	focus = {
 		id = littoral_effort_1
@@ -1952,7 +1893,22 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 2
+				category = fleet_in_being_tree
+			}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = cl_tech
+				technology = ca_tech
+			}
+		}
 	}
 	focus = {
 		id = amphibious_assault_1
@@ -1966,22 +1922,15 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.6
+				uses = 1
+				category = naval_equipment
+			}
+		}
 	}
-#	focus = {
-#		id = cruiser_effort_1
-#		icon = GFX_goal_generic_navy_cruiser
-#		cost = 10
-#		prerequisite = {
-#			focus = littoral_effort_1
-#		}
-#		mutually_exclusive = {
-#			focus = submarines_littoral_1
-#		}
-#		x = 14
-#		y = 4
-#
-#	}
 	focus = {
 		id = overwhelming_numbers
 		icon = GFX_goal_continuous_naval_production
@@ -1991,22 +1940,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-
+		completion_reward = {
+			add_timed_idea = { idea = ship_production	days = 1825 }
+		}
 	}
-#	focus = {
-#		id = submarines_littoral_1
-#		icon = GFX_goal_generic_navy_submarine
-#		cost = 10
-#		prerequisite = {
-#			focus = littoral_effort_1
-#		}
-#		mutually_exclusive = {
-#			focus = cruiser_effort_1
-#		}
-#		x = 16
-#		y = 4
-#
-#	}
 	focus = {
 		id = wolf_pack
 		icon = GFX_goal_generic_wolf_pack
@@ -2019,34 +1956,18 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
-
-	}
-	focus = {
-		id = littoral_effort_2
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
-		prerequisite = {
-			focus = wolf_pack
-			focus = overwhelming_numbers
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 1
-		y = 7
-
-	}
-	focus = {
-		id = submarines_littoral_2
-		icon = GFX_goal_generic_navy_submarine
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_2
-		}
-		mutually_exclusive = {
-			focus = cruiser_effort_2
-		}
-		x = 10
-		y = 00
-
 	}
 	focus = {
 		id = naval_bases_1
@@ -2057,7 +1978,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = blue_water_navy
@@ -2071,7 +1994,11 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
+		completion_reward = {
+			navy_experience = 75
+			create_navy_leader = { name = "Boaty McFlyFace" gfx = "GFX_BoatfacesFace" traits = { spotter air_controller } skill = 3 }
 
+		}
 	}
 	focus = {
 		id = carriers_1
@@ -2082,7 +2009,18 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
-
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = ww2_carrier
+				technology = early_carrier
+				technology = improved_carrier
+			}
+		}
 	}
 	focus = {
 		id = submarines_blue_1
@@ -2097,7 +2035,17 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = ww2_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+			}
+		}
 	}
 	focus = {
 		id = cruiser_blue_1
@@ -2112,7 +2060,17 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = ww2_cruiser
+				technology = basic_cruiser
+				technology = improved_cruiser
+			}
+		}
 	}
 	focus = {
 		id = combined_operations
@@ -2127,31 +2085,14 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
-
-	}
-	focus = {
-		id = carriers_2
-		icon = GFX_goal_generic_navy_carrier
-		cost = 10
-		prerequisite = {
-			focus = combined_operations
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 		}
-		allow_branch = { date > 1959.12.31 }
-		x = 13
-		y = 7
-
-	}
-	focus = {
-		id = naval_stations_2
-		icon = GFX_goal_generic_build_navy
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_2
-			focus = carriers_2
-		}
-		x = 11
-		y = 8
-
 	}
 	focus = {
 		id = marines_1
@@ -2162,105 +2103,17 @@ focus_tree = {
 		}
 		x = 12
 		y = 5
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.6
+				uses = 1
+				category = marine_tech
+			}
+			create_corps_commander = { name = "Wet McLovin" gfx = "Pastry" traits = { naval_invader } skill = 4 }
+		}
 	}
-	focus = {
-		id = amphibious_assault_2
-		icon = GFX_goal_generic_amphibious_assault
-		cost = 10
-		prerequisite = {
-			focus = special_forces_2
-		}
-		prerequisite = {
-			focus = littoral_effort_2
-		}
-		x = 07
-		y = 8
 
-	}
-	focus = {
-		id = amphibious_assault_3
-		icon = GFX_goal_generic_amphibious_assault
-		cost = 10
-		prerequisite = {
-			focus = special_forces_3
-		}
-		prerequisite = {
-			focus = littoral_effort_3
-		}
-		x = 07
-		y = 04
-
-	}
-	focus = {
-		id = amphibious_assault_4
-		icon = GFX_goal_generic_amphibious_assault
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_4
-		}
-		prerequisite = {
-			focus = special_forces_4
-		}
-		x = 07
-		y = 09
-
-	}
-	focus = {
-		id = marines_2
-		icon = GFX_focus_elite_marines
-		cost = 10
-		prerequisite = {
-			focus = amphibious_assault_2
-		}
-		x = 07
-		y = 00
-
-	}
-	focus = {
-		id = marines_3
-		icon = GFX_focus_elite_marines
-		cost = 10
-		prerequisite = {
-			focus = amphibious_assault_3
-		}
-		x = 07
-		y = 05
-
-	}
-	focus = {
-		id = marines_4
-		icon = GFX_focus_elite_marines
-		cost = 10
-		prerequisite = {
-			focus = amphibious_assault_4
-		}
-		x = 07
-		y = 9
-
-	}
-	focus = {
-		id = littoral_effort_3
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
-		prerequisite = {
-			focus = naval_doctrine_littoral_2
-		}
-		x = 9
-		y = 03
-
-	}
-	focus = {
-		id = littoral_effort_4
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
-		prerequisite = {
-			focus = naval_doctrine_littoral_3
-		}
-		x = 9
-		y = 08
-
-	}
 	focus = {
 		id = radar_1
 		icon = GFX_goal_generic_radar
@@ -2273,98 +2126,26 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
-
+		completion_reward = {
+			if = {
+				ROOT = { has_tech = radio }
+				capital_scope = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}				
+				}
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.6
+				uses = 1
+				category = radar_tech
+			}
+		}
 	}
-	focus = {
-		id = cruiser_effort_2
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_2
-		}
-		mutually_exclusive = {
-			focus = submarines_littoral_2
-		}
-		x = 09
-		y = 00
 
-	}
-	focus = {
-		id = naval_doctrine_littoral_2
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = submarines_littoral_2
-			focus = cruiser_effort_2
-		}
-		x = 9
-		y = 01
-
-	}
-	focus = {
-		id = cruiser_effort_3
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_2
-		}
-		mutually_exclusive = {
-			focus = submarines_littoral_3
-		}
-		x = 09
-		y = 05
-
-	}
-	focus = {
-		id = submarines_littoral_3
-		icon = GFX_goal_generic_navy_submarine
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_3
-		}
-		mutually_exclusive = {
-			focus = cruiser_effort_3
-		}
-		x = 10
-		y = 05
-
-	}
-	focus = {
-		id = naval_doctrine_littoral_3
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = submarines_littoral_3
-			focus = cruiser_effort_3
-		}
-		x = 9
-		y = 06
-
-	}
-	focus = {
-		id = naval_stations_3
-		icon = GFX_goal_generic_build_navy
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_3
-			focus = carriers_3
-		}
-		x = 11
-		y = 04
-
-	}
-	focus = {
-		id = naval_stations_4
-		icon = GFX_goal_generic_build_navy
-		cost = 10
-		prerequisite = {
-			focus = littoral_effort_4
-			focus = carriers_4
-		}
-		x = 11
-		y = 09
-
-	}
 	###AIR###
 	
 	
@@ -2374,7 +2155,60 @@ focus_tree = {
 		cost = 10
 		x = 21
 		y = 0
+		completion_reward = {
+			air_experience = 25
 
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
 	}
 	focus = {
 		id = fighter_effort2
@@ -2383,7 +2217,16 @@ focus_tree = {
 		cost = 10
 		x = 17
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = fighter_1945
+				technology = fighter_1950
+				technology = fighter_1960
+			}
+		}
 	}
 #	focus = {
 #		id = fighter_effort3
@@ -2434,7 +2277,17 @@ focus_tree = {
 		}
 		x = 20
 		y = 1
-
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = fighter_1945
+				technology = fighter_1950
+				technology = fighter_1960
+			}
+		}
 	}
 	focus = {
 		id = naval_air_1
@@ -2448,7 +2301,16 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = cv_1945_fighter
+				technology = cv_1950_fighter
+				technology = cv_1960_fighter
+			}
+		}
 	}
 	focus = {
 		id = naval_air_superiority_1
@@ -2459,7 +2321,15 @@ focus_tree = {
 		}
 		x = 20
 		y = 5
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = operational_integrity_tree
+				technology = base_strike_main
+			}
+		}
 	}
 #	focus = {
 #		id = naval_air_2
@@ -2512,7 +2382,16 @@ focus_tree = {
 		}
 		x = 23
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = tactical_bomber_bonus
+				bonus = 0.5
+				uses = 2
+				technology = CAS_1945
+				technology = CAS_1950
+				technology = CAS_1960
+			}
+		}
 	}
 	focus = {
 		id = bombing_1
@@ -2523,7 +2402,17 @@ focus_tree = {
 		}
 		x = 22
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				technology = heavy_air_1945
+				technology = heavy_air_1950
+				category = heavy_air_1960
+			}
+		}
 	}
 	focus = {
 		id = air_bases_1
@@ -2534,6 +2423,38 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
+		completion_reward = {
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 
+		}
 	}
 }

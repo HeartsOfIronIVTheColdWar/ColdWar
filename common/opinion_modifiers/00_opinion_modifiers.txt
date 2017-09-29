@@ -18,6 +18,18 @@ opinion_modifiers = {
 	
 	declines_peace_treaty = {value = -100 }
 	
+	western_leanings = {value = 50 }
+	
+	western_leanings_bad = {value = -50 }
+	
+	eastern_leanings = {value = 50 }
+	
+	eastern_leanings_bad = {value = -50 }
+	
+	
+	
+	declines_peace_treaty = {value = -100 }
+	
 	SOV_Agricultural_board = {
 		value = 25
 	}

@@ -1656,7 +1656,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_the_army
 		}
-		x = 33
+		x = 32
 		y = 1
 
 	}
@@ -1667,7 +1667,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_the_army
 		}
-		x = 37
+		x = 35
 		y = 1
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1743,7 +1743,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_airforce_bases
 		}
-		x = 33
+		x = 32
 		y = 2
 
 	}
@@ -1754,7 +1754,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_strategic_air_command
 		}
-		x = 33
+		x = 32
 		y = 3
 
 	}
@@ -1765,7 +1765,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_nuclear_blitz
 		}
-		x = 33
+		x = 32
 		y = 4
 
 	}
@@ -1795,7 +1795,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_airforce_bases
 		}
-		x = 38
+		x = 34
 		y = 2
 
 	}
@@ -1809,7 +1809,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_airforce_doctrine
 		}
-		x = 37
+		x = 35
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -1828,7 +1828,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_jet_fighters
 		}
-		x = 36
+		x = 34
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -1847,7 +1847,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_jet_fighters
 		}
-		x = 38
+		x = 36
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -1868,7 +1868,7 @@ focus_tree = {
 			focus = USA_heavy_bombing
 			focus = USA_strategic_destruction
 		}
-		x = 37
+		x = 35
 		y = 5
 
 	}
@@ -1879,7 +1879,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_the_army
 		}
-		x = 41
+		x = 38
 		y = 1
 			completion_reward = {
 					378 = {
@@ -1900,7 +1900,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_the_army
 		}
-		x = 43
+		x = 40
 		y = 1
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1945,7 +1945,7 @@ focus_tree = {
 			focus = USA_west_coast_shipyards
 			focus = USA_east_coast_dockyards
 		}
-		x = 41
+		x = 38
 		y = 2
 
 	}
@@ -1957,7 +1957,7 @@ focus_tree = {
 			focus = USA_west_coast_shipyards
 			focus = USA_east_coast_dockyards
 		}
-		x = 43
+		x = 40
 		y = 2
 			completion_reward = {
 					add_tech_bonus = {
@@ -1982,7 +1982,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = USA_underseas_fleet
 		}
-		x = 41
+		x = 38
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -2001,7 +2001,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_overseas_fleet
 		}
-		x = 40
+		x = 38
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -2029,7 +2029,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = USA_overseas_fleet
 		}
-		x = 43
+		x = 40
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -2052,7 +2052,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_underseas_fleet
 		}
-		x = 43
+		x = 40
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -2179,7 +2179,7 @@ focus_tree = {
 			focus = USA_submarines
 			focus = USA_carrier_focus
 		}
-		x = 42
+		x = 40
 		y = 5
 
 	}
@@ -2193,7 +2193,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_carrier_focus
 		}
-		x = 40
+		x = 38
 		y = 6
 
 	}

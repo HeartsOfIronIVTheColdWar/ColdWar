@@ -47,7 +47,19 @@ ideas = {
 	
 	minister_of_internal_affairs = {
 		
-		
+		zhou_enlai = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 	
@@ -55,21 +67,83 @@ ideas = {
 	
 	minister_of_international_affairs = {
 		
+		zhou_enlai = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 
 	###INTELLIGENCE MINISTER###
 	
 	intelligence_minister = {
-		
-		
+		luo_ruiqing = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
 	}
 
 	###EDUCATION MINISTER###
 	
 	education_minister = {
-	
-
+		ma_xulun = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		zhang_xiruo = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		yang_xiufeng = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 	###UNITED NATIONS AMBASSADOR###
@@ -94,19 +168,173 @@ ideas = {
 		
 		designer = yes
 		
+		shenyang_aircraft_corporation = {
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		xian_aircraft_industrial_corporation = {
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		harbin_aircraft_industry_group = {
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
 	}	
 	
 	###INDUSTRIAL CONCERN###
 	
 	industrial_concern = {
-				
-	}
+			
+		china_state_construction_engineering = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				construction_tech = 0.10
+			}
+			
+			traits = { construction_concern  }
+			
+			modifier = {
+			}
+		}
+		china_railway_engineering = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				construction_tech = 0.10
+			}
+			
+			traits = { factorial_managers  }
+			
+			modifier = {
+			}
+		}
+		sinochem = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern  }
+			
+			modifier = {
+			}
+		}
+	}			
 	
 	###MATERIEL MANUFACTURER###
 	
 	materiel_manufacturer = {
 			
 		designer = yes
+		
+		674_factory = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}	
+		
+		norinco = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		heavy_duty_truck_group = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
 		
 	}
 	
@@ -116,13 +344,47 @@ ideas = {
 	
 		designer = yes
 		
+		jiangnan_shipyard = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
 		
 	}
 	
 	###THEORIST
 	
 	theorist = {	
-	
+		georgy_zhukov = {
+			
+			allowed = {
+				original_tag = PRC
+
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_theorem = 0.10
+				cat_asymmetric_warfare = 0.10
+
+			}
+			
+			traits = { asymmetric_warfare_theorist }
+		}
 	}
 
 ###ROW 4:###

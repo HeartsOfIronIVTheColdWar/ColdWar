@@ -616,35 +616,268 @@ ideas = {
 	
 	minister_of_internal_affairs = {
 		
+		herbert_brownell = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		william_rogers = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
+		howard_mcgrath = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		james_mcgranery = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		tom_clark = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 	
 	###MINISTER OF INTERNATIONAL AFFAIRS###
 	
 	minister_of_international_affairs = {
-		
+		dean_acheson = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		harrison_matthews = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		john_foster_dulles = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		
 	}
 
 	###INTELLIGENCE MINISTER###
 	
 	intelligence_minister = {
-		
+		roscoe_hillenkoetter = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		walter_bedell_smith = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		allen_w_dulles = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 
 	###EDUCATION MINISTER###
 	
 	education_minister = {
-	
-
+		oveta_culp_hobby = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		marion_folsom = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		arthur_flemming = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		abraham_ribicoff = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 	###UNITED NATIONS AMBASSADOR###
 	
 	united_nations_ambassador = {
-	
+		herschel_johnson = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		warren_austin = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		henry_cabot_lodge = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 ###ROW 3###
@@ -871,12 +1104,29 @@ ideas = {
 				industry = 0.10
 			}
 			
-			traits = { industrial_concern }
+			traits = { industrial_concern refinery_concern }
 			
 			modifier = {
 			}
 		}
-		
+		general_motors = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_planners }
+			
+			modifier = {
+			}
+		}
 		general_electric = {
 			
 			
@@ -890,7 +1140,25 @@ ideas = {
 				electronics = 0.10
 			}
 			
-			traits = { electronics_concern }
+			traits = { electronics_concern heavy_electronics_bureau }
+			
+			modifier = {
+			}
+		}
+		ibm = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { computer_developers }
 			
 			modifier = {
 			}
@@ -1052,7 +1320,117 @@ ideas = {
 	###THEORIST
 	
 	theorist = {	
-	
+		omar_bradley = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_superior_firepower = 0.10
+			}
+			
+			traits = { superior_firepower_expert }
+		}
+		
+		george_patton = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.10
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+		
+		dewitt_clinton_ramsey = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		curtis_lemay = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.10
+			}
+			
+			traits = { victory_through_airpower }
+		}
+		
+		harold_mcclelland = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		robert_oppenheimer = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		wernher_von_braun = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
 	}
 
 ###ROW 4:###
@@ -1060,25 +1438,290 @@ ideas = {
 	###ARMY CHIEF###
 	
 	army_chief = {
+		douglas_macarthur = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
+		george_marshall = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dwight_eisenhower = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 	###NAVY CHIEF###
 	
 	navy_chief = {
+		ernest_king = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
+		chester_nimitz = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		william_halsey = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 	
 	###AIR CHEF###
 	
 	air_chief = {
+		carl_spaatz = {
 			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_chief_night_operations_2 }
+			# TODO Strategic bombing secondary trait?
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		george_kenney = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 	
 	###HIGH COMMAND###
 	
 	high_command = {
+		courtney_hodges = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
+		joseph_stilwell = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mark_clark = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		jimmy_doolittle = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_strategic_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_cannon = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		claire_lee_chennault = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		raymond_spruance = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		frank_jack_fletcher = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_carrier_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		thomas_kinkaid = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 }

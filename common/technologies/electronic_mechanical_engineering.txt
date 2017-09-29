@@ -46,7 +46,11 @@ technologies = {
 
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.05
-
+		enable_building = {
+			building = radar_station
+			level = 1
+		}
+		
 		path = {
 			leads_to_tech = radio_detection 
 			research_cost_coeff = 1

@@ -520,7 +520,8 @@ ideas = {
 ###ROW 2:###
 
 	### HEAD OF STATE ###
-	
+
+
 	minister_of_internal_affairs = {
 		
 		nikita_khrushchev = {
@@ -531,16 +532,6 @@ ideas = {
 			}
 			
 			traits = { reformer backroom_backstabber }
-	
-			on_add = {
-#				country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
 			
 			ai_will_do = {
 				factor = 1

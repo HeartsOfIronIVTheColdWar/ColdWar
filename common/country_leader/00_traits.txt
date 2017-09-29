@@ -738,6 +738,19 @@ leader_traits = {
 			factor = 500
 		}
 	}
+	asymmetric_warfare_theorist = {
+		sprite = 14
+		
+		equipment_bonus = {
+		}
+		max_dig_in = 10
+		out_of_supply_factor = -0.2
+		experience_gain_army = 0.07
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
 	naval_virtuoso = {
 		sprite = 14
 		

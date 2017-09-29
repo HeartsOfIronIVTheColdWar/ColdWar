@@ -34,6 +34,7 @@ technology_categories = {
 	cat_medium_armor
 	cat_heavy_armor
 	artillery
+	spart_artillery
 	cat_anti_tank
 	naval_air
 	infantry_weapons

@@ -16,6 +16,7 @@
  seek_industrial_aid_NATO:0 "Seek Industrial Aid"
  nuclear_research_effort:0 "Nuclear Research Effort"
  naval_air_superiority_1:0 "Naval Air Superiority"
+ diplomatic_effort:0 "Diplomatic Effort"
  army_effort_1:0 "Army Effort"
  navy_effort_1:0 "Navy Effort"
  aviation_effort_1:0 "Air Force Effort"

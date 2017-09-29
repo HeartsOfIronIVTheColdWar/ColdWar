@@ -1,6 +1,6 @@
 guiTypes = {
 
-	containerWindowType = {
+	containerWindowType = { ### Width of the entire political screen
 		name = "countrypoliticsview"
 		position = { x=-606 y=78}	
 		show_position = { x=-6 y =78 }
@@ -64,13 +64,12 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = 260 y = 184 }
+				position = { x = 260 y = 193 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 230 height = 16 }
 				format = "UPPER_LEFT"
 			}
-		}
-
+		}	
 		
 		containerWindowType = {
 			name = "political_pie_chart"
@@ -89,7 +88,7 @@ guiTypes = {
 				spriteType = "GFX_pol_piechart_overlay_63x63"
 				position = { x= -2 y = 1s }
 			}
-		}		
+		}	
 		
 		containerWindowType = {
 			name = "ruling_party_info"
@@ -108,7 +107,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "ideology"
-				position = { x = 9 y = 8 }
+				position = { x = 9 y = 4 }
 				font = "hoi_18mbs"
 				text = "ideology"
 				maxWidth = 155
@@ -117,7 +116,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 9 y = 34 }
+				position = { x = 9 y = 24 }
 				font = "hoi_16mbs"
 				text = "elections"
 				maxWidth = 155
@@ -133,7 +132,6 @@ guiTypes = {
 				maxHeight = 20
 				format = centre				
 			}
-			
 			buttonType = {
 				name = "dismantle_faction"
 				position = { x = 302 y = -50 }
@@ -141,6 +139,7 @@ guiTypes = {
 				#buttonFont = "hoi_16mbs"
 				#buttonText = "DIPLOMACY_DISMANTLE_FACTION_TITLE"
 			}	
+
 			
 		}
 						
@@ -350,7 +349,7 @@ guiTypes = {
 				position = { x = 98 y = 22 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 60 height = 68 }
-				max_slots = { x = 8 y = 1 }
+				max_slots = { x = 6 y = 2 }
 				format = "UPPER_LEFT"
 			}
 			gridboxtype = {
@@ -358,11 +357,12 @@ guiTypes = {
 				position = { x = 90 y = 5 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 33 height = 32 }
-				max_slots = { x = 10 y = 2 }
+				max_slots = { x = 6 y = 2 }
 				format = "UPPER_LEFT"
 			}			
 			
 		}
+		
 		iconType = {
 			name = "leader"
 			position = { x = 18 y = 58 }
@@ -390,7 +390,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "ideas"
-			position = { x = 0 y = 425 }
+			position = { x = 0 y = 428 }
 			size = { width=100%% height=100%% }
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 14 bottom = 13}
@@ -404,7 +404,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "idea_categories_grid"
-				position = { x = 17 y = 0 }
+				position = { x = 18 y = 18 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 64 height = 106 }
 				max_slots_horizontal = 1
@@ -467,10 +467,9 @@ guiTypes = {
 		}		
 		
 	}
-	
 	containerWindowType = {
 		name = "country_politics_idea_category_entry"
-		position = { x = 0 y = 0 }
+		position = { x = 0 y = -15 }
 		size = { width=550 height= 100 }
 		clipping = no
 		
@@ -487,7 +486,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		
-		
 		instantTextboxType = {
 			name = "name"
 			position = { x = 70 y = 14 }
@@ -496,18 +494,16 @@ guiTypes = {
 			maxWidth = 300
 			maxHeight = 20
 		}
-		
 		gridboxtype = {
 			name = "ideas_grid"
 			position = { x = 17 y = 46 }
 			size = { width = 100%% height = 100%% }
 			slotsize = { width = 80 height = 64 }
-			max_slots = { x = 7 y = 1 }
+			max_slots = { x = 10 y = 1 }
 			format = "UPPER_LEFT"
 		}
 	}
-	
-	
+
 	containerWindowType = {
 		name = "political_ideas_window"
 		position = { x = -356 y = 100 }	

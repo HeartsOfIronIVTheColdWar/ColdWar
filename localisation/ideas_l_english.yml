@@ -727,6 +727,7 @@
  wartime_industry_focus:0 "Wartime Industry"
  bureau_of_ships_focus:0 "Bureau of Ships"
  government:1 "Laws & Government"
+ cabinet:0 "Cabinet"
  research_production:0 "Research & Production"
  military_staff:0 "Military Staff"
  political_advisor:0 "Political Advisor"
