@@ -390,7 +390,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "ideas"
-			position = { x = 0 y = 428 }
+			position = { x = 0 y = 545 }
 			size = { width=100%% height=100%% }
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 14 bottom = 13}
@@ -413,7 +413,31 @@ guiTypes = {
 
 
 		}
+		containerWindowType = {
+			name = "leanings"
+			position = { x = 0 y = 428 }
+			size = { width=100%% height=123 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 14 bottom = 13}
+		
+			background = {
+				name = "Background"
+				#quadTextureSprite ="GFX_tiled_window_2b_border"
+				#quadTextureSprite ="GFX_tiled_window_1b_border"
+				quadTextureSprite ="GFX_tiled_window_1b_border"
+			}
+			
+			gridBoxType = {
+				name = "leaning_categories_grid"
+				position = { x = 18 y = 18 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 64 height = 106 }
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
 
+
+		}
 		iconType ={
 			name ="tutorial_glow"
 			spriteType = "GFX_tutorial_politics_icon_glow"

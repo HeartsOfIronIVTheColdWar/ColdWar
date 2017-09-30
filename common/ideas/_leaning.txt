@@ -1,0 +1,97 @@
+﻿leanings = {
+
+	neutral = { 
+		law = yes
+		
+		turned_off_1 = {
+			
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+		turned_on_1 = {
+			
+			cost = -1
+			removal_cost = -1
+			
+			
+			modifier = {
+				min_export = 0
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+	}
+	super_left = { 
+		law = yes
+
+
+		
+		turned_off_2 = {
+			
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+		turned_on_2 = {
+			
+			cost = -1
+			removal_cost = -1
+			
+			
+			modifier = {
+				min_export = 0
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+	}
+	super_right = { 
+		law = yes
+
+
+		
+		turned_off_3 = {
+			
+			cost = -1
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+		
+		turned_on_3 = {
+			
+			cost = -1
+			removal_cost = -1
+			
+			
+			modifier = {
+				min_export = 0
+			}
+			
+			cancel_if_invalid = no
+			
+		}
+	}
+}

@@ -49,8 +49,12 @@ bookmarks = {
 			ideas = {
 				eastern_socialism
 				RAJ_agrarian_society
+				PRC_improficient_government
 			}	
 			focuses = {
+				PRC_100_flowers
+				PRC_the_great_leap
+				PRC_KMT_off_mainland
 			}		
 		}
 		"SOV"={
@@ -81,6 +85,9 @@ bookmarks = {
 				loser_of_the_second_world_war
 			}	
 			focuses = {
+				WGR_wirtschaftswunder
+				WGR_the_new_german_bundeswehr
+				WGR_european_coal_and_steel
 			}			
 		}
 		"KOR"={
@@ -90,6 +97,7 @@ bookmarks = {
 			ideas = {
 			}
 			focuses = {
+				KOR_unified_korea
 			}
 		}
 		"EGY"={

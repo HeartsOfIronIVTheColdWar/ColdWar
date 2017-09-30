@@ -24,6 +24,7 @@ set_national_unity = 0.55
 		#ideas
 		eastern_socialism
 		RAJ_agrarian_society
+		PRC_improficient_government
 	}
 	set_politics = {
 

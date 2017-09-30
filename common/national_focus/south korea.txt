@@ -10,14 +10,14 @@ tag = KOR
 default = no
 #Ask US for Help
 focus = {
-id =askusforhelp
+id = KOR_askusforhelp
 icon =GFX_goal_generic_military_deal
 bypass = {}
 ai_will_do = { factor = 10}
 x =1
 y =2
 mutually_exclusive = { }
-prerequisite = { focus = unificationgovernment}
+prerequisite = { focus = KOR_unificationgovernment}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -32,14 +32,14 @@ id = korea.2
 
 #Commonwealth Help
 focus = {
-id =commonwealthhelp
+id = KOR_commonwealthhelp
 icon =GFX_goal_tfv_strengthen_commonwealth_ties
 bypass = {}
 ai_will_do = { factor = 10}
 x =1
 y =3
 mutually_exclusive = { }
-prerequisite = { focus = askusforhelp}
+prerequisite = { focus = KOR_askusforhelp}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -53,7 +53,7 @@ id = korea.3
 }
 #1950 elections
 focus = {
-id =1950elections
+id = KOR_1950elections
 icon =GFX_goal_generic_support_democracy
 bypass = {}
 ai_will_do = { factor = 10}
@@ -73,13 +73,13 @@ id = korea.1
 }
 #Unification Government
 focus = {
-id =unificationgovernment
+id = KOR_unificationgovernment
 icon =GFX_goal_generic_attack_allies
 ai_will_do = { factor = 7}
 x =1
 y =1
-mutually_exclusive = { focus = antiwargovernment}
-prerequisite = { focus = 1950elections}
+mutually_exclusive = { focus = KOR_antiwargovernment}
+prerequisite = { focus = KOR_1950elections}
 available = {has_country_flag = unification_government  }
 cost = 10 
  available_if_capitulated = yes 
@@ -89,14 +89,14 @@ add_political_power = -100
 }
 #Anti-war Government 
 focus = {
-id =antiwargovernment
+id = KOR_antiwargovernment
 icon =GFX_goal_generic_national_unity
 
 ai_will_do = { factor = 7}
 x =3
 y =1
-mutually_exclusive = { focus = unificationgovernment}
-prerequisite = { focus = 1950elections}
+mutually_exclusive = { focus = KOR_unificationgovernment}
+prerequisite = { focus = KOR_1950elections}
 available = { has_country_flag = anti_war_government }
 cost = 10 
  available_if_capitulated = yes 
@@ -106,14 +106,14 @@ add_political_power = 100
 }
 #Cross the 38th Parallel 
 focus = {
-id =crossthe38thparallel
+id = KOR_crossthe38thparallel
 icon =GFX_goal_generic_war_with_comintern
 bypass = {}
 ai_will_do = { factor = 5}
 x =1
 y =4
 mutually_exclusive = { }
-prerequisite = { focus = commonwealthhelp}
+prerequisite = { focus = KOR_commonwealthhelp}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -132,14 +132,14 @@ id = korea.5
 }
 #Seoul Conference
 focus = {
-id =seoulconference
+id = KOR_seoulconference
 icon =GFX_goal_generic_dangerous_deal
 bypass = {}
 ai_will_do = { factor = 5}
 x =3
 y =2
 mutually_exclusive = { }
-prerequisite = { focus = antiwargovernment}
+prerequisite = { focus = KOR_antiwargovernment}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -152,14 +152,14 @@ id = korea.8
 }
 #Push for Elections
 focus = {
-id =pushforelections
+id = KOR_pushforelections
 icon =GFX_focus_generic_strike_at_democracy2
 bypass = {}
 ai_will_do = { factor = 5}
 x =3
 y =4
 mutually_exclusive = { }
-prerequisite = { focus = seoulconference}
+prerequisite = { focus = KOR_seoulconference}
 available = { has_global_flag = seoul_conference }
 cost = 10 
  available_if_capitulated = yes 
@@ -172,14 +172,14 @@ id = korea.9
 }
 #Korea Unified
 focus = {
-id =koreaunified
-icon =GFX_goal_anschluss
+id = KOR_unified_korea
+icon = GFX_goal_korean_unification
 bypass = {}
 ai_will_do = { factor = 3}
 x =2
 y =5
 mutually_exclusive = { }
-prerequisite = { focus = crossthe38thparallel  focus = pushforelections}
+prerequisite = { focus = KOR_crossthe38thparallel  focus = KOR_pushforelections}
 available = { NOT = {country_exists = NKR} }
 cost = 10 
  available_if_capitulated = yes 
@@ -189,14 +189,14 @@ add_national_unity = 0.15
 }
 #Crack Down on Anti-government Groups
 focus = {
-id =crackdownonantigovernmentgroups
+id = KOR_crackdownonantigovernmentgroups
 icon =GFX_goal_continuous_suppression
 bypass = {}
 ai_will_do = { factor = 7}
 x =7
 y =2
 mutually_exclusive = { }
-prerequisite = { focus = declaremartiallaw}
+prerequisite = { focus = KOR_declaremartiallaw}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -206,14 +206,14 @@ add_political_power = -50
 }
 #Arrest Opponents 
 focus = {
-id =arrestopponents
+id = KOR_arrestopponents
 icon =GFX_goal_continuous_restrict_freedom
 bypass = {}
 ai_will_do = { factor = 5}
 x =5
 y =2
 mutually_exclusive = { }
-prerequisite = { focus = declaremartiallaw}
+prerequisite = { focus = KOR_declaremartiallaw}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -223,14 +223,14 @@ add_political_power = -50
 }
 #Presidential Elections
 focus = {
-id =presidentialelections
+id = KOR_presidentialelections
 icon =GFX_focus_cze_german_puppet
 bypass = {}
 ai_will_do = { factor = 5}
 x =5
 y =3
 mutually_exclusive = { }
-prerequisite = { focus = crackdownonantigovernmentgroups}
+prerequisite = { focus = KOR_crackdownonantigovernmentgroups}
  prerequisite = { focus =arrestopponents}
 available = {  }
 cost = 10 
@@ -244,14 +244,14 @@ id = korea.10
 }
 #Constitutional Amendments 
 focus = {
-id =constitutionalamendments
+id = KOR_constitutionalamendments
 icon =GFX_focus_generic_strike_at_democracy2
 bypass = {}
 ai_will_do = { factor = 7}
 x =6
 y =0
 mutually_exclusive = { }
-prerequisite = { focus = 1950elections}
+prerequisite = { focus = KOR_1950elections}
 available = { date > 1952.1.1 }
 cost = 10 
  available_if_capitulated = yes 
@@ -261,14 +261,14 @@ completion_reward = {
 }
 #Declare Martial Law
 focus = {
-id =declaremartiallaw
+id = KOR_declaremartiallaw
 icon =GFX_focus_generic_military_mission
 bypass = {}
 ai_will_do = { factor = 5}
 x =5
 y =1
-mutually_exclusive = { focus = fairelections}
-prerequisite = { focus = constitutionalamendments}
+mutually_exclusive = { focus = KOR_fairelections}
+prerequisite = { focus = KOR_constitutionalamendments}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -278,14 +278,14 @@ add_political_power = -150
 }
 #Fair Elections
 focus = {
-id =fairelections
+id = KOR_fairelections
 icon =GFX_goal_continuous_boost_freedom
 bypass = {}
 ai_will_do = { factor = 5}
 x =7
 y =1
-mutually_exclusive = { focus = declaremartiallaw}
-prerequisite = { focus = constitutionalamendments}
+mutually_exclusive = { focus = KOR_declaremartiallaw}
+prerequisite = { focus = KOR_constitutionalamendments}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -298,14 +298,14 @@ id = korea.11
 }
 #A New President
 focus = {
-id =anewpresident
+id = KOR_anewpresident
 icon =GFX_goal_generic_demand_territory
 bypass = {a_new_president}
 ai_will_do = { factor = 5}
 x =11
 y =2
-mutually_exclusive = { focus = syngmanrheeisstillpresident}
-prerequisite = { focus = fairelections}
+mutually_exclusive = { focus = KOR_syngmanrheeisstillpresident}
+prerequisite = { focus = KOR_fairelections}
 available = {  }
 cost = 1 
  available_if_capitulated = yes 
@@ -315,14 +315,14 @@ completion_reward = {
 }
 #Syngman Rhee is Still President
 focus = {
-id =syngmanrheeisstillpresident
+id = KOR_syngmanrheeisstillpresident
 icon =GFX_focus_generic_strike_at_democracy3
 bypass = {syngman_rhee}
 ai_will_do = { factor = 5}
 x =9
 y =2
-mutually_exclusive = { focus = anewpresident}
-prerequisite = { focus = fairelections}
+mutually_exclusive = { focus = KOR_anewpresident}
+prerequisite = { focus = KOR_fairelections}
 available = {  }
 cost = 1 
  available_if_capitulated = yes 
@@ -330,39 +330,44 @@ completion_reward = {
 
 }
 }
-#Victory Speech
-focus = {
-id =victoryspeech
-icon =GFX_focus_generic_support_the_left_right
-bypass = {}
-ai_will_do = { factor = 5}
-x =9
-y =3
-mutually_exclusive = { }
-prerequisite = { focus = anewpresident  focus = syngmanrheeisstillpresident}
-available = {  }
-cost = 10 
- available_if_capitulated = yes 
-completion_reward = {
-add_national_unity = 0.15
-}
-}
-#Reinforce Governmental Power
-focus = {
-id =reinforcegovernmentalpower
-icon =GFX_focus_generic_self_management
-bypass = {}
-ai_will_do = { factor = 5}
-x =6
-y =4
-mutually_exclusive = { }
-prerequisite = { focus = victoryspeech  focus = presidentialelections}
-available = {  }
-cost = 10 
- available_if_capitulated = yes 
-completion_reward = {
-add_political_power = 150
-}
-}
-#end
+	#Victory Speech
+	focus = {
+		id = KOR_victoryspeech
+		icon =GFX_focus_generic_support_the_left_right
+		bypass = {}
+		ai_will_do = { factor = 5}
+		x =9
+		y =3
+		mutually_exclusive = { }
+		prerequisite = { focus = KOR_anewpresident  focus = KOR_syngmanrheeisstillpresident}
+		available = {  }
+		cost = 10 
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_national_unity = 0.15
+		}
+	}
+
+	#Reinforce Governmental Power
+	focus = {
+		id = KOR_reinforcegovernmentalpower
+		icon =GFX_focus_generic_self_management
+		bypass = {}
+		ai_will_do = { factor = 5}
+		x =6
+		y =4
+		mutually_exclusive = { }
+		prerequisite = { focus = KOR_victoryspeech  focus = KOR_presidentialelections}
+		available = {  }
+		cost = 10 
+		
+		available_if_capitulated = yes 
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
 }

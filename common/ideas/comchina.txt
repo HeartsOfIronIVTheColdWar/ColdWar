@@ -1,6 +1,39 @@
 ideas = {
 	country = {
-		
+		PRC_improficient_government = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_SOV_deadhand	
+
+			modifier = {
+				political_power_gain = -0.5
+				political_advisor_cost_factor = 0.5
+				drift_defence_factor = -0.50
+				consumer_goods_factor = 0.15
+			}
+		}
+		PRC_improficient_government2 = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_SOV_deadhand	
+
+			modifier = {
+				political_power_gain = -0.25
+				political_advisor_cost_factor = 0.25
+				drift_defence_factor = -0.25
+				consumer_goods_factor = 0.10
+			}
+		}
 	}
 	
 ###ADVISORS AND STAFF###

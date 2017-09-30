@@ -57,24 +57,44 @@ focus_tree = {
 	focus = {
 		id = PRC_corruption
 		icon = GFX_focus_rom_parties_end
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PRC_the_three_year_campagin
 		}
-		x = 1
+		x = 0
 		y = 3
-
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
 	}
+	focus = {
+		id = PRC_waste
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 5
+		prerequisite = {
+			focus = PRC_the_three_year_campagin
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}	
 	focus = {
 		id = PRC_bureacracy
 		icon = GFX_focus_renounce_the_treaty_of_triannon
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PRC_the_three_year_campagin
 		}
-		x = 3
+		x = 4
 		y = 3
-
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
 	}
 	focus = {
 		id = PRC_the_five_year_campagin
@@ -86,6 +106,15 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_corruption
 		}
+		prerequisite = {
+			focus = PRC_waste
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PRC_improficient_government
+				add_idea = PRC_improficient_government2
+			}
+		}
 		x = 2
 		y = 4
 
@@ -93,29 +122,53 @@ focus_tree = {
 	focus = {
 		id = PRC_bribery
 		icon = GFX_focus_generic_concessions
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PRC_the_five_year_campagin
 		}
 		x = 3
 		y = 5
-
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
 	}
 	focus = {
 		id = PRC_taxes
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PRC_the_five_year_campagin
 		}
+
 		x = 1
 		y = 5
-
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
 	}
 	focus = {
-		id = PRC_100_flowers
-		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 10
+		id = PRC_state_theft
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = PRC_bribery
+		}
+		prerequisite = {
+			focus = PRC_taxes
+		}
+		x = 0
+		y = 6
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_contract_cheating
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
 		prerequisite = {
 			focus = PRC_bribery
 		}
@@ -124,7 +177,47 @@ focus_tree = {
 		}
 		x = 2
 		y = 6
-
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_information_theft
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = PRC_bribery
+		}
+		prerequisite = {
+			focus = PRC_taxes
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	
+	focus = {
+		id = PRC_100_flowers
+		icon = GFX_goal_PRC_100_flowers
+		cost = 10
+		prerequisite = {
+			focus = PRC_information_theft
+		}
+		prerequisite = {
+			focus = PRC_state_theft
+		}
+		prerequisite = {
+			focus = PRC_contract_cheating
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+			remove_idea = PRC_improficient_government2
+		}
 	}
 	focus = {
 		id = PRC_remove_critics
@@ -137,19 +230,22 @@ focus_tree = {
 			focus = PRC_embrace_critics
 		}
 		x = 3
-		y = 7
+		y = 8
 
 	}
 	focus = {
 		id = PRC_KMT_off_mainland
-		icon = GFX_focus_SAF_colonialist_crusade
+		icon = GFX_goal_focus_PRC_reclaim_the_mainland
 		cost = 10
 		prerequisite = {
 			focus = PRC_politics
 		}
 		x = 7
 		y = 1
-
+		completion_reward = {
+			add_political_power = 200
+			white_peace = CHI
+		}
 	}
 	focus = {
 		id = PRC_invade_tibet
@@ -205,7 +301,7 @@ focus_tree = {
 			focus = PRC_total_isolation
 			focus = PRC_our_own_faction
 		}
-		x = 5
+		x = 7
 		y = 5
 
 	}
@@ -220,7 +316,7 @@ focus_tree = {
 			focus = PRC_our_own_faction
 			focus = PRC_trust_in_the_east
 		}
-		x = 7
+		x = 5
 		y = 5
 
 	}
@@ -594,7 +690,7 @@ focus_tree = {
 			focus = PRC_remove_critics
 		}
 		x = 3
-		y = 8
+		y = 9
 
 	}
 	focus = {
@@ -624,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_the_great_leap
-		icon = GFX_focus_yug_pan_slavic_congress
+		icon = GFX_goal_PRC_great_leap_forwards
 		cost = 10
 		prerequisite = {
 			focus = PRC_1958_5_plan
@@ -643,8 +739,8 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_trust_in_the_east
 		}
-		x = 5
-		y = 6
+		x = 7
+		y = 7
 
 	}
 	focus = {
@@ -655,10 +751,10 @@ focus_tree = {
 			focus = PRC_100_flowers
 		}
 		mutually_exclusive = {
-			focus = remove_critics
+			focus = PRC_remove_critics
 		}
 		x = 1
-		y = 7
+		y = 8
 
 	}
 	focus = {
@@ -669,7 +765,7 @@ focus_tree = {
 			focus = PRC_embrace_critics
 		}
 		x = 1
-		y = 8
+		y = 9
 
 	}
 	focus = {

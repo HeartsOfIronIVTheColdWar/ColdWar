@@ -14,10 +14,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_generic_army_APC.dds"
 	}
 	SpriteType = { 
-		name = "GFX_focus_wgr_coal_and_steel"
-		texturefile = "gfx/interface/goals/focus_wgr_coal_and_steel.dds"
-	}
-	SpriteType = { 
 		name = "GFX_focus_goal_blue_navy"
 		texturefile = "gfx/interface/goals/goal_blue_navy.dds"
 	}
@@ -61,13 +57,32 @@ spriteTypes = {
 	name = "GFX_focus_generic_concessions"
 	texturefile = "gfx/interface/goals/focus_generic_concessions.dds"			
 	}
-
+	###WGR###
+	SpriteType = { 
+		name = "GFX_focus_wgr_coal_and_steel"
+		texturefile = "gfx/interface/goals/focus_wgr_coal_and_steel.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_wgr_bundeswehr"
+		texturefile = "gfx/interface/goals/focus_wgr_bundeswehr.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_WGR_wirtschaftswunder"
+		texturefile = "gfx/interface/goals/focus_WGR_wirschaftswunder.dds"
+	}
 	### PRC ###
 	SpriteType = {
 	name = "GFX_goal_PRC_100_flowers"
 	texturefile = "gfx/interface/goals/focus_PRC_100_flowers.dds"			
 	}
-	
+	SpriteType = {
+	name = "GFX_goal_PRC_great_leap_forwards"
+	texturefile = "gfx/interface/goals/goal_PRC_great_leap_forwards.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_focus_PRC_reclaim_the_mainland"
+	texturefile = "gfx/interface/goals/goal_focus_PRC_reclaim_the_mainland.dds"			
+	}
 	### DDR ###
 	SpriteType = {
 	name = "GFX_goal_DDR_Nationale_Volksarmee"
