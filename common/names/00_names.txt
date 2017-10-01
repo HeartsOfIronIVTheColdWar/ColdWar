@@ -1742,13 +1742,13 @@ MAW = { #good
 GHA = { #good
 	male = {
 		names = { 
-			Samuel Kwame Joseph Akwasi Raphael Nii Edward Ignatius Fred Jerry Hilla John Nana Kofi
+			Samuel Kwame Joseph Akwasi Raphael Nii Edward Ignatius Fred Jerry Hilla John Nana Kofi Kwasi
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { Gyimah Nkrumah Ankrah Afrifa Ollennu Akufo-Addo Acheampong Akuffo Rawlings Limann Kufuor Mills Mahama Annan }
+	surnames = { Gyimah Nkrumah Ankrah Afrifa Ollennu Akufo-Addo Acheampong Akuffo Rawlings Limann Kufuor Mills Mahama Annan Kwarteng }
 	callsigns = { }
 }
 

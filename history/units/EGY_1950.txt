@@ -1,47 +1,71 @@
 ﻿division_template = {
-	name = "National Guard Brigade"
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		artillery_brigade = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-	}
-	support = {
-		recon = { x = 0 y = 0 } 		
-	#	antitank = { x = 0 y = 1 } 	#not a thing in this mod apparently	
-	}
-}
-division_template = {
 	name = "Infantry Brigade"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 } 		
+		recon = { x = 0 y = 0 }		
 	#	antitank = { x = 0 y = 2 } 	#not a thing in this mod apparently	
+	}
+}
+division_template = {
+	name = "Armoured Battalion"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		# Sherman IIIs
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }			
+		motorized = { x = 1 y = 0 }		
+		motorized = { x = 1 y = 1 }	
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }	
+	}
+}
+division_template = {
+	name = "Motorised Infantry Division"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }		
+		motorized = { x = 0 y = 1 }	
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		#
 	}
 }
 
 units = {
+
+	## GAZA STRIP
+	
 	division = {
 		name = "26th National Guard Brigade"
 		location = 4088 # Gaza
-		division_template = "National Guard Brigade"
-		start_experience_factor = 0.2
+		division_template = "Infantry Brigade"
 		start_equipment_factor = 0.3
 	}
+	
+	## NORTH & CENTRAL SINAI SECTOR
+	
 	division = {
-		name = "5th Brigade"
+		name = "5th Infantry Brigade"
 		location = 4161 # Rafah
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "6th Brigade"
+		name = "1st Motorised Border Battalion"
+		location = 4161 # Rafah
+		division_template = "Motorised Infantry Division"
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "6th Infantry Brigade"
 		location = 10002 # Abu Ageila
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.2
@@ -50,18 +74,105 @@ units = {
 		name = "9th Reserve Brigade"
 		location = 10002 # Abu Ageila
 		division_template = "Infantry Brigade"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "1st National Guard Brigade"
 		location = 10002 # Abu Ageila
-		division_template = "National Guard Brigade"
-		start_experience_factor = 0.2
+		division_template = "Infantry Brigade"
 		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2nd National Guard Brigade"
+		location = 10002 # Abu Ageila - made this name up, there was an unnamed national guard brigade at Kusseima (which is basically Abu Ageila) so I put this in to represent them)
+		division_template = "Infantry Brigade"
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Brigade"
+		location = 11979 # Arish
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+	}	
+	division = {
+		name = "3rd Armoured Battalion"
+		location = 11979 # Arish
+		division_template = "Armoured Battalion"
+		start_experience_factor = 0.2
+	}
+
+	## SOUTHERN SINAI SECTOR
+	
+	division = {
+		name = "3rd National Guard Brigade"
+		location = 10127 # Nakhel/Kuntilla - another made up name to represent an unnamed brigade
+		division_template = "Infantry Brigade"
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2nd Motorised Border Battalion"
+		location = 10127 # Nakhel/Kuntilla
+		division_template = "Motorised Infantry Division"
+		start_equipment_factor = 0.5
+	}
+	
+	## GULF OF AQABA SECTOR
+	
+	division = {
+		name = "21st Infantry Brigade"
+		location = 12073 # Sharm El-Sheikh - actually a Battalion but screw it
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "4th National Guard Brigade"
+		location = 12073 # Sharm El-Sheikh - another made up name to represent an unnamed brigade
+		division_template = "Infantry Brigade"
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "3rd Motorised Border Battalion"
+		location = 12073 # Sharm El-Sheikh - another made up name to represent an unnamed brigade
+		division_template = "Motorised Infantry Division"
+		start_equipment_factor = 0.5
 	}	
 	
-	10002
+	## SUEZ CANAL AND COMMAND RESERVES
+	
+	division = {
+		name = "1st Motorised Infantry Division"
+		location = 10005 # not Kantara but the next one west b/c Kantara is british at game start
+		division_template = "Motorised Infantry Division"
+		start_experience_factor = 0.2
+	}	
+	division = {
+		name = "4th Armoured Battalion"
+		location = 7011 # Cairo
+		division_template = "Armoured Battalion"
+		start_experience_factor = 0.2
+	}		
+	division = {
+		name = "2nd Armoured Battalion"
+		location = 7011 # Cairo - another made up name to represent an unnamed brigade
+		division_template = "Armoured Battalion"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "65th Armoured (Infantry) Battalion"
+		location = 7011 # Cairo
+		division_template = "Motorised Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 7011 # Cairo
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.2
+	}
+	
+	
+	
 }
 
 ### Starting Production ###

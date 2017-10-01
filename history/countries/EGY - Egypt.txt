@@ -13,6 +13,7 @@ set_national_unity = 0.55
 		tech_recon = 1
 		gw_artillery = 1
 		artillery4 = 1
+		advanced_medium_tank = 1
 	}
 
 1950.1.1 = {
