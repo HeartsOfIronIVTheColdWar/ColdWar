@@ -1033,7 +1033,7 @@ EGY = {  #need to revisit
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
 			Tawfiq Umar Uthman Yahya Yusuf Zafir
 			#
-			Omar Abdel Hakim
+			Abdel Gamal Hakim Omar
 		}
 	}
 	female = {
@@ -1046,7 +1046,7 @@ EGY = {  #need to revisit
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
 			"al-Najdi" "al-Hijazi"   
 			#
-			Sharif
+			"el Majid" Sharif
 	}
 	callsigns = { }
 }

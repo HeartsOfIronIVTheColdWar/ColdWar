@@ -59,6 +59,13 @@ set_national_unity = 0.55
 	}
 	set_technology = {
 	}
+	
+	create_corps_commander = {
+		name = "Youssef el Agroudi"
+			picture = "Portrait_Arabia_Generic_land_1.dds"
+		traits = { incompetent }
+		skill = 1 
+	}
 }
 
 1960.1.1 = {

@@ -19,6 +19,21 @@ leader_traits = {
 		}
 	}
 	
+	incompetent = { 
+		type = all
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			experience_gain_factor = -0.5 
+			recon_factor = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 ##################################
 # Field Marshal traits.
 ##################################

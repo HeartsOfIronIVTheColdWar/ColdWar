@@ -256,6 +256,8 @@
  ranger_desc:0 "Rangers lead the way, especially when it involves fighting in Forest or Jungle areas."
  urban_assault_specialist:0 "Urban Assault Specialist"
  urban_assault_specialist_desc:0 "An expert in Fighting In Someone's House and Causing Havoc In People's Streets."
+ incompetent:0 "Incompetent"
+ incompetent_desc:0 "A poor leader who earned their commission through nepotism rather than ability."
  blockade_runner:0 "Blockade Runner"
  blockade_runner_desc:0 "Able to rapidly Disengage from Naval Combat."
  spotter:0 "Spotter"

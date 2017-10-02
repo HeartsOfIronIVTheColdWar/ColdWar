@@ -23,6 +23,7 @@ set_national_unity = 0.55
 		#laws
 		low_economic_mobilisation
 		limited_conscription
+		very_low_stability
 		#ideas
 		RAJ_agrarian_society_2
 		arab_monarchy
@@ -85,13 +86,47 @@ set_national_unity = 0.55
 	##GENERALS / CORPSCOMMANDERS
 	## naval_invader urban_assault_specialist ranger jungle_rat hill_fighter trait_mountaineer swamp_fox desert_fox commando fortress_buster trait_engineer trickster winter_specialist panzer_leader
 	
+	create_field_marshal = {
+		name = "Abdel Hakim Amer"
+			picture = "Portrait_Arabia_Generic_land_1.dds"
+		traits = { incompetent }
+		skill = 1 
+	}
+	
 	create_corps_commander = {
 		name = "Mohammed Naguib"
 			picture = "Portrait_Egypt_Mohammed_Naguib.dds"
 		traits = { urban_assault_specialist }
 		skill = 3 
 	}
-	
+
+	create_corps_commander = {
+		name = "Gamal e-Din Ali"
+			picture = "Portrait_Arabia_Generic_land_2.dds"
+		traits = { incompetent }
+		skill = 1 
+	}
+
+	create_corps_commander = {
+		name = "Jafr el Majid"
+			picture = "Portrait_Arabia_Generic_land_3.dds"
+		traits = { incompetent }
+		skill = 1 
+	}
+
+	create_corps_commander = {
+		name = "Saad ed-Din Mutawally"
+			picture = "Portrait_Arabia_Generic_land_2.dds"
+		traits = { incompetent }
+		skill = 1 
+	}
+
+	create_corps_commander = {
+		name = "Talat Hassan Ali"
+			picture = "Portrait_Arabia_Generic_3.dds"
+		traits = { incompetent }
+		skill = 1 
+	}			
 }
 
 1960.1.1 = {
