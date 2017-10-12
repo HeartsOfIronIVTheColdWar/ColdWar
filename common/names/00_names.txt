@@ -1622,17 +1622,23 @@ BOT = {
 	 }
 	callsigns = { }
 }
-COG = {
+COG = { # added Thinking_Waffle's, should be good
 	male = {
 		names = { 
-			Mobutu Joseph Patrice Antoine Laurent Albert Moise Etienne Nzimbi Ngbale Jérôme Dikembe
+			Mobutu Joseph Patrice Antoine Laurent Albert Etienne Nzimbi Ngbale Jérôme Dikembe
+			#
+			Emmanuel Felix Daniel Désiré Dieudonné Moïse Jean Jean-Baptiste Jean-François
+			Pierre Paul Jacques Daniel Elie Boniface Jacques-Moïse Philémon Anatole Jean-Chrysostome Isidore Ignace
 		}
 	}
 	female = {
 		names = { }
 	}
 	surnames = {
-		Kasavubu Lumumba Gizenga Delvaux Mbariko Tshombo Kimba Mobutu Ileo Adoula Anany Bamba Mahamba Bangala Efomi Kasa-Vubu Mutombo
+		Kasavubu Lumumba Gizenga Delvaux Mbariko Tshombo Kimba Mobutu Ileo Adoula Anany Mahamba Bangala Efomi Kasa-Vubu Mutombo
+		#
+		M'Bamba "Ma Nombo" "Ma N'Sangou" N'Gombi Matou Mvemba Lukeni Mpanzu Nimi Nsindi
+		Mulamba Tchombe Mbengue Ndongo Mwana Mukanga Kanza Kingotolo Nzeza Yumbu
 	}
 	callsigns = { }
 }
@@ -1705,13 +1711,13 @@ RSA = { #post-apartheid south africa - good, if a little short
 NIE = { #good
 	male = {
 		names = { 
-			Nnamdi Johnson Yakubu Murtala Olesugun Shehu Muhammadu Ibrahim Ernest Sani Abdulsalami Umaru Goodluck Akeem Chiwetel Chuka
+			Nnamdi Johnson Yakubu Murtala Olesugun Shehu Muhammadu Ibrahim Ernest Sani Abdulsalami Umaru Goodluck Akeem Chiwetel Chuka Nwankwo
 		}
 	}
 	female = {
 		names = { Chi }
 	}
-	surnames = { Azikiwe Aguiyi Ironsi Gowon Mohammed Obasanjo Shagari Buhari Babangida Shonekan Abacha Abubakar Yar'Adua Jonathan Balewa Olajuwon Ejiofor Onwurah Umunna }
+	surnames = { Azikiwe Aguiyi Ironsi Gowon Mohammed Obasanjo Shagari Buhari Babangida Shonekan Abacha Abubakar Yar'Adua Jonathan Balewa Olajuwon Ejiofor Onwurah Umunna Kanu }
 	callsigns = { }
 }
 UGA = { #good
@@ -1749,6 +1755,19 @@ GHA = { #good
 		names = { }
 	}
 	surnames = { Gyimah Nkrumah Ankrah Afrifa Ollennu Akufo-Addo Acheampong Akuffo Rawlings Limann Kufuor Mills Mahama Annan Kwarteng }
+	callsigns = { }
+}
+
+SIL = { #good
+	male = {
+		names = { 
+			Winston Idris Milton Albert Siaka Sorie Ibrahim Christian David Ambrose Patrick Andrew Henry Banja Christopher Leslie John Joseph Yahya Valentine Julius Ahmad Ernest
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Elba Margai Stevens Koroma Karama Taylor Lansana Genda Juxon Smith Boston Tejan-Sie Cole Leigh Bangura Momoh Kanu Strasser Bio Kabbah Koroma }
 	callsigns = { }
 }
 

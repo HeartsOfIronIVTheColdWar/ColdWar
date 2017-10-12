@@ -225,6 +225,8 @@ continent = {
 					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
 					"gfx/leaders/Africa/Portrait_Africa_Generic_Leader_1.dds"
 					"gfx/leaders/Africa/Portrait_Africa_Generic_Leader_2.dds"
+					"gfx/leaders/Africa/Portrait_Africa_Generic_Leader_3.dds"
+					"gfx/leaders/Africa/Portrait_Africa_Generic_Leader_4.dds"
 			}
 		}
 	}
