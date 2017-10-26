@@ -32,6 +32,24 @@ ideas = {
 				political_power_gain = 0.5
 			}
 		}
+		EGY_incompetent_military_command = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				military_leader_cost_factor = 2.0
+				army_org = -10
+				planning_speed = -0.3
+				max_planning = -0.25
+			}
+		}
 	}
 	
 ###ADVISORS AND STAFF###

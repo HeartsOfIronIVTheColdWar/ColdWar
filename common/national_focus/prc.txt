@@ -17,6 +17,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = PRC_the_chairman
+		icon = GFX_goal_PRC_great_leap_forwards
+		cost = 10
+		prerequisite = {
+			focus = PRC_KMT_off_mainland
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
 		id = PRC_reconstruction
 		icon = GFX_goal_continuous_repairments
 		cost = 10
@@ -273,6 +284,17 @@ focus_tree = {
 		icon = GFX_focus_generic_polish_deal
 		cost = 10
 		prerequisite = {
+			focus = PRC_intervene_in_KOR_war
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = PRC_intervene_in_KOR_war
+		icon = GFX_focus_fifth_republic
+		cost = 10
+		prerequisite = {
 			focus = PRC_KMT_off_mainland
 		}
 		x = 7
@@ -280,22 +302,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PRC_intervene_in_KOR_war
-		icon = GFX_goal_generic_position_armies
-		cost = 10
-		prerequisite = {
-			focus = PRC_SOV_treaty
-		}
-		x = 7
-		y = 4
-
-	}
-	focus = {
 		id = PRC_trust_in_the_east
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 10
 		prerequisite = {
-			focus = PRC_intervene_in_KOR_war
+			focus = PRC_SOV_treaty
 		}
 		mutually_exclusive = {
 			focus = PRC_total_isolation
@@ -310,7 +321,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		cost = 10
 		prerequisite = {
-			focus = PRC_intervene_in_KOR_war
+			focus = PRC_SOV_treaty
 		}
 		mutually_exclusive = {
 			focus = PRC_our_own_faction
@@ -344,7 +355,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		cost = 10
 		prerequisite = {
-			focus = PRC_intervene_in_KOR_war
+			focus = PRC_SOV_treaty
 		}
 		mutually_exclusive = {
 			focus = PRC_total_isolation

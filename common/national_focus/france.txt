@@ -1,15 +1,457 @@
 focus_tree = {
-	id = french_focus
-	
+	id = france
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = FRA
 		}
 	}
-	
 	default = no
+###MAIN POLITICAL BRANCH###
+	focus = {
+		id = FRA_tripartisme_mending
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 0
 
+	}
+	focus = {
+		id = FRA_fifth_republic
+		icon = GFX_focus_fifth_republic
+		cost = 10
+		x = 4
+		y = 5
+		available = {
+			has_global_flag = fourth_republic_collapsed
+		}
+
+	}
+	focus = {
+		id = FRA_rebuild_industries
+		icon = GFX_goal_generic_production
+		cost = 10
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = FRA_metropolitan_investements
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = FRA_Indochina
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = FRA_coal_and_steel
+		icon = GFX_focus_wgr_coal_and_steel
+		cost = 10
+		prerequisite = {
+			focus = FRA_tripartisme_mending
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = FRA_european_cooperation
+		icon = focus_eec
+		cost = 10
+		prerequisite = {
+			focus = FRA_coal_and_steel
+		}
+		mutually_exclusive = {
+			focus = FRA_state_first
+		}
+		x = 0
+		y = 3
+
+	}
+	focus = {
+		id = FRA_appease_RPF
+		icon = focus_appease_RPF
+		cost = 10
+		prerequisite = {
+			focus = FRA_tripartisme_mending
+		}
+		mutually_exclusive = {
+			focus = FRA_appease_communists
+			focus = FRA_appease_third_force
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = FRA_strengthen_state
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		prerequisite = {
+			focus = FRA_appease_RPF
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = FRA_state_first
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		prerequisite = {
+			focus = FRA_strengthen_state
+		}
+		mutually_exclusive = {
+			focus = FRA_european_cooperation
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = FRA_appease_third_force
+		icon = focus_appease_third_force
+		cost = 10
+		prerequisite = {
+			focus = FRA_tripartisme_mending
+		}
+		mutually_exclusive = {
+			focus = FRA_appease_communists
+			focus = FRA_appease_RPF
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = FRA_improve_political_stability
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = {
+			focus = FRA_appease_third_force
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = FRA_keep_colonies
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_improve_political_stability
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = FRA_appease_communists
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10
+		prerequisite = {
+			focus = FRA_tripartisme_mending
+		}
+		mutually_exclusive = {
+			focus = FRA_appease_third_force
+			focus = FRA_appease_RPF
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = FRA_social_improvements
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = FRA_appease_communists
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = FRA_internationalism
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = FRA_social_improvements
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = FRA_decolonize
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_internationalism
+			focus = FRA_state_first
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = FRA_marshal_aid_meeting
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10
+		prerequisite = {
+			focus = FRA_rebuild_industries
+		}
+		prerequisite = {
+			focus = FRA_metropolitan_investements
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = FRA_shipping_industry
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = FRA_metropolitan_investements
+		}
+		prerequisite = {
+			focus = FRA_rebuild_industries
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = FRA_colonial_investement_fund
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = FRA_shipping_industry
+			focus = FRA_marshal_aid_meeting
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = FRA_algerian_investements
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = FRA_colonial_investement_fund
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = FRA_invest_in_africa
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = FRA_colonial_investement_fund
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = FRA_appease_colonies
+		icon = GFX_focus_generic_concessions
+		cost = 10
+		prerequisite = {
+			focus = FRA_invest_in_africa
+		}
+		prerequisite = {
+			focus = FRA_algerian_investements
+		}
+		prerequisite = {
+			focus = FRA_improve_political_stability
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = FRA_sub_saharan_africa
+		icon = GFX_focus_generic_concessions
+		cost = 10
+		prerequisite = {
+			focus = FRA_appease_colonies
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = FRA_northern_africa
+		icon = GFX_focus_generic_concessions
+		cost = 10
+		prerequisite = {
+			focus = FRA_appease_colonies
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = FRA_indochina
+		icon = GFX_focus_generic_concessions
+		cost = 10
+		prerequisite = {
+			focus = FRA_appease_colonies
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = FRA_jungle_tactics
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_Indochina
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = FRA_new_guns
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_jungle_tactics
+			focus = FRA_paratroopers
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = FRA_mobility
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_jungle_tactics
+			focus = FRA_paratroopers
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = FRA_restart_tank_production
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_mobility
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = FRA_speed
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_restart_tank_production
+		}
+		mutually_exclusive = {
+			focus = FRA_power
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = FRA_power
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_restart_tank_production
+		}
+		mutually_exclusive = {
+			focus = FRA_speed
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = FRA_austerity_for_military
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_mobility
+			focus = FRA_new_guns
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = FRA_military_investements
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_austerity_for_military
+		}
+		x = 13
+		y = 5
+
+	}
+	
+	
+	
+	focus = {
+		id = FRA_a_union_no_more
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_fifth_republic
+		}
+		mutually_exclusive = {
+			focus = FRA_communaute_francaise
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = FRA_communaute_francaise
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_fifth_republic
+		}
+		mutually_exclusive = {
+			focus = FRA_a_union_no_more
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = FRA_paratroopers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FRA_Indochina
+		}
+		x = 14
+		y = 1
+
+	}
 }

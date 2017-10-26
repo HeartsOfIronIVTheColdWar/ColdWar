@@ -57,6 +57,24 @@ spriteTypes = {
 	name = "GFX_focus_generic_concessions"
 	texturefile = "gfx/interface/goals/focus_generic_concessions.dds"			
 	}
+	
+	###FRA###
+	SpriteType = { 
+		name = "GFX_focus_fifth_republic"
+		texturefile = "gfx/interface/goals/focus_fifth_republic.dds"
+	}
+	SpriteType = { 
+		name = "focus_appease_RPF"
+		texturefile = "gfx/interface/goals/focus_appease_RPF.dds"
+	}
+	SpriteType = { 
+		name = "focus_appease_third_force"
+		texturefile = "gfx/interface/goals/focus_appease_third_force.dds"
+	}
+	SpriteType = { 
+		name = "focus_eec"
+		texturefile = "gfx/interface/goals/focus_eec.dds"
+	}
 	###WGR###
 	SpriteType = { 
 		name = "GFX_focus_wgr_coal_and_steel"

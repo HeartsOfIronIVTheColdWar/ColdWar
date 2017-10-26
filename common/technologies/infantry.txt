@@ -5,9 +5,13 @@ technologies = {
 	infantry_weapons_1 = {
 
 		enable_equipments = {
-			infantry_equipment_1
+			infantry_equipment_0
 		}
-				
+			
+		enable_subunits = {
+			infantry
+		}
+		
 		path = {
 			leads_to_tech = infantry_weapons_2
 			research_cost_coeff = 1
@@ -42,7 +46,7 @@ technologies = {
 	infantry_weapons_2 = {
 
 		enable_equipments = {
-			infantry_equipment_2
+			infantry_equipment_1
 		}	
 		
 		path = {

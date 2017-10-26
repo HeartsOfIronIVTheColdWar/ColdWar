@@ -29,7 +29,8 @@ set_national_unity = 0.55
 		arab_monarchy
 		political_instability
 		british_influence
-	}
+		EGY_incompetent_military_command
+		}
 	set_politics = {
 
 		parties = {
