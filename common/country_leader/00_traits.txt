@@ -249,6 +249,50 @@ leader_traits = {
 #ai_focus_naval_air_factor
 #ai_focus_aviation_factor 
 	
+	decryptor = {
+		random = no
+		decryption = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	decryptological_genius = {
+		random = no
+		decryption = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_007 = {
+		random = no
+		decryption = 1.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cryptologist = {
+		random = no
+		encryption = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cryptological_genius = {
+		random = no
+		encryption = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	secrecy = {
+		random = no
+		encryption = 0.5
+		decryption = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	dislikes_germany = {
 		random = no
 		ai_strategy = {
@@ -327,7 +371,7 @@ leader_traits = {
 
 	political_dancer = {
 		random = no
-		political_power_factor = 0.15
+		political_power_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -336,7 +380,7 @@ leader_traits = {
 
 	staunch_constitutionalist = {
 		random = no
-		drift_defence_factor = 0.5
+		drift_defence_factor = 0.15
 		
 		ai_will_do = {
 			factor = 1
@@ -461,6 +505,15 @@ leader_traits = {
 		random = yes
 		sprite = 13
 		opinion_gain_monthly_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	concealed_identity = {
+		random = yes
+		sprite = 13
 		
 		ai_will_do = {
 			factor = 1

@@ -30,8 +30,9 @@ bookmarks = {
 				FRA_dilemmes_coloniaux
 			}
 			focuses = {
-				FRA_fifth_republic
 				FRA_european_cooperation
+				FRA_fifth_republic
+				FRA_anglo_french_union
 			}
 		}
 		"ENG"={

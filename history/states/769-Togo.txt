@@ -6,7 +6,7 @@ state={
 		1951 12843 
 	}
 	history={
-		owner = FRA
+		owner = FWA
 		add_core_of = TOG
 		buildings = {
 			infrastructure = 1

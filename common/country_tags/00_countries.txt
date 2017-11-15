@@ -161,9 +161,9 @@ DJI = "countries/Djibouti.txt"
 BHR = "countries/Bahrain.txt"
 QAT = "countries/Qatar.txt"
 SVN = "countries/SouthVietnam.txt"
-XIN = "countries/Xinjiang.txt
-
-
+XIN = "countries/Xinjiang.txt"
+FWA = "countries/FrenchWestAfrica.txt"
+FEA = "countries/FrenchEquatorialAfrica.txt"
 
 
 

@@ -1,0 +1,131 @@
+﻿units = {
+	#NAVAL OOB
+	navy = {
+		name = "Flotte du Extreme Orient"
+		base = 4401
+		location = 4401 # Saigon
+		ship = { name = "Bearn" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } }
+			air_wings = {
+                cv_fighter_equipment_1 =  { owner = "FRA" amount = 16 } # for some reason starts at equipment_0
+                cv_CAS_equipment_1 =  { owner = "FRA" amount = 12 } # for some reason starts at equipment_1
+            }
+		}
+		ship = { name = "Richelieu" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Glorie" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Tonkinois" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "L'Escarmouche" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+	}
+	
+	navy = {
+		name = "1ere Flotte Mediterraneenne"
+		base = 911
+		location = 911 # Toulon	
+		ship = { name = "Dixmude" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } }
+			air_wings = {
+                cv_fighter_equipment_1 =  { owner = "FRA" amount = 14 } # historical: 16
+                cv_CAS_equipment_1 =  { owner = "FRA" amount = 14 } # historical: 30
+           }
+		}
+		ship = { name = "L'Aventure" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Croix de Lorraine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "La Surprise" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "La Decouverte" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Duquesne" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Tourville" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Duguay-Trouin" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Montcalm" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+	}
+	navy = {
+		name = "2ere Flotte Mediterraneenne"
+		base = 7132
+		location = 7132 #Oran
+		ship = { name = "Gerorges Leygues" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Jeanne d'Arc" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Verrier" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Marocain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "L'Algerien" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Tunisien" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+	}
+	navy = {
+		name = "1ere Flotte Africaine"
+		base = 4948
+		location = 4948 #Oran
+		ship = { name = "Le Senegalais" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Hova" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Somali" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "La Place" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+	}
+	navy = {
+		name = "1ere Flotte de l'Atlantique"
+		base = 3552
+		location = 3552 #Brest
+		ship = { name = "Arromanches" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } }
+			air_wings = {
+                cv_fighter_equipment_1 =  { owner = "FRA" amount = 16 } # historical: 16
+                cv_CAS_equipment_1 =  { owner = "FRA" amount = 14 } # historical: 14
+           }
+		}
+		ship = { name = "De Grasse" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Chetaurenault" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Guichen" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Emile Bertin" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Brix" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Mermoz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Mermoz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+	}
+	navy = {
+		name = "1eme Escadron Sous-Marins"
+		base = 3552
+		location = 3552 #Brest
+		ship = { name = "Le Mille" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Laubie" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Blaison" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Bouan" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Roland Morillot" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }
+	}
+}
+
+air_wings = {
+	#AIR OOB
+	804 = { 
+		fighter_equipment_1 = { owner = "FRA" amount = 24 }
+		fighter_equipment_1 = { owner = "FRA" amount = 18 }
+	}
+	671 = { 
+		fighter_equipment_1 = { owner = "FRA" amount = 20 }
+		fighter_equipment_1 = { owner = "FRA" amount = 24 }
+	}
+	286 = { 
+		fighter_equipment_1 = { owner = "FRA" amount = 12 }
+		fighter_equipment_1 = { owner = "FRA" amount = 18 }
+	}
+	17 = { 
+		fighter_equipment_1 = { owner = "FRA" amount = 24 }
+		fighter_equipment_1 = { owner = "FRA" amount = 22 }
+	}
+	153 = { 
+		fighter_equipment_2 = { owner = "FRA" amount = 22 }
+		fighter_equipment_2 = { owner = "FRA" amount = 22 }
+	}
+	27 = { 
+		fighter_equipment_2 = { owner = "FRA" amount = 24 }
+		fighter_equipment_2 = { owner = "FRA" amount = 18 }
+		fighter_equipment_2 = { owner = "FRA" amount = 22 }
+		fighter_equipment_2 = { owner = "FRA" amount = 18 }
+	}
+	16 = { 
+		transport_plane_equipment_1 = { owner = "FRA" amount = 52 }
+	}
+}
+
+
+
+#navy = {
+#	name = "1st Fleet"
+#}
+
+#navy = {
+#	name = "4th Fleet"
+#}
+
+

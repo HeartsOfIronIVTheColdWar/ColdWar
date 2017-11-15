@@ -78,6 +78,23 @@ spriteTypes = {
 		name = "GFX_autonomy_level_button"
 		textureFile = "gfx/interface/autonomy/autonomy_level_button.dds"
 	}
+	spriteType = {
+		name = "GFX_autonomy_satellite_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_satellite.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_FRA_departement_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_dominion_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_FRA_colony_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_integrated_puppet_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_FRA_protectorate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_puppet_icon.dds"
+	}
+	
 	
 	#-------------
 

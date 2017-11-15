@@ -65,62 +65,62 @@ country_event = {
 
 ### Strikes in factories (random event)
 # Construction company strikes
-country_event = {
-	id = fra.510
-	title = fra.510.t
-	desc = fra.510.d
-	picture = 
-	
-	trigger = {
-		tag = FRA
-		FRA = { NOT = { has_country_flag = fra_strike1 } }
-	}
-	
-	mean_time_to_happen = {
-		days = 60
-	}
-	
-	option = {
-		name = fra.510.a
-		set_country_flag = { fra_strike1 days = 120 }
-		add_timed_idea = { FRA_construction_company_strike days = 30 }
-	}
-	
-	option = {
-		name = fra.510.b
-		set_country_flag = { fra_strike1 days = 365 }
-		add_timed_idea = { FRA_construction_company_deal days = 270 }
-	}
-}
+#country_event = {
+#	id = fra.510
+#	title = fra.510.t
+#	desc = fra.510.d
+#	picture = 
+#	
+#	trigger = {
+#		tag = FRA
+#		FRA = { NOT = { has_country_flag = fra_strike1 } }
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 60
+#	}
+#	
+#	option = {
+#		name = fra.510.a
+#		set_country_flag = { fra_strike1 days = 120 }
+#		add_timed_idea = { FRA_construction_company_strike days = 30 }
+#	}
+#	
+#	option = {
+#		name = fra.510.b
+#		set_country_flag = { fra_strike1 days = 365 }
+#		add_timed_idea = { FRA_construction_company_deal days = 270 }
+#	}
+#}
 
 # Weapons manufacturer strikes
-country_event = {
-	id = fra.511
-	title = fra.511.t
-	desc = fra.511.d
-	picture = 
-	
-	trigger = {
-		tag = FRA
-		FRA = { NOT = { has_country_flag = fra_strike2 } }
-	}
-	
-	mean_time_to_happen = {
-		days = 60
-	}
-	
-	option = {
-		name = fra.511.a
-		set_country_flag = { fra_strike2 days = 120 }
-		add_timed_idea = { FRA_weapons_manufacturer_strike days = 30 }
-	}
-	
-	option = {
-		name = fra.511.b
-		set_country_flag = { fra_strike2 days = 365 }
-		add_timed_idea = { FRA_weapons_manufacturer_deal days = 270 }
-	}
-}
+#country_event = {
+#	id = fra.511
+#	title = fra.511.t
+#	desc = fra.511.d
+#	picture = 
+#	
+#	trigger = {
+#		tag = FRA
+#		FRA = { NOT = { has_country_flag = fra_strike2 } }
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 60
+#	}
+#	
+#	option = {
+#		name = fra.511.a
+#		set_country_flag = { fra_strike2 days = 120 }
+#		add_timed_idea = { FRA_weapons_manufacturer_strike days = 30 }
+#	}
+#	
+#	option = {
+#		name = fra.511.b
+#		set_country_flag = { fra_strike2 days = 365 }
+#		add_timed_idea = { FRA_weapons_manufacturer_deal days = 270 }
+#	}
+#}
 
 # Civil service strikes
 #country_event = {

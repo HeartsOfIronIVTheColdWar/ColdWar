@@ -75,6 +75,22 @@ spriteTypes = {
 		name = "focus_eec"
 		texturefile = "gfx/interface/goals/focus_eec.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_algeria_france"
+		texturefile = "gfx/interface/goals/focus_algeria_france.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_French_Communists"
+		texturefile = "gfx/interface/goals/focus_French_Communists.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_french_community"
+		texturefile = "gfx/interface/goals/focus_FRA_french_community.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_franco_british_union"
+		texturefile = "gfx/interface/goals/goal_franco_british_union.dds"
+	}
 	###WGR###
 	SpriteType = { 
 		name = "GFX_focus_wgr_coal_and_steel"

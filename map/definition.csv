@@ -12038,7 +12038,7 @@
 12037;173;141;162;land;true;plains;6
 12038;173;141;207;land;true;hills;1
 12039;173;144;22;land;true;hills;5
-12040;173;144;172;land;true;plains;6
+12040;173;144;172;land;false;plains;6
 12041;173;144;227;land;false;desert;6
 12042;173;147;87;land;false;mountain;5
 12043;173;147;137;land;true;plains;6

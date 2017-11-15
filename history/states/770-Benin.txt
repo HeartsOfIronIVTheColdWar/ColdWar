@@ -5,7 +5,7 @@ state={
 		10919 12762 12874 
 	}
 	history={
-		owner = FRA
+		owner = FWA
 		add_core_of = BEN
 		buildings = {
 			infrastructure = 1

@@ -254,6 +254,270 @@ ideas = {
 				decryption_factor = 0.2
 			}
 		}
+		####FIFTH YEAR PLANS###
+		SOV_fifth_five_year_1 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				excavation_tech = 0.05
+				construction_tech = 0.05
+				}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		SOV_fifth_five_year_2 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				excavation_tech = 0.05
+				land_doctrine = 0.05
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SOV_fifth_five_year_3 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				excavation_tech = 0.05
+				naval_doctrine = 0.05
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+			}
+		}
+		SOV_fifth_five_year_4 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				construction_tech = 0.05
+				land_doctrine = 0.05
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SOV_fifth_five_year_5 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				construction_tech = 0.05
+				naval_doctrine = 0.05
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_dockyard_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+			}
+		}
+		SOV_fifth_five_year_6 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				land_doctrine = 0.05
+				naval_doctrine = 0.05
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+			}
+		}
+		SOV_fifth_five_year_7 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				excavation_tech = 0.05
+				construction_tech = 0.05
+				land_doctrine = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SOV_fifth_five_year_8 = {
+			removal_cost = -1
+
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				excavation_tech = 0.05
+				construction_tech = 0.05
+				naval_doctrine = 0.05
+
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_dockyard_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+
+			}
+		}
+		SOV_fifth_five_year_9 = {
+			removal_cost = -1
+			
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				excavation_tech = 0.05
+				land_doctrine = 0.05
+				naval_doctrine = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+			}
+		}
+		SOV_fifth_five_year_10 = {
+			removal_cost = -1
+			
+			picture = SOV_fifth_five_year
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				construction_tech = 0.05
+				land_doctrine = 0.05
+				naval_doctrine = 0.05
+				
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+			}
+			
+		}
+		
 ###LEFT BRANCH OF 1950 ECONOMIC TREE ###
 		heavy_factory_economy = {
 			allowed = {

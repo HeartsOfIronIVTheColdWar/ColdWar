@@ -58,7 +58,7 @@ focus_tree = {
 		id = SOV_Surplus_Equipment
 		icon = GFX_goal_generic_trade
 		cost = 10
-		x = 32
+		x = 29
 		y = 0
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 85000 producer = SOV }
@@ -71,7 +71,7 @@ focus_tree = {
 		id = SOV_NKVD
 		icon = GFX_goal_continuous_suppression
 		cost = 10
-		x = 28
+		x = 25
 		y = 0
 
 	}
@@ -79,7 +79,7 @@ focus_tree = {
 		id = SOV_The_Thing
 		icon = GFX_focus_wonderweapons
 		cost = 1
-		x = 22
+		x = 20
 		y = 0
 		available = { 
 			has_global_flag = SOV_the_thing
@@ -93,7 +93,7 @@ focus_tree = {
 		id = SOV_The_Exchange
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 1
-		x = 24
+		x = 22
 		y = 0
 		available = {
 			has_government = communism 
@@ -247,7 +247,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-				}
+			}
 			random_owned_controlled_state = {
 					if = {
 
@@ -257,7 +257,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-				}
+			}
 			random_owned_controlled_state = {
 					if = {
 
@@ -267,7 +267,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-				}
+			}
 			random_owned_controlled_state = {
 					if = {
 
@@ -277,7 +277,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-				}
+			}
 		}
 
 
@@ -910,7 +910,7 @@ focus_tree = {
 			has_global_flag = SOV_Stalin_dead 
 			has_global_flag = SOV_De_stalinism 
 		}
-		x = 17
+		x = 16
 		y = 1
 		completion_reward = {
 			every_other_country = {
@@ -924,10 +924,10 @@ focus_tree = {
 		icon = GFX_focus_RAJ_british_investors
 		cost = 10
 		prerequisite = {
-			focus = SOV_The_Internationale
+			focus = SOV_Soviet_Advisors
 		}
 		x = 14
-		y = 2
+		y = 3
 		completion_reward = {
 			RAJ = {
 				random_owned_controlled_state = {
@@ -983,7 +983,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_The_Internationale
 		}
-		x = 17
+		x = 16
 		y = 2
 		completion_reward = {
 			custom_effect_tooltip = SOV_Aid_americas
@@ -1001,7 +1001,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_The_Internationale
 		}
-		x = 20
+		x = 19
 		y = 2
 		completion_reward = {
 			set_global_flag = SOV_socialst_unrests
@@ -1014,12 +1014,10 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		cost = 10
 		prerequisite = {
-			focus = SOV_Indian_Anticapitalism
-			focus = SOV_Socialistas_Americanas
-			focus = SOV_Assist_Decolonization
+			focus = SOV_The_Internationale
 		}
-		x = 15
-		y = 3
+		x = 14
+		y = 2
 
 	}
 	focus = {
@@ -1028,9 +1026,6 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = SOV_Indian_Anticapitalism
-		}
-		prerequisite = {
-			focus = SOV_Soviet_Advisors
 		}
 		x = 14
 		y = 4
@@ -1079,7 +1074,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Socialistas_Americanas
 		}
-		x = 17
+		x = 16
 		y = 3
 
 	}
@@ -1090,7 +1085,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Assist_Decolonization
 		}
-		x = 19
+		x = 18
 		y = 3
 
 	}
@@ -1101,7 +1096,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Assist_Decolonization
 		}
-		x = 21
+		x = 20
 		y = 3
 
 	}
@@ -1114,7 +1109,7 @@ focus_tree = {
 			focus = SOV_African_socialism
 			focus = SOV_Asian_Socialism
 		}
-		x = 17
+		x = 16
 		y = 4
 
 	}
@@ -1125,7 +1120,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Foreign_Assistance
 		}
-		x = 18
+		x = 17
 		y = 5
 
 	}
@@ -1142,7 +1137,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_The_Banana_Republics
 		}
-		x = 19
+		x = 18
 		y = 4
 	}
 	focus = {
@@ -1154,7 +1149,7 @@ focus_tree = {
 			focus = SOV_African_socialism
 			focus = SOV_The_Banana_Republics
 		}
-		x = 21
+		x = 20
 		y = 4
 
 	}
@@ -1165,7 +1160,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Support_Coups
 		}
-		x = 20
+		x = 19
 		y = 5
 
 	}
@@ -1177,7 +1172,7 @@ focus_tree = {
 			focus = SOV_Military_Support
 			focus = SOV_Industrial_Planning_Board
 		}
-		x = 18
+		x = 17
 		y = 6
 
 	}
@@ -1189,7 +1184,7 @@ focus_tree = {
 			focus = SOV_Industrial_Planning_Board
 			focus = SOV_Military_Support
 		}
-		x = 20
+		x = 19
 		y = 6
 
 	}
@@ -1203,7 +1198,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_The_Exchange
 		}
-		x = 23
+		x = 21
 		y = 1
 		completion_reward = {
 			add_tech_bonus = {
@@ -1227,7 +1222,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Socialist_Science
 		}
-		x = 23
+		x = 21
 		y = 2
 		completion_reward = {
 			add_tech_bonus = {
@@ -1250,7 +1245,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Surplus_Equipment
 		}
-		x = 27
+		x = 24
 		y = 1
 		completion_reward = {
 			navy_experience = 25
@@ -1270,7 +1265,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Soviet_Navy
 		}
-		x = 26
+		x = 23
 		y = 2
 		completion_reward = {
 			195 = {
@@ -1291,7 +1286,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Soviet_Navy
 		}
-		x = 28
+		x = 25
 		y = 2
 		completion_reward = {
 			197 = {
@@ -1323,7 +1318,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_The_Leningrad_Shipyards
 		}
-		x = 27
+		x = 24
 		y = 4
 		completion_reward = {
 			navy_experience = 50
@@ -1347,7 +1342,7 @@ focus_tree = {
 			focus = SOV_The_Leningrad_Shipyards
 			focus = SOV_Black_Sea_Shipyards
 		}
-		x = 25
+		x = 22
 		y = 3
 		completion_reward = {
 			navy_experience = 25
@@ -1370,7 +1365,7 @@ focus_tree = {
 			focus = SOV_Black_Sea_Shipyards
 			focus = SOV_The_Leningrad_Shipyards
 		}
-		x = 29
+		x = 26
 		y = 3
 		completion_reward = {
 			navy_experience = 25
@@ -1394,7 +1389,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Coastal_Fleets
 		}
-		x = 29
+		x = 26
 		y = 4
 		completion_reward = {
 			hidden_effect = {
@@ -1571,7 +1566,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Coastal_Defense
 		}
-		x = 28
+		x = 25
 		y = 5
 		completion_reward = {
 			navy_experience = 25
@@ -1593,7 +1588,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Surplus_Equipment
 		}
-		x = 32
+		x = 29
 		y = 1
 		completion_reward = {
 			army_experience = 15
@@ -1613,7 +1608,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_The_Red_Army
 		}
-		x = 31
+		x = 28
 		y = 2
 		completion_reward = {
 			add_tech_bonus = {
@@ -1634,7 +1629,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_The_Red_Army
 		}
-		x = 33
+		x = 30
 		y = 2
 		completion_reward = {
 			army_experience = 35
@@ -1675,7 +1670,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Lessons_of_the_War
 		}
-		x = 32
+		x = 29
 		y = 3
 		completion_reward = {
 			add_ideas = SOV_Superior_Tanks
@@ -1689,7 +1684,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Doctrine_of_Force
 		}
-		x = 31
+		x = 28
 		y = 4
 		completion_reward = {
 			add_tech_bonus = {
@@ -1708,7 +1703,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Doctrine_of_Force
 		}
-		x = 33
+		x = 30
 		y = 4
 		completion_reward = {
 			add_tech_bonus = {
@@ -1728,7 +1723,7 @@ focus_tree = {
 			focus = SOV_Artillery_Command
 			focus = SOV_Fortify_borders
 		}
-		x = 32
+		x = 29
 		y = 5
 		completion_reward = {
 			188 = {
@@ -1769,7 +1764,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Surplus_Equipment
 		}
-		x = 36
+		x = 33
 		y = 1
 		completion_reward = {
 			air_experience = 75
@@ -1795,7 +1790,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Soviet_Air_Force
 		}
-		x = 35
+		x = 32
 		y = 2
 		completion_reward = {
 			air_experience = 50
@@ -1821,7 +1816,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Soviet_Air_Force
 		}
-		x = 37
+		x = 34
 		y = 2
 		completion_reward = {
 			air_experience = 50
@@ -1850,7 +1845,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Air_and_Land
 		}
-		x = 36
+		x = 33
 		y = 3
 		completion_reward = {
 			air_experience = 50
@@ -1875,7 +1870,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Missile_technology
 		}
-		x = 36
+		x = 33
 		y = 4
 		completion_reward = {
 			64 = {
@@ -2021,7 +2016,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Uboot_Improvements
 		}
-		x = 25
+		x = 22
 		y = 4
 		completion_reward = {
 			add_tech_bonus = {
@@ -2051,7 +2046,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_Hunter_Fleets
 		}
-		x = 26
+		x = 23
 		y = 5
 		completion_reward = {
 			custom_effect_tooltip = SOV_nucl_subs_unlocked

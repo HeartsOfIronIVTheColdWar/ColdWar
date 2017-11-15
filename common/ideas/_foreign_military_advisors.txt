@@ -87,6 +87,9 @@ ideas = {
 					is_in_faction_with = USA
 				}
 				NOT = { 
+						has_idea = nato_idea
+				}
+				NOT = { 
 						tag = USA
 				}
 				NOT = { 
@@ -243,6 +246,9 @@ ideas = {
 			available = {
 				NOT = { 
 					is_in_faction_with = USA
+				}
+				NOT = { 
+						has_idea = nato_idea
 				}
 				NOT = { 
 						tag = USA

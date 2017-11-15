@@ -30,8 +30,8 @@ set_national_unity = 0.7
 	}
 	
 	ruling_party = democratic
-	last_election = "1932.5.1"
-	election_frequency = 48
+	last_election = "1946.11.10"
+	election_frequency = 60
 	elections_allowed = yes
 	}
 	create_country_leader = {
@@ -39,33 +39,95 @@ set_national_unity = 0.7
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_France_Vincent_Auriol.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = socialism
 	traits = {
 		Impopular_Figurehead
 	}
 	}
 	set_technology = {
+		#Industry/engineering techs
+		basic_machine_tools = 1
+		construction1 = 1
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		improved_computing_machine = 1
+		atomic_research = 1
+		experimental_rockets = 1
+		rocket_engines = 1
+		#Army tech
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		paratroopers = 1
+		tech_mountaineers = 1
+		motorised_infantry = 1
+		gw_artillery = 1
+		artillery4 = 1
+		advanced_medium_tank = 1
+		mechanised_infantry3 = 1
+		advanced_light_tank = 1
+		#ship tech
+		ww2_destroyer = 1
+		ww2_cruiser = 1
+		ww2_battleship = 1
+		ww2_submarine = 1
+		ww2_carrier = 1
+		#plane tech
+		early_fighter = 1
+		fighter_1945 = 1
+		cv_1945_fighter = 1
+		fighter_1950 = 1
+		CAS_1945 = 1
+		cv_1945_CAS = 1
+		transport = 1
+		jet_engines = 1
 	}
-#	if = {
-#		limit = {
-#			has_dlc = "Together for Victory"
-#		}
-#		set_autonomy = {
-#			target = SAA
-#			autonomous_state = autonomy_protectoratecolonies
-#			freedom_level = 0.5
-#		}
-#		set_autonomy = {
-#			target = SVN
-#			autonomous_state = autonomy_puppetcolonies
-#			freedom_level = 0.2
-#		}
-#		else = {
-#			puppet = SAA
-#			puppet = SVN
-#		}
-#	}
 
+	set_autonomy = {
+		target = ALG
+		autonomous_state =  autonomy_FRA_departement
+	}
+	set_autonomy = {
+		target = MOR
+		autonomous_state =  autonomy_FRA_protectorate
+	}
+	set_autonomy = {
+		target = TUN
+		autonomous_state =  autonomy_FRA_protectorate
+	}
+	set_autonomy = {
+		target = FWA
+		autonomous_state =  autonomy_FRA_colony
+	}
+	set_autonomy = {
+		target = FEA
+		autonomous_state =  autonomy_FRA_colony
+	}
+	set_autonomy = {
+		target = LAO
+		autonomous_state =  autonomy_FRA_colony
+	}
+	set_autonomy = {
+		target = CAM
+		autonomous_state =  autonomy_FRA_colony
+	}
+	set_autonomy = {
+		target = SVN
+		autonomous_state =  autonomy_FRA_colony
+	}
+	set_autonomy = {
+		target = MAD
+		autonomous_state =  autonomy_FRA_colony
+	}
+	
+	
 }
 
 1960.1.1 = {

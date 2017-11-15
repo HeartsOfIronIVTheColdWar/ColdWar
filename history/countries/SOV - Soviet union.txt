@@ -76,34 +76,34 @@ set_national_unity = 0.8
 		iron_grip
 	}
 	}
-#	set_autonomy = {
-#		target = DDR
-#		autonomous_state =  autonomy_occupiedcommunism
-#	}
-#	set_autonomy = {
-#		target = POL
-#		autonomous_state =  autonomy_satellitecommunism
-#	}
-#	set_autonomy = {
-#		target = HUN
-#		autonomous_state =  autonomy_puppetcommunism
-#	}
-#	set_autonomy = {
-#		target = BUL
-#		autonomous_state =  autonomy_puppetcommunism
-#	}
-#	set_autonomy = {
-#		target = ROM
-#		autonomous_state =  autonomy_puppetcommunism
-#	}
-#	set_autonomy = {
-#		target = CZE
-#		autonomous_state =  autonomy_satellitecommunism
-#	}
-#	set_autonomy = {
-#		target = ALB
-#		autonomous_state =  autonomy_satellitecommunism
-#	}
+	set_autonomy = {
+		target = DDR
+		autonomous_state =  autonomy_satellite
+	}
+	set_autonomy = {
+		target = POL
+		autonomous_state =  autonomy_satellite
+	}
+	set_autonomy = {
+		target = HUN
+		autonomous_state =  autonomy_satellite
+	}
+	set_autonomy = {
+		target = BUL
+		autonomous_state =  autonomy_satellite
+	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state =  autonomy_satellite
+	}
+	set_autonomy = {
+		target = CZE
+		autonomous_state =  autonomy_satellite
+	}
+	set_autonomy = {
+		target = ALB
+		autonomous_state =  autonomy_satellite
+	}
 	create_faction = KOMINFORM
 	add_to_faction = DDR
 	add_to_faction = MON

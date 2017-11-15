@@ -6,34 +6,35 @@ set_convoys = 80
 set_national_unity = 0.55
 
 1950.1.1 = {
-	
+	set_cosmetic_tag = CAM_FRA
 	oob = "CAM_1950"
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
+		FRA_indochina
 	}
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 0
+				popularity = 25
 				banned = no
 			}
 
 			autocratic = {
-				popularity = 0
+				popularity = 60
 				banned = no
 			}
 			
 			communism = {
-				popularity = 100
+				popularity = 15
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = autocratic
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no

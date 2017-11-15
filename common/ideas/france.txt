@@ -1,6 +1,44 @@
 ideas = {
 	country = {
-	
+		FRA_communism_banned = {
+			picture = anti_soviet_pact
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				communism_drift = -0.05
+			}
+		}
+		
+		FRA_indochina = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = FRA_indochina
+			
+			modifier = {
+				political_power_cost = 0.3
+				unity_factor = -0.2
+			}
+		}
+		
+		
+		
 		FRA_disjointed_government = {
 			
 			allowed = {
@@ -19,6 +57,27 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.4
 				unity_factor = -0.10
+			}
+		}
+		
+		FRA_disjointed_government2 = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 0.15
+				unity_factor = -0.05
 			}
 		}
 		
@@ -198,7 +257,42 @@ ideas = {
 	
 	minister_of_internal_affairs = {
 		
-		
+		emile_pelletier = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		jean_gilbert = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { captain_of_industry iron_grip }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		charles_brune = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { compassionate_gentleman staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 	
@@ -206,6 +300,42 @@ ideas = {
 	
 	minister_of_international_affairs = {
 		
+		robert_schuman = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { reformer negotiator silent_workhorse }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		georges_bidault = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { ww_two_trauma armaments_organizer war_industrialist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		pierre_mendes_france = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { compassionate_gentleman smooth_talking_charmer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 
@@ -213,6 +343,42 @@ ideas = {
 	
 	intelligence_minister = {
 		
+		germain_vidal = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { backroom_backstabber decryptological_genius }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		jean_vie = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { backroom_backstabber cryptologist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		georges_moulin = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { brutal fascist_demagogue secrecy }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 

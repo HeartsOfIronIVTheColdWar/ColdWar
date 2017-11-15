@@ -5,7 +5,7 @@ state={
 		5013 5070 8065 8122 10762 10803 
 	}
 	history={
-		owner = FRA
+		owner = FWA
 		add_core_of = IVO
 		buildings = {
 			infrastructure = 1

@@ -15,10 +15,11 @@ ideas = {
 			}
 			
 			modifier = {
+				army_morale_factor = 0.25
 				conscription = 0.05
-				MONTHLY_POPULATION = 1.5
+				MONTHLY_POPULATION = 2
 				political_power_factor = 0.2
-				unity_factor = 0.3
+				unity_factor = 0.5
 			}
 
 		}

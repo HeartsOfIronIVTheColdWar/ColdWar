@@ -81,7 +81,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.3
 				industrial_capacity_factory = 0.15 
 				production_speed_industrial_complex_factor = 0.25
 				production_factory_efficiency_gain_factor = 0.25

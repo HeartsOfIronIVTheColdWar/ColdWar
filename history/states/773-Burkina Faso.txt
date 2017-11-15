@@ -5,7 +5,7 @@ state={
 		2001 7950 7983 8071 10836 12851 
 	}
 	history={
-		owner = FRA
+		owner = FWA
 		add_core_of = BUF
 		buildings = {
 			infrastructure = 1

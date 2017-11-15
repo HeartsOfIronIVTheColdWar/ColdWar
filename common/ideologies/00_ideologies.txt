@@ -14,6 +14,7 @@ ideologies = {
 			}
 			
 			occupation_government = {
+			
 			}
 		}
 		

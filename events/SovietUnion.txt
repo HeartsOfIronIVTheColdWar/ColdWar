@@ -111,6 +111,7 @@ country_event = { #Force of Will
 		ai_chance = {
 			base = 2
 		}
+		SOV = { country_event = { hours = 6 id = soviet.632 } }
 		SOV = { add_to_faction = YUG }
 		SOV = { puppet = YUG }
 	}
@@ -125,6 +126,21 @@ country_event = { #Force of Will
 				target = YUG
 				generator = owned_states
 			}
+		}
+	}
+}
+country_event = { #Tito's a puppet! Ha Ha
+	id = soviet.632
+	title = soviet.632.t
+	desc = soviet.632.d 
+	picture = GFX_report_event_tito_stalin
+
+	is_triggered_only = yes
+	
+	option = { #Accept
+		name = "Tito is not as dumb as we thought after all."
+		ai_chance = {
+			base = 5
 		}
 	}
 }
@@ -294,5 +310,1588 @@ country_event = { #Fifth SinoSoviet focus on the Soviet focus tree
 	}
 	option = { #Refuse
 		name = "This is just a cheap offer to make us join their faction."
+	}
+}
+
+##########################
+###FIFTH FIVE YEAR PLAN### - BIG EVENT CHAIN
+##########################
+
+###START CHOOSE 3 of 5###
+country_event = {
+	id = soviet.101
+	title = soviet.101.t
+	desc = soviet.101.de
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		focus_progress = { focus = SOV_The_1950_Five_Year_Plan progress > 0.5 }
+	}
+
+	mean_time_to_happen = { days = 5 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 30 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 10 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d
+		ai_chance = { factor = 10 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	option = { #Navy
+		name = soviet.101.e
+		ai_chance = { factor = 10 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+
+country_event = {
+	id = soviet.102
+	title = soviet.102.t
+	desc = soviet.102.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_industry_fifth }
+		SOV = { NOT = { has_country_flag = fifth_second_round_done } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	option = { #Navy
+		name = soviet.101.e
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.103
+	title = soviet.103.t
+	desc = soviet.103.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_agriculture_fifth }
+		SOV = { NOT = { has_country_flag = fifth_second_round_done } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	option = { #Navy
+		name = soviet.101.e 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.104
+	title = soviet.104.t
+	desc = soviet.104.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_infrastructure_fifth }
+		SOV = { NOT = { has_country_flag = fifth_second_round_done } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_agriculture
+		}
+	option = { #Army/Airforce
+		name = soviet.101.d
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	option = { #Navy
+		name = soviet.101.e 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.105
+	title = soviet.105.t
+	desc = soviet.105.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_armyairforce_fifth }
+		SOV = { NOT = { has_country_flag = fifth_second_round_done } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Navy
+		name = soviet.101.e
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.106
+	title = soviet.106.t
+	desc = soviet.106.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_navy_fifth }
+		SOV = { NOT = { has_country_flag = fifth_second_round_done } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = fifth_second_round_done }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	
+}
+
+###THIRD ROUND###
+
+country_event = {
+	id = soviet.107
+	title = soviet.107.t
+	desc = soviet.107.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_industry_fifth }
+		SOV = { has_country_flag = SOV_agriculture_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+		
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Infrastructure
+		name = soviet.101.d
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	option = { #Army/Airforce
+		name = soviet.101.e
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.108
+	title = soviet.108.t
+	desc = soviet.108.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_industry_fifth }
+		SOV = { has_country_flag = SOV_infrastructure_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #ArmyAirforce
+		name = soviet.101.d
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	option = { #Navy
+		name = soviet.101.e
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.109
+	title = soviet.109.t
+	desc = soviet.109.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_industry_fifth }
+		SOV = { has_country_flag = SOV_armyairforce_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Army/Airforce
+		name = soviet.101.e 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.110
+	title = soviet.110.t
+	desc = soviet.110.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_industry_fifth }
+		SOV = { has_country_flag = SOV_navy_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	
+}
+
+country_event = {
+	id = soviet.111
+	title = soviet.111.t
+	desc = soviet.111.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_agriculture_fifth }
+		SOV = { has_country_flag = SOV_infrastructure_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }'
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	option = { #Infrastructure
+		name = soviet.101.e
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished 
+		custom_effect_tooltip = fifth_plan_navy}
+	}
+}
+
+country_event = {
+	id = soviet.112
+	title = soviet.112.t
+	desc = soviet.112.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_agriculture_fifth }
+		SOV = { has_country_flag = SOV_armyairforce_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Navy
+		name = soviet.101.e 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.113
+	title = soviet.113.t
+	desc = soviet.113.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_agriculture_fifth }
+		SOV = { has_country_flag = SOV_navy_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	
+}
+
+country_event = {
+	id = soviet.114
+	title = soviet.114.t
+	desc = soviet.114.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_infrastructure_fifth }
+		SOV = { has_country_flag = SOV_armyairforce_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Army/Airforce
+		name = soviet.101.e 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_navy_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_navy
+	}
+	
+}
+
+country_event = {
+	id = soviet.115
+	title = soviet.115.t
+	desc = soviet.115.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_infrastructure_fifth }
+		SOV = { has_country_flag = SOV_navy_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Army/Airforce
+		name = soviet.101.d 
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_armyairforce_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_armyairforce
+	}
+	
+}
+
+country_event = {
+	id = soviet.116
+	title = soviet.116.t
+	desc = soviet.116.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_armyairforce_fifth }
+		SOV = { has_country_flag = SOV_navy_fifth }
+		SOV = { NOT = { has_country_flag = SOV_fifth_finished } }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { #Industry
+		name = soviet.101.a
+		ai_chance = { factor = 40 }
+		
+		SOV = { set_country_flag = SOV_industry_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_industry
+	}
+	option = { #Agriculture
+		name = soviet.101.b
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_agriculture_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_agriculture
+	}
+	option = { #Infrastructure
+		name = soviet.101.c
+		ai_chance = { factor = 20 }
+		SOV = { set_country_flag = SOV_infrastructure_fifth }
+		SOV = { set_country_flag = SOV_fifth_finished }
+		custom_effect_tooltip = fifth_plan_infrastructure
+	}
+	
+}
+
+country_event = {
+	id = soviet.117
+	title = soviet.117.t
+	desc = soviet.117.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = SOV
+		SOV = { has_country_flag = SOV_fifth_finished }
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	fire_only_once = yes
+
+	option = { 
+		name = soviet.117.a
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_industry_fifth }
+				SOV = { has_country_flag = SOV_agriculture_fifth }
+				SOV = { has_country_flag = SOV_infrastructure_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_1 days = 1825 }
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_industry_fifth }
+				SOV = { has_country_flag = SOV_agriculture_fifth }
+				SOV = { has_country_flag = SOV_armyairforce_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_2 days = 1825 }
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_industry_fifth }
+				SOV = { has_country_flag = SOV_agriculture_fifth }
+				SOV = { has_country_flag = SOV_navy_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_3 days = 1825 }
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			195 = {
+					if = {
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+			}
+			197 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			137 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_industry_fifth }
+				SOV = { has_country_flag = SOV_infrastructure_fifth }
+				SOV = { has_country_flag = SOV_armyairforce_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_4 days = 1825 }
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_industry_fifth }
+				SOV = { has_country_flag = SOV_infrastructure_fifth }
+				SOV = { has_country_flag = SOV_navy_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_5 days = 1825 }
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			195 = {
+					if = {
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+			}
+			197 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			137 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_industry_fifth }
+				SOV = { has_country_flag = SOV_armyairforce_fifth }
+				SOV = { has_country_flag = SOV_navy_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_6 days = 1825 }
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			195 = {
+					if = {
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+			}
+			197 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			137 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_agriculture_fifth }
+				SOV = { has_country_flag = SOV_infrastructure_fifth }
+				SOV = { has_country_flag = SOV_armyairforce_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_7 days = 1825 }
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_agriculture_fifth }
+				SOV = { has_country_flag = SOV_infrastructure_fifth }
+				SOV = { has_country_flag = SOV_navy_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_8 days = 1825 }
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_agriculture_fifth }
+				SOV = { has_country_flag = SOV_armyairforce_fifth }
+				SOV = { has_country_flag = SOV_navy_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_9 days = 1825 }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			195 = {
+					if = {
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+			}
+			197 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			137 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		}
+		if = {
+			limit = {
+				SOV = { has_country_flag = SOV_infrastructure_fifth }
+				SOV = { has_country_flag = SOV_armyairforce_fifth }
+				SOV = { has_country_flag = SOV_navy_fifth }
+			}
+			add_timed_idea = { idea = SOV_fifth_five_year_10 days = 1825 }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			195 = {
+					if = {
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+			}
+			197 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+			137 = {
+					if = {
+						add_building_construction = {
+							type = dockyard 
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		}
+		ai_chance = {
+			base = 75
+		}
 	}
 }

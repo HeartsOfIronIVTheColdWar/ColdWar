@@ -6,34 +6,35 @@ set_convoys = 80
 set_national_unity = 0.55
 
 1950.1.1 = {
-	
+	set_cosmetic_tag = SVN_FRA
 	oob = "SVN_1950"
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
+		FRA_indochina
 	}
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 100
+				popularity = 25
 				banned = no
 			}
 
 			autocratic = {
-				popularity = 0
+				popularity = 75
 				banned = no
 			}
 			
 			communism = {
 				popularity = 0
-				#banned = no #default is no
+				banned = yes #default is no
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = autocratic
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no

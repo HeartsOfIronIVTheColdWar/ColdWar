@@ -26,7 +26,7 @@ opinion_modifiers = {
 	
 	eastern_leanings_bad = {value = -50 }
 	
-	
+	FRA_state_first = {value = -25 }
 	
 	declines_peace_treaty = {value = -100 }
 	

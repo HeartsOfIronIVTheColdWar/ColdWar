@@ -6,7 +6,7 @@ state={
 		1956 4913 7939 8128 10917 
 	}
 	history={
-		owner = FRA
+		owner = FWA
 		add_core_of = NIG
 		buildings = {
 			infrastructure = 1

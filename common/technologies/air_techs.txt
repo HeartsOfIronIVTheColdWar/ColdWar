@@ -263,7 +263,7 @@ technologies = {
 	CAS_1945 = {
 	
 		enable_equipments = {
-			CAS_equipment_0
+			CAS_equipment_1
 		}
 	
 		path = {
@@ -299,7 +299,7 @@ technologies = {
 	cv_1945_CAS = {
 
 		enable_equipments = {
-			cv_CAS_equipment_0
+			cv_CAS_equipment_1
 		}
 	
 		research_cost = 1.0 #Carrier Variant

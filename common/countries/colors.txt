@@ -655,6 +655,14 @@ DJI = {
 	color = rgb { 18  173  43 }
 	color_ui = rgb { 18  173  43 }
 }
+FWA = {
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+FEA = {
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

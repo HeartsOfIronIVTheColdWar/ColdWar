@@ -6,7 +6,7 @@ state={
 		1115 2044 2068 5101 10725 10788 10868 
 	}
 	history={
-		owner = FRA
+		owner = FWA
 		add_core_of = MAI
 		buildings = {
 			infrastructure = 1
