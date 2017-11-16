@@ -30,7 +30,7 @@ idea_categories = {
 		slot = minister_of_international_affairs
 		slot = intelligence_minister
 		slot = education_minister
-		slot = united_nations_ambassador
+		slot = economy_minister
 		slot = foreign_military_advisor_laws
 
 		cost = 150
