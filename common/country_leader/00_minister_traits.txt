@@ -1,0 +1,120 @@
+leader_traits = {
+
+	###########################
+	## INTERNATIONAL MINISTER
+	###########################
+
+	
+	
+	
+	###########################
+	## INTERNAL MINISTER
+	###########################
+	
+	
+	
+	
+	###########################
+	## INTELLIGENCE MINISTER
+	###########################
+	
+	
+	
+	
+	###########################
+	## EDUCATION MINISTER
+	###########################
+
+	edu_old school = {
+		
+		
+	}
+	
+	edu = {
+	
+	
+	}
+	
+	
+	###########################
+	## ECONOMIC MINISTER
+	###########################
+	
+	eco_interventionist_minister = {
+		production_factory_efficiency_gain_factor = -0.05
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_factor = 0.1
+
+		random = no
+	}
+	
+	eco_liberal_minister = {
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.05
+		consumer_goods_factor = -0.05
+
+		random = no
+	}
+	
+	eco_balanced_budget_minister = {
+		political_power_gain = 0.1
+		consumer_goods_factor = -0.05
+		production_speed_buildings_factor = 0.07
+		production_factory_max_efficiency_factor = 0.07
+
+		random = no
+	}
+	
+	eco_resource_magnate = {
+		local_resources_factor = 0.15
+		production_speed_synthetic_refinery_factor = 0.1
+		min_export = 0.05
+
+		random = no
+	}
+	
+	eco_planned_economy_partisan = {
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = 0.125
+
+		random = no
+	}
+	
+	eco_heavy_industrialist = {
+		production_speed_buildings_factor = 0.1
+		consumer_goods_factor = 0.05
+		conscription_factor = -0.02
+		
+		random = no
+	}
+	
+	eco_construction_businessman = {
+		production_speed_infrastructure_factor = 0.15
+		production_speed_air_base_factor = 0.1
+		production_speed_naval_base_factor = 0.1
+		production_speed_radar_station_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		production_speed_nuclear_reactor_factor = 0.05
+
+		random = no
+	}
+	
+	eco_military_entrepreneur = {
+		ai_focus_war_production_factor = 0.5
+		industrial_capacity_factory = 0.1
+		production_speed_arms_factory_factor  = 0.1
+
+		random = no
+	}
+	
+	eco_corrupt_minister = {
+		local_resources_factor = -0.1
+		production_factory_max_efficiency_factor = -0.1
+		production_speed_buildings_factor = -0.05
+
+		random = no
+	}
+	
+}
+
