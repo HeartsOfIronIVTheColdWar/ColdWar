@@ -1,8 +1,0 @@
-supply_area={
-	id=33
-	name="SUPPLYAREA_33" # Croatia & Bosnia-Herzegovina
-	value=10
-	states={
-		103 104 109 843
-	}
-}

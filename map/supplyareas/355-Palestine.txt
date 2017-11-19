@@ -1,8 +1,0 @@
-supply_area={
-	id=355
-	name="SUPPLYAREA_355" # Israel & Palestine
-	value=8
-	states={
-		454 784 806 841
-	}
-}

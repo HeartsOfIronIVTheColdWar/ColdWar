@@ -1,8 +1,0 @@
-supply_area={
-	id=53
-	name="SUPPLYAREA_53" # Odessa
-	value=10
-	states={
-		78 192 197 226 203 
-	}
-}

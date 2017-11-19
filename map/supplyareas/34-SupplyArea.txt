@@ -1,8 +1,0 @@
-supply_area={
-	id=34
-	name="SUPPLYAREA_34" # Slovenia
-	value=12
-	states={
-		102 
-	}
-}

@@ -1,9 +1,0 @@
-
-supply_area={
-	id=74
-	name="SUPPLYAREA_74" # Ethiopia
-	value=6
-	states={
-		271 799 814
-	}
-}

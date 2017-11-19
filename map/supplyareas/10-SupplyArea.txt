@@ -1,8 +1,0 @@
-supply_area={
-	id=10
-	name="SUPPLYAREA_10" # Lviv
-	value=11
-	states={
-		73 80 89 91 93
-	}
-}

@@ -1,8 +1,0 @@
-supply_area={
-	id=5
-	name="SUPPLYAREA_5" # Western Poland
-	value=13
-	states={
-		63 66 67 68 86
-	}
-}

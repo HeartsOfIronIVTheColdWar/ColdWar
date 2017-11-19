@@ -1,8 +1,0 @@
-supply_area={
-	id=365
-	name="SUPPLYAREA_365" #West Congo & Cabinda
-	value=7
-	states={
-		782 813
-	}
-}

@@ -1,8 +1,0 @@
-supply_area={
-	id=49
-	name="SUPPLYAREA_49" # Smolensk
-	value=10
-	states={
-		242 243 
-	}
-}
