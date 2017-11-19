@@ -1,0 +1,30 @@
+units = {
+	
+	division = {			
+		name = "UN Volunteers"		
+		location = 4056
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "UN Volunteers"		
+		location = 4056
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "UN Volunteers"		
+		location = 4056
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "UN Volunteers"		
+		location = 4056
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+}

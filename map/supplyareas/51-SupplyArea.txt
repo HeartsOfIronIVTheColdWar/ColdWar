@@ -1,0 +1,8 @@
+supply_area={
+	id=51
+	name="SUPPLYAREA_51" # Bryansk
+	value=10
+	states={
+		205 224
+	}
+}

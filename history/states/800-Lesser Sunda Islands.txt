@@ -1,0 +1,24 @@
+state={
+	id=800
+	name="STATE_800"
+	resources={
+		rubber=161
+		oil=8
+	}
+	history={
+		owner = INS
+		add_core_of = INS
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 2
+		}
+	}
+	provinces={
+		1298 1339 1355 4301 4358 7321 10175 10219 12151 12219 12234 
+	}
+	manpower=1000000
+	state_category=rural
+}

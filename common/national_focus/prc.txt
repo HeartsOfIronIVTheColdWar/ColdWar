@@ -1,0 +1,867 @@
+focus_tree = {
+	id = prc_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	default = no
+	focus = {
+		id = PRC_politics
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = PRC_the_chairman
+		icon = GFX_goal_PRC_great_leap_forwards
+		cost = 10
+		prerequisite = {
+			focus = PRC_KMT_off_mainland
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = PRC_reconstruction
+		icon = GFX_goal_continuous_repairments
+		cost = 10
+		x = 27
+		y = 0
+
+	}
+	focus = {
+		id = PRC_the_army
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = PRC_internal_politics
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = PRC_politics
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = PRC_the_three_year_campagin
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = {
+			focus = PRC_internal_politics
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = PRC_corruption
+		icon = GFX_focus_rom_parties_end
+		cost = 5
+		prerequisite = {
+			focus = PRC_the_three_year_campagin
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_waste
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 5
+		prerequisite = {
+			focus = PRC_the_three_year_campagin
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}	
+	focus = {
+		id = PRC_bureacracy
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 5
+		prerequisite = {
+			focus = PRC_the_three_year_campagin
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_the_five_year_campagin
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = PRC_bureacracy
+		}
+		prerequisite = {
+			focus = PRC_corruption
+		}
+		prerequisite = {
+			focus = PRC_waste
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PRC_improficient_government
+				add_idea = PRC_improficient_government2
+			}
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = PRC_bribery
+		icon = GFX_focus_generic_concessions
+		cost = 5
+		prerequisite = {
+			focus = PRC_the_five_year_campagin
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_taxes
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = PRC_the_five_year_campagin
+		}
+
+		x = 1
+		y = 5
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_state_theft
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = PRC_bribery
+		}
+		prerequisite = {
+			focus = PRC_taxes
+		}
+		x = 0
+		y = 6
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_contract_cheating
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = PRC_bribery
+		}
+		prerequisite = {
+			focus = PRC_taxes
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	focus = {
+		id = PRC_information_theft
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		prerequisite = {
+			focus = PRC_bribery
+		}
+		prerequisite = {
+			focus = PRC_taxes
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = PRC_dissidents
+		}
+	}
+	
+	focus = {
+		id = PRC_100_flowers
+		icon = GFX_goal_PRC_100_flowers
+		cost = 10
+		prerequisite = {
+			focus = PRC_information_theft
+		}
+		prerequisite = {
+			focus = PRC_state_theft
+		}
+		prerequisite = {
+			focus = PRC_contract_cheating
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+			remove_ideas = PRC_improficient_government2
+		}
+	}
+	focus = {
+		id = PRC_remove_critics
+		icon = GFX_focus_cze_german_puppet
+		cost = 10
+		prerequisite = {
+			focus = PRC_100_flowers
+		}
+		mutually_exclusive = {
+			focus = PRC_embrace_critics
+		}
+		x = 3
+		y = 8
+
+	}
+	focus = {
+		id = PRC_KMT_off_mainland
+		icon = GFX_goal_focus_PRC_reclaim_the_mainland
+		cost = 10
+		prerequisite = {
+			focus = PRC_politics
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			add_political_power = 200
+			white_peace = CHI
+		}
+	}
+	focus = {
+		id = PRC_invade_tibet
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = PRC_KMT_off_mainland
+		}
+		mutually_exclusive = {
+			focus = PRC_pressure_tibet
+		}
+		will_lead_to_war_with = ALB
+		x = 6
+		y = 2
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TIB
+			}
+		}
+
+	}
+	focus = {
+		id = PRC_SOV_treaty
+		icon = GFX_focus_generic_polish_deal
+		cost = 10
+		prerequisite = {
+			focus = PRC_intervene_in_KOR_war
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = PRC_intervene_in_KOR_war
+		icon = GFX_focus_fifth_republic
+		cost = 10
+		prerequisite = {
+			focus = PRC_KMT_off_mainland
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = PRC_trust_in_the_east
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = PRC_SOV_treaty
+		}
+		mutually_exclusive = {
+			focus = PRC_total_isolation
+			focus = PRC_our_own_faction
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = PRC_total_isolation
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = PRC_SOV_treaty
+		}
+		mutually_exclusive = {
+			focus = PRC_our_own_faction
+			focus = PRC_trust_in_the_east
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = PRC_pressure_tibet
+		icon = GFX_goal_generic_military_deal
+		cost = 10
+		prerequisite = {
+			focus = PRC_KMT_off_mainland
+		}
+		mutually_exclusive = {
+			focus = PRC_invade_tibet
+		}
+		x = 8
+		y = 2
+		available = {
+			country_exists = TIB
+		}
+		completion_reward = {
+			TIB = { country_event = { id = china.3 } }
+		}
+	}
+	focus = {
+		id = PRC_our_own_faction
+		icon = GFX_goal_generic_attack_allies
+		cost = 10
+		prerequisite = {
+			focus = PRC_SOV_treaty
+		}
+		mutually_exclusive = {
+			focus = PRC_total_isolation
+			focus = PRC_trust_in_the_east
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = PRC_invite_north_vietnam
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 110
+		prerequisite = {
+			focus = PRC_our_own_faction
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = PRC_invite_NKR
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = PRC_our_own_faction
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = PRC_military
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = PRC_the_army
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = PRC_establish_the_PVA
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		prerequisite = {
+			focus = PRC_military
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = PRC_begin_modernisation
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = PRC_military
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = PRC_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = PRC_begin_modernisation
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = PRC_doctrine_2
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = PRC_doctrine
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = PRC_gun_research
+		icon = GFX_focus_secret_rearmament
+		cost = 10
+		prerequisite = {
+			focus = PRC_begin_modernisation
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = PRC_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = PRC_gun_research
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = PRC_motorized
+		icon = GFX_goal_generic_army_motorized
+		cost = 10
+		prerequisite = {
+			focus = PRC_gun_research
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = PRC_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = PRC_motorized
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = PRC_complete_modernisation
+		icon = GFX_goal_generic_air_production
+		cost = 10
+		prerequisite = {
+			focus = PRC_doctrine_2
+		}
+		prerequisite = {
+			focus = PRC_artillery
+		}
+		prerequisite = {
+			focus = PRC_tanks
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = PRC_the_airforce
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		prerequisite = {
+			focus = PRC_the_army
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = PRC_expand_airbases
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		prerequisite = {
+			focus = PRC_the_airforce
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = PRC_SOV_liciences
+		icon = GFX_focus_generic_license_production
+		cost = 10
+		prerequisite = {
+			focus = PRC_expand_airbases
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = PRC_air_doctrine_1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10
+		prerequisite = {
+			focus = PRC_expand_airbases
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = PRC_air_doctrine_2
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		prerequisite = {
+			focus = PRC_air_doctrine_1
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = PRC_establish_PLAN
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = PRC_the_army
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = PRC_request_naval_advisors
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = PRC_establish_PLAN
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = PRC_expand_naval_bases
+		icon = GFX_goal_generic_build_navy
+		cost = 10
+		prerequisite = {
+			focus = PRC_request_naval_advisors
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = PRC_naval_sharing
+		icon = GFX_goal_continuous_increase_nu
+		cost = 10
+		prerequisite = {
+			focus = PRC_expand_naval_bases
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = PRC_buy_SOV_boats
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = PRC_expand_naval_bases
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = PRC_expands_naval_bases_2
+		icon = GFX_goal_generic_build_navy
+		cost = 10
+		prerequisite = {
+			focus = PRC_buy_SOV_boats
+		}
+		prerequisite = {
+			focus = PRC_naval_sharing
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = PRC_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = PRC_expands_naval_bases_2
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = PRC_1953_5_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = PRC_reconstruction
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = PRC_expand_agriculture
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = PRC_1953_5_plan
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = PRC_commerical_industry_1
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = PRC_expand_agriculture
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = PRC_civilian_investement
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = PRC_expand_agriculture
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = PRC_civilian_investement_2
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = PRC_civilian_investement
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = PRC_purge_the_right
+		icon = GFX_goal_generic_CAS
+		cost = 10
+		prerequisite = {
+			focus = PRC_remove_critics
+		}
+		x = 3
+		y = 9
+
+	}
+	focus = {
+		id = PRC_commercial_industry_2
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = PRC_commerical_industry_1
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = PRC_1958_5_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = PRC_civilian_investement_2
+		}
+		prerequisite = {
+			focus = PRC_commercial_industry_2
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = PRC_the_great_leap
+		icon = GFX_goal_PRC_great_leap_forwards
+		cost = 10
+		prerequisite = {
+			focus = PRC_1958_5_plan
+		}
+		prerequisite = {
+			focus = PRC_military_industry_2
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = PRC_join_KOMINFORM
+		icon = GFX_focus_generic_join_comintern
+		cost = 10
+		prerequisite = {
+			focus = PRC_trust_in_the_east
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = PRC_embrace_critics
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = PRC_100_flowers
+		}
+		mutually_exclusive = {
+			focus = PRC_remove_critics
+		}
+		x = 1
+		y = 8
+
+	}
+	focus = {
+		id = PRC_reforms
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = PRC_embrace_critics
+		}
+		x = 1
+		y = 9
+
+	}
+	focus = {
+		id = PRC_air_doctrine_3
+		icon = GFX_goal_generic_air_bomber
+		cost = 10
+		prerequisite = {
+			focus = PRC_anti_air
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = PRC_buy_SOV_planes
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = PRC_SOV_liciences
+			focus = PRC_air_doctrine_1
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = PRC_anti_air
+		icon = GFX_focus_generic_air_defense
+		cost = 10
+		prerequisite = {
+			focus = PRC_air_doctrine_2
+			focus = PRC_buy_SOV_planes
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = PRC_army_modernzation
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		prerequisite = {
+			focus = PRC_naval_doctrine
+		}
+		prerequisite = {
+			focus = PRC_air_doctrine_3
+		}
+		prerequisite = {
+			focus = PRC_complete_modernisation
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = PRC_expand_steel_mills
+		icon = GFX_goal_generic_production2
+		cost = 10
+		prerequisite = {
+			focus = PRC_1953_5_plan
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = PRC_military_industry_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = PRC_expand_steel_mills
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = PRC_military_industry_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = PRC_military_industry_1
+		}
+		x = 29
+		y = 4
+
+	}
+}

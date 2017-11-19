@@ -1,0 +1,346 @@
+on_actions = {
+	# country 
+	on_new_term_election = {
+		random_events = {
+			100 = usa.521
+			100 = usa.522
+			100 = usa.561
+			100 = usa.562
+			100 = usa.563	
+		}
+		random_events = {
+		}
+		random_events = {
+		}
+	}
+
+	# Ace pilots
+	# country, FROM = ace
+	on_ace_promoted = {
+		random_events = {
+			100 = ace_promoted.1
+			5 = ace_promoted.2
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace 
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+	
+	# country, FROM = our ace, 
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace, 
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
+
+	# During justifying wargoals
+	# triggered daily, so make sure there is a sink somewhere not firing events
+	# country, FROM = target nation
+	on_justifying_wargoal_pulse = {
+
+		random_events = {
+			100 = war_justification.1
+			100 = war_justification.2
+			100 = war_justification.3
+			100 = war_justification.4
+			100 = war_justification.5
+			100 = war_justification.6
+			100 = war_justification.7
+			100 = war_justification.8
+			100 = war_justification.9
+			100 = war_justification.10
+			100 = war_justification.11
+			100 = war_justification.12
+			100 = war_justification.13
+			100 = war_justification.14
+			100 = war_justification.15
+			100 = war_justification.16
+			100 = war_justification.17
+			100 = war_justification.18
+			100 = war_justification.19
+			17000 = 0
+		}
+	}
+
+	on_wargoal_expire = {
+		random_events = {
+			100 = war_justification.301
+		}
+	}
+
+	on_nuke_drop = {
+
+		effect = {
+			news_event = { id = nuke_dropped.2 days = 1}
+			news_event = { id = nuke_dropped.3 days = 1}
+			news_event = { id = nuke_dropped.4 days = 1}
+			news_event = { id = nuke_dropped.5 days = 1}
+			news_event = { id = nuke_dropped.6 days = 1}
+			news_event = { id = nuke_dropped.7 days = 1}
+			news_event = { id = nuke_dropped.8 days = 1}
+			news_event = { id = nuke_dropped.9 days = 1}
+			news_event = { id = nuke_dropped.10 days = 1}
+			news_event = { id = nuke_dropped.11 days = 1}
+			news_event = { id = nuke_dropped.12 days = 1}
+			news_event = { id = nuke_dropped.13 days = 1}
+		}
+		random_events = {
+			100 = nuke_dropped.0
+		}
+	}
+
+	# country random events
+	#on_bi_yearly_pulse = {
+	#
+	#}
+
+	#on_five_year_pulse = {
+	#
+	#}
+
+	on_border_war_lost = {
+		effect = {
+			owner = {
+				country_event = { id = china.14 }
+				country_event = { id = china.16 }
+			}
+		}
+	}
+	
+	on_leave_faction = {
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						tag = CAN 	
+						NOT = { has_dlc = "Together for Victory" }
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			FROM = {
+				add_opinion_modifier = {
+					modifier = faction_traitor
+					target = ROOT
+					days = 365
+				}
+			
+				add_opinion_modifier = {
+					modifier = faction_traitor_trade
+					target = ROOT
+					days = 365
+				}
+			}
+		}
+	}
+
+	#FROM is the one that joins the faction
+	on_create_faction = {
+		effect = {
+		}
+	}
+
+	#FROM is country getting invited.
+	on_offer_join_faction = {
+		effect = {
+			#Remove anti_soviet_pact if joining commie Soviet in faction
+			if = {
+				limit = {
+					original_tag = SOV
+					has_government = communism
+					FROM = {
+						has_idea = anti_soviet_pact 
+					}
+				}
+				FROM = {
+					remove_ideas = anti_soviet_pact
+				}
+			}	
+		}
+	}
+
+	#FROM is faction leader on join faction requests.
+	on_join_faction = {
+		effect = {
+			#Leave NATO if joining commie Soviet in faction
+			if = {
+				limit = {
+					has_idea = nato_idea
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+					}
+				}
+				remove_ideas = nato_idea
+				#USA should get an event about this country leaving NATO
+			}
+		}
+	}
+
+	#FROM is war target
+	on_declare_war = {
+		effect = {
+			#Call NATO members to war
+			if = {
+				limit = {
+					ROOT = { NOT = { has_idea = nato_idea } }
+					FROM = { has_idea = nato_idea }
+				}
+				FROM = {
+					country_event = { id = nato.2 days = 1 }
+				}
+			}
+		}
+	}
+	
+	# When a new faction is formed
+	on_faction_formed = {
+		effect = {
+			news_event = { id = news.159 }
+		}
+	}
+	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			news_event = { id = country_capitulated.0 days = 0 }
+			if = {
+				limit = { 
+					original_tag = POL
+					has_government = neutrality
+				}
+				retire_country_leader = yes
+			}
+		}
+	}
+
+	on_government_change = {
+		effect = {			
+			#Make sure Soviet can always create factions
+			if = {
+				limit = {
+					original_tag = SOV
+					NOT = { has_government = communism }
+				}
+				set_rule = { can_create_factions = yes }
+			}
+			if = {
+				limit = { has_government = democratic }
+				if = {
+					limit = { has_idea = democratic_opposition_voicing_protests }
+					remove_ideas = democratic_opposition_voicing_protests
+				}
+				if = {
+					limit = { has_idea = democratic_revolutionaries }
+					remove_ideas = democratic_revolutionaries
+				}
+				if = {
+					limit = { has_idea = reign_of_terror }
+					remove_ideas = reign_of_terror
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				if = {
+					limit = { TAG = SAF }
+					set_cosmetic_tag = SAF_COM
+				}
+				if = {
+					limit = { has_idea = communist_partisans_recruiting }
+					remove_ideas = communist_partisans_recruiting
+				}
+				if = {
+					limit = { has_idea = communist_revolutionaries }
+					remove_ideas = communist_revolutionaries
+				}
+				if = {
+					limit = { has_idea = communism_defeated }
+					remove_ideas = communism_defeated
+				}
+
+				#Remove anti_soviet_pact
+				if = {
+					limit = { has_idea = anti_soviet_pact }
+					remove_ideas = anti_soviet_pact
+				}
+			}
+			if = {
+				limit = { has_government = autocratic }
+				if = {
+					limit = { has_idea = fascist_assault_divisions }
+					remove_ideas = fascist_assault_divisions
+				}
+				if = {
+					limit = { has_idea = fascist_revolutionaries }
+					remove_ideas = fascist_revolutionaries
+				}
+#				if = {
+#					limit = { has_idea = autocratic_defeated }
+#					remove_ideas = autocratic_defeated
+				}
+				if = {
+					limit = { has_idea = anti_nazi_coup }
+					remove_ideas = anti_nazi_coup
+				}
+			}
+		}
+	}
+
+#	on_coup_succeeded = {
+#		effect = {
+#			#Turn elections on for democracies created from coup
+#			random_other_country = {
+#				limit = {
+#					has_government = democratic
+#					original_tag = ROOT
+#				}
+#				set_politics = {
+#					elections_allowed = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+#	on_civil_war_end = {
+#		effect = {
+#
+#		}
+#	}
+#
+#	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
+#	on_annex = {
+#		effect = {
+#			
+#		}
+#	}
+#
+#	#Not run on a specific country.
+#	on_startup = {
+#		effect = {
+#			
+#		}
+#	}
+
+}

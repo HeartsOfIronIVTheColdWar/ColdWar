@@ -1,0 +1,393 @@
+ideas = {
+	country = {
+		#CW FOCUS FOR NORAD
+	
+		NORAD_agreement = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = great_depression
+		
+			modifier = {
+
+			}
+		}
+		
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
+
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
+
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	ECONOMIC MINISTER
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
+
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
+
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	minister_of_internal_affairs = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###ECONOMIC MINISTER###
+	
+	economic_minister = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		vickers_armstrong_can = {
+
+			picture = generic_tank_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			# quite the useless tanks the vickers 6-ton
+		}
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		havilland_canada = {
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			# heavy fighters like mosquito
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		canadian_car_foundry = {
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			# fighter/interceptors like Hurricane
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAN_fairchild_aircraft_ltd = {
+			picture = generic_air_manufacturer_2
+
+			cost = 150
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+				has_completed_focus = CAN_fund_fairchilds_development
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			# fighter/interceptors like Hurricane
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CAN_handley_page = {
+			picture = generic_air_manufacturer_3
+
+			cost = 150
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+				has_completed_focus = CAN_cookie_carriers
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			# fighter/interceptors like Hurricane
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+		montreal_lab = {
+
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+
+		polymer_corporation = {
+					
+			picture = generic_industrial_concern_2
+				
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.05
+			}
+			
+			traits = { refinery_concern }
+		}	
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		inglis_company = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { support_equipment_manufacturer }
+			
+			
+		}	
+
+		small_arms_limited = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+					}
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		kingston_shipbuilding = {
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+
+		halifax_shipyard_limited = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# destroyers
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
+}

@@ -1,0 +1,368 @@
+ideas = {
+	country = {
+		
+		nkr_factionalism = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = nkvd_2
+			
+			modifier = {
+				unity_factor = -0.3
+				political_power_factor = -0.25
+			}
+		}
+	
+	nkr_factionalism_2 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = nkvd
+			
+			modifier = {
+				unity_factor = -0.15
+				political_power_factor = -0.10
+			}
+		}
+	
+	nkr_illiterate_country = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				research_time_factor = 0.10
+			}
+		}
+		
+	nkr_wprg = {
+	
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = idea_tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+	nkr_chollima = {
+	
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = idea_tfv_can_conscription_crisis
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
+
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	INDUSTRIAL COMPLEX
+#	###PRESS LAWS### - THIS IS A LAW
+#	INDIVIDUAL FREEDOMS
+
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	ECONOMIC MINISTER
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
+
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
+
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	minister_of_internal_affairs = {
+		
+		kim_tu_bong = {
+			
+			
+			allowed = {
+				original_tag = "NKR"
+			}
+			
+			traits = { silent_workhorse backroom_backstabber }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		choe_yong_gon = {
+			
+			
+			allowed = {
+				original_tag = "NKR"
+			}
+			
+			traits = { armaments_organizer quartermaster_general }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		pak_hon_yong = {
+			
+			
+			allowed = {
+				original_tag = "NKR"
+			}
+			
+			traits = { smooth_talking_charmer popular_figurehead }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pak_song_chol = {
+			
+			
+			allowed = {
+				original_tag = "NKR"
+			}
+			
+			traits = { prince_of_terror }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		sergei_ogoltNKR = {
+			
+			
+			allowed = {
+				original_tag = "NKR"
+			}
+			
+			traits = { prince_of_terror }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+	}
+	
+	###ECONOMIC MINISTER###
+	
+	economic_minister = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+				
+
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+		
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+	
+	}
+	
+}

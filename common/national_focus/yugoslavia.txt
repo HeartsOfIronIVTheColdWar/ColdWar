@@ -1,0 +1,28 @@
+focus_tree = {
+	id = YUG
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = YUG
+		}
+	}
+	
+	default = no
+	focus = {
+		id = YUG_soviet_control
+		icon = GFX_goal_continuous_suppression
+		cost = 1
+		x = 9
+		y = 0
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_political_power = 150
+		}
+
+	}
+}		

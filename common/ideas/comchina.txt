@@ -1,0 +1,431 @@
+ideas = {
+	country = {
+		PRC_improficient_government = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_SOV_deadhand	
+
+			modifier = {
+				political_power_gain = -0.5
+				drift_defence_factor = -0.50
+				consumer_goods_factor = 0.15
+			}
+		}
+		PRC_improficient_government2 = {
+			allowed = {
+				always = no
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = GFX_idea_SOV_deadhand	
+
+			modifier = {
+				political_power_gain = -0.25
+				drift_defence_factor = -0.25
+				consumer_goods_factor = 0.10
+			}
+		}
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
+
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
+
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	ECONOMIC MINISTER
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
+
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
+
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	minister_of_internal_affairs = {
+		
+		zhou_enlai = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		zhou_enlaiaa = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		luo_ruiqing = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		 
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+		ma_xulun = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		zhang_xiruo = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		yang_xiufeng = {
+			
+			
+			allowed = {
+				original_tag = "PRC"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	###ECONOMIC MINISTER###
+	
+	economic_minister = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		shenyang_aircraft_corporation = {
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		xian_aircraft_industrial_corporation = {
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		harbin_aircraft_industry_group = {
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+			
+		china_state_construction_engineering = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				construction_tech = 0.10
+			}
+			
+			traits = { construction_concern  }
+			
+			modifier = {
+			}
+		}
+		china_railway_engineering = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				construction_tech = 0.10
+			}
+			
+			traits = { factorial_managers  }
+			
+			modifier = {
+			}
+		}
+		sinochem = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern  }
+			
+			modifier = {
+			}
+		}
+	}			
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		factory_674 = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}	
+		
+		norinco = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		heavy_duty_truck_group = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		jiangnan_shipyard = {
+			
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
+}

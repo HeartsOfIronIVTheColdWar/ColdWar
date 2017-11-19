@@ -1,0 +1,606 @@
+﻿division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+	
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		
+		MBT_1950 = { x = 4 y = 0 }
+		MBT_1950 = { x = 4 y = 1 }
+		MBT_1950 =  {x = 4 y = 2 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Marine Division"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 2 }
+	}	
+}
+
+
+
+division_template = {
+	name = "Mountaineer Division"
+	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }			
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+	
+	regiments = {
+		MBT_1950 = { x = 0 y = 0}
+		MBT_1950 = { x = 0 y = 1}
+		MBT_1950 = { x = 0 y = 2}
+		
+		APC_1950 = { x = 1 y = 0}
+		APC_1950 = { x = 1 y = 1}
+		APC_1950 = { x = 1 y = 2}
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  
+		engineer = { x = 0 y = 1 }  
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"  		
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+
+	}
+	support = {
+		recon = { x = 0 y = 0 }      
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+units = {	
+	division= {			
+		name = "2nd Infantry Division"		
+		location = 7315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "4th Infantry Division"		
+		location = 1827
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+		
+	division= {			
+		name = "8th Infantry Division"		
+		location = 7202
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "9th Infantry Division"		
+		location = 788
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "10th Infantry Division"		
+		location = 10340
+		division_template = "Mountaineer Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "23rd Infantry Division"		
+		location = 7617
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "26th Infantry Division"		
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "28th Infantry Division"		
+		location = 4464
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "29th Infantry Division"		
+		location = 788
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
+	
+	division= {			
+		name = "30th Infantry Division"		
+		location = 1132
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "31st Infantry Division"		
+		location = 1827
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "33rd Infantry Division"		
+		location = 720
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "34th Infantry Division"		
+		location = 12586
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "35th Infantry Division"		
+		location = 10370
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
+
+	division= {			
+		name = "37th Infantry Division"		
+		location = 6890
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "38th Infantry Division"		
+		location = 1595
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division= {			
+		name = "39th Infantry Division"		
+		location = 12489
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "40th Infantry Division"		
+		location = 9671
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "41st Infantry Division"		
+		location = 3513
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "42nd Infantry Division"		
+		location = 3878
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "43rd Infantry Division"		
+		location = 11830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "44th Infantry Division"		
+		location = 720
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "45th Infantry Division"		
+		location = 1806
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "46th Infantry Division"		
+		location = 9684
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "47th Infantry Division"		
+		location = 1866
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "49th Infantry Division"		
+		location = 9713
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "51st Infantry Division"		
+		location = 7388
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "78th Infantry Division"		
+		location = 6882
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+		
+	division= {			
+		name = "84th Infantry Division"		
+		location = 6882
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "85th Infantry Division"		
+		location = 9450
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "87th Infantry Division"		
+		location = 12501
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "95th Infantry Division"		
+		location = 374
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "96th Infantry Division"		
+		location = 4860
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}	
+
+	division= {			
+		name = "98th Infantry Division"		
+		location = 11654
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division= {			
+		name = "100th Infantry Division"		
+		location = 6696
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division= {			
+		name = "102nd Infantry Division Ozark "		
+		location = 4569
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division= {			
+		name = "104th Infantry Division"		
+		location = 3513
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {			
+		name = "106th Infantry Division"		
+		location = 1440
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division = {
+		name = "2nd Armored Division"
+		location = 3960
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "3rd Armored Division"
+		location = 6696
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "4th Armored Division"
+		location = 6696
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+		
+	division = {
+		name = "7th Armored Division"
+		location = 3878
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "13th Armored Division"
+		location = 9713
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "75th Armored Division"
+		location = 10337
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "27th Armored Division"
+		location = 11654
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "49th Armored Division"
+		location = 3960
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "50th Armored Division"
+		location = 6882
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+
+	#JAPAN OCCUPATION FORCE
+	
+	division = {
+		name = "8th Infantry division"
+		location = 12421
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	division = {
+		name = "1st Cavalry Division"
+		location = 1182 
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+	}
+	
+	#WGR OCCUPATION FORCE
+	
+	division= {			
+		name = "1st Infantry Division"		
+		location = 11544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division = {
+		name = "8th Infantry division"
+		location = 3423
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+	#NAVAL OOB
+	
+#	navy = {
+#		name = "7th Fleet"
+#		base = 1132
+#		location = 1132
+#		ship = { name = "USS Hornet" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } }
+#			air_wings = {
+#               cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
+#                cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
+#                cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+#            }
+#		}
+#		ship = { name = "USS Boxer" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } }
+#			air_wings = {
+#                cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
+#                cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
+#                cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+#           }
+#		}
+#	}
+	
+#	navy = {
+#		name = "6th Fleet"
+#		base = 1132
+#		location = 1132
+#		ship = { name = "USS Randolph" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } }
+#			air_wings = {
+#                cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
+#                cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
+#                cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+#           }
+#		}
+#		ship = { name = "USS Leyte" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } }
+#			air_wings = {
+#                cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
+#                cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
+#                cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+#          }
+#		}
+#	}
+}
+
+
+
+
+#navy = {
+#	name = "1st Fleet"
+#}
+
+#navy = {
+#	name = "4th Fleet"
+#}
+
+

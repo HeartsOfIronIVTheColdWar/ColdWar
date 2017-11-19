@@ -1,0 +1,33 @@
+
+state={
+	id=144
+	name="STATE_144"
+	resources={
+		steel=26.000
+		tungsten=18.000
+	}
+
+	history={
+		owner = NOR
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			9116 = {
+				naval_base = 3
+
+			}
+		}
+		victory_points = {
+			192 1 
+		}
+		add_core_of = NOR
+
+	}
+
+	provinces={
+		22 64 76 128 2995 3016 3040 6015 6092 9042 9064 9089 9116 9128 11034 11063 11077 11104 11169 
+	}
+	manpower=79500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

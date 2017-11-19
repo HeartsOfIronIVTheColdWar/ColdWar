@@ -1,0 +1,19 @@
+state={
+	id=770
+	name="STATE_770"
+	provinces={
+		10919 12762 12874 
+	}
+	history={
+		owner = FWA
+		add_core_of = BEN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10919 3
+		}
+	}
+	manpower=1000000
+	state_category=rural
+}

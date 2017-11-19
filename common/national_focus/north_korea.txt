@@ -1,0 +1,635 @@
+focus_tree = {
+	id = north_korea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NKR
+		}
+	}
+	default = no
+	focus = {
+		id = NKR_firstthreeyear
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10 
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = NKR_policy
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10 
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = NKR_militaryuniversity
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10 
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = NKR_soviet_indus_help
+		icon = GFX_goal_tripartite_pact
+		cost = 10 
+		prerequisite = {
+			focus = NKR_firstthreeyear
+		}
+		mutually_exclusive = {
+			focus = NKR_chinese_indus_help
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = NKR_chollimamovemen
+		icon = GFX_goal_continuous_repairments
+		cost = 10 
+		prerequisite = {
+			focus = NKR_soviet_indus_help
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = NKR_chinese_indus_help
+		icon = GFX_goal_generic_improve_relations
+		cost = 10 
+		prerequisite = {
+			focus = NKR_firstthreeyear
+		}
+		mutually_exclusive = {
+			focus = NKR_soviet_indus_help
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = NKR_centralized_planification
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10 
+		prerequisite = {
+			focus = NKR_soviet_indus_help
+			focus = NKR_chinese_indus_help
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = NKR_nationalization_of_production
+		icon = GFX_goal_generic_demand_territory
+		cost = 10 
+		prerequisite = {
+			focus = NKR_chinese_indus_help
+			focus = NKR_soviet_indus_help
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = NKR_heavy_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10 
+		prerequisite = {
+			focus = NKR_centralized_planification
+			focus = NKR_nationalization_of_production
+		}
+		mutually_exclusive = {
+			focus = NKR_civilian_economy
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = NKR_socialistindustrialism
+		icon = GFX_goal_support_fourth_int
+		cost = 10 
+		prerequisite = {
+			focus = NKR_heavy_economy
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = NKR_civilian_economy
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10 
+		prerequisite = {
+			focus = NKR_nationalization_of_production
+			focus = NKR_centralized_planification
+		}
+		mutually_exclusive = {
+			focus = NKR_heavy_economy
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = NKR_fds
+		icon = GFX_goal_generic_national_unity
+		cost = 10 
+		prerequisite = {
+			focus = NKR_civilian_economy
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = NKR_koreanrailway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10 
+		prerequisite = {
+			focus = NKR_socialistindustrialism
+			focus = NKR_fds
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = NKR_stateminingcompany
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10 
+		prerequisite = {
+			focus = NKR_socialistindustrialism
+			focus = NKR_fds
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = NKR_koreanworkerprogram
+		icon = GFX_goal_generic_construction2
+		cost = 10 
+		prerequisite = {
+			focus = NKR_fds
+			focus = NKR_socialistindustrialism
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = NKR_university
+		icon = GFX_focus_generic_socialist_science
+		cost = 10 
+		prerequisite = {
+			focus = NKR_chinese_indus_help
+			focus = NKR_soviet_indus_help
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = NKR_onekorea
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10 
+		prerequisite = {
+			focus = NKR_policy
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = NKR_war
+		icon = GFX_goal_fatherland_liberation_war
+		cost = 10 
+		prerequisite = {
+			focus = NKR_onekorea
+		}
+		mutually_exclusive = {
+			focus = NKR_peacefulreunion
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = NKR_sovietadvisor
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10 
+		prerequisite = {
+			focus = NKR_war
+		}
+		mutually_exclusive = {
+			focus = NKR_chineseadvisor
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = NKR_chineseadvisor
+		icon = GFX_goal_tripartite_pact
+		cost = 10 
+		prerequisite = {
+			focus = NKR_war
+		}
+		mutually_exclusive = {
+			focus = NKR_sovietadvisor
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = NKR_peacefulreunion
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10 
+		prerequisite = {
+			focus = NKR_onekorea
+		}
+		mutually_exclusive = {
+			focus = NKR_war
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = NKR_haejuconference
+		icon = GFX_focus_generic_polish_deal
+		cost = 10 
+		prerequisite = {
+			focus = NKR_peacefulreunion
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = NKR_claimkorea
+		icon = GFX_goal_demand_sudetenland
+		cost = 10 
+		prerequisite = {
+			focus = NKR_sovietadvisor
+			focus = NKR_chineseadvisor
+			focus = NKR_haejuconference
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = NKR_reunifiedkorea
+		icon = GFX_goal_korean_unification
+		cost = 10 
+		prerequisite = {
+			focus = NKR_claimkorea
+			focus = NKR_haejuconference
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = NKR_domesticpurge
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10 
+		prerequisite = {
+			focus = NKR_policy
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = NKR_thirdcongress
+		icon = GFX_goal_support_fourth_int
+		cost = 10 
+		prerequisite = {
+			focus = NKR_domesticpurge
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = NKR_purgetraitor
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10 
+		prerequisite = {
+			focus = NKR_thirdcongress
+		}
+		mutually_exclusive = {
+			focus = NKR_reform
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = NKR_originofjuche
+		icon = GFX_goal_focus_origins_of_juche
+		cost = 10 
+		prerequisite = {
+			focus = NKR_purgetraitor
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = NKR_reform
+		icon = GFX_focus_generic_join_comintern
+		cost = 10 
+		prerequisite = {
+			focus = NKR_thirdcongress
+		}
+		mutually_exclusive = {
+			focus = NKR_purgetraitor
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = NKR_eliminatekim
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10 
+		prerequisite = {
+			focus = NKR_reform
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = NKR_television
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10 
+		prerequisite = {
+			focus = NKR_originofjuche
+			focus = NKR_eliminatekim
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = NKR_koreanpeoplenavy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10 
+		prerequisite = {
+			focus = NKR_militaryuniversity
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = NKR_navalindustryfocus
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10 
+		prerequisite = {
+			focus = NKR_koreanpeoplenavy
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = NKR_coastal
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10 
+		prerequisite = {
+			focus = NKR_navalindustryfocus
+		}
+		mutually_exclusive = {
+			focus = NKR_highseafocus
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = NKR_highseafocus
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10 
+		prerequisite = {
+			focus = NKR_navalindustryfocus
+		}
+		mutually_exclusive = {
+			focus = NKR_coastal
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = NKR_carrier
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10 
+		prerequisite = {
+			focus = NKR_highseafocus
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = NKR_groundforce
+		icon = GFX_focus_generic_little_entente
+		cost = 10 
+		prerequisite = {
+			focus = NKR_militaryuniversity
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = NKR_doctrineone
+		icon = GFX_goal_continuous_armor_production
+		cost = 10 
+		prerequisite = {
+			focus = NKR_groundforce
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = NKR_grounddoctrinetwo
+		icon = GFX_goal_continuous_armor_production
+		cost = 10 
+		prerequisite = {
+			focus = NKR_doctrineone
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = NKR_airforce
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10 
+		prerequisite = {
+			focus = NKR_militaryuniversity
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = NKR_groundindustry
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10 
+		prerequisite = {
+			focus = NKR_groundforce
+			focus = NKR_airforce
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = NKR_equipmenteffortone
+		icon = GFX_goal_generic_small_arms
+		cost = 10 
+		prerequisite = {
+			focus = NKR_groundforce
+		}
+		prerequisite = {
+			focus = NKR_groundindustry
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = NKR_groundindustry_two
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10 
+		prerequisite = {
+			focus = NKR_groundindustry
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = NKR_sovietfighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 10 
+		prerequisite = {
+			focus = NKR_groundindustry
+		}
+		prerequisite = {
+			focus = NKR_airforce
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = NKR_sovietbomber
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10 
+		prerequisite = {
+			focus = NKR_sovietfighter
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = NKR_firstfiveyears
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10 
+		prerequisite = {
+			focus = NKR_stateminingcompany
+		}
+		prerequisite = {
+			focus = NKR_koreanworkerprogram
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = NKR_germanworkteam
+		icon = GFX_goal_tripartite_pact
+		cost = 10 
+		prerequisite = {
+			focus = NKR_claimkorea
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = NKR_equipmentefforttwo
+		icon = GFX_goal_generic_small_arms
+		cost = 10 
+		prerequisite = {
+			focus = NKR_equipmenteffortone
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = NKR_redguards
+		icon = GFX_goal_generic_special_forces
+		cost = 10 
+		prerequisite = {
+			focus = NKR_grounddoctrinetwo
+		}
+		prerequisite = {
+			focus = NKR_equipmentefforttwo
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = NKR_airdoctrineone
+		icon = GFX_goal_generic_air_fighter
+		cost = 10 
+		prerequisite = {
+			focus = NKR_airforce
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = NKR_airdoctrinetwo
+		icon = GFX_goal_generic_air_fighter
+		cost = 10 
+		prerequisite = {
+			focus = NKR_airdoctrineone
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = NKR_submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10 
+		prerequisite = {
+			focus = NKR_coastal
+		}
+		x = 22
+		y = 4
+
+	}
+}

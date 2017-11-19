@@ -1,0 +1,225 @@
+ideas = {
+	
+	stability = { 
+		law = yes
+
+		very_high_stability = {
+						
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.2
+				unity_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				conscription_factor = 0.1
+			}
+			
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 2
+					has_government = democracy
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		high_stability = {
+						
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.1
+				unity_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				conscription_factor = 0.05
+			}
+			
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 2
+					has_government = democratic
+					has_war = yes
+				}
+				
+				modifier = {
+					factor = 10
+					has_government = communism
+				}
+				
+				modifier = {
+					factor = 10
+					has_government = autocratic
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		average_stability = {
+			
+			default = yes			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			}
+			
+			ai_will_do = {
+   				factor = 1
+				
+				modifier = {
+					factor = 2
+					surrender_progress > 0.50
+					has_war = yes
+				}
+
+   				modifier = {
+					factor = 10
+					has_capitulated = yes
+					has_war = yes
+				}
+				
+				modifier = {
+					factor = 10
+					tag = FRA
+					has_global_flag = fall_of_france
+					has_capitulated = yes
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		low_stability = {
+						
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				unity_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				conscription_factor = -0.05
+			}
+			
+			ai_will_do = {
+   				factor = 1
+				
+				modifier = {
+					factor = 2
+					num_of_factories >75
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		very_low_stability = {
+						
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.2
+				unity_factor = -0.2
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				conscription_factor = -0.1
+			}
+			
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 2
+					surrender_progress > 0.60
+				}
+   			}
+			
+			
+			cancel_if_invalid = no
+		}
+		
+		disaster_stability = {
+						
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.5
+				unity_factor = -0.5
+				production_speed_buildings_factor = -0.50
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				conscription_factor = -0.5
+			}
+			
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 3
+					has_added_tension_amount > 0.20
+				}
+				
+				modifier = {
+					factor = 5
+					tag = GER
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

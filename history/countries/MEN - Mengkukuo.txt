@@ -1,0 +1,59 @@
+﻿capital = 611
+
+oob = "null"
+
+set_technology = {
+	
+}
+
+1939.1.1 = {
+
+	add_political_power = 0
+	
+	#generic focuses
+
+	
+	oob = "null"
+	set_technology = {
+
+	}
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		autocratic = {
+			popularity = 100
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes
+		}
+
+	}
+	
+	ruling_party = autocratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Prince Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		spirit_of_genghis
+	}
+}
+
+1939.1.1 = {
+}

@@ -1,0 +1,1761 @@
+ideas = {
+	country = {
+
+		industrial_investements = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		
+		ship_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+
+		USA_mad = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = USA_mad
+			
+			modifier = {
+				ai_call_ally_desire_factor = 100
+				ai_join_ally_desire_factor = 100
+				
+			}
+		}
+		
+		nato_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = nato_idea
+			
+			modifier = {
+				ai_call_ally_desire_factor = 100
+				ai_join_ally_desire_factor = 100
+				
+			}
+		}
+	
+		banana_republics = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = united_fruit_company2
+			
+			modifier = {
+				consumer_goods_factor = 0.6
+				trade_opinion_factor = 0.1
+				industrial_capacity_factory = -0.4
+				communism_drift = 0.02
+				
+			}
+		}
+		
+		marshall_plan = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = 0.15 
+				production_speed_industrial_complex_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				trade_opinion_factor = 0.5
+			}
+		}
+		
+		defence_production_act = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.8
+			}
+		}
+		
+		invested_in_economy = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		ww2_reparations = {
+			allowed = {
+				always = no
+			} 
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.4	
+			}
+		}
+		
+		home_of_the_free = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			rule = {
+				can_create_factions = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.3
+			}
+		}
+				
+		banned_communism = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				communism_drift = -0.1 
+				unity_factor = -0.05
+			}
+		}
+		
+		liberty_focus = {
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1 
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				unity_factor = 0.01 
+			}
+		}
+		
+		dereg_economy = {
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1 
+			
+			modifier = {
+				consumer_goods_factor = -0.2					
+			}
+		}
+		
+		military_indstry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.2				
+			}
+		}
+		
+		civilian_industry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.4				
+			}
+		}
+		
+		office_of_Defence_moblilisation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.4				
+			}
+		}
+		
+		steel_worker_strikes = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.4			
+				unity_factor = -0.1 				
+			}
+		}
+		
+		golden_age_of_capitalism  = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.05			
+				unity_factor = 0.1 				
+			}
+		}
+		
+		commercial_industry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.15 
+				consumer_goods_factor = 0.03
+			}
+		}
+		
+		heavy_industry = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.1
+			}	
+		}
+		
+		fair_deal = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = 0.20 
+				production_speed_industrial_complex_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				trade_opinion_factor = 0.5
+			}
+		}
+
+		NSA_idea = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+
+		US_pressure = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+
+		american_militarism = {		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_hun_secret_rearmament 
+			
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.005
+			}
+		}
+		
+		loans_to_mining_companies = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus 
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}		
+		}
+		
+		steel_industry_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus 
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}		
+		}
+		
+		eisenhower_doctrine = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+
+			}
+		}
+		
+		mccarthy_doctrine = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+
+			}
+		}
+		
+		american_economic_miracle = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				trade_opinion_factor = 0.5
+				industrial_capacity_factory = 0.15
+			}
+		}
+		USA_segregation = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				conscription_factor = -0.3
+				unity_factor = -0.3
+				political_power_gain = -0.1
+			}
+
+		}
+		
+		USA_volunteer_forces = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 1
+			}
+		}
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
+
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
+
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	ECONOMIC MINISTER
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
+
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
+
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	minister_of_internal_affairs = {
+		
+		herbert_brownell = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		william_rogers = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		howard_mcgrath = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		james_mcgranery = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		tom_clark = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		dean_acheson = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		harrison_matthews = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		john_foster_dulles = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		roscoe_hillenkoetter = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		walter_bedell_smith = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		allen_w_dulles = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+		oveta_culp_hobby = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		marion_folsom = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		arthur_flemming = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		abraham_ribicoff = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	###ECONOMIC MINISTER###
+	
+	economic_minister = {
+		herschel_johnson = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		warren_austin = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		henry_cabot_lodge = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			traits = { reformer backroom_backstabber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		marmon_herrington = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		chrysler = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		army_ordnance_department = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		north_american_aviation = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		bell = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+		
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }	#TODO, make different from north american
+			
+			modifier = {
+			}
+		}	
+		
+		lockheed = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		douglas_aircraft_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		
+		boeing = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		consolidated_aircraft = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+		
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer } #TODO remove?
+			
+			modifier = {
+			}
+		}
+		grumman = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+		
+		standard_oil_california = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern refinery_concern }
+			
+			modifier = {
+			}
+		}
+		general_motors = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_planners }
+			
+			modifier = {
+			}
+		}
+		general_electric = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern heavy_electronics_bureau }
+			
+			modifier = {
+			}
+		}
+		ibm = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { computer_developers }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		springfield_armory = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		ford_motor_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	
+		
+		rock_island_arsenal = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}	
+		}
+	}
+	
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		norfolk_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		electric_boat_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		brooklyn_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		newport_news_shipbuilding = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+		omar_bradley = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_superior_firepower = 0.10
+			}
+			
+			traits = { superior_firepower_expert }
+		}
+		
+		george_patton = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.10
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+		
+		dewitt_clinton_ramsey = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		curtis_lemay = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.10
+			}
+			
+			traits = { victory_through_airpower }
+		}
+		
+		harold_mcclelland = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		robert_oppenheimer = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		wernher_von_braun = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		douglas_macarthur = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		george_marshall = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dwight_eisenhower = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		ernest_king = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		chester_nimitz = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		william_halsey = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+		carl_spaatz = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_chief_night_operations_2 }
+			# TODO Strategic bombing secondary trait?
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		george_kenney = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		courtney_hodges = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		joseph_stilwell = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mark_clark = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		jimmy_doolittle = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_strategic_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		john_cannon = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		claire_lee_chennault = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		raymond_spruance = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		frank_jack_fletcher = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_carrier_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		thomas_kinkaid = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+}
+

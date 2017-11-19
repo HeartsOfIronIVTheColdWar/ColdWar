@@ -1,0 +1,20 @@
+state={
+	id=759
+	name="STATE_759"
+	provinces={
+		1177 4126 7175 7204 10110 10115 11948 11977 11992 12085 
+	}
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = KOR
+		add_core_of = NKR
+
+	}
+	manpower=8650000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

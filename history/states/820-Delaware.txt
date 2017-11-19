@@ -1,0 +1,20 @@
+
+state={
+	id=820
+	name="STATE_820"
+	manpower = 321000 #1950 census
+	
+	state_category = rural
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		9786
+	}
+}

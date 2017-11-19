@@ -1,0 +1,589 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Strelkovaya Diviziya"			# Rifle Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		
+		#engineer = { x = 0 y = 1 } 		
+		artillery = { x = 0 y = 0 } 		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+division_template = {
+	name = "Strelkovaya-daz Diviziya"			# Rifle /artillery Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		
+		#engineer = { x = 0 y = 1 } 		
+		artillery = { x = 0 y = 0 } 		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+division_template = {
+	name = "Gornostrelkovaya Diviziya"		# Mountain Rifle Division
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 		# Heavy Arty Regiment had 2x 122mm bn
+	}
+}
+division_template = {
+	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+	}
+}
+division_template = {
+	name = "Mekhanicheskoye Diviziya"		# Mechanized Division
+
+	regiments = {
+		IFV_1950 = { x = 0 y = 0 }		# BT-7 tanks
+		IFV_1950 = { x = 0 y = 1 }
+		APC_1950 = { x = 1 y = 0 }
+		APC_1950 = { x = 1 y = 1 }
+		APC_1950 = { x = 1 y = 2 }
+		APC_1950 = { x = 2 y = 0 }
+		APC_1950 = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+	}
+}
+division_template = {
+	name = "Kavaleriyskaya Diviziya" 			# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 				# Recon bn had 16x L tanks, 45 ACs
+	}
+}
+division_template = {
+	name = "Pogranichnaya Diviziya"		# NKVD Border Guard Division
+												# Note: garrison units (all have oldest equipment, low experience)
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = 	{
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Vozdushno-Desantnaya"				# Represents a pair of independent airborne brigades
+	
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Tankovaya Korpus" 					# Note: Represents regular tank corps (formerly mechanized corps; 4 existed in 1938-40) 
+
+	regiments = {
+		MBT_1950 = { x = 0 y = 0 }		# BT-7 tanks
+		MBT_1950 = { x = 0 y = 1 }
+		MBT_1950 = { x = 0 y = 2 }	
+		MBT_1950 = { x = 1 y = 0 }		# BT-7 tanks	
+		MBT_1950 = { x = 1 y = 1 }		
+		MBT_1950 = { x = 1 y = 2 }			
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }		
+		motorized = { x = 3 y = 0 }		
+		motorized = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+	}
+}
+division_template = {
+	name = "Legko-Tankovaya Brigada" 				# Light Tank Brigades - Represents a pair of independent tank brigades (2 regular (light) brigades) 
+
+	regiments = {
+		MBT_1950 = { x = 0 y = 0 }		# T-26 or BT-5/7 tanks
+		MBT_1950 = { x = 0 y = 1 }
+		MBT_1950 = { x = 0 y = 2 }	
+		MBT_1950 = { x = 1 y = 0 }		# T-26 or BT-5/7 tanks		
+		MBT_1950 = { x = 1 y = 1 }		
+		MBT_1950 = { x = 1 y = 2 }		
+		APC_1950 = { x = 2 y = 0 }		
+		APC_1950 = { x = 2 y = 1 }
+		IFV_1950 = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		
+	}
+}
+
+### Note: OOB abstracts away the following:
+#	Marine Brigade (3x marine bn, engineers), 2 Brigades: Leningrad, Sevastopol
+
+#### OOB #####
+units = {
+	
+	###FAR EAST###
+	division = {
+		name = "9th Heavy Division"
+		location = 957
+		division_template = "Strelkovaya-daz Diviziya"
+	}
+	division = {
+		name = "10th Artillery Division"
+		location = 3739
+		division_template = "Strelkovaya-daz Diviziya"
+	}
+	division = {
+		name = "24th Artillery Division"
+		location = 12189
+		division_template = "Strelkovaya-daz Diviziya"
+	}
+	division = {
+		name = "277th Rifle Division"
+		location = 12446
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "133th Rifle Division"
+		location = 7801
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "63th Rifle Division"
+		location = 9604
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "215th Rifle Division"
+		location = 7851
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "2nd Tank Division"
+		location = 957
+		division_template = "Tankovaya Korpus"
+	}
+	###MURMANSK###
+	division = {
+		name = "45th Rifle Division"
+		location = 9140
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "67th Rifle Division"
+		location = 3134
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "341th Rifle Division"
+		location = 197
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "367th Rifle Division"
+		location = 74
+		division_template = "Strelkovaya Diviziya"
+	}
+	###LVIV###
+	division = {
+		name = "161th Rifle Division"
+		location = 11479
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "24th Rifle Division"
+		location = 9425
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "17th Guards Division"
+		location = 3392
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "51th Guards Division"
+		location = 11536
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "97th Guards Division"
+		location = 3457
+		division_template = "Pogranichnaya Diviziya"
+	}
+	##CHUKCHI###
+	division = {
+		name = "116th Mountain Rifle Division"
+		location = 7878
+		division_template = "Gornostrelkovaya Diviziya"
+	}
+	division = {
+		name = "117th Mountain Rifle Division"
+		location = 13063
+		division_template = "Gornostrelkovaya Diviziya"
+	}
+	division = {
+		name = "121th Mountain Rifle Division"
+		location = 4744
+		division_template = "Gornostrelkovaya Diviziya"
+	}
+	###BELORUSSIA###
+	division = {
+		name = "2nd Mechanized Division"
+		location = 11370
+		division_template = "Mekhanicheskoye Diviziya"
+	}
+	division = {
+		name = "55th Rifle Division"
+		location = 3393
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "89th Rifle Division"
+		location = 11241
+		division_template = "Strelkovaya Diviziya"
+	}
+	###TRANSBAIKAL###
+	division = {
+		name = "22nd Guards Division"
+		location = 12641
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "115th Rifle Division"
+		location = 4719
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "178th Rifle Division"
+		location = 10683
+		division_template = "Strelkovaya Diviziya"
+	}
+	###CARPATHIAN###
+	division = {
+		name = "128nd Guards Division"
+		location = 9425
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "318th Rifle Division"
+		location = 9685
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "66th Rifle Division"
+		location = 3743
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "70th Rifle Division"
+		location = 466
+		division_template = "Strelkovaya Diviziya"
+	}
+	###PORT ARTHUR###
+	division = {
+		name = "338th Rifle Division"
+		location = 1150
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "358th Rifle Division"
+		location = 1150
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "362th Rifle Division"
+		location = 1150
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "150th Guards Division"
+		location = 1150
+		division_template = "Pogranichnaya Diviziya"
+	}
+	###NOVOSIBIRISK###
+	division = {
+		name = "11th Motorized Division"
+		location = 7274
+		division_template = "Motostrelkovaya Diviziya"
+	}
+	division = {
+		name = "15th Motorized Division"
+		location = 1860
+		division_template = "Motostrelkovaya Diviziya"
+	}
+	division = {
+		name = "7th Motorized Division"
+		location = 4333
+		division_template = "Motostrelkovaya Diviziya"
+	}
+	###North Causcaus###
+	division = {
+		name = "75th Rifle Division"
+		location = 1599
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "261th Rifle Division"
+		location = 3734
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "164th Rifle Division"
+		location = 9753
+		division_template = "Strelkovaya Diviziya"
+	}
+	division = {
+		name = "26th Mechanized Division"
+		location = 3529
+		division_template = "Mekhanicheskoye Diviziya"
+	}
+	###HUNGARY###
+	division = {
+		name = "18th Motorized Division"
+		location = 9660
+		division_template = "Motostrelkovaya Diviziya"
+	}
+	###WEIMAR###
+	division = {
+		name = "27th Guards Division"
+		location = 6524
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "74th Guards Division"
+		location = 3535
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "82nd Guards Division"
+		location = 514
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "39th Guards Division"
+		location = 3522
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "79th Guards Division"
+		location = 321
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "88th Guards Division"
+		location = 6521
+		division_template = "Pogranichnaya Diviziya"
+	}
+	###KALININGRAD###
+	division = {
+		name = "40th Tank Division"
+		location = 6332
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "11th Tank Division"
+		location = 6332
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "28th Guards Division"
+		location = 6332
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "26th Guards Division"
+		location = 3384
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "10th Guards Division"
+		location = 3384
+		division_template = "Pogranichnaya Diviziya"
+	}
+	###DESSAU###
+	division = {
+		name = "6th Tank Division"
+		location = 3522
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "7th Tank Division"
+		location = 11468
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "82nd Motorized Division"
+		location = 6521
+		division_template = "Motostrelkovaya Diviziya"
+	}
+	###BERNAU###
+	division = {
+		name = "5th Mechanized Division"
+		location = 11444
+		division_template = "Mekhanicheskoye Diviziya"
+	}
+	division = {
+		name = "6th Mechanized Division"
+		location = 9428
+		division_template = "Mekhanicheskoye Diviziya"
+	}
+	division = {
+		name = "16th Tank Division"
+		location = 6521
+		division_template = "Tankovaya Korpus"
+	}
+	###MAGDEBURG###
+	division = {
+		name = "7th Tank Division"
+		location = 3561
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "10th Tank Division"
+		location = 9375
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "12th Tank Division"
+		location = 11359
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "47th Tank Division"
+		location = 3522
+		division_template = "Tankovaya Korpus"
+	}
+	###SLUTSK###
+	division = {
+		name = "7th Mechanized Division"
+		location = 360
+		division_template = "Mekhanicheskoye Diviziya"
+	}
+	###MONGOLIA###
+	division = {
+		name = "85th Tank Division"
+		location = 4801
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "49th Tank Division"
+		location = 7799
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "32nd Tank Division"
+		location = 10578
+		division_template = "Tankovaya Korpus"
+	}
+	###ZHYTOMYR###
+	division = {
+		name = "18th Tank Division"
+		location = 3707
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "23rd Tank Division"
+		location = 11670
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "31st Tank Division"
+		location = 525
+		division_template = "Tankovaya Korpus"
+	}
+	division = {
+		name = "11th Guards Division"
+		location = 11561
+		division_template = "Pogranichnaya Diviziya"
+	}
+	division = {
+		name = "32nd Mechanized Division"
+		location = 11437
+		division_template = "Mekhanicheskoye Diviziya"
+	}
+	}
+#
+#
+#		
+#	##### NAVAL UNITS #####
+#	### Northern Fleet -- Murmansk
+#	navy = {	
+##		}	
+#	navy = {	
+#		}
+#	
+#	#### Baltic Fleet -- Leningrad
+#	navy = {	
+#		}	
+#	navy = {	
+#		}
+#
+#	### Black Sea Fleet -- Sevastopol
+#	navy = {	
+#		}	
+#	navy = {	
+#		}	
+#
+#	### Pacific Fleet -- Vladivostok
+#	navy = {	
+#		}	
+#	navy = {	
+#		}	
+#}					
+#					
+#
+#### Air Wings
+#air_wings = {
+#}
+#
+#
+#	#########################
+#	## STARTING PRODUCTION ##
+#	#########################
+#instant_effect = {
+#}
+#	#####################

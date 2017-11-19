@@ -1,0 +1,43 @@
+
+state = {
+	id = 744
+	name = "STATE_744"
+	manpower = 321000
+	resources = {
+		aluminium = 26
+		steel = 12
+	}
+	
+	state_category = town
+	
+	history = {
+		owner = SWE
+		victory_points = {
+			9151 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 5
+			9151 = {
+				naval_base = 4
+				coastal_bunker = 3
+
+			}
+			11147 = {
+				naval_base = 1
+				coastal_bunker = 1
+
+			}
+			9088 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+		add_core_of = SWE
+	}
+	provinces = {
+		125 130 182 205 3045 3113 9035 9088 9151 11040 11147 
+	}
+}

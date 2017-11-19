@@ -1,0 +1,8 @@
+supply_area={
+	id=32
+	name="SUPPLYAREA_32" # Albania
+	value=7
+	states={
+		44
+	}
+}

@@ -1,0 +1,2164 @@
+focus_tree = {
+	id = SOV
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SOV_The_1950_Five_Year_Plan
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 20
+		x = 4
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = SOV_fifth_five_year_plan
+			hidden_effect = {			
+				set_country_flag = { flag = SOV_fifth_five_year_plan_inaction days = 1825 value = 1 }
+#				Add event chain start here for the five year plan			
+			}
+		}
+	}
+	focus = {
+		id = SOV_DDR
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5
+		x = 11
+		y = 0
+		
+		completion_reward = {
+			add_political_power = 75
+			DDR = {
+				add_political_power = 75
+			}
+			add_opinion_modifier = { target = DDR modifier = SOV_DDR_friendship }
+			DDR = {
+				add_opinion_modifier = { target = SOV modifier = SOV_DDR_friendship }
+			}
+		}
+	}
+	focus = {
+		id = SOV_Stalinism
+		icon = GFX_goal_continuous_suppression
+		cost = 0
+		x = 14
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = SOV_Stalinism_tt
+			hidden_effect = {
+			}
+			
+		}
+
+	}
+	focus = {
+		id = SOV_Surplus_Equipment
+		icon = GFX_goal_generic_trade
+		cost = 10
+		x = 29
+		y = 0
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 85000 producer = SOV }
+			add_equipment_to_stockpile = { type = modern_tank_equipment_0 amount = 6000 producer = SOV }
+			add_equipment_to_stockpile = { type = motorized_equipment_0 amount = 9000 producer = SOV }
+			add_equipment_to_stockpile = { type = mechanized_equipment_0 amount = 6000 producer = SOV }		
+		}
+	}
+	focus = {
+		id = SOV_NKVD
+		icon = GFX_goal_continuous_suppression
+		cost = 10
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = SOV_The_Thing
+		icon = GFX_focus_wonderweapons
+		cost = 1
+		x = 20
+		y = 0
+		available = { 
+			has_global_flag = SOV_the_thing
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_nuclear_interest
+		}
+
+	}
+	focus = {
+		id = SOV_The_Exchange
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 1
+		x = 22
+		y = 0
+		available = {
+			has_government = communism 
+			has_global_flag = SOV_spies_selling_nukes
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_spies_safety
+			set_global_flag = SOV_spies_gives_information
+			hidden_effect = {
+#				USA = { country_event = { id = soviet.601} }
+			}
+		}
+	}
+	focus = {
+		id = SOV_heavy_factory_economy
+		icon = GFX_goal_generic_construct_civilian
+		cost = 15
+		prerequisite = {
+			focus = SOV_The_1950_Five_Year_Plan
+		}
+		mutually_exclusive = {
+			focus = SOV_light_factory_economy
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			add_ideas = heavy_factory_economy
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = SOV_Ural_Mining_Licenses
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = SOV_heavy_factory_economy
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+			398 = {
+
+				add_resource = {
+					type = aluminium
+					amount = 42
+				}
+				add_resource = {
+					type = chromium
+					amount = 26
+				}
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+				}
+			}
+			397 = {
+
+				add_resource = {
+					type = aluminium
+					amount = 54
+				}
+				add_resource = {
+					type = steel
+					amount = 48
+				}
+				add_resource = {
+					type = tungsten
+					amount = 18
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+				}
+			}
+			573 = {
+
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			582 = {
+
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			581 = {
+
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+				}
+			}
+		}
+		
+
+	}
+	focus = {
+		id = SOV_Remobilize_the_Farmers
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = SOV_Ural_Mining_Licenses
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+			add_ideas = SOV_remobilize_the_farmers
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_Heavy_Mechanics
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = SOV_Ural_Mining_Licenses
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+					if = {
+
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+
+						add_building_construction = {
+							type = arms_factory 
+							level = 3
+							instant_build = yes
+						}
+					}
+			}
+			random_owned_controlled_state = {
+					if = {
+
+						add_building_construction = {
+							type = arms_factory 
+							level = 3
+							instant_build = yes
+						}
+					}
+			}
+		}
+
+
+	}
+	focus = {
+		id = SOV_Heavy_Plan_Economy
+		icon = GFX_goal_generic_production2
+		cost = 10
+		prerequisite = {
+			focus = SOV_Heavy_Mechanics
+		}
+		prerequisite = {
+			focus = SOV_Remobilize_the_Farmers
+		}
+		completion_reward = {
+			add_ideas = heavy_plan_economy
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.2
+				uses = 1
+				category = construction_tech
+			}
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = SOV_light_factory_economy
+		icon = GFX_goal_generic_consumer_goods
+		cost = 15
+		prerequisite = {
+			focus = SOV_The_1950_Five_Year_Plan
+		}
+		mutually_exclusive = {
+			focus = SOV_heavy_factory_economy
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			add_ideas = light_factory_economy
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	focus = {
+		id = SOV_The_New_Soviet_Citizen
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = SOV_light_factory_economy
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = light_factory_economy
+				add_idea = light_factory_economy2
+			}
+		}
+	}
+	focus = {
+		id = SOV_International_Trade
+		icon = GFX_goal_generic_trade
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_New_Soviet_Citizen
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			add_ideas = free_trade
+		}
+
+	}
+	focus = {
+		id = SOV_The_Economic_Swings ###Renamed to comecon
+		icon = GFX_goal_focus_SOV_comecon
+		cost = 15
+		prerequisite = {
+			focus = SOV_International_Trade
+			focus = SOV_Heavy_Mechanics
+		}
+		completion_reward = {
+			SOV = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+			BUL = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+			HUN = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+			CZE = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+			POL = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+			ALB = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+			ROM = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+			DDR = { swap_ideas = {
+						remove_idea = SOV_comecon
+						add_idea = SOV_comecon2
+					}
+			}
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Exploit_Siberia
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Economic_Swings
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+			576 = {
+
+				add_resource = {
+					type = steel
+					amount = 42
+				}
+				add_resource = {
+					type = tungsten
+					amount = 34
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			516 = {
+
+				add_resource = {
+					type = aluminium
+					amount = 62
+				}
+				add_resource = {
+					type = steel
+					amount = 48
+				}
+				add_resource = {
+					type = tungsten
+					amount = 72
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+				}
+			}
+			644 = {
+
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+				add_resource = {
+					type = tungsten
+					amount = 54
+				}
+				add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Soviet_Worker_Unions
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10
+		prerequisite = {
+			focus = SOV_Exploit_Siberia
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			add_national_unity = 0.10
+			add_political_power = 100
+		}
+		
+		
+
+	}
+	focus = {
+		id = SOV_Forced_Labour
+		icon = GFX_focus_CZE_german_puppet
+		cost = 10
+		prerequisite = {
+			focus = SOV_Exploit_Siberia
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+			add_national_unity = -0.10
+			add_political_power = -100
+		}
+
+	}
+	focus = {
+		id = SOV_Mixed_Plan_economy
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = {
+			focus = SOV_International_Trade
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = light_factory_economy2
+				add_idea = light_factory_economy3
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Consumerism
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = SOV_Mixed_Plan_economy
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			add_ideas = SOV_consumerism
+		}
+
+	}
+	focus = {
+		id = SOV_Role_Model_Citizen
+		icon = GFX_goal_focus_SOV_rolemodelcitizens
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Worker_Unions
+		}
+		x = 6
+		y = 7
+		completion_reward = {
+			add_ideas = SOV_role_model
+			custom_effect_tooltip = SOV_role_model
+		}
+
+	}
+	focus = { #First SinoSoviet focus on the Soviet focus tree
+		id = SOV_Sinosoviet_Alliance
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = SOV_DDR
+		}
+		x = 8
+		y = 1
+		available = {
+			is_puppet = no
+			has_government = communism 
+			PRC = {
+				NOT = { has_war_with = SOV }
+				has_government = communism 
+				NOT = { is_in_faction_with = USA }
+			}
+#			custom_effect_tooltip = PRC_Mao_Discontent_tt
+		}
+		completion_reward = {
+			PRC = { country_event = { id = soviet.6000 days = 1 } }
+			custom_effect_tooltip = SOV_sino_soviet_aid_effects_tt
+		}
+
+	}
+	focus = { #Second SinoSoviet focus on the Soviet focus tree
+		id = SOV_Mutual_Developement
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = SOV_Sinosoviet_Alliance
+		}
+		available = {
+			has_government = communism 
+			PRC = {
+				NOT = { has_war_with = SOV }
+				has_government = communism  
+			}
+			OR = {
+				has_global_flag = PRC_Civil_war_ended 
+				has_global_flag = PRC_Civil_war_standstill 
+			}  
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			PRC = { country_event = { id = soviet.6001 days = 1 } }
+			custom_effect_tooltip = SOV_sino_soviet_second_aid_effects_tt
+		}
+
+	}
+	focus = {
+		id = SOV_SinoSoviet_Naval_Treaty
+		icon = GFX_goal_continuous_naval_production
+		cost = 10
+		prerequisite = {
+			focus = SOV_Mutual_Developement
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			PRC = { country_event = { id = soviet.6002 days = 1 } }
+			custom_effect_tooltip = SOV_sino_soviet_naval_treaty
+		}
+
+	}
+	focus = {
+		id = SOV_One_Class_One_People
+		icon = GFX_goal_generic_major_alliance
+		cost = 20
+		prerequisite = {
+			focus = SOV_SinoSoviet_Naval_Treaty
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			PRC = { country_event = { id = soviet.6003 days = 1 } }
+			custom_effect_tooltip = SOV_sino_soviet_defense_pact
+		}
+
+	}
+	focus = {
+		id = SOV_China_Joins_KOMINFORM
+		icon = GFX_goal_focus_SOV_PRC_euroasian
+		cost = 10
+		prerequisite = {
+			focus = SOV_One_Class_One_People
+		}
+		x = 8
+		y = 6
+		available = {
+			PRC = {
+				AND = {
+					has_government = communism
+					has_opinion = { target = SOV value > 99 }
+					has_idea = sino_soviet_military_defense_pact
+				}
+			}
+		}
+		completion_reward = {
+			PRC = { country_event = { id = soviet.6004 days = 1 } }
+			custom_effect_tooltip = SOV_china_joins_faction
+		}
+
+	}
+	focus = {
+		id = SOV_KOMINFORM
+		icon = GFX_focus_generic_join_comintern
+		cost = 10
+		prerequisite = {
+			focus = SOV_DDR
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+			add_ideas = KOMINFORM
+			custom_effect_tooltip = SOV_KOMINFORM_tt
+		}
+	}
+	focus = {
+		id = SOV_War_restoration
+		icon = GFX_goal_continuous_repairments
+		cost = 10
+		prerequisite = {
+			focus = SOV_KOMINFORM
+		}
+		mutually_exclusive = {
+			focus = SOV_The_Peoples_Leaders
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			every_other_country = {
+				limit = { 
+					is_in_faction_with = SOV
+				}
+				add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.3
+				uses = 3
+				category = construction_tech
+				}	
+
+
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_The_Peoples_Leaders
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = SOV_KOMINFORM
+		}
+		mutually_exclusive = {
+			focus = SOV_War_restoration
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			hidden_effect = {
+			BUL = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			HUN = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			CZE = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			POL = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			ALB = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			ROM = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			DDR = {
+				remove_country_leader_trait = stalins_puppet
+			}
+			}
+			custom_effect_tooltip = SOV_Stalins_puppet_tt
+			custom_effect_tooltip = SOV_The_Peoples_Leaders_tt
+		}
+
+	}
+	focus = {
+		id = SOV_The_Tito_Question
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		prerequisite = {
+			focus = SOV_The_Peoples_Leaders
+			focus = SOV_War_restoration
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			SOV = { country_event = { id = soviet.620 days = 1 } }
+			custom_effect_tooltip = SOV_the_tito_question_tt
+		}
+		
+
+	}
+	focus = {
+		id = SOV_Force_of_Will
+		icon = GFX_goal_continuous_restrict_freedom
+		cost = 2
+		prerequisite = {
+			focus = SOV_The_Tito_Question
+		}
+		mutually_exclusive = {
+			focus = SOV_Offer_Independence
+		}
+		bypass = { 
+			has_global_flag = tito_skipped
+		}
+		x = 10
+		y = 4
+
+		available = {
+			AND = {
+				has_global_flag = SOV_forcefull_offer
+				NOT = {
+					has_global_flag = tito_skipped
+				}
+			}
+		}
+		completion_reward = {
+			SOV = { country_event = { hours = 6 id = soviet.630 } }
+		}
+	}
+	focus = {
+		id = SOV_Offer_Independence
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 2
+		prerequisite = {
+			focus = SOV_The_Tito_Question
+		}
+		mutually_exclusive = {
+			focus = SOV_Force_of_Will
+		}
+		bypass = { 
+			has_global_flag = tito_skipped
+		}
+		x = 12
+		y = 4
+		available = {
+			AND = {
+				has_global_flag = SOV_friendly_offer
+				NOT = {
+					has_global_flag = tito_skipped
+				}
+			}
+		}
+		completion_reward = {
+			SOV = { country_event = { id = soviet.625 days = 1 } }
+		}
+	}
+	focus = {
+		id = SOV_Block_Policys
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = SOV_Offer_Independence
+			focus = SOV_Force_of_Will
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+			add_political_power = 100
+			every_other_country = {
+				limit = { 
+					is_in_faction_with = SOV
+				}
+				add_political_power = 100
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = SOV_pact_friendship
+				}
+				add_opinion_modifier = { 
+					target = FROM
+					modifier = SOV_pact_friendship
+				}
+			}
+			
+		}
+
+	}
+	focus = {
+		id = SOV_The_Warsaw_Pact
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		cost = 10
+		prerequisite = {
+			focus = SOV_Block_Policys
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+			dismantle_faction = yes
+			create_faction = "The Warsaw Pact"
+			custom_effect_tooltip = SOV_The_Warsaw_Pact_tt
+			hidden_effect = {
+			add_to_faction = BUL
+			add_to_faction = HUN
+			add_to_faction = CZE
+			add_to_faction = POL
+			add_to_faction = ALB
+			add_to_faction = ROM
+			add_to_faction = DDR
+#			if = {
+#				PRC = { is_in_faction_with = SOV }
+#				add_to_faction = PRC
+#			}
+#			if = {
+#				RAJ = { is_in_faction_with = SOV }
+#				add_to_faction = RAJ
+#			}
+			add_political_power = 100
+			
+			}
+		}
+	}
+	focus = {
+		id = SOV_The_Internationale
+		icon = GFX_goal_generic_position_armies
+		cost = 5
+		prerequisite = {
+			focus = SOV_DDR
+		}
+		available = {
+			has_global_flag = SOV_Stalin_dead 
+			has_global_flag = SOV_De_stalinism 
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+			every_other_country = {
+				add_ideas = SOV_socialist_influence
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Indian_Anticapitalism
+		icon = GFX_focus_RAJ_british_investors
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Advisors
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+
+			}
+			add_opinion_modifier = { target = RAJ modifier = SOV_offer_developement }
+			RAJ = {
+				add_opinion_modifier = { target = SOV modifier = SOV_offer_developement }
+			}
+			
+		}
+	}
+	focus = {
+		id = SOV_Socialistas_Americanas
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Internationale
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = SOV_Aid_americas
+			hidden_effect = {
+
+			}
+			custom_effect_tooltip = SOV_Aid_americas1
+			
+		}
+	}
+	focus = {
+		id = SOV_Assist_Decolonization
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Internationale
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+			set_global_flag = SOV_socialst_unrests
+			custom_effect_tooltip = SOV_DECOLONIZE_NOW
+		}
+
+	}
+	focus = {
+		id = SOV_Soviet_Advisors
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Internationale
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Soviet_Agricultural_Board
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = SOV_Indian_Anticapitalism
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+				if = {
+					limit = {
+						RAJ = {
+							has_idea = RAJ_agrarian_society
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = RAJ_agrarian_society
+							add_idea = RAJ_agrarian_society_2
+						}
+					}
+				}
+				if = {
+					limit = {
+						RAJ = {
+							has_idea = RAJ_agrarian_society_2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = RAJ_agrarian_society_2
+							add_idea = RAJ_agrarian_society_3
+						}
+					}
+				}
+				if = {
+					limit = {
+						RAJ = {
+							has_idea = RAJ_agrarian_society_3
+						}
+					}
+					RAJ = {
+						remove_ideas = RAJ_agrarian_society_3
+					}
+				}
+				add_opinion_modifier = { target = RAJ modifier = SOV_Agricultural_board }
+				RAJ = {
+					add_opinion_modifier = { target = SOV modifier = SOV_Agricultural_board }
+				}
+		}
+
+	}
+	focus = {
+		id = SOV_The_Banana_Republics
+		icon = GFX_goal_focus_SOV_banana
+		cost = 5
+		prerequisite = {
+			focus = SOV_Socialistas_Americanas
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = SOV_African_socialism
+		icon = GFX_goal_focus_SOV_africa
+		cost = 5
+		prerequisite = {
+			focus = SOV_Assist_Decolonization
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Asian_Socialism
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 5
+		prerequisite = {
+			focus = SOV_Assist_Decolonization
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Foreign_Assistance
+		icon = GFX_goal_generic_improve_relations
+		cost = 1
+		prerequisite = {
+			focus = SOV_The_Banana_Republics
+			focus = SOV_African_socialism
+			focus = SOV_Asian_Socialism
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Industrial_Planning_Board
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = SOV_Foreign_Assistance
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Socialist_Movements
+		icon = GFX_goal_support_communism
+		cost = 5
+		prerequisite = {
+			focus = SOV_Asian_Socialism
+		}
+		prerequisite = {
+			focus = SOV_African_socialism
+		}
+		prerequisite = {
+			focus = SOV_The_Banana_Republics
+		}
+		x = 18
+		y = 4
+	}
+	focus = {
+		id = SOV_Support_Coups
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 1
+		prerequisite = {
+			focus = SOV_Asian_Socialism
+			focus = SOV_African_socialism
+			focus = SOV_The_Banana_Republics
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Military_Support
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = SOV_Support_Coups
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Govermental_support
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SOV_Military_Support
+			focus = SOV_Industrial_Planning_Board
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Popular_Support
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = {
+			focus = SOV_Industrial_Planning_Board
+			focus = SOV_Military_Support
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Socialist_Science
+		icon = GFX_focus_generic_socialist_science
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Thing
+		}
+		prerequisite = {
+			focus = SOV_The_Exchange
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.8
+				uses = 1
+				category = nuclear
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_ICBM
+		icon = GFX_focus_rocketry
+		cost = 10
+		prerequisite = {
+			focus = SOV_Socialist_Science
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.6
+				uses = 2
+				category = rocketry
+			}
+			custom_effect_tooltip = SOV_Space_Race
+			if = { 
+				limit = {
+					SOV = { 
+						has_completed_focus = SOV_Missile_technology 
+					}
+				}
+				set_global_flag = SOV_space_race_tier_2
+			}
+			set_global_flag = SOV_space_race_tier_1 
+		}
+	}
+	focus = {
+		id = SOV_Soviet_Navy
+		icon = GFX_goal_generic_build_navy
+		cost = 10
+		prerequisite = {
+			focus = SOV_Surplus_Equipment
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = navy_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}	
+		}
+
+	}
+	focus = {
+		id = SOV_The_Leningrad_Shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Navy
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+			195 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Black_Sea_Shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Navy
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+			197 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+			}
+			137 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Karl_Marx
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10
+		prerequisite = {
+			focus = SOV_Black_Sea_Shipyards
+		}
+		prerequisite = {
+			focus = SOV_The_Leningrad_Shipyards
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.7
+				uses = 1
+				technology = ww2_carrier
+				technology = early_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Uboot_Improvements
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Leningrad_Shipyards
+			focus = SOV_Black_Sea_Shipyards
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Coastal_Fleets
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = {
+			focus = SOV_Black_Sea_Shipyards
+			focus = SOV_The_Leningrad_Shipyards
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 2
+				technology = improved_destroyer
+				technology = advanced_destroyer
+				technology = improved_cruiser
+				technology = advanced_cruiser
+				technology = basic_frigate
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Coastal_Defense
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10
+		prerequisite = {
+			focus = SOV_Coastal_Fleets
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+			hidden_effect = {
+				##North Sea##
+				213 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3134
+						instant_build = yes
+					}
+				}
+				214 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3338
+						instant_build = yes
+					}
+				}
+					##Leningrad and baltic##
+				195 = {	
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3151
+						instant_build = yes
+					}
+				}
+				146 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9206
+						instant_build = yes
+					}
+				}
+				191 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 4640
+						instant_build = yes
+					}
+				}
+				13 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3152
+						instant_build = yes
+					}
+				}
+				12 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9340
+						instant_build = yes
+					}
+				}
+				190 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9262
+						instant_build = yes
+					}
+				}
+				189 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6314
+						instant_build = yes
+					}
+				}
+				188 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6332
+						instant_build = yes
+					}
+				}
+				##Black Sea##
+				78 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 6727
+						instant_build = yes
+					}
+				}
+				192 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 11670
+						instant_build = yes
+					}
+				}
+				197 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 11683
+						instant_build = yes
+					}
+				}
+				137 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3686
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9680
+						instant_build = yes
+					}
+				}
+				234 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9417
+						instant_build = yes
+					}
+				}
+				218 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 719
+						instant_build = yes
+					}
+				}
+				##Far East##
+				408 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 957
+						instant_build = yes
+					}
+				}
+				409 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9604
+						instant_build = yes
+					}
+				}
+				537 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 12446
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_building_many_forts
+		}
+	}
+	focus = {
+		id = SOV_Sverdlov_Heavy_Cruisers
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = SOV_Coastal_Defense
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.7
+				uses = 1
+				technology = advanced_cruiser
+				technology = early_modern_cruiser
+				technology = modern_cruiser
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_The_Red_Army
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = SOV_Surplus_Equipment
+		}
+		x = 29
+		y = 1
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.4
+				uses = 2
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Mechanization_of_the_Army
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Red_Army
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.6
+				uses = 1
+				technology = motorised_infantry
+				technology = IFV_1950
+				technology = APC_1950
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Lessons_of_the_War
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_Red_Army
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+			army_experience = 35
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.2
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.2
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.2
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.4
+				uses = 1
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Doctrine_of_Force
+		icon = GFX_goal_continuous_armor_production
+		cost = 10
+		prerequisite = {
+			focus = SOV_Mechanization_of_the_Army
+		}
+		prerequisite = {
+			focus = SOV_Lessons_of_the_War
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+			add_ideas = SOV_Superior_Tanks
+		}
+
+	}
+	focus = {
+		id = SOV_Artillery_Command
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = SOV_Doctrine_of_Force
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Fortify_borders
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = SOV_Doctrine_of_Force
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Central_Command
+		icon = GFX_goal_generic_radar
+		cost = 10
+		prerequisite = {
+			focus = SOV_Artillery_Command
+			focus = SOV_Fortify_borders
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+			188 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+			89 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+			131 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+			137 = {
+				add_building_construction = {
+					type = radar_station 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Soviet_Air_Force
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		prerequisite = {
+			focus = SOV_Surplus_Equipment
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+			air_experience = 75
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+				category = medium_air
+			}
+		}
+	}
+	focus = {
+		id = SOV_Air_and_Land
+		icon = GFX_goal_generic_air_bomber
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Air_Force
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+				category = heavy_air
+			}
+		}
+	}
+	focus = {
+		id = SOV_The_war_above
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Air_Force
+		}
+		x = 34
+		y = 2
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Missile_technology
+		icon = GFX_focus_rocketry
+		cost = 10
+		prerequisite = {
+			focus = SOV_The_war_above
+		}
+		prerequisite = {
+			focus = SOV_Air_and_Land
+		}
+		x = 33
+		y = 3
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+			custom_effect_tooltip = SOV_Space_Race
+			if = { 
+				limit = {
+					SOV = { 
+						has_completed_focus = SOV_ICBM 
+					}
+				}
+				set_global_flag = SOV_space_race_tier_2
+			}
+			set_global_flag = SOV_space_race_tier_1 
+		}
+
+	}
+	focus = {
+		id = SOV_AntiAir_missiles
+		icon = GFX_focus_generic_air_defense
+		cost = 10
+		prerequisite = {
+			focus = SOV_Missile_technology
+		}
+		x = 33
+		y = 4
+		completion_reward = {
+			64 = {
+				add_building_construction = {
+					type = anti_air_building  
+					level = 2
+					instant_build = yes
+				}
+			}
+			61 = {
+				add_building_construction = {
+					type = anti_air_building  
+					level = 2
+					instant_build = yes
+				}
+			}
+			9 = {
+				add_building_construction = {
+					type = anti_air_building  
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = SOV_anti_air_op
+		}
+	}
+	focus = {
+		id = SOV_Industrialized_Gulags
+		icon = GFX_goal_ussr_forced_labour
+		cost = 10
+		prerequisite = {
+			focus = SOV_Forced_Labour
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+			add_ideas = SOV_Gulags
+		}
+
+	}
+	focus = {
+		id = SOV_Socialist_Economic_Miracle
+		icon = GFX_goal_focus_socialist_economic_miracle
+		cost = 10
+		prerequisite = {
+			focus = SOV_Role_Model_Citizen
+			focus = SOV_Industrialized_Gulags
+		}
+		prerequisite = {
+			focus = SOV_The_1955_Five_Year_Plan
+		}
+		x = 4
+		y = 8
+		completion_reward = {
+			add_ideas = SOV_economic_miracle
+		}
+
+	}
+	focus = {
+		id = SOV_The_1955_Five_Year_Plan
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 20
+		prerequisite = {
+			focus = SOV_Forced_Labour
+			focus = SOV_Soviet_Worker_Unions
+		}
+		x = 4
+		y = 7
+		available = {
+			NOT = {
+				has_country_flag = SOV_fifth_five_year_plan_inaction
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_sixth_five_year_plan
+		}
+	}
+	focus = {
+		id = SOV_India_Joins_KOMINFORM
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		cost = 10
+		prerequisite = {
+			focus = SOV_offer_development
+		}
+		x = 14
+		y = 6
+		available = {
+			RAJ = {
+				AND = {
+					has_government = communism
+					has_opinion = { target = SOV value > 99 }
+					has_global_flag = india_accepted_soviet_developement
+				 }
+
+			}
+		}
+		completion_reward = {
+			RAJ = { country_event = { id = soviet.6100 days = 1 } }
+			custom_effect_tooltip = SOV_india_joins_faction
+			SOV = { add_to_faction = RAJ }
+		}
+
+	}
+	focus = {
+		id = SOV_The_Euroasian_Defense_Pact
+		icon = GFX_goal_focus_SOV_euroasia
+		cost = 20
+		prerequisite = {
+			focus = SOV_China_Joins_KOMINFORM
+		}
+		prerequisite = {
+			focus = SOV_India_Joins_KOMINFORM
+		}
+		prerequisite = {
+			focus = SOV_The_Warsaw_Pact
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = SOV_The_Euroasian_Defense_Pact_tt
+			hidden_effect = {
+			dismantle_faction = yes
+			create_faction = "The Euro-Asian Defense Pact"
+			add_to_faction = BUL
+			add_to_faction = HUN
+			add_to_faction = CZE
+			add_to_faction = POL
+			add_to_faction = ALB
+			add_to_faction = ROM
+			add_to_faction = DDR
+			add_to_faction = PRC
+			add_to_faction = RAJ
+			}
+			add_political_power = 250
+			
+		}
+
+	}
+	focus = {
+		id = SOV_Hunter_Fleets
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = SOV_Uboot_Improvements
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				uses = 1
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Nuclear_Submarines
+		icon = GFX_goal_focus_nuclear_submarines
+		cost = 10
+		prerequisite = {
+			focus = SOV_Hunter_Fleets
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = SOV_nucl_subs_unlocked
+		}
+	}
+	focus = {
+		id = SOV_offer_development
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = SOV_Soviet_Agricultural_Board
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			RAJ = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_opinion_modifier = { target = RAJ modifier = SOV_offer_developement }
+			RAJ = {
+				add_opinion_modifier = { target = SOV modifier = SOV_offer_developement }
+			}
+			
+		}
+
+	}
+}

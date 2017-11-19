@@ -1,0 +1,24 @@
+state={
+	id=772
+	name="STATE_772"
+	resources={
+		aluminium=96
+		rubber=22
+	}
+	provinces={
+		1909 4957 5039 8008 12802 12858 
+	}
+	history={
+		owner = FWA
+		add_core_of = FWA
+		add_core_of = GUI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1909 3
+		}
+	}
+	manpower=1000000
+	state_category=rural
+}

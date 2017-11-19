@@ -1,0 +1,9 @@
+
+supply_area={
+	id=133
+	name="SUPPLYAREA_133" # Mali
+	value=6
+	states={
+		556 774 
+	}
+}

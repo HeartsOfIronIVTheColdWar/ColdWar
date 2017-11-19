@@ -1,0 +1,300 @@
+ideas = {
+
+	foreign_military_advisor_laws = { 
+		law = yes
+
+		no_advisors = {
+						
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+
+			}
+
+			modifier = {
+				
+			}
+			
+			ai_will_do = {
+   				factor = 0
+   			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+		
+		
+		us_advisors = {
+						
+			cost = 250
+			removal_cost = -1
+			
+			available = {
+				NOT = { 
+					is_in_faction_with = SOV
+				}
+				NOT = { 
+						tag = USA
+				}
+				NOT = { 
+						tag = SOV
+				}
+				NOT = { 
+						tag = ENG
+				}
+				NOT = { 
+						tag = PRC
+				}
+				NOT = { 
+						tag = FRA
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				
+				democratic_drift = 0.02
+				democratic_acceptance = 50
+				
+			}
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 3
+					has_government = democratic
+				}
+				
+				modifier = {
+					factor = 0
+					has_government = communism
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		ussr_advisors = {
+						
+			cost = 250
+			removal_cost = -1
+			
+			available = {
+				NOT = { 
+					is_in_faction_with = USA
+				}
+				NOT = { 
+						has_idea = nato_idea
+				}
+				NOT = { 
+						tag = USA
+				}
+				NOT = { 
+						tag = SOV
+				}
+				NOT = { 
+						tag = ENG
+				}
+				NOT = { 
+						tag = PRC
+				}
+				NOT = { 
+						tag = FRA
+				}
+			}
+
+			modifier = {
+				training_time_army_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.15
+				
+				communism_drift = 0.02
+				communism_acceptance = 50
+				
+			}
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 0
+					has_government = democratic
+				}
+				
+				modifier = {
+					factor = 3
+					has_government = communism
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		uk_advisors = {
+						
+			cost = 250
+			removal_cost = -1
+			
+			available = {
+				NOT = { 
+					is_in_faction_with = SOV
+				}
+				NOT = { 
+						tag = USA
+				}
+				NOT = { 
+						tag = SOV
+				}
+				NOT = { 
+						tag = ENG
+				}
+				NOT = { 
+						tag = PRC
+				}
+				NOT = { 
+						tag = FRA
+				}
+			}
+
+			modifier = {
+				army_org_factor = 0.1 
+				local_resources_factor = 0.25
+				trade_opinion_factor = 0.5 
+				
+				
+				democratic_drift = 0.02
+				democratic_acceptance = 50
+				
+			}
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 3
+					has_government = democratic
+				}
+				
+				modifier = {
+					factor = 0
+					has_government = communism
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		france_advisors = {
+						
+			cost = 250
+			removal_cost = -1
+			
+			available = {
+				NOT = { 
+					is_in_faction_with = SOV
+				}
+				NOT = { 
+						tag = USA
+				}
+				NOT = { 
+						tag = SOV
+				}
+				NOT = { 
+						tag = ENG
+				}
+				NOT = { 
+						tag = PRC
+				}
+				NOT = { 
+						tag = FRA
+				}
+			}
+
+			modifier = {
+				global_building_slots_factor = 0.2
+				local_resources_factor = 0.25
+				production_speed_air_base_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+				
+				democratic_drift = 0.02
+				democratic_acceptance = 50
+				
+			}
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 3
+					has_government = democratic
+				}
+				
+				modifier = {
+					factor = 0
+					has_government = communism
+				}
+   			}
+			
+			cancel_if_invalid = no
+		}
+		
+		prc_advisors = {
+						
+			cost = 250
+			removal_cost = -1
+			
+			available = {
+				NOT = { 
+					is_in_faction_with = USA
+				}
+				NOT = { 
+						has_idea = nato_idea
+				}
+				NOT = { 
+						tag = USA
+				}
+				NOT = { 
+						tag = SOV
+				}
+				NOT = { 
+						tag = ENG
+				}
+				NOT = { 
+						tag = PRC
+				}
+				NOT = { 
+						tag = FRA
+				}
+			}
+
+			modifier = {
+				conscription = 0.03
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				MONTHLY_POPULATION = 0.35
+				
+				communism_drift = 0.02
+				communism_acceptance = 50
+				
+				
+			}
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 0
+					has_government = democratic
+				}
+				
+				modifier = {
+					factor = 3
+					has_government = communism
+				}
+   			}
+			
+			
+			cancel_if_invalid = no
+		}
+		
+	}
+}

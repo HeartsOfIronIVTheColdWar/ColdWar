@@ -1,0 +1,72 @@
+units = {
+	
+	division = {			
+		name = "Chinese Volunteers 1"		
+		location = 11835
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 2"		
+		location = 9918
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 3"		
+		location = 9795
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 4"		
+		location = 11828
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 5"		
+		location = 6963
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 6"		
+		location = 9899
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 7"		
+		location = 3803
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 8"		
+		location = 3860
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+
+	division = {			
+		name = "Chinese Volunteers 9"		
+		location = 898
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	
+	division = {			
+		name = "Chinese Volunteers 10"		
+		location = 6944
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+}

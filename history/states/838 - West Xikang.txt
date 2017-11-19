@@ -1,0 +1,28 @@
+
+state={
+	id=838
+	name="STATE_838"
+	manpower = 1000000
+	
+	state_category = rural
+
+	history={
+		owner = TIB
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = TIB
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		1951.10.1 = {
+			owner = PRC
+			controller = PRC
+		}
+	}
+
+	provinces={
+		4407 5018 5080 5102 8041 8059 10741 10856
+	}
+}

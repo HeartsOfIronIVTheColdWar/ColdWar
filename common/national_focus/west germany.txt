@@ -1,0 +1,1058 @@
+focus_tree = {
+	id = WGR_WGR
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WGR
+		}
+	}
+	default = no
+	
+	focus = {
+		id = WGR_repair_the_autobahns
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		x = 2
+		y = 0
+		
+		completion_reward = {
+			add_ideas = repair_the_autonahn
+		}
+
+	}
+	focus = {
+		id = WGR_wiederbewaffnung
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		x = 9
+		x = 9
+		y = 0
+		
+		available = {
+			has_global_flag = KOREA_WAR_HAPPENED
+		}
+		
+		completion_reward = {
+			USA = {
+				country_event = {
+						id = WGR_WGR.1
+						days = 4
+					}
+				}
+		}
+
+	}
+	focus = {
+		id = WGR_reaffirm_basic_law
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 24
+		y = 0
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = WGR_agrarian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = WGR_repair_the_autobahns
+		}
+		x = 1
+		y = 1
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_incorporate_the_bundesbank
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = WGR_repair_the_autobahns
+		}
+		x = 3
+		y = 1
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bundesbank_1
+				add_idea = bundesbank_2
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_foreign_construction_expertise
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = WGR_incorporate_the_bundesbank
+			focus = WGR_agrarian_industry
+		}
+		x = 1
+		y = 2
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_foreign_expertise
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+		
+
+	}
+	focus = {
+		id = WGR_encourage_new_designs
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = WGR_incorporate_the_bundesbank
+			focus = WGR_agrarian_industry
+		}
+		x = 3
+		y = 2
+		
+		completion_reward = {
+			remove_ideas = WGR_paperclip
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = WGR_foreign_equipment
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_wiederbewaffnung
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = USA }
+			add_equipment_to_stockpile = { type = support_equipment amount = 10000 producer = USA }
+		}
+
+	}
+	focus = {
+		id = WGR_german_logistics
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_equipment
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = WGR_industrial_wiederbewaffnung
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_construction_expertise
+			focus = WGR_encourage_new_designs
+			focus = WGR_german_logistics
+		}
+
+		x = 2
+		y = 3
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+					if = {
+
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				if = {
+
+					add_building_construction = {
+						type = arms_factory 
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = WGR_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = WGR_industrial_wiederbewaffnung
+		}
+		x = 1
+		y = 4
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_map
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = WGR_military_industry
+		}
+		x = 0
+		y = 5
+
+	}
+	focus = {
+		id = WGR_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = WGR_industrial_wiederbewaffnung
+		}
+		x = 3
+		y = 4
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+
+	}
+	focus = {
+		id = WGR_reform_the_bundesbank 
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = WGR_civilian_industry
+		}
+		x = 4
+		y = 5
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bundesbank_2
+				add_idea = bundesbank_3
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_foreign_divisions
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_wiederbewaffnung
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = WGR_expand_the_bundesgrenzschutz
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_divisions
+		}
+		x = 9
+		y = 2
+		
+		completion_reward = {
+			add_ideas = bundesgrenzschutz
+		}
+
+	}
+	focus = {
+		id = WGR_volunteer_army
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_expand_the_bundesgrenzschutz
+		}
+		mutually_exclusive = {
+			focus = WGR_conscription
+		}
+		x = 8
+		y = 3
+		
+		completion_reward = {
+			add_ideas = volunteer_only
+		}
+
+	}
+	focus = {
+		id = WGR_conscription
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_expand_the_bundesgrenzschutz
+		}
+		mutually_exclusive = {
+			focus = WGR_volunteer_army
+		}
+		x = 10
+		y = 3
+		
+		completion_reward = {
+			add_ideas = limited_conscription
+			add_political_power = -75
+		}
+
+	}
+	focus = {
+		id = WGR_a_german_rifle
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_volunteer_army
+			focus = WGR_conscription
+		}
+		x = 7
+		y = 4
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_A_German_Rifle
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_armoured_legacy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_conscription
+			focus = WGR_volunteer_army
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = WGR_strategic_resistance
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_a_german_rifle
+			focus = WGR_armoured_legacy
+		}
+		mutually_exclusive = {
+			focus = WGR_nato_doctrine
+		}
+		x = 8
+		y = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_border_patrol
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_conscription
+			focus = WGR_volunteer_army
+		}
+		x = 9
+		y = 4
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bundesgrenzschutz
+				add_idea = bundesgrenzschutz_expanded
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_nato_doctrine
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_a_german_rifle
+			focus = WGR_armoured_legacy
+		}
+		mutually_exclusive = {
+			focus = WGR_strategic_resistance
+		}
+		x = 10
+		y = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_the_new_german_bundeswehr
+		icon = GFX_focus_wgr_bundeswehr
+		cost = 10
+		prerequisite = {
+			focus = WGR_strategic_resistance
+			focus = WGR_nato_doctrine
+		}
+		
+		prerequisite = {
+			focus = WGR_border_patrol
+		}
+
+		x = 9
+		y = 6
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bundesgrenzschutz_expanded
+				add_idea = a_new_bundeswehr
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_invite_us_advisors
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_divisions
+		}
+		mutually_exclusive = {
+			focus = WGR_invite_british_advisors
+		}
+		x = 11
+		y = 2
+		
+		completion_reward = {
+			add_ideas = us_advisors
+		}
+
+	}
+	focus = {
+		id = WGR_invite_british_advisors
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_divisions
+		}
+		mutually_exclusive = {
+			focus = WGR_invite_us_advisors
+		}
+		x = 13
+		y = 2
+				
+		completion_reward = {
+			add_ideas = uk_advisors
+		}
+
+	}
+	focus = {
+		id = WGR_the_leopard
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_armoured_legacy
+		}
+		x = 12
+		y = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_The_Leopard
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_german_msa
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_divisions
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = WGR_military_dockyards
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_german_msa
+		}
+		x = 13
+		y = 3
+		
+		completion_reward = {
+			navy_experience = 25
+		}
+
+	}
+	focus = {
+		id = WGR_naval_historical_team
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_german_msa
+		}
+		x = 15
+		y = 3
+		
+		completion_reward = {
+			navy_experience = 25
+		}
+
+	}
+	focus = {
+		id = WGR_bundesmarine 
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_naval_historical_team
+		}
+		x = 15
+		y = 4
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_Bundesmarine
+				bonus = 0.25
+				uses = 1
+				technology = marines
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_Submarines
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_bundesmarine 
+		}
+		mutually_exclusive = {
+			focus = WGR_destroyers
+		}
+		x = 14
+		y = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_Submarines
+				bonus = 0.50
+				uses = 1
+				category = ss_tech
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_something
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_Submarines
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = WGR_destroyers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_bundesmarine 
+		}
+		mutually_exclusive = {
+			focus = WGR_Submarines
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = WGR_marines
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_destroyers
+			focus = WGR_Submarines
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = WGR_subsurface_detection
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_destroyers
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = WGR_pilot_refresher
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_divisions
+		}
+		x = 18
+		y = 2
+		
+		complete_tooltip = {
+			air_experience = 25
+		}
+
+	}
+	focus = {
+		id = WGR_foreign_planes
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_pilot_refresher
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = WGR_airbases
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_planes
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = WGR_luftwaffe
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_foreign_planes
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = WGR_request_fighters
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_luftwaffe
+		}
+		mutually_exclusive = {
+			focus = WGR_request_bombers
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = WGR_request_bombers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_luftwaffe
+		}
+		mutually_exclusive = {
+			focus = WGR_request_fighters
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = WGR_close_air_support
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_request_fighters
+			focus = WGR_request_bombers
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = WGR_general_treaty
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_reaffirm_basic_law
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = WGR_reconcile_the_french
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_general_treaty
+		}
+		x = 20
+		y = 2
+		
+		completion_reward = {
+#			FRA = {
+#				add_opinion_modifier = { target = WGR modifier = 20 }
+#			}
+		}
+
+	}
+	focus = {
+		id = WGR_reconcile_the_british
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_general_treaty
+		}
+		x = 22
+		y = 2
+		
+		completion_reward = {
+#			ENG = {
+#				add_opinion_modifier = { target = WGR modifier = 20 }
+#			}
+		}
+
+	}
+	focus = {
+		id = WGR_saarland_refferendum
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_reconcile_the_french
+		}
+		prerequisite = {
+			focus = WGR_reconcile_the_british
+		}
+		x = 21
+		y = 3
+		
+		completion_reward = {
+			SAA = {
+				country_event = {
+					id = WGR_WGR.2
+					days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_recognition_for_pows
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_reaffirm_basic_law
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = WGR_bundesentschädigungsgesetz
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_reaffirm_basic_law
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = WGR_rhine_capitalism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_bundesentschädigungsgesetz
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = WGR_legacy_of_adenauer 
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_saarland_refferendum
+		}
+		prerequisite = {
+			focus = WGR_recognition_for_pows
+		}
+		prerequisite = {
+			focus = WGR_rhine_capitalism
+		}
+
+		x = 22
+		y = 5
+		
+		completion_reward = {
+			add_country_leader_trait = dictator
+		}
+
+	}
+	focus = {
+		id = WGR_european_coal_and_steel
+		icon = GFX_focus_wgr_coal_and_steel
+		cost = 10
+		prerequisite = {
+			focus = WGR_saarland_refferendum
+		}
+		prerequisite = {
+			focus = WGR_rhine_capitalism
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = WGR_one_nation
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_reaffirm_basic_law
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = WGR_one_state
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_one_nation
+		}
+		mutually_exclusive = {
+			focus = WGR_two_states
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = WGR_reaffirm_article_23
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_one_state
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = WGR_wirtschaftswunder
+		icon = GFX_focus_WGR_wirtschaftswunder
+		cost = 10
+		prerequisite = {
+			focus = WGR_military_constructions
+			focus = WGR_civilian_constructions
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = WGR_military_constructions
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = WGR_military_industry
+		}
+		prerequisite = {
+			focus = WGR_civilian_industry
+		}
+		mutually_exclusive = {
+			focus = WGR_civilian_constructions
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = WGR_civilian_constructions
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = WGR_civilian_industry
+		}
+		prerequisite = {
+			focus = WGR_military_industry
+		}
+		mutually_exclusive = {
+			focus = WGR_military_constructions
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = WGR_support_teams
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_a_german_rifle
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = WGR_schutz
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_the_new_german_bundeswehr
+		}
+		prerequisite = {
+			focus = WGR_strategic_resistance
+		}
+		x = 8
+		y = 7
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = a_new_bundeswehr
+				add_idea = bundeswehr_schutz
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_befreier
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_the_new_german_bundeswehr
+		}
+		prerequisite = {
+			focus = WGR_nato_doctrine
+		}
+		x = 10
+		y = 7
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = a_new_bundeswehr
+				add_idea = bundeswehr_befreier
+			}
+		}
+
+	}
+	focus = {
+		id = WGR_two_states
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_one_nation
+		}
+		mutually_exclusive = {
+			focus = WGR_one_state
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = WGR_recognize_east_germany
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = WGR_two_states
+		}
+		x = 27
+		y = 3
+
+	}
+}

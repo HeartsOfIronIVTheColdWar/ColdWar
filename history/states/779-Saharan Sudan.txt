@@ -1,0 +1,21 @@
+
+state={
+	id=779
+	name="STATE_779"
+	history={
+		owner = ENG
+		add_core_of = SUD
+		add_claim_by = EGY
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+	provinces={
+		7987 8103 10900
+	}
+	manpower=1000000
+	state_category=rural
+	impassable = yes
+}

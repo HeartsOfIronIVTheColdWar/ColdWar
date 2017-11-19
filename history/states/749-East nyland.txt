@@ -1,0 +1,28 @@
+state={
+	id=749
+	name="STATE_749"
+	provinces={
+		3083 6066 6108 9194 11211 
+	}
+	history={
+		owner = FIN
+		victory_points = {
+			3083 1 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 2
+			air_base = 5
+			3083 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = FIN
+		add_core_of = SWE
+	}
+	manpower=161000
+	state_category=large_town
+}

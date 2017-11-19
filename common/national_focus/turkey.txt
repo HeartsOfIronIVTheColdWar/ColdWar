@@ -1,0 +1,1931 @@
+focus_tree = {
+	id = TUR_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = TUR
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = "Strengthen the Government"
+		icon = GFX_goal_generic_demand_territory
+		x = 5
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+#	focus = {
+#		id = "Workers Revolution"
+#		icon = GFX_goal_support_communism
+#		prerequisite = { focus = "Strengthen the Government" }
+#		mutually_exclusive = { focus = "People right to rule themselves"  }
+#		x = 3
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			TUR = {
+##				add_opinion_modifier = { target = SOV modifier = ger_tur_diplomacy_focus }
+##		}
+#	}
+#}
+#	focus = {
+#		id = "People right to rule themselves"
+#		icon = GFX_goal_support_democracy
+#		prerequisite = { focus = "Strengthen the Government" }
+#		x = 7
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			TUR = {
+#				add_opinion_modifier = { target = USA modifier = ger_tur_diplomacy_focus }
+#		}
+#	}
+#}
+#focus = {
+#		id = "USA Trade Agreement"
+#		icon = GFX_goal_support_democracy
+#		prerequisite = { focus = "People right to rule themselves" }
+#		x = 9
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#		completion_reward = {
+##			add_ideas = liberty_ethos_focus
+#		}
+#	}
+#	focus = {
+#		id = "Meet Stalin"
+#		icon = GFX_goal_support_communism
+#		prerequisite = { focus = "Workers Revolution" }
+#		x = 1
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#		completion_reward = {
+##			add_ideas = internationalism
+##			add_ideas = collectivist_ethos_focus
+#		}
+#	}
+#focus = {
+#		id = "Stalin Nuclear Program"
+#		icon = GFX_goal_generic_secret_weapon
+#		prerequisite = { focus = "Meet Stalin" }
+#		x = 1
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = nuclear
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#focus = {
+#		id = "Capitalist Ideals"
+#		icon = GFX_goal_generic_military_deal
+#		prerequisite = { focus = "USA Trade Agreement" }
+#		x = 9
+#		y = 3
+#		cost = 10
+#		available_if_capitulated = yes
+#		completion_reward = {
+##			USA = { 
+##				if = {
+##					limit = { NOT = { has_government = autocratic } }
+##					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
+##				}
+##			}
+##			ENG = { 
+##				if = {
+##					limit = { NOT = { has_government = autocratic } }
+##					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
+##				}
+##			}
+##			FRA = { 
+##				if = {
+##					limit = { NOT = { has_government = autocratic } }
+##					add_opinion_modifier = { target = TUR modifier = Capitalist_Influence } 
+##				}
+##			}
+##			every_other_country = {
+##				limit = { has_government = communism }
+##				add_opinion_modifier = { target = TUR modifier = Democratic_Influence }
+##			}
+#		}
+#
+#}
+#focus = {
+#		id = "Support NATO"
+#		icon = GFX_goal_anschluss
+#		available = {
+#			is_puppet = no
+#			has_government = democratic
+#			ENG = {
+#				exists = yes
+#				has_government = democratic
+#			}
+#			NOT = { has_war_with = ENG }
+#		}
+#		bypass = {
+#			is_in_faction_with = USA
+#		}
+#	 	prerequisite = { focus = "Reinforce Democracy" }
+#		x = 7
+#		y = 5
+#		cost = 20
+#
+#		available_if_capitulated = yes
+#
+#		ai_will_do = {
+#			factor = 0.9
+#
+#			modifier = {
+#				factor = 2
+#				ai_irrationality < 15
+#			}
+#			modifier = {
+#				factor = 2
+#				ai_irrationality < 20
+#			}
+#			modifier = {
+#				factor = 0.5
+#				ai_irrationality > 30
+#			}
+#		}
+#		completion_reward = {
+#			USA = { country_event = { id = usa.42 }
+#		}
+#	}
+#}
+#	focus = {
+#		id = "Reinforce Democracy"
+#		icon = GFX_goal_generic_propaganda
+#		prerequisite = { focus = "Capitalist Ideals" }
+#		x = 9
+#		y = 4
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			add_ideas = indoctrination_focus
+#			add_political_power = 150
+#		}
+#	}
+#
+#	focus = {
+#		id = "Avoid Conflict"
+#		icon = GFX_goal_generic_neutrality_focus
+#		prerequisite = { focus = "Strengthen the Government" }
+#		mutually_exclusive = { focus = "People right to rule themselves"  }
+#		mutually_exclusive = { focus = "Workers Revolution"  }
+#		x = 5
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_political_power = 150
+#		}
+#	}
+#	focus = {
+#		id = "Fortify"
+#		icon = GFX_goal_generic_defence
+#		prerequisite = { focus = "Avoid Conflict" }
+#		x = 5
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			add_ideas = deterrence
+#		}
+#	}
+#	focus = {
+#		id = "Anti-War Propraganda"
+#		icon = GFX_goal_generic_propaganda
+#		prerequisite = { focus = "Fortify" }
+#		x = 5
+#		y = 4
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			add_ideas = indoctrination_focus
+#			add_political_power = 150
+#		}
+#	}
+#	focus = {
+#		id = "Non-Agression Pacts"
+#		icon = GFX_goal_generic_propaganda
+#		prerequisite = { focus = "Anti-War Propraganda" }
+#		available = { 
+#			OR = { 
+#				threat > 0.45
+#				has_war = yes 
+#			}
+#		}
+#
+#		continue_if_invalid = yes
+#		
+#		x = 5
+#		y = 5
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			add_ideas = why_we_fight_focus
+#			hidden_effect = {
+#				if = {
+#					set_rule = { can_create_factions = yes }
+#				}			
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Alliance Research"
+#		icon = GFX_goal_generic_scientific_exchange
+#		prerequisite = { focus = "Non-Agression Pacts" focus = "Support NATO" focus = "Join Comintern" }
+#		available = {
+#			has_war = yes
+#			is_in_faction = yes
+#			OR = {
+#				num_of_factories > 50
+#				any_other_country = {
+#					is_in_faction_with = ROOT
+#					num_of_factories > 50
+#				}
+#			}
+#		}		
+#		x = 5
+#		y = 6
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			if = {
+#				limit = {
+#					original_research_slots < 3
+#				}
+#				add_research_slot = 1
+#			}
+#			if = {
+#				limit = {
+#					original_research_slots > 2
+#				}
+#				add_tech_bonus = {
+#					name = electronics_bonus
+#					bonus = 0.5
+#					uses = 1
+#					category = electronics
+#				}
+#				add_tech_bonus = {
+#					name = industrial_bonus
+#					bonus = 0.5
+#					uses = 1
+#					category = industry
+#				}	
+#				add_tech_bonus = {
+#					name = infantry_weapons_bonus
+#					bonus = 0.5
+#					uses = 1
+#					category = infantry_weapons
+#					category = artillery
+#				}				
+#			}
+#		}
+#	}
+#focus = {
+#		id = "Socialist Ideals"
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		prerequisite = { focus = "Stalin Nuclear Program" }
+#		x = 1
+#		y = 4
+#		cost = 30
+#		ai_will_do = {
+#			factor = 0.5
+#
+#			modifier = {
+#				has_government = democratic
+#				factor = 0
+#			}
+#
+#			modifier = {
+#				factor = 5
+#				ai_irrationality > 25
+#			}
+#
+#			modifier = {
+#				factor = 5
+#				ai_irrationality > 35
+#			}
+#
+#			modifier = {
+#				factor = 2
+#				ai_irrationality > 40
+#			}
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			every_other_country = {
+#				limit = { has_government = autocratic }
+#				add_opinion_modifier = { target = SOV modifier = anti_capitalist_diplomacy_focus }
+#			}
+#			USA = { 
+#				if = {
+#					limit = { NOT = { has_government = communism } }
+#					add_opinion_modifier = { target = TUR modifier = anti_capitalist_diplomacy_capitalists } 
+#				}
+#			}
+#			ENG = {
+#				if = { 
+#					limit = { NOT = { has_government = communism } }
+#					add_opinion_modifier = { target = TUR modifier = anti_capitalist_diplomacy_capitalists } 
+#				}
+#			}
+#			FRA = { 
+#				if = {
+#					limit = { NOT = { has_government = communism } }
+#					add_opinion_modifier = { target = TUR modifier = anti_capitalist_diplomacy_capitalists } 
+#				}
+#			}
+#		}
+#	}
+#focus = {
+#		id = "Join Comintern"
+#		icon = GFX_goal_anschluss
+#		available = {
+#			is_puppet = no
+#			has_government = democratic
+#			ENG = {
+#				exists = yes
+#				has_government = democratic
+#			}
+#			NOT = { has_war_with = ENG }
+#		}
+#		bypass = {
+#			is_in_faction_with = SOV
+#		}
+#	 	prerequisite = { focus = "Socialist Ideals" }
+#		x = 3
+#		y = 5
+#		cost = 20
+#
+#		available_if_capitulated = yes
+#
+#		ai_will_do = {
+#			factor = 0.9
+#
+#			modifier = {
+#				factor = 2
+#				ai_irrationality < 15
+#			}
+#			modifier = {
+#				factor = 2
+#				ai_irrationality < 20
+#			}
+#			modifier = {
+#				factor = 0.5
+#				ai_irrationality > 30
+#			}
+#		}
+#		completion_reward = {
+#			SOV = { country_event = { id = sov.42 }
+#		}
+#	}
+#}
+#focus = {
+#		id = "Modernise the City"
+#		icon = GFX_goal_generic_production
+#		x = 15
+#		y = 0
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		complete_tooltip = {
+#			every_state = {
+#				add_building_construction = {
+#					type = infrastructure
+#					level = 3
+#					instant_build = yes
+#				}
+#			}
+#		}
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = { 
+#					free_building_slots = {
+#						building = infrastructure
+#						size > 2
+#					}
+#					state_population > 1000000
+#				}
+#				add_building_construction = {
+#					type = infrastructure
+#					level = 3
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_controlled_state = {
+#				limit = { 
+#					free_building_slots = {
+#						building = infrastructure
+#						size > 2
+#					}
+#					state_population > 1000000
+#				}
+#				add_building_construction = {
+#					type = infrastructure
+#					level = 3
+#					instant_build = yes
+#				}
+#			}
+#			random_owned_controlled_state = {
+#				limit = { 
+#					free_building_slots = {
+#						building = infrastructure
+#						size > 2
+#					}
+#					state_population > 1000000
+#				}
+#				add_building_construction = {
+#					type = infrastructure
+#					level = 3
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#
+#focus = {
+#	id = "Expand Land"
+#	icon = GFX_goal_generic_construct_infrastructure
+#	x = 12
+#	y = 1
+#	cost = 10
+#	prerequisite = { focus = "Modernise the City" }
+#	available_if_capitulated = yes
+#	completion_reward = {
+#			every_state = {
+#				add_extra_state_shared_building_slots = 1	
+#			}			
+#		}
+#	}
+#focus = {
+#	id = "Highways"
+#	icon = GFX_goal_generic_construct_infrastructure
+#	x = 12
+#	y = 2
+#	cost = 25
+#	prerequisite = { focus = "Expand Land" }
+#	available_if_capitulated = yes
+#	completion_reward = {
+#			every_state = {
+#				add_extra_state_shared_building_slots = 2	
+#			}			
+#		}
+#	}
+#focus = {
+#		id = "Industrial Expansion"
+#		icon = GFX_goal_generic_construct_civ_factory
+#		x = 14
+#		y = 1
+#		cost = 10
+#		ai_will_do = {
+#			factor = 5
+#		}
+#		prerequisite = { focus = "Modernise the City" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					industrial_complex > 0
+#					free_building_slots = {
+#						building = industrial_complex
+#						size > 1
+#						include_locked = yes
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = industrial_complex
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Factory Construction"
+#		icon = GFX_goal_generic_construct_civ_factory
+#		x = 14
+#		y = 2
+#		cost = 10
+#		ai_will_do = {
+#			factor = 5
+#		}
+#		prerequisite = { focus = "Industrial Expansion" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					industrial_complex > 0
+#					free_building_slots = {
+#						building = industrial_complex
+#						size > 1
+#						include_locked = yes
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = industrial_complex
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Mass Industry"
+#		icon = GFX_goal_generic_construct_civ_factory
+#		x = 14
+#		y = 3
+#		cost = 10
+#		ai_will_do = {
+#			factor = 5
+#		}
+#		prerequisite = { focus = "Factory Construction" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					industrial_complex > 0
+#					free_building_slots = {
+#						building = industrial_complex
+#						size > 1
+#						include_locked = yes
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = industrial_complex
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Defense Industry"
+#		icon = GFX_goal_generic_construct_mil_factory
+#		x = 16
+#		y = 1
+#		cost = 10
+#		ai_will_do = {
+#			factor = 5
+#		}
+#		prerequisite = { focus = "Modernise the City" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					arms_factory > 0
+#					free_building_slots = {
+#						building = arms_factory
+#						size > 1
+#						include_locked = yes
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = arms_factory
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Mechanical and Chemical Industry Corporation"
+#		icon = GFX_goal_generic_construct_mil_factory
+#		x = 16
+#		y = 2
+#		cost = 10
+#		ai_will_do = {
+#			factor = 5
+#		}
+#		prerequisite = { focus = "Defense Industry" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					arms_factory > 0
+#					free_building_slots = {
+#						building = arms_factory
+#						size > 1
+#						include_locked = yes
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = arms_factory
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "MKEK Expansion"
+#		icon = GFX_goal_generic_construct_mil_factory
+#		x = 16
+#		y = 3
+#		cost = 10
+#		ai_will_do = {
+#			factor = 5
+#		}
+#		prerequisite = { focus = "Mechanical and Chemical Industry Corporation" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					arms_factory > 0
+#					free_building_slots = {
+#						building = arms_factory
+#						size > 1
+#						include_locked = yes
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = arms_factory
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Machinery Overhaul"
+#		icon = GFX_goal_generic_production
+#		x = 18
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#		prerequisite = { focus = "Modernise the City" }
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = industrial_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = industry
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Industrial Technology"
+#		icon = GFX_goal_generic_production
+#		x = 18
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#		prerequisite = { focus = "Machinery Overhaul" }
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = industrial_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = industry
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Ministry of Science, Industry and Technology"
+#		icon = GFX_focus_research
+#		prerequisite = { focus = "MKEK Expansion" }
+#		prerequisite = { focus = "Mass Industry" }
+#		x = 15
+#		y = 4
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_research_slot = 1
+#		}
+#	}
+#
+#	focus = {
+#		id = "Prepare for War"
+#		icon = GFX_goal_generic_allies_build_infantry
+#		x = 23
+#		y = 0
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 10
+#			}
+#		}
+#
+#	focus = {
+#		id = "Strategise"
+#		icon = GFX_goal_generic_forceful_treaty
+#		prerequisite = { focus = "Prepare for War" }
+#		x = 23
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 5
+#			add_tech_bonus = {
+#				name = land_doc_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = land_doctrine
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Strategise II"
+#		icon = GFX_goal_generic_forceful_treaty
+#		prerequisite = { focus = "Strategise" }
+#		x = 23
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 5
+#			add_tech_bonus = {
+#				name = land_doc_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = land_doctrine
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Super Soldiers"
+#		icon = GFX_goal_generic_special_forces
+#		prerequisite = { focus = "Strategise II" }
+#		x = 23
+#		y = 4
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = special_forces_bonus
+#				bonus = 0.5
+#				uses = 1
+#				technology = paratroopers
+#				technology = paratroopers2
+#				technology = marines
+#				technology = marines2
+#				technology = tech_mountaineers
+#				technology = tech_mountaineers2
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Militarise"
+#		icon = GFX_goal_generic_political_pressure
+#		prerequisite = { focus = "Strategise II" }
+#		x = 22
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##	#		if = {
+##				limit = { has_idea = neutrality_idea }
+##				remove_ideas = neutrality_idea
+##			}			
+##			add_ideas = militarism_focus
+#			army_experience = 20
+#		}
+#	}
+#	focus = {
+#		id = "Squad Training"
+#		icon = GFX_goal_generic_military_sphere
+#		prerequisite = { focus = "Strategise II" }
+#		x = 24
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			if = {
+##				limit = { has_idea = neutrality_idea }
+##				remove_ideas = neutrality_idea
+#			}			
+##			add_ideas = paramilitarism_focus
+#			army_experience = 20
+#			set_rule = { can_send_volunteers = yes }
+#		}
+#	}
+#	focus = {
+#		id = "Recruitment Proproganda"
+#		icon = GFX_goal_generic_more_territorial_claims
+#		prerequisite = { focus = "Prepare for War" }
+#		x = 21
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			add_ideas = military_youth_focus
+#			if = {
+#				limit = { has_government = autocratic }
+#				add_popularity = {
+#					ideology = autocratic
+#					popularity = 0.2
+#				}
+#			}
+#			if = {
+#				limit = { has_government = communism }
+#				add_popularity = {
+#					ideology = communism
+#					popularity = 0.2
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Nuclear Arsenal"
+#		icon = GFX_goal_generic_secret_weapon
+#		prerequisite = { focus = "Recruitment Proproganda" }
+#		x = 21
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = nuclear
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Foreign Military Operations"
+#		icon = GFX_goal_generic_allies_build_infantry
+#		prerequisite = { focus = "Prepare for War" }
+#		x = 25
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			add_ideas = volunteer_corps_focus
+#		}
+#	}
+#	focus = {
+#		id = "Volunteer Service"
+#		icon = GFX_goal_generic_more_territorial_claims
+#		prerequisite = { focus = "Foreign Military Operations" }
+#		x = 25
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+##			add_ideas = foreign_expeditions_focus
+#		}
+#	}
+#
+#
+#	focus = {
+#		id = "Army Research"
+#		icon = GFX_goal_generic_allies_build_infantry
+#		x = 32
+#		y = 0
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_weapons_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = infantry_weapons
+#				category = artillery
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Mobilize the Army"
+#		icon = GFX_goal_generic_army_motorized
+#		x = 30
+#		y = 1
+#		cost = 10
+#		prerequisite = { focus = "Army Research" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = motorized_bonus
+#				bonus = 0.75
+#				technology = motorised_infantry
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Mechanized Infantry"
+#		icon = GFX_goal_generic_build_tank
+#		x = 30
+#		y = 2
+#		cost = 10
+#		prerequisite = { focus = "Mobilize the Army" }
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = motorized_bonus
+#				bonus = 0.5
+#				technology = motorised_infantry
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Tank Research"
+#		icon = GFX_goal_generic_army_tanks
+#		prerequisite = { focus = "Mechanized Infantry" }
+#		x = 28
+#		y = 3
+#		cost = 20
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 5
+#			add_tech_bonus = {
+#				name = "Tank Bonus"
+#				bonus = 0.5
+#				uses = 2
+#				category = armor
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Tank Research II"
+#		icon = GFX_goal_generic_army_tanks
+#		prerequisite = { focus = "Tank Research" }
+#		x = 28
+#		y = 4
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 5
+#			add_tech_bonus = {
+#				name = "Tank Bonus"
+#				bonus = 0.5
+#				uses = 1
+#				category = armor
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Infantry Effort"
+#		icon = GFX_goal_generic_small_arms
+#		prerequisite = { focus = "Army Research" }
+#		x = 32
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_artillery_bonus
+#				ahead_reduction = 1
+#				uses = 1
+#				category = infantry_weapons
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Infantry Effort II"
+#		icon = GFX_goal_generic_small_arms
+#		prerequisite = { focus = "Infantry Effort" }
+#		x = 32
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_weapons_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = infantry_weapons
+#				category = artillery
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Artillery Effort"
+#		icon = GFX_goal_generic_army_artillery2
+#		prerequisite = { focus = "Infantry Effort II" }
+#		x = 32
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_weapons_bonus
+#				bonus = 0.5
+#				uses = 2
+#				category = artillery
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Electronic Research"
+#		icon = GFX_goal_generic_more_territorial_claims
+#		prerequisite = { focus = "Army Research" }
+#		x = 34
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 0.5
+#				uses = 2
+#				category = electronics
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Nuclear Warfare"
+#		icon = GFX_goal_generic_secret_weapon
+#		prerequisite = { focus = "Electronic Research" }
+#		x = 34
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = nuclear
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Doomsday Devices"
+#		icon = GFX_goal_generic_secret_weapon
+#		prerequisite = { focus = "Nuclear Warfare" }
+#		x = 36
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 0.5
+#				uses = 4
+#				category = electronics
+#				category = nuclear
+#				category = rocketry
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Spy Software"
+#		icon = GFX_goal_generic_more_territorial_claims
+#		prerequisite = { focus = "Doomsday Devices" }
+#		x = 36
+#		y = 4
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 0.5
+#				uses = 4
+#				category = electronics
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Expand the Turkish Air Force"
+#		icon = GFX_goal_generic_build_airforce
+#		x = 40
+#		y = 0
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		complete_tooltip = {
+#			air_experience = 25
+#			if = { limit = { has_country_flag = aviation_effort_AB }
+#				add_building_construction = {
+#					type = air_base
+#					level = 2
+#					instant_build = yes
+#				}
+#			}			
+#			add_tech_bonus = {
+#				name = air_doc_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = air_doctrine
+#			}			
+#		}
+#
+#		completion_reward = {
+#			air_experience = 25
+#
+#			if = {
+#				limit = {
+#					capital_scope = {
+#						NOT = {
+#							free_building_slots = {
+#								building = air_base
+#								size > 1
+#							}
+#						}
+#					}
+#				}
+#				random_owned_controlled_state = {
+#					limit = {
+#						free_building_slots = {
+#							building = air_base
+#							size > 1
+#						}
+#					}
+#					add_building_construction = {
+#						type = air_base
+#						level = 2
+#						instant_build = yes
+#					}
+#					ROOT = { set_country_flag = aviation_effort_AB }
+#				}
+#			}
+#			if = {
+#				limit = {
+#					capital_scope = {
+#						free_building_slots = {
+#							building = air_base
+#							size > 1
+#						}
+#					}
+#				}
+#				capital_scope = {
+#					add_building_construction = {
+#						type = air_base
+#						level = 2
+#						instant_build = yes
+#					}
+#					ROOT = { set_country_flag = aviation_effort_AB }
+#				}
+#			}
+#			add_tech_bonus = {
+#				name = air_doc_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = air_doctrine
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Airport Program"
+#		icon = GFX_goal_generic_build_airforce
+#		x = 40
+#		y = 1
+#		cost = 10
+#		prerequisite = { focus = "Expand the Turkish Air Force" }
+#
+#		available_if_capitulated = yes
+#
+#
+#		complete_tooltip = {
+#			air_experience = 25
+#			if = { limit = { has_country_flag = aviation_effort_AB }
+#				add_building_construction = {
+#					type = air_base
+#					level = 2
+#					instant_build = yes
+#				}
+#			}			
+#			add_tech_bonus = {
+#				name = air_doc_bonus
+#				bonus = 0.5
+#				uses = 1
+#				category = air_doctrine
+#			}			
+#		}
+#
+#		completion_reward = {
+#			air_experience = 25
+#
+#			if = {
+#				limit = {
+#					capital_scope = {
+#						NOT = {
+#							free_building_slots = {
+#								building = air_base
+#								size > 1
+#							}
+#						}
+#					}
+#				}
+#				random_owned_controlled_state = {
+#					limit = {
+#						free_building_slots = {
+#							building = air_base
+#							size > 1
+#						}
+#					}
+#					add_building_construction = {
+#						type = air_base
+#						level = 2
+#						instant_build = yes
+#					}
+#					ROOT = { set_country_flag = aviation_effort_AB }
+#				}
+#			}
+#			if = {
+#				limit = {
+#					capital_scope = {
+#						free_building_slots = {
+#							building = air_base
+#							size > 1
+#						}
+#					}
+#				}
+#				capital_scope = {
+#					add_building_construction = {
+#						type = air_base
+#						level = 2
+#						instant_build = yes
+#					}
+#					ROOT = { set_country_flag = aviation_effort_AB }
+#				}
+#			}
+#			}
+#		}
+#	focus = {
+#		id = "Women Pilots"
+#		icon = GFX_goal_generic_CAS
+#		prerequisite = { focus = "Airport Program" }
+#		x = 40
+#		y = 2
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			air_experience = 25
+#			set_rule = {
+#				can_generate_female_aces = yes
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Tactical Bomber Effort"
+#		icon = GFX_goal_generic_air_bomber
+#		prerequisite = { focus = "Expand the Turkish Air Force" }
+#		x = 38
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = bomber_bonus
+#				bonus = 0.5
+#				uses = 2
+#				category = tactical_bomber
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Jet Effort"
+#		icon = GFX_focus_rocketry
+#		prerequisite = { focus = "Tactical Bomber Effort" }
+#		x = 38
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = jet_rocket_bonus
+#				ahead_reduction = 0.5
+#				uses = 2
+#				category = jet_technology
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Strategic Bomber Effort"
+#		icon = GFX_goal_generic_air_bomber
+#		prerequisite = { focus = "Jet Effort" }
+#		x = 38
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = bomber_bonus
+#				bonus = 0.5
+#				uses = 2
+#				technology = strategic_bomber1
+#				technology = strategic_bomber2
+#				technology = strategic_bomber3
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "CAS Effort"
+#		icon = GFX_goal_generic_CAS
+#		prerequisite = { focus = "Expand the Turkish Air Force" }
+#		x = 42
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = CAS_bonus
+#				bonus = 0.5
+#				ahead_reduction = 1
+#				uses = 1
+#				category = cas_bomber
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Fighter Effort"
+#		icon = GFX_goal_generic_air_fighter
+#		prerequisite = { focus = "CAS Effort" }
+#		x = 42
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = fighter_bonus
+#				bonus = 0.5
+#				uses = 2
+#				technology = early_fighter
+#				technology = fighter1
+#				technology = fighter2
+#				technology = fighter3
+#				technology = heavy_fighter1
+#				technology = heavy_fighter2
+#				technology = heavy_fighter3
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Rocket Effort"
+#		icon = GFX_focus_rocketry
+#		prerequisite = { focus = "Fighter Effort" }
+#		x = 42
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = jet_rocket_bonus
+#				ahead_reduction = 0.5
+#				uses = 2
+#				category = rocketry
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#	focus = {
+#		id = "Turkish Naval Force"
+#		icon = GFX_goal_generic_construct_naval_dockyard
+#		x = 48
+#		y = 0
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		available = {
+#			any_state = {
+#				is_coastal = yes
+#				is_controlled_by = ROOT
+#			}
+#		}
+#
+#		complete_tooltip = {
+#			navy_experience = 25
+#			add_extra_state_shared_building_slots = 3
+#			add_building_construction = {
+#				type = dockyard
+#				level = 3
+#				instant_build = yes
+#			}
+#		}
+#		
+#		completion_reward = {
+#			navy_experience = 25
+#			if = {
+#				limit = {
+#					NOT = {
+#						any_owned_state = {
+#							dockyard > 0
+#							free_building_slots = {
+#								building = dockyard
+#								size > 2
+#								include_locked = yes
+#							}
+#						}
+#					}
+#					any_owned_state = {
+#						is_coastal = yes
+#					}
+#				}
+#				random_owned_controlled_state = {
+#					limit = {
+#						is_coastal = yes
+#						free_building_slots = {
+#							building = dockyard
+#							size > 2
+#							include_locked = yes
+#						}
+#					}
+#					add_extra_state_shared_building_slots = 3
+#					add_building_construction = {
+#						type = dockyard
+#						level = 3
+#						instant_build = yes
+#					}
+#				}
+#				set_country_flag = naval_effort_built
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_country_flag = naval_effort_built }
+#					any_owned_state = {
+#						dockyard > 0
+#						free_building_slots = {
+#							building = dockyard
+#							size > 2
+#							include_locked = yes
+#						}
+#					}
+#				}
+#				random_owned_controlled_state = {
+#					limit = {
+#						dockyard > 0
+#						free_building_slots = {
+#							building = dockyard
+#							size > 2
+#							include_locked = yes
+#						}
+#					}
+#					add_extra_state_shared_building_slots = 3
+#					add_building_construction = {
+#						type = dockyard
+#						level = 3
+#						instant_build = yes
+#					}
+#				}
+#				set_country_flag = naval_effort_built
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_country_flag = naval_effort_built }
+#					NOT = {
+#						any_owned_state = {
+#							free_building_slots = {
+#								building = dockyard
+#								size > 2
+#								include_locked = yes
+#							}
+#						}
+#					}
+#				}
+#				random_state = {
+#					limit = {
+#						controller = { tag = ROOT }
+#						free_building_slots = {
+#							building = dockyard
+#							size > 2
+#							include_locked = yes
+#						}
+#					}
+#					add_extra_state_shared_building_slots = 3
+#					add_building_construction = {
+#						type = dockyard
+#						level = 3
+#						instant_build = yes
+#					}
+#				}
+#			}			
+#		}
+#	}
+#
+#	focus = {
+#		id = "Unique Navy"
+#		icon = GFX_goal_generic_build_navy
+#		prerequisite = { focus = "Turkish Naval Force" }
+#		mutually_exclusive = { focus = large_navy }
+#		x = 46
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				all_owned_state = {
+#					OR = {
+#						is_coastal = no
+#						dockyard < 1
+#					}
+#				}
+#			}
+#		}
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = sub_op_bonus
+#				bonus = 0.5
+#				uses = 2
+#				technology = convoy_interdiction_ti
+#				technology = unrestricted_submarine_warfare
+#				technology = wolfpacks
+#				technology = advanced_submarine_warfare
+#				technology = combined_operations_raiding
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Naval Expansion"
+#		icon = GFX_goal_generic_navy_doctrines_tactics
+#		prerequisite = { focus = "Turkish Naval Force" }
+#		mutually_exclusive = { focus = flexible_navy }
+#		x = 50
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				all_owned_state = {
+#					OR = {
+#						is_coastal = no
+#						dockyard < 1
+#					}
+#				}
+#			}
+#		}
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = fleet_in_being_bonus
+#				bonus = 0.5
+#				uses = 2
+#				category = fleet_in_being_tree
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Submarine Expansion"
+#		icon = GFX_goal_generic_navy_submarine
+#		prerequisite = { focus = "Unique Navy" focus = "Naval Expansion" }
+#		x = 46
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				all_owned_state = {
+#					OR = {
+#						is_coastal = no
+#						dockyard < 1
+#					}
+#				}
+#			}
+#		}
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = ss_bonus
+#				bonus = 0.5
+#				ahead_reduction = 1
+#				uses = 1
+#				technology = early_submarine
+#				technology = basic_submarine
+#				technology = improved_submarine
+#				technology = advanced_submarine
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = "Cruiser Expansion"
+#		icon = GFX_goal_generic_navy_cruiser
+#		prerequisite = { focus = "Unique Navy" focus = "Naval Expansion" }
+#		x = 50
+#		y = 2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				all_owned_state = {
+#					OR = {
+#						is_coastal = no
+#						dockyard < 1
+#					}
+#				}
+#			}
+#		}
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = cr_bonus
+#				bonus = 0.5
+#				ahead_reduction = 1
+#				uses = 1
+#				technology = improved_light_cruiser
+#				technology = advanced_light_cruiser
+#				technology = improved_heavy_cruiser
+#				technology = advanced_heavy_cruiser
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = destroyer_effort
+#		icon = GFX_goal_generic_wolf_pack
+#		prerequisite = { focus = "Submarine Expansion" }
+#		x = 46
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				all_owned_state = {
+#					OR = {
+#						is_coastal = no
+#						dockyard < 1
+#					}
+#				}
+#			}
+#		}
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = dd_bonus
+#				bonus = 0.5
+#				ahead_reduction = 1
+#				uses = 1
+#				technology = early_destroyer
+#				technology = basic_destroyer
+#				technology = improved_destroyer
+#				technology = advanced_destroyer
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = capital_ships_effort
+#		icon = GFX_goal_generic_navy_battleship
+#		prerequisite = { focus = "Cruiser Expansion" }
+#		x = 50
+#		y = 3
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				all_owned_state = {
+#					OR = {
+#						is_coastal = no
+#						dockyard < 1
+#					}
+#				}
+#			}
+#		}
+#
+#		completion_reward = {
+#			navy_experience = 25
+#			add_tech_bonus = {
+#				name = capital_ships_bonus
+#				bonus = 0.5
+#				ahead_reduction = 1
+#				uses = 1
+#				technology = basic_battlecruiser
+#				technology = basic_battleship
+#				technology = improved_battleship
+#				technology = advanced_battleship
+#				technology = heavy_battleship
+#				technology = heavy_battleship2
+#				technology = early_carrier
+#				technology = basic_carrier
+#				technology = improved_carrier
+#				technology = advanced_carrier
+#			}
+#		}
+#	}
+#}

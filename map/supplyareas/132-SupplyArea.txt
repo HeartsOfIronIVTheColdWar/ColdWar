@@ -1,0 +1,8 @@
+supply_area={
+	id=132
+	name="SUPPLYAREA_132" # Senegambia
+	value=6
+	states={
+		272 701 
+	}
+}

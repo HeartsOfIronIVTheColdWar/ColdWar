@@ -1,0 +1,26 @@
+
+state={
+	id=830
+	name="STATE_830"
+	resources={
+		chromium=1.000
+		tungsten=5.000
+	}
+
+	history={
+		add_core_of = VIN
+		add_core_of = SVN
+		owner = VIN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		1302 4397 7280 9988 10016 10129 11909 11936 12297
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

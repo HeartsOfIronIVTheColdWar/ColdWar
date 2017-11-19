@@ -1,0 +1,9 @@
+
+supply_area={
+	id=137
+	name="SUPPLYAREA_137" # Central African Republic
+	value=6
+	states={
+		660 
+	}
+}

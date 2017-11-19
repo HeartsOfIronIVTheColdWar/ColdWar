@@ -1,0 +1,43 @@
+equipments = {
+
+	APC_1990_equipment = {
+		is_archetype = yes
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		type = mechanized
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		maximum_speed = 32
+		reliability = 0.7
+		
+		#Defensive Abilities
+		defense = 96
+		breakthrough = 29
+		hardness = 0.95
+		armor_value = 57
+
+		#Offensive Abilities
+		ap_attack = 57
+		air_attack = 8
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 18
+		resources = {
+			steel = 3
+			rubber = 1
+			oil = 2
+		}
+	}
+
+	# ~1990
+	APC_1990_equipment_1 = {
+		archetype = APC_1990_equipment
+		priority = 40
+		visual_level = 0
+	}
+}

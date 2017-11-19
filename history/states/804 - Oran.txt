@@ -1,0 +1,30 @@
+
+state={
+	id=804
+	name="STATE_804" # Oran
+	manpower = 2051000
+	state_category = town
+	
+	resources={
+		steel=20
+	}
+
+	history={
+		owner = ALG
+		add_core_of = ALG
+		victory_points = {
+			7132 5
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			7132 = {
+				naval_base = 6
+			}
+		}
+	}
+
+	provinces={
+		 1013 4150 4116 7132 11923 12760
+	}
+}

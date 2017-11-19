@@ -1,0 +1,26 @@
+
+state = {
+	id = 743
+	name = "STATE_743"
+	manpower = 134673
+	resources = {
+		tungsten = 26
+		steel = 40
+	}
+	
+	state_category = town
+	
+	history = {
+		owner = SWE
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
+			}
+	add_core_of = SWE
+	}		
+	provinces = {
+		46 168 184 3039 3108 3162 6063 6067 6126 6129 6185 9066 9141 9154 9171 11049 11052 11120 11123 11129 11148 11185 11187 11209 13117 
+	}
+}

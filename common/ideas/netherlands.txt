@@ -1,0 +1,335 @@
+ideas = {
+	country = {
+		
+	}
+	
+###ADVISORS AND STAFF###
+	
+#GOES FROM TOP TO BOTTOM:
+
+###ROW 1:###	
+#	###MOBILIZATION LAWS### - THIS IS A LAW
+#	###TRADE LAWS### - THIS IS A LAW
+#	###ECONOMY LAWS### - THIS IS A LAW
+#	###INDUSTRIAL COMPLEX - THIS IS A LAW
+#	###PRESS LAWS### - THIS IS A LAW
+#	###INDIVIDUAL FREEDOMS - THIS IS A LAW
+
+###ROW 2:###
+#	MINISTER OF INTERNAL AFFAIRS
+#	MINISTER OF INTERNATIONAL AFFAIRS
+#	INTELLIGENCE MINISTER
+#	EDUCATION MINISTER
+#	ECONOMIC MINISTER
+#	###FOREIGN MILITARY ADVISOR### - THIS IS A LAW
+
+###ROW 3:###
+#	TANK MANUFACTURER
+#	NAVAL MANUFACTURER
+#	AIRCRAFT MANUFACTURER
+#	MATERIEL MANUFACTURER
+#	INDUSTRIAL CONCERN
+#	THEORIST
+
+###ROW 4:###
+#	ARMY CHIEF
+#	NAVY CHIEF
+#	AIR CHIEF
+#	HIGH COMMAND
+#	HIGH COMMAND
+#	HIGH COMMAND
+	
+###ROW 1:###
+
+###ROW 2:###
+
+	### HEAD OF STATE ###
+	
+	minister_of_internal_affairs = {
+		
+		
+		
+	}
+	
+	###MINISTER OF INTERNATIONAL AFFAIRS###
+	
+	minister_of_international_affairs = {
+		
+		
+	}
+
+	###INTELLIGENCE MINISTER###
+	
+	intelligence_minister = {
+		
+		
+	}
+
+	###EDUCATION MINISTER###
+	
+	education_minister = {
+	
+
+	}
+	
+	###ECONOMIC MINISTER###
+	
+	economic_minister = {
+	
+	}
+	
+###ROW 3###
+	
+	###TANK MANUFACTURER###
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	###AIRCRAFT MANUFACTURER###
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		fokker = {
+			
+			picture = generic_air_manufacturer_3
+
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# fokker D.XXI fighter, not very effective vs armored aircraft but excellent otherwise
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		koolhoven = {
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# recon and fighter airplanes
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+		HOL_royal_dutch_shell = {
+			
+			allowed = {
+				original_tag = HOL
+			}
+
+			picture = generic_industrial_concern_1
+			
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		HOL_philips = {
+			
+			allowed = {
+				original_tag = HOL
+			}
+
+			picture = generic_electronics_concern_1
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	###MATERIEL MANUFACTURER###
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		HOL_DAF_trucks = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				tag = HOL
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		artillerie_inrichtingen = {
+			
+			picture = generic_artillery_manufacturer_1
+
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			equipment_bonus = {
+				# more research needed
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	
+		#hih_siderius = {
+		#		
+		#	picture = generic_artillery_manufacturer_2
+		#
+		#	
+		#	allowed = {
+		#		original_tag = HOL
+		#	}
+		#	
+		#	research_bonus = {
+		#		artillery = 0.10
+		#	}
+		#	
+		#	equipment_bonus = {
+		#		# artillery for coastral defence
+		#	}
+		#	
+		#	traits = { artillery_manufacturer }
+		#	
+		#	modifier = {
+		#	}
+		#}
+	}
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		nsm_amsterdam = {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = HOL
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# fast ships! go go go
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		#wilton_fijenoord = {
+		#	
+		#	picture = generic_naval_manufacturer_2
+		#
+		#	
+		#	allowed = {
+		#		original_tag = HOL
+		#	}
+		#	
+		#	research_bonus = {
+		#		naval_equipment = 0.10
+		#	}
+		#	
+		#	equipment_bonus = {
+		#		# submarines, light cruisers you name it!
+		#	}
+		#	
+		#	traits = { naval_manufacturer }
+		#	
+		#	modifier = {
+		#	}
+		#}
+		
+	}
+	
+	###THEORIST
+	
+	theorist = {	
+	
+	}
+
+###ROW 4:###
+
+	###ARMY CHIEF###
+	
+	army_chief = {
+		
+	}
+	
+	###NAVY CHIEF###
+	
+	navy_chief = {
+		
+	}
+	
+	###AIR CHEF###
+	
+	air_chief = {
+			
+	}
+	
+	###HIGH COMMAND###
+	
+	high_command = {
+		
+	}
+	
+}

@@ -1,0 +1,33 @@
+﻿add_namespace = marshallaid
+
+#EVENT FOR MARSHALL AID
+country_event = {
+	id = marshallaid.1
+	title = marshallaid.1.t
+	desc = marshallaid.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = marshallaid.1.a			
+		ai_chance = {
+			factor = 90
+		}
+		add_ideas = marshall_plan
+		
+		USA = {
+			country_event = { id = usa.25 days = 1 }
+		}
+	}
+
+	option = {
+		name = marshallaid.1.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		USA = {
+			country_event = { id = usa.26 days = 1 }
+		}
+	}
+}

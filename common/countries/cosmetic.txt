@@ -1,0 +1,52 @@
+
+JAP_USA = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+
+}
+
+MAL_UK = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+INS_HOL = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 255 179 96 }
+}
+MOR_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+ALG_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+TUN_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+FWA_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+FEA_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+MAD_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+CAM_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+LAO_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}
+SVN_FRA = {	
+	color = rgb { 90  125  230 }
+	color_ui = rgb { 255 255 255 }
+}

@@ -1,0 +1,303 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	
+	US_CW_dip_eff = { value = 50 }
+	
+	delclined_inv_to_NATO = { value = -25 }
+	
+	refused_co_op_treaty = { value = -100 }
+	
+	declines_peace_treaty = {value = -100 }
+	
+	western_leanings = {value = 50 }
+	
+	western_leanings_bad = {value = -50 }
+	
+	eastern_leanings = {value = 50 }
+	
+	eastern_leanings_bad = {value = -50 }
+	
+	FRA_state_first = {value = -25 }
+	
+	declines_peace_treaty = {value = -100 }
+	
+	SOV_Agricultural_board = {
+		value = 25
+	}
+	
+	SOV_offer_developement = {
+		value = 25
+	}
+
+	SOV_DDR_friendship = {
+		value = 25
+	}
+	
+	SOV_pact_friendship = {
+		value = 25
+	}
+	
+	SINO_SOV_defense_pact = {
+		value = 25
+	}
+	
+	pro_egypt = {
+		value = 50
+	}
+	
+	anti_egypt = {
+		value = -50
+	}
+	
+	pro_saudi = {
+		value = 50
+	}
+	
+	anti_saudi = {
+		value = -50
+	}
+	
+	rival_regional_power = {
+		value = -50
+	}
+	
+	sent_advisors = {
+		value = 50
+	}
+	
+	no_advisors = {
+		value = -50
+	}
+	
+	seeks_aid = {
+		value = 80
+	}
+
+	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -100
+	}
+
+	unstable_alliance = {
+		value = -10
+	}
+
+	holds_our_cores = {
+		value = -30
+	}
+	holds_our_claims = {
+		value = -15
+	}
+	claims_on_us = { 
+		value = -10
+	}
+	at_war_with_faction = {
+		value = -25
+	}
+	
+	justifying_war_goal = {
+		value = -10
+		min_trust = -10
+		days = 10
+		decay = 1
+	}
+
+	pact_against_us= {
+		value = -50
+	}
+
+	worse_pact_against_us= {
+		value = -75
+	}
+
+	protest_action_light = {
+		value = -10
+		months = 12
+		decay = 1
+	}
+
+	protest_action = {
+		value = -25
+		months = 12
+		decay = 1
+	}
+
+	protest_action_strong = {
+		value = -50
+		months = 12
+	}
+	
+	condemn_aggression = {
+		value = -50
+		months = 24
+	}
+	
+	western_betrayal = {
+		value = -50
+	}
+	
+	offered_support = {
+		value = 50
+		months = 24
+	}
+
+	improve_relation = {
+		value = 0
+		months = 0
+		decay = 3
+		max_trust = 100
+	}
+	
+	guarantee = {
+		value = 0
+	}
+	
+	guarantee = {
+		target = yes
+		value = 75
+	}
+	
+	betrayed_guarantee = {
+		value = -100
+		months = 36
+	}
+	
+	at_war = {
+		value = -75
+	}
+	
+	in_faction = {
+		value = 100
+	}
+	
+	military_access = {
+		value = 30
+	}
+	
+	non_aggression_pact = {
+		value = 25
+	}
+
+	fascists_in_government = {
+		value = 30
+	}
+
+	communists_in_government = {
+		value = 30
+	}
+
+	refused_help = {
+		value = -30
+		months = 36
+		decay = 1
+	}
+
+	took_stand_for_us = {
+		value = 50
+		decay = 1
+	}
+	
+	same_ruling_party = {
+		value = 20
+	}
+	
+	similar_ruling_party = {
+		value = 10
+	}
+	
+	different_party_types = {
+		value = -10
+	}
+	
+	long_term_trade_partner = {
+		value = 1
+	}
+	
+	puppet_opinion = 
+	{
+		value = 200
+	}
+
+	democratic_leanings_good = {
+		value = 30
+	}
+	democratic_leanings_bad = {
+		value = -30
+	}
+	communism_leanings_good = {
+		value = 30
+	}
+	communism_leanings_bad = {
+		value = -30
+	}
+	autocratic_leanings_good = {
+		value = 30
+	}
+	autocratic_leanings_bad = {
+		value = -30
+	}
+
+	FRA_ban_communism = {
+		value = -25
+	}
+
+	small_decrease = {
+		value = -10
+	}
+
+	medium_decrease = {
+		value = -25
+	}
+
+	large_decrease = {
+		value = -50
+	}
+
+	small_increase = {
+		value = 10
+	}
+
+	medium_increase = {
+		value = 25
+	}
+
+	large_increase = {
+		value = 50
+	}
+
+	##### TRADE MODIFIERS
+	embargo = {
+		trade = yes
+		value = -100
+	}
+	sanctions = {
+		trade = yes
+		value = -40
+	}
+	minor_sanctions = {
+		trade = yes
+		value = -20
+	}
+
+	unholy_alliance_opinion = {
+		value = 40
+	}
+	unholy_alliance_trade = {
+		trade = yes
+		value = 20
+	}
+
+	monroe_doctrine_trade = {
+		trade = yes
+		value = 5
+	}
+
+}	

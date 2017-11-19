@@ -1,0 +1,66 @@
+﻿add_namespace = japan
+
+#PEACE TREATY WITH USA
+country_event = {
+	id = japan.23
+	title = japan.23.t 
+	desc = japan.23.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.23.a
+		
+		add_ideas = ww2_reparations
+		
+		USA = {
+			country_event = {id = usa.30}
+		}
+	}
+	
+	option = {
+		name = japan.23.b
+		
+		add_opinion_modifier = {target = JAP modifier = declines_peace_treaty }
+
+		USA = {
+			country_event = {id = usa.31}
+		}
+	}
+}
+
+#TREATY WITH USA 
+country_event = {
+	id = japan.24
+	title = japan.24.t 
+	desc = japan.24.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.24.a
+		
+		give_military_access = USA
+		
+		USA = {
+			give_guarantee = JAP 
+		}
+		
+		USA = {
+			country_event = {id = usa.32}
+		}
+	}
+	
+	option = {
+		name = japan.24.b 
+		USA = {
+			add_opinion_modifier = {target = JAP modifier = refused_co_op_treaty }			
+		}
+		
+		USA = {
+			country_event = {id = usa.33}
+		}
+	}
+}

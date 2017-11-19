@@ -1,0 +1,31 @@
+
+state={
+	id=152
+	name="STATE_152"
+	resources={
+		steel=8.000
+		aluminium=1.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		victory_points = {
+			688 10 
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		688 3684 3703 6708 9665
+		3675 # from Tyrol
+	}
+	manpower=2275377
+	buildings_max_level_factor=1.000
+	state_category=city
+}

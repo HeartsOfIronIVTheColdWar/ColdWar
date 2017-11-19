@@ -1,0 +1,18 @@
+state={
+	id=796
+	name="STATE_796"
+	resources={
+		rubber=24
+	}
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = COG
+	}
+	provinces={
+		1950 2034 2073 2154 6027 8048 11934 12783 12808 12847 
+	}
+	manpower=1000000
+	state_category=rural

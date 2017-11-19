@@ -1,0 +1,44 @@
+﻿capital = 594
+
+oob = "null"
+
+# Starting tech
+set_technology = {
+
+}
+
+set_convoys = 0
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		autocratic = {
+			popularity = 100
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+	}
+	ruling_party = autocratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Li Zongren"
+	desc = "POLITICS_LI_ZONGREN_DESC"
+	picture = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

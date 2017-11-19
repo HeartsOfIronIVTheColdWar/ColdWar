@@ -1,0 +1,21 @@
+
+state={
+	id=827
+	name="STATE_827"
+
+	history={
+		owner = NKR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = NKR
+		add_core_of = KOR
+	}
+
+	provinces={
+		1148 4004
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=836
+	name="STATE_836"
+
+	history={
+		owner = ENG
+		add_core_of = NIE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		1932 1992 2025 8021 12817
+	}
+	manpower=10000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=366
+	name="SUPPLYAREA_366" # Zambia & Malawi
+	value=5
+	states={
+		545 802
+	}
+}

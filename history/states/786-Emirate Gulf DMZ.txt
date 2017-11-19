@@ -1,0 +1,21 @@
+state={
+	id=786
+	name="STATE_786"
+	resources={
+		oil=62
+	}
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+
+	}
+	provinces={
+		2057 4974 4968 5027 5058 7970 7995 8101 10850 10892 10901 10923 12749 12813
+	}
+	manpower=1000000
+	state_category=rural
+	impassable = yes
+}

@@ -1,0 +1,43 @@
+division_template {
+	name = "Commonwealth Volunteers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }	
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+units = {
+	division = {
+	name = English Volunteers
+	location = 1051
+	division_template = Commonwealth Volunteers
+	start_experience_factor = 0
+	}
+	division = {
+	name = Canadian Volunteers
+	location = 1051
+	division_template = Commonwealth Volunteers
+	start_experience_factor = 0
+	}
+	division = {
+	name = SA Volunteers
+	location = 1051
+	division_template = Commonwealth Volunteers
+	start_experience_factor = 0
+	}
+	division = {
+	name = ANZAC Volunteers 
+	location = 1051
+	division_template = Commonwealth Volunteers
+	start_experience_factor = 0
+	}
+}

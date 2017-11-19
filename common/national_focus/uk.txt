@@ -1,0 +1,152 @@
+focus_tree = {
+	id = coldwaruk
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	focus = {
+		id = ENG_end_rationing
+		icon = GFX_goal_generic_consumer_goods
+		cost = 0.00
+		x = 0
+		y = 0
+
+	}
+	focus = {
+		id = ENG_AWRE
+		icon = GFX_focus_research
+		cost = 0.00
+		x = 2
+		y = 0
+
+	}
+	focus = {
+		id = ENG_everest
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = ENG_coronation
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 0.00
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = ENG_special_relationship
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = ENG_postwar_consensus
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = ENG_north_sea_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = ENG_clean_air_act
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = ENG_spread_democracy
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		mutually_exclusive = {
+			focus = ENG_preserve_influence
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = ENG_preserve_influence
+		icon = GFX_focus_generic_home_defense
+		cost = 0.00
+		mutually_exclusive = {
+			focus = ENG_spread_democracy
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = ENG_motorways
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_end_rationing
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = ENG_operation_hurricane
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_AWRE
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = ENG_queens_speech
+		icon = GFX_goal_generic_propaganda
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_coronation
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = ENG_plan_G
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_queens_speech
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = ENG_US_mutual_defence_agreement
+		icon = GFX_goal_generic_military_deal
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_special_relationship
+		}
+		x = 10
+		y = 1
+
+	}
+}
