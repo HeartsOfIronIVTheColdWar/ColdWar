@@ -62,8 +62,11 @@ leader_traits = {
 	## INTERNAL MINISTER
 	###########################
 	
-	sec_ = {
-	
+	sec_secret_police_chief = {
+		political_power_gain = 0.1
+		decryption = 0.5
+
+		random = no
 	}
 	
 	sec_ = {
@@ -102,34 +105,44 @@ leader_traits = {
 	## INTELLIGENCE MINISTER
 	###########################
 	
-	int_ = {
-	
-	
+	int_decryption_specialist = {
+		decryption_factor = 0.6
+		research_time_factor = -0.025
+
+		random = no
 	}
 	
-	int_ = {
-	
-	
+	int_naval_intelligence = {
+		decryption_factor = 0.3
+		spotting_chance = 0.1
+
+		random = no
 	}
 	
-	int_ = {
-	
-	
+	int_dark_cloak = {
+		encryption_factor = 1
+
+		random = no
 	}
 	
-	int_ = {
-	
-	
+	int_counter_insurgency_master = {
+		special_forces_attack_factor = 0.2
+		enemy_partisan_effect = -0.2	
+		
+		random = no
 	}
 	
-	int_ = {
-	
-	
+	int_ideological_crusader = {
+		foreign_subversive_activites = -0.50
+		political_power_gain = 0.25
+		
+		random = no	
 	}
 	
-	int_ = {
-	
-	
+	int_clandestine_action = {
+		subversive_activites_upkeep = -0.60
+			
+		random = no
 	}
 	
 	int_ = {
@@ -277,4 +290,3 @@ leader_traits = {
 	}
 	
 }
-
