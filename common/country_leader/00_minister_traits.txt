@@ -62,14 +62,18 @@ leader_traits = {
 	## INTERNAL MINISTER
 	###########################
 	
-	sec_secret_police_chief = {
+	sec_secret_police = {
 		political_power_gain = 0.1
 		decryption = 0.5
 
 		random = no
 	}
 	
-	sec_ = {
+	sec_prince_of_terror = {
+		unity_factor = 0.15
+		enemy_partisan_effect = -0.5
+		
+		random = no
 	
 	}
 	
