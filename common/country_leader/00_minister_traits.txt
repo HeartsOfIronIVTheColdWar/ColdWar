@@ -74,7 +74,6 @@ leader_traits = {
 		enemy_partisan_effect = -0.5
 		
 		random = no
-	
 	}
 	
 	sec_ = {
