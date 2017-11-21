@@ -167,19 +167,25 @@ leader_traits = {
 	## EDUCATION MINISTER
 	###########################
 
-	edu_old school = {
+	edu_mass_education_investment = {
+		research_time_factor = -0.20
+		consumer_goods_factor = 0.05
 		
-		
+		random = no
 	}
 	
-	edu_ = {
+	edu_fondamental_research = {
+		production_speed_nuclear_reactor_factor = 0.40
+		production_speed_radar_station_factor = 0.40
 	
-	
+		random = no
 	}
 	
-	edu_ = {
+	edu_military_schools = {
+		army_leader_start_level = 2
+		army_org = 10
 	
-	
+		random = no
 	}
 	
 	edu_ = {
@@ -216,7 +222,7 @@ leader_traits = {
 	## ECONOMIC MINISTER
 	###########################
 	
-	eco_int_erventionist_minister = {
+	eco_interventionist_minister = {
 		production_factory_efficiency_gain_factor = -0.05
 		production_speed_industrial_complex_factor = 0.05
 		consumer_goods_factor = 0.1
