@@ -37,17 +37,25 @@ leader_traits = {
 	
 	for_trade_dealer = {
 		min_export = 0.1
-		trade_opinion_factor = 0.65
+		trade_opinion_factor = 0.50
 		
 		random = no
 	}
 	
-	for_ = {
-	
+	for_foreign_power_pawn = {
+		drift_defence_factor = -0.5
+		political_power_factor = -0.25
+		
+		random = no
 	}
 	
-	for_ = {
-	
+	for_compromiser = {
+		drift_defence_factor = -0.15
+		ai_focus_peaceful_factor = 0.5
+		ai_get_ally_desire_factor = 10
+		trade_opinion_factor = 0.2
+		
+		random = no	
 	}
 	
 	for_ = {
@@ -70,11 +78,10 @@ leader_traits = {
 	}
 	
 	sec_prince_of_terror = {
-		unity_factor = 0.15
-		enemy_partisan_effect = -0.5
+		drift_defence_factor = 0.2
+		resistance_tick = -0.3
 		
 		random = no
-	
 	}
 	
 	sec_ = {
@@ -110,7 +117,7 @@ leader_traits = {
 	###########################
 	
 	int_decryption_specialist = {
-		decryption_factor = 0.6
+		decryption_factor = 0.5
 		research_time_factor = -0.025
 
 		random = no
@@ -118,12 +125,12 @@ leader_traits = {
 	
 	int_naval_intelligence = {
 		decryption_factor = 0.3
-		spotting_chance = 0.1
+		spotting_chance = 0.15
 
 		random = no
 	}
 	
-	int_dark_cloak = {
+	int_cloak_in_the_shadow = {
 		encryption_factor = 1
 
 		random = no
@@ -144,12 +151,13 @@ leader_traits = {
 	}
 	
 	int_clandestine_action = {
-		subversive_activites_upkeep = -0.60
+		subversive_activites_upkeep = -0.50
+		encryption_factor = 0.1
 			
 		random = no
 	}
 	
-	int_easily_manipulated = {
+	int_blinded_and_manipulated = {
 		decryption_factor = -0.5
 		
 		random = no
@@ -177,9 +185,10 @@ leader_traits = {
 	}
 	
 	edu_fondamental_research = {
-		production_speed_nuclear_reactor_factor = 0.40
+		production_speed_nuclear_reactor_factor = 0.2
 		research_bonus = {
-			nuclear_tech = 0.10
+			nuclear = 0.15
+			electronics = 0.15
 		}
 	
 		random = no
@@ -187,20 +196,24 @@ leader_traits = {
 	
 	edu_military_schools = {
 		army_leader_start_level = 2
-		army_org = 10
+		army_org = 0.05
 	
 		random = no
 	}
 	
 	edu_conservative = {
-		research_time_factor = -0.1
+		research_time_factor = 0.25
 	
 		random = no
 	}
 	
-	edu_ = {
+	edu_space_pionneer = {
+		production_speed_rocket_site_factor = 0.2
+		research_bonus = {
+			rocketry = 0.20
+		}
 	
-	
+		random = no
 	}
 	
 	edu_ = {
