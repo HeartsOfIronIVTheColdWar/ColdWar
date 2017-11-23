@@ -163,21 +163,27 @@ leader_traits = {
 		random = no
 	}
 	
-	int_ = {
+	int_NO_NAME = {
+		decryption_factor = 0.5
+		encryption_factor = -0.5
 	
-	
+		random = no
 	}
 	
-	int_ = {
+	int_industrial_spy = {
+		decryption_factor = 0.2
+		research_bonus = {
+				industry = 0.10
+			}
 	
-	
+		random = no
 	}
 		
 	###########################
 	## EDUCATION MINISTER
 	###########################
 
-	edu_mass_education_investment = {
+	edu_mass_education_investor = {
 		research_time_factor = -0.20
 		consumer_goods_factor = 0.05
 		
@@ -273,7 +279,7 @@ leader_traits = {
 		random = no
 	}
 	
-	eco_planned_economy_partisan = {
+	eco_planned_economy = {
 		production_factory_max_efficiency_factor = 0.1
 		production_speed_buildings_factor = 0.05
 		consumer_goods_factor = 0.125
@@ -300,7 +306,7 @@ leader_traits = {
 		random = no
 	}
 	
-	eco_military_entrepreneur = {
+	eco_military_priority = {
 		ai_focus_war_production_factor = 0.5
 		industrial_capacity_factory = 0.1
 		production_speed_arms_factory_factor  = 0.1
