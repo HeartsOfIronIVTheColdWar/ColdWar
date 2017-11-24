@@ -68,22 +68,96 @@ ideas = {
 	### HEAD OF STATE ###
 	
 	minister_of_internal_affairs = {
+	
+		bechor_shalom_sheetrit = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
-		
+		eliyahu_sasson = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
 		
 	}
 	
 	###MINISTER OF INTERNATIONAL AFFAIRS###
 	
 	minister_of_international_affairs = {
+	
+		moshe_sharett = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
+		golda_meir = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 
 	###INTELLIGENCE MINISTER###
 	
 	intelligence_minister = {
+	
+		reuven_shiloah = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
+		isser_harel = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 
@@ -91,12 +165,89 @@ ideas = {
 	
 	education_minister = {
 	
+		zalman_shazar = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		david_remez = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		ben_zion_dinor = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 	}
 	
 	###ECONOMIC MINISTER###
 	
 	economic_minister = {
+	
+		eliezer_kaplan = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		peretz_bernstein = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pinchas_sapir = {
+			
+			allowed = {
+				original_tag = "ISR"
+			}
+			
+			traits = { backroom_backstabber staunch_constitutionalist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	
 	}
 	
@@ -108,6 +259,22 @@ ideas = {
 		
 		designer = yes
 		
+		ordnance_corps = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
+		
 	}
 	
 	###AIRCRAFT MANUFACTURER###
@@ -116,7 +283,48 @@ ideas = {
 		
 		designer = yes
 		
+		bedek_aviation_company = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
+		
 	}	
+	
+	###NAVAL MANUFACTURER###
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		israel_shipyards = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
+		
+		
+	}
 	
 	###INDUSTRIAL CONCERN###
 	
@@ -130,14 +338,21 @@ ideas = {
 			
 		designer = yes
 		
-	}
-	
-	###NAVAL MANUFACTURER###
-	
-	naval_manufacturer = {
-	
-		designer = yes
+		israel_weapon_industry = {
 		
+			picture = renault
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.10
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
 		
 	}
 	
