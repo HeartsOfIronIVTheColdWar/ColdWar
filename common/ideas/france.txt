@@ -17,6 +17,26 @@ ideas = {
 			}
 		}
 		
+		FRA_conscription = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.3
+				army_morale_factor = -0.20
+			}
+		}
+		
 		FRA_indochina = {
 			
 			allowed = {
@@ -386,13 +406,85 @@ ideas = {
 	
 	education_minister = {
 	
-
+		andre_marie = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { backroom_backstabber decryptological_genius }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		pierre_olivier_lapie = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { backroom_backstabber cryptologist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		jean_berthoin = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { brutal fascist_demagogue secrecy }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
 	}
 	
 	###ECONOMIC MINISTER###
 	
 	economic_minister = {
 	
+		maurice_petsche = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { backroom_backstabber decryptological_genius }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		edgar_faure = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { backroom_backstabber cryptologist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		felix_gaillard = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			traits = { brutal fascist_demagogue secrecy }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 	
 ###ROW 3###
@@ -402,7 +494,7 @@ ideas = {
 	tank_manufacturer = {
 		
 		designer = yes
-		renault_fra = {
+		FRA_ARE = {
 		
 			picture = renault
 						
@@ -444,7 +536,7 @@ ideas = {
 	aircraft_manufacturer = {
 		
 		designer = yes
-		morane_saulnier = {
+		dassault = {
 			
 			allowed = {
 				original_tag = FRA
@@ -457,7 +549,7 @@ ideas = {
 			traits = { light_aircraft_manufacturer }
 		}
 		
-		bloch = {
+		breguet_aviation = {
 						
 			allowed = {
 				original_tag = FRA
@@ -470,7 +562,7 @@ ideas = {
 			traits = { medium_aircraft_manufacturer }
 		}
 		
-		amiot = {
+		nord_aviation = {
 						
 			allowed = {
 				original_tag = FRA
@@ -483,24 +575,51 @@ ideas = {
 			traits = { heavy_aircraft_manufacturer }
 		}
 		
-		levasseur = {
+	}	
+	
+	###INDUSTRIAL CONCERN###
+	
+	industrial_concern = {
+		cgtf = {
 						
 			allowed = {
 				original_tag = FRA
 			}
 						
 			research_bonus = {
-				air_equipment = 0.10
+				industry = 0.10
 			}
 			
-			traits = { naval_aircraft_manufacturer }
+			traits = { industrial_concern }
 		}
-	}	
-	
-	###INDUSTRIAL CONCERN###
-	
-	industrial_concern = {
-		famh = {
+		
+		cafl = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+		bouygues = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+		cfp = {
 						
 			allowed = {
 				original_tag = FRA
@@ -519,7 +638,7 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		somua = {
+		renault = {
 		
 			allowed = {
 				original_tag = FRA
@@ -546,7 +665,7 @@ ideas = {
 			traits = { infantry_equipment_manufacturer }
 		}
 	
-		schneider = {
+		direction_fabrications_armement = {
 						
 			allowed = {
 				original_tag = FRA
@@ -565,7 +684,33 @@ ideas = {
 	naval_manufacturer = {
 	
 		designer = yes
-		fcm = {
+		arsenal_brest = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+		
+		arsenal_cherbourg = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+		}
+		
+		arsenal_lorient = {
 						
 			allowed = {
 				original_tag = FRA
@@ -582,7 +727,87 @@ ideas = {
 	
 	###THEORIST
 	
-	theorist = {	
+	theorist = {
+
+		yves_rocard = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jean_jacques_barre = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		augustin_guillaume = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		andre_beaufre = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		raoul_castex = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	
 	}
 
@@ -591,24 +816,289 @@ ideas = {
 	###ARMY CHIEF###
 	
 	army_chief = {
+	
+		paul_ely = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		georges_revers = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		louis_le_puloch = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 		
 	}
 	
 	###NAVY CHIEF###
 	
 	navy_chief = {
+	
+		henri_nomy = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		roger_gabriel_lambert = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		georges_cabanier = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 	
 	###AIR CHEF###
 	
 	air_chief = {
+	
+		charles_lecheres = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pierre_fay = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		edmond_jouhaud = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 			
 	}
 	
 	###HIGH COMMAND###
 	
 	high_command = {
+	
+		paul_aussaresses = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		gaston_lavaud = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		jean_de_lattre = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		paul_stehlin = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		rene_chesnais = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		andre_patou = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		marc_de_joybert = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		albert_joire_noulens = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 	
