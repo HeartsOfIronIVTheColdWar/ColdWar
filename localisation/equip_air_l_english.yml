@@ -639,6 +639,7 @@
  NZL_cv_fighter_equipment_3_short:0 "Firefly"
  SAF_cv_fighter_equipment_3_short:0 "Firefly"
  RAJ_cv_fighter_equipment_3_short:0 "Firefly"
+#US AIRCRAFT
  USA_fighter_equipment_0:0 "Curtiss P-1 Hawk"
  USA_fighter_equipment_0_short:0 "P-1 Hawk"
  USA_fighter_equipment_1:0 "Curtiss P-40 Warhawk"
@@ -707,14 +708,69 @@
  USA_cv_fighter_equipment_2_short:0 "F4F Wildcat"
  USA_cv_fighter_equipment_3:0 "Grumman F6F Hellcat"
  USA_cv_fighter_equipment_3_short:0 "F6F Hellcat"
- SOV_fighter_equipment_0:0 "Polikarpov I-15"
+ 
+ ###SOVIET AIRCRAFT###
+ 
+ #Pre WW2
+ SOV_fighter_equipment_0:0 "Polikarpov I-15" #1936
  SOV_fighter_equipment_0_short:0 "I-15"
- SOV_fighter_equipment_1:0 "Polikarpov I-16"
- SOV_fighter_equipment_1_short:0 "I-16"
- SOV_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov LaGG-3"
- SOV_fighter_equipment_2_short:0 "LaGG-3"
- SOV_fighter_equipment_3:0 "Yakolev Yak-3"
- SOV_fighter_equipment_3_short:0 "Yak-3"
+ SOV_cv_fighter_equipment_0:0 "Polikarpov I-15AB"
+ SOV_cv_fighter_equipment_0_short:0 "I-15AB"
+ 
+ #Fighters
+ SOV_fighter_equipment_1:0 "Lavochkin La-7" #1945
+ SOV_fighter_equipment_1_short:0 "La-7"
+ SOV_cv_fighter_equipment_1:0 "Lavochkin La-7UTI"
+ SOV_cv_fighter_equipment_1_short:0 "La-7UTI"
+ 
+ SOV_jet_fighter_equipment_1:0 "Mikoyan-Gurevich MiG-15" #1950
+ SOV_jet_fighter_equipment_1_short:0 "MiG-15"
+ SOV_cv_jet_fighter_equipment_1:0 "Mikoyan-Gurevich MiG-15AB"
+ SOV_cv_jet_fighter_equipment_1_short:0 "MiG-15AB"
+ 
+ SOV_jet_fighter_equipment_2:0 "Mikoyan-Gurevich MiG-21" #1960
+ SOV_jet_fighter_equipment_2_short:0 "MiG-21"
+ SOV_cv_jet_fighter_equipment_2:0 "Mikoyan-Gurevich MiG-21AB"
+ SOV_cv_jet_fighter_equipment_2_short:0 "MiG-21AB"
+ 
+ SOV_jet_fighter_equipment_3:0 "Mikoyan-Gurevich MiG-23" #1970
+ SOV_jet_fighter_equipment_3_short:0 "MiG-23"
+ SOV_cv_jet_fighter_equipment_3:0 "Mikoyan-Gurevich MiG-23AB"
+ SOV_cv_jet_fighter_equipment_3_short:0 "MiG-23AB"
+ 
+ #Attack aircraft / CAS
+ SOV_CAS_equipment_1:0 "Lavochkin La-7" #1945
+ SOV_CAS_equipment_1_short:0 "La-7"
+ SOV_cv_CAS_equipment_1:0 "Lavochkin La-7UTI"
+ SOV_cv_CAS_equipment_1_short:0 "La-7UTI"
+ 
+ SOV_jet_cas_equipment_1:0 "Sukhoi Su-7" #1950
+ SOV_jet_cas_equipment_1_short:0 "Su-7"
+ SOV_cv_jet_cas_equipment_1:0 "Sukhoi Su-7AB"
+ SOV_cv_jet_cas_equipment_1_short:0 "Su-7AB"
+ 
+ SOV_jet_cas_equipment_2:0 "Sukhoi Su-17" #1960
+ SOV_jet_cas_equipment_2_short:0 "Su-17"
+ SOV_cv_jet_cas_equipment_2:0 "Sukhoi Su-17AB"
+ SOV_cv_jet_cas_equipment_2_short:0 "Su-17AB"
+ 
+ SOV_jet_cas_equipment_3:0 "Mikoyan MiG-27" #1970
+ SOV_jet_cas_equipment_3_short:0 "MiG-27"
+ SOV_cv_jet_cas_equipment_3:0 "Mikoyan MiG-27AB"
+ SOV_cv_jet_cas_equipment_3_short:0 "MiG-27AB"
+ 
+ #MCA Aircraft / Multirole combat aircraft
+ SOV_MCA_equipment_0:0 "Mikoyan MiG-29" #1980
+ SOV_MCA_equipment_0_short:0 "MiG-29"
+ SOV_cv_MCA_equipment_0:0 "Mikoyan MiG-29AB"
+ SOV_cv_MCA_equipment_0_short:0 "MiG-29AB"
+ 
+ SOV_MCA_equipment_1:0 "Sukhoi Su-30" #1990
+ SOV_MCA_equipment_1_short:0 "Su-30"
+ SOV_cv_MCA_equipment_1:0 "Sukhoi Su-30AB"
+ SOV_cv_MCA_equipment_1_short:0 "Su-30AB"
+ 
+ #Bomber Aircraft
  SOV_heavy_fighter_equipment_1:0 "Petlyakov Pe-2"
  SOV_heavy_fighter_equipment_1_short:0 "Pe-2"
  SOV_heavy_fighter_equipment_2:0 "Petlyakov Pe-3"
@@ -727,10 +783,6 @@
  SOV_strat_bomber_equipment_2_short:0 "Pe-10"
  SOV_strat_bomber_equipment_3:0 "Tupolev Tu-4"
  SOV_strat_bomber_equipment_3_short:0 "Tu-4"
- SOV_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9"
- SOV_jet_fighter_equipment_1_short:0 "MiG-9"
- SOV_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15"
- SOV_jet_fighter_equipment_2_short:0 "MiG-15"
  SOV_jet_strat_bomber_equipment_1:0 "Myasishchev M-4"
  SOV_jet_strat_bomber_equipment_1_short:0 "M-4"
  SOV_tac_bomber_equipment_0:0 "Ilyushin DB-3"

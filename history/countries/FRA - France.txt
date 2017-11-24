@@ -88,6 +88,7 @@ set_national_unity = 0.7
 		cv_1945_CAS = 1
 		transport = 1
 		jet_engines = 1
+		transport_air1 = 1
 	}
 
 	set_autonomy = {

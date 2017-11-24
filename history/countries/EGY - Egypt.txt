@@ -90,7 +90,7 @@ set_national_unity = 0.55
 	create_field_marshal = {
 		name = "Abdel Hakim Amer"
 			picture = "Portrait_Arabia_Generic_land_1.dds"
-		traits = { incompetent }
+		traits = {  }
 		skill = 1 
 	}
 	
@@ -104,28 +104,28 @@ set_national_unity = 0.55
 	create_corps_commander = {
 		name = "Gamal e-Din Ali"
 			picture = "Portrait_Arabia_Generic_land_2.dds"
-		traits = { incompetent }
+		traits = {  }
 		skill = 1 
 	}
 
 	create_corps_commander = {
 		name = "Jafr el Majid"
 			picture = "Portrait_Arabia_Generic_land_3.dds"
-		traits = { incompetent }
+		traits = {  }
 		skill = 1 
 	}
 
 	create_corps_commander = {
 		name = "Saad ed-Din Mutawally"
 			picture = "Portrait_Arabia_Generic_land_2.dds"
-		traits = { incompetent }
+		traits = {  }
 		skill = 1 
 	}
 
 	create_corps_commander = {
 		name = "Talat Hassan Ali"
 			picture = "Portrait_Arabia_Generic_3.dds"
-		traits = { incompetent }
+		traits = {  }
 		skill = 1 
 	}			
 }
