@@ -8,13 +8,52 @@ focus_tree = {
 		}
 	}
 	default = no
+	
 	focus = {
 		id = NKR_firstthreeyear
 		icon = GFX_goal_generic_soviet_construction
 		cost = 10 
 		x = 4
 		y = 0
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+									owner = {
+											any_owned_state = {
+													free_building_slots = {
+															building = industrial_complex
+															size > 0
+															include_locked = yes
+														}
+													is_in_home_area = yes
+											}
+										}
+								}
+						}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+		}		
+		
 	}
 	focus = {
 		id = NKR_policy
@@ -22,6 +61,9 @@ focus_tree = {
 		cost = 10 
 		x = 16
 		y = 0
+		completion_reward = {
+			add_political_power = 120
+		}
 
 	}
 	focus = {
@@ -30,6 +72,11 @@ focus_tree = {
 		cost = 10 
 		x = 29
 		y = 0
+		completion_reward = {
+			army_experience = 40
+			air_experience = 40
+			navy_experience = 40
+		}
 
 	}
 	focus = {
@@ -55,6 +102,9 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
+		completion_reward = {
+			add_ideas = nkr_chollima
+		}
 
 	}
 	focus = {
@@ -157,6 +207,29 @@ focus_tree = {
 		}
 		x = 1
 		y = 5
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+				}
+			}
+		}	
 
 	}
 	focus = {
@@ -193,6 +266,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
+		completion_reward = {
+					add_research_slot = 1
+		}
 
 	}
 	focus = {
@@ -368,6 +444,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
+		completion_reward = {
+			
+		}
 
 	}
 	focus = {
