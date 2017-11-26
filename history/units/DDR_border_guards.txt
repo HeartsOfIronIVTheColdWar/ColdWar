@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Border Guards"		
 	# Note: Represents both regular infantry and militia units
 	regiments = {
