@@ -3219,6 +3219,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_heavy_agrarian_society.dds"
 	}
 	spriteType = {
+		name = "GFX_haakon_vii"
+		texturefile = "gfx/interface/ideas/haakon_vii.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_idea_generic_light_agrarian_society"
 		texturefile = "gfx/interface/ideas/idea_generic_light_agrarian_society.dds"
 	}

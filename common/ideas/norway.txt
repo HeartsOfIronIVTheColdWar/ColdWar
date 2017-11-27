@@ -1,5 +1,32 @@
 ideas = {
 	country = {
+		haakon_vii = {
+			
+			allowed = {
+				original_tag = NOR
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+
+		}
 		
 	}
 	
