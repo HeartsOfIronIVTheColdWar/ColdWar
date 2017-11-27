@@ -3,7 +3,7 @@
 oob = "NOR_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_national_unity = 0.50
 
 1950.1.1 = {
 	
@@ -20,17 +20,17 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 97
+				popularity = 89
 				banned = no
 			}
 
 			autocratic = {
-				popularity = 1
+				popularity = 5
 				banned = no
 			}
 			
 			communism = {
-				popularity = 2
+				popularity = 6
 				#banned = no #default is no
 			}
 		}
