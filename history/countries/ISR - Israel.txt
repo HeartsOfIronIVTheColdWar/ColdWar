@@ -11,7 +11,7 @@ set_national_unity = 0.55
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
-		limited_conscription
+		extensive_conscription
 		#ideas
 		zionist_restoration
 	}
