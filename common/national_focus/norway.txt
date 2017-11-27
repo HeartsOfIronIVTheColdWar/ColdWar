@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = NOR_pp_effort
 		icon = GFX_focus_NOR_state_flag
-		x = 4
+		x = 5
 		y = 0
 		cost = 10
 
@@ -31,7 +31,7 @@ focus_tree = {
 		prerequisite = { focus = NOR_pp_effort }
 		mutually_exclusive = { focus = NOR_the_dark_path }
 		mutually_exclusive = { focus = NOR_support_the_communist_movement }
-		x = 7
+		x = 9
 		y = 1
 		cost = 10
 
@@ -64,7 +64,7 @@ focus_tree = {
 		id = NOR_usa_support
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = NOR_nato_effort }
-		x = 7
+		x = 9
 		y = 2
 		cost = 10
 
@@ -80,7 +80,7 @@ focus_tree = {
 		id = NOR_defend_the_border
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = NOR_usa_support }
-		x = 7
+		x = 9
 		y = 3
 		cost = 10
 
@@ -146,6 +146,52 @@ focus_tree = {
          
 		}
 	} 
+
+	focus = {
+		id = NOR_support_from_ussr
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_socialism_effort }
+		x = 1
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+         
+		}
+	} 
+
+    focus = {
+		id = NOR_satellite_state
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_support_from_ussr }
+		x = 0
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		SOV = { puppet = ROOT}
+		random_owned_controlled_state = {
+				limit = {
+				free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+				}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+				}
+				set_state_flag = NOR
+	}
+    }
+    }    
 ##########################################
 	focus = {
 		id = NOR_the_dark_path
@@ -153,14 +199,15 @@ focus_tree = {
 		prerequisite = { focus = NOR_pp_effort }
 		mutually_exclusive = { focus = NOR_support_the_communist_movement }
 		mutually_exclusive = { focus = NOR_nato_effort }
-		x = 4
+		x = 5
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-        add_popularity = { ideology = autocratic popularity = 0.15 } 
+        add_popularity = { ideology = autocratic popularity = 0.15 }
+        set_party_name = { ideology = autocratic long_name = Norwegian_Royal_Party name = NRP } 
 		}
 	}
 
@@ -168,7 +215,7 @@ focus_tree = {
 		id = NOR_norwegian_state
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = NOR_the_dark_path }
-		x = 4
+		x = 5
 		y = 2
 		cost = 10
 
@@ -183,7 +230,7 @@ focus_tree = {
 		id = NOR_ban_the_communist_party
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = NOR_norwegian_state }
-		x = 4
+		x = 5
 		y = 3
 		cost = 10
 
