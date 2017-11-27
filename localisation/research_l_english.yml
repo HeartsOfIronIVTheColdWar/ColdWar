@@ -118,8 +118,6 @@
  air_techs_folder_desc:0 "Aircraft."
  air_doctrine_folder:0 "Air doctrine"
  air_doctrine_folder_desc:0 "Air doctrine, how your Airforce fights."
- helicopter_techs_folder:0 "Helicopters"
- light_air_techs_folder:0 "Light Air"
  industry_folder:0 "Industry"
  industry:0 "Industry"
  excavation_tech_research:0 "Excavation"

@@ -1,6 +1,18 @@
 ideas = {
 	country = {
-		
+		GRE_austerity_meausers = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_production_bonus	
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
 	}
 	
 ###ADVISORS AND STAFF###

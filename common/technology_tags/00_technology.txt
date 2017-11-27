@@ -22,17 +22,20 @@ technology_categories = {
 	APC_1970
 	APC_1980
 	APC_1990
+	fighter
 	jet_fighter
 	jet_strat_bomber
 	jet_tac_bomber
 	stealth
 	jet_cas
+	cas
 	jet_tac
 	transport
 	jet_transport
-	mca
+	jet_mca
 	helicopter
 	interceptor
+	jet_interceptor
 	light_air
 	medium_air
 	heavy_air

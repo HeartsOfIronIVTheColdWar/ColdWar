@@ -3,7 +3,7 @@
 oob = "GRE_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_national_unity = 0.35
 
 1950.1.1 = {
 	
@@ -13,7 +13,6 @@ set_national_unity = 0.55
 		low_economic_mobilisation
 		limited_conscription
 		#ideas
-		sisu
 	}
 	set_politics = {
 

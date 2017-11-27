@@ -1,4 +1,62 @@
 spriteTypes = {	
+	
+	###LIGHT AIRCRAFT###
+    #Soviet#
+	SpriteType = {
+		name = "GFX_SOV_CAS_1950_medium"
+		texturefile = "gfx/interface/technologies/SOV_cas_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_CAS_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_cas_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_CAS_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_cas_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_fighter_1950_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_fighter_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_fighter_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_interceptor_1950_medium"
+		texturefile = "gfx/interface/technologies/SOV_interceptor_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_interceptor_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_interceptor_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_interceptor_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_interceptor_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_interceptor_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_interceptor_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_interceptor_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_interceptor_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_MCA_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_multirole_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_MCA_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_multirole_90.dds"
+	}
+
+
+
 	###ARTILLERY STUFF###
 	SpriteType = {
 		name = "GFX_artillery_1950_medium"

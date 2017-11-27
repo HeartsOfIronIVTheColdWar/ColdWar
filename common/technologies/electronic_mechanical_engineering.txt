@@ -1356,7 +1356,15 @@ technologies = {
         jet_fighter = {
            	air_range = 0.25
         }
-
+        jet_cas = {
+           	air_range = 0.25
+        }
+        jet_mca = {
+           	air_range = 0.25
+        }
+        jet_interceptor = {
+           	air_range = 0.25
+        }
         path = {
             leads_to_tech = improved_jet_engines_2 
             research_cost_coeff = 1
@@ -1383,6 +1391,15 @@ technologies = {
 	
 	improved_jet_engines_2 = {
         jet_fighter = {
+           	air_range = 0.25
+        }
+        jet_cas = {
+           	air_range = 0.25
+        }
+        jet_mca = {
+           	air_range = 0.25
+        }
+        jet_interceptor = {
            	air_range = 0.25
         }
 

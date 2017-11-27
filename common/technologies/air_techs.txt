@@ -27,7 +27,7 @@ technologies = {
 		
 		categories = {
 			light_air
-			light_fighter
+			fighter
 			air_equipment
 		}
 		
@@ -67,7 +67,7 @@ technologies = {
 		}
 		
 		categories = {
-			light_fighter
+			fighter
 		}
 		
 		sub_technologies = {
@@ -96,6 +96,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			fighter
 		}
 		
 		ai_will_do = {
@@ -155,6 +156,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			jet_fighter
 		}
 		
 		ai_will_do = {
@@ -214,6 +216,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			jet_fighter
 		}
 		
 		ai_will_do = {
@@ -272,6 +275,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			jet_fighter
 		}
 		
 		ai_will_do = {
@@ -317,7 +321,7 @@ technologies = {
 	interceptor_1950 = {
 	
 		enable_equipments = {
-			interceptor_equipment_1
+			jet_interceptor_equipment_1
 		}
 	
 		path = {
@@ -336,7 +340,7 @@ technologies = {
 		}
 		
 		categories = {
-			interceptor
+			jet_interceptor
 		}
 		
 		ai_will_do = {
@@ -352,7 +356,7 @@ technologies = {
 	interceptor_1960 = {
 	
 		enable_equipments = {
-			interceptor_equipment_2
+			jet_interceptor_equipment_2
 		}
 	
 		path = {
@@ -371,7 +375,7 @@ technologies = {
 		}
 		
 		categories = {
-			interceptor
+			jet_interceptor
 		}
 		
 		ai_will_do = {
@@ -387,7 +391,7 @@ technologies = {
 	interceptor_1970 = {
 	
 		enable_equipments = {
-			interceptor_equipment_3
+			jet_interceptor_equipment_3
 		}
 	
 		path = {
@@ -407,7 +411,7 @@ technologies = {
 		}
 		
 		categories = {
-			interceptor
+			jet_interceptor
 		}
 		
 		ai_will_do = {
@@ -422,7 +426,7 @@ technologies = {
 	interceptor_1980 = {
 	
 		enable_equipments = {
-			interceptor_equipment_3
+			jet_interceptor_equipment_4
 		}
 	
 		path = {
@@ -438,7 +442,7 @@ technologies = {
 		}
 		
 		categories = {
-			interceptor
+			jet_interceptor
 		}
 		
 		ai_will_do = {
@@ -453,7 +457,7 @@ technologies = {
 	interceptor_1990 = {
 	
 		enable_equipments = {
-			interceptor_equipment_3
+			jet_interceptor_equipment_5
 		}
 	
 		research_cost = 2
@@ -464,7 +468,7 @@ technologies = {
 		}
 		
 		categories = {
-			interceptor
+			jet_interceptor
 		}
 		
 		ai_will_do = {
@@ -487,6 +491,7 @@ technologies = {
 		}
 		
 		categories = {
+			stealth
 		}
 		
 		ai_will_do = {
@@ -515,7 +520,7 @@ technologies = {
 		}
 		
 		categories = {
-			interceptor
+			stealth
 		}
 		
 		ai_will_do = {
@@ -541,7 +546,7 @@ technologies = {
 		}
 		
 		categories = {
-			interceptor
+			stealth
 		}
 		
 		ai_will_do = {
@@ -572,7 +577,7 @@ technologies = {
 		}
 		
 		categories = {
-			light_fighter
+			cas
 		}
 		
 		sub_technologies = {
@@ -601,6 +606,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			cas
 		}
 		
 		ai_will_do = {
@@ -627,7 +633,7 @@ technologies = {
 		}
 		
 		categories = {
-			jet_fighter
+			jet_cas
 		}
 		
 		sub_technologies = {
@@ -656,6 +662,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			jet_cas
 		}
 		
 		ai_will_do = {
@@ -682,7 +689,7 @@ technologies = {
 		}
 		
 		categories = {
-			jet_fighter
+			jet_cas
 		}
 		
 		sub_technologies = {
@@ -710,6 +717,7 @@ technologies = {
 		
 		categories = {
 			naval_air
+			jet_cas
 			air_equipment
 		}
 		
@@ -737,7 +745,7 @@ technologies = {
 		}
 		
 		categories = {
-			jet_fighter
+			jet_cas
 		}
 		
 		sub_technologies = {
@@ -766,6 +774,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			jet_cas
 		}
 		
 		ai_will_do = {
@@ -776,7 +785,7 @@ technologies = {
 	MCA_1980 = {
 	
 		enable_equipments = {
-			MCA_equipment_0
+			mca_equipment_1
 		}
 	
 		path = {
@@ -792,7 +801,7 @@ technologies = {
 		}
 		
 		categories = {
-			jet_fighter
+			jet_mca
 		}
 		
 		sub_technologies = {
@@ -812,7 +821,7 @@ technologies = {
 	cv_1980_MCA = {
 
 		enable_equipments = {
-			cv_MCA_equipment_0
+			cv_mca_equipment_1
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -821,6 +830,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			jet_mca
 		}
 		
 		ai_will_do = {
@@ -831,7 +841,7 @@ technologies = {
 	MCA_1990 = {
 	
 		enable_equipments = {
-			MCA_equipment_1
+			mca_equipment_2
 		}
 	
 		research_cost = 2
@@ -842,7 +852,7 @@ technologies = {
 		}
 		
 		categories = {
-			jet_fighter
+			jet_mca
 		}
 		
 		sub_technologies = {
@@ -862,7 +872,7 @@ technologies = {
 	cv_1990_MCA = {
 
 		enable_equipments = {
-			cv_MCA_equipment_1
+			cv_mca_equipment_2 
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -871,6 +881,7 @@ technologies = {
 		categories = {
 			naval_air
 			air_equipment
+			jet_mca
 		}
 		
 		ai_will_do = {
@@ -1516,7 +1527,7 @@ technologies = {
 	heavy_air_1950 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_2
+			jet_strat_bomber_equipment_1
 		}
 	
 		path = {
@@ -1548,7 +1559,7 @@ technologies = {
 	heavy_air_1960 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_3
+			jet_strat_bomber_equipment_2
 		}
 	
 		path = {
@@ -1580,7 +1591,7 @@ technologies = {
 	heavy_air_1970 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_4
+			jet_strat_bomber_equipment_3
 		}
 	
 		path = {
@@ -1612,7 +1623,7 @@ technologies = {
 	heavy_air_1980 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_5
+			jet_strat_bomber_equipment_4
 		}
 	
 		path = {
@@ -1644,7 +1655,7 @@ technologies = {
 	heavy_air_1990 = {
 
 		enable_equipments = {
-			strat_bomber_equipment_6
+			jet_strat_bomber_equipment_5
 		}
 	
 		research_cost = 2
@@ -1824,7 +1835,7 @@ technologies = {
 	tac_air_1950 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_2
+			jet_tac_bomber_equipment_1
 		}
 	
 		path = {
@@ -1859,7 +1870,7 @@ technologies = {
 	tac_air_1960 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_3
+			jet_tac_bomber_equipment_2
 		}
 	
 		path = {
@@ -1894,7 +1905,7 @@ technologies = {
 	tac_air_1970 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_4
+			jet_tac_bomber_equipment_3
 		}
 	
 		path = {
@@ -1929,7 +1940,7 @@ technologies = {
 	tac_air_1980 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_5
+			jet_tac_bomber_equipment_4
 		}
 	
 		path = {
@@ -1964,7 +1975,7 @@ technologies = {
 	tac_air_1990 = {
 
 		enable_equipments = {
-			tac_bomber_equipment_6
+			jet_tac_bomber_equipment_5
 		}
 	
 		research_cost = 2
