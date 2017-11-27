@@ -1,0 +1,195 @@
+focus_tree = {
+	id = norwegian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NOR
+		}
+	}
+	
+	focus = {
+		id = NOR_pp_effort
+		icon = GFX_focus_NOR_state_flag
+		x = 4
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+			add_national_unity = 0.05
+		}
+	}
+
+	focus = {
+		id = NOR_nato_effort
+		icon = GFX_focus_NATO_goal
+		prerequisite = { focus = NOR_pp_effort }
+		mutually_exclusive = { focus = NOR_the_dark_path }
+		mutually_exclusive = { focus = NOR_support_the_communist_movement }
+		x = 7
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+								random_owned_controlled_state = {
+								limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+									}
+								}
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								set_state_flag = NOR
+						}
+		army_experience = 10
+					
+         
+		}
+	}
+
+	focus = {
+		id = NOR_usa_support
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_nato_effort }
+		x = 7
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = { 
+		add_equipment_to_stockpile = {  type = infantry_equipment_1 amount = 2000 producer = NOR }
+         
+		}
+	}
+
+    focus = {
+		id = NOR_defend_the_border
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_usa_support }
+		x = 7
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+            completion_reward = {
+			144 = {
+
+				add_building_construction = {
+					type = bunker
+					province = 9116
+					level = 3
+					instant_build = yes
+
+		}
+	}
+	}
+}
+#########################################
+	focus = {
+		id = NOR_support_the_communist_movement
+		icon = GFX_goal_nkp_focus
+		prerequisite = { focus = NOR_pp_effort }
+		mutually_exclusive = { focus = NOR_nato_effort }
+		mutually_exclusive = { focus = NOR_the_dark_path }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		add_popularity = { ideology = communism popularity = 0.15 } 
+		}
+	}
+    
+	focus = {
+		id = NOR_socialism_effort
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_support_the_communist_movement }
+		x = 1
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+         
+		}
+	}   
+
+    focus = {
+		id = NOR_support_from_ussr
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_socialism_effort }
+		x = 1
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+         
+		}
+	} 
+##########################################
+	focus = {
+		id = NOR_the_dark_path
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = NOR_pp_effort }
+		mutually_exclusive = { focus = NOR_support_the_communist_movement }
+		mutually_exclusive = { focus = NOR_nato_effort }
+		x = 4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+        add_popularity = { ideology = autocratic popularity = 0.15 } 
+		}
+	}
+
+		focus = {
+		id = NOR_norwegian_state
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_the_dark_path }
+		x = 4
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+         
+		}
+	}
+
+		focus = {
+		id = NOR_ban_the_communist_party
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_norwegian_state }
+		x = 4
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+         
+		}
+	}	
