@@ -544,7 +544,7 @@ GRE = {
 	callsigns = { }
 }
 
-ALB = {
+ALB = { #Bebe Rexha tho
 	male = {
 		names = { 
 			Ahmet Ali Azem Bajram Behxhet Davud Ekrem Elez Enver Eqrem
@@ -555,7 +555,7 @@ ALB = {
 		  }
 	}
 	female = {
-		names = { }
+		names = { Bleta }
 	}
 	surnames = { 
 		Ahmeti al-Albani Bardha Bazna "Bej Alizoti" "Bej Biçakçiu" "Bej Delvina" "Bej Frashëri" "Bej Libohova" "Bej Ndroque"
@@ -563,6 +563,7 @@ ALB = {
 		Çeku Dine Dragoti Dukagiini Dushku Evangjeli Feza Hoxha Islami Kadare
 		Koculi Konica Konushevci Kosturi Kota Logoreci Merlika-Kruja Mitrovica Mula Noli
 		"Pashë Përmeti" "Pashë Tepelena" "Pashë Toptani" Poga "Qemal Bej" Shahini Skiroi Thaçi Troja Xoxe
+		Rexha
 	}
 	callsigns = { }
 }
@@ -915,13 +916,14 @@ AFG = {
 	surnames = { Khan Nuristani Sattari Sherkhanzai Yasin Abdul Ahmadi Aziz Karzai Nawabi Poya Shahnawaz }
 	callsigns = { }
 }
-IRQ = {
+IRQ = { #added a British-Iraqi MP
 	male = {
 		names = { Karim 
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" Ahmad Ali 
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid 
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 	
+			Nadhim
 		 }
 	}
 	female = {
@@ -932,7 +934,8 @@ IRQ = {
 			"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
 			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
 			"ibn Muhammad" "ibn Mustafa" "ibn Salim"   
-			"ibn Umar" "ibn Uthman" "ibn Yusuf" 
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			Zahawi
 	
 	}
 	callsigns = { }
@@ -972,7 +975,7 @@ PER = {
 		}
 	}
 	female = {
-		names = { Mehrnaz Farnaz }
+		names = { Mehrnaz Farnaz Seema }
 	}
 	surnames = {
 		Faghihinejad Jorjani Airom Ansari Ayrum Buzarjomehri Davallu Farhani Jahanbani Kashani 
@@ -981,6 +984,7 @@ PER = {
 		Jahandar jahangir Jahanshah Jamshidi Kavoosi Khadem Khiabni Khorasani Khorram-din Lajani Madani
 		Mazdaki Mazdani Mehregan Mazandarani Mokri Mohsen Paria Parsi Pouran Rahbar Rajavi Rezaei Rostamian 
 		Sassani Shamshiri Shir-Del Shirazi Tehrani Turani Tabrizi Zahedi
+		Ghiassi
 	}
 	callsigns = { }
 }
@@ -1426,19 +1430,21 @@ RAJ = { #good
 		names = { 
 			Mohandas Narendra Dalbir Bipin Subrata Amarjeet Sanjiv Ravi Praveen Surinder Balwant Sarath Amit
 			Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj
-			Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
-			Jawaharlal Gulzarilal "Lal Bahadur" Morarji Charan Rajiv Vishwanath Chandra Pamulaparti Venkata Narasimha Atal Bihari Inder Manmohan Rahul Salman Neeraj Sunder
-			Deepak
+			Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund
+			Surinder Triveni Varinder Sonam Ram Yogendra Jawaharlal Gulzarilal "Lal Bahadur" Morarji Charan Rajiv
+			Vishwanath Chandra Pamulaparti Venkata Narasimha Atal Bihari Inder Manmohan Rahul Salman Neeraj Sunder
+			Deepak Shailesh Virendra Alok Rishi Tanmanjeet Parmjit Piara Marsha Ajit
 		}
 	}
 	female = {
-		names = { Indira Priyanka Priti }
+		names = { Indira Priyanka Priti Seema Preet }
 	}
 	surnames = { 
 		Nehru Gandhi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand
 		Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan
 		Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
-		Nanda Shastri Desai Shekhar Rao Vajpayee Gowda Gujral Patel Katwala Varadkar Chopra
+		Nanda Shastri Desai Shekhar Rao Vajpayee Gowda Gujral Patel Katwala Varadkar Chopra Vara Nandy Vaz Malhotra
+		Sunak Dhesi Shergill Sayeed Kumar Gill Khabra Dhanda Uppal Pai
 	}
 	callsigns = { }
 }
@@ -1449,15 +1455,17 @@ PAK = { #good
 			Syad Ahmad Aga Nawab Maulvi Karamat Abdul Nasir Maulana Bhai Hussain Malik Raees Choudhry Rahmat
 			Liaquat Ali Khawaja Muhammad "Muhammad Ali" Chaudhry Huseyn Shaheed Ibrahim Ismail Ayub Nurul Zulfikar Ghulam Mustafa Nawaz Balakh Sher
 			Meraj "Muhammad Khan" Zafarullah Shaukat Yousef Raza Raja Hazir Iskander Fazal Farooq Pervez Imran Sadiq Anjem Sajid Kumail Humayun
+			Rehman Afzal Mian Faisal Shahid Anas
+			
 		}
 	}
 	female = {
-		names = { Benazir Sayeeda }
+		names = { Benazir Sayeeda Shabana Yasmin Nusrat Naseem }
 	}
 	surnames = { 
 		Khan Ali Malik Nabiullah Shafi Pirbhai Ahmed Baig Johar
 		Nazimuddin Warsi Bogra Suhrawardy Chundrigar Amin Bhutto Junejo Sharif Mazari Qureshi Khalid Jamali Shujaat Aziz Soomro Gillani Ashraf Khoso Musharraf Javid Shah
-		Nanjiani
+		Nanjiani Chishti Mahmood Ghani Hussain Rashid Yasin Sarwar
 	}
 	callsigns = { }
 }
@@ -1469,10 +1477,10 @@ BAN = { #good
 		}
 	}
 	female = {
-		names = { Shami Asha }
+		names = { Shami Asha Rushanara Rupa Kanak Tulip }
 	}
 	surnames = { 
-		Islam Chakrabarti Ahmed Choudhury Hussain Rahman Uddin Huq Siddiq Wazed Mohammadullah Sayem Sattar Ershad Biswas Sircar Hamid
+		Islam Chakrabarti Ahmed Choudhury Hussain Rahman Uddin Huq Siddiq Wazed Mohammadullah Sayem Sattar Ershad Biswas Sircar Hamid Ali Huq
 	}
 	callsigns = { }
 }
@@ -1698,14 +1706,14 @@ MZB = {
 ZIM = {
 	male = {
 		names = { 
-			Desmond Abel Kadungure Sekuru Robert Lobengula Joshua Dumiso Leopold Joseph Gabriel Mqabuko Nyongolo Thomas Letswansto Ndabaningi Daniel
+			Desmond Abel Kadungure Sekuru Robert Lobengula Joshua Dumiso Leopold Joseph Gabriel Mqabuko Nyongolo Thomas Letswansto Ndabaningi Daniel Emmerson Constantino
 		   }
 	}
 	female = {
 		names = { }
 	}
 	surnames = {
-	  	Tutu Muzorewa Nkomo Mapondera Kaguvi Khumalo Dabengwa Msika Takawira Masuku Sithole Tekere Nkala Nyagumbo Sobata
+	  	Tutu Muzorewa Nkomo Mapondera Kaguvi Khumalo Dabengwa Msika Takawira Masuku Sithole Tekere Nkala Nyagumbo Sebata Mnangagwa Chiwenga
 	 }
 	callsigns = { }
 }
@@ -1736,13 +1744,17 @@ RSA = { #post-apartheid south africa - good, if a little short
 NIE = { #good
 	male = {
 		names = { 
-			Nnamdi Johnson Yakubu Murtala Olesugun Shehu Muhammadu Ibrahim Ernest Sani Abdulsalami Umaru Goodluck Akeem Chiwetel Chuka Nwankwo
+			Nnamdi Johnson Yakubu Murtala Olesugun Shehu Muhammadu Ibrahim Ernest Sani Abdulsalami Umaru Goodluck Akeem
+			Chiwetel Chuka Nwankwo Bim
 		}
 	}
 	female = {
-		names = { Chi }
+		names = { Chinyelu Kate Olukemi Fiona }
 	}
-	surnames = { Azikiwe Aguiyi Ironsi Gowon Mohammed Obasanjo Shagari Buhari Babangida Shonekan Abacha Abubakar Yar'Adua Jonathan Balewa Olajuwon Ejiofor Onwurah Umunna Kanu }
+	surnames = {
+		Azikiwe Aguiyi Ironsi Gowon Mohammed Obasanjo Shagari Buhari Babangida Shonekan Abacha Abubakar Yar'Adua Jonathan Balewa Olajuwon
+		Ejiofor Onwurah Umunna Kanu Osamor Afolami Adegoke Onasanya
+	}
 	callsigns = { }
 }
 UGA = { #good
@@ -1773,13 +1785,13 @@ MAW = { #good
 GHA = { #good
 	male = {
 		names = { 
-			Samuel Kwame Joseph Akwasi Raphael Nii Edward Ignatius Fred Jerry Hilla John Nana Kofi Kwasi
+			Samuel Kwame Joseph Akwasi Raphael Nii Edward Ignatius Fred Jerry Hilla John Nana Kofi Kwasi Adam
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { Gyimah Nkrumah Ankrah Afrifa Ollennu Akufo-Addo Acheampong Akuffo Rawlings Limann Kufuor Mills Mahama Annan Kwarteng }
+	surnames = { Gyimah Nkrumah Ankrah Afrifa Ollennu Akufo-Addo Acheampong Akuffo Rawlings Limann Kufuor Mills Mahama Annan Kwarteng Afriyie Boateng }
 	callsigns = { }
 }
 
