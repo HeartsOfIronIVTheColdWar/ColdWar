@@ -59,7 +59,7 @@ set_national_unity = 0.55
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
-		extensive_conscription
+		limited_conscription
 		#ideas
 	}
 

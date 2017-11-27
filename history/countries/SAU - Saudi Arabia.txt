@@ -10,7 +10,7 @@ set_national_unity = 0.55
 	oob = "SAU_1950"
 	add_ideas = {
 		#laws
-		civilian_economy
+		low_economic_mobilisation
 		limited_conscription
 		#ideas
 		arab_monarchy
