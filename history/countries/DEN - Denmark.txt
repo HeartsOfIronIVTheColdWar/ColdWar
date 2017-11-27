@@ -14,6 +14,7 @@ set_national_unity = 0.55
 		limited_conscription
 		#ideas
 		nato_idea
+		frederick_ix
 	}
 	set_politics = {
 

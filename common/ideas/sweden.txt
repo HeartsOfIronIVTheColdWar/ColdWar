@@ -37,7 +37,39 @@ ideas = {
 			}
 		}
 	}
-	
+
+ideas = {
+	country = {
+		gustaf_v = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+
+		}
+		
+	}
+	}
 ###ADVISORS AND STAFF###
 	
 #GOES FROM TOP TO BOTTOM:

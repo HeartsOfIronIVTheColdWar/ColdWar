@@ -15,6 +15,7 @@ set_national_unity = 0.55
 		#ideas
 		SWE_en_svensk_tiger
 		SWE_mobiliseringsfarrod
+		gustaf_v
 	}
 	set_politics = {
 
