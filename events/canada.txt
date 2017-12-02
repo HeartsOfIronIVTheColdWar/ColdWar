@@ -31,3 +31,47 @@ country_event = {
 		
 	}
 }
+
+## Railway Focus Event (Focus Completion) ##
+
+country_event = {
+	id = canada.2
+	title = canada.2.t
+	desc = canada.2.d
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CAN
+		AND = { 
+		has_completed_focus = CAN_address_strike }
+	}
+	
+	# GIVE IN
+	option = {
+		name = canada.2.a
+		
+		CAN = {
+			remove_ideas = looming_strike
+		}
+		
+		add_timed_idea = { 
+
+		idea = relaxed_railwork 
+		days = 100 
+
+		}
+		
+		
+	}
+	# BAN STRIKE
+	option = {
+		name = canada.2.b
+		
+		CAN = {
+			remove_ideas = looming_strike
+			add_popularity = { ideology = communism popularity = 0.1 }
+		}
+		
+	}
+}

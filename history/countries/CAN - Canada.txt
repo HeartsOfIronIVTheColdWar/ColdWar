@@ -25,6 +25,7 @@ if = {
 		limited_conscription
 		#ideas
 		nato_idea
+		looming_strike
 	}
 	set_politics = {
 

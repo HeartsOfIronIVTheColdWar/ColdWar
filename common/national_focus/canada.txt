@@ -7,16 +7,499 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = CAN
-			has_dlc = "Together for Victory"
+			
 		}
-
-		#modifier = {
-		#	add = 10
-		#	original_tag = CAN
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
+focus = {
+		id = CAN_address_strike
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 0.00
+		x = 8
+		y = 0
+			completion_reward = {
+			country_event = { days = 1 id = canada.2 
+			}
+		}	
+	}
+	# Branch 1:0
+focus = {
+		id = CAN_nat_en_pipeline
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_address_strike
+		}
+		mutually_exclusive = {
+			focus = CAN_jt_en_pipeline
+		}
+		x = 2
+		y = 1
+			completion_reward = {
+			add_resource = { 
+			type = oil 
+			amount = 24 
+			state = 470 
+			}
+			add_resource = { 
+			type = oil 
+			amount = 8 
+			state = 276 
+			}
+		}	
+	}
+focus = {
+		id = CAN_jt_en_pipeline
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_address_strike
+		}
+		mutually_exclusive = {
+			focus = CAN_nat_en_pipeline
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			add_resource = { 
+			type = oil 
+			amount = 54 
+			state = 470 
+			}
+			add_resource = { 
+			type = oil 
+			amount = 12 
+			state = 394 
+			}
+		}	
+	}
+	focus = {
+		id = CAN_expand_nat_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_nat_en_pipeline
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			add_resource = { 
+			type = oil 
+			amount = 16 
+			state = 470 
+			}
+			add_resource = { 
+			type = oil 
+			amount = 6 
+			state = 276
+			}
+			add_resource = { 
+			type = oil 
+			amount = 10 
+			state = 468
+			}
+			add_resource = { 
+			type = oil 
+			amount = 10 
+			state = 466
+			}
 
-}		
+		}
+	}
+	focus = {
+		id = CAN_expand_jt_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_jt_en_pipeline
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+			add_resource = { 
+			type = oil 
+			amount = 40 
+			state = 470 
+			}
+			add_resource = { 
+			type = oil 
+			amount = 20 
+			state = 472 
+			}
+			276 = { 
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes 
+				}	
+			}
+		}	
+	}
+	focus = {
+		id = CAN_trmtn_pipeline
+		icon = GFX_goal_generic_construct_civilian
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_expand_nat_oil
+			focus = CAN_expand_jt_oil
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			add_resource = { 
+			type = oil 
+			amount = 18 
+			state = 470 
+			}
+			add_resource = { 
+			type = oil 
+			amount = 10 
+			state = 473 
+			}
+			add_resource = { 
+			type = oil 
+			amount = 2 
+			state = 471 
+			}
+			473 = { 
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes 
+				}
+			}		
+		}	
+	}
+	focus = {
+		id = CAN_rnw_pa_dock
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_trmtn_pipeline
+		}
+		x = 3
+		y = 5
+	}
+	focus = {
+		id = CAN_can_uranium_mines
+		icon = GFX_goal_generic_construction
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_nat_en_pipeline
+		}
+		x = 1
+		y = 5
+	}
+	focus = {
+		id = CAN_north_american_resources
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_expand_jt_oil
+		}
+		x = 5
+		y = 5
+	}
+	focus = {
+		id = CAN_shared_uranium_mines
+		icon = GFX_goal_generic_construction2
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_north_american_resources
+		}
+		x = 5
+		y = 7
+	}
+	# Branch 1:1
+	focus = {
+		id = CAN_rnvg_rail
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_address_strike
+		}
+		x = 10
+		y = 2
+	}
+	focus = {
+		id = CAN_focus_on_highways
+		icon = GFX_goal_generic_construction
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_rnvg_rail
+		}
+		mutually_exclusive = {
+			focus = CAN_focus_on_railways
+		}
+		x = 8
+		y = 3
+	}
+	focus = {
+		id = CAN_efficient_commutes
+		icon = GFX_goal_generic_construction
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_focus_on_highways
+		}
+		x = 8
+		y = 4
+	}
+	focus = {
+		id = CAN_civilian_industry
+		icon = goal_generic_consumer_goods
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_efficient_commutes
+		}
+		x = 7
+		y = 6
+	}
+	focus = {
+		id = CAN_adv_in_engineering
+		icon = GFX_goal_generic_production
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_civilian_industry
+		}
+		x = 7
+		y = 7
+	}
+	focus = {
+		id = CAN_focus_on_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_rnvg_rail
+		}
+		mutually_exclusive = {
+			focus = CAN_focus_on_highways
+		}
+		x = 12
+		y = 3
+	}
+	focus = {
+		id = CAN_efficient_resource_transport
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_focus_on_railways
+		}
+		x = 12
+		y = 4
+	}
+	focus = {
+		id = CAN_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_efficient_resource_transport
+		}
+		x = 13
+		y = 6
+	}
+	focus = {
+		id = CAN_advances_in_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_military_industry
+		}
+		x = 13
+		y = 7
+	}
+	focus = {
+		id = CAN_urban_industry
+		icon = GFX_goal_generic_construct_civilian
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_efficient_commutes
+			focus = CAN_efficient_resource_transport
+		}
+		x = 10
+		y = 5
+	}
+	focus = {
+		id = CAN_research_civ_sector
+		icon = GFX_focus_research
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_urban_industry
+		}
+		x = 10
+		y = 7
+	}
+	# Branch 1:2
+	focus = {
+		id = CAN_st_lawrence_seaway
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_address_strike
+		}
+		x = 15
+		y = 1
+	}
+	focus = {
+		id = CAN_atlantic_bridge_effort
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_st_lawrence_seaway
+		}
+		x = 15
+		y = 3
+	}
+	focus = {
+		id = CAN_pacific_bridge_efforts
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_atlantic_bridge_effort
+		}
+		x = 15
+		y = 4
+	}
+	focus = {
+		id = CAN_expand_st_lawrence_seaway
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_st_lawrence_seaway
+			focus = CAN_atlantic_focus
+		}
+		x = 17
+		y = 2
+	}
+	focus = {
+		id = CAN_atlantic_shipyards
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_expand_st_lawrence_seaway
+		}
+		x = 17
+		y = 4
+	}
+	#Branch 2:0
+
+	focus = {
+		id = CAN_can_rule_the_waves
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 24
+		y = 0
+	}
+	focus = {
+		id = CAN_atlantic_focus
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_can_rule_the_waves
+		}
+		x = 20
+		y = 1
+	}
+	focus = {
+		id = CAN_atlantic_trade
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_atlantic_focus
+		}
+		x = 20
+		y = 3
+	}
+	focus = {
+		id = CAN_secure_the_north
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_can_rule_the_waves
+		}
+		x = 23
+		y = 2
+	}	
+	focus = {
+		id = CAN_northern_shipyards
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_secure_the_north
+		}
+		x = 21
+		y = 4
+	}
+	focus = {
+		id = CAN_the_arctic_game
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_secure_the_north
+		}
+		x = 24
+		y = 4
+	}		
+	focus = {
+		id = CAN_pacific_focus
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_can_rule_the_waves
+		}
+		x = 27
+		y = 1
+	}	
+	focus = {
+		id = CAN_carrier_commision
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_pacific_focus
+		}
+		x = 26
+		y = 3
+	}	
+	focus = {
+		id = CAN_naval_air_support
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_carrier_commision
+		}
+		x = 26
+		y = 5
+	}	
+	focus = {
+		id = CAN_pacific_cooperation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_pacific_focus
+		}
+		x = 28
+		y = 6
+	}	
+	focus = {
+		id = CAN_trade_with_pacific_allies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_pacific_cooperation
+		}
+		x = 26
+		y = 7
+	}
+	focus = {
+		id = CAN_military_support_in_asia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CAN_pacific_cooperation
+		}
+		x = 22
+		y = 7
+	}		
+
