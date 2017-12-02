@@ -1,0 +1,89 @@
+﻿###########################
+# Death of Stalin Events
+###########################
+
+add_namespace = stalin
+
+country_event = { # Stalin's summer holiday 1950
+	id = stalin.1
+	title = stalin.1.t
+	desc = stalin.1.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1950.8.1
+		date < 1950.11.1
+	}
+	
+	meant_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = stalin.1.a
+		set_country_flag = stalin_50
+	}
+}
+
+country_event = { # Stalin's summer holiday 1951
+	id = stalin.2
+	title = stalin.2.t
+	desc = stalin.2.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1951.8.1
+		date < 1951.11.1
+	}
+	
+	meant_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = stalin.2.a
+		set_country_flag = stalin_51
+	}
+}
+
+country_event = { # doctor tells Stalin to retire
+	id = stalin.3
+	title = stalin.3.t
+	desc = stalin.3.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1952.1.1
+	}
+	
+	meant_time_to_happen = {
+		days = 360
+		modifier = {
+			factor = 0.5
+			has_country_flag = stalin_50
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = stalin_51
+		}
+	}
+	
+	option = { # arrest the doctor
+		name = stalin.3.a
+		set_country_flag = stalin_doctor_arrest
+	}
+	
+	option = { # leave him
+		name = stalin.3.a
+		set_country_flag = stalin_doctor_free
+	}
+}
