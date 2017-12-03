@@ -138,6 +138,7 @@ equipments = {
 		air_attack = 100
 		air_defence = 54
 		air_bombing = 64
+		build_cost_ic = 83
 	}
 	jet_strat_bomber_equipment_2 = {
 		year = 1960
@@ -152,6 +153,7 @@ equipments = {
 		air_attack = 110
 		air_defence = 69
 		air_bombing = 80
+		build_cost_ic = 86
 	}
 	jet_strat_bomber_equipment_3 = {
 		year = 1970
@@ -166,6 +168,7 @@ equipments = {
 		air_attack = 120
 		air_defence = 84
 		air_bombing = 96
+		build_cost_ic = 89
 	}
 	jet_strat_bomber_equipment_4 = {
 		year = 1980
@@ -180,6 +183,7 @@ equipments = {
 		air_attack = 130
 		air_defence = 99
 		air_bombing = 112
+		build_cost_ic = 92
 	}
 	jet_strat_bomber_equipment_5 = {
 		year = 1990
@@ -194,6 +198,80 @@ equipments = {
 		air_attack = 140
 		air_defence = 114
 		air_bombing = 128
+		build_cost_ic = 95
+	}
+	
+	strat_stealth_equipment = {
+		year = 1980
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment			
+		is_buildable = no
+		type = strategic_bomber
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 10
+		
+		interface_category = interface_category_air
+		
+		# Strategic bomber
+		interface_overview_category_index = 5
+				
+		upgrades = {
+			plane_bomb_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		# Air vs Navy - high damage / low hit chance / hard to hurt
+		naval_strike_attack = 1.5
+		naval_strike_targetting = 0.6
+		
+		build_cost_ic = 195
+		resources = {
+			aluminium = 4
+			tungsten = 4
+			rubber = 1
+			chromium = 2
+		}
+		
+		manpower = 310
+	}
+
+
+	strat_stealth_equipment_1 = {
+		year = 1980
+
+		archetype = jet_strat_bomber_equipment
+		priority = 150
+		
+		air_range = 10000
+		maximum_speed = 1280
+		air_agility = 17
+		air_attack = 130
+		air_defence = 200
+		air_bombing = 112
+		build_cost_ic = 195
+	}
+	strat_stealth_equipment_2 = {
+		year = 1990
+
+		archetype = jet_strat_bomber_equipment
+		parent = strat_stealth_equipment_1
+		priority = 150
+		
+		air_range = 11000
+		maximum_speed = 1400
+		air_agility = 18
+		air_attack = 140
+		air_defence = 240
+		air_bombing = 128
+		build_cost_ic = 225
 	}
 	
 	# Transport plane ##########################
@@ -233,7 +311,7 @@ equipments = {
 
 
 	transport_plane_equipment_1 = {
-		year = 1933
+		year = 1936
 
 		archetype = transport_plane_equipment
 		priority = 130
@@ -241,6 +319,72 @@ equipments = {
 		air_range = 1000
 		maximum_speed = 300
 		air_agility = 10
-		air_defence = 20
+		air_defence = 24
+	}
+	transport_plane_equipment_2 = {
+		year = 1945
+
+		archetype = transport_plane_equipment
+		priority = 130
+		
+		air_range = 1300
+		maximum_speed = 500
+		air_agility = 12
+		air_defence = 28
+	}
+	transport_plane_equipment_3 = {
+		year = 1950
+
+		archetype = transport_plane_equipment
+		priority = 130
+		
+		air_range = 1600
+		maximum_speed = 700
+		air_agility = 14
+		air_defence = 32
+	}
+	transport_plane_equipment_4 = {
+		year = 1960
+
+		archetype = transport_plane_equipment
+		priority = 130
+		
+		air_range = 1900
+		maximum_speed = 900
+		air_agility = 16
+		air_defence = 36
+	}
+	transport_plane_equipment_5 = {
+		year = 1970
+
+		archetype = transport_plane_equipment
+		priority = 130
+		
+		air_range = 2200
+		maximum_speed = 1100
+		air_agility = 18
+		air_defence = 40
+	}
+	transport_plane_equipment_6 = {
+		year = 1980
+
+		archetype = transport_plane_equipment
+		priority = 130
+		
+		air_range = 2500
+		maximum_speed = 1300
+		air_agility = 20
+		air_defence = 44
+	}
+	transport_plane_equipment_7 = {
+		year = 1980
+
+		archetype = transport_plane_equipment
+		priority = 130
+		
+		air_range = 2800
+		maximum_speed = 1500
+		air_agility = 22
+		air_defence = 48
 	}
 }

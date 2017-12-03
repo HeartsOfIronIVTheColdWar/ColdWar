@@ -8911,7 +8911,7 @@
 8910;120;38;232;sea;false;ocean;0
 8911;120;39;240;sea;false;ocean;0
 8912;121;2;236;sea;false;ocean;0
-8913;121;4;244;land;false;plains;3
+8913;121;4;244;lake;false;plains;3
 8914;121;6;232;sea;true;ocean;0
 8915;121;8;240;sea;false;ocean;0
 8916;121;10;248;sea;false;ocean;0
@@ -13203,3 +13203,4 @@
 13202;138;235;160;land;true;mountain;2
 13203;211;241;202;land;true;mountain;2
 13204;95;65;145;land;true;unknown;6
+13205;55;193;132;land;false;desert;7

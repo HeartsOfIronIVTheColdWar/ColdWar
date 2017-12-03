@@ -1,0 +1,107 @@
+focus_tree = {
+	id = greek_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	
+#############################################
+#####GREEK FOCUS TREE######################
+#############################################
+
+	focus = {
+		id = GRE_post_war_reconstruction_plan
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		
+		x = 2
+		y = 0
+
+		completion_reward = {
+				add_ideas = GRE_reconstruction_plan
+		}
+		
+	}
+	
+	
+	focus = {
+		id = GRE_industrialisation_of_greece
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = GRE_post_war_reconstruction_plan
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			186 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			47 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GRE_reconstruction_of_northern_greece
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = GRE_post_war_reconstruction_plan
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			731 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			184 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					
+				}
+			}
+		}
+	}
+	focus = {
+		id = GRE_austerity
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = GRE_reconstruction_of_northern_greece
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+			add_ideas = GRE_austerity_measures
+		}
+	}
+
+#############################################
+#####POLITICAL FOCUS TREE####################
+#############################################
+
+
+}
