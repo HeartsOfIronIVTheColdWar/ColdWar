@@ -352,6 +352,12 @@
  usa.10202.a:0 "Popular opinion is shifting against segregation."
  usa.10203.t:0 "The Montgomery Bus Boycott"
  usa.10203.d:0 "In response to what they see as the unfair treatment of Rosa Parks, black community leaders including E. D. Nixon and Martin Luther King, Jr. have organised a boycott of Montgomery buses.
+ usa.10401.t:0 "Canadian-American joint pipeline a success"
+ usa.10401.d:0 "A joint Canadian-American company has begun the construction of an oil pipeline that will benefit both our countries. The pipeline delivers oil from Alberta, to Wisconsin, and then to Southern Ontario. We are already seeing the benefits as oil arrives in the city of Superior, Wisconsin."
+ usa.10401.a:0 "Thanks Canada!"
+ usa.10402.t:0 "Canadian-American joint pipeline deal revoked"
+ usa.10402.d:0 "After a joint American-Canadian company offered an oil pipeline deal between Canada and the United States that would be mutually beneficial for both our countries, the government of Canada ordered the company to revoke their offer, in favor of a pipeline that would only marginally benefit Canada."
+ usa.10402.a:0 "Well... not much we can do about it."
 ##################################################
  election.1.t:0 "GENERIC ELECTION"
  election.1.d:0 ""

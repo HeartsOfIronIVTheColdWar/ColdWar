@@ -913,3 +913,45 @@ country_event = {
 		}
 	}
 }
+
+# Canada builds joint pipeline
+country_event = {
+    id = usa.10401
+    title = usa.10401.t
+    desc = usa.10401.d
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+    name = usa.10401.a
+        USA = {
+            add_opinion_modifier = { 
+                target = CAN
+                modifier = CAN_jt_pipeline
+            }
+        }
+    }
+}
+
+# Canada builds national pipeline
+country_event = {
+	id = usa.10402
+	title = usa.10402.t
+	desc = usa.10402.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+	name = usa.10402.a
+		USA = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_nat_pipeline
+			} 
+		}
+	}
+}

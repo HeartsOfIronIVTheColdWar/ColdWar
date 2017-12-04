@@ -300,4 +300,14 @@ opinion_modifiers = {
 		value = 5
 	}
 
+	#CAN - USA relations#
+
+	CAN_jt_pipeline = {
+		value = 10
+	}
+	CAN_nat_pipeline = {
+		value = -10
+		months = 60
+	}
+
 }	
