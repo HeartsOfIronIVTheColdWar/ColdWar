@@ -1,18 +1,58 @@
 ideas = {
 	country = {
-		GRE_austerity_meausers = {
-			allowed = {
-				always = no
-			}
+		GRE_reconstruction_plan = {
+            allowed = {
+                always = no
+            }
 
-			removal_cost = -1
-			
-			picture = generic_production_bonus	
+            removal_cost = -1
 
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
+            picture = generic_production_bonus
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_infrastructure_factor = 0.1
+            }
+        }
+		GRE_austerity_measures = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_production_bonus
+
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+		GRE_the_pride_of_the_aegean = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_manpower_bonus
+
+            modifier = {
+                conscription = 0.010
+            }
+        }
+		GRE_prisoner_labour_camps = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_manpower_bonus
+
+            modifier = {
+                industrial_capacity_factory = 0.10
+            }
+        }
 	}
 	
 ###ADVISORS AND STAFF###
