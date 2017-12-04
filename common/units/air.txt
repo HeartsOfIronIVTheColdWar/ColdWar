@@ -45,25 +45,114 @@ sub_units = {
 		categories = { category_cas }
 	}
 ###ADDED BY COLD WAR MOD ###
-	
-#	jet_cas = {
-#		sprite = light_plane
-#		priority = 1
-#		active = yes
-#		type = { cas }
-#		need = { jet_cas_equipment = 1 }
-#		categories = { category_cas }
-#	}
-#	mca = {
-#		sprite = light_plane
-#		priority = 1
-#		active = yes
-#		type = { mca }
-#		need = { mca_equipment = 1 }
-#		categories = { category_mca }
-#	}
-	
+	cv_jet_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { cv_jet_fighter_equipment = 1 }
+		categories = { category_fighter }
+	}
 
+	jet_CAS = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { jet_CAS_equipment = 1 }
+		categories = { category_cas }
+	}
+	
+	cv_jet_CAS = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { cv_jet_CAS_equipment = 1 }
+		categories = { category_cas }
+	}
+	
+	mca = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas  }
+		need = { mca_equipment = 1 }
+		categories = { category_fighter category_cas }
+	}
+	
+	cv_mca = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas  }
+		need = { cv_mca_equipment = 1 }
+		categories = { category_fighter category_cas }
+	}
+	
+	light_stealth = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas  }
+		need = { light_stealth_equipment = 1 }
+		categories = { category_fighter category_cas }
+	}
+	
+	interceptor = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { interceptor_equipment = 1 }
+		categories = { category_fighter }
+	}
+	helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { helicopter_equipment = 1 }
+		categories = { category_cas }
+	}
+	transport_helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { transport_helicopter_equipment = 1 }
+	}
+	asw_helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { naval_bomber }
+		need = { asw_helicopter_equipment = 1 }
+	}
+	attack_helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { attack_helicopter_equipment = 1 }
+		categories = { category_cas }
+	}
+	scout_helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { scout_helicopter_equipment = 1 }
+	}
+
+	jet_interceptor = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { jet_interceptor_equipment = 1 }
+		categories = { category_fighter }
+	}
 
 	cv_nav_bomber = {
 		sprite = light_plane
