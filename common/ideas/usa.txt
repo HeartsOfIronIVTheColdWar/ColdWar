@@ -1757,5 +1757,24 @@ ideas = {
 		}
 	}
 
+	# CANADA RESOURCE TRADE #
+
+	country = {
+		usa_NA_resources = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+
+
+		}
+	}	
+
 }
 

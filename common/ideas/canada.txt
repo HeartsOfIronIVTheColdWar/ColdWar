@@ -430,13 +430,48 @@ ideas = {
 				picture = generic_constitutional_guarantee
 			
 				modifier = {
-				consumer_goods_factor = 0.1
-				production_speed_industrial_complex_factor = -0.10
-				production_speed_arms_factory_factor = -0.10
-				production_speed_infrastructure_factor = -0.75
-				local_resources_factor = -0.20
+					consumer_goods_factor = 0.1
+					production_speed_industrial_complex_factor = -0.10
+					production_speed_arms_factory_factor = -0.10
+					production_speed_infrastructure_factor = -0.75
+					local_resources_factor = -0.20
 				}
 			}
 		}	
+
+# NA Resource Trade #
+
+	country = {
+		can_NA_resources = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+
+		}
+	}
+
+
+# Reinvigorated Railwork #
+
+	country = {
+		can_rnvg_rail = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+			}	
+
+		}
+	}
 
 }

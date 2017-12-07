@@ -2547,3 +2547,7 @@
  looming_strike_desc:0 "The railway workers are not happy... "
  relaxed_railwork:0 "Relaxed Railwork"
  relaxed_railwork_desc:0 "The demands of the rail workers have been met. It will be a while before we see productivity go back up to normal."
+ can_rnvg_rail:0 "Reinvigorated Railwork"
+ can_rnvg_rail_desc:0 "Supported by government efforts, the railway construction industry is operating as well as it was previously, and then some."
+ can_NA_resources:0 "North American Resources"
+ can_NA_resources_desc:0 "Both America and Canada benefit from less restrictive trade and resource extraction."

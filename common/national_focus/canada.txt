@@ -253,8 +253,22 @@ focus = {
 		icon = GFX_goal_generic_major_alliance
 		cost = 0.00
 		prerequisite = {
-			focus = CAN_expand_jt_oil
+				focus = CAN_expand_jt_oil
 		}
+		available = {
+			has_opinion = { target = USA value > 74 }
+			USA = {
+				has_opinion = { target = CAN value > 74 }
+			}
+		}
+		completion_reward = {
+			add_ideas = can_NA_resources
+			USA = {
+				add_ideas = usa_NA_resources
+			}
+		}
+
+
 		x = 5
 		y = 5
 	}
@@ -265,9 +279,18 @@ focus = {
 		prerequisite = {
 			focus = CAN_north_american_resources
 		}
+
+		available = {
+			has_opinion = { target = USA value > 99 }
+			USA = {
+				has_opinion = { target = CAN value > 99 }
+			}
+		}	
+
 		x = 5
 		y = 7
 	}
+
 	# Branch 1:1
 	focus = {
 		id = CAN_rnvg_rail
@@ -276,6 +299,14 @@ focus = {
 		prerequisite = {
 			focus = CAN_address_strike
 		}
+		completion_reward = {
+			add_timed_idea = { 
+				idea = can_rnvg_rail 
+				days = 1440 
+			}
+		}
+
+
 		x = 10
 		y = 2
 	}
