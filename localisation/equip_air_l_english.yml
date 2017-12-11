@@ -1,4 +1,11 @@
 ﻿l_english:
+###For references###
+ jet_fighter_equipment:0 "Jet Fighters"
+ cv_jet_fighter_equipment:0 "Carrier Jet Fighter"
+ jet_CAS:0 "Jet CAS"
+ cv_jet_CAS:0 "Carrier Jet CAS"
+ interceptor:0 "Interceptors"
+
 
 ###GENERIC AIRCRAFT###
 
@@ -399,3 +406,171 @@
  SOV_transport_plane_equipment_6_short:0 ""
  SOV_transport_plane_equipment_7:0 ""
  SOV_transport_plane_equipment_7_short:0 ""
+ 
+ ###FRENCH AIRCRAFT###
+ 
+##Helicopters
+ FRA_transport_helicopter_equipment_1:0 "Sud Aviation SA-321K Super Frelon"
+ FRA_transport_helicopter_equipment_1_short:0 "Super Frelon"
+ FRA_transport_helicopter_equipment_2:0 "Aérospatiale SA-330E Puma"
+ FRA_transport_helicopter_equipment_2_short:0 "SA-330E Puma"
+ FRA_transport_helicopter_equipment_3:0 "1980's Aérospatiale AS-332M Super Puma"
+ FRA_transport_helicopter_equipment_3_short:0 "AS-332M Super Puma"
+ FRA_transport_helicopter_equipment_4:0 "NH Industries NH90"
+ FRA_transport_helicopter_equipment_4_short:0 "NH90"
+ 
+ FRA_attack_helicopter_equipment_1:0 "Sud-Aviation SA340 Gazelle"
+ FRA_attack_helicopter_equipment_1_short:0 "SA340 Gazelle"
+ FRA_attack_helicopter_equipment_2:0 "SE.3164 Alouette canon"
+ FRA_attack_helicopter_equipment_2_short:0 "Alouette canon"
+ FRA_attack_helicopter_equipment_3:0 "1980's Attack Helicopter"
+ FRA_attack_helicopter_equipment_3_short:0 "1980's Attack Helicopter"
+ FRA_attack_helicopter_equipment_4:0 "Eurocopter EC665 Tigre"
+ FRA_attack_helicopter_equipment_4_short:0 "Eurocopter Tigre"
+ 
+ FRA_asw_helicopter_equipment_1:0 "Sud Aviation SA-321G Super Frelon"
+ FRA_asw_helicopter_equipment_1_short:0 "SA-321G Super Frelon"
+ FRA_asw_helicopter_equipment_2:0 "Aérospatiale AS-332 F1 Super Puma Naval"
+ FRA_asw_helicopter_equipment_2_short:0 "AS-332 Super Puma Naval"
+ FRA_asw_helicopter_equipment_3:0 "Aérospatiale AS565 Panther"
+ FRA_asw_helicopter_equipment_3_short:0 "AS565 Panther"
+ FRA_asw_helicopter_equipment_4:0 "NHIndustries NFH90"
+ FRA_asw_helicopter_equipment_4_short:0 "NFH90"
+ 
+ FRA_scout_helicopter_equipment_1:0 "Sud Aviation SA-318C Alouette II"
+ FRA_scout_helicopter_equipment_1_short:0 "SA-318 Alouette II"
+ FRA_scout_helicopter_equipment_2:0 "SE-316C Alouette III"
+ FRA_scout_helicopter_equipment_2_short:0 "SE-316C Alouette III"
+ FRA_scout_helicopter_equipment_3:0 "Aérospatiale SA-366G"
+ FRA_scout_helicopter_equipment_3_short:0 "SA-366G"
+ FRA_scout_helicopter_equipment_4:0 "Eurocopter EC-120B Colibri"
+ FRA_scout_helicopter_equipment_4_short:0 "EC-120B Colibri"
+ 
+ FRA_helicopter_equipment_0:0 "S.N.C.A.N. Nord 1700 Norélic"
+ FRA_helicopter_equipment_0_short:0 "Nord 1700 Norélic"
+ FRA_helicopter_equipment_1:0 "S.N.C.A.S.E. SE-3130 Alouette II"
+ FRA_helicopter_equipment_1_short:0 "SE-3130 Alouette II"
+ 
+##Light Aircraft
+
+ FRA_mca_equipment_1:0 "Dassault Rafale A" #1980
+ FRA_mca_equipment_1_short:0 "Rafale A"
+ FRA_cv_mca_equipment_1:0 "Dassault Rafale B"
+ FRA_cv_mca_equipment_1_short:0 "Rafale B"
+ FRA_mca_equipment_2:0 "Dassault Rafale C" #1990
+ FRA_mca_equipment_2_short:0 "Rafale C"
+ FRA_cv_mca_equipment_2:0 "Dassault Rafale M"
+ FRA_cv_mca_equipment_2_short:0 "Rafale M"
+ 
+ FRA_CAS_equipment_1:0 "Mosquito FB Mk.VI" #1945
+ FRA_CAS_equipment_1_short:0 "Mosquito"
+ FRA_cv_CAS_equipment_1:0 "Nord 1500 Noréclair"
+ FRA_cv_CAS_equipment_1_short:0 "Noréclair"
+ FRA_jet_CAS_equipment_1:0 "Breguet Br 960-02 Vulture" #1950
+ FRA_jet_CAS_equipment_1_short:0 "Br-960 Vulture"
+ FRA_cv_jet_CAS_equipment_1:0 "Breguet Br-1050 Alizé"
+ FRA_cv_jet_CAS_equipment_1_short:0 "Br-1050 Alizé"
+ FRA_jet_CAS_equipment_2:0 "SEPECAT Jaguar GR Mk 1" #1960
+ FRA_jet_CAS_equipment_2_short:0 "Jaguar GR"
+ FRA_cv_jet_CAS_equipment_2:0 "SEPECAT Jaguar M"
+ FRA_cv_jet_CAS_equipment_2_short:0 "Jaguar M"
+ FRA_jet_CAS_equipment_3:0 "Dassault-Breguet/Dornier Alpha Jet A" #1970
+ FRA_jet_CAS_equipment_3_short:0 "Alpha Jet"
+ FRA_cv_jet_CAS_equipment_3:0 "Dassault-Breguet/Dornier Alpha Jet M"
+ FRA_cv_jet_CAS_equipment_3_short:0 "Alpha Jet M"
+ 
+ FRA_fighter_equipment_0:0 "Dewoitine D-371" #1936
+ FRA_fighter_equipment_0_short:0 "D-371"
+ FRA_cv_fighter_equipment_0:0 "Dewoitine D-373"
+ FRA_cv_fighter_equipment_0_short:0 "D-373"
+ FRA_fighter_equipment_1:0 "Bloch MB-157" #1945
+ FRA_fighter_equipment_1_short:0 "MB-157"
+ FRA_cv_fighter_equipment_1:0 "WWII Fighter CV"
+ FRA_cv_fighter_equipment_1_short:0 "World War II Fighter CV"
+ FRA_jet_fighter_equipment_1:0 "Dassault MD-452 Mystère II" #1950
+ FRA_jet_fighter_equipment_1_short:0 "Mystère II"
+ FRA_cv_jet_fighter_equipment_1:0 "Dassault Étendard VI"
+ FRA_cv_jet_fighter_equipment_1_short:0 "Etendard VI"
+ FRA_jet_fighter_equipment_2:0 "Dassault Mirage F-2" #1960
+ FRA_jet_fighter_equipment_2_short:0 "Mirage F-2"
+ FRA_cv_jet_fighter_equipment_2:0 "Dassault Étendard IV"
+ FRA_cv_jet_fighter_equipment_2_short:0 "Etendard IV"
+ FRA_jet_fighter_equipment_3:0 "Dassault-Breguet Mirage F1A" #1970
+ FRA_jet_fighter_equipment_3_short:0 "Mirage F1A"
+ FRA_cv_jet_fighter_equipment_3:0 "Dassault-Breguet Super Etendard"
+ FRA_cv_jet_fighter_equipment_3_short:0 "Super Etendard"
+ 
+ FRA_light_stealth_equipment_1:0 "Super Mirage"
+ FRA_light_stealth_equipment_1_short:0 "Mirage G8A"
+ FRA_light_stealth_equipment_2:0 "Advanced Stealth Fighter"
+ FRA_light_stealth_equipment_2_short:0 "Advanced Stealth Fighter"
+ 
+ FRA_interceptor_equipment_1:0 "Arsenal VB-10"
+ FRA_interceptor_equipment_1_short:0 "VB-10"
+ FRA_jet_interceptor_equipment_1:0 "S.N.C.A.N. Nord 1601"
+ FRA_jet_interceptor_equipment_1_short:0 "Nord 1601"
+ FRA_jet_interceptor_equipment_2:0 "Dassault Mirage IIIO 01"
+ FRA_jet_interceptor_equipment_2_short:0 "Mirage IIIO 01"
+ FRA_jet_interceptor_equipment_3:0 "Dassault Mirage G-8-01"
+ FRA_jet_interceptor_equipment_3_short:0 "Mirage G-8-01"
+ FRA_jet_interceptor_equipment_4:0 "Dassault-Breguet Mirage IIING"
+ FRA_jet_interceptor_equipment_4_short:0 "Mirage III-NG"
+ FRA_jet_interceptor_equipment_5:0 "Dassault-Breguet Mirage F1C"
+ FRA_jet_interceptor_equipment_5_short:0 "Mirage F1 C"
+ 
+##Heavy Aircraft
+
+ FRA_strat_bomber_equipment_0:0 "Farman F-222/2"
+ FRA_strat_bomber_equipment_0_short:0 "F-222/2"
+ FRA_strat_bomber_equipment_1:0 "Breguet Br-482"
+ FRA_strat_bomber_equipment_1_short:0 "Br-482"
+ FRA_jet_strat_bomber_equipment_1:0 "SNCASO SO-4050 Vautour IIB"
+ FRA_jet_strat_bomber_equipment_1_short:0 "SO-4050 Vautour IIB"
+ FRA_jet_strat_bomber_equipment_2:0 "Dassault Mirage IVA"
+ FRA_jet_strat_bomber_equipment_2_short:0 "Mirage IVA"
+ FRA_jet_strat_bomber_equipment_3:0 "Dassault Mirage IVN"
+ FRA_jet_strat_bomber_equipment_3_short:0 "Mirage IVN"
+ FRA_jet_strat_bomber_equipment_4:0 "Dassault Mirage IVP"
+ FRA_jet_strat_bomber_equipment_4_short:0 "Mirage IVP"
+ FRA_jet_strat_bomber_equipment_5:0 "Dassault Mirage 2000N"
+ FRA_jet_strat_bomber_equipment_5_short:0 "Mirage 2000N"
+ 
+ FRA_strat_stealth_equipment_1:0 "Moyen Duc AVE-D"
+ FRA_strat_stealth_equipment_1_short:0 "AVE-D"
+ FRA_strat_stealth_equipment_2:0 "Dassault Neuron"
+ FRA_strat_stealth_equipment_2_short:0 "Neuron"
+ 
+ FRA_tac_bomber_equipment_0:0 "Bloch MB-131"
+ FRA_tac_bomber_equipment_0_short:0 "MB-131"
+ FRA_tac_bomber_equipment_1:0 "North American B-25 Mitchell"
+ FRA_tac_bomber_equipment_1_short:0 "B-25 Mitchell"
+ FRA_jet_tac_bomber_equipment_1:0 "S.N.C.A.S.O. SO-4000 Vautour"
+ FRA_jet_tac_bomber_equipment_1_short:0 "SO-4000 Vautour"
+ FRA_jet_tac_bomber_equipment_2:0 "Dassault Mirage IIIE"
+ FRA_jet_tac_bomber_equipment_2_short:0 "Mirage IIIE"
+ FRA_jet_tac_bomber_equipment_3:0 "Dassault Mirage 50"
+ FRA_jet_tac_bomber_equipment_3_short:0 "Mirage 50"
+ FRA_jet_tac_bomber_equipment_4:0 "Dassault-Breguet Mirage 4000"
+ FRA_jet_tac_bomber_equipment_4_short:0 "Mirage 4000"
+ FRA_jet_tac_bomber_equipment_5:0 "Dassault Mirage 2000D"
+ FRA_jet_tac_bomber_equipment_5_short:0 "Mirage 2000D"
+ 
+ FRA_tac_stealth_equipment_1:0 "Petit Duc AVE-D"
+ FRA_tac_stealth_equipment_1_short:0 "AVE-D"
+ FRA_tac_stealth_equipment_2:0 "Advanced Stealth TAC"
+ FRA_tac_stealth_equipment_2_short:0 "Advanced Tactical Stealth Bomber"
+
+ FRA_transport_plane_equipment_1:0 "Caudron C-445M Goéland"
+ FRA_transport_plane_equipment_1_short:0 "C-445M Goéland"
+ FRA_transport_plane_equipment_2:0 "S.N.C.A.C. NC-702 Martinet"
+ FRA_transport_plane_equipment_2_short:0 "NC-702 Martinet"
+ FRA_transport_plane_equipment_3:0 "Breguet Br-765 Sahara"
+ FRA_transport_plane_equipment_3_short:0 "Br-765 Sahara"
+ FRA_transport_plane_equipment_4:0 "Breguet Br-941S"
+ FRA_transport_plane_equipment_4_short:0 "Br-941S"
+ FRA_transport_plane_equipment_5:0 "C-160 Transall"
+ FRA_transport_plane_equipment_5_short:0 "C-160"
+ FRA_transport_plane_equipment_6:0 "C-160NG Transall"
+ FRA_transport_plane_equipment_6_short:0 "C-160NG"
+ FRA_transport_plane_equipment_7:0 "Airbus A400M Atlas"
+ FRA_transport_plane_equipment_7_short:0 "A400M Atlas"

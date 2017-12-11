@@ -137,7 +137,12 @@ focus_tree = {
 		cost = 10
 		x = 13
 		y = 0
-
+		completion_reward = {
+			custom_effect_tooltip = "4 Colonial Military Police divisions will be formed in Cochinochina and Annam"	
+			hidden_effect = {
+				load_oob = "FRA_1950_indochina"
+			}
+		}
 	}
 	focus = {
 		id = FRA_coal_and_steel
@@ -191,6 +196,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		completion_reward = {
+			add_political_power = 100
 			random_owned_controlled_state = {
 					if = {
 
@@ -314,7 +320,11 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
-
+		completion_reward = {
+			add_political_power = -200
+			FRA = { country_event = { id = fra.650} }
+			custom_effect_tooltip = "Perhaps a appeasement of the colonial possessions could easen the tension before a final decision is taken."
+		}
 	}
 	focus = {
 		id = FRA_appease_communists
@@ -394,7 +404,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 3
-
+		completion_reward = {
+			add_ideas = FRA_internationalism_effort
+		}
 	}
 	focus = {
 		id = FRA_unite_the_workers
@@ -405,7 +417,10 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
-
+		completion_reward = {
+			add_ideas = FRA_a_union_of_workers
+		}
+		
 	}
 	
 	focus = {
@@ -418,7 +433,22 @@ focus_tree = {
 		}
 		x = 3
 		y = 4
-
+		completion_reward = {
+			add_political_power = -100
+			#N Africa
+			ALG = { country_event = { id = fra.620} }
+			TUN = { country_event = { id = fra.625} }
+			MOR = { country_event = { id = fra.630} }
+			#Sub-sahara
+			FWA = { country_event = { id = fra.635} }
+			FEA = { country_event = { id = fra.640} }
+			MAD = { country_event = { id = fra.645} }
+			#Indochina
+			FRA = { end_puppet = LAO }
+			FRA = { end_puppet = CAM }
+			FRA = { end_puppet = SVN }
+			
+		}
 	}
 	focus = {
 		id = FRA_marshal_aid_meeting
@@ -575,6 +605,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_colonial_investement_fund
 		}
+		mutually_exclusive = {
+			focus = FRA_invest_in_africa
+		}
 		x = 8
 		y = 3
 		completion_reward = {
@@ -627,19 +660,66 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_colonial_investement_fund
 		}
+		mutually_exclusive = {
+			focus = FRA_algerian_investements
+		}
 		x = 10
 		y = 3
-
+		completion_reward = {
+			FWA = { 
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes						
+					}
+				}
+			}
+			FEA = { 
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes						
+					}
+				}
+			}
+			MAD = { 
+				random_owned_state = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes						
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRA_appease_colonies
 		icon = GFX_focus_generic_concessions
 		cost = 10
 		prerequisite = {
-			focus = FRA_invest_in_africa
-		}
-		prerequisite = {
 			focus = FRA_algerian_investements
+			focus = FRA_invest_in_africa
 		}
 		prerequisite = {
 			focus = FRA_improve_political_stability
@@ -671,7 +751,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_indochina
+		id = FRA_indochina2
 		icon = GFX_focus_generic_concessions
 		cost = 10
 		prerequisite = {
@@ -679,8 +759,11 @@ focus_tree = {
 		}
 		x = 10
 		y = 5
+		completion_reward = {
 
+		}
 	}
+###MILITARY SIDE###
 	focus = {
 		id = FRA_jungle_tactics
 		icon = GFX_focus_RAJ_indian_gurkhas
@@ -690,7 +773,10 @@ focus_tree = {
 		}
 		x = 12
 		y = 1
-
+		completion_reward = {
+			custom_effect_tooltip = RAJ_jungle_training_effect
+			hidden_effect = { set_technology = { jungle_warfare = 1 } }
+		}
 	}
 	focus = {
 		id = FRA_new_guns
@@ -702,7 +788,34 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons	
+			}
+		}
+	}
+	focus = {
+		id = FRA_paratroopers
+		icon = GFX_focus_generic_paratrooper
+		cost = 10
+		prerequisite = {
+			focus = FRA_Indochina
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = para_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = para_tech	
+			}
+		}
 	}
 	focus = {
 		id = FRA_advanced_personal_weapons
@@ -713,7 +826,16 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				ahead_reduction = 0.75
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine	
+			}
+		}
 	}
 	focus = {
 		id = FRA_mobility
@@ -725,7 +847,15 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = motorized_equipment_bonus
+				bonus = 0.75
+				uses = 1
+				category = motorized_equipment	
+			}
+		}
 	}
 	focus = {
 		id = FRA_restart_tank_production
@@ -736,7 +866,14 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = MBT_1960_bonus
+				ahead_reduction = 1
+				uses = 1
+				category = MBT_1960	
+			}
+		}
 	}
 	focus = {
 		id = FRA_speed
@@ -750,7 +887,14 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = engine_improvement_bonus
+				bonus = 0.5
+				uses = 2
+				category = engine_improvement	
+			}
+		}
 	}
 	focus = {
 		id = FRA_power
@@ -764,7 +908,15 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = engine_improvement_bonus
+				bonus = 0.5
+				uses = 2
+				category = turret_improvements
+				category = armor_improvements
+			}
+		}
 	}
 	focus = {
 		id = FRA_austerity_for_military
@@ -776,7 +928,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-
+		completion_reward = {
+			add_ideas = FRA_austerity_for_military
+		}
 	}
 	focus = {
 		id = FRA_military_investements
@@ -787,7 +941,43 @@ focus_tree = {
 		}
 		x = 13
 		y = 5
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRA_the_foreign_legion_question
@@ -799,7 +989,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 6
-
+		completion_reward = {
+			custom_effect_tooltip = "NOT IMPLEMENTED YET"
+		}
 	}
 	
 	
@@ -832,17 +1024,6 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
-		id = FRA_paratroopers
-		icon = GFX_focus_generic_paratrooper
-		cost = 10
-		prerequisite = {
-			focus = FRA_Indochina
-		}
-		x = 14
-		y = 1
-
-	}
 ####AIR BRANCH####
 	focus = {
 		id = FRA_rebuild_air_bases
@@ -853,7 +1034,59 @@ focus_tree = {
 		}
 		x = 18
 		y = 0
-
+		completion_reward = {
+			air_experience = 25
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRA_expand_air_bases
@@ -864,7 +1097,44 @@ focus_tree = {
 		}
 		x = 21
 		y = 0
-
+		completion_reward = {
+			air_experience = 25
+			14 = { 
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			29 = { 
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			17 = { 
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			21 = { 
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			19 = { 
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRA_RADAR_investements
@@ -876,7 +1146,38 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
-
+		completion_reward = {
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = { 
+				limit =  {
+					is_on_continent = europe 
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRA_colonial_base_expansion
@@ -890,18 +1191,67 @@ focus_tree = {
 		} 
 		x = 22
 		y = 1
-
+		completion_reward = {
+			458 = { 
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 9994
+					instant_build = yes
+				}
+			}
+			804 = { 
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 7132
+					instant_build = yes
+				}
+			}
+			461 = { 
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 7069
+					instant_build = yes
+				}
+			}
+			272 = { 
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 4948
+					instant_build = yes
+				}
+			}
+			539 = { 
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 5139
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRA_colonial_military_resources
 		icon = GFX_goal_generic_position_armies
-		cost = 10
+		cost = 20
 		prerequisite = {
 			focus = FRA_colonial_base_expansion
 		}
 		x = 22
 		y = 2
-
+		completion_reward = {
+			add_resource = { type = aluminium amount = 42 state = 772 }
+			add_resource = { type = aluminium amount = 34 state = 310 }
+			add_resource = { type = rubber amount = 18 state = 771 }
+			add_resource = { type = rubber amount = 24 state = 539 }
+			add_resource = { type = chromium amount = 52 state = 635 }
+			add_resource = { type = steel amount = 24 state = 804 }
+			
+		}
 	}
 	focus = {
 		id = FRA_heavy_air_investements
@@ -916,7 +1266,15 @@ focus_tree = {
 		}
 		x = 17
 		y = 1
-
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = heavy_air_bonus
+				bonus = 0.50
+				uses = 1
+				category = heavy_air
+			}
+		}
 	}
 	focus = {
 		id = FRA_strategic_focus
@@ -927,7 +1285,16 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
-
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = cat_strategic_bomber_bonus
+				ahead_reduction = 1
+				bonus = 0.75
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
 	}
 	focus = {
 		id = FRA_army_support
@@ -938,7 +1305,16 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
-
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = tactical_bomber_bonus
+				ahead_reduction = 1
+				bonus = 0.75
+				uses = 1
+				category = tactical_bomber
+			}
+		}
 	}
 	focus = {
 		id = FRA_light_air_investements
@@ -953,7 +1329,15 @@ focus_tree = {
 		}
 		x = 19
 		y = 1
-
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = light_air_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air	
+			}
+		}
 	}
 	focus = {
 		id = FRA_the_helicopter
@@ -964,7 +1348,15 @@ focus_tree = {
 		}
 		x = 19
 		y = 3
-
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = helicopter_bonus
+				bonus = 0.5
+				uses = 2
+				category = helicopter	
+			}
+		}
 	}
 	focus = {
 		id = FRA_paratrooper_integration
@@ -975,7 +1367,16 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
-
+		completion_reward = {
+			army_experience = 10
+			air_experience = 10
+			add_tech_bonus = {
+				name = para_tech_bonus
+				bonus = 0.75
+				uses = 1
+				category = para_tech	
+			}
+		}
 	}
 	focus = {
 		id = FRA_fighter_training
@@ -987,6 +1388,10 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
+		completion_reward = {
+			air_experience = 25
+			add_ideas = FRA_allied_schematics
+		}
 
 	}
 	focus = {
@@ -998,6 +1403,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = light_air_bonus
+				ahead_reduction = 1
+				uses = 1
+				category = light_air	
+			}
+			swap_ideas = { remove_idea = FRA_allied_schematics add_idea = FRA_french_fighter_initiative }
+		}
 
 	}
 ###NAVAL STUFF###
@@ -1010,7 +1425,19 @@ focus_tree = {
 		}
 		x = 25
 		y = 0
-
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+				category = cl_tech
+				category = cv_tech
+				category = ss_tech		
+			}
+		
+		}
 	}
 	focus = {
 		id = FRA_buy_from_the_usa
@@ -1024,6 +1451,13 @@ focus_tree = {
 		}
 		x = 26
 		y = 1
+		completion_reward = {
+			add_opinion_modifier = { target = USA modifier = FRA_bought_ships }
+			USA = {
+				add_opinion_modifier = { target = FRA modifier = FRA_bought_ships }
+			}
+			custom_effect_tooltip = "The Americans have put forward a offer that we may recieve ships, but this needs to be discussed."
+		}
 
 	}
 	focus = {
@@ -1038,7 +1472,13 @@ focus_tree = {
 		}
 		x = 24
 		y = 1
-
+		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = FRA_bought_ships }
+			ENG = {
+				add_opinion_modifier = { target = FRA modifier = FRA_bought_ships }
+			}
+			custom_effect_tooltip = "A offer to buy ships will be put forward to the Brits, whom have showed interest in selling to us."
+		}
 	}
 	focus = {
 		id = FRA_refit_vessels
@@ -1050,7 +1490,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 2
-
+		completion_reward = {
+			add_ideas = FRA_refitted_vessels
+		}
 	}
 	focus = {
 		id = FRA_finish_battleship_jeanbart

@@ -2,6 +2,9 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	engine_improvement
+	armor_improvements
+	turret_improvements
 	MBT_1950_art
 	MBT_1960_art
 	MBT_1970_art

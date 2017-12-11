@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_idea_FRA_indochina"
 		texturefile = "gfx/interface/ideas/indochinese_federation.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_generic_air_research"
+		texturefile = "gfx/interface/ideas/idea_generic_air_research.dds"
+	}
 ###FIN###
 	spriteType = {
 		name = "GFX_idea_FIN_reparations_industry"

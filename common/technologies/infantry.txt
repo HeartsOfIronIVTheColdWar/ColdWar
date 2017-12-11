@@ -1256,10 +1256,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1950
+		start_year = 1952
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
@@ -1301,10 +1301,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1954
+		start_year = 1956
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 12 }
 		}
 		
 		categories = {
@@ -1346,10 +1346,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1958
+		start_year = 1960
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 16 }
 		}
 		
 		categories = {
@@ -1391,10 +1391,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1962
+		start_year = 1964
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 18 }
+			position = { x = 0 y = 20 }
 		}
 		
 		categories = {
@@ -1436,10 +1436,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1966
+		start_year = 1968
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 22 }
+			position = { x = 0 y = 24 }
 		}
 		
 		categories = {
@@ -1481,10 +1481,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1970
+		start_year = 1972
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 26 }
+			position = { x = 0 y = 28 }
 		}
 		
 		categories = {
@@ -1526,10 +1526,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1974
+		start_year = 1976
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 30 }
+			position = { x = 0 y = 32 }
 		}
 		
 		categories = {
@@ -1571,10 +1571,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1978
+		start_year = 1980
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 34 }
+			position = { x = 0 y = 36 }
 		}
 		
 		categories = {
@@ -1616,10 +1616,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1982
+		start_year = 1984
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 38 }
+			position = { x = 0 y = 40 }
 		}
 		
 		categories = {
@@ -1657,10 +1657,10 @@ technologies = {
 			breakthrough = 0.05
 		}
 		research_cost = 1.5
-		start_year = 1986
+		start_year = 1988
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 42 }
+			position = { x = 0 y = 44 }
 		}
 		
 		categories = {
@@ -1673,10 +1673,9 @@ technologies = {
 	}
 	###ANTI-TANK PATH###
 	infantry_at = {
-
-		category_all_infantry = {
-			hard_attack = 1
-			ap_attack = 1
+	
+		enable_equipments = {
+			anti_tank_equipment_0
 		}
 		
 		path = {
@@ -1703,18 +1702,18 @@ technologies = {
 	infantry_at2 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+			hard_attack = 0.1
+			ap_attack = 0.15
 		}
 		path = {
 			leads_to_tech = infantry_at3
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1950
+		start_year = 1951
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 7 }
 		}
 		
 		categories = {
@@ -1728,8 +1727,8 @@ technologies = {
 	infantry_at3 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+			hard_attack = 0.1
+			ap_attack = 0.15
 		}
 		
 		path = {
@@ -1754,9 +1753,8 @@ technologies = {
 	}
 	infantry_at4 = {
 
-		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+		enable_equipments = {
+			anti_tank_equipment_1
 		}
 		
 		path = {
@@ -1782,8 +1780,8 @@ technologies = {
 	infantry_at5 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+			hard_attack = 0.1
+			ap_attack = 0.15
 		}
 		
 		path = {
@@ -1792,10 +1790,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1962
+		start_year = 1961
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 18 }
+			position = { x = 2 y = 17 }
 		}
 		
 		categories = {
@@ -1809,8 +1807,8 @@ technologies = {
 	infantry_at6 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+			hard_attack = 0.1
+			ap_attack = 0.15
 		}
 		
 		path = {
@@ -1819,10 +1817,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1966
+		start_year = 1964
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 22 }
+			position = { x = 2 y = 20 }
 		}
 		
 		categories = {
@@ -1835,9 +1833,8 @@ technologies = {
 	}
 	infantry_at7 = {
 
-		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+		enable_equipments = {
+			anti_tank_equipment_2
 		}
 		
 		path = {
@@ -1846,10 +1843,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1970
+		start_year = 1968
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 26 }
+			position = { x = 2 y = 24 }
 		}
 		
 		categories = {
@@ -1863,12 +1860,39 @@ technologies = {
 	infantry_at8 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+			hard_attack = 0.1
+			ap_attack = 0.15
 		}
 		
 		path = {
 			leads_to_tech = infantry_at9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1971
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 27 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	infantry_at9 = {
+
+		category_all_infantry = {
+			hard_attack = 0.1
+			ap_attack = 0.15
+		}
+		
+		path = {
+			leads_to_tech = infantry_at10
 			research_cost_coeff = 1
 		}
 
@@ -1887,15 +1911,14 @@ technologies = {
 			factor = 1
 		}
 	}
-	infantry_at9 = {
+	infantry_at10 = {
 
-		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+		enable_equipments = {
+			anti_tank_equipment_3
 		}
 		
 		path = {
-			leads_to_tech = infantry_at10
+			leads_to_tech = infantry_at11
 			research_cost_coeff = 1
 		}
 
@@ -1914,23 +1937,21 @@ technologies = {
 			factor = 1
 		}
 	}
-	infantry_at10 = {
+	infantry_at11 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+			hard_attack = 0.1
+			ap_attack = 0.15
 		}
-		
 		path = {
-			leads_to_tech = infantry_at11
+			leads_to_tech = infantry_at12
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.5
-		start_year = 1982
+		start_year = 1981
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 38 }
+			position = { x = 2 y = 37 }
 		}
 		
 		categories = {
@@ -1941,18 +1962,42 @@ technologies = {
 			factor = 1
 		}
 	}
-	infantry_at11 = {
+	infantry_at12 = {
 
 		category_all_infantry = {
-			hard_attack = 0.2
-			ap_attack = 0.25
+			hard_attack = 0.1
+			ap_attack = 0.15
+		}
+		path = {
+			leads_to_tech = infantry_at13
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1984
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 40 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	infantry_at13 = {
+
+		enable_equipments = {
+			anti_tank_equipment_4
 		}
 
 		research_cost = 1.5
-		start_year = 1986
+		start_year = 1988
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 42 }
+			position = { x = 2 y = 44 }
 		}
 		
 		categories = {
@@ -2260,7 +2305,43 @@ technologies = {
 			factor = 1
 		}
 	}
-	
+	jungle_warfare = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: RAJ_jungle_training_effect
+		marine = {
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+				movement = 0.1
+			}
+		}
+
+		paratrooper = {
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+				movement = 0.1
+			}
+		}
+
+	}
 	
 
 }

@@ -1,0 +1,48 @@
+﻿#Hearts of Iron IV: The Cold War
+
+#HEAD DEVELOPER
+Gunnar Von Pontius
+
+#OLD GUARD / DEVELOPERS
+Killeritch - UK and Egypt
+Nelfe
+.7734
+Leafy_Emerald - USA and PRC
+Wilfred Laurier
+foroc2 - Korea
+Indyclone77 - Art
+TehHank - Artsy
+
+#DEVELOPERS AND CONTRIBUTORS
+AlmightyGoomy - Yugoslavia
+Internetismean - Spain
+GreekSpy - Greece
+PuruseeTheShakingCat - Vietnam and Japan
+Yustinn - Canada
+Theel - Sweden
+
+#ART
+TehHank
+Indyclone77
+Rrdelr
+
+#BUGTESTER
+MSG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2730,6 +2730,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 	}
 	
@@ -2757,6 +2758,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -2784,6 +2786,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -2816,6 +2819,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -2848,6 +2852,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -2875,6 +2880,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -2906,6 +2912,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -2937,6 +2944,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -2963,7 +2971,7 @@ technologies = {
 		
 		categories = {
 			armor
-			
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -3091,6 +3099,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 	}
 	
@@ -3118,6 +3127,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -3145,6 +3155,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -3177,6 +3188,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3209,6 +3221,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3236,6 +3249,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3267,6 +3281,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -3298,6 +3313,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -3324,6 +3340,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -3449,6 +3466,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 	}
 	
@@ -3476,6 +3494,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -3503,6 +3522,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -3535,6 +3555,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3567,6 +3588,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3594,6 +3616,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3625,6 +3648,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -3656,6 +3680,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -3682,6 +3707,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -3802,6 +3828,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 	}
 	
@@ -3829,6 +3856,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -3856,6 +3884,7 @@ technologies = {
 		
 		categories = {
 			armor
+			armor_improvements
 		}
 		
 		ai_will_do = {
@@ -3888,6 +3917,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3920,6 +3950,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3947,6 +3978,7 @@ technologies = {
 		
 		categories = {
 			armor
+			turret_improvements
 		}
 		
 		ai_will_do = {
@@ -3978,6 +4010,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -4009,6 +4042,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {
@@ -4035,6 +4069,7 @@ technologies = {
 		
 		categories = {
 			armor
+			engine_improvement
 		}
 		
 		ai_will_do = {

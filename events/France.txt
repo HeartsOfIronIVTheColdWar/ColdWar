@@ -1,5 +1,5 @@
 ﻿###########################
-# France Cold War Mod Events
+#France Cold War Mod Events
 ###########################
 
 add_namespace = fra
@@ -8,11 +8,54 @@ add_namespace = fra
 ##### FLAVOUR EVENTS
 
 ### Coca Cola event chain
+# Coca Cola informs US DoS of the French ban
+country_event = {
+	id = fra.500
+	title = "Coca Cola informs the DoS of a French ban on their products"
+	desc = "France has strict regulations on import of wares, and among them Coca Cola is banned. A formal complaint has been raised from Coca Cola over the legality of this. As much as we want a fair trade our relations with the French is important."
+	picture = GFX_report_event_james_farley
+	
+	trigger = {
+		tag = USA
+		date > 1950.2.1
+		date < 1950.12.1
+		FRA = {
+			has_government = democratic
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = "This is a bad reason to ruin our relations."
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "The French must respect trade regulations!"
+		ai_chance = {
+			factor = 60
+		}
+		hidden_effect = {
+			FRA = { country_event = { days = 5 id = fra.501 } }
+		}
+	}
+}
 # US DoS asks to lift ban on Coca Cola
 country_event = {
 	id = fra.501
-	title = fra.501.t
-	desc = fra.501.d
+	title = "The American Departement of State wants us to lift the Coca-Cola ban."
+	desc = "The Americans are complaining that we the French are discouraging fair market competition by favoring products produced in France. Among these is a list of products, most famous being Coca-Cola. They are demanding that we open the markets to import wares, or else they might lower our financial aid."
 	picture = GFX_report_event_advisor_read_write
 	
 	is_triggered_only = yes
@@ -20,7 +63,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = fra.501.a
+		name = "Such a small measure is nothing compared to the consequences!"
 		ai_chance = {
 			factor = 20
 			modifier = {
@@ -29,26 +72,73 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			USA = { country_event = { days = 2 id = usa.10303 } }
+			USA = { country_event = { days = 2 id = fra.502 } }
 		}
 	}
 	
 	option = {
-		name = fra.501.b
+		name = "Refuse the Americans, they are no masters of us."
+		ai_chance = {
+			factor = 80
+		}
+		add_political_power = 40
+		hidden_effect = {
+			USA = { country_event = { days = 2 id = fra.503 } }
+		}
+	}
+}
+# France lift ban on Coca Cola
+country_event = {
+	id = fra.502
+	title = "France lifts the ban on Coca Cola"
+	desc = "After a brief discussion the French has decided to lift the ban, and once again allow Coca Cola to be imported and sold."
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Free Trade is a core pillar in our cooperation."
+	}
+}
+# France maintains ban on Coca Cola
+country_event = {
+	id = fra.503
+	title = "The French are refusing to remove the ban"
+	desc = "The French have refused our proposal on the reason of national soveriginity. They claim it would destroy their national producers, and as such cannot allow it."
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "France is a to important ally, lets not annoy them more."
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "Lower their financial aid."
 		ai_chance = {
 			factor = 80
 		}
 		hidden_effect = {
-			USA = { country_event = { days = 2 id = usa.10302 } }
+			FRA = { country_event = { days = 1 id = fra.504 } }
 		}
 	}
 }
-
 # US lower financial aid as sanction
 country_event = {
-	id = fra.502
-	title = fra.502.t
-	desc = fra.502.d
+	id = fra.504
+	title = "The US has decided to lower their financial aid"
+	desc = "After France refused to remove the ban on American products the American DoS has decided to lower the french benefits in the Marshal Aid."
 	picture =  GFX_report_event_advisor_read_write
 	
 	is_triggered_only = yes
@@ -56,10 +146,10 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = fra.502.a
-#		FRA = {
-#			add_timed_idea = { FRA_US_lowered_aid days = 365 }
-#		}
+		name = "Those idiots! Sacrebleu!"
+		FRA = {
+			add_timed_idea = { FRA_US_lowered_aid days = 365 }
+		}
 	}
 }
 
@@ -92,6 +182,428 @@ country_event = {
 #		add_timed_idea = { FRA_construction_company_deal days = 270 }
 #	}
 #}
+
+### Bombings (From the Ban Communism focus)
+# Communists bomb areas
+country_event = {
+	id = fra.610
+	title = fra.610.t
+	desc = fra.610.d
+	picture = GFX_report_event_tito_stalin
+	
+	trigger = {
+		tag = FRA
+		FRA = { has_country_flag = communism_banned_in_france }
+		FRA = { NOT = { has_country_flag = FRA_communism_mended } }
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	option = {
+		name = fra.610.a
+		random_owned_controlled_state = {
+			damage_building = {
+				type = industrial_complex
+				damage = 0.7
+			}
+		}
+	}
+}
+
+#####FRENCH DECOLONISATION EVENTS!!!#####
+country_event = { #Should I stay or should I go? ALG
+	id = fra.620
+	title = "The French themselves are calling for a Decolonisation!"
+	desc = fra.620.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #Freedom
+		name = "From today forward we are free!"
+		FRA = { country_event = { days = 1 id = fra.621 } }
+		ALG = { country_event = { days = 1 id = fra.623 } }
+		FRA = { end_puppet = ALG }
+		ALG = { drop_cosmetic_tag = ALG_FRA }
+	}
+	option = { #Stay with France
+		name = "Independence is a feeble solution."
+		FRA = { country_event = { days = 1 id = fra.622 } }
+	}
+}
+country_event = { #They left us, a sad day ALG
+	id = fra.621
+	title = "Algeria leaves the French Union"
+	desc = "The Algerian nationalists was confronted yesterday about a dissolution of the French Union and have formed a national government. From today a new nation exists."
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #SAD!
+		name = "A day to be remembered."
+	}
+}
+country_event = { # ALG
+	id = fra.622
+	title = "The Algerians wants to stay in Union"
+	desc = "After the confrontation yesterday with the Algerian nationalists, even they have agreed that staying in a Union is the best option for both of our countries. The Algerians have been a trouble in the past, do we forcefully break them off or accept their commitement to the Union?"
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #They are staying
+		name = "Algeria is staying"
+	}
+	option = {
+		name = "The Union is dead, they are on their own."
+		FRA = { end_puppet = ALG }
+		ALG = { drop_cosmetic_tag = ALG_FRA }
+	}
+	
+}
+country_event = { #FREEDOM! ALG
+	id = fra.623
+	title = "Independence"
+	desc = "Today is a monumental day in the history of Algeria. After over a hundred years of French control we are free. No more we are servants of a greater power, but master of our own future! Long live Algeria! Long live Independence!"
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Independence!"
+		ALG = { add_national_unity = 0.2 }
+	}
+}
+country_event = { #Should I stay or should I go? TUN
+	id = fra.625
+	title = fra.625.t
+	desc = fra.625.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #Freedom
+		name = fra.625.a
+		FRA = { country_event = { days = 1 id = fra.626 } }
+		TUN = { country_event = { days = 1 id = fra.628 } }
+		FRA = { end_puppet = TUN }
+		TUN = { drop_cosmetic_tag = TUN_FRA }
+	}
+	option = { #Stay with France
+		name = fra.625.b
+		FRA = { country_event = { days = 1 id = fra.627 } }
+	}
+}
+country_event = { #They left us, a sad day TUN
+	id = fra.626
+	title = fra.626.t
+	desc = fra.626.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #SAD!
+		name = fra.626.a
+	}
+}
+country_event = { # TUN
+	id = fra.627
+	title = fra.627.t
+	desc = fra.627.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #They are staying
+		name = fra.627.a
+	}
+	option = {
+		name = fra.627.b #force them out
+		FRA = { end_puppet = TUN }
+		TUN = { drop_cosmetic_tag = TUN_FRA }
+	}
+	
+}
+country_event = { #FREEDOM! TUN
+	id = fra.628
+	title = fra.628.t
+	desc = fra.628.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fra.628.a #Freedom!
+		TUN = { add_national_unity = 0.2 }
+	}
+}
+country_event = { #Should I stay or should I go? MOR
+	id = fra.630
+	title = fra.630.t
+	desc = fra.630.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #Freedom
+		name = fra.630.a
+		FRA = { country_event = { days = 1 id = fra.631 } }
+		MOR = { country_event = { days = 1 id = fra.633 } }
+		FRA = { end_puppet = MOR }
+		MOR = { drop_cosmetic_tag = MOR_FRA }
+	}
+	option = { #Stay with France
+		name = fra.630.b
+		FRA = { country_event = { days = 1 id = fra.632 } }
+	}
+}
+country_event = { #They left us, a sad day MOR
+	id = fra.631
+	title = fra.631.t
+	desc = fra.631.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #SAD!
+		name = fra.631.a
+	}
+}
+country_event = { # MOR
+	id = fra.632
+	title = fra.632.t
+	desc = fra.632.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #They are staying
+		name = fra.632.a
+	}
+	option = {
+		name = fra.632.b #force them out
+		FRA = { end_puppet = MOR }
+		MOR = { drop_cosmetic_tag = MOR_FRA }
+	}
+	
+}
+country_event = { #FREEDOM! MOR
+	id = fra.633
+	title = fra.633.t
+	desc = fra.633.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fra.633.a #Freedom!
+		MOR = { add_national_unity = 0.2 }
+	}
+}
+country_event = { #Should I stay or should I go? FWA
+	id = fra.635
+	title = fra.635.t
+	desc = fra.635.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #Freedom
+		name = fra.635.a
+		FRA = { country_event = { days = 1 id = fra.636 } }
+		FWA = { country_event = { days = 1 id = fra.638 } }
+		FRA = { end_puppet = FWA }
+		FWA = { drop_cosmetic_tag = FWA_FRA }
+	}
+	option = { #Stay with France
+		name = fra.635.b
+		FRA = { country_event = { days = 1 id = fra.637 } }
+	}
+}
+country_event = { #They left us, a sad day FWA
+	id = fra.636
+	title = fra.636.t
+	desc = fra.636.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #SAD!
+		name = fra.636.a
+	}
+}
+country_event = { # FWA
+	id = fra.637
+	title = fra.637.t
+	desc = fra.637.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #They are staying
+		name = fra.637.a
+	}
+	option = {
+		name = fra.637.b #force them out
+		FRA = { end_puppet = FWA }
+		FWA = { drop_cosmetic_tag = FWA_FRA }
+	}
+	
+}
+country_event = { #FREEDOM! FWA
+	id = fra.638
+	title = fra.638.t
+	desc = fra.638.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fra.638.a #Freedom!
+		FWA = { add_national_unity = 0.2 }
+	}
+}
+country_event = { #Should I stay or should I go? FEA
+	id = fra.640
+	title = fra.640.t
+	desc = fra.640.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #Freedom
+		name = fra.640.a
+		FRA = { country_event = { days = 1 id = fra.641 } }
+		FEA = { country_event = { days = 1 id = fra.643 } }
+		FRA = { end_puppet = FEA }
+		FEA = { drop_cosmetic_tag = FEA_FRA }
+	}
+	option = { #Stay with France
+		name = fra.640.b
+		FRA = { country_event = { days = 1 id = fra.642 } }
+	}
+}
+country_event = { #They left us, a sad day FEA
+	id = fra.641
+	title = fra.641.t
+	desc = fra.641.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #SAD!
+		name = fra.641.a
+	}
+}
+country_event = { # FEA
+	id = fra.642
+	title = fra.642.t
+	desc = fra.642.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #They are staying
+		name = fra.642.a
+	}
+	option = {
+		name = fra.642.b #force them out
+		FRA = { end_puppet = FEA }
+		FEA = { drop_cosmetic_tag = FEA_FRA }
+	}
+	
+}
+country_event = { #FREEDOM! FEA
+	id = fra.643
+	title = fra.643.t
+	desc = fra.643.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fra.643.a #Freedom!
+		FEA = { add_national_unity = 0.2 }
+	}
+}
+country_event = { #Should I stay or should I go? MAD
+	id = fra.645
+	title = fra.645.t
+	desc = fra.645.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #Freedom
+		name = fra.645.a
+		FRA = { country_event = { days = 1 id = fra.646 } }
+		MAD = { country_event = { days = 1 id = fra.648 } }
+		FRA = { end_puppet = MAD }
+		MAD = { drop_cosmetic_tag = MAD_FRA }
+		
+	}
+	option = { #Stay with France
+		name = fra.645.b
+		FRA = { country_event = { days = 1 id = fra.647 } }
+	}
+}
+country_event = { #They left us, a sad day MAD
+	id = fra.646
+	title = fra.646.t
+	desc = fra.646.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #SAD!
+		name = fra.646.a
+	}
+}
+country_event = { # MAD
+	id = fra.647
+	title = fra.647.t
+	desc = fra.647.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = { #They are staying
+		name = fra.647.a
+	}
+	option = {
+		name = fra.647.b #force them out
+		FRA = { end_puppet = MAD }
+		MAD = { drop_cosmetic_tag = MAD_FRA }
+	}
+	
+}
+country_event = { #FREEDOM! MAD
+	id = fra.648
+	title = fra.648.t
+	desc = fra.648.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fra.648.a #Freedom!
+		MAD = { add_national_unity = 0.2 }
+	}
+}
+country_event = { #Keep Colonies Focus
+	id = fra.650
+	title = "Colonial Riots!"
+	desc = fra.650.d
+	picture = GFX_report_event_tito_stalin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fra.650.a
+	}
+}
 
 # Weapons manufacturer strikes
 #country_event = {

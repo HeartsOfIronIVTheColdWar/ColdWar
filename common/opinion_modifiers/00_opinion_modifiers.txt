@@ -10,6 +10,8 @@
 
 opinion_modifiers = {
 	
+	FRA_bought_ships = { value = 50 }
+	
 	US_CW_dip_eff = { value = 50 }
 	
 	delclined_inv_to_NATO = { value = -25 }

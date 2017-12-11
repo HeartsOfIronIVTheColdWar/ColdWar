@@ -796,7 +796,29 @@
  FRA_MBT_1990_equipment_1:0 "GIAT Leclerc"
  FRA_MBT_1990_equipment_1_short:0 "GIAT Leclerc"
  FRA_MBT_1990_equipment_1_desc:0 "The Char Leclerc is a main battle tank built by GIAT of France. It was named in honour of General Philippe Leclerc de Hauteclocque, who led the French element of the drive towards Paris while in command of the Free French 2nd Armoured Division in World War II."
- 
+###ARTILLERY###
+ FRA_artillery_equipment_1:0 "Canon de 105 L mle 1936 Schneider" #36
+ FRA_artillery_equipment_2:0 "Canon de 155mm GPF" #45
+ FRA_artillery_equipment_3:0 "Obusier de 155 mm Modèle 50" #50
+ FRA_artillery_equipment_4:0 "Obusier de 105 mm HM2" #70
+ FRA_artillery_equipment_5:0 "TRF1" #90
+#SPART/Self propelled artillery
+ FRA_MBT_1950_artillery_equipment_1:0 "AMX Mk 61" #50
+ FRA_MBT_1960_artillery_equipment_1:0 "AMX Mk 62" #60
+ FRA_MBT_1970_artillery_equipment_1:0 "AMX Mk F3 155mm" #70
+ FRA_MBT_1980_artillery_equipment_1:0 "AMX GCT 155mm" #80
+ FRA_MBT_1990_artillery_equipment_1:0 "CAESAR self-propelled howitzer" #90
+#Towed Anti-Air
+ FRA_anti_air_equipment_1:0 "90 mm Gun M2" #45
+ FRA_anti_air_equipment_2:0 "Matra R422" #50
+ FRA_anti_air_equipment_3:0 "MIM-23 Hawk" #70
+ FRA_anti_air_equipment_4:0 "Mistral" #90
+#SPAA/self propelled anti air
+ FRA_MBT_1950_aa_equipment_1:0 "AMX 13 DCA canon de 40mm" #50
+ FRA_MBT_1960_aa_equipment_1:0 "AMX 13 DCA" #60
+ FRA_MBT_1970_aa_equipment_1:0 "AMX 30 DCA" #70
+ FRA_MBT_1980_aa_equipment_1:0 "AMX 30 ROLAND" #80
+ FRA_MBT_1990_aa_equipment_1:0 "Leclerc Crotale" #90
 #CANADA
  
 #Infantry // Canada
