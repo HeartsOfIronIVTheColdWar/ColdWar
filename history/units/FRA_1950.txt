@@ -1,7 +1,398 @@
-﻿units = {
+division_template = {
+	name = "Régiment d'Infanterie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Régiment d'Infanterie Coloniale" 			### Colonial infantry from Morocco/Algeria
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Régiment Etranger d'Infanterie" 			### Foreign Legion regiment
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+	}
+	priority = 2
+}
+division_template = {
+	name = "Bataillon d'Infanterie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }		
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Bataillon Parachutiste"
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }		
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Sous-groupement Blindé"
+
+	regiments = {
+		MBT_1950 = { x = 0 y = 0 }
+		MBT_1950 = { x = 0 y = 1 }
+		MBT_1950 = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }		
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Groupe d'Escadron de Reconnaissance"
+
+	regiments = {
+		MBT_1950 = { x = 0 y = 0 }
+		IFV_1950 = { x = 1 y = 0 }
+		IFV_1950 = { x = 1 y = 1 }
+		IFV_1950 = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }		
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+	##GROUND OOB
+	# Armoured Regiment
+	division = {
+		name = "1er Régiment de Chasseurs à Cheval"
+		location = 1
+		division_template = "Sous-groupement Blindé"
+	}
+	division = {
+		name = "4ème Régiment de Dragons Portés"
+		location = 1
+		division_template = "Sous-groupement Blindé"
+	}
+	division = {
+		name = "5ème Régiment de Cuirassiers"
+		location = 1
+		division_template = "Sous-groupement Blindé"
+	}
+	division = {
+		name = "Régiment Blindé Colonial d'Extrême-Orient"
+		location = 1
+		division_template = "Sous-groupement Blindé"
+	}
+	division = {
+		name = "Régiment d'Infanterie Coloniale du Maroc"
+		location = 1
+		division_template = "Groupe d'Escadron de Reconnaissance"
+	}
+	division = {
+		name = "1er Régiment Etranger de Cavalerie"
+		location = 1
+		division_template = "Groupe d'Escadron de Reconnaissance"
+	}
+	division = {
+		name = "2ème Régiment de Spahis Marocains"
+		location = 1
+		division_template = "Groupe d'Escadron de Reconnaissance"
+	}
+	division = {
+		name = "5ème Régiment de Spahis Marocains"
+		location = 1
+		division_template = "Groupe d'Escadron de Reconnaissance"
+	}
+	division = {
+		name = "6ème Régiment de Spahis Marocains"
+		location = 1
+		division_template = "Groupe d'Escadron de Reconnaissance"
+	}
+	division = {
+		name = "8ème Régiment de Spahis Algériens"
+		location = 1
+		division_template = "Groupe d'Escadron de Reconnaissance"
+	}
+	#Infantry regiment
+	division = {
+		name = "1er Bataillon d'Infanterie Légère d'Afrique"
+		location = 1
+		division_template = "Bataillon d'Infanterie"
+	}
+	division = {
+		name = "2ème Bataillon d'Infanterie Légère d'Afrique"
+		location = 1
+		division_template = "Bataillon d'Infanterie"
+	}
+	division = {
+		name = "35ème Régiment d'Infanterie"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "43ème Régiment d'Infanterie"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "49ème Régiment d'Infanterie"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "110ème Régiment d'Infanterie"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "151ème Régiment d'Infanterie"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "1er Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "2ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "5ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "6ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "11ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "21ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "23ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "43ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "110ème Régiment d'Infanterie Coloniale"
+		location = 1
+		division_template = "Régiment d'Infanterie"
+	}
+	division = {
+		name = "2ème Régiment Etranger d'Infanterie"
+		location = 1
+		division_template = "Régiment Etranger d'Infanterie"
+	}
+	division = {
+		name = "3ème Régiment Etranger d'Infanterie"
+		location = 1
+		division_template = "Régiment Etranger d'Infanterie"
+	}
+	division = {
+		name = "13ème Demi-Brigade de Légion Etrangère "
+		location = 1
+		division_template = "Régiment Etranger d'Infanterie"
+	}
+	division = {
+		name = "1er Bataillon Parachutiste de Choc"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "I/1er Régiment Régiment de Chasseurs Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "II/1er Régiment Régiment de Chasseurs Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "III/1er Régiment Régiment de Chasseurs Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "10ème Bataillon Parachutiste de Chasseurs à pied"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "1er Bataillon Colonial de Commandos Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "2ème Bataillon Colonial de Commandos Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "3ème Bataillon Colonial de Commandos Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "5ème Bataillon Colonial de Commandos Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "6ème Bataillon Colonial de Commandos Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "7ème Bataillon Colonial de Commandos Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "8ème Bataillon Colonial de Commandos Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "1er Bataillon Etranger de Parachutistes"
+		location = 1
+		division_template = "Bataillon Parachutiste"
+	}
+	division = {
+		name = "1er Régiment de Tirailleurs Algériens"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "2ème Régiment de Tirailleurs Algériens"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "3ème Régiment de Tirailleurs Algériens"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "6ème Régiment de Tirailleurs Algériens"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "7ème Régiment de Tirailleurs Algériens"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "4ème Régiment de Tirailleurs Tunisiens"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "1er Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "2ème Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "3ème Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "4ème Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "5ème Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "6ème Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "7ème Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "8ème Régiment de Tirailleurs Marocains"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	division = {
+		name = "6ème Régiment de Marche de Tirailleurs Sénégalais"
+		location = 1
+		division_template = "Régiment d'Infanterie Coloniale"
+	}
+	
 	#NAVAL OOB
 	navy = {
-		name = "Flotte du Extreme Orient"
+		name = "Forces maritimes du Pacifique"
 		base = 4401
 		location = 4401 # Saigon
 		ship = { name = "Bearn" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } }
@@ -36,7 +427,7 @@
 		ship = { name = "Montcalm" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
 	}
 	navy = {
-		name = "2ere Flotte Mediterraneenne"
+		name = "2eme Flotte Mediterraneenne"
 		base = 7132
 		location = 7132 #Oran
 		ship = { name = "Gerorges Leygues" definition = cruiser equipment = { cruiser_1 = { amount = 1 owner = FRA } } }
@@ -127,5 +518,3 @@ air_wings = {
 #navy = {
 #	name = "4th Fleet"
 #}
-
-
