@@ -18,7 +18,7 @@ country_event = { # Stalin's summer holiday 1950
 		date < 1950.11.1
 	}
 	
-	meant_time_to_happen = {
+	mean_time_to_happen = {
 		days = 30
 	}
 
@@ -42,7 +42,7 @@ country_event = { # Stalin's summer holiday 1951
 		date < 1951.11.1
 	}
 	
-	meant_time_to_happen = {
+	mean_time_to_happen = {
 		days = 30
 	}
 
@@ -65,7 +65,7 @@ country_event = { # doctor tells Stalin to retire
 		date > 1952.1.1
 	}
 	
-	meant_time_to_happen = {
+	mean_time_to_happen = {
 		days = 360
 		modifier = {
 			factor = 0.5

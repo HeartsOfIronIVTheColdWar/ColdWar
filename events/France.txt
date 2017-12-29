@@ -139,7 +139,7 @@ country_event = {
 	id = fra.504
 	title = "The US has decided to lower their financial aid"
 	desc = "After France refused to remove the ban on American products the American DoS has decided to lower the french benefits in the Marshal Aid."
-	picture =  GFX_report_event_advisor_read_write
+	picture = GFX_report_event_advisor_read_write
 	
 	is_triggered_only = yes
 	
