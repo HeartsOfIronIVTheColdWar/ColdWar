@@ -435,7 +435,7 @@ focus_tree = {
 			factor = 0
 		}	
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_popularity = { ideology = democratic popularity = 0.15 }
 		}
 
 	}
@@ -454,9 +454,119 @@ focus_tree = {
 			factor = 0
 		}	
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.05 }
+			set_politics = { ruling_party = democratic elections_allowed = yes }
 		}
 
 	}
+	
+	focus = {
+		id = GRE_peace_and_order
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10
+		prerequisite = {
+			focus = GRE_democratic_elections
+		}
+		
+		x = 12
+		y = 4
+		
+		completion_reward = {
+			add_national_unity = 0.10
+		}
 
+	}
+	
+	focus = {
+		id = GRE_reconnect_with_old_allies
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = GRE_peace_and_order
+		}
+		
+		x = 12
+		y = 5
+		
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
+			}
+			ENG = {
+				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
+			}
+			USA = {
+				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
+			}
+		}
+
+	}
+	
+	
+	focus = {
+		id = GRE_join_nato
+		icon = GFX_focus_NATO_goal
+		prerequisite = {
+			focus = GRE_reconnect_with_old_allies
+		}
+		
+		x = 12
+		y = 6
+		
+		completion_reward = {
+			add_ideas = nato_idea
+		}
+
+	}
+	
+	focus = {
+		id = GRE_greek_republic_restored
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = {
+			focus = GRE_join_nato
+		}
+		
+		x = 12
+		y = 7
+		
+		completion_reward = {
+			add_political_power = 150
+			add_national_unity = 0.15
+		}
+
+	}
+	
+	focus = {
+		id = GRE_the_kingdom_of_greece
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = GRE_reestablish_the_goverment
+		}
+		
+		x = 14
+		y = 2
+		
+		completion_reward = {
+			add_popularity = { ideology = autocratic popularity = 0.15 }
+		}
+
+	}
+	
+	focus = {
+		id = GRE_contantine_the_ii_king_of_greece
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10
+		prerequisite = {
+			focus = GRE_the_kingdom_of_greece
+		}
+		
+		x = 14
+		y = 3
+		
+		completion_reward = {
+			set_politics = { ruling_party = autocratic elections_allowed = no }
+		}
+
+	}
+	
 }
