@@ -10,7 +10,7 @@ state={
 		owner = DDR
 		buildings = {
 			infrastructure = 7
-			arms_factory = 3
+			arms_factory = 1
 			industrial_complex = 7
 
 		}

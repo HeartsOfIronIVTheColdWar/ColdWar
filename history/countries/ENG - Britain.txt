@@ -38,6 +38,18 @@ set_national_unity = 0.85
 		elections_allowed = yes 
 	}
 	# DIPLOMACY / PUPPETS
+	give_military_access = USA
+	give_military_access = AUS
+	give_military_access = HOL
+	give_military_access = CAN
+	give_military_access = BEL
+	give_military_access = NOR
+	give_military_access = LUX
+	give_military_access = ITA
+	give_military_access = DEN
+	give_military_access = WGR
+	give_military_access = AST
+	give_military_access = NZL
 #	if = {
 #		limit = {
 #			has_dlc = "Together for Victory"

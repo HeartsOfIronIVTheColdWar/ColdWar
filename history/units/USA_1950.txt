@@ -99,7 +99,60 @@ division_template = {
 		engineer = { x = 0 y = 1 }   
 	}
 }
+division_template = {
+	name = "German Infantry Deployment"
 
+	regiments = {
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  
+		engineer = { x = 0 y = 1 }  
+		military_police = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "German Armoured Recon Deployment"
+	
+	regiments = {
+		APC_1950 = { x = 1 y = 0}
+		APC_1950 = { x = 1 y = 1}
+		APC_1950 = { x = 1 y = 2}
+		
+		motorized = { x = 0 y = 0}
+		motorized = { x = 0 y = 1}
+		motorized = { x = 0 y = 2}
+
+	}
+	support = {
+		engineer = { x = 0 y = 1 }  
+		recon = { x = 0 y = 0 }    
+	}
+}
+division_template = {
+	name = "German MP Deployment"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 2 }
+	}
+}
 units = {	
 	division= {			
 		name = "2nd Infantry Division"		
@@ -113,15 +166,6 @@ units = {
 	division= {			
 		name = "4th Infantry Division"		
 		location = 1827
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-		
-	division= {			
-		name = "8th Infantry Division"		
-		location = 7202
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -381,15 +425,6 @@ units = {
 	}
 	
 	division= {			
-		name = "95th Infantry Division"		
-		location = 374
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	
-	division= {			
 		name = "96th Infantry Division"		
 		location = 4860
 		division_template = "Infantry Division"
@@ -532,22 +567,103 @@ units = {
 	}
 	
 	#WGR OCCUPATION FORCE
-	
+###Military Police
+	division= {			
+		name = "56th MP Brigade"		
+		location = 6377
+		division_template = "German MP Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "31st MP Brigade"		
+		location = 3326
+		division_template = "German MP Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "12th MP Brigade"		
+		location = 241
+		division_template = "German MP Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "22nd MP Brigade"		
+		location = 9347
+		division_template = "German MP Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "14th MP Brigade"		
+		location = 6389
+		division_template = "German MP Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+###Regular army
+###Infantry
 	division= {			
 		name = "1st Infantry Division"		
-		location = 11544
-		division_template = "Infantry Division"
+		location = 9572
+		division_template = "German Infantry Deployment"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.8
 	}
-
 	division = {
-		name = "8th Infantry division"
-		location = 3423
-		division_template = "Infantry Division"
+		name = "4th Infantry division"
+		location = 6488
+		division_template = "German Infantry Deployment"
 		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+		}
+	division = {
+		name = "28th Infantry division"
+		location = 9545
+		division_template = "German Infantry Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
+	division = {
+		name = "43rd Infantry division"
+		location = 692
+		division_template = "German Infantry Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+###Tanks
+	division = {
+		name = "2nd Armored Division"
+		location = 11560
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+###Armored Scouts
+	division = {
+		name = "2nd Armoured Recon"
+		location = 11445
+		division_template = "German Armoured Recon Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6th Armoured Recon"
+		location = 9416
+		division_template = "German Armoured Recon Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14th Armoured Recon"
+		location = 3541
+		division_template = "German Armoured Recon Deployment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	
 	
 	#NAVAL OOB
 	

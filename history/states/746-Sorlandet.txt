@@ -7,7 +7,6 @@ state={
 	manpower=568000
 	resources={
 		steel= 16
-		oil= 22
 	}
 	history={
 		owner = NOR

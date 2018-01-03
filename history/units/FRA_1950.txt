@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Régiment d'Infanterie"
 
 	regiments = {
@@ -43,16 +43,14 @@ division_template = {
 	priority = 2
 }
 division_template = {
-	name = "Bataillon d'Infanterie"
+	name = "Bataillon d'Police Militaire"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }		
-		artillery = { x = 0 y = 1 }
+		military_police = { x = 0 y = 0 }		
 	}
 }
 division_template = {
@@ -388,6 +386,48 @@ units = {
 		name = "6ème Régiment de Marche de Tirailleurs Sénégalais"
 		location = 1
 		division_template = "Régiment d'Infanterie Coloniale"
+	}
+###GERMAN OCCUPATION TROOPS
+
+	division = {
+		name = "3ème Bataillon d'Police Militaire"
+		location = 11435
+		division_template = "Bataillon d'Police Militaire"
+	}
+	division = {
+		name = "7ème Bataillon d'Police Militaire"
+		location = 3423
+		division_template = "Bataillon d'Police Militaire"
+	}
+	division = {
+		name = "11ème Bataillon d'Police Militaire"
+		location = 3558
+		division_template = "Bataillon d'Police Militaire"
+	}
+	division = {
+		name = "22ème Bataillon d'Police Militaire"
+		location = 9517
+		division_template = "Bataillon d'Police Militaire"
+	}	
+	division = {
+		name = "14ème Bataillon d'Police Militaire"
+		location = 694
+		division_template = "Bataillon d'Police Militaire"
+	}	
+	division = {
+		name = "17ème Bataillon d'Police Militaire"
+		location = 6542
+		division_template = "Bataillon d'Police Militaire"
+	}
+	division = {
+		name = "13ème Bataillon d'Police Militaire"
+		location = 563
+		division_template = "Bataillon d'Police Militaire"
+	}
+	division = {
+		name = "24ème Bataillon d'Police Militaire"
+		location = 11531
+		division_template = "Bataillon d'Police Militaire"
 	}
 	
 	#NAVAL OOB

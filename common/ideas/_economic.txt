@@ -223,7 +223,7 @@ ideas = {
 				production_speed_buildings_factor = -0.5
 				research_time_factor = 0.5
 				political_power_factor = -0.5
-				conscription = -0.2
+				conscription = -0.05
 				unity_factor = -0.5
 				drift_defence_factor = -1.0 
 				encryption = -5
@@ -250,10 +250,9 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.1
-				conscription = -0.05
+				conscription = -0.02
 				research_time_factor = -0.05
-				political_power_factor = -0.2
-				unity_factor = -0.2
+				political_power_factor = -0.1
 				drift_defence_factor = -0.5 
 			}
 			
@@ -289,7 +288,7 @@ ideas = {
 			modifier = {
 				unity_factor = 0.1
 				research_time_factor = -0.02
-				drift_defence_factor = -0.2
+				drift_defence_factor = -0.25
 			}
 			
 			cancel_if_invalid = no
@@ -336,7 +335,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.02
 				encryption = 1
-				political_power_factor = 0.1
+				political_power_factor = 0.05
 				unity_factor = -0.05
 				drift_defence_factor = 0.2
 			}
@@ -375,7 +374,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				encryption = 2
-				political_power_factor = 0.2
+				political_power_factor = 0.1
 				unity_factor = -0.15
 				drift_defence_factor = 0.3
 			}
@@ -401,10 +400,10 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			modifier = {
-			conscription = 0.05
+				conscription = -0.02
 				consumer_goods_factor = -0.10
 				encryption = 3
-				political_power_factor = 0.3
+				political_power_factor = 0.15
 				unity_factor = -0.25
 				drift_defence_factor = 0.4
 			}
@@ -424,13 +423,12 @@ ideas = {
 			removal_cost = -1
 			level = 7
 			modifier = {
-				conscription = 0.1
+				conscription = -0.05
 				consumer_goods_factor = -0.2
 				encryption = 4
-				political_power_factor = 0.5
+				political_power_factor = 0.2
 				unity_factor = -0.35
 				drift_defence_factor = 0.6
-				
 			}
 			
 			cancel_if_invalid = no

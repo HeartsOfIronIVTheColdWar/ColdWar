@@ -147,6 +147,21 @@ focus_tree = {
 		}
 	} 
 
+	focus = {
+		id = NOR_support_from_ussr
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = NOR_socialism_effort }
+		x = 1
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+         
+		}
+	} 
+
     focus = {
 		id = NOR_satellite_state
 		icon = GFX_goal_generic_demand_territory

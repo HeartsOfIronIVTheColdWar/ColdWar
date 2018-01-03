@@ -11,22 +11,26 @@ set_national_unity = 0.6
 	add_ideas = {
 		allied_occupation
 		loser_of_the_second_world_war
+		free_trade
 		WGR_paperclip
 		bundesbank_1
+		suppressed_wehrmacht_competence
+		disarmed_nation
 	}
+	set_country_flag = naval_treaty_stipulations
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 80
+				popularity = 52
 			}
 
 			autocratic = {
-				popularity = 19
+				popularity = 35
 			}
 			
 			communism = {
-				popularity = 1
+				popularity = 3
 				banned = no #default is no
 			}
 		}

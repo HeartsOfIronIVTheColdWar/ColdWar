@@ -18,7 +18,23 @@ ideas = {
 				industrial_capacity_factory = 0.2   
 			}
 		}
-		
+		DDR_osoaviakhim = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+			
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				research_time_factor = 0.20
+			}
+		}
 		DDR_reparation_funds = {
 			
 			allowed = {

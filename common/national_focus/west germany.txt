@@ -17,13 +17,55 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-			add_ideas = repair_the_autonahn
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		
 		}
-
 	}
+
 	focus = {
 		id = WGR_wiederbewaffnung
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 10
 		x = 9
 		x = 9
@@ -34,18 +76,23 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = allied_occupation
+				add_idea = allied_occupation_2
+			}
+			
 			USA = {
 				country_event = {
 						id = WGR_WGR.1
 						days = 4
 					}
-				}
+			}
 		}
 
 	}
 	focus = {
 		id = WGR_reaffirm_basic_law
-		icon = GFX_goal_unknown
+		icon = GFX_goal_demand_sudetenland
 		cost = 10
 		x = 24
 		y = 0
@@ -74,12 +121,18 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
+			}
+			add_tech_bonus = {
+				name = WGR_agrarian
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
 			}
 		}
 
@@ -117,7 +170,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = WGR_foreign_expertise
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = industry
 			}
 		}
@@ -126,7 +179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_encourage_new_designs
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 10
 		prerequisite = {
 			focus = WGR_incorporate_the_bundesbank
@@ -136,14 +189,13 @@ focus_tree = {
 		y = 2
 		
 		completion_reward = {
-			remove_ideas = WGR_paperclip
-			add_research_slot = 1
+			custom_effect_tooltip = WGR_paperclip_solved
 		}
 
 	}
 	focus = {
 		id = WGR_foreign_equipment
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_license_production
 		cost = 10
 		prerequisite = {
 			focus = WGR_wiederbewaffnung
@@ -158,22 +210,28 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_german_logistics
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_equipment
 		}
 		x = 5
 		y = 2
-
+		completion_reward = {
+			add_ideas = opel
+		}
 	}
 	focus = {
 		id = WGR_industrial_wiederbewaffnung
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 20
 		prerequisite = {
 			focus = WGR_foreign_construction_expertise
+		}
+		prerequisite = {
 			focus = WGR_encourage_new_designs
+		}
+		prerequisite = {
 			focus = WGR_german_logistics
 		}
 
@@ -197,12 +255,13 @@ focus_tree = {
 				if = {
 
 					add_building_construction = {
-						type = arms_factory 
+						type = industrial_complex 
 						level = 2
 						instant_build = yes
 					}
 				}
 			}
+			add_ideas = WGR_industrial_revival
 		}
 	}
 	
@@ -210,6 +269,9 @@ focus_tree = {
 		id = WGR_military_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
+		available = {
+			has_completed_focus = WGR_the_new_german_bundeswehr
+		}
 		prerequisite = {
 			focus = WGR_industrial_wiederbewaffnung
 		}
@@ -265,10 +327,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -297,7 +359,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_foreign_divisions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		cost = 10
 		prerequisite = {
 			focus = WGR_wiederbewaffnung
@@ -308,7 +370,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_expand_the_bundesgrenzschutz
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_divisions
@@ -323,7 +385,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_volunteer_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_military_sphere
 		cost = 10
 		prerequisite = {
 			focus = WGR_expand_the_bundesgrenzschutz
@@ -341,7 +403,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_conscription
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_can_compromise_with_quebec
 		cost = 10
 		prerequisite = {
 			focus = WGR_expand_the_bundesgrenzschutz
@@ -360,7 +422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_a_german_rifle
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 10
 		prerequisite = {
 			focus = WGR_volunteer_army
@@ -381,7 +443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_armoured_legacy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_tank
 		cost = 10
 		prerequisite = {
 			focus = WGR_conscription
@@ -389,11 +451,20 @@ focus_tree = {
 		}
 		x = 11
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = engine_improvement_bonus
+				bonus = 0.5
+				uses = 3
+				category = engine_improvement	
+				category = turret_improvements
+				category = armor_improvements
+			}
+		}
 	}
 	focus = {
 		id = WGR_strategic_resistance
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 10
 		prerequisite = {
 			focus = WGR_a_german_rifle
@@ -417,7 +488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_border_patrol
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fortify_the_westwall
 		cost = 10
 		prerequisite = {
 			focus = WGR_conscription
@@ -436,7 +507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_nato_doctrine
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NATO_goal
 		cost = 10
 		prerequisite = {
 			focus = WGR_a_german_rifle
@@ -484,7 +555,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_invite_us_advisors
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_USA_advisors
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_divisions
@@ -502,7 +573,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_invite_british_advisors
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_ENG_advisors
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_divisions
@@ -520,7 +591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_the_leopard
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		cost = 10
 		prerequisite = {
 			focus = WGR_armoured_legacy
@@ -540,7 +611,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_german_msa
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_divisions
@@ -551,7 +622,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_military_dockyards
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
 		prerequisite = {
 			focus = WGR_german_msa
@@ -560,13 +631,45 @@ focus_tree = {
 		y = 3
 		
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 50
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 	}
 	focus = {
 		id = WGR_naval_historical_team
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10
 		prerequisite = {
 			focus = WGR_german_msa
@@ -575,13 +678,20 @@ focus_tree = {
 		y = 3
 		
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 50
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.25
+				uses = 1
+				category = dd_tech
+				category = ss_tech
+			}
 		}
 
 	}
 	focus = {
 		id = WGR_bundesmarine 
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 10
 		prerequisite = {
 			focus = WGR_naval_historical_team
@@ -592,7 +702,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = WGR_Bundesmarine
-				bonus = 0.25
+				bonus = 0.50
 				uses = 1
 				technology = marines
 			}
@@ -601,7 +711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_Submarines
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 10
 		prerequisite = {
 			focus = WGR_bundesmarine 
@@ -613,6 +723,7 @@ focus_tree = {
 		y = 5
 		
 		completion_reward = {
+			navy_experience = 50
 			add_tech_bonus = {
 				name = WGR_Submarines
 				bonus = 0.50
@@ -624,18 +735,21 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_something
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_wolf_pack
 		cost = 10
 		prerequisite = {
 			focus = WGR_Submarines
 		}
 		x = 13
 		y = 6
-
+		completion_reward = {
+			navy_experience = 75
+			add_ideas = WGR_return_of_the_pack
+		}
 	}
 	focus = {
 		id = WGR_destroyers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 10
 		prerequisite = {
 			focus = WGR_bundesmarine 
@@ -645,11 +759,19 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
-
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = WGR_Bundesmarine
+				bonus = 0.50
+				uses = 1
+				category = dd_tech
+			}
+		}
 	}
 	focus = {
 		id = WGR_marines
-		icon = GFX_goal_unknown
+		icon = GFX_focus_elite_marines
 		cost = 10
 		prerequisite = {
 			focus = WGR_destroyers
@@ -657,22 +779,32 @@ focus_tree = {
 		}
 		x = 15
 		y = 6
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_Bundesmarine
+				bonus = 0.50
+				uses = 1
+				technology = marines
+			}
+		}
 	}
 	focus = {
 		id = WGR_subsurface_detection
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_anti_submarine
 		cost = 10
 		prerequisite = {
 			focus = WGR_destroyers
 		}
 		x = 17
 		y = 6
-
+		completion_reward = {
+			navy_experience = 75
+			add_ideas = WGR_the_seawall
+		}
 	}
 	focus = {
 		id = WGR_pilot_refresher
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_divisions
@@ -687,7 +819,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_foreign_planes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_license_production
 		cost = 10
 		prerequisite = {
 			focus = WGR_pilot_refresher
@@ -698,7 +830,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_airbases
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_planes
@@ -709,7 +841,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_luftwaffe
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_planes
@@ -720,7 +852,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_request_fighters
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 10
 		prerequisite = {
 			focus = WGR_luftwaffe
@@ -734,7 +866,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_request_bombers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 10
 		prerequisite = {
 			focus = WGR_luftwaffe
@@ -748,7 +880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_close_air_support
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_start_war
 		cost = 10
 		prerequisite = {
 			focus = WGR_request_fighters
@@ -760,7 +892,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_general_treaty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		prerequisite = {
 			focus = WGR_reaffirm_basic_law
@@ -771,7 +903,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_reconcile_the_french
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_FRA_advisors
 		cost = 10
 		prerequisite = {
 			focus = WGR_general_treaty
@@ -788,7 +920,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_reconcile_the_british
-		icon = GFX_goal_unknown
+		icon = GFX_focus_goal_ENG_advisors
 		cost = 10
 		prerequisite = {
 			focus = WGR_general_treaty
@@ -805,7 +937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_saarland_refferendum
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 10
 		prerequisite = {
 			focus = WGR_reconcile_the_french
@@ -828,7 +960,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_recognition_for_pows
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CZE_german_puppet
 		cost = 10
 		prerequisite = {
 			focus = WGR_reaffirm_basic_law
@@ -838,8 +970,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = WGR_bundesentschädigungsgesetz
-		icon = GFX_goal_unknown
+		id = WGR_bundesentschadigungsgesetz
+		icon = GFX_focus_generic_concessions
 		cost = 10
 		prerequisite = {
 			focus = WGR_reaffirm_basic_law
@@ -850,10 +982,10 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_rhine_capitalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 10
 		prerequisite = {
-			focus = WGR_bundesentschädigungsgesetz
+			focus = WGR_bundesentschadigungsgesetz
 		}
 		x = 23
 		y = 3
@@ -861,7 +993,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_legacy_of_adenauer 
-		icon = GFX_goal_unknown
+		icon = GFX_goal_adenauer
 		cost = 10
 		prerequisite = {
 			focus = WGR_saarland_refferendum
@@ -897,7 +1029,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_one_nation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 10
 		prerequisite = {
 			focus = WGR_reaffirm_basic_law
@@ -908,7 +1040,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_one_state
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		cost = 10
 		prerequisite = {
 			focus = WGR_one_nation
@@ -922,7 +1054,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_reaffirm_article_23
-		icon = GFX_goal_unknown
+		icon = GFX_goal_focus_important_paper
 		cost = 10
 		prerequisite = {
 			focus = WGR_one_state
@@ -934,14 +1066,16 @@ focus_tree = {
 	focus = {
 		id = WGR_wirtschaftswunder
 		icon = GFX_focus_WGR_wirtschaftswunder
-		cost = 10
+		cost = 20
 		prerequisite = {
 			focus = WGR_military_constructions
 			focus = WGR_civilian_constructions
 		}
 		x = 2
 		y = 7
-
+		completion_reward = {
+			add_ideas = WGR_wirtschaftswunder
+		}
 	}
 	focus = {
 		id = WGR_military_constructions
@@ -958,7 +1092,23 @@ focus_tree = {
 		}
 		x = 1
 		y = 6
-
+		completion_reward = {	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = WGR_civilian_constructions
@@ -975,22 +1125,45 @@ focus_tree = {
 		}
 		x = 3
 		y = 6
-
+		completion_reward = {	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = WGR_support_teams
-		icon = GFX_goal_unknown
+		icon = GFX_focus_elite_marines
 		cost = 10
 		prerequisite = {
 			focus = WGR_a_german_rifle
 		}
 		x = 6
 		y = 5
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = WGR_support
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+			}
+		}
 	}
 	focus = {
 		id = WGR_schutz
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		cost = 10
 		prerequisite = {
 			focus = WGR_the_new_german_bundeswehr
@@ -1011,7 +1184,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_befreier
-		icon = GFX_goal_unknown
+		icon = GFX_goal_demand_sudetenland
 		cost = 10
 		prerequisite = {
 			focus = WGR_the_new_german_bundeswehr
@@ -1032,7 +1205,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_two_states
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 10
 		prerequisite = {
 			focus = WGR_one_nation
@@ -1046,7 +1219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_recognize_east_germany
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		prerequisite = {
 			focus = WGR_two_states

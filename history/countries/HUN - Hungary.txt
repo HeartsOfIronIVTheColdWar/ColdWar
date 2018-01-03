@@ -19,17 +19,17 @@ set_national_unity = 0.55
 
 		parties = {
 			democratic = { 
-				popularity = 26
+				popularity = 17
 				banned = no
 			}
 
 			autocratic = {
-				popularity = 4
+				popularity = 68
 				banned = no
 			}
 			
 			communism = {
-				popularity = 70
+				popularity = 15
 				#banned = no #default is no
 			}
 		}

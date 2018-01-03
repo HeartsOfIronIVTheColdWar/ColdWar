@@ -52,7 +52,7 @@ set_national_unity = 0.85
 	#NATO
 	puppet = JAP
 	give_military_access = ENG
-	give_military_access = FRA
+	give_military_access = AUS
 	give_military_access = HOL
 	give_military_access = CAN
 	give_military_access = BEL
@@ -61,8 +61,9 @@ set_national_unity = 0.85
 	give_military_access = LUX
 	give_military_access = ITA
 	give_military_access = DEN
-	give_military_access = POR
 	give_military_access = WGR
+	give_military_access = AST
+	give_military_access = NZL
 	#Monroe Doctrine
 	give_guarantee = CAN
 	give_guarantee = MEX

@@ -1,5 +1,108 @@
 ideas = {
 	country = {
+		WGR_return_of_the_pack = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = general_staff
+
+			equipment_bonus = {
+				submarine = {
+					sub_visibility = -0.1
+					surface_visibility = -0.1
+					naval_speed = 0.1
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		WGR_the_seawall = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = general_staff
+
+			equipment_bonus = {
+				screen_ship = {
+					surface_visibility = -0.1
+					naval_speed = 0.1
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		suppressed_wehrmacht_competence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = general_staff
+
+			modifier = {
+				conscription = -0.01
+				army_morale_factor = -0.15
+				military_leader_cost_factor = 2
+			}
+		}
+		WGR_industrial_revival = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		WGR_wirtschaftswunder = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
 		allied_occupation = {
 			
 			allowed = {
@@ -18,8 +121,7 @@ ideas = {
 				conscription_factor = -0.6
 				democratic_drift = 0.02
 				unity_factor = -0.05
-				army_morale_factor = -0.05
-				industrial_capacity_factory = 0.2   
+				army_morale_factor = -0.05 
 			}
 		}
 		
@@ -39,12 +141,11 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.3
-				democratic_drift = 0.02
-				industrial_capacity_factory = 0.1   
+				democratic_drift = 0.02 
 			}
 		}
 		
-		repair_the_autonahn = {
+		repair_the_autobahn = {
 			allowed = {
 				always = no
 			}
@@ -73,12 +174,13 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = generic_goods_red_bonus
+			picture = SOV_scientist_defect
 			
 			modifier = {
 				research_time_factor = 0.10
 			}
 		}
+		
 		
 		bundesbank_1 = {
 			allowed = {
@@ -91,7 +193,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = generic_goods_red_bonus
+			picture = great_depression
 			
 			modifier = {
 				consumer_goods_factor = 0.20
@@ -337,6 +439,18 @@ ideas = {
 			
 		designer = yes
 		
+		opel = {
+			
+			allowed = {
+				original_tag = WGR
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
 	}
 	
 	###NAVAL MANUFACTURER###

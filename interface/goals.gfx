@@ -106,6 +106,10 @@ spriteTypes = {
 	}
 	###WGR###
 	SpriteType = { 
+		name = "GFX_goal_adenauer"
+		texturefile = "gfx/interface/goals/goal_adenauer.dds"
+	}
+	SpriteType = { 
 		name = "GFX_focus_wgr_coal_and_steel"
 		texturefile = "gfx/interface/goals/focus_wgr_coal_and_steel.dds"
 	}

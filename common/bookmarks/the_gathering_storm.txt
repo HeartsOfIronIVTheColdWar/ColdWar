@@ -84,8 +84,9 @@ bookmarks = {
 			history = "WGR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				allied_occupation
-				loser_of_the_second_world_war
+				bundesbank_1
+				WGR_paperclip
+				suppressed_wehrmacht_competence
 			}	
 			focuses = {
 				WGR_wirtschaftswunder
@@ -170,6 +171,7 @@ bookmarks = {
 			ideas = {
 				soviet_occupation
 				loser_of_the_second_world_war
+				DDR_osoaviakhim
 			}
 			focuses = {
 				DDR_Nationale_Volksarmee

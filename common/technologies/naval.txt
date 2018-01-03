@@ -1,6 +1,11 @@
 technologies = {
 
 	ww2_destroyer = {
+		allow = {
+            NOT = {
+                has_country_flag = naval_treaty_stipulations
+            }
+        }
 
 		enable_equipments = {
 			destroyer_1

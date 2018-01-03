@@ -21,15 +21,15 @@ set_national_unity = 0.55
 
 	parties = {
 		democratic = { 
-			popularity = 35
+			popularity = 60
 		}
 
 		autocratic = {
-			popularity = 0
+			popularity = 19
 		}
 		
 		communism = {
-			popularity = 65
+			popularity = 21
 		}
 	}
 	

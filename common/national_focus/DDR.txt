@@ -858,7 +858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DDR_indoctrination
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_generic_socialist_science
 		cost = 10
 		prerequisite = {
 			focus = DDR_forced_unions
@@ -869,7 +869,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-		
+			add_research_slot = 1
 		}
 
 	}

@@ -1,7 +1,7 @@
 ﻿capital = 64
 
 oob = "DDR_1950"
-set_research_slots = 2
+set_research_slots = 1
 set_convoys = 80
 set_national_unity = 0.6
 
@@ -17,21 +17,22 @@ set_national_unity = 0.6
 		soviet_occupation
 		loser_of_the_second_world_war
 		SOV_comecon
+		DDR_osoaviakhim
 		
 	}
 	set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 30
+			popularity = 43
 		}
 
 		autocratic = {
-			popularity = 10
+			popularity = 32
 		}
 		
 		communism = {
-			popularity = 60
+			popularity = 25
 			banned = no #default is no
 		}
 	}

@@ -34,6 +34,14 @@ set_national_unity = 0.7
 	election_frequency = 60
 	elections_allowed = yes
 	}
+###Diplomacy
+	give_military_access = HOL
+	give_military_access = BEL
+	give_military_access = LUX
+	give_military_access = ITA
+	give_military_access = WGR
+	
+	
 	create_country_leader = {
 	name = "Vincent Auriol"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
@@ -44,6 +52,7 @@ set_national_unity = 0.7
 		Impopular_Figurehead
 	}
 	}
+
 	set_technology = {
 		#Industry/engineering techs
 		basic_machine_tools = 1

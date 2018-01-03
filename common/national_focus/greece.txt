@@ -379,11 +379,84 @@ focus_tree = {
 				add_ideas = GRE_the_pride_of_the_aegean
 			}
 		}
-	}
+	
 
 #############################################
 #####POLITICAL FOCUS TREE####################
 #############################################
 
+	focus = {
+		id = GRE_stability_in_our_country
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		
+		x = 15
+		y = 0
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_national_unity = 0.05
+			add_political_power = 50
+		}
+
+	}
+	
+	focus = {
+		id = GRE_reestablish_the_goverment
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5
+		prerequisite = {
+			focus = GRE_stability_in_our_country
+		}
+		
+		x = 15
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	
+	focus = {
+		id = GRE_the_birthplace_of_democracy
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = GRE_reestablish_the_goverment
+		}
+		
+		x = 12
+		y = 2
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+
+	}
+	
+	focus = {
+		id = GRE_democratic_elections
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = GRE_the_birthplace_of_democracy
+		}
+		
+		x = 12
+		y = 3
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+
+	}
 
 }

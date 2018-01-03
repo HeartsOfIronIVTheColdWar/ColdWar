@@ -24,12 +24,12 @@ set_national_unity = 0.55
 			}
 
 			autocratic = {
-				popularity = 16
+				popularity = 36
 				banned = no
 			}
 			
 			communism = {
-				popularity = 47
+				popularity = 27
 				#banned = no #default is no
 			}
 		}
