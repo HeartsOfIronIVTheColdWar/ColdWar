@@ -10,10 +10,17 @@ state={
 		add_core_of = SVN
 		owner = SVN
 		victory_points = {
-			4401 20 
+			4401 20
+		}
+		victory_points = {
+			12133 10
+		}
+		victory_points = {
+			12232 5
 		}
 		buildings = {
 			infrastructure = 3
+			arms_factory = 8 #so SVN can build weapons
 			industrial_complex = 1
 			air_base = 2
 			4401 = {
@@ -28,7 +35,7 @@ state={
 	provinces={
 		1396 1423 4223 4284 4341 4401 7238 7303 7331 7347 10261 12133 12232 
 	}
-	manpower=5245000
+	manpower=6000000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=megalopolis
 }

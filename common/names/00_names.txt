@@ -38,6 +38,38 @@ GER = { #need to revisit
 		}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
+SVN = {
+	male = {
+		names = {
+			An "Anh Dung" Binh Bao Canh Chien Chinh Cuong "Dac Kien" Dao Danh Dat De Dien Duc Due Dung Duong Gia Giang Hien Hieu Hoc Huu Hung Huy Huynh Khan Lanh Lan Loc Minh Nguyen Nhat Phuc Phuoc Quan Quang Quoc Sang Si Sinh Son Thang Thanh Thao Thinh Tho Thu Thuan Toai Toan Trang Trieu "Trong Tri" Trong Trung Tu Tuan Tung Van Vien Viet Vuong Xuan
+		}
+	}
+	female = {
+		names = {
+			Cong Dung Hanh Ngon Ly Phuong Qui Long Ai An Anh Be Bian Bich Binh Cam Canh Chau Chi Dao Diep Diu "Doan Vien" Dong Giang Ha Hai Han Hang "Hanh Phuc" Hoa Hien Hong "Hong Yen" "Hong Hanh" Hue Hung Huong Huyen Hyunh Khanh Kieu Kim "Kim Cuc" "Kim-Ly" Lam Lan Lang Lanh Ngoc "Ngoc Bich" Ngu Nguyet Nhu Nhung Nu Phuong Quy Quyen Sang Suong Tam Tan Tham Thanh "Thanh Ha" Thao Thi Trinh Truc Tuyen Tuyet Uoc Van Viet Xuan Yen
+		}
+	}
+	surnames = {
+		Nguyen Tran Le Pham Hoang Phan Vu Dang Bui Do Ho Ngo Duong Ly An Bach Banh Cao Chau Chu Chung Chu Diep Doan Dam Dao Dinh Doan Duu Giang Ha Han Kieu Kim La Lac Lam Lieu Luc Luong Luu Ma Mac Mach Mai Nghiem Ngu Phi Pho Phung Quach Quang Quyen Ta Thach Thai Thi Than Thao Thuy Tieu To Ton Tong Tram Trang Trieu Uc Trinh Truong Van Vinh Vuong Vuu
+	}
+
+}
+VIN = {
+	male = {
+		names = {
+			An "Anh Dung" Binh Bao Canh Chien Chinh Cuong "Dac Kien" Dao Danh Dat De Dien Duc Due Dung Duong Gia Giang Hien Hieu Hoc Huu Hung Huy Huynh Khan Lanh Lan Loc Minh Nguyen Nhat Phuc Phuoc Quan Quang Quoc Sang Si Sinh Son Thang Thanh Thao Thinh Tho Thu Thuan Toai Toan Trang Trieu "Trong Tri" Trong Trung Tu Tuan Tung Van Vien Viet Vuong Xuan
+		}
+	}
+	female = {
+		names = {
+			Cong Dung Hanh Ngon Ly Phuong Qui Long Ai An Anh Be Bian Bich Binh Cam Canh Chau Chi Dao Diep Diu "Doan Vien" Dong Giang Ha Hai Han Hang "Hanh Phuc" Hoa Hien Hong "Hong Yen" "Hong Hanh" Hue Hung Huong Huyen Hyunh Khanh Kieu Kim "Kim Cuc" "Kim-Ly" Lam Lan Lang Lanh Ngoc "Ngoc Bich" Ngu Nguyet Nhu Nhung Nu Phuong Quy Quyen Sang Suong Tam Tan Tham Thanh "Thanh Ha" Thao Thi Trinh Truc Tuyen Tuyet Uoc Van Viet Xuan Yen
+		}
+	}
+	surnames = {
+		Nguyen Tran Le Pham Hoang Phan Vu Dang Bui Do Ho Ngo Duong Ly An Bach Banh Cao Chau Chu Chung Chu Diep Doan Dam Dao Dinh Doan Duu Giang Ha Han Kieu Kim La Lac Lam Lieu Luc Luong Luu Ma Mac Mach Mai Nghiem Ngu Phi Pho Phung Quach Quang Quyen Ta Thach Thai Thi Than Thao Thuy Tieu To Ton Tong Tram Trang Trieu Uc Trinh Truong Van Vinh Vuong Vuu
+	}
+
+}
 
 WGR = { #need to revisit
 	male = {

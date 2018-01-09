@@ -1,0 +1,591 @@
+division_template = {
+	name = "Bataillon de Marche"  	# French-based unit structure dictated this as the standard basic unit. Almost all Union foot infantry are based on this.
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+		#Most French forces in Indochina did not really have much in the way of support equipment.
+		maintenance_company = { x = 0 y = 0 } #"Support" company
+		signal_company = { x = 0 y = 1 } #"Headquarter" company
+	}
+}
+division_template = {
+	name = "Regiment d'Infanterie"  	# A collection of three bataillon de marche
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		#Most French forces in Indochina did not really have much in the way of support equipment.
+		maintenance_company = { x = 0 y = 0 } #"Support" company
+		signal_company = { x = 0 y = 1 } #"Headquarter" company
+	}
+}
+division_template = {
+	name = "Bataillon Parachutiste"  	# Two batallions' worth of elite paratroopers
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+	}
+	support = {
+		#Most French forces in Indochina did not really have much in the way of support equipment.
+		maintenance_company = { x = 0 y = 0 } #"Support" company
+		signal_company = { x = 0 y = 1 } #"Headquarter" company
+	}
+}
+division_template = {
+	name = "Goumiers Marocains"  	# Irregular infantry.
+
+	regiments = {
+		infantry = { x = 0 y = 0 } #Militia
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Sous Groupment Blindees"  	# French-based unit structure dictated this as the standard basic unit. Almost all Union foot infantry are based on this.
+
+	regiments = {
+		light_armor = { x = 0 y = 0 } #SGB units were extremely light, consisting of one light armor element (M24 chaffees, M5 Stuarts, and sometimes M36 Jacksons) plus two or so companies of motorized infantry.
+	}
+	support = {
+		recon = { x = 0 y = 0 } # SGB units had a recon unit associated with them, comprised of recce in M8 armored cars.
+	}
+}
+
+units = {
+	#French metropolitan forces
+	
+	##Infantry
+	###Batallions
+	division= {			
+		name = "1er BILA"		
+		location = 7380
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "3e BILA"		
+		location = 1248
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	###Regiments
+	division= {			
+		name = "35e RI"		
+		location = 4554
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "43e RI"		
+		location = 7426
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "49e RI"		
+		location = 12210
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "110e RI"		
+		location = 10238
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "151e RI"		
+		location = 10195
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	##Armored Cavalry
+	##AFAIK this is the only SGB unit that existed in 1950. All the others were formed during or post 1950.
+	division= {			
+		name = "1er Rgt. Etranger de Cavalerie"		
+		location = 4260
+		division_template = "Sous Groupment Blindees"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	
+	##Groupes Mobiles/motorized brigades
+	
+	##Airborne
+	division= {			
+		name = "1e RCP"		
+		location = 10326
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "10e BPCP"		
+		location = 1362
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	
+	#French colonial forces
+	
+	##Infantry
+	
+	###Regiments
+	division= {			
+		name = "2e RI Coloniale"		
+		location = 12332
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "1er RI Coloniale"		
+		location = 4339
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "5e RI Coloniale"		
+		location = 9961
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "6e RI Coloniale"		
+		location = 7218
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "11e RI Coloniale"		
+		location = 12433
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "21e RI Coloniale"		
+		location = 12392
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "23e RI Coloniale"		
+		location = 1185
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "43e RI Coloniale"		
+		location = 4075
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "110e RI Coloniale"		
+		location = 12048
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "I Regiment de Coree"		
+		location = 1157
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "II Regiment de Coree"		
+		location = 7380
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	###Algerian and Tunisian rifles
+	####Regiments
+	division= {			
+		name = "1er RTA"		
+		location = 1248
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "2e RTA"		
+		location = 4554
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "3e RTA"		
+		location = 1185
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "6e RTA"		
+		location = 4075
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "4e RTT"		
+		location = 1157
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	####Battalions
+	division= {			
+		name = "21e BTA"		
+		location = 12210
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "23e BTA"		
+		location = 10238
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "25e BTA"		
+		location = 10195
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "27e BTA"		
+		location = 4260
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	###Moroccan rifles
+	division= {			
+		name = "1er RTM"		
+		location = 10326
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "2e RTM"		
+		location = 12332
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "3e RTM"		
+		location = 1362
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "4e RTM"		
+		location = 4405
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "5e RTM"		
+		location = 1248
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "6e RTM"		
+		location = 10238
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "7e RTM"		
+		location = 1157
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "8e RTM"		
+		location = 12048
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "10e RTM"		
+		location = 4554
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	###Moroccan irregulars
+	division= {			
+		name = "1er Tabor"		
+		location = 12210
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "2e Tabor"		
+		location = 4260
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "3e Tabor"		
+		location = 10326
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "5e Tabor"		
+		location = 4339
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "8e Tabor"		
+		location = 9961
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "9e Tabor"		
+		location = 4405
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "10e Tabor"		
+		location = 1248
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "11e Tabor"		
+		location = 1157
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "17e Tabor"		
+		location = 12048
+		division_template = "Goumiers Marocains"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	###Senegalese rifles
+	division= {			
+		name = "24e RMTS"		
+		location = 4075
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "13e BMTS"		
+		location = 1185
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "26e BMTS"		
+		location = 12332
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "27e BMTS"		
+		location = 1362
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "28e BMTS"		
+		location = 1328
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "29e BMTS"		
+		location = 10326
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "30e BMTS"		
+		location = 4339
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "31e BMTS"		
+		location = 12332
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "32e BMTS"		
+		location = 7426
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "1er BMAOF"		
+		location = 12210
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "2e BMACF"		
+		location = 10238
+		division_template = "Bataillon de Marche"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	
+	##Airborne
+	division= {			
+		name = "1er BCCP"		
+		location = 10195
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "2e BCCP"		
+		location = 4260
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "3e BCCP"		
+		location = 1362
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "5e BCCP"		
+		location = 1362
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "6e BCCP"		
+		location = 4075
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "7e BCCP"		
+		location = 10326
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "8e BCCP"		
+		location = 7218
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	
+	#French Foreign Legion forces
+	
+	##Infantry
+	division= {			
+		name = "2e REI"		
+		location = 1328
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "5e REI"		
+		location = 7426
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "13e DBLE"		
+		location = 4260
+		division_template = "Regiment d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	##Airborne
+	division= {			
+		name = "1er BEP"		
+		location = 12433
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "2e BEP"		
+		location = 1185
+		division_template = "Bataillon Parachutiste"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+}

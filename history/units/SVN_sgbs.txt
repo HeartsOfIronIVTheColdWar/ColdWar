@@ -1,0 +1,23 @@
+units = {
+	division= {			
+		name = "Rgt. Blindee Coloniale d'Extreme Orient"		
+		location = 12232
+		division_template = "Sous Groupment Blindees"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "6e Rgt. de Spahis Marocains"		
+		location = 12232
+		division_template = "Sous Groupment Blindees"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "8e Rgt. de Spahis Algeriens"		
+		location = 12232
+		division_template = "Sous Groupment Blindees"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+}

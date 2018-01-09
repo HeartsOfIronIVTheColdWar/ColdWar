@@ -1,0 +1,330 @@
+focus_tree = {
+	id = vin
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VIN
+		}
+	}
+	default = no
+	
+	#Indochina War era
+	focus = {
+		id = VIN_seek_recognition
+		# Seek Recognition
+		# Although our Republic is the longest continuously existing government in Indochina, we have yet to see recognition extended from other nations. We should seek recognition from our comrades in the USSR and China.
+		cost = 20
+		x = 5
+		y = 0
+		
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = VIN_soviet_aid_1
+		# Soviet Aid Arrives
+		# The first batch of Soviet-originating aid has arrived in Cao Bang, ready to refit our brave troops.
+		cost = 20
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = VIN_seek_recognition
+		}
+	}
+	focus = {
+		id = VIN_chinese_aid_1
+		# Chinese Aid Arrives
+		# The first batch of Chinese-originating aid has arrived in Cao Bang, ready to refit our brave troops.
+		cost = 20
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = VIN_seek_recognition
+		}
+	}
+	focus = {
+		id = VIN_chinese_schools
+		# Expand Our Chinese Military Academies
+		# We have had academies in China for quite some time now. Let's leverage these schools to advance our military technology.
+		cost = 20
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = VIN_soviet_aid_1
+		}
+		prerequisite = {
+			focus = VIN_chinese_aid_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.25
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+			}		
+		}
+	}
+	focus = {
+		id = VIN_improve_attrition
+		# Improve Jungle Combat Tactics
+		# As the French Union forces continue to dig in, we need to adjust our own tactics to better contend with our hostile native terrain.
+		cost = 20
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = VIN_chinese_schools
+		}
+	}
+	focus = {
+		id = VIN_fortify_cao_bang
+		# Shore Up Cao Bang
+		# China remains one of our most important lifelines -- we need to shore up our defenses in the region to prevent French forces from cutting us off.
+		
+		cost = 20
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = VIN_chinese_schools
+		}
+	}
+	focus = {
+		id = VIN_deploy_additional_divisions
+		# Deploy New Divisions
+		# Trained in our Chinese academies and equipped by the Soviets and Chinese, we can now deploy a handful of new divisions to swing the balance in our favor.
+		
+		cost = 20
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = VIN_chinese_schools
+		}
+	}
+	focus = {
+		id = VIN_arm_regional_troops
+		# Arm Regional Troops
+		# Although poorly trained compared to our regular troops, we can outfit a significant number of "regional" troops, particularly in the south to draw off French Union forces.
+		cost = 20
+		x = 6
+		y = 1
+		
+		prerequisite = {
+			focus = VIN_seek_recognition
+		}
+	}
+	#Early land reform
+	focus = {
+		id = VIN_land_reform
+		# Continue Land Reform
+		# One of our major projects since Ho Chi Minh came to power has been instituting land reform. With the massive imbalance of land ownership and the deleterious effects it has had on our economics and social welfare, instituting some form of land reform is sure to garner us wide-spread popular support.
+		cost = 20
+		x = 10
+		y = 1
+		
+		prerequisite = {
+			focus = VIN_seek_recognition
+		}
+	}
+	focus = {
+		id = VIN_destroy_feudalism
+		# Break Down Feudalism
+		# The ongoing struggle in Indochina has precluded us from effectively implementing our land reform solutions. With some Chinese assistance, we can take the first step toward rectifying this: breaking down the feudal system and redistributing the land.
+		cost = 20
+		x = 8
+		y = 2
+		
+		prerequisite = {
+			focus = VIN_land_reform
+		}
+	}
+	focus = {
+		id = VIN_rectify_famine
+		# Improve Social Welfare
+		# Under the old regime the People suffered from a great deal of poverty and famine. By establishing a state apparatus to deal with times of wont, we can further cement our support.
+		cost = 20
+		x = 10
+		y = 2
+		
+		prerequisite = {
+			focus = VIN_land_reform
+		}
+	}
+	focus = {
+		id = VIN_land_rent_reduction
+		# Rent Reduction
+		# With Chinese assistance, we can come to understand not only the reason why the People are in such a bad way, but also show the People how to recognize and deal with injustices wrought by their landlords.
+		cost = 20
+		x = 12
+		y = 2
+		
+		prerequisite = {
+			focus = VIN_land_reform
+		}
+	}
+	focus = {
+		id = VIN_central_land_reform_committee
+		# Central Land Reform Committee
+		# Let's establish a formal committe dedicated to bringing final land reform to our country.
+		cost = 20
+		x = 10
+		y = 3
+		
+		prerequisite = {
+			focus = VIN_land_rent_reduction
+		}
+		prerequisite = {
+			focus = VIN_destroy_feudalism
+		}
+		prerequisite = {
+			focus = VIN_rectify_famine
+		}
+	}
+	focus = {
+		id = VIN_acknowledge_reform_errors
+		# Acknowledge Land Reform Errors
+		# Land Reform is a major undertaking, and in the process of carrying it out we have committed many mistakes. We need to recognize this and take a step back.
+		cost = 20
+		x = 10
+		y = 4
+		
+		prerequisite = {
+			focus = VIN_central_land_reform_committee
+		}
+	}
+	focus = {
+		id = VIN_correction_program
+		# Correction Campaign
+		# Let's release some of the prisoners and return some of the land that was wrongly or erroneously redistributed.
+		cost = 20
+		x = 10
+		y = 5
+		
+		prerequisite = {
+			focus = VIN_acknowledge_reform_errors
+		}
+	}
+	focus = {
+		id = VIN_establish_lowlevel_coops
+		# Establish Low-Level Farming Cooperatives
+		# Cooperative farming is our ultimate goal for land reform. The first step toward this, with the bulk of the land redistribution done, is to establish low-level farming cooperatives.
+		cost = 20
+		x = 10
+		y = 6
+		
+		prerequisite = {
+			focus = VIN_correction_program
+		}
+	}
+	#Post-Indochina, international and military
+	focus = {
+		id = VIN_ho_chi_minh_trail
+		# Establish the Ho Chi Minh Trail
+		# The First Indochina War ended inconclusively. However, the new regime in power in the South has refused to accede to the Geneva Accords of 1954, and thus we must take matters into our own hands by establishing training camps and supply lines for the Viet Cong in the South.
+		cost = 20
+		x = 16
+		y = 1
+		available = {
+			SVN = {
+				has_country_flag = svn_indochina_over_indecisive
+			}
+		}
+		prerequisite = {
+			focus = VIN_seek_recognition
+		}
+	}
+	focus = {
+		id = VIN_reinforce_viet_cong
+		# Reinforce the Viet Cong
+		# Send men and materiel to the Viet Cong to further the fight.
+		cost = 20
+		x = 14
+		y = 2
+		prerequisite = {
+			focus = VIN_ho_chi_minh_trail
+		}
+	}
+	focus = {
+		id = VIN_north_first
+		# North First
+		# Ho Chi Minh generally favored the 'North First' line of thinking which was generally focused toward improving relations with China and self-improvement within North Vietnam's holdings.
+		cost = 20
+		x = 18
+		y = 2
+		prerequisite = {
+			focus = VIN_ho_chi_minh_trail
+		}
+	}
+	focus = {
+		id = VIN_china_relations
+		# Tighten Ties to China
+		# The two big Communist powers have recently split. We should take some advantage of this by drawing closer to China.
+		cost = 10
+		x = 20
+		y = 3
+		prerequisite = {
+			focus = VIN_north_first
+		}
+	}
+	focus = {
+		id = VIN_chinese_internal_advisors
+		# Invite Chinese Advisors
+		# China had the largest impact on the Democratic Republic of Vietnam's internal policies -- land reform, for instance, was largely modeled after the CCP's own policies.
+		cost = 10
+		x = 20
+		y = 4
+		prerequisite = {
+			focus = VIN_china_relations
+		}
+	}
+	focus = {
+		id = VIN_ussr_relations
+		# Tighten Ties to the USSR
+		# The two big Communist powers have recently split. We should take some advantage of this by drawing closer to the USSR.
+		cost = 10
+		x = 16
+		y = 3
+		prerequisite = {
+			focus = VIN_north_first
+		}
+	}
+	focus = {
+		id = VIN_soviet_military_advisors
+		# Invite Soviet Advisors
+		# The Soviets had a major influence on Vietnamese military policy and doctrine, including their use of advisors not dissimilar to those American advisors employed by the South Vietnamese.
+		cost = 10
+		x = 16
+		y = 4
+		prerequisite = {
+			focus = VIN_ussr_relations
+		}
+	}
+	focus = {
+		id = VIN_forge_own_path
+		# Forge Our Own Path
+		# Although we have entertained both the Soviets and Chinese, we should commit to our own, independent path -- neither purely Soviet nor purely Chinese.
+		cost = 10
+		x = 18
+		y = 5
+		prerequisite = {
+			focus = VIN_soviet_military_advisors
+		}
+		prerequisite = {
+			focus = VIN_chinese_internal_advisors
+		}
+	}
+	focus = {
+		id = VIN_laotian_intervention
+		# Laotian Intervention
+		# During the First Indochina War we fought against not just French-controlled Vietnam, but also Laos and Cambodia. As part of our new strategy for reunification, and the security of our own holdings, we need to secure routes through Laos. The best way to do this is to encourage and foster the Pathet Lao party in Laos to establish a friendly regime.
+		cost = 10
+		x = 18
+		y = 6
+		prerequisite = {
+			focus = VIN_forge_own_path
+		}
+
+	}
+	
+}

@@ -11,9 +11,20 @@ state={
 		add_core_of = VIN
 		add_core_of = SVN
 		owner = VIN
+		victory_points = {
+			4379 5
+		}
+		victory_points = {
+			10309 10
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			air_base = 10
+			10309 = {
+				naval_base = 1
+				
+			}
 		}
 	}
 
@@ -21,7 +32,7 @@ state={
 		4255 4379 7229 10137 10180 10309
 		1300 4334 #from Southern Indochina
 	}
-	manpower=1000000
+	manpower=3000000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

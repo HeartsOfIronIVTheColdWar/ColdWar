@@ -121,18 +121,18 @@ set_national_unity = 0.7
 		target = FEA
 		autonomous_state =  autonomy_FRA_colony
 	}
-	set_autonomy = {
-		target = LAO
-		autonomous_state =  autonomy_FRA_colony
-	}
-	set_autonomy = {
-		target = CAM
-		autonomous_state =  autonomy_FRA_colony
-	}
-	set_autonomy = {
-		target = SVN
-		autonomous_state =  autonomy_FRA_colony
-	}
+#	set_autonomy = {
+#		target = LAO
+#		autonomous_state =  autonomy_FRA_colony
+#	}
+#	set_autonomy = {
+#		target = CAM
+#		autonomous_state =  autonomy_FRA_colony
+#	}
+#	set_autonomy = {
+#		target = SVN
+#		autonomous_state =  autonomy_FRA_colony
+#	}
 	set_autonomy = {
 		target = MAD
 		autonomous_state =  autonomy_FRA_colony

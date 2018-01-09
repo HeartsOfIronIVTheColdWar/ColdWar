@@ -1,0 +1,55 @@
+division_template = {
+	name = "Groupes Mobiles"  	# Mobile units -- self-sufficient motorized units
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		#These guys had probably the most comprehensive support element of all of the French Union forces.
+		maintenance_company = { x = 0 y = 0 } #"Support" company
+		signal_company = { x = 0 y = 1 } #"Headquarter" company
+		engineer_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		artillery = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division= {			
+		name = "GM 1"
+		location = 12232
+		division_template = "Groupes Mobiles"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "GM 2"
+		location = 12232
+		division_template = "Groupes Mobiles"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "GM 3"
+		location = 12232
+		division_template = "Groupes Mobiles"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "GM 4"
+		location = 12232
+		division_template = "Groupes Mobiles"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "GM 5"
+		location = 12232
+		division_template = "Groupes Mobiles"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+}

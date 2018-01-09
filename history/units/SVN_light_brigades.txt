@@ -1,0 +1,48 @@
+division_template = {
+	name = "Tieu Doan Kinh Quan"  	# Light brigades
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+		#Light brigades essentially have no support.
+	}
+}
+
+units = {
+	division= {			
+		name = "TDKQ 1"
+		location = 12232
+		division_template = "Tieu Doan Kinh Quan"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "TDKQ 2"
+		location = 12232
+		division_template = "Tieu Doan Kinh Quan"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "TDKQ 3"
+		location = 12232
+		division_template = "Tieu Doan Kinh Quan"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "TDKQ 4"
+		location = 12232
+		division_template = "Tieu Doan Kinh Quan"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "TDKQ 5"
+		location = 12232
+		division_template = "Tieu Doan Kinh Quan"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+}

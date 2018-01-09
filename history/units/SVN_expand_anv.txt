@@ -1,0 +1,43 @@
+division_template = {
+	name = "Tieu Doan"  	# Tieu Doan are essentially just Battaillon de Marche.
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+		#Most French forces in Indochina did not really have much in the way of support equipment.
+		maintenance_company = { x = 0 y = 0 } #"Support" company
+		signal_company = { x = 0 y = 1 } #"Headquarter" company
+	}
+}
+
+units = {
+	division= {			
+		name = "TD 62"
+		location = 12232
+		division_template = "Tieu Doan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "TD 63"
+		location = 12232
+		division_template = "Tieu Doan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "TD 64"
+		location = 12232
+		division_template = "Tieu Doan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		name = "TD 65"
+		location = 12232
+		division_template = "Tieu Doan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+}

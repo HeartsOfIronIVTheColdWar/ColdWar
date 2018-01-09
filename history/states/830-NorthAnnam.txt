@@ -11,6 +11,9 @@ state={
 		add_core_of = VIN
 		add_core_of = SVN
 		owner = VIN
+		victory_points = {
+			10016 10
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,7 +23,7 @@ state={
 	provinces={
 		1302 4397 7280 9988 10016 10129 11909 11936 12297
 	}
-	manpower=1000000
+	manpower=3000000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -1,0 +1,58 @@
+﻿#Indochina War events
+
+#1954 Geneva Accords
+country_event = {
+	id = 998001
+	title = indochina.1.t
+	desc = indochina.1.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SVN
+		date > 1954.6.1
+		SVN = {
+			has_war_with = VIN
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# Ends the war, dissolves the Indochinese Federation, rearranges borders, and removes SVN's cores on the north and VIN's cores on the south.
+	option = {
+		name = indochina.1.a
+		white_peace = VIN
+		remove_ideas = FRA_indochina
+		dismantle_faction = yes
+		transfer_state = 671
+		transfer_state = 829
+		transfer_state = 830
+		
+		transfer_state = 831
+		transfer_state = 832
+		transfer_state = 286
+		every_owned_state = {
+			remove_core_of = VIN
+		}
+		VIN = {
+			transfer_state = 671
+			transfer_state = 829
+			transfer_state = 830
+			drop_cosmetic_tag = yes
+			every_owned_state = {
+				remove_core_of = SVN
+			}
+		}
+		CAM = {
+			drop_cosmetic_tag = yes
+			remove_ideas = FRA_indochina
+		}
+		LAO = {
+			drop_cosmetic_tag = yes
+			remove_ideas = FRA_indochina
+		}
+		set_country_flag = svn_indochina_over_indecisive
+	}
+}

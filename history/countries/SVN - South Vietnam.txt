@@ -11,10 +11,14 @@ set_national_unity = 0.55
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
-		limited_conscription
+		service_by_requirement
+		mass_surveillance
 		#ideas
 		FRA_indochina
 	}
+	create_faction = "Indochinese Federation"
+	add_to_faction = LAO
+	add_to_faction = CAM
 	set_politics = {
 
 		parties = {
@@ -40,17 +44,31 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
+		name = "Bao Dai"
+		desc = "POLITICS_BAO_DAI_DESC"
+		picture = "gfx/leaders/SVN/svn_bao_dai.dds"
+		ideology = despotism
 	}
+	set_technology = {
+		gw_artillery = 1
+		infantry_weapons_1 = 1
+		motorised_infantry = 1
+		tech_support = 1
+		advanced_light_tank = 1
 	}
-	set_technology = { naval_stipulations = 1
+	declare_war_on = {
+		target = VIN
+		type = annex_everything
 	}
+	add_to_war = {
+		targeted_alliance = CAM
+		enemy = VIN
+	}
+	add_to_war = {
+		targeted_alliance = LAO
+		enemy = VIN
+	}
+	
 }
 
 1960.1.1 = {
@@ -97,7 +115,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = { naval_stipulations = 1
+	set_technology = {
 	}
 }
 
@@ -144,7 +162,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = { naval_stipulations = 1
+	set_technology = {
 	}
 }
 
@@ -192,6 +210,28 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = { naval_stipulations = 1
+	set_technology = {
 	}
+}
+
+create_corps_commander = {
+	name = "Lam Xuan Hoang"
+	id = 10001
+	portrait_path = "gfx/leaders/SVN/svn_lam_xuan_hoang.dds"
+	#traits = { trickster commando }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Truang Quang Ngo"
+	id = 10002
+	portrait_path = "gfx/leaders/NKR/Portrait_North_Korea_Kim_Chaek.dds"
+	#traits = { trickster commando }
+	skill = 3
+}
+create_corps_commander = {
+	name = "Khang Nguyen Le"
+	id = 10003
+	portrait_path = "gfx/leaders/NKR/Portrait_North_Korea_Kim_Chaek.dds"
+	#traits = { trickster commando }
+	skill = 3
 }

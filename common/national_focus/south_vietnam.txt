@@ -1,0 +1,779 @@
+focus_tree = {
+	id = svn
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SVN
+		}
+	}
+	default = no
+	
+	#Focuses for the First Indochina War
+	##Military innovations for ANV
+	focus = {
+		id = SVN_form_anv 
+		# Expand the Vietnamese National Army
+		# The ANV (Army Nationale Vietnamienne) was formed in the late 1940s. During the First Indochina War, recruitment and control of the French Union forces in Indochina was gradually handed off to the State of Vietnam, and the ANV would eventually form the basis for the Army of the Republic of Vietnam (ARVN). By expanding the ANV, further opening up recruitment and training to the locals, we can get more out of our existing formations.
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 20
+		x = 2
+		y = 0
+		
+		completion_reward = {
+			custom_effect_tooltip = SVN_expand_anv_tooltip
+			load_oob = SVN_expand_anv
+		}
+	}
+	
+	focus = {
+		id = SVN_light_brigades
+		# Light Brigades
+		# We need smaller and more mobile regular forces if we are going to keep pace with the Viet Minh. Light Brigades are small, mobile, well-armed, and well-trained -- seemingly perfect for the wilderness of Indochina.
+		icon = GFX_goal_generic_small_arms
+		cost = 20
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SVN_form_anv
+		}
+		completion_reward = {
+			custom_effect_tooltip = SVN_light_brigades_tooltip
+			load_oob = SVN_light_brigades
+		}
+	}
+	focus = {
+		id = SVN_sgb_units
+		# SGBs
+		# We can outfit a few more SGB units with some assistance from France.
+		icon = GFX_goal_generic_army_tanks
+		cost = 20
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = SVN_form_anv
+		}
+		completion_reward = {
+			custom_effect_tooltip = SVN_sgb_units_tooltip
+			load_oob = SVN_sgbs
+		}
+	}
+	focus = {
+		id = SVN_groupes_mobiles
+		# Groupes Mobiles
+		# Groupes Mobiles are lightweight, independent motorized units. Having a few more of these will greatly improve our strategic effectiveness.
+		icon = GFX_goal_generic_army_motorized
+		cost = 20
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = SVN_light_brigades
+		}
+		prerequisite = {
+			focus = SVN_sgb_units
+		}
+		completion_reward = {
+			custom_effect_tooltip = SVN_groupes_mobiles_tooltip
+			load_oob = SVN_groupes_mobiles
+		}
+	}
+	focus = {
+		id = SVN_airborne_corps
+		# Airborne Corps
+		# The ANV's own airborne corps is proving to be a deadly and effective commando element. Let's bring in some French paratroopers and establish our own airborne schools.
+		icon = GFX_focus_generic_paratrooper
+		cost = 20
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = SVN_light_brigades
+		}
+		prerequisite = {
+			focus = SVN_groupes_mobiles
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 1
+				category = para_tech
+			}
+		}
+	}
+	focus = {
+		id = SVN_marine_corps
+		# Marine Corps
+		# To expand our tactical ability, we should look to the United States Marine Corps for inspiration -- their ability to tackle marshy and river-laden terrain with LVTs would be fantastic to have for our own native terrain. Let's bring in some American advisors to form our own Marine Corps.
+		icon = GFX_focus_elite_marines
+		cost = 20
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = SVN_sgb_units
+		}
+		prerequisite = {
+			focus = SVN_groupes_mobiles
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.75
+				uses = 1
+				category = marine_tech
+			}
+		}
+	}
+	
+	##French assistance
+	focus = {
+		id = SVN_french_aid_1 
+		# Request Aid from France
+		# It may take some time, but we can request some assistance from France to help supply our troops. 
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 6
+		y = 0
+		available = { has_idea = FRA_indochina  }
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 amount = 2500 producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = SVN_french_aid_2 
+		# Request Aid from France
+		# It may take some time, but we can request some assistance from France to help supply our troops. 
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 6
+		y = 1
+		available = { has_idea = FRA_indochina  }
+		prerequisite = {
+			focus = SVN_french_aid_1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 amount = 2500 producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = SVN_french_aid_3 
+		# Request Aid from France
+		# It may take some time, but we can request some assistance from France to help supply our troops. 
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 6
+		y = 2
+		available = { has_idea = FRA_indochina  }
+		prerequisite = {
+			focus = SVN_french_aid_2
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 amount = 2500 producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = SVN_french_aid_4 
+		# Request Aid from France
+		# It may take some time, but we can request some assistance from France to help supply our troops. 
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 6
+		y = 3
+		available = { has_idea = FRA_indochina  }
+		prerequisite = {
+			focus = SVN_french_aid_3
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 amount = 2500 producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = SVN_french_cas
+		# Request Air Support from France
+		# One of the issues plaguing our military operations is the lack of air support. We should request a few wings of ground support aircraft from France.
+		icon = GFX_goal_generic_CAS
+		cost = 10
+		x = 8
+		y = 0
+		
+		prerequisite = {
+			focus = SVN_french_aid_1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = CAS_equipment_1 amount = 50 producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = SVN_french_transports
+		# Request Air Transports from France
+		# While our airborne units are superbly trained, we cannot properly leverage them without the means to drop them. We should request some transport planes from France for this purpose.
+		icon = GFX_focus_generic_paratrooper
+		cost = 10
+		x = 8
+		y = 1
+		
+		prerequisite = {
+			focus = SVN_french_cas
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = SVN_american_cas
+		# Request Air Transports from France
+		# While our airborne units are superbly trained, we cannot properly leverage them without the means to drop them. We should request some transport planes from France for this purpose.
+		icon = GFX_goal_generic_CAS
+		cost = 10
+		x = 8
+		y = 2
+		
+		prerequisite = {
+			focus = SVN_french_transports
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = CAS_equipment_1 amount = 50 producer = USA
+			}
+		}
+	}
+	focus = {
+		id = SVN_expand_vnaf
+		# Expand the Air Force
+		# We have had a military air arm for quite some time, but we need to expand our ability to make use of it.
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		x = 8
+		y = 3
+		
+		prerequisite = {
+			focus = SVN_american_cas
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = fighter_1945
+				technology = fighter_1950
+				technology = fighter_1960
+				technology = cas_1945
+				technology = cas_1950
+				technology = heavy_air_1945
+				technology = heavy_air_1950
+				technology = heavy_air_1960
+			}
+		}
+	}
+	
+	
+	#Post-1954 Geneva Accords
+	focus = {
+		id = SVN_geneva_accords
+		# The Geneva Accords
+		# The 1954 Geneva accords saw a formal ceasefire instated, with North and South Vietnam being divided. The Indochinese Federation, in essence, had ceased to exist. For better or worse, we are basically on our own now.
+		icon = GFX_goal_generic_forceful_treaty #icon = GFX_focus_goal_split_vietnam
+		available = { always = no }
+		bypass = {
+			has_country_flag = svn_indochina_over_indecisive
+		}
+		x = 12
+		y = 0
+	}
+	focus = {
+		id = SVN_appoint_diem
+		# Appoint Diem
+		# Bao Dai met with the exiled Ngo Dinh Diem at the Geneva Accords. Dai offered Diem the position of Prime Minister, but the latter would only accept under the conditions that Dai would effectively surrender military and governmental control to Diem. For reasons unknown, Bao Dai elected to agree to these terms, possibly to draw additional foreign support.
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		x = 12
+		y = 1
+		
+		prerequisite = { 
+			focus = SVN_geneva_accords
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_national_unity = 0.05
+			set_party_name = { 
+				ideology = autocratic long_name = "Personalist Labor Revolutionary Party" name = "Can Lao"
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Ngo Dinh Diem"
+				desc = "POLITICS_NGO_DINH_DIEM_DESC"
+				picture = "gfx/leaders/SVN/svn_diem.dds"
+				ideology = despotism
+			}
+		}
+	}
+	focus = {
+		id = SVN_dissolve_binh_xuyen
+		# Dissolve the Binh Xuyen Syndicate
+		# The Binh Xuyen crime syndicate was in essence a secret police created and supported by Bao Dai to maintain control over his position. Dissolving it and rolling it into the ANV would go a long ways toward undermining Bao Dai's rulership.
+		icon = GFX_goal_generic_political_pressure #icon = GFX_focus_civil_unrest
+		cost = 10
+		x = 10
+		y = 2
+		
+		prerequisite = {
+			focus = SVN_appoint_diem
+		}
+		completion_reward = {
+			add_national_unity = 0.1
+		}
+	}
+	focus = {
+		id = SVN_force_nguyen_hinh_out
+		# Force Nguyen Van Hinh Into Exile
+		# Nguyen Van Hinh was the leader of the Vietnamese National Army and a staunch opponent of Diem. We need to force him out of service if we are to consolidate power in our new state.
+		icon = GFX_focus_generic_strike_at_democracy1 #icon = GFX_focus_backstab
+		cost = 10
+		x = 14
+		y = 2
+		
+		prerequisite = {
+			focus = SVN_appoint_diem
+		}
+		completion_reward = {
+			add_national_unity = 0.05
+		}
+	}
+	focus = {
+		id = SVN_diem_referendum
+		# State of Vietnam Referendum
+		# After consolidating his power, Diem attempted to go forward with a referendum for a Republic -- ending Bao Dai's nominal rule over the state, freeing the new Republic from the Geneva Accords, and potentially setting the stage for a more stable country.
+		icon = GFX_goal_generic_defence #icon = GFX_focus_SVN_flag
+		cost = 10
+		x = 12
+		y = 3
+		
+		prerequisite = {
+			focus = SVN_force_nguyen_hinh_out
+		}
+		prerequisite = {
+			focus = SVN_dissolve_binh_xuyen
+		}
+		completion_reward = {
+			SVN = {
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	#focus = {
+	#	id = SVN_form_government
+		# Form a Government (Alt-history)
+		# Diem was advised by the United States to form a proper popular government to legitimize the referendum. Diem had, at one point, been a strong advocate for democratic reform in Indochina -- it was not out of the realm of possibility that he might have decided to heed the American advice.
+		
+	#	cost = 10
+	#	x = 14
+	#	y = 4
+	#	mutually_exclusive = {
+	#		focus = SVN_one_man_rule
+	#	}
+	#	prerequisite = {
+	#		focus = SVN_diem_referendum
+	#	}
+	#}
+	focus = {
+		id = SVN_one_man_rule
+		# Democratic One Man Rule
+		# Historically, Ngo Dinh Diem elected not to form a proper government. Instead, he went about essentially installing himself as a dictator, garnering ninety percent or more of the vote -- a clear indication of an utterly fraudulent election. Not only did this damage his standing on the international stadium, but began a downward trend that greatly weakened not just his government, but South Vietnam as an entity.
+		#icon = GFX_SVN_diem_flag
+		cost = 10
+		x = 12
+		y = 4
+		#mutually_exclusive = {
+		#	focus = SVN_form_government
+		#}
+		prerequisite = {
+			focus = SVN_diem_referendum
+		}
+		completion_reward = {
+			add_ideas = svn_one_man_rule
+		}
+	}
+	focus = {
+		id = SVN_diem_constitution
+		# Dinh Diem's Constitution
+		# Diem formed a legislative assembly in 1956 with the task of establishing a constitution for South Vietnam. Although it was, as was typical of Diem's political suppression, stacked with pro-Diem deputies, it nonetheless shows something of some democratic nature.
+		icon = GFX_goal_focus_important_paper
+		cost = 10
+		x = 12
+		y = 5
+		prerequisite = {
+			focus = SVN_one_man_rule
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = SVN_conservative_law
+		# Conservative Law
+		# Diem instituted a number of social laws and policies. These largely favored specific groups -- friends and family, as well as Catholics. Needless to say, the policies were  highly unpopular.
+		icon = GFX_focus_generic_concessions #icon = GFX_focus_catholic
+		cost = 10
+		x = 10
+		y = 6
+		prerequisite = {
+			focus = SVN_diem_constitution
+		}
+		completion_reward = {
+			add_ideas = svn_catholic_favoritism
+		}
+		
+	}
+	focus = {
+		id = SVN_celebrate_heritage
+		# Conservative Law
+		# Although he largely favored the catholic elements within the Republic, he nonetheless encouraged the celebration and unity of Vietnam as a historical entity.
+		icon = GFX_focus_smiling_buddha
+		cost = 10
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = SVN_conservative_law
+		}
+		completion_reward = {
+			add_national_unity = 0.1
+		}
+		
+	}
+	focus = {
+		id = SVN_can_lao_economics
+		# Can Lao Economics
+		# Diem attempted to institute a wide array of economic and social policies, largely based on his Personalist ideology. 
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = SVN_diem_constitution
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = SVN_land_reform
+		# Land Reform
+		# South Vietnamese land reform had been attempted numerous times. Diem took a number of tacks on the subject, which first included land redistribution (except for lands held by the Catholic Church).
+		icon = GFX_goal_generic_construct_civilian
+		cost = 20
+		x = 21
+		y = 7
+		prerequisite = {
+			focus = SVN_can_lao_economics
+		}
+		completion_reward = {
+			add_national_unity = 0.05
+		}
+	}
+	focus = {
+		id = SVN_resettlement
+		# Resettlement
+		# One of the other ways that Diem attempted land reform was to resettle peasantry from place to place more evenly. Naturally, this was not a popular policy.
+		icon = GFX_goal_generic_secret_weapon
+		cost = 20
+		x = 20
+		y = 8
+		prerequisite = {
+			focus = SVN_land_reform
+		}
+		completion_reward = {
+			add_ideas = svn_resettlement
+		}
+	}
+	focus = {
+		id = SVN_rent_reduction
+		# Reduce Rent
+		# One of the other ways that Diem attempted land reform was to declare ordinances regarding rent, which reduced peasant rent by up to 25%. This was a more successful policy, but nowhere near as successful as Viet Minh policies.
+		icon = GFX_focus_decolonize
+		cost = 20
+		x = 22
+		y = 8
+		prerequisite = {
+			focus = SVN_land_reform
+		}
+		completion_reward = {
+			add_national_unity = 0.05
+		}
+		
+	}
+	focus = {
+		id = SVN_stabilize_the_budget
+		# Stabilize the Budget
+		# One of our most significant undertakings is the stabilization of our out of control budget.
+		icon = GFX_goal_DDR_aid_annexations
+		cost = 10
+		x = 16
+		y = 7
+		prerequisite = {
+			focus = SVN_can_lao_economics
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = SVN_rural_infrastructure_projects
+		# Expand Rural Infrastructure
+		# As the First Indochina War showed, the utterly abysmal state of our rural infrastructure is not just inconvenient, but dangerous. We should strive toward building up our infrastructure so that when the next struggle comes, we are ready.
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 20
+		x = 14
+		y = 8
+		prerequisite = {
+			focus = SVN_stabilize_the_budget
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SVN_develop_our_industry
+		# Develop Industry
+		# Developing our industry is a vital part of becoming a self-sustaining nation. If we are to survive, we must be able to produce our own goods for ourselves.
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 20
+		x = 18
+		y = 8
+		prerequisite = {
+			focus = SVN_stabilize_the_budget
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = SVN_diem_five_year_plan
+		# First Five Year Plan
+		# Like many other leaders at the time, Diem devised a five year economic plan designed to further develop industry and infrastructure, particularly in rural areas.
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 16
+		y = 9
+		prerequisite = {
+			focus = SVN_develop_our_industry
+		}
+		prerequisite = {
+			focus = SVN_rural_infrastructure_projects
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 6
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 6
+			}
+			add_timed_idea = { idea = svn_five_year_plan days = 1821 }
+		}
+	}
+	focus = {
+		id = SVN_university_system_1
+		# Expand the University of Saigon
+		# Support the expansion of the universities to attract the brightest minds of our generation.
+		icon = GFX_focus_research
+		cost = 10
+		x = 12
+		y = 7
+		prerequisite = {
+			focus = SVN_can_lao_economics
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = SVN_university_system_2
+		# Extend Education to the Peasantry
+		# If we expand our education system to include the rural peasantry, we can reach minds that might have otherwise gone to waste in the fields.
+		icon = GFX_focus_research
+		cost = 10
+		x = 12
+		y = 8
+		prerequisite = {
+			focus = SVN_university_system_1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	
+	#Victory in Indochina (Alt-history)
+	
+	#International politics
+	focus = {
+		id = SVN_french_relations
+		# Closer French bonds
+		# In these dark times, we need to seek out the strongest allies in our crusade against Communism.
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		x = 24
+		y = 0
+		completion_reward = {
+			#higher relations/trade relations wiht france
+		}
+	}
+	focus = {
+		id = SVN_american_relations
+		# Closer American Bonds
+		# In these dark times, we need to seek out the strongest allies in our crusade against Communism.
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		x = 24
+		y = 1
+		available = {
+			OR = {
+				has_country_flag = svn_indochina_over_indecisive
+				has_country_flag = svn_indochina_victory
+			}
+		}
+		prerequisite = {
+			focus = SVN_french_relations
+		}
+		completion_reward = {
+			#higher relations/trade relations wiht USA
+		}
+	}
+	focus = {
+		id = SVN_seato
+		# South-East Asian Treaty Organization
+		# We should establish closer ties to other anti-communist nations in the region, on the model of the North Atlantic Treaty Organization -- a Southeast Asian Treaty Organization, SEATO.
+		icon = GFX_focus_generic_diplomatic_treaty #icon = GFX_focus_seato
+		cost = 10
+		x = 24
+		y = 2
+
+		prerequisite = {
+			focus = SVN_american_relations
+		}
+		completion_reward = {
+			#Modifier representing SEATO membership with SEATO symbol with better relations with other SEATO members
+			#Event for other potential SEATO members to accept or reject SEATO membership
+		}
+	}
+}

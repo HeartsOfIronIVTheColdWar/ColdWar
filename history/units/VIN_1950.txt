@@ -1,0 +1,220 @@
+division_template = {
+	name = "Infantry Division" #Consists of 3 regiments of infantry and a battalion of artillery
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 } #Line artillery instead of support artillery since 3x artillery company = 1x artillery battalion
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Infantry Regiment" # Three regiments of infantry and an "element" of artillery
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+#Viet Minh/North Vietnamese forces were a lot more straightforward than French Union troops.
+
+	#Regiments
+	division= {			
+		name = "308 Rgt."		
+		location = 1073
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "92 Rgt."		
+		location = 7015
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "102 Rgt."		
+		location = 9948
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "174 Rgt."		
+		location = 7093
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "209 Rgt."		
+		location = 10103
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "148 Rgt."		
+		location = 4529
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "42 Rgt."		
+		location = 12319
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "46 Rgt."		
+		location = 10129
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "50 Rgt."		
+		location = 11909
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "238 Rgt."		
+		location = 9988
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "246 Rgt."		
+		location = 4397
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "96 Rgt."		
+		location = 12297
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "108 Rgt."		
+		location = 7280
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "803 Rgt."		
+		location = 1302
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Dong Nai Rgt."		
+		location = 4379
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "300 Rgt."		
+		location = 4334
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "950 Rgt."		
+		location = 1300
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Cuu Long Rgt."		
+		location = 10180
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Tay Do Rgt."		
+		location = 7229
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+	#Divisions
+	division= {			
+		name = "308 Div."		
+		location = 10309
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "304 Div."		
+		location = 1073
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "312 Div."		
+		location = 7015
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "316 Div."		
+		location = 9948
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "320 Div."		
+		location = 7093
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "325 Div."		
+		location = 10103
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+}
