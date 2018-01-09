@@ -151,6 +151,11 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_tripartisme_mending
 		}
+		bypass = {
+			WGR = {
+				has_completed_focus = WGR_european_coal_and_steel
+			}
+		}
 		x = 0
 		y = 1
 

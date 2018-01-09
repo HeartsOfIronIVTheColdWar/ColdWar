@@ -58,7 +58,7 @@ set_national_unity = 0.55
 		Great_Leader
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 	create_field_marshal = {
 	name = "Mao Zedong"
@@ -112,7 +112,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -159,7 +159,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -207,6 +207,6 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }

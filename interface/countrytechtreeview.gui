@@ -949,7 +949,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "artillery_subtitle_artillery"
-				position = { x = 700 y = 405 }
+				position = { x = 1130 y = 120 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -962,7 +962,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "artillery_subtitle_anti_air"
-				position = { x = 150 y = 405  }
+				position = { x = 296 y = 120  }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -1179,19 +1179,26 @@ guiTypes = {
 			}
 			
 			gridboxtype = {
-				name = "gw_artillery_tree"
-				position = { x = 670 y = 172 }
+				name = "artillery4_tree"
+				position = { x = 1284 y = 172 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
-				name = "air_artillery_integration_tree"
-				position = { x = 1425 y = 452 }
+				name = "antiair5_tree"
+				position = { x = 450 y = 172 }
 				size = { width = 100 height = 100 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+#			gridboxtype = {
+#				name = "air_artillery_integration_tree"
+#				position = { x = 1425 y = 452 }
+#				size = { width = 100 height = 100 }
+#				slotsize = { width = 70 height = 70 }
+#				format = "UP"
+#			}
 		}
 
 		containerWindowType = {
@@ -1455,7 +1462,7 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			
+
 			gridboxtype = {
 				name = "ww2_cruiser_tree"
 				position = { x = 150 y = 410 }

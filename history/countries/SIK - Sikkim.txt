@@ -38,7 +38,7 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 	create_country_leader = {
 		name = "Tashi Namgyal"
@@ -87,7 +87,7 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -124,7 +124,7 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -162,6 +162,6 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }

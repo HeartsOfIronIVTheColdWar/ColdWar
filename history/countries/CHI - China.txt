@@ -52,7 +52,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -100,7 +100,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -147,7 +147,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -195,6 +195,6 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }

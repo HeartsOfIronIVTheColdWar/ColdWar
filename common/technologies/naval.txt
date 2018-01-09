@@ -1,12 +1,29 @@
 technologies = {
+	naval_stipulations = {
+		allow = { always = no }
+		
+		research_cost = 2
+
+		start_year = 1945
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
 
 	ww2_destroyer = {
-		allow = {
-            NOT = {
-                has_country_flag = naval_treaty_stipulations
-            }
-        }
-
+		dependencies = {
+				naval_stipulations = 1
+		}
 		enable_equipments = {
 			destroyer_1
 		}
@@ -185,7 +202,9 @@ technologies = {
 	}
 	
 	ww2_cruiser = {
-
+		dependencies = {
+				naval_stipulations = 1
+		}
 		enable_equipments = { 
 			cruiser_1
 		}
@@ -360,7 +379,9 @@ technologies = {
 	}
 	
 	ww2_battleship = {
-
+		dependencies = {
+				naval_stipulations = 1
+		}
 		enable_equipments = { 
 			battleship_1
 		}
@@ -499,7 +520,9 @@ technologies = {
 	}
 	
 	ww2_submarine = {
-
+		dependencies = {
+				naval_stipulations = 1
+		}
 		enable_equipments = { 
 			submarine_1
 		}
@@ -795,7 +818,9 @@ technologies = {
 	}
 	
 	ww2_carrier = {
-
+		dependencies = {
+				naval_stipulations = 1
+		}
 		enable_equipments = { 
 			carrier_1
 		}
@@ -1196,7 +1221,9 @@ technologies = {
 #	}
 	
 	transport = {
-
+		dependencies = {
+				naval_stipulations = 1
+		}
 		transport_capacity = -0.5
 		naval_invasion_capacity = 10
 		

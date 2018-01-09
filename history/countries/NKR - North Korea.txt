@@ -61,7 +61,7 @@ set_national_unity = 0.55
 			stout_defender
 		}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 		asymmetric_warfare = 1
 		infantry_weapons_1 = 1
 		motorised_infantry = 1
@@ -171,7 +171,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -218,7 +218,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -266,6 +266,6 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }

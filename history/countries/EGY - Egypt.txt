@@ -5,7 +5,7 @@ set_research_slots = 2
 set_convoys = 80
 set_national_unity = 0.55
 
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 		infantry_weapons_1 = 1
 		motorised_infantry = 1
 		tech_mountaineers = 1
@@ -76,7 +76,7 @@ set_national_unity = 0.55
 			#
 		}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 	
 	puppet = PAL
@@ -174,7 +174,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -221,7 +221,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -269,6 +269,6 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }

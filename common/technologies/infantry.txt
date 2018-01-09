@@ -75,19 +75,15 @@ technologies = {
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
-		}		
+		motorized = {
+			soft_attack = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+		}	
 		path = {
 			leads_to_tech = infantry_weapons_improvements_2
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
 		}		
 
 		research_cost = 1
@@ -109,21 +105,20 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			defense = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
+		motorized = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			defense = 0.05
 		}		
 		path = {
 			leads_to_tech = infantry_weapons_improvements_3
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
-		}		
+		}	
 
 		research_cost = 1
 		start_year = 1952
@@ -144,22 +139,21 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			breakthrough = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
-		}		
+		motorized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}			
 		path = {
 			leads_to_tech = infantry_weapons_improvements_4
 			research_cost_coeff = 1
 		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
-		}		
-
+		
 		research_cost = 1
 		start_year = 1954
 		folder = {
@@ -178,22 +172,18 @@ technologies = {
 	infantry_weapons_improvements_4 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		cavalry = {
 			soft_attack = 0.1
-		}		
-		path = {
-			leads_to_tech = infantry_weapons_3
-			research_cost_coeff = 1
 		}
-
 		motorized = {
 			soft_attack = 0.1
 		}
 		mechanized = {
 			soft_attack = 0.1
-		}		
+		}	
+		path = {
+			leads_to_tech = infantry_weapons_3
+			research_cost_coeff = 1
+		}	
 
 		research_cost = 1
 		start_year = 1956
@@ -241,20 +231,16 @@ technologies = {
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
+		motorized = {
+			soft_attack = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
 		}		
 		path = {
 			leads_to_tech = infantry_weapons_improvements_6
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
-		}		
+		}	
 
 		research_cost = 1
 		start_year = 1960
@@ -275,20 +261,19 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			defense = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
+		motorized = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			defense = 0.05
 		}		
 		path = {
 			leads_to_tech = infantry_weapons_improvements_7
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
 		}		
 
 		research_cost = 1
@@ -310,20 +295,19 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			breakthrough = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
+		motorized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
 		}		
 		path = {
 			leads_to_tech = infantry_weapons_improvements_8
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
 		}		
 
 		research_cost = 1
@@ -344,22 +328,18 @@ technologies = {
 	infantry_weapons_improvements_8 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		cavalry = {
 			soft_attack = 0.1
-		}		
-		path = {
-			leads_to_tech = infantry_weapons_4
-			research_cost_coeff = 1
 		}
-
 		motorized = {
 			soft_attack = 0.1
 		}
 		mechanized = {
 			soft_attack = 0.1
 		}		
+		path = {
+			leads_to_tech = infantry_weapons_4
+			research_cost_coeff = 1
+		}	
 
 		research_cost = 1
 		start_year = 1966
@@ -407,19 +387,15 @@ technologies = {
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
+		motorized = {
+			soft_attack = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
 		}		
 		path = {
 			leads_to_tech = infantry_weapons_improvements_10
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
 		}		
 
 		research_cost = 1
@@ -441,21 +417,20 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			defense = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
-		}		
+		motorized = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			defense = 0.05
+		}			
 		path = {
 			leads_to_tech = infantry_weapons_improvements_11
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
-		}		
+		}	
 
 		research_cost = 1
 		start_year = 1972
@@ -476,20 +451,19 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			breakthrough = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
-		}		
+		motorized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}			
 		path = {
 			leads_to_tech = infantry_weapons_improvements_12
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
 		}		
 
 		research_cost = 1
@@ -510,21 +484,17 @@ technologies = {
 	infantry_weapons_improvements_12 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		cavalry = {
 			soft_attack = 0.1
-		}		
-		path = {
-			leads_to_tech = infantry_weapons_5
-			research_cost_coeff = 1
 		}
-
 		motorized = {
 			soft_attack = 0.1
 		}
 		mechanized = {
 			soft_attack = 0.1
+		}		
+		path = {
+			leads_to_tech = infantry_weapons_5
+			research_cost_coeff = 1
 		}		
 
 		research_cost = 1
@@ -573,20 +543,16 @@ technologies = {
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
+		motorized = {
+			soft_attack = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
 		}		
 		path = {
 			leads_to_tech = infantry_weapons_improvements_14
 			research_cost_coeff = 1
 		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
-		}		
 
 		research_cost = 1
 		start_year = 1980
@@ -607,20 +573,19 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			defense = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
+		motorized = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			defense = 0.05
 		}		
 		path = {
 			leads_to_tech = infantry_weapons_improvements_15
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
 		}		
 
 		research_cost = 1
@@ -642,21 +607,20 @@ technologies = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
+			breakthrough = 0.05
 		}
-		cavalry = {
-			soft_attack = 0.1
-		}		
+		motorized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}			
 		path = {
 			leads_to_tech = infantry_weapons_improvements_16
 			research_cost_coeff = 1
-		}
-
-		motorized = {
-			soft_attack = 0.1
-		}
-		mechanized = {
-			soft_attack = 0.1
-		}		
+		}	
 
 		research_cost = 1
 		start_year = 1984
@@ -676,22 +640,18 @@ technologies = {
 	infantry_weapons_improvements_16 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
-		}
-		cavalry = {
 			soft_attack = 0.1
-		}		
-		path = {
-			leads_to_tech = infantry_weapons_6
-			research_cost_coeff = 1
 		}
-
 		motorized = {
 			soft_attack = 0.1
 		}
 		mechanized = {
 			soft_attack = 0.1
 		}		
+		path = {
+			leads_to_tech = infantry_weapons_6
+			research_cost_coeff = 1
+		}	
 
 		research_cost = 1
 		start_year = 1986

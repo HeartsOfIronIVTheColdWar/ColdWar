@@ -86,7 +86,7 @@ set_national_unity = 0.85
 	give_guarantee = PAR
 	give_guarantee = ARG
 	give_guarantee = URG
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 		strategic_theorem = 1
 		infantry_weapons_1 = 1
 		infantry_weapons_2 = 1
@@ -163,7 +163,7 @@ set_national_unity = 0.85
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -210,7 +210,7 @@ set_national_unity = 0.85
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -258,6 +258,6 @@ set_national_unity = 0.85
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }

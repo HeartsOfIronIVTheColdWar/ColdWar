@@ -860,6 +860,9 @@ focus_tree = {
 		id = DDR_indoctrination
 		icon = GFX_focus_generic_socialist_science
 		cost = 10
+		available = {
+			date > 1956.1.1
+		}
 		prerequisite = {
 			focus = DDR_forced_unions
 		}
@@ -870,6 +873,10 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = DDR_osoaviakhim
+				add_idea = DDR_osoaviakhim2
+			}
 		}
 
 	}

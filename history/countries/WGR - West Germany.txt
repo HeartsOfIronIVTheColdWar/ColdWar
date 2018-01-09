@@ -16,8 +16,8 @@ set_national_unity = 0.6
 		bundesbank_1
 		suppressed_wehrmacht_competence
 		disarmed_nation
+		WGR_mine_issues
 	}
-	set_country_flag = naval_treaty_stipulations
 	set_politics = {
 
 		parties = {
@@ -97,7 +97,7 @@ set_national_unity = 0.6
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -144,7 +144,7 @@ set_national_unity = 0.6
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -192,7 +192,7 @@ set_national_unity = 0.6
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 

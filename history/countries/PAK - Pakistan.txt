@@ -10,10 +10,10 @@ set_national_unity = 0.55
 	oob = "PAK_1950"
 	add_ideas = {
 		#laws
-		partial_economic_mobilisation
+		low_economic_mobilisation
 		limited_conscription
 		#ideas
-		PAK_new_state
+		RAJ_agrarian_society
 	}
 	set_politics = {
 
@@ -30,7 +30,7 @@ set_national_unity = 0.55
 			
 			communism = {
 				popularity = 10
-				banned = no
+				#banned = no #default is no
 			}
 		}
 		
@@ -40,24 +40,17 @@ set_national_unity = 0.55
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Liaquat Ali Khan"
-	desc = "POLITICS_LIAQUAT_KHAN_DESC"
-	picture = "Portrait_Pakistan_Liaquat_Khan.dds"
+	name = "Khawaja Nazimuddin"
+	desc = "POLITICS_KHAWAJA_NAZIMUDDIN_DESC"
+	picture = "Portrait_Pakistan_Khawaja_Nazimuddin.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		# }
+		#
 	}
-	
-	set_technology = {
 	}
-	
-	create_corps_commander = {
-	name = "Ayub Khan"
-	gfx = "GFX_PAK_Ayub_Khan"
-	traits = { }
-	skill = 4
-    }
+	set_technology = { naval_stipulations = 1
+	}
 }
 
 1960.1.1 = {
@@ -65,7 +58,7 @@ set_national_unity = 0.55
 	oob = "PAK_1960"
 	add_ideas = {
 		#laws
-		partial_economic_mobilisation
+		low_economic_mobilisation
 		limited_conscription
 		#ideas
 	}
@@ -104,7 +97,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -151,7 +144,7 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -162,7 +155,6 @@ set_national_unity = 0.55
 		#laws
 		low_economic_mobilisation
 		limited_conscription
-		RAJ_agrarian_society
 		#ideas
 	}
 
@@ -200,6 +192,6 @@ set_national_unity = 0.55
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }

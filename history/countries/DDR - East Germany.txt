@@ -52,7 +52,7 @@ set_national_unity = 0.6
 		stalins_puppet
 	}
 	}
-	set_technology = {
+	set_technology = { 
 	}
 	complete_national_focus = DDR_soviet_control
 }
@@ -101,7 +101,7 @@ set_national_unity = 0.6
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -148,7 +148,7 @@ set_national_unity = 0.6
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -196,7 +196,7 @@ set_national_unity = 0.6
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 

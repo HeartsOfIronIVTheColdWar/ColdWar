@@ -12,6 +12,7 @@ set_national_unity = 0.7
 		FRA_disjointed_government
 		FRA_dilemmes_coloniaux
 		nato_idea
+		WGR_german_resentement
 	}
 	set_politics = {
 
@@ -53,7 +54,7 @@ set_national_unity = 0.7
 	}
 	}
 
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 		#Industry/engineering techs
 		basic_machine_tools = 1
 		construction1 = 1
@@ -184,7 +185,7 @@ set_national_unity = 0.7
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -231,7 +232,7 @@ set_national_unity = 0.7
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 
@@ -279,7 +280,7 @@ set_national_unity = 0.7
 		#
 	}
 	}
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 	}
 }
 

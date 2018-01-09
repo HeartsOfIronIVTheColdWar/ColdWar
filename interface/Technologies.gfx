@@ -1,6 +1,9 @@
 spriteTypes = {
 	###GENERIC AIR###
-
+	SpriteType = {
+		name = "GFX_jet_engines_bombers_medium"
+		texturefile = "gfx/interface/technologies/jet_engines.dds"
+	}
 	SpriteType = {
 		name = "GFX_fighter_1945_medium"
 		texturefile = "gfx/interface/technologies/fighter3.dds"
@@ -73,7 +76,14 @@ spriteTypes = {
 		name = "GFX_tac_stealth_1990_medium"
 		texturefile = "gfx/interface/technologies/generic_air_tac_stealth_2.dds"
 	}
-	
+	SpriteType = {
+		name = "GFX_light_stealth_1980_medium"
+		texturefile = "gfx/interface/technologies/stealth_fighter_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_stealth_1990_medium"
+		texturefile = "gfx/interface/technologies/stealth_fighter_2.dds"
+	}
 	SpriteType = {
 		name = "GFX_asw_helicopter_1960_medium"
 		texturefile = "gfx/interface/technologies/generic_helicopter_ASW_1.dds"
@@ -150,8 +160,121 @@ spriteTypes = {
 		name = "GFX_transport_helicopter_1990_medium"
 		texturefile = "gfx/interface/technologies/generic_helicopter_transport_4.dds"
 	}
+###Heavy Air###
+	SpriteType = {
+		name = "GFX_heavy_air_1945_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_air_1950_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_air_1960_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_air_1970_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_air_1980_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_air_1990_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber_5.dds"
+	}
 	
-    #Soviet#
+	SpriteType = {
+		name = "GFX_strat_stealth_1980_medium"
+		texturefile = "gfx/interface/technologies/stealth_strat_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_strat_stealth_1990_medium"
+		texturefile = "gfx/interface/technologies/stealth_strat_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tac_air_1945_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tac_air_1950_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tac_air_1960_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tac_air_1970_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tac_air_1980_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tac_air_1990_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_transport_air_1945_medium"
+		texturefile = "gfx/interface/technologies/generic_helicopter_scout_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_air_1950_medium"
+		texturefile = "gfx/interface/technologies/generic_helicopter_transport_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_air_1960_medium"
+		texturefile = "gfx/interface/technologies/generic_helicopter_transport_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_air_1970_medium"
+		texturefile = "gfx/interface/technologies/generic_helicopter_transport_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_air_1980_medium"
+		texturefile = "gfx/interface/technologies/generic_helicopter_transport_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_air_1990_medium"
+		texturefile = "gfx/interface/technologies/generic_helicopter_transport_4.dds"
+	}
+###MISC GFX FOR AIR TREES###
+	SpriteType = {
+		name = "GFX_improved_jet_engines_bombers_1_medium"
+		texturefile = "gfx/interface/technologies/aerial_refueling.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_jet_engines_bombers_2_medium"
+		texturefile = "gfx/interface/technologies/aerial_refueling_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_jet_engines_1_medium"
+		texturefile = "gfx/interface/technologies/aerial_refueling.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_jet_engines_2_medium"
+		texturefile = "gfx/interface/technologies/aerial_refueling_2.dds"
+	}
+	
+###SOVIET AIR###
+	SpriteType = {
+		name = "GFX_SOV_fighter_1945_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_CAS_1945_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_interceptor_1945_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}
 	SpriteType = {
 		name = "GFX_SOV_CAS_1950_medium"
 		texturefile = "gfx/interface/technologies/SOV_cas_50.dds"
@@ -204,8 +327,85 @@ spriteTypes = {
 		name = "GFX_SOV_MCA_1990_medium"
 		texturefile = "gfx/interface/technologies/SOV_multirole_90.dds"
 	}
-
-
+	
+	#HELICOPTERS SOVIET
+	
+	SpriteType = {
+		name = "GFX_SOV_asw_helicopter_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_asw_helicopter_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_asw_helicopter_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_asw_helicopter_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_asw_helicopter_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_asw_helicopter_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_asw_helicopter_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_asw_helicopter_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_attack_helicopter_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_attack_helicopter_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_attack_helicopter_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_attack_helicopter_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_attack_helicopter_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_attack_helicopter_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_attack_helicopter_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_attack_helicopter_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_very_early_helicopter_medium"
+		texturefile = "gfx/interface/technologies/SOV_helicopter_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_early_helicopter_medium"
+		texturefile = "gfx/interface/technologies/SOV_helicopter_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_scout_helicopter_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_scout_helicopter_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_scout_helicopter_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_scout_helicopter_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_scout_helicopter_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_scout_helicopter_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_scout_helicopter_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_scout_helicopter_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_transport_helicopter_1960_medium"
+		texturefile = "gfx/interface/technologies/SOV_transport_helicopter_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_transport_helicopter_1970_medium"
+		texturefile = "gfx/interface/technologies/SOV_transport_helicopter_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_transport_helicopter_1980_medium"
+		texturefile = "gfx/interface/technologies/SOV_transport_helicopter_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_transport_helicopter_1990_medium"
+		texturefile = "gfx/interface/technologies/SOV_transport_helicopter_4.dds"
+	}
 
 	###ARTILLERY STUFF###
 	SpriteType = {
@@ -796,12 +996,11 @@ spriteTypes = {
 		name = "GFX_improved_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/infantry2.dds"
 	}	
-
+###GENERIC INFANTRY WEAPONS###
 	SpriteType = {
 		name = "GFX_infantry_weapons_1_medium"
 		texturefile = "gfx/interface/technologies/infantry_equipment_0.dds"
 	}
-	
 	SpriteType = {
 		name = "GFX_infantry_weapons_2_medium"
 		texturefile = "gfx/interface/technologies/infantry_equipment_1.dds"
@@ -822,16 +1021,33 @@ spriteTypes = {
 		name = "GFX_infantry_weapons_6_medium"
 		texturefile = "gfx/interface/technologies/infantry_equipment_5.dds"
 	}
-	
+###GENERIC ANTI TANK INFANTRY WEAPONS###
+	SpriteType = {
+		name = "GFX_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/antitank_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_at4_medium"
+		texturefile = "gfx/interface/technologies/antitank_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_at7_medium"
+		texturefile = "gfx/interface/technologies/antitank_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_at10_medium"
+		texturefile = "gfx/interface/technologies/antitank_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_at13_medium"
+		texturefile = "gfx/interface/technologies/antitank_equipment_4.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_SOV_infantry_weapons_2_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
 	}		
-	
-	SpriteType = {
-		name = "GFX_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/infantry1.dds"
-	}	
+
 	
 	SpriteType = {
 		name = "GFX_mechanised_infantry3_medium"
@@ -1210,16 +1426,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_paratroopers_medium"
 		texturefile = "gfx/interface/technologies/paratroopers.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_infantry_at2_medium"
-		texturefile = "gfx/interface/technologies/infantry_at2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_infantry_at_medium"
-		texturefile = "gfx/interface/technologies/infantry_at.dds"
 	}	
 	
 	SpriteType = {

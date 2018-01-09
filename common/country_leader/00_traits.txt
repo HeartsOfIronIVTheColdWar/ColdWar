@@ -144,6 +144,18 @@ leader_traits = {
 		}
 	}
 	
+	der_alte = {
+		random = no
+		sprite = 12
+		political_power_gain = 0.25
+		unity_factor = 0.15
+		political_advisor_cost_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	iron_grip = {
 		random = no
 		sprite = 12

@@ -1,4 +1,5 @@
 ﻿l_english:
+ naval_stipulations:0 "Has no stipulations or treaties disallowing naval construction."
  infantry_weapons_improvements_1:0 "Infantry Weapon Improvements I"
  infantry_weapons_improvements_2:0 "Infantry Weapon Improvements II"
  infantry_weapons_improvements_3:0 "Infantry Weapon Improvements II"
@@ -720,7 +721,7 @@
  civilian_industry:0 "Civilian industry"
  military_industry:0 "Military industry"
  research_requirements_or:0 "Requires one of the following technologies:"
- research_requirements_and:0 "Requires the following technologies:"
+ research_requirements_and:0 "Requires the following:"
  RESEARCH_REQUIREMENTS_SINGLE:0 "§RRequires Technology ($TECH$)§!"
  UNUSED_SLOT:0 "Select a technology to research"
  ETA_SHORT_D:0 "§T$DAYS|H$ day(s)"

@@ -334,6 +334,19 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			51 = {
+				add_resource = {
+					type = steel
+					amount = 104
+				}
+			}
+			42 = {
+				add_resource = {
+					type = steel
+					amount = 66
+				}
+			}
+			
 		}
 		
 		
@@ -509,6 +522,9 @@ focus_tree = {
 		id = WGR_nato_doctrine
 		icon = GFX_focus_NATO_goal
 		cost = 10
+		available = {
+			has_idea = nato_idea
+		}
 		prerequisite = {
 			focus = WGR_a_german_rifle
 			focus = WGR_armoured_legacy
@@ -537,7 +553,10 @@ focus_tree = {
 			focus = WGR_strategic_resistance
 			focus = WGR_nato_doctrine
 		}
-		
+		available = {
+			has_completed_focus = WGR_general_treaty 
+			has_completed_focus = WGR_recognition_for_pows 
+		}
 		prerequisite = {
 			focus = WGR_border_patrol
 		}
@@ -546,6 +565,37 @@ focus_tree = {
 		y = 6
 		
 		completion_reward = {
+			if = {
+				limit = {
+					WGR = {
+						has_idea = suppressed_wehrmacht_competence
+					}
+				}
+				WGR = {
+					remove_ideas = suppressed_wehrmacht_competence
+				}
+			}
+			if = {
+				limit = {
+					WGR = {
+						has_idea = suppressed_wehrmacht_competence_1
+					}
+				}
+				WGR = {
+					remove_ideas = suppressed_wehrmacht_competence_1
+				}
+			}
+			if = {
+				limit = {
+					WGR = {
+						has_idea = suppressed_wehrmacht_competence_2
+					}
+				}
+				WGR = {
+					remove_ideas = suppressed_wehrmacht_competence_2
+				}
+			}
+			remove_ideas = allied_occupation_2
 			swap_ideas = {
 				remove_idea = bundesgrenzschutz_expanded
 				add_idea = a_new_bundeswehr
@@ -575,6 +625,9 @@ focus_tree = {
 		id = WGR_invite_british_advisors
 		icon = GFX_focus_goal_ENG_advisors
 		cost = 10
+		available = {
+			has_completed_focus = WGR_reconcile_the_british
+		}
 		prerequisite = {
 			focus = WGR_foreign_divisions
 		}
@@ -611,13 +664,16 @@ focus_tree = {
 	}
 	focus = {
 		id = WGR_german_msa
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 10
 		prerequisite = {
 			focus = WGR_foreign_divisions
-		}
+		}	
 		x = 15
 		y = 2
+		completion_reward = {
+			remove_ideas = WGR_mine_issues
+		}
 
 	}
 	focus = {
@@ -681,10 +737,9 @@ focus_tree = {
 			navy_experience = 50
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 0.25
-				uses = 1
-				category = dd_tech
-				category = ss_tech
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
 			}
 		}
 
@@ -698,14 +753,14 @@ focus_tree = {
 		}
 		x = 15
 		y = 4
-		
+		available = {
+				WGR = { has_idea  = nato_idea }
+		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = WGR_Bundesmarine
-				bonus = 0.50
-				uses = 1
-				technology = marines
+			hidden_effect = {
+				set_technology = { naval_stipulations = 1 }
 			}
+			custom_effect_tooltip = remove_naval_treaty
 		}
 
 	}
@@ -812,8 +867,9 @@ focus_tree = {
 		x = 18
 		y = 2
 		
-		complete_tooltip = {
-			air_experience = 25
+		completion_reward = {
+			air_experience = 75
+			custom_effect_tooltip = WGR_pilot_aces_refesher
 		}
 
 	}
@@ -826,7 +882,10 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
-
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = WGR_foreign_planes_investements
+		}
 	}
 	focus = {
 		id = WGR_airbases
@@ -837,7 +896,48 @@ focus_tree = {
 		}
 		x = 17
 		y = 4
-
+		completion_reward = {
+			air_experience = 50
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}							
+			}
+		}
 	}
 	focus = {
 		id = WGR_luftwaffe
@@ -848,7 +948,20 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
-
+		available = {
+				WGR = { has_idea  = nato_idea }
+		}
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+				name = WGR_luftwaffe
+				bonus = 0.50
+				uses = 3
+				category = light_air
+				category = heavy_air
+				category = helicopter
+			}
+		}
 	}
 	focus = {
 		id = WGR_request_fighters
@@ -862,7 +975,15 @@ focus_tree = {
 		}
 		x = 18
 		y = 5
-
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = WGR_luftwaffe
+				bonus = 0.50
+				uses = 1
+				category = light_air
+			}
+		}
 	}
 	focus = {
 		id = WGR_request_bombers
@@ -876,7 +997,15 @@ focus_tree = {
 		}
 		x = 20
 		y = 5
-
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = WGR_luftwaffe
+				bonus = 0.50
+				uses = 1
+				category = heavy_air
+			}
+		}
 	}
 	focus = {
 		id = WGR_close_air_support
@@ -888,7 +1017,15 @@ focus_tree = {
 		}
 		x = 19
 		y = 6
-
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = WGR_luftwaffe
+				bonus = 0.50
+				uses = 2
+				category = air_doctrine
+			}
+		}
 	}
 	focus = {
 		id = WGR_general_treaty
@@ -899,7 +1036,29 @@ focus_tree = {
 		}
 		x = 21
 		y = 1
-
+		completion_reward = {
+			if = {
+				limit = {
+					WGR = {
+						has_idea = suppressed_wehrmacht_competence_1
+					}
+				}
+				WGR = {
+					swap_ideas = {
+						remove_idea = suppressed_wehrmacht_competence_1
+						add_idea = suppressed_wehrmacht_competence_2
+					}
+				}
+				else = {
+					WGR = {
+						swap_ideas = {
+							remove_idea = suppressed_wehrmacht_competence
+							add_idea = suppressed_wehrmacht_competence_1
+						}
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = WGR_reconcile_the_french
@@ -912,9 +1071,9 @@ focus_tree = {
 		y = 2
 		
 		completion_reward = {
-#			FRA = {
-#				add_opinion_modifier = { target = WGR modifier = 20 }
-#			}
+			FRA = {
+				remove_ideas = WGR_german_resentement
+			}
 		}
 
 	}
@@ -929,9 +1088,9 @@ focus_tree = {
 		y = 2
 		
 		completion_reward = {
-#			ENG = {
-#				add_opinion_modifier = { target = WGR modifier = 20 }
-#			}
+			ENG = {
+				remove_ideas = WGR_german_resentement
+			}
 		}
 
 	}
@@ -967,7 +1126,23 @@ focus_tree = {
 		}
 		x = 24
 		y = 4
-
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = suppressed_wehrmacht_competence_1
+				}
+				swap_ideas = {
+					remove_idea = suppressed_wehrmacht_competence_1
+					add_idea = suppressed_wehrmacht_competence_2
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = suppressed_wehrmacht_competence
+						add_idea = suppressed_wehrmacht_competence_1
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = WGR_bundesentschadigungsgesetz
@@ -978,7 +1153,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 1
-
+		completion_reward = {
+			add_ideas = WGR_bundesentschadigungsgesetz
+			add_popularity = { ideology = autocratic popularity = -0.1 }
+		}
 	}
 	focus = {
 		id = WGR_rhine_capitalism
@@ -989,7 +1167,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 3
-
+		completion_reward = {
+			add_ideas = WGR_rhine_capitalism
+		}
 	}
 	focus = {
 		id = WGR_legacy_of_adenauer 
@@ -1009,7 +1189,7 @@ focus_tree = {
 		y = 5
 		
 		completion_reward = {
-			add_country_leader_trait = dictator
+			add_country_leader_trait = der_alte
 		}
 
 	}
@@ -1022,6 +1202,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = WGR_rhine_capitalism
+		}
+		bypass = {
+			FRA = {
+				has_completed_focus = FRA_coal_and_steel
+			}
 		}
 		x = 21
 		y = 4
@@ -1074,7 +1259,10 @@ focus_tree = {
 		x = 2
 		y = 7
 		completion_reward = {
-			add_ideas = WGR_wirtschaftswunder
+			swap_ideas = {
+				remove_idea = WGR_industrial_revival
+				add_idea = WGR_wirtschaftswunder
+			}
 		}
 	}
 	focus = {

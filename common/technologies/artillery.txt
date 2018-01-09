@@ -6,15 +6,6 @@ technologies = {
 			artillery_equipment_1
 		}
 		
-		path = {
-			leads_to_tech = artillery4 
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = antiair5
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.5
 		
@@ -48,13 +39,19 @@ technologies = {
 			leads_to_tech = SPART_1950
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = light_SPART_1950
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1
 
 		start_year = 1945
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 4 y = 4 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
@@ -87,7 +84,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 6 }
+			position = { x = -3 y = 2 }
 		}
 		
 		categories = {
@@ -109,7 +106,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 8 }
+			position = { x = -4 y = 4 }
 		}
 		
 		categories = {
@@ -142,7 +139,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 14 }
+			position = { x = -3 y = 10 }
 		}
 		
 		categories = {
@@ -164,7 +161,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 16 }
+			position = { x = -4 y = 12 }
 		}
 		
 		categories = {
@@ -188,7 +185,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 22 }
+			position = { x = -3 y = 18 }
 		}
 		
 		categories = {
@@ -200,7 +197,358 @@ technologies = {
 		}
 		
 	}
+	light_SPART_1950 = {
+		
+		enable_equipments = {
+			APC_1950_artillery_equipment_1
+		}
 
+		path = {
+			leads_to_tech = light_SPART_1960
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1950_soft_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1950_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1950_soft_attack = {
+		
+		category_APC_1950_art = {
+			soft_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1950_speed = {
+		
+		category_APC_1950_art = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1960 = {
+		
+		enable_equipments = {
+			APC_1960_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = light_SPART_1970
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1960_soft_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1960_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1960_soft_attack = {
+		category_APC_1960_art = {
+			soft_attack = 0.2
+		}
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1960_speed = {
+		category_APC_1960_art = {
+			maximum_speed = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1970 = {
+		
+		enable_equipments = {
+			APC_1970_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = light_SPART_1980
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1970_soft_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1970_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1970_soft_attack = {
+		category_APC_1970_art = {
+			soft_attack = 0.2
+		}
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1970_speed = {
+		category_APC_1970_art = {
+			maximum_speed = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1980 = {
+		
+		enable_equipments = {
+			APC_1980_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = light_SPART_1990
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1980_soft_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPART_1980_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1980_soft_attack = {
+		category_APC_1980_art = {
+			soft_attack = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 16 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1980_speed = {
+		category_APC_1980_art = {
+			maximum_speed = 0.1
+		}
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPART_1990 = {
+		
+		enable_equipments = {
+			APC_1990_artillery_equipment_1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1990
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
 	SPART_1950 = {
 		
 		enable_equipments = {
@@ -226,7 +574,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 6 }
+			position = { x = 4 y = 2 }
 		}
 		
 		categories = {
@@ -250,7 +598,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 8 }
+			position = { x = 5 y = 4 }
 		}
 		
 		categories = {
@@ -274,7 +622,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 8 }
+			position = { x = 3 y = 4 }
 		}
 		
 		categories = {
@@ -311,7 +659,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 10 }
+			position = { x = 4 y = 6 }
 		}
 		
 		categories = {
@@ -333,7 +681,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 12 }
+			position = { x = 5 y = 8 }
 		}
 		
 		categories = {
@@ -355,7 +703,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 12 }
+			position = { x = 3 y = 8 }
 		}
 		
 		categories = {
@@ -392,7 +740,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 14 }
+			position = { x = 4 y = 10 }
 		}
 		
 		categories = {
@@ -414,7 +762,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 16 }
+			position = { x = 5 y = 12 }
 		}
 		
 		categories = {
@@ -436,7 +784,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 16 }
+			position = { x = 3 y = 12 }
 		}
 		
 		categories = {
@@ -473,7 +821,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 18 }
+			position = { x = 4 y = 14 }
 		}
 		
 		categories = {
@@ -495,7 +843,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 20 }
+			position = { x = 5 y = 16 }
 		}
 		
 		categories = {
@@ -517,7 +865,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 20 }
+			position = { x = 3 y = 16 }
 		}
 		
 		categories = {
@@ -541,7 +889,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 22 }
+			position = { x = 4 y = 18 }
 		}
 		
 		categories = {
@@ -570,13 +918,18 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		path = {
+			leads_to_tech = light_SPAA_1950
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1
 
 		start_year = 1945
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 4 }
+			position = { x = 0 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -608,7 +961,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -6 y = 6 }
+			position = { x = -3 y = 2 }
 		}
 		
 		categories = {
@@ -633,7 +986,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = 8 }
+			position = { x = -4 y = 4 }
 		}
 		
 		categories = {
@@ -665,7 +1018,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -6 y = 14 }
+			position = { x = -3 y = 10 }
 		}
 		
 		categories = {
@@ -690,7 +1043,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = 16 }
+			position = { x = -4 y = 12 }
 		}
 		
 		categories = {
@@ -714,7 +1067,371 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -6 y = 22 }
+			position = { x = -3 y = 18 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1950 = {
+		
+		enable_equipments = {
+			APC_1950_aa_equipment_1
+		}
+
+		path = {
+			leads_to_tech = light_SPAA_1960
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1950_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1950_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1950_air_attack = {
+		
+		category_APC_1950_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1950_speed = {
+		
+		category_APC_1950_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1950
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1960 = {
+		
+		enable_equipments = {
+			APC_1960_aa_equipment_1
+		}
+
+		path = {
+			leads_to_tech = light_SPAA_1970
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1960_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1960_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1960_air_attack = {
+		
+		category_APC_1960_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1960_speed = {
+		
+		category_APC_1960_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1970 = {
+		
+		enable_equipments = {
+			APC_1970_aa_equipment_1
+		}
+
+		path = {
+			leads_to_tech = light_SPAA_1980
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1970_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1970_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1970_air_attack = {
+		
+		category_APC_1970_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1970_speed = {
+		
+		category_APC_1970_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1970
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1980 = {
+		
+		enable_equipments = {
+			APC_1980_aa_equipment_1
+		}
+
+		path = {
+			leads_to_tech = light_SPAA_1990
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1980_air_attack
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_SPAA_1980_speed
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1980_air_attack = {
+		
+		category_APC_1980_aa = {
+			air_attack = 0.2
+		}
+		
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 16 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1980_speed = {
+		
+		category_APC_1980_aa = {
+			maximum_speed = 0.1
+		}
+			
+		research_cost = 1
+		
+		start_year = 1980
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	light_SPAA_1990 = {
+		
+		enable_equipments = {
+			APC_1990_aa_equipment_1
+		}
+		
+		research_cost = 2
+		
+		start_year = 1990
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 18 }
 		}
 		
 		categories = {
@@ -751,7 +1468,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = 6 }
+			position = { x = 4 y = 2 }
 		}
 		
 		categories = {
@@ -775,7 +1492,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 8 }
+			position = { x = 5 y = 4 }
 		}
 		
 		categories = {
@@ -799,7 +1516,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 8 }
+			position = { x = 3 y = 4 }
 		}
 		
 		categories = {
@@ -836,7 +1553,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = 10 }
+			position = { x = 4 y = 6 }
 		}
 		
 		categories = {
@@ -860,7 +1577,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 12 }
+			position = { x = 5 y = 8 }
 		}
 		
 		categories = {
@@ -884,7 +1601,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 12 }
+			position = { x = 3 y = 8 }
 		}
 		
 		categories = {
@@ -921,7 +1638,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = 14 }
+			position = { x = 4 y = 10 }
 		}
 		
 		categories = {
@@ -945,7 +1662,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 16 }
+			position = { x = 5 y = 12 }
 		}
 		
 		categories = {
@@ -969,7 +1686,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 16 }
+			position = { x = 3 y = 12 }
 		}
 		
 		categories = {
@@ -1006,7 +1723,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = 18 }
+			position = { x = 4 y = 14 }
 		}
 		
 		categories = {
@@ -1030,7 +1747,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 20 }
+			position = { x = 5 y = 16 }
 		}
 		
 		categories = {
@@ -1054,7 +1771,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 20 }
+			position = { x = 3 y = 16 }
 		}
 		
 		categories = {
@@ -1078,7 +1795,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = 22 }
+			position = { x = 4 y = 18 }
 		}
 		
 		categories = {

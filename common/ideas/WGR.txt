@@ -1,5 +1,80 @@
 ideas = {
 	country = {
+		WGR_rhine_capitalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ENG_the_war_to_end_all_wars
+
+			modifier = {
+				unity_factor = 0.10
+				autocratic_drift = -0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		WGR_bundesentschadigungsgesetz = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ENG_the_war_to_end_all_wars
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		WGR_german_resentement = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ENG_the_war_to_end_all_wars
+
+			modifier = {
+			}
+		}
+		WGR_mine_issues = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = the_long_lance
+
+			modifier = {
+				trade_opinion_factor = -0.4
+				naval_speed_factor = -0.2
+			}
+		}
 		WGR_return_of_the_pack = {
 			
 			allowed = {
@@ -45,6 +120,44 @@ ideas = {
 				}
 			}
 		}
+		suppressed_wehrmacht_competence_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = general_staff
+
+			modifier = {
+				army_morale_factor = -0.1
+				military_leader_cost_factor = 2.5
+			}
+		}
+		suppressed_wehrmacht_competence_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = general_staff
+
+			modifier = {
+				army_morale_factor = -0.25
+				military_leader_cost_factor = 5
+			}
+		}
 		suppressed_wehrmacht_competence = {
 			
 			allowed = {
@@ -60,9 +173,8 @@ ideas = {
 			picture = general_staff
 
 			modifier = {
-				conscription = -0.01
-				army_morale_factor = -0.15
-				military_leader_cost_factor = 2
+				army_morale_factor = -0.50
+				military_leader_cost_factor = 10
 			}
 		}
 		WGR_industrial_revival = {

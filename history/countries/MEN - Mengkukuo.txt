@@ -2,7 +2,7 @@
 
 oob = "null"
 
-set_technology = {
+set_technology = { naval_stipulations = 1
 	
 }
 
@@ -14,7 +14,7 @@ set_technology = {
 
 	
 	oob = "null"
-	set_technology = {
+	set_technology = { naval_stipulations = 1
 
 	}
 }
