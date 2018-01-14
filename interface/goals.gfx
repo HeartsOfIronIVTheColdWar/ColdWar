@@ -68,15 +68,15 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_backstab"
-		texture_file = "gfx/interface/goals/generic_focus_backstab.dds"
+		texturefile = "gfx/interface/goals/generic_focus_backstab.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_civil_unrest"
-		texture_file = "gfx/interface/goals/focus_generic_civil_unrest.dds"
+		texturefile = "gfx/interface/goals/focus_generic_civil_unrest.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_catholic"
-		texture_file = "gfx/interface/goals/goal_generic_catholic.dds"
+		texturefile = "gfx/interface/goals/goal_generic_catholic.dds"
 	}
 	###GREECE###
 	SpriteType = { 

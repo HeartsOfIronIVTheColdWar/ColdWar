@@ -3,6 +3,9 @@
 # NOTE: tactics must start with "tactic_" in their name to work with techs.
 ###############################################################################
 
+####A MOD MADE BY THE COLD WAR TEAM(HEAD: GUNNAR VON PONTIUS)
+####IF THIS TEXT IS FOUND HERE THIS IS A LEAKED, NON-APROVED VERSION AND IS NOT RELEASED BY THE ACTUAL COLD WAR TEAM.
+
 phases = { # phase = no is the standard phase
 	close_combat
 	tactical_withdrawal
