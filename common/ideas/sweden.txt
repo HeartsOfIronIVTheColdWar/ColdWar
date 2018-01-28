@@ -371,5 +371,5 @@ ideas = {
 	high_command = {
 		
 	}
-	
+
 }
