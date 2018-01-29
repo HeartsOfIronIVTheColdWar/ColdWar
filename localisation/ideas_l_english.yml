@@ -2572,3 +2572,7 @@
  can_rnvg_rail_desc:0 "Supported by government efforts, the railway construction industry is operating as well as it was previously, and then some."
  can_NA_resources:0 "North American Resources"
  can_NA_resources_desc:0 "Both America and Canada benefit from less restrictive trade and resource extraction."
+ can_growth_c:0 "Growth in the cities"
+ can_growth_c_desc:0 "Our primary focus must be building up our major cities."
+ can_growth_p:0 "Growth in the prairies"
+ can_growth_p_desc:0 "Our primary focus must be on growing our more neglected provinces out west."
