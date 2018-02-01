@@ -9,30 +9,43 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = RAJ_Election_Of_51
+		id = RAJ_election_of_51
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		cost = 4
 		x = 14
 		y = 0
 		completion_reward = {
 			add_political_power = 300
+			#Constitution Event
 		}
 	}
 	focus = {
 		id = RAJ_liaquat_nehru_pact 
 		icon = GFX_focus_RAJ_two_nation_theory
 		prerequisite = {
-			focus = RAJ_Election_Of_51
+			focus = RAJ_election_of_51
 		}
 		cost = 15
 		x = 14
 		y = 1
 		completion_reward = {
-
+			PAK = {
+				swap_ideas = {
+					remove_idea = RAJ_liquat_nehru_pact
+					add_idea = RAJ_liquat_nehru_pact2
+				}
+			}
+			RAJ = {
+				swap_ideas = {
+					remove_idea = RAJ_liquat_nehru_pact
+					add_idea = RAJ_liquat_nehru_pact2
+				}
+			}
+			add_political_power = -100
 		}
 	}
 	focus = {
-		id = RAJ_remove_ENG_influences
+		id = RAJ_remove_eng_influences
 		icon = GFX_focus_RAJ_clamp_down_on_corruption
 		prerequisite = {
 			focus = RAJ_first_general_election
@@ -41,11 +54,47 @@ focus_tree = {
 		x = 8
 		y = 3
 		completion_reward = {
-
+			add_political_power = -150
+			IF = {
+				has_idea = RAJ_trade_issues_POR_FRA_ENG
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_POR_FRA_ENG
+					add_idea = RAJ_trade_issues_POR_FRA
+				}
+			}
+			break
+			IF = {
+				has_idea = RAJ_trade_issues_FRA_ENG
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_FRA_ENG
+					add_idea = RAJ_trade_issues_FRA
+				}
+			}
+			break
+			IF = {
+				has_idea = RAJ_trade_issues_POR_ENG
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_POR_ENG
+					add_idea = RAJ_trade_issues_POR
+				}
+			}
+			break			
+			IF = {
+				has_idea = RAJ_trade_issues_ENG
+				remove_ideas = RAJ_trade_issues_ENG
+			}	
+			hidden_effect = {
+				ENG = {
+					country_event = { days = 1 id = india.1 }
+				}
+				RAJ = {
+					country_event = { days = 1 id = india.2 }
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_remove_FRA_influences
+		id = RAJ_remove_fra_influences
 		icon = GFX_focus_decolonize
 		prerequisite = {
 			focus = RAJ_first_general_election
@@ -54,11 +103,47 @@ focus_tree = {
 		x = 10
 		y = 3
 		completion_reward = {
-
+			add_political_power = -75
+			IF = {
+				has_idea = RAJ_trade_issues_POR_FRA_ENG
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_POR_FRA_ENG
+					add_idea = RAJ_trade_issues_POR_ENG
+				}
+			}
+			break
+			IF = {
+				has_idea = RAJ_trade_issues_FRA_ENG
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_FRA_ENG
+					add_idea = RAJ_trade_issues_ENG
+				}
+			}
+			break
+			IF = {
+				has_idea = RAJ_trade_issues_POR_FRA
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_POR_ENG
+					add_idea = RAJ_trade_issues_POR
+				}
+			}
+			break			
+			IF = {
+				has_idea = RAJ_trade_issues_FRA
+				remove_ideas = RAJ_trade_issues_FRA
+			}	
+			hidden_effect = {
+				FRA = {
+					country_event = { days = 1 id = india.3 }
+				}
+				RAJ = {
+					country_event = { days = 1 id = india.4 }
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_remove_POR_influences
+		id = RAJ_remove_por_influences
 		icon = GFX_focus_catholic
 		prerequisite = {
 			focus = RAJ_first_general_election
@@ -67,12 +152,48 @@ focus_tree = {
 		x = 12
 		y = 3
 		completion_reward = {
-
+			add_political_power = -75
+			IF = {
+				has_idea = RAJ_trade_issues_POR_FRA_ENG
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_POR_FRA_ENG
+					add_idea = RAJ_trade_issues_FRA_ENG
+				}
+			}
+			break
+			IF = {
+				has_idea = RAJ_trade_issues_POR_ENG
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_POR_ENG
+					add_idea = RAJ_trade_issues_ENG
+				}
+			}
+			break
+			IF = {
+				has_idea = RAJ_trade_issues_POR_FRA
+				swap_ideas = {
+					remove_idea = RAJ_trade_issues_POR_FRA
+					add_idea = RAJ_trade_issues_FRA
+				}
+			}
+			break			
+			IF = {
+				has_idea = RAJ_trade_issues_POR
+				remove_ideas = RAJ_trade_issues_POR
+			}	
+			hidden_effect = {
+				POR = {
+					country_event = { days = 1 id = india.5 }
+				}
+				RAJ = {
+					country_event = { days = 1 id = india.6 }
+				}
+			}
 		}
 	}
 	focus = {
 		id = RAJ_backwards_classes_commission
-		icon = GFX_focus_CZE_german_puppet
+		icon = GFX_focus_cze_german_puppet
 		prerequisite = {
 			focus = RAJ_liaquat_nehru_pact
 		}
@@ -80,7 +201,9 @@ focus_tree = {
 		x = 12
 		y = 2
 		completion_reward = {
-
+			add_political_power = -200
+			add_timed_idea = { idea = RAJ_backwards_classes_commission days = 730 }
+			custom_effect_tooltip = "After completion the Commission will take steps to formulate growth in the lower castes."
 		}
 	}
 	focus = {
@@ -93,80 +216,311 @@ focus_tree = {
 		x = 14
 		y = 2
 		completion_reward = {
-
+			custom_effect_tooltip = RAJ_first_general_election_tooltip
+			hidden_effect = {
+				country_event = { days = 1 id = india.20 }
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Economy_Plan_0
+		id = RAJ_economy_plan_0
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 30
 		x = 2
 		y = 1
 		completion_reward = {
-		
+			436 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			437 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			427 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Civilian_Effort_0
+		id = RAJ_civilian_effort_0
 		icon = GFX_goal_generic_construct_civ_factory
+		available = { RAJ = { has_completed_focus = RAJ_liaquat_nehru_pact } }
 		cost = 10
 		x = 4
 		y = 1
 		completion_reward = {
-		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Economy_Plan_1
+		id = RAJ_economy_plan_1
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {
 			focus = RAJ_first_general_election
 		}
 		prerequisite = {
-			focus = RAJ_Economy_Plan_0
+			focus = RAJ_economy_plan_0
 		}
 		prerequisite = {
-			focus = RAJ_Civilian_Effort_0
+			focus = RAJ_civilian_effort_0
 		}
 		cost = 30
 		x = 3
 		y = 3
 		completion_reward = {
-		
+			433 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			428 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			429 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = RAJ_nationalise_airways
 		icon = GFX_goal_generic_air_production
 		prerequisite = {
-			focus = RAJ_Economy_Plan_1
+			focus = RAJ_economy_plan_1
 		}
 		cost = 10
 		x = 6
 		y = 4
 		completion_reward = {
-		
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
 		}
 	}
 	focus = {
 		id = RAJ_nationalise_electricity
 		icon = GFX_goal_generic_production2
 		prerequisite = {
-			focus = RAJ_Economy_Plan_1
+			focus = RAJ_economy_plan_1
 		}
 		cost = 10
 		x = 0
 		y = 4
 		completion_reward = {
-		
+			add_ideas = RAJ_nationalised_electricity
 		}
 	}
 	focus = {
-		id = RAJ_Civilian_Effort_1
+		id = RAJ_civilian_effort_1
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
+		mutually_exclusive = {
+			focus = RAJ_military_effort_1
+		}
 		prerequisite = {
-			focus = RAJ_Economy_Plan_1
+			focus = RAJ_economy_plan_1
 		}
 		x = 2
 		y = 4
@@ -175,37 +529,65 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Construction_Effort_1
+		id = RAJ_construction_effort_1
 		icon = GFX_goal_generic_construction
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Civilian_Effort_1
+			focus = RAJ_military_effort_1
+			focus = RAJ_civilian_effort_1
 		}
 		x = 2
 		y = 5
 		completion_reward = {
-		
+			439 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			439 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			435 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Civilian_Effort_2
-		icon = GFX_goal_generic_construct_civ_factory
+		id = RAJ_civilian_effort_2
+		icon = GFX_focus_generic_self_management
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Construction_Effort_1
+			focus = RAJ_construction_effort_1
+			focus = RAJ_dockyard_effort_1
+		}
+		mutually_exclusive = {
+			focus = RAJ_military_effort_2
 		}
 		x = 2
 		y = 6
 		completion_reward = {
-		
+			remove_ideas = RAJ_banking_issues
 		}
 	}
 	focus = {
-		id = RAJ_Military_Effort_1
+		id = RAJ_military_effort_1
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
+		mutually_exclusive = {
+			focus = RAJ_civilian_effort_1
+		}
 		prerequisite = {
-			focus = RAJ_Economy_Plan_1
+			focus = RAJ_economy_plan_1
 		}
 		x = 4
 		y = 4
@@ -214,189 +596,239 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Dockyard_Effort_1
+		id = RAJ_dockyard_effort_1
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Military_Effort_1
+			focus = RAJ_military_effort_1
+			focus = RAJ_civilian_effort_1
 		}
 		x = 4
 		y = 5
 		completion_reward = {
-		
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Military_Effort_2
-		icon = GFX_goal_generic_construct_mil_factory
+		id = RAJ_military_effort_2
+		icon = GFX_focus_RAJ_indian_gurkhas
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Dockyard_Effort_1
+			focus = RAJ_construction_effort_1
+			focus = RAJ_dockyard_effort_1
+		}
+		available = {
+			OR = {
+				has_completed_focus = RAJ_mil_reform_4c
+				has_completed_focus = RAJ_mil_reform_4a
+				has_completed_focus = RAJ_mil_reform_4b
+			}
+		}
+		mutually_exclusive = {
+			focus = RAJ_civilian_effort_2
 		}
 		x = 4
 		y = 6
 		completion_reward = {
-		
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Research_Slot_2
+		id = RAJ_research_slot_2
 		icon = GFX_focus_research
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Decrypt_1
-		}
-		prerequisite = {
-			focus = RAJ_Civilian_Effort_2
-		}
-		prerequisite = {
-			focus = RAJ_Military_Effort_2
-		}
-		prerequisite = {
-			focus = RAJ_Synthetic_1
+			focus = RAJ_civilian_effort_2
 		}
 		x = 1
 		y = 8
 		completion_reward = {
-		
+			add_research_slot = 1
 		}
 	}
 	focus = {
-		id = RAJ_Economy_Plan_2
+		id = RAJ_economy_plan_2
 		icon = GFX_goal_generic_construction2
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Decrypt_1
-		}
-		prerequisite = {
-			focus = RAJ_Civilian_Effort_2
-		}
-		prerequisite = {
-			focus = RAJ_Military_Effort_2
-		}
-		prerequisite = {
-			focus = RAJ_Synthetic_1
+			focus = RAJ_civilian_effort_2
+			focus = RAJ_military_effort_2
 		}
 		x = 3
 		y = 8
 		completion_reward = {
-		
+			country_event = { days = 1 id = india.40 }
 		}
 	}
 	focus = {
-		id = RAJ_Nuclear_Effort_1
-		icon = GFX_focus_wonderweapons
+		id = RAJ_nuclear_effort_1
+		icon = GFX_goal_generic_secret_weapon
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Synthetic_1
-		}
-		prerequisite = {
-			focus = RAJ_Military_Effort_2
-		}
-		prerequisite = {
-			focus = RAJ_Civilian_Effort_2
-		}
-		prerequisite = {
-			focus = RAJ_Decrypt_1
+			focus = RAJ_military_effort_2
 		}
 		x = 5
 		y = 8
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.8
+				uses = 1
+				category = light_air
+				category = heavy_air
+				category = helicopter
+				category = armor
+				category = artillery
+				category = infantry_weapons
+				category = cat_anti_tank
+				category = support_tech
+				category = motorized_equipment
+				category = land_doctrine
+				category = air_doctrine
+				category = naval_doctrine
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Open_Foreign_Policy
+		id = RAJ_open_foreign_policy
 		icon = GFX_goal_generic_major_alliance
 		cost = 10
 		prerequisite = {
 			focus = RAJ_first_general_election
 		}
+		available = {
+			has_global_flag = first_indian__general_election_complete
+		}
 		x = 14
 		y = 4
 		completion_reward = {
-		
+			country_event = { days = 1 id = india.30 }
 		}
 	}
 	focus = {
-		id = RAJ_Pro_USA
+		id = RAJ_pro_usa
 		icon = GFX_focus_goal_USA_advisors
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Open_Foreign_Policy
+			focus = RAJ_open_foreign_policy
 		}
 		mutually_exclusive = {
-			focus = RAJ_Pro_NAM
-			focus = RAJ_Pro_SOV
+			focus = RAJ_pro_nam
+			focus = RAJ_pro_sov
 		}
 		x = 10
 		y = 5
 		completion_reward = {
-		
+			country_event = { days = 1 id = india.31 }
 		}
 	}
 	focus = {
-		id = RAJ_Denounce_Communists
+		id = RAJ_denounce_communists
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Pro_USA
+			focus = RAJ_pro_usa
 		}
 		x = 9
 		y = 6
 		completion_reward = {
-		
+			add_ideas = RAJ_denounce_communists
 		}
 	}
 	focus = {
-		id = RAJ_Seek_USA_Aid
+		id = RAJ_seek_usa_aid
 		icon = GFX_goal_generic_consumer_goods
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Pro_USA
+			focus = RAJ_pro_usa
 		}
 		x = 7
 		y = 6
 		completion_reward = {
-		
+			country_event = { days = 1 id = india.35 }
+			add_timed_idea = { idea = RAJ_american_aid days = 1095 }
 		}
 	}
 	focus = {
-		id = RAJ_USA_Guns
+		id = RAJ_usa_guns
 		icon = GFX_goal_generic_small_arms
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Seek_USA_Aid
+			focus = RAJ_seek_usa_aid
 		}
 		x = 7
 		y = 7
 		completion_reward = {
-		
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 producer = USA }
+			add_tech_bonus = {
+				name = WGR_A_German_Rifle
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
-		id = RAJ_US_Spirit
+		id = RAJ_us_spirit
 		icon = GFX_focus_RAJ_all_india_forward_bloc
 		cost = 10
 		prerequisite = {
-			focus = RAJ_USA_Guns
+			focus = RAJ_usa_guns
 		}
 		x = 7
 		y = 8
 		completion_reward = {
-		
+			custom_effect_tooltip = RAJ_western_integration
 		}
 	}
 	focus = {
-		id = RAJ_Pro_NAM
+		id = RAJ_pro_nam
 		icon = GFX_focus_non_aligned_movement
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Open_Foreign_Policy
+			focus = RAJ_open_foreign_policy
 		}
 		mutually_exclusive = {
-			focus = RAJ_Pro_SOV
-			focus = RAJ_Pro_USA
+			focus = RAJ_pro_sov
+			focus = RAJ_pro_usa
 		}
 		x = 14
 		y = 5
@@ -405,12 +837,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Anti_Chinese_Diplomacy
+		id = RAJ_anti_chinese_diplomacy
 		icon = GFX_goal_anti_comintern_pact
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Pro_USA
-			focus = RAJ_Pro_NAM
+			focus = RAJ_pro_usa
+			focus = RAJ_pro_nam
 		}
 		x = 12
 		y = 6
@@ -419,11 +851,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Fortify_Chinese_Border
+		id = RAJ_fortify_chinese_border
 		icon = GFX_goal_generic_construct_military
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Anti_Chinese_Diplomacy
+			focus = RAJ_anti_chinese_diplomacy
 		}
 		x = 12
 		y = 7
@@ -432,30 +864,30 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Chinese_War
+		id = RAJ_chinese_war
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Fortify_Chinese_Border
+			focus = RAJ_fortify_chinese_border
 		}
 		mutually_exclusive = {
-			focus = RAJ_Chinese_Compromise
+			focus = RAJ_chinese_compromise
 		}
 		x = 11
 		y = 8
 		completion_reward = {
-		
+			create_wargoal = { type = annex_everything target = PRC }
 		}
 	}
 	focus = {
-		id = RAJ_Chinese_Compromise
+		id = RAJ_chinese_compromise
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Fortify_Chinese_Border
+			focus = RAJ_fortify_chinese_border
 		}
 		mutually_exclusive = {
-			focus = RAJ_Chinese_War
+			focus = RAJ_chinese_war
 		}
 		x = 13
 		y = 8
@@ -464,11 +896,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Support_From_Both
+		id = RAJ_support_from_both
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Pro_NAM
+			focus = RAJ_pro_nam
 		}
 		x = 14
 		y = 6
@@ -477,11 +909,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_NAM_Tech_Circle
+		id = RAJ_nam_tech_circle
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Support_From_Both
+			focus = RAJ_support_from_both
 		}
 		x = 14
 		y = 7
@@ -490,11 +922,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Own_Path
+		id = RAJ_own_path
 		icon = GFX_focus_smiling_buddha
 		cost = 10
 		prerequisite = {
-			focus = RAJ_NAM_Tech_Circle
+			focus = RAJ_nam_tech_circle
 		}
 		x = 14
 		y = 9
@@ -503,15 +935,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Pro_SOV
+		id = RAJ_pro_sov
 		icon = GFX_focus_goal_SOV_advisors
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Open_Foreign_Policy
+			focus = RAJ_open_foreign_policy
 		}
 		mutually_exclusive = {
-			focus = RAJ_Pro_NAM
-			focus = RAJ_Pro_USA
+			focus = RAJ_pro_nam
+			focus = RAJ_pro_usa
 		}
 		x = 18
 		y = 5
@@ -520,12 +952,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Anti_Pakistani_Diplomacy
+		id = RAJ_anti_pakistani_diplomacy
 		icon = GFX_goal_generic_territory_or_war
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Pro_SOV
-			focus = RAJ_Pro_NAM
+			focus = RAJ_pro_sov
+			focus = RAJ_pro_nam
 		}
 		x = 16
 		y = 6
@@ -534,11 +966,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Fortify_Pakistani_Border
+		id = RAJ_fortify_pakistani_border
 		icon = GFX_goal_generic_fortify_city
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Anti_Pakistani_Diplomacy
+			focus = RAJ_anti_pakistani_diplomacy
 		}
 		x = 16
 		y = 7
@@ -547,14 +979,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Pakistani_Compromise
+		id = RAJ_pakistani_compromise
 		icon = GFX_focus_RAJ_two_nation_theory
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Fortify_Pakistani_Border
+			focus = RAJ_fortify_pakistani_border
 		}
 		mutually_exclusive = {
-			focus = RAJ_Pakistani_War
+			focus = RAJ_pakistani_war
 		}
 		x = 15
 		y = 8
@@ -563,40 +995,40 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Pakistani_War
+		id = RAJ_pakistani_war
 		icon = GFX_focus_RAJ_indian_gentlemen_offcers
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Fortify_Pakistani_Border
+			focus = RAJ_fortify_pakistani_border
 		}
 		mutually_exclusive = {
-			focus = RAJ_Pakistani_Compromise
+			focus = RAJ_pakistani_compromise
 		}
 		x = 17
 		y = 8
 		completion_reward = {
-		
+				create_wargoal = { type = annex_everything target = PAK }
 		}
 	}
 	focus = {
-		id = RAJ_Seek_SOV_Aid
+		id = RAJ_seek_sov_aid
 		icon = GFX_goal_generic_soviet_construction
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Pro_SOV
+			focus = RAJ_pro_sov
 		}
 		x = 21
 		y = 6
 		completion_reward = {
-		
+			add_timed_idea = { idea = RAJ_soviet_aid days = 1095 }
 		}
 	}
 	focus = {
-		id = RAJ_SOV_Tanks
+		id = RAJ_sov_tanks
 		icon = GFX_goal_generic_army_tanks
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Seek_SOV_Aid
+			focus = RAJ_seek_sov_aid
 		}
 		x = 21
 		y = 7
@@ -605,24 +1037,24 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_SOV_Spirit
+		id = RAJ_sov_spirit
 		icon = GFX_focus_RAJ_seek_help_from_soviet
 		cost = 10
 		prerequisite = {
-			focus = RAJ_SOV_Tanks
+			focus = RAJ_sov_tanks
 		}
 		x = 21
 		y = 8
 		completion_reward = {
-		
+			custom_effect_tooltip = RAJ_soviet_integration
 		}
 	}
 	focus = {
-		id = RAJ_Denounce_West
+		id = RAJ_denounce_west
 		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Pro_SOV
+			focus = RAJ_pro_sov
 		}
 		x = 19
 		y = 6
@@ -631,27 +1063,33 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Reign_In_Minors
+		id = RAJ_reign_in_minors
 		icon = GFX_goal_generic_national_unity
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Denounce_West
+			focus = RAJ_denounce_west
 		}
 		x = 19
 		y = 8
 		completion_reward = {
-		
+			add_ideas = RAJ_caste_system_broken
+			hidden_effect = {
+				IF = {
+					has_idea = RAJ_backwards_classes_commission
+					remove_ideas = RAJ_backwards_classes_commission
+				}
+			}
 		}
 	}
 	focus = {
-		id = RAJ_Guarantee_North_Korea
+		id = RAJ_guarantee_north_korea
 		icon = GFX_goal_focus_origins_of_juche
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Reign_In_Minors
+			focus = RAJ_reign_in_minors
 		}
 		mutually_exclusive = {
-			focus = RAJ_Support_North_Korea
+			focus = RAJ_support_north_korea
 		}
 		x = 20
 		y = 9
@@ -660,14 +1098,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Support_North_Korea
+		id = RAJ_support_north_korea
 		icon = GFX_goal_tripartite_pact
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Reign_In_Minors
+			focus = RAJ_reign_in_minors
 		}
 		mutually_exclusive = {
-			focus = RAJ_Guarantee_North_Korea
+			focus = RAJ_guarantee_north_korea
 		}
 		x = 18
 		y = 9
@@ -676,11 +1114,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Democracy_To_Burma
+		id = RAJ_democracy_to_burma
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Denounce_Communists
+			focus = RAJ_denounce_communists
 		}
 		x = 9
 		y = 8
@@ -689,14 +1127,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Guarantee_South_Korea
+		id = RAJ_guarantee_south_korea
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Democracy_To_Burma
+			focus = RAJ_democracy_to_burma
 		}
 		mutually_exclusive = {
-			focus = RAJ_Support_South_Korea
+			focus = RAJ_support_south_korea
 		}
 		x = 8
 		y = 9
@@ -705,14 +1143,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Support_South_Korea
+		id = RAJ_support_south_korea
 		icon = GFX_goal_generic_improve_relations
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Democracy_To_Burma
+			focus = RAJ_democracy_to_burma
 		}
 		mutually_exclusive = {
-			focus = RAJ_Guarantee_South_Korea
+			focus = RAJ_guarantee_south_korea
 		}
 		x = 10
 		y = 9
@@ -721,9 +1159,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Military_Reforms
+		id = RAJ_military_reforms
 		icon = GFX_focus_RAJ_clamp_down_on_corruption
-		available = { RAJ = { has_completed_focus = RAJ_Election_Of_51 } }
+		available = { RAJ = { has_completed_focus = RAJ_election_of_51 } }
 		cost = 20
 		x = 25
 		y = 0
@@ -732,11 +1170,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Air_Reform_1
+		id = RAJ_air_reform_1
 		icon = GFX_goal_generic_air_fighter2
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Military_Reforms
+			focus = RAJ_military_reforms
 		}
 		x = 20
 		y = 1
@@ -745,11 +1183,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Air_Reform_2
+		id = RAJ_air_reform_2
 		icon = GFX_goal_generic_air_doctrine
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Air_Reform_1
+			focus = RAJ_air_reform_1
 		}
 		x = 20
 		y = 2
@@ -758,14 +1196,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Air_Reform_3a
+		id = RAJ_air_reform_3a
 		icon = GFX_goal_generic_build_airforce
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Air_Reform_2
+			focus = RAJ_air_reform_2
 		}
 		mutually_exclusive = {
-			focus = RAJ_Air_Reform_3b
+			focus = RAJ_air_reform_3b
 		}
 		x = 19
 		y = 3
@@ -774,14 +1212,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Air_Reform_3b
+		id = RAJ_air_reform_3b
 		icon = GFX_goal_generic_CAS
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Air_Reform_2
+			focus = RAJ_air_reform_2
 		}
 		mutually_exclusive = {
-			focus = RAJ_Air_Reform_3a
+			focus = RAJ_air_reform_3a
 		}
 		x = 21
 		y = 3
@@ -790,15 +1228,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Air_Reform_4a
+		id = RAJ_air_reform_4a
 		icon = GFX_goal_generic_air_bomber
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Air_Reform_3a
-			focus = RAJ_Air_Reform_3b
+			focus = RAJ_air_reform_3a
+			focus = RAJ_air_reform_3b
 		}
 		mutually_exclusive = {
-			focus = RAJ_Air_Reform_4b
+			focus = RAJ_air_reform_4b
 		}
 		x = 19
 		y = 4
@@ -807,15 +1245,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Air_Reform_4b
+		id = RAJ_air_reform_4b
 		icon = GFX_goal_generic_air_fighter
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Air_Reform_3b
-			focus = RAJ_Air_Reform_3a
+			focus = RAJ_air_reform_3b
+			focus = RAJ_air_reform_3a
 		}
 		mutually_exclusive = {
-			focus = RAJ_Air_Reform_4a
+			focus = RAJ_air_reform_4a
 		}
 		x = 21
 		y = 4
@@ -824,11 +1262,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_1
+		id = RAJ_mil_reform_1
 		icon = GFX_focus_RAJ_indianisation_of_army
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Military_Reforms
+			focus = RAJ_military_reforms
 		}
 		x = 25
 		y = 1
@@ -837,15 +1275,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_2a
+		id = RAJ_mil_reform_2a
 		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_1
+			focus = RAJ_mil_reform_1
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_2b
-			focus = RAJ_Mil_Reform_2c
+			focus = RAJ_mil_reform_2b
+			focus = RAJ_mil_reform_2c
 		}
 		x = 23
 		y = 2
@@ -854,15 +1292,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_2b
+		id = RAJ_mil_reform_2b
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_1
+			focus = RAJ_mil_reform_1
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_2c
-			focus = RAJ_Mil_Reform_2a
+			focus = RAJ_mil_reform_2c
+			focus = RAJ_mil_reform_2a
 		}
 		x = 25
 		y = 2
@@ -871,15 +1309,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_2c
+		id = RAJ_mil_reform_2c
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_1
+			focus = RAJ_mil_reform_1
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_2b
-			focus = RAJ_Mil_Reform_2a
+			focus = RAJ_mil_reform_2b
+			focus = RAJ_mil_reform_2a
 		}
 		x = 27
 		y = 2
@@ -888,17 +1326,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_3a
+		id = RAJ_mil_reform_3a
 		icon = GFX_goal_generic_small_arms
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_2a
-			focus = RAJ_Mil_Reform_2b
-			focus = RAJ_Mil_Reform_2c
+			focus = RAJ_mil_reform_2a
+			focus = RAJ_mil_reform_2b
+			focus = RAJ_mil_reform_2c
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_3b
-			focus = RAJ_Mil_Reform_3c
+			focus = RAJ_mil_reform_3b
+			focus = RAJ_mil_reform_3c
 		}
 		x = 23
 		y = 3
@@ -907,17 +1345,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_3b
+		id = RAJ_mil_reform_3b
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_2b
-			focus = RAJ_Mil_Reform_2a
-			focus = RAJ_Mil_Reform_2c
+			focus = RAJ_mil_reform_2b
+			focus = RAJ_mil_reform_2a
+			focus = RAJ_mil_reform_2c
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_3c
-			focus = RAJ_Mil_Reform_3a
+			focus = RAJ_mil_reform_3c
+			focus = RAJ_mil_reform_3a
 		}
 		x = 25
 		y = 3
@@ -926,18 +1364,18 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_3c
+		id = RAJ_mil_reform_3c
 		icon = GFX_goal_generic_army_tanks
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_2c
-			focus = RAJ_Mil_Reform_2b
-			focus = RAJ_Mil_Reform_2b
-			focus = RAJ_Mil_Reform_2a
+			focus = RAJ_mil_reform_2c
+			focus = RAJ_mil_reform_2b
+			focus = RAJ_mil_reform_2b
+			focus = RAJ_mil_reform_2a
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_3b
-			focus = RAJ_Mil_Reform_3a
+			focus = RAJ_mil_reform_3b
+			focus = RAJ_mil_reform_3a
 		}
 		x = 27
 		y = 3
@@ -946,17 +1384,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_4a
+		id = RAJ_mil_reform_4a
 		icon = GFX_focus_generic_license_production
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_3a
-			focus = RAJ_Mil_Reform_3b
-			focus = RAJ_Mil_Reform_3c
+			focus = RAJ_mil_reform_3a
+			focus = RAJ_mil_reform_3b
+			focus = RAJ_mil_reform_3c
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_4b
-			focus = RAJ_Mil_Reform_4c
+			focus = RAJ_mil_reform_4b
+			focus = RAJ_mil_reform_4c
 		}
 		x = 23
 		y = 4
@@ -965,17 +1403,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_4b
+		id = RAJ_mil_reform_4b
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_3a
-			focus = RAJ_Mil_Reform_3b
-			focus = RAJ_Mil_Reform_3c
+			focus = RAJ_mil_reform_3a
+			focus = RAJ_mil_reform_3b
+			focus = RAJ_mil_reform_3c
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_4c
-			focus = RAJ_Mil_Reform_4a
+			focus = RAJ_mil_reform_4c
+			focus = RAJ_mil_reform_4a
 		}
 		x = 25
 		y = 4
@@ -984,17 +1422,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Mil_Reform_4c
+		id = RAJ_mil_reform_4c
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Mil_Reform_3c
-			focus = RAJ_Mil_Reform_3b
-			focus = RAJ_Mil_Reform_3a
+			focus = RAJ_mil_reform_3c
+			focus = RAJ_mil_reform_3b
+			focus = RAJ_mil_reform_3a
 		}
 		mutually_exclusive = {
-			focus = RAJ_Mil_Reform_4b
-			focus = RAJ_Mil_Reform_4a
+			focus = RAJ_mil_reform_4b
+			focus = RAJ_mil_reform_4a
 		}
 		x = 27
 		y = 4
@@ -1004,14 +1442,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RAJ_Navy_Reform_1a
+		id = RAJ_navy_reform_1a
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Military_Reforms
+			focus = RAJ_military_reforms
 		}
 		mutually_exclusive = {
-			focus = RAJ_Navy_Reform_1b
+			focus = RAJ_navy_reform_1b
 		}
 		x = 29
 		y = 1
@@ -1020,11 +1458,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Navy_Reform_2a
+		id = RAJ_navy_reform_2a
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Navy_Reform_1a
+			focus = RAJ_navy_reform_1a
 		}
 		x = 29
 		y = 2
@@ -1033,11 +1471,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Navy_Reform_3a
+		id = RAJ_navy_reform_3a
 		icon = GFX_goal_generic_navy_anti_submarine
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Navy_Reform_2a
+			focus = RAJ_navy_reform_2a
 		}
 		x = 29
 		y = 3
@@ -1046,14 +1484,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Navy_Reform_1b
+		id = RAJ_navy_reform_1b
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Military_Reforms
+			focus = RAJ_military_reforms
 		}
 		mutually_exclusive = {
-			focus = RAJ_Navy_Reform_1a
+			focus = RAJ_navy_reform_1a
 		}
 		x = 31
 		y = 1
@@ -1062,11 +1500,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Naval_Reform_2b
+		id = RAJ_naval_reform_2b
 		icon = GFX_goal_generic_navy_submarine
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Navy_Reform_1b
+			focus = RAJ_navy_reform_1b
 		}
 		x = 31
 		y = 2
@@ -1075,11 +1513,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Navy_Reform_3b
+		id = RAJ_navy_reform_3b
 		icon = GFX_goal_generic_wolf_pack
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Naval_Reform_2b
+			focus = RAJ_naval_reform_2b
 		}
 		x = 31
 		y = 3
@@ -1088,12 +1526,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Navy_Reform_4
+		id = RAJ_navy_reform_4
 		icon = GFX_goal_generic_navy_carrier
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Navy_Reform_3a
-			focus = RAJ_Navy_Reform_3b
+			focus = RAJ_navy_reform_3a
+			focus = RAJ_navy_reform_3b
 		}
 		x = 30
 		y = 4
@@ -1102,22 +1540,22 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_Nuclear_Effort_2
-		icon = GFX_focus_wonderweapons
+		id = RAJ_nuclear_effort_2
+		icon = GFX_focus_smiling_buddha
 		cost = 10
 		prerequisite = {
-			focus = RAJ_Air_Reform_4a
-			focus = RAJ_Air_Reform_4b
+			focus = RAJ_air_reform_4a
+			focus = RAJ_air_reform_4b
 		}
 		prerequisite = {
-			focus = RAJ_Mil_Reform_4a
-			focus = RAJ_Mil_Reform_4b
-			focus = RAJ_Mil_Reform_4c
+			focus = RAJ_mil_reform_4a
+			focus = RAJ_mil_reform_4b
+			focus = RAJ_mil_reform_4c
 		}
 		prerequisite = {
-			focus = RAJ_Navy_Reform_4
+			focus = RAJ_navy_reform_4
 		}
-		available = { RAJ = { has_completed_focus = RAJ_Own_Path } }
+		available = { RAJ = { has_completed_focus = RAJ_own_path } }
 		x = 25
 		y = 6
 		completion_reward = {

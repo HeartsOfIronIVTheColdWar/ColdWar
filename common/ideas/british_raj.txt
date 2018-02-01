@@ -1,5 +1,179 @@
 ideas = {
 	country = {
+		RAJ_liquat_nehru_pact = {
+
+			picture = idea_RAJ_smiling_buddha
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+					original_tag = PAK
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				unity_weekly = -0.004
+				MONTHLY_POPULATION = -0.25
+			}
+		}
+		RAJ_liquat_nehru_pact2 = {
+
+			picture = idea_RAJ_smiling_buddha
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+					original_tag = PAK
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				unity_weekly = 0.0005
+				MONTHLY_POPULATION = 0.1
+			}
+		}
+		RAJ_denounce_communists = {
+
+			picture = idea_RAJ_smiling_buddha
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = -0.001
+			}
+		}
+		RAJ_denounce_the_west = {
+
+			picture = idea_RAJ_smiling_buddha
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autocratic_drift = -0.001
+				democratic_drift = -0.001
+			}
+		}
+		RAJ_banking_issues = {
+
+			picture = idea_RAJ_smiling_buddha
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		
+		RAJ_nationalised_electricity = {
+
+			picture = idea_RAJ_smiling_buddha
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		RAJ_american_aid = {
+
+			picture = FIN_wartime_reparations
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		RAJ_soviet_aid = {
+
+			picture = generic_exploit_mines
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
 		RAJ_smiling_buddha = {
 
 			picture = idea_RAJ_smiling_buddha
@@ -108,10 +282,213 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				unity_weekly = 0.005
-				democratic_drift = 0.02
+				unity_weekly = 0.001
+				democratic_drift = 0.01
 			}
 		}
+		RAJ_backwards_classes_commission = {
+		
+			picture = saf_history_of_segregation
+			
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = autocratic
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+				drift_defence_factor = -0.25
+			}
+		}
+		RAJ_caste_system_broken = {
+		
+			picture = generic_communist_army
+			
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = autocratic
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				conscription = 0.02
+				conscription_factor = 0.2
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				
+			}
+		}
+		
+###TRADE CHARTER ISSUES###
+
+		RAJ_trade_issues_POR_FRA_ENG = {
+
+			picture = FIN_reparations_industry
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+		RAJ_trade_issues_FRA_ENG = {
+
+			picture = FIN_reparations_industry
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		RAJ_trade_issues_POR_ENG = {
+
+			picture = FIN_reparations_industry
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		RAJ_trade_issues_POR_FRA = {
+
+			picture = FIN_reparations_industry
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		RAJ_trade_issues_ENG = {
+
+			picture = FIN_reparations_industry
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		RAJ_trade_issues_POR = {
+
+			picture = FIN_reparations_industry
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		RAJ_trade_issues_FRA = {
+
+			picture = FIN_reparations_industry
+
+			allowed = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
 	}
 	
 ###ADVISORS AND STAFF###

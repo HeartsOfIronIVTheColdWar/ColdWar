@@ -32,10 +32,6 @@ opinion_modifiers = {
 	
 	declines_peace_treaty = {value = -100 }
 	
-	GRE_reconnection = {
-		value = 50
-	}
-	
 	SOV_Agricultural_board = {
 		value = 25
 	}
@@ -227,8 +223,7 @@ opinion_modifiers = {
 		value = 1
 	}
 	
-	puppet_opinion = 
-	{
+	puppet_opinion = {
 		value = 200
 	}
 

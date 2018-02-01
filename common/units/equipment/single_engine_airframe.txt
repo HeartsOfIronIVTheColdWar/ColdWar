@@ -2068,17 +2068,5 @@ equipments = {
 			aluminium = 1
 			rubber = 1
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 }

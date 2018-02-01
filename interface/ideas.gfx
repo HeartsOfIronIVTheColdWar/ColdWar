@@ -23,6 +23,14 @@ spriteTypes = {
 		name = "GFX_idea_FIN_wartime_reparations"
 		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_generic_exploit_mines"
+		texturefile = "gfx/interface/ideas/idea_generic_exploit_mines.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_communist_army"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+	}
 ###SWE###
 	spriteType = {
 		name = "GFX_idea_SWE_en_svensk_tiger"

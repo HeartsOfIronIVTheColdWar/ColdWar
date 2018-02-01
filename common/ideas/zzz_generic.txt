@@ -775,7 +775,7 @@ ideas = {
 	
 	economic_minister = {
 		
-		yakov_malik = {
+		yakov_malik4 = {
 			allowed = {
 				NOT = { OR = { tag = USA tag = ENG tag = SOV tag = FRA tag = NKR tag = KOR tag = EGY tag = PRC tag = WGR tag = DDR tag = RAJ tag = PAK tag = YUG} }
 				NOT = {

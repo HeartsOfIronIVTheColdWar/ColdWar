@@ -1,0 +1,245 @@
+guiTypes = {
+
+	containerWindowType = {
+		name ="frontend_background"
+		position = { x=0 y =0 }	
+		size = { 
+			width = 1920 
+			height = 1440 
+			min = { width = 100% height = 100% }
+		}
+		Orientation = center
+		Origo = center
+		clipping = no 
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_frontend_bg"
+		}
+		
+	}
+
+	### MAIN MENU PANEL (upperleft)
+	containerWindowType = {
+		name  ="mainmenu_panel_upperleft"
+		position = { x=0 y =-200 }
+		show_position = { x=0 y =-1 }
+		animation_type = decelerated
+		animation_time = 1000
+		size = { width = 256 height = 768}
+		
+		iconType =
+		{
+			name ="frontend_game_logo"
+			spriteType = "GFX_frontend_game_logo"
+			position = { x= 20 y = 20 }
+		}
+		
+	}
+
+	#containerWindowType = {
+	#	name  ="frontend_alpha_stamp"
+	#	position = { x=100 y =-100  }
+	#	size = { width = 131 height = 132}
+	#	orientation = lower_left
+	#	origo = lower_left
+	#	
+	#	iconType =
+	#	{
+	#		name ="frontend_alpha_stamp"
+	#		spriteType = "GFX_alpha_stamp"
+	#		position = { x= 0 y = 20 }
+	#	}		
+	#	
+	#}	
+	
+	### MAIN MENU PANEL (upperright)
+	containerWindowType = {
+		name ="mainmenu_panel_upperright"
+		position = { x=0 y =-1 }
+		show_position = { x=-256 y =-1 }
+		animation_type = decelerated
+		animation_time = 1000					
+		size = { width = 256 height = 768}
+		Orientation = upper_right	
+		
+	}		
+
+	### SINGLE PLAYER MENU
+	containerWindowType = {
+		name = "mainmenu_single_player"
+		position = { x=0 y =0}
+		size = { width = 320 height = 395}
+		Orientation = CENTER
+		Origo = center	
+				
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_window"
+		}
+		
+		ButtonType = {
+			name = "sp_continue_button"
+			position = { x = 16 y = 18 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "FE_CONTINUE"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_left"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 35 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_left_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 35 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_right"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 245 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "sp_continue_flag_right_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x= 245 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		ButtonType = {
+			name = "sp_new_button"
+			position = { x = 16 y = 58 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "FE_NEW"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "sp_load_button"
+			position = {  x = 16 y = 98 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "MENU_BAR_LOAD"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "sp_tutorial_button"
+			position = { x = 16 y = 138}
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "FE_TUTORIAL"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "sp_back_button"
+			position = { x = 16 y = 218 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "BACK"
+			buttonFont = "hoi_24header"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}
+	}
+
+	### MAIN MENU PANEL (bottom)
+	containerWindowType = {
+		name ="mainmenu_panel_bottom"
+		position = { x=0 y =200}
+		size = { width = 320 height = 395}
+		Orientation = left
+		Origo = upper_left		
+			
+		ButtonType = {
+			name = "single_player_button"
+			position = { x = 5 y = 17 }
+			spriteType = "GFX_singleplayer_logo"
+			font = "hoi_36header"			
+			text = ""				
+			clicksound = click_default			
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "multi_player_button"
+			position = { x = -13 y = 125}
+			spriteType = "GFX_multiplayer_logo"
+			font = "hoi_36header"			
+			text = ""			
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+#		instantTextBoxType = {
+#
+#			name ="version_label"
+#			position = { x = 35 y = 356 }
+#			textureFile = ""
+#			font = "hoi_18b"
+#			borderSize = {x = 0 y = 0}
+#			text = "ALPHA"	
+#			format = centre
+#			maxWidth = 250
+#			maxHeight = 20	
+#		}
+		
+		
+		ButtonType = {
+			name = "settings_button"
+			position = { x = -12 y = 232 }
+			spriteType = "GFX_options_logo"
+			buttonText = ""
+			buttonFont = "hoi_36header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		
+		ButtonType = {
+			name = "exit_button"
+			position = { x = 16 y = 340 }
+			spriteType = "GFX_exit_game_logo"
+			font = "hoi_36header"			
+			text = ""			
+			clicksound = click_default
+			oversound = ui_menu_over
+			
+		}
+		ButtonType = {
+			name = "coop_button"
+			position = { x = 16 y = 446 }
+			spriteType = "GFX_coop_logo"
+			clicksound = click_default
+			pdx_tooltip = "Click here to go to the Coop Steam Group"
+			web_link = "http://steamcommunity.com/groups/HOI4ModdingCoop"
+		}
+		ButtonType = {
+			name = "discord_button"
+			position = { x = 20 y = 570 }
+			spriteType = "GFX_discord_logo"
+			clicksound = click_default
+			pdx_tooltip = ""
+			web_link = "https://discord.gg/cKcrUVk"
+		}
+	}
+}

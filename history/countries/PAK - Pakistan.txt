@@ -3,7 +3,7 @@
 oob = "PAK_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_national_unity = 0.4
 
 1950.1.1 = {
 	
@@ -14,6 +14,7 @@ set_national_unity = 0.55
 		limited_conscription
 		#ideas
 		RAJ_agrarian_society
+		RAJ_liquat_nehru_pact
 	}
 	set_politics = {
 

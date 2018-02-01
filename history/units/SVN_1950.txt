@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Bataillon de Marche"  	# French-based unit structure dictated this as the standard basic unit. Almost all Union foot infantry are based on this.
 
 	regiments = {

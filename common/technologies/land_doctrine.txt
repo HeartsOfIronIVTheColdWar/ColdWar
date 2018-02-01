@@ -1386,7 +1386,7 @@ technologies = {
 	wartime_industry = {
 	
 		production_speed_arms_factory_factor = 0.15
-		conversion_cost_civ_to_mil_factor= -0.6
+		conversion_cost_civ_to_mil_factor= -0.3
 		
 		path = {
 			leads_to_tech = large_front_operations 

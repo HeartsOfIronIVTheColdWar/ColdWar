@@ -6,6 +6,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_green_water.dds"
 	}
 	SpriteType = { 
+		name = "GFX_focus_focus_workers_support"
+		texturefile = "gfx/interface/goals/focus_workers_support.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_focus_communist_science"
+		texturefile = "gfx/interface/goals/focus_communist_science.dds"
+	}
+	SpriteType = { 
 		name = "GFX_focus_goal_generic_army_IFV"
 		texturefile = "gfx/interface/goals/goal_generic_army_IFV.dds"
 	}

@@ -137,7 +137,7 @@ leader_traits = {
 	dictator = {
 		random = no
 		sprite = 12
-		political_power_factor = 0.2
+		political_power_gain = 0.2
 		
 		ai_will_do = {
 			factor = 1
@@ -159,7 +159,7 @@ leader_traits = {
 	iron_grip = {
 		random = no
 		sprite = 12
-		political_power_factor = 0.1
+		political_power_gain = 0.1
 		enemy_partisan_effect = -0.25
 		foreign_subversive_activites = -0.3
 
@@ -171,7 +171,7 @@ leader_traits = {
 	benevolent_dictator = {
 		random = no
 		sprite = 12
-		political_power_factor = 0.15
+		political_power_gain = 0.15
 		drift_defence_factor = 0.25
 		
 		ai_will_do = {
@@ -211,7 +211,7 @@ leader_traits = {
 	Great_Leader = {
 		random = no
 		sprite = 13
-		political_power_factor = 0.3
+		political_power_gain = 0.3
 		unity_factor = 0.15
 		army_morale_factor = 0.15
 
@@ -223,7 +223,7 @@ leader_traits = {
 	Impopular_Figurehead = {
 		random = no
 		sprite = 13
-		political_power_factor = -0.1
+		political_power_gain = -0.1
 		unity_factor = -0.05
 		
 		ai_will_do = {
@@ -367,7 +367,7 @@ leader_traits = {
 	
 	stalins_puppet = {
 		random = no
-		political_power_factor = -0.25
+		political_power_gain = -0.25
 		ai_will_do = {
 			factor = 1
 		}
@@ -383,7 +383,7 @@ leader_traits = {
 
 	political_dancer = {
 		random = no
-		political_power_factor = 0.1
+		political_power_gain = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -411,7 +411,7 @@ leader_traits = {
 
 	permanent_revolutionary = {
 		random = no
-		political_power_factor = -0.15
+		political_power_gain = -0.15
 		justify_war_goal_time = 0.15
 		subversive_activites_upkeep = -0.3
 		
@@ -496,7 +496,7 @@ leader_traits = {
 	silent_workhorse = {
 		random = yes
 		sprite = 13
-		political_power_factor = 0.1
+		political_power_gain = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -534,7 +534,7 @@ leader_traits = {
 	
 	backroom_backstabber = {
 		sprite = 13
-		political_power_factor = 0.05
+		political_power_gain = 0.05
 		drift_defence_factor = 0.15
 		
 		ai_will_do = {
@@ -1313,7 +1313,7 @@ leader_traits = {
 	army_chief_old_guard = { # Rate at which field experience is gained decreases by 10%
 		sprite = 5 # Should not need sprite, should mostly be secondary
 		experience_gain_army_factor = -0.1
-		political_power_factor = 0.1
+		political_power_gain = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1791,7 +1791,7 @@ leader_traits = {
 	air_chief_old_guard = {
 		sprite = 1
 		experience_gain_air_factor = -0.1
-		political_power_factor = 0.1
+		political_power_gain = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -2247,7 +2247,7 @@ leader_traits = {
 	navy_chief_old_guard = {
 		sprite = 3
 		experience_gain_navy_factor = -0.1
-		political_power_factor = 0.1
+		political_power_gain = 0.1
 		
 		ai_will_do = {
 			factor = 1

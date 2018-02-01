@@ -3,7 +3,7 @@
 oob = "RAJ_1950"
 set_research_slots = 2
 set_convoys = 110
-set_national_unity = 0.55
+set_national_unity = 0.4
 
 1950.1.1 = {
 	
@@ -15,6 +15,9 @@ set_national_unity = 0.55
 		#ideas
 		RAJ_agrarian_society
 		RAJ_quit_india_movement
+		RAJ_banking_issues
+		RAJ_liquat_nehru_pact
+		RAJ_trade_issues_POR_FRA_ENG
 	}
 	set_politics = {
 

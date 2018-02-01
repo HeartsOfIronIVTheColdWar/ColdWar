@@ -392,7 +392,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DDR_Unification_of_socialism
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_focus_workers_support
 		cost = 10
 		prerequisite = {
 			focus = DDR_status_quo
@@ -858,7 +858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DDR_indoctrination
-		icon = GFX_focus_generic_socialist_science
+		icon = GFX_focus_focus_communist_science
 		cost = 10
 		available = {
 			date > 1956.1.1
