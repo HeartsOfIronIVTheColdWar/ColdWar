@@ -165,14 +165,14 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=0 y =200}
+		position = { x= -107 y = -94}
 		size = { width = 320 height = 395}
-		Orientation = left
-		Origo = upper_left		
+		Orientation = CENTER
+		Origo = center		
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 5 y = 17 }
+			position = { x = 5 y = 18 }
 			spriteType = "GFX_singleplayer_logo"
 			font = "hoi_36header"			
 			text = ""				
@@ -190,20 +190,6 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
-#		instantTextBoxType = {
-#
-#			name ="version_label"
-#			position = { x = 35 y = 356 }
-#			textureFile = ""
-#			font = "hoi_18b"
-#			borderSize = {x = 0 y = 0}
-#			text = "ALPHA"	
-#			format = centre
-#			maxWidth = 250
-#			maxHeight = 20	
-#		}
-		
-		
 		ButtonType = {
 			name = "settings_button"
 			position = { x = -12 y = 232 }
@@ -213,7 +199,6 @@ guiTypes = {
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
-
 		
 		ButtonType = {
 			name = "exit_button"
@@ -223,11 +208,11 @@ guiTypes = {
 			text = ""			
 			clicksound = click_default
 			oversound = ui_menu_over
-			
 		}
+		
 		ButtonType = {
 			name = "coop_button"
-			position = { x = 16 y = 446 }
+			position = { x = 16 y = 440 }
 			spriteType = "GFX_coop_logo"
 			clicksound = click_default
 			pdx_tooltip = "Click here to go to the Coop Steam Group"
@@ -235,7 +220,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "discord_button"
-			position = { x = 20 y = 570 }
+			position = { x = 417 y = 339 }
 			spriteType = "GFX_discord_logo"
 			clicksound = click_default
 			pdx_tooltip = ""

@@ -5,16 +5,6 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
-		artillery_brigade = { x = 3 y = 0 } #Line artillery instead of support artillery since 3x artillery company = 1x artillery battalion
 	}
 	support = {
 	}
@@ -27,7 +17,6 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -133,6 +122,76 @@ units = {
 	division= {			
 		name = "803 Rgt."		
 		location = 1302
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Dong Nai Rgt."		
+		location = 4379
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "300 Rgt."		
+		location = 4334
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "950 Rgt."		
+		location = 1300
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Cuu Long Rgt."		
+		location = 10180
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Tay Do Rgt."		
+		location = 7229
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Dong Nai Rgt."		
+		location = 4379
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "300 Rgt."		
+		location = 4334
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "950 Rgt."		
+		location = 1300
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Cuu Long Rgt."		
+		location = 10180
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "Tay Do Rgt."		
+		location = 7229
 		division_template = "Infantry Regiment"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1

@@ -17,24 +17,53 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 23
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 70
-				banned = no
-			}
-			
-			communism = {
-				popularity = 7
+			liberalism = { 
+				popularity = 6
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 94
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = autocratic
-		last_election = "1950.1.1"
+		ruling_party = social_democracy
+		last_election = "1949.7.3"
 		election_frequency = 48
 		elections_allowed = no
 	}
@@ -43,7 +72,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Mexico_Miguel_Aleman_Valdes.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = socialist
 	traits = {
 		#
 	}
@@ -81,7 +110,7 @@ set_national_unity = 0.55
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -91,7 +120,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -128,7 +157,7 @@ set_national_unity = 0.55
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -138,7 +167,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -176,7 +205,7 @@ set_national_unity = 0.55
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -186,7 +215,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}

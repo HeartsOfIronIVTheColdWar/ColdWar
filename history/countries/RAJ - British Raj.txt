@@ -35,7 +35,7 @@ set_national_unity = 0.4
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = liberalism
 		last_election = "1935.11.14"
 		election_frequency = 48
 		elections_allowed = no
@@ -45,7 +45,7 @@ set_national_unity = 0.4
 		desc = "POLITICS_B_P_SITARAMAYYA_DESC"
 		picture = gfx/leaders/RAJ/Portrait_India_Jawaharlal_Nehru.dds
 		expire = "1965.1.1"
-		ideology = socialism
+		ideology = marxism_leninism
 		traits = {
 		}
 	}
@@ -82,7 +82,7 @@ set_national_unity = 0.4
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -92,7 +92,7 @@ set_national_unity = 0.4
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -129,7 +129,7 @@ set_national_unity = 0.4
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -139,7 +139,7 @@ set_national_unity = 0.4
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -177,7 +177,7 @@ set_national_unity = 0.4
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -187,7 +187,7 @@ set_national_unity = 0.4
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}

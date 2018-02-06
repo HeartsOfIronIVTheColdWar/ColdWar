@@ -19,35 +19,66 @@ set_national_unity = 0.85
 	}
 	set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
+		parties = {
+			liberalism = { 
+				popularity = 50
+				#banned = no #default is no
+			}
 
-		autocratic = {
-			popularity = 1
-		}
+			conservatism = {
+				popularity = 46
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 2
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 1
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 1
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
 		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
 		}
-	}
 	
-	ruling_party = democratic
-	last_election = "1948.11.2"
-	election_frequency = 48
-	elections_allowed = yes
+		ruling_party = liberalism
+		last_election = "1948.11.2"
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	create_country_leader = {
-	name = "Harry S. Truman"
-	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Harry_Truman.dds"
-	expire = "1999.1.1"
-	ideology = liberalism
-	traits = {
-		anti_communist
-	}
+		create_country_leader = {
+		name = "Harry S. Truman"
+		desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+		picture = "Portrait_USA_Harry_Truman.dds"
+		expire = "1999.1.1"
+		ideology = democrat
+		traits = {
+			anti_communist
+		}
 	}
 	#NATO
 	puppet = JAP
@@ -132,23 +163,52 @@ set_national_unity = 0.85
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
+			liberalism = { 
+				popularity = 50
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 46
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 2
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 1
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 1
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = communism
+		ruling_party = liberalism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -158,7 +218,7 @@ set_national_unity = 0.85
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -179,23 +239,53 @@ set_national_unity = 0.85
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
+			liberalism = { 
+				popularity = 50
 				#banned = no #default is no
 			}
-		}
+
+			conservatism = {
+				popularity = 46
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 2
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 1
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 1
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
 		
-		ruling_party = communism
+		}
+
+		
+		ruling_party = liberalism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -205,7 +295,7 @@ set_national_unity = 0.85
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -227,23 +317,52 @@ set_national_unity = 0.85
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
+			liberalism = { 
+				popularity = 50
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 46
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 2
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 1
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 1
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = communism
+		ruling_party = liberalism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -253,7 +372,7 @@ set_national_unity = 0.85
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}

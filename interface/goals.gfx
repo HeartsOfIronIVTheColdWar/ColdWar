@@ -65,6 +65,10 @@ spriteTypes = {
 	name = "GFX_focus_generic_concessions"
 	texturefile = "gfx/interface/goals/focus_generic_concessions.dds"			
 	}
+	SpriteType = {
+	name = "GFX_focus_goal_Soviet_Rocketry"
+	texturefile = "gfx/interface/goals/Soviet_Rocketry.dds"			
+	}
 	###Vietnam###
 	SpriteType = {
 		name = "GFX_focus_goal_split_vietnam"

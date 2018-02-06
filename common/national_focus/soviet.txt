@@ -1217,7 +1217,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_ICBM
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_goal_Soviet_Rocketry
 		cost = 10
 		prerequisite = {
 			focus = SOV_Socialist_Science

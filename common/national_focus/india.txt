@@ -54,35 +54,60 @@ focus_tree = {
 		x = 8
 		y = 3
 		completion_reward = {
-			add_political_power = -150
-			IF = {
-				has_idea = RAJ_trade_issues_POR_FRA_ENG
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_POR_FRA_ENG
-					add_idea = RAJ_trade_issues_POR_FRA
+			add_political_power = -150	
+			if = {
+				limit = {
+					RAJ = {
+						has_idea = RAJ_trade_issues_POR_FRA_ENG
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+						remove_idea = RAJ_trade_issues_POR_FRA_ENG
+						add_idea = RAJ_trade_issues_POR_FRA
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							RAJ = {
+								has_idea = RAJ_trade_issues_POR_ENG
+							}
+						}
+						RAJ = {
+							swap_ideas = {
+								remove_idea = RAJ_trade_issues_POR_ENG
+								add_idea = RAJ_trade_issues_POR
+							}
+						}
+						else = {
+							if = {
+								limit = {
+									RAJ = {
+										has_idea = RAJ_trade_issues_FRA_ENG
+									}
+								}
+								RAJ = {
+									swap_ideas = {
+										remove_idea = RAJ_trade_issues_FRA_ENG
+										add_idea = RAJ_trade_issues_FRA
+									}
+								}
+								else = {
+									limit = {
+										RAJ = {
+											has_idea = RAJ_trade_issues_ENG
+										}
+									}
+									RAJ = {
+										remove_ideas = RAJ_trade_issues_ENG
+									}
+								}
+							}
+						}
+					}
 				}
 			}
-			break
-			IF = {
-				has_idea = RAJ_trade_issues_FRA_ENG
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_FRA_ENG
-					add_idea = RAJ_trade_issues_FRA
-				}
-			}
-			break
-			IF = {
-				has_idea = RAJ_trade_issues_POR_ENG
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_POR_ENG
-					add_idea = RAJ_trade_issues_POR
-				}
-			}
-			break			
-			IF = {
-				has_idea = RAJ_trade_issues_ENG
-				remove_ideas = RAJ_trade_issues_ENG
-			}	
 			hidden_effect = {
 				ENG = {
 					country_event = { days = 1 id = india.1 }
@@ -104,34 +129,59 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_political_power = -75
-			IF = {
-				has_idea = RAJ_trade_issues_POR_FRA_ENG
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_POR_FRA_ENG
-					add_idea = RAJ_trade_issues_POR_ENG
+			if = {
+				limit = {
+					RAJ = {
+						has_idea = RAJ_trade_issues_POR_FRA_ENG
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+						remove_idea = RAJ_trade_issues_POR_FRA_ENG
+						add_idea = RAJ_trade_issues_POR_ENG
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							RAJ = {
+								has_idea = RAJ_trade_issues_FRA_ENG
+							}
+						}
+						RAJ = {
+							swap_ideas = {
+								remove_idea = RAJ_trade_issues_FRA_ENG
+								add_idea = RAJ_trade_issues_ENG
+							}
+						}
+						else = {
+							if = {
+								limit = {
+									RAJ = {
+										has_idea = RAJ_trade_issues_POR_FRA
+									}
+								}
+								RAJ = {
+									swap_ideas = {
+										remove_idea = RAJ_trade_issues_POR_FRA
+										add_idea = RAJ_trade_issues_POR
+									}
+								}
+								else = {
+									limit = {
+										RAJ = {
+											has_idea = RAJ_trade_issues_FRA
+										}
+									}
+									RAJ = {
+										remove_ideas = RAJ_trade_issues_FRA
+									}
+								}
+							}
+						}
+					}
 				}
 			}
-			break
-			IF = {
-				has_idea = RAJ_trade_issues_FRA_ENG
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_FRA_ENG
-					add_idea = RAJ_trade_issues_ENG
-				}
-			}
-			break
-			IF = {
-				has_idea = RAJ_trade_issues_POR_FRA
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_POR_ENG
-					add_idea = RAJ_trade_issues_POR
-				}
-			}
-			break			
-			IF = {
-				has_idea = RAJ_trade_issues_FRA
-				remove_ideas = RAJ_trade_issues_FRA
-			}	
 			hidden_effect = {
 				FRA = {
 					country_event = { days = 1 id = india.3 }
@@ -153,34 +203,59 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_political_power = -75
-			IF = {
-				has_idea = RAJ_trade_issues_POR_FRA_ENG
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_POR_FRA_ENG
-					add_idea = RAJ_trade_issues_FRA_ENG
+			if = {
+				limit = {
+					RAJ = {
+						has_idea = RAJ_trade_issues_POR_FRA_ENG
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+						remove_idea = RAJ_trade_issues_POR_FRA_ENG
+						add_idea = RAJ_trade_issues_FRA_ENG
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							RAJ = {
+								has_idea = RAJ_trade_issues_POR_ENG
+							}
+						}
+						RAJ = {
+							swap_ideas = {
+								remove_idea = RAJ_trade_issues_POR_ENG
+								add_idea = RAJ_trade_issues_ENG
+							}
+						}
+						else = {
+							if = {
+								limit = {
+									RAJ = {
+										has_idea = RAJ_trade_issues_POR_FRA
+									}
+								}
+								RAJ = {
+									swap_ideas = {
+										remove_idea = RAJ_trade_issues_POR_FRA
+										add_idea = RAJ_trade_issues_FRA
+									}
+								}
+								else = {
+									limit = {
+										RAJ = {
+											has_idea = RAJ_trade_issues_POR
+										}
+									}
+									RAJ = {
+										remove_ideas = RAJ_trade_issues_POR
+									}
+								}
+							}
+						}
+					}
 				}
 			}
-			break
-			IF = {
-				has_idea = RAJ_trade_issues_POR_ENG
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_POR_ENG
-					add_idea = RAJ_trade_issues_ENG
-				}
-			}
-			break
-			IF = {
-				has_idea = RAJ_trade_issues_POR_FRA
-				swap_ideas = {
-					remove_idea = RAJ_trade_issues_POR_FRA
-					add_idea = RAJ_trade_issues_FRA
-				}
-			}
-			break			
-			IF = {
-				has_idea = RAJ_trade_issues_POR
-				remove_ideas = RAJ_trade_issues_POR
-			}	
 			hidden_effect = {
 				POR = {
 					country_event = { days = 1 id = india.5 }

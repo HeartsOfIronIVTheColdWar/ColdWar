@@ -17,23 +17,52 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 35
-				banned = no
+			liberalism = { 
+				popularity = 100
+				#banned = no #default is no
 			}
 
-			autocratic = {
-				popularity = 65
-				banned = no
-			}
-			
-			communism = {
+			conservatism = {
 				popularity = 0
 				#banned = no #default is no
 			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = autocratic 
+		ruling_party = dictatorship 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
@@ -81,7 +110,7 @@ set_national_unity = 0.55
 			}
 		}
 		
-		ruling_party = autocratic 
+		ruling_party = dictatorship 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
@@ -128,7 +157,7 @@ set_national_unity = 0.55
 			}
 		}
 		
-		ruling_party = autocratic 
+		ruling_party = dictatorship 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no
@@ -176,7 +205,7 @@ set_national_unity = 0.55
 			}
 		}
 		
-		ruling_party = autocratic 
+		ruling_party = dictatorship 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no

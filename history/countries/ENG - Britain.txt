@@ -20,20 +20,52 @@ set_national_unity = 0.85
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 95
+			liberalism = { 
+				popularity = 12
+				#banned = no #default is no
 			}
 
-			autocratic = {
-				popularity = 1
+			conservatism = {
+				popularity = 36
+				#banned = no #default is no
 			}
 			
-			communism = {
-				popularity = 4
+			social_democracy = {
+				popularity = 48
+				#banned = no #default is no
 			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 1
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 3
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = democratic
+		ruling_party = social_democracy
 		last_election = "1945.7.5"
 		election_frequency = 60
 		elections_allowed = yes 
@@ -147,7 +179,7 @@ set_national_unity = 0.85
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+
 	}
 	}
 	create_country_leader = {
@@ -155,7 +187,7 @@ set_national_unity = 0.85
 		desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
 		picture = "Portrait_Britain_Clement_Atlee.dds"
 		expire = "1965.1.1"
-		ideology = liberalism
+		ideology = labour
 		traits = {
 			silent_workhorse
 		}
@@ -204,7 +236,7 @@ set_national_unity = 0.85
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -214,7 +246,7 @@ set_national_unity = 0.85
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -251,7 +283,7 @@ set_national_unity = 0.85
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -261,7 +293,7 @@ set_national_unity = 0.85
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -299,7 +331,7 @@ set_national_unity = 0.85
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -309,7 +341,7 @@ set_national_unity = 0.85
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}

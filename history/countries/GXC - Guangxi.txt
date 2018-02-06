@@ -11,22 +11,52 @@ set_convoys = 0
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
+		parties = {
+			liberalism = { 
+				popularity = 100
+				#banned = no #default is no
+			}
 
-		autocratic = {
-			popularity = 100
-		}
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
 		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
 		}
-		
-	}
-	ruling_party = autocratic
+	ruling_party = dictatorship
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no

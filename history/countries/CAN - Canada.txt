@@ -30,24 +30,53 @@ if = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 93
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 4
-				banned = no
-			}
-			
-			communism = {
-				popularity = 3
+			liberalism = { 
+				popularity = 49
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 37
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 14
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authorian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = democratic 
-		last_election = "1950.1.1"
+		ruling_party = liberalism 
+		last_election = "1949.6.27"
 		election_frequency = 48
 		elections_allowed = yes
 	}
@@ -56,7 +85,7 @@ if = {
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Canada_Louis_St_Laurent.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal
 	traits = {
 		#
 	}
@@ -94,7 +123,7 @@ if = {
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -104,7 +133,7 @@ if = {
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -141,7 +170,7 @@ if = {
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -151,7 +180,7 @@ if = {
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}
@@ -189,7 +218,7 @@ if = {
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -199,7 +228,7 @@ if = {
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}

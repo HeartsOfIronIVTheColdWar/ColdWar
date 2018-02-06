@@ -474,35 +474,4 @@ ideas = {
 		}
 	}
 
-# Growth in the cities #
-
-	country = {
-		can_growth_c = {
-			allowed = {
-				always = np
-			}
-			removal_cost = -1
-
-			modifier = {
-				MONTHLY_POPULATION = 0.05
-			}
-		}
-	}
-
-# Growth in the prairies #
-
-	country = {
-		can_growth_p = {
-			allowed = {
-				always = np
-			}
-			removal_cost = -1
-
-			modifier = {
-				MONTHLY_POPULATION = 0.03
-				local_resources_factor = 0.025
-			}
-		}
-	}
-
 }
