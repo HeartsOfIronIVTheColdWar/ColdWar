@@ -18,17 +18,17 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 39
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 24
 				#banned = no #default is no
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 37
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -41,7 +41,7 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -72,7 +72,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = marxism_leninism
+	ideology = federal_council
 	traits = {
 		#
 	}

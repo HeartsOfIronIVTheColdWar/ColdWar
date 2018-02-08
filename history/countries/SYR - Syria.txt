@@ -19,7 +19,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 7
 				#banned = no #default is no
 			}
 
@@ -42,7 +42,7 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -57,23 +57,23 @@ set_national_unity = 0.55
 			}
 			
 			junta = {
-				popularity = 0
+				popularity = 93
 				#banned = no #default is no
 			}
 		
 		}
 		
-		ruling_party = dictatorship
+		ruling_party = junta
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Husni al-Za'im"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = junta
 	traits = {
 		#
 	}

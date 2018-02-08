@@ -206,8 +206,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-        add_popularity = { ideology = autocratic popularity = 0.15 }
-        set_party_name = { ideology = autocratic long_name = Norwegian_Royal_Party name = NRP } 
+        add_popularity = { ideology = monarchism popularity = 0.15 }
+        set_party_name = { ideology = monarchism long_name = Norwegian_Royal_Party name = NRP } 
 		}
 	}
 

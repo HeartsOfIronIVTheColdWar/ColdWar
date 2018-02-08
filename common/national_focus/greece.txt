@@ -435,7 +435,9 @@ focus_tree = {
 			factor = 0
 		}	
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.15 }
+			add_popularity = { ideology = liberalism popularity = 0.08 }
+			add_popularity = { ideology = conservatism popularity = 0.08 }
+			add_popularity = { ideology = social_democracy popularity = 0.05 }
 		}
 
 	}
@@ -454,7 +456,7 @@ focus_tree = {
 			factor = 0
 		}	
 		completion_reward = {
-			set_politics = { ruling_party = democratic elections_allowed = yes }
+			set_politics = { ruling_party = liberalism elections_allowed = yes }
 		}
 
 	}
@@ -547,7 +549,7 @@ focus_tree = {
 		y = 2
 		
 		completion_reward = {
-			add_popularity = { ideology = autocratic popularity = 0.15 }
+			add_popularity = { ideology = monarchism popularity = 0.15 }
 		}
 
 	}
@@ -564,7 +566,7 @@ focus_tree = {
 		y = 3
 		
 		completion_reward = {
-			set_politics = { ruling_party = autocratic elections_allowed = no }
+			set_politics = { ruling_party = monarchism elections_allowed = no }
 		}
 
 	}

@@ -30,7 +30,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 0
 				#banned = no #default is no
 			}
 
@@ -49,12 +49,12 @@ set_national_unity = 0.55
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 12
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
-				popularity = 0
+			authoritarian_socialism = {
+				popularity = 88
 				#banned = no #default is no
 			}
 			monarchism = { 
@@ -74,7 +74,7 @@ set_national_unity = 0.55
 		
 		}
 	
-	ruling_party = marxism_leninism
+	ruling_party = authoritarian_socialism
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -84,7 +84,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MAO_ZEDONG_DESC"
 	picture = "gfx/leaders/PRC/Portrait_China_Mao_Zedong_Old.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = maoism
 	traits = {
 		Great_Leader
 	}

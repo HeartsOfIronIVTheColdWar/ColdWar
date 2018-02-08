@@ -50,7 +50,7 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -60,7 +60,7 @@ set_national_unity = 0.55
 			}
 
 			dictatorship = {
-				popularity = 0
+				popularity = 100
 				#banned = no #default is no
 			}
 			

@@ -18,17 +18,17 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 0
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 52
 				#banned = no #default is no
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 47
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -37,11 +37,11 @@ set_national_unity = 0.55
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 1
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -62,7 +62,7 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = conservatism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -72,7 +72,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_New_Zealand_Sidney_Holland.dds"
 	expire = "1965.1.1"
-	ideology = marxism_leninism
+	ideology = conservative
 	traits = {
 		#
 	}

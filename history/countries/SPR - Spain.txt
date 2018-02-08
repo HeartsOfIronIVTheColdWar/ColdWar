@@ -18,7 +18,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 0
 				#banned = no #default is no
 			}
 
@@ -41,7 +41,7 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -51,12 +51,12 @@ set_national_unity = 0.55
 			}
 
 			dictatorship = {
-				popularity = 0
+				popularity = 56
 				#banned = no #default is no
 			}
 			
 			junta = {
-				popularity = 0
+				popularity = 44
 				#banned = no #default is no
 			}
 		

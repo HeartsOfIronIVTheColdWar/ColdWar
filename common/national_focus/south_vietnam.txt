@@ -305,7 +305,7 @@ focus_tree = {
 			add_political_power = 150
 			add_national_unity = 0.05
 			set_party_name = { 
-				ideology = autocratic long_name = "Personalist Labor Revolutionary Party" name = "Can Lao"
+				ideology = dictatorship long_name = "Personalist Labor Revolutionary Party" name = "Can Lao"
 			}
 			retire_country_leader = yes
 			create_country_leader = {

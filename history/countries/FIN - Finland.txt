@@ -21,17 +21,17 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 26
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 26
 				#banned = no #default is no
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 28
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -40,11 +40,11 @@ set_national_unity = 0.55
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 20
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -65,7 +65,7 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = social_democracy
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -75,7 +75,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Finland_Juho_Kusti_Paasikivi.dds"
 	expire = "1986.8.31"
-	ideology = liberalism
+	ideology = liberal
 	traits = {
 		#
 	}

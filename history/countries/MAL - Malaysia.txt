@@ -19,7 +19,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 0
 				#banned = no #default is no
 			}
 
@@ -33,21 +33,21 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			radical_socialism = { 
-				popularity = 0
+				popularity = 8
 				#banned = no #default is no
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 18
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 			monarchism = { 
-				popularity = 0
+				popularity = 50
 				#banned = no #default is no
 			}
 
@@ -57,13 +57,13 @@ set_national_unity = 0.55
 			}
 			
 			junta = {
-				popularity = 0
+				popularity = 24
 				#banned = no #default is no
 			}
 		
 		}
 		
-		ruling_party = dictatorship
+		ruling_party = monarchism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -73,7 +73,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Malaysia_Chin_Peng.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = colonial_ruler
 	traits = {
 		#
 	}

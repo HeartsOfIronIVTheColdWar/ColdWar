@@ -811,7 +811,12 @@ focus_tree = {
 			focus = lean_USA
 		}
 		available = {
-			NOT = { has_government = democratic }
+			OR = {
+				NOT = { has_government = liberalism }
+				NOT = { has_government = conservatism }
+				NOT = { has_government = social_democracy }
+			}
+			
 			NOT = { is_subject = yes }
 		}
 		completion_reward = {
@@ -937,7 +942,13 @@ focus_tree = {
 			focus = lean_SOV
 		}
 		available = {
-			NOT = { has_government = communism }
+			NOT = { 
+				OR = {
+					has_government = radical_socialism 
+					has_government = marxism_leninism 
+					has_government = authoritarian_socialism 
+				}
+			}		
 			NOT = { is_subject = yes }
 		}
 		completion_reward = {

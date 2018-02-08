@@ -22,20 +22,52 @@ set_national_unity = 0.4
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 78
+			liberalism = { 
+				popularity = 15
+				#banned = no #default is no
 			}
 
-			autocratic = {
-				popularity = 4
+			conservatism = {
+				popularity = 63
+				#banned = no #default is no
 			}
 			
-			communism = {
-				popularity = 18
+			social_democracy = {
+				popularity = 11
+				#banned = no #default is no
 			}
+			radical_socialism = { 
+				popularity = 3
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 8
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = conservatism
 		last_election = "1935.11.14"
 		election_frequency = 48
 		elections_allowed = no
@@ -45,7 +77,7 @@ set_national_unity = 0.4
 		desc = "POLITICS_B_P_SITARAMAYYA_DESC"
 		picture = gfx/leaders/RAJ/Portrait_India_Jawaharlal_Nehru.dds
 		expire = "1965.1.1"
-		ideology = marxism_leninism
+		ideology = nationalist
 		traits = {
 		}
 	}

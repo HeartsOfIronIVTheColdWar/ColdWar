@@ -20,7 +20,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 0
 				#banned = no #default is no
 			}
 
@@ -43,8 +43,8 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
-				popularity = 0
+			authoritarian_socialism = {
+				popularity = 100
 				#banned = no #default is no
 			}
 			monarchism = { 
@@ -64,7 +64,7 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = marxism_leninism 
+		ruling_party = authoritarian_socialism 
 		last_election = "1948.4.12"
 		election_frequency = 48
 		elections_allowed = no

@@ -18,12 +18,12 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 1
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 99
 				#banned = no #default is no
 			}
 			
@@ -41,7 +41,7 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -62,17 +62,17 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = dictatorship
+		ruling_party = conservatism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	create_country_leader = {
-	name = "Michael Joseph Savage"
+	name = "Juan Manuel Gálvez"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = nationalist
 	traits = {
 		#
 	}

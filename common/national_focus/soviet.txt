@@ -96,8 +96,13 @@ focus_tree = {
 		x = 22
 		y = 0
 		available = {
-			has_government = communism 
-			has_global_flag = SOV_spies_selling_nukes
+			AND = {
+				OR = {
+					has_government = marxism_leninism 
+					has_government = authoritarian_socialism 
+				}
+				has_global_flag = SOV_spies_selling_nukes
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = SOV_spies_safety
@@ -579,11 +584,19 @@ focus_tree = {
 		y = 1
 		available = {
 			is_puppet = no
-			has_government = communism 
+			OR = {
+				has_government = marxism_leninism
+				has_government = authoritarian_socialism
+			}
 			PRC = {
-				NOT = { has_war_with = SOV }
-				has_government = communism 
-				NOT = { is_in_faction_with = USA }
+				AND = {
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
+					NOT = { has_war_with = SOV }
+					NOT = { is_in_faction_with = USA }
+				}
 			}
 #			custom_effect_tooltip = PRC_Mao_Discontent_tt
 		}
@@ -601,10 +614,18 @@ focus_tree = {
 			focus = SOV_Sinosoviet_Alliance
 		}
 		available = {
-			has_government = communism 
+			OR = {
+				has_government = marxism_leninism  
+				has_government = authoritarian_socialism 
+			}
 			PRC = {
-				NOT = { has_war_with = SOV }
-				has_government = communism  
+				AND = {
+					NOT = { has_war_with = SOV }
+					OR = {
+						has_government = marxism_leninism  
+						has_government = authoritarian_socialism 
+					}
+				}
 			}
 			OR = {
 				has_global_flag = PRC_Civil_war_ended 
@@ -661,7 +682,10 @@ focus_tree = {
 		available = {
 			PRC = {
 				AND = {
-					has_government = communism
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
 					has_opinion = { target = SOV value > 99 }
 					has_idea = sino_soviet_military_defense_pact
 				}
@@ -1971,7 +1995,10 @@ focus_tree = {
 		available = {
 			RAJ = {
 				AND = {
-					has_government = communism
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
 					has_opinion = { target = SOV value > 99 }
 					has_global_flag = india_accepted_soviet_developement
 				 }

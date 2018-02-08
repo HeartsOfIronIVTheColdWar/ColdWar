@@ -188,7 +188,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			add_popularity = { ideology = autocratic popularity = 0.1 }
+			add_popularity = { ideology = junta popularity = 0.1 }
 		}
 	}
 	focus = {
@@ -277,7 +277,9 @@ focus_tree = {
 		x = 6
 		y = 1
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.1 }
+			add_popularity = { ideology = liberalism popularity = 0.03 }
+			add_popularity = { ideology = conservatism popularity = 0.03 }
+			add_popularity = { ideology = social_democracy popularity = 0.03 }
 		}
 	}
 	focus = {
@@ -305,7 +307,15 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			add_popularity = {
-				ideology = communism
+				ideology = authoritarian_socialism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = marxism_leninism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = radical_socialism
 				popularity = -1
 			}
 			add_ideas = FRA_communism_banned
@@ -345,7 +355,8 @@ focus_tree = {
 		x = 4
 		y = 1
 		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.1 }
+			add_popularity = { ideology = radical_socialism popularity = 0.05 }
+			add_popularity = { ideology = marxism_leninism popularity = 0.05 }
 		}
 	}
 	focus = {

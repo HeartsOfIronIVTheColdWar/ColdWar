@@ -19,7 +19,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 25
 				#banned = no #default is no
 			}
 
@@ -42,12 +42,12 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
-				popularity = 0
+			authoritarian_socialism = {
+				popularity = 61
 				#banned = no #default is no
 			}
 			monarchism = { 
-				popularity = 0
+				popularity = 14
 				#banned = no #default is no
 			}
 
@@ -63,7 +63,7 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = marxism_leninism
+		ruling_party = authoritarian_socialism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -73,7 +73,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
 	picture = "Portrait_Romania_Constantin_Parhon.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = stalinism
 	traits = {
 		stalins_puppet
 	}

@@ -19,23 +19,52 @@ set_national_unity = 0.4
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 35
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 55
-				banned = no
-			}
-			
-			communism = {
-				popularity = 10
+			liberalism = { 
+				popularity = 0
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 16
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 24
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 60
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = dictatorship
+		ruling_party = junta
 		last_election = "1948.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -45,7 +74,7 @@ set_national_unity = 0.4
 	desc = "POLITICS_KHAWAJA_NAZIMUDDIN_DESC"
 	picture = "Portrait_Pakistan_Khawaja_Nazimuddin.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = governor_general
 	traits = {
 		#
 	}

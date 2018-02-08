@@ -15,7 +15,7 @@ set_national_unity = 0.8
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 12
 				#banned = no #default is no
 			}
 
@@ -34,12 +34,12 @@ set_national_unity = 0.8
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 67
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
-				popularity = 0
+			authoritarian_socialism = {
+				popularity = 21
 				#banned = no #default is no
 			}
 			monarchism = { 

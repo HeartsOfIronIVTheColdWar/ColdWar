@@ -159,7 +159,11 @@ focus_tree = {
 				}
 			available = {
 					ITA = {
-							has_government = democratic
+							OR = {
+								has_government = liberalism
+								has_government = conservatism
+								has_government = social_democracy
+							}
 						}
 				}
 

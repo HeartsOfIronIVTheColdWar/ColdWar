@@ -72,7 +72,7 @@ set_national_unity = 0.8
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 72
 				#banned = no #default is no
 			}
@@ -93,7 +93,7 @@ set_national_unity = 0.8
 		
 		}
 	
-	ruling_party = authorian_socialism
+	ruling_party = authoritarian_socialism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no

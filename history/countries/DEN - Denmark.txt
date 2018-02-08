@@ -20,17 +20,17 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 35
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 18
 				#banned = no #default is no
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 40
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -39,11 +39,11 @@ set_national_unity = 0.55
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 7
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -64,7 +64,7 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = liberalism 
+		ruling_party = social_democracy 
 		last_election = "1947.11.113"
 		election_frequency = 48
 		elections_allowed = yes
@@ -74,7 +74,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Denmark_Hans_Hedtoft.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = labour
 	traits = {
 		#
 	}

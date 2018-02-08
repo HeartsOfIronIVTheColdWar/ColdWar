@@ -23,7 +23,7 @@ set_national_unity = 0.80
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 0
 				#banned = no #default is no
 			}
 
@@ -46,28 +46,28 @@ set_national_unity = 0.80
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 			monarchism = { 
-				popularity = 0
+				popularity = 32
 				#banned = no #default is no
 			}
 
 			dictatorship = {
-				popularity = 0
+				popularity = 23
 				#banned = no #default is no
 			}
 			
 			junta = {
-				popularity = 0
+				popularity = 45
 				#banned = no #default is no
 			}
 		
 		}
 		
-		ruling_party = dictatorship
+		ruling_party = junta
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -76,7 +76,7 @@ set_national_unity = 0.80
 		name = "Bao Dai"
 		desc = "POLITICS_BAO_DAI_DESC"
 		picture = "gfx/leaders/SVN/svn_bao_dai.dds"
-		ideology = despotism
+		ideology = junta
 	}
 	set_technology = {
 		gw_artillery = 1

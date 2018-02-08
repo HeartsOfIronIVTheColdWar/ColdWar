@@ -19,17 +19,17 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 23
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 24
 				#banned = no #default is no
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 36
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -38,11 +38,11 @@ set_national_unity = 0.55
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 17
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -63,7 +63,7 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = social_democracy
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -73,7 +73,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Israel_David_Gurion.dds"
 	expire = "1965.1.1"
-	ideology = marxism_leninism
+	ideology = socialist
 	traits = {
 		#
 	}

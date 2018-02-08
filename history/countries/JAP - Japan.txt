@@ -19,17 +19,17 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 7
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 4
 				#banned = no #default is no
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 8
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -42,12 +42,12 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 			monarchism = { 
-				popularity = 0
+				popularity = 30
 				#banned = no #default is no
 			}
 
@@ -57,13 +57,13 @@ set_national_unity = 0.55
 			}
 			
 			junta = {
-				popularity = 0
+				popularity = 51
 				#banned = no #default is no
 			}
 		
 		}
 	
-		ruling_party = liberalism
+		ruling_party = junta
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -75,153 +75,9 @@ set_national_unity = 0.55
 		expire = "1964.1.1"
 		ideology = occupation_government
 		traits = {
-			#
 			iron_grip
 		}
 	}
 	set_technology = {
-	}
-}
-
-1960.1.1 = {
-	
-	oob = "JAP_1960"
-	add_ideas = {
-		#laws
-		low_economic_mobilisation
-		limited_conscription
-		#ideas
-	}
-
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = marxism_leninism
-		last_election = "1950.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
-	set_technology = { naval_stipulations = 1
-	}
-}
-
-1970.1.1 = {
-	
-	oob = "JAP_1970"
-	add_ideas = {
-		#laws
-		low_economic_mobilisation
-		limited_conscription
-		#ideas
-	}
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = marxism_leninism
-		last_election = "1950.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}	
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
-	set_technology = { naval_stipulations = 1
-	}
-}
-
-1980.1.1 = {
-	
-	oob = "JAP_1980"
-	add_ideas = {
-		#laws
-		low_economic_mobilisation
-		limited_conscription
-		#ideas
-	}
-
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = marxism_leninism
-		last_election = "1950.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
-	set_technology = { naval_stipulations = 1
 	}
 }

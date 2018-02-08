@@ -19,7 +19,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 16
 				#banned = no #default is no
 			}
 
@@ -29,7 +29,7 @@ set_national_unity = 0.55
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 84
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -42,7 +42,7 @@ set_national_unity = 0.55
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -63,7 +63,7 @@ set_national_unity = 0.55
 		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = social_democracy
 		last_election = "1948.1.1"
 		election_frequency = 48
 		elections_allowed = yes
@@ -73,7 +73,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_ISMET_INÖNÜ_DESC"
 	picture = "Portrait_Turkey_Ismet_Inonu.dds"
 	expire = "1965.1.1"
-	ideology = marxism_leninism
+	ideology = kemalist
 	traits = {
 		#
 	}

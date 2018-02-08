@@ -18,12 +18,12 @@ set_national_unity = 0.35
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 14
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 12
 				#banned = no #default is no
 			}
 			
@@ -32,7 +32,7 @@ set_national_unity = 0.35
 				#banned = no #default is no
 			}
 			radical_socialism = { 
-				popularity = 0
+				popularity = 20
 				#banned = no #default is no
 			}
 
@@ -41,12 +41,12 @@ set_national_unity = 0.35
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 			monarchism = { 
-				popularity = 0
+				popularity = 10
 				#banned = no #default is no
 			}
 
@@ -56,7 +56,7 @@ set_national_unity = 0.35
 			}
 			
 			junta = {
-				popularity = 0
+				popularity = 44
 				#banned = no #default is no
 			}
 		
@@ -72,7 +72,7 @@ set_national_unity = 0.35
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = marxism_leninism
+	ideology = liberal
 	traits = {
 		#
 	}

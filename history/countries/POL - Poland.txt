@@ -21,7 +21,7 @@ set_national_unity = 0.55
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 24
 				#banned = no #default is no
 			}
 
@@ -40,12 +40,12 @@ set_national_unity = 0.55
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 4
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
-				popularity = 0
+			authoritarian_socialism = {
+				popularity = 72
 				#banned = no #default is no
 			}
 			monarchism = { 
@@ -65,7 +65,7 @@ set_national_unity = 0.55
 		
 		}
 	
-	ruling_party = marxism_leninism
+	ruling_party = authoritarian_socialism
 	last_election = "1948.6.1"
 	election_frequency = 36
 	elections_allowed = no
@@ -75,7 +75,7 @@ set_national_unity = 0.55
 	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
 	picture = "Portrait_Poland_Boleslaw_Bierut.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = stalinism
 	traits = {
 		stalins_puppet
 	}

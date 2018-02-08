@@ -22,17 +22,17 @@ set_national_unity = 0.6
 
 		parties = {
 			liberalism = { 
-				popularity = 100
+				popularity = 46
 				#banned = no #default is no
 			}
 
 			conservatism = {
-				popularity = 0
+				popularity = 19
 				#banned = no #default is no
 			}
 			
 			social_democracy = {
-				popularity = 0
+				popularity = 29
 				#banned = no #default is no
 			}
 			radical_socialism = { 
@@ -41,11 +41,11 @@ set_national_unity = 0.6
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 6
 				#banned = no #default is no
 			}
 			
-			authorian_socialism = {
+			authoritarian_socialism = {
 				popularity = 0
 				#banned = no #default is no
 			}
@@ -76,7 +76,7 @@ set_national_unity = 0.6
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = christian_democrat
 	traits = {
 	}
 	}
