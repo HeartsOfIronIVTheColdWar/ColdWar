@@ -44,7 +44,8 @@ country_event = {
 	trigger = {
 		tag = CAN
 		AND = { 
-		has_completed_focus = CAN_address_strike }
+		has_completed_focus = CAN_address_strike 
+		}
 	}
 	
 	# GIVE IN
@@ -76,3 +77,141 @@ country_event = {
 		}	
 	}
 }
+
+## SLS ##
+
+country_event = {
+	id = canada.3
+	title = canada.3.t
+	desc = canada.3.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CAN
+		AND = {
+		has_completed_focus = CAN_st_lawrence_seaway
+		}
+	}
+
+	option = {
+		name = canada.3.a
+
+		USA = {
+			country_event = {
+				id = usa.10501
+				days = 2
+			}
+		}
+	}
+}
+
+# SLS fast
+
+country_event = {
+	id = canada.4
+	title = canada.4.t
+	desc = canada.4.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = canada.4.a
+
+		468 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+				}
+			add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes 
+				}	
+			add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes 
+				}		
+		}
+
+		276 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+				}
+		}		
+	}
+}
+
+# SLS slow
+
+country_event = {
+	id = canada.5
+	title = canada.5.t
+	desc = canada.5.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = canada.5.a
+		CAN = {
+			country_event = {
+				days = 100
+				id = canada.6
+			}
+		}
+	}
+}
+
+# SLS slow 2
+
+country_event = {
+	id = canada.6
+	title = canada.6.t
+	desc = canada.6.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = canada.6.a
+
+		468 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+				}
+			add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes 
+				}	
+			add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes 
+				}		
+		}
+
+		276 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+				}
+		}		
+	}
+}	

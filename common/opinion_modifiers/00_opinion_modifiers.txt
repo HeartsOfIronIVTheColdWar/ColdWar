@@ -310,5 +310,12 @@ opinion_modifiers = {
 		value = -10
 		months = 60
 	}
+	CAN_SLS_passed = {
+		value = 15
+	}
+	CAN_SLS_failed ={
+		value = -15
+		months = 120
+	}
 
 }	
