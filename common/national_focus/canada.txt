@@ -686,6 +686,15 @@ focus = {
 		cost = 0.00
 		x = 24
 		y = 0
+		completion_reward = {
+			navy_experience = 175
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.33
+				uses = 3
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {
 		id = CAN_atlantic_focus
@@ -696,6 +705,14 @@ focus = {
 		}
 		x = 20
 		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_ship_bonus
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+		}	
 	}
 	focus = {
 		id = CAN_atlantic_trade
@@ -746,6 +763,20 @@ focus = {
 		}
 		x = 27
 		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 0.5
+				uses = 1
+				category = cv_tech
+			}	
+		add_tech_bonus = {
+				name = marine_bonus
+				bonus = 0.5
+				uses = 1
+				category = marine_tech
+			}
+		}	
 	}	
 	focus = {
 		id = CAN_carrier_commision
