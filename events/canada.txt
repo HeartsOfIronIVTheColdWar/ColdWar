@@ -72,7 +72,8 @@ country_event = {
 		CAN = {
 			remove_ideas = looming_strike
 			add_popularity = { 
-			ideology = communism popularity = 0.05 
+			ideology = marxism_leninism popularity = 0.025
+			ideology = social_democracy popularity = 0.05 
 			}
 		}	
 	}
@@ -213,5 +214,122 @@ country_event = {
 						instant_build = yes 
 				}
 		}		
+	}
+}
+
+# Atlantic Trade 1950s
+
+country_event = {
+	id = canada.7
+	title = canada.7.t
+	desc = canada.7.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	# Commonwealth
+	option = {
+		name = canada.7.a
+
+			CAN = {
+				add_popularity = {
+
+					ideology = liberalism popularity = 0.02
+				}
+				add_popularity = {
+					ideology = conservatism popularity = 0.03
+				}
+			}
+
+		ENG = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}
+		SAF = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}
+	}
+	# Nordic
+	option = {
+		name = canda.7.b
+
+		CAN = {
+				add_popularity = {
+					ideology = liberalism popularity = 0.02
+				}
+				add_popularity = {
+					ideology = social_democracy popularity = 0.03
+				}
+			}
+		SWE = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}
+		NOR = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}
+		DEN = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}
+
+
+	}
+	# France
+	option = {
+		name = canada.7.c
+
+		468 = {
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes 
+					}
+				add_extra_state_shared_building_slots = 1
+				}	
+		FRA = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}	
+	}
+	# South America
+	option = {
+		name = canada.7.e
+
+		468 = {
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes 
+					}
+				add_extra_state_shared_building_slots = 1
+				}	
+		BRA = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}	
+		VEN = {
+			add_opinion_modifier = { 
+				target = CAN
+				modifier = CAN_trade_50
+			}
+		}	
 	}
 }	

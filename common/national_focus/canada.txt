@@ -721,6 +721,12 @@ focus = {
 		prerequisite = {
 			focus = CAN_atlantic_focus
 		}
+		completion_reward = {
+				country_event = { 
+				days = 4
+				id = canada.7 	
+			}
+		}
 		x = 20
 		y = 3
 	}
@@ -733,6 +739,10 @@ focus = {
 		}
 		x = 23
 		y = 2
+		completion_reward = {
+		CAN = {	load_oob = "CAN_ships" }
+
+		}
 	}	
 	focus = {
 		id = CAN_northern_shipyards

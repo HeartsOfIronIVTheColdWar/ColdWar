@@ -318,4 +318,11 @@ opinion_modifiers = {
 		months = 120
 	}
 
+	#CAN trade
+
+	CAN_trade_50 = {
+		value = 15
+		months = 120
+	}
+
 }	
