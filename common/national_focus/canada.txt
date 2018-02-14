@@ -753,6 +753,32 @@ focus = {
 		}
 		x = 21
 		y = 4
+		completion_reward = {
+		466 = {
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes 
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+		683 = {
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes 
+					}
+					add_extra_state_shared_building_slots = 1
+				}	
+		332 = {
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes 
+					}
+					add_extra_state_shared_building_slots = 1
+				}								
+			}
 	}
 	focus = {
 		id = CAN_the_arctic_game
@@ -763,6 +789,14 @@ focus = {
 		}
 		x = 24
 		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = submarine_bonus
+				bonus = 0.66
+				uses = 1
+				category = ss_tech
+			}
+		}	
 	}		
 	focus = {
 		id = CAN_pacific_focus
@@ -797,6 +831,10 @@ focus = {
 		}
 		x = 26
 		y = 3
+		completion_reward = {
+		CAN = {	load_oob = "CAN_carrier" }
+
+		}
 	}	
 	focus = {
 		id = CAN_naval_air_support
@@ -807,6 +845,15 @@ focus = {
 		}
 		x = 26
 		y = 5
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 0.75
+				uses = 2
+				category = naval_air
+			}	
+		}
 	}	
 	focus = {
 		id = CAN_pacific_cooperation
