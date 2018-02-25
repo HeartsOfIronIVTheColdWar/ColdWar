@@ -1,4 +1,4 @@
-# CAN secure the North Focus
+﻿# CAN secure the North Focus
 
 units = {
 	navy = {

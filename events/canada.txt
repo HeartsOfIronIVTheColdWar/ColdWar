@@ -98,12 +98,12 @@ country_event = {
 	option = {
 		name = canada.3.a
 
-		USA = {
-			country_event = {
-				id = usa.10501
-				days = 2
-			}
-		}
+#		USA = {
+#			country_event = {
+#				id = usa.10501
+#				days = 2
+#			}
+#		}
 	}
 }
 
@@ -273,12 +273,12 @@ country_event = {
 				modifier = CAN_trade_50
 			}
 		}
-		NOR = {
-			add_opinion_modifier = { 
-				target = CAN
-				modifier = CAN_trade_50
-			}
-		}
+#		NOR = {
+#			add_opinion_modifier = { 
+#				target = CAN
+#				modifier = CAN_trade_50
+#			}
+#		}
 		DEN = {
 			add_opinion_modifier = { 
 				target = CAN

@@ -238,12 +238,12 @@ focus_tree = {
 							days = 3
 						}
 				}
-			NOR = {
-					country_event = {
-							id = marshallaid.1
-							days = 4
-						}
-				}
+#			NOR = {
+#					country_event = {
+#							id = marshallaid.1
+#							days = 4
+#						}
+#				}
 			SWE = {
 					country_event = {
 							id = marshallaid.1

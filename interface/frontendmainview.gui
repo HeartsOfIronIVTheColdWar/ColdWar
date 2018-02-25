@@ -211,20 +211,50 @@ guiTypes = {
 		}
 		
 		ButtonType = {
-			name = "coop_button"
-			position = { x = 16 y = 440 }
-			spriteType = "GFX_coop_logo"
-			clicksound = click_default
-			pdx_tooltip = "Click here to go to the Coop Steam Group"
-			web_link = "http://steamcommunity.com/groups/HOI4ModdingCoop"
-		}
-		ButtonType = {
 			name = "discord_button"
 			position = { x = 417 y = 339 }
 			spriteType = "GFX_discord_logo"
 			clicksound = click_default
 			pdx_tooltip = ""
 			web_link = "https://discord.gg/cKcrUVk"
+		}
+		
+		instantTextBoxType = {
+			name ="version_label"
+			position = { x = 22 y = 520 }
+			textureFile = ""
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			format = centre
+			maxWidth = 250
+			maxHeight = 20	
+		}
+
+		ButtonType = {
+			name = "credits_button"
+			position = {  x = 30 y = 493 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = ""
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "nudge_button"
+			position = { x = 30 y = 493 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = ""
+			buttonFont = "hoi_24header"
+		}
+		ButtonType = {
+			name = "coop_button"
+			position = { x = 16 y = 440 }
+			spriteType = "GFX_coop_logo"
+			clicksound = click_default
+			pdx_tooltip = "Click here to go to the Coop Steam Group"
+			web_link = "http://steamcommunity.com/groups/HOI4ModdingCoop"
 		}
 	}
 }

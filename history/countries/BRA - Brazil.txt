@@ -73,7 +73,7 @@ set_national_unity = 0.55
 	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_Brazil_Eurico_Dutra.dds"
 	expire = 1965.1.1
-	ideology = liberalism
+	ideology = liberal
 	traits = {
 		#
 	}

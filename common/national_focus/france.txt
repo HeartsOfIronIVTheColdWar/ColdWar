@@ -17,9 +17,9 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			add_political_power = 25
-			hidden_effect = {
-				FRA = { country_event = { id = fra.100} } #-100pp and a idea that gives less PP until a path has been selected
-			}
+#			hidden_effect = {
+#				FRA = { country_event = { id = fra.100} } #-100pp and a idea that gives less PP until a path has been selected
+#			}
 		}
 	}
 	focus = {

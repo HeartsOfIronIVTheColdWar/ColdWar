@@ -154,7 +154,7 @@ ideas = {
 			traits = { silent_workhorse backroom_backstabber }
 	
 			on_add = {
-				country_event = political.1
+
 			}	
 			
 			ai_will_do = {
@@ -172,7 +172,7 @@ ideas = {
 			traits = { armaments_organizer quartermaster_general }
 	
 			on_add = {
-				country_event = political.1
+
 			}
 			
 			ai_will_do = {
@@ -190,7 +190,7 @@ ideas = {
 			traits = { captain_of_industry ideological_crusader }
 	
 			on_add = {
-				country_event = political.1
+
 			}	
 			
 			ai_will_do = {
@@ -214,7 +214,7 @@ ideas = {
 			traits = { smooth_talking_charmer popular_figurehead }
 	
 			on_add = {
-				country_event = political.1
+
 			}
 			
 			ai_will_do = {
@@ -246,7 +246,7 @@ ideas = {
 			traits = { prince_of_terror }
 	
 			on_add = {
-				country_event = political.1
+
 			}	
 			
 			ai_will_do = {
@@ -276,7 +276,7 @@ ideas = {
 			traits = { recruiter }
 	
 			on_add = {
-				country_event = political.1
+
 			}
 		
 			ai_will_do = {
@@ -294,7 +294,7 @@ ideas = {
 			traits = { indocrinator }
 	
 			on_add = {
-				country_event = political.1
+
 			}
 	
 			ai_will_do = {

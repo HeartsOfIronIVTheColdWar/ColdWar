@@ -131,6 +131,9 @@ set_national_unity = 0.7
 		transport = 1
 		jet_engines = 1
 		transport_air1 = 1
+		APC_1950 = 1
+		MBT_1950 = 1
+		IFV_1950 = 1
 	}
 
 	set_autonomy = {

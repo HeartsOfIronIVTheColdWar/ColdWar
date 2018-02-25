@@ -232,20 +232,49 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			liberalism = { 
 				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 16
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 36
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 48
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism

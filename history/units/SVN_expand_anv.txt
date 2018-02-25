@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Tieu Doan"  	# Tieu Doan are essentially just Battaillon de Marche.
 
 	regiments = {

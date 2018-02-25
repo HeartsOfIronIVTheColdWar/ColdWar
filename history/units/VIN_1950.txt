@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Infantry Division" #Consists of 3 regiments of infantry and a battalion of artillery
 
 	regiments = {

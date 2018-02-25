@@ -72,7 +72,7 @@ set_national_unity = 0.55
 	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_Austria_Karl_Renner.dds"
 	expire = 1965.1.1
-	ideology = marxism_leninism
+	ideology = liberal
 	traits = {
 		#
 	}

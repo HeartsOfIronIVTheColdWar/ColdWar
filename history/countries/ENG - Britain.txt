@@ -177,7 +177,7 @@ set_national_unity = 0.85
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 	picture = "Portrait_Britain_Winston_Churchill.dds"
 	expire = 1965.1.1
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 
 	}

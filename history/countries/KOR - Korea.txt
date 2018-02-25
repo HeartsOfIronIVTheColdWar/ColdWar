@@ -69,9 +69,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_South_Korea_Syngman_Rhee.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = civilian_leader
 	traits = {
 		#
@@ -94,20 +94,49 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 35
-				banned = no
+			liberalism = { 
+				popularity = 14
+				#banned = no #default is no
 			}
 
-			autocratic = {
-				popularity = 65
-				banned = no
+			conservatism = {
+				popularity = 26
+				#banned = no #default is no
 			}
 			
-			communism = {
+			social_democracy = {
 				popularity = 0
 				#banned = no #default is no
 			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 60
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = dictatorship 
@@ -117,9 +146,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_South_Korea_Syngman_Rhee.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = despotism
 	traits = {
 		#
@@ -141,20 +170,49 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 35
-				banned = no
+			liberalism = { 
+				popularity = 14
+				#banned = no #default is no
 			}
 
-			autocratic = {
-				popularity = 65
-				banned = no
+			conservatism = {
+				popularity = 26
+				#banned = no #default is no
 			}
 			
-			communism = {
+			social_democracy = {
 				popularity = 0
 				#banned = no #default is no
 			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 60
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = dictatorship 
@@ -164,9 +222,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_South_Korea_Syngman_Rhee.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = despotism
 	traits = {
 		#
@@ -189,20 +247,49 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 35
-				banned = no
+			liberalism = { 
+				popularity = 14
+				#banned = no #default is no
 			}
 
-			autocratic = {
-				popularity = 65
-				banned = no
+			conservatism = {
+				popularity = 26
+				#banned = no #default is no
 			}
 			
-			communism = {
+			social_democracy = {
 				popularity = 0
 				#banned = no #default is no
 			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 60
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = dictatorship 
@@ -212,9 +299,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_South_Korea_Syngman_Rhee.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = despotism
 	traits = {
 		#

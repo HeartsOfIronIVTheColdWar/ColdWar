@@ -1,4 +1,4 @@
-
+ 
 state={
 	id=829
 	name="STATE_829"
@@ -12,7 +12,7 @@ state={
 		add_core_of = SVN
 		owner = VIN
 		buildings = {
-			arms_factory = 8 #So VIN can build weapons
+			arms_factory = 3 #So VIN can build weapons
 			infrastructure = 3
 			industrial_complex = 1
 			7093 = {

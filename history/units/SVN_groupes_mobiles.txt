@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Groupes Mobiles"  	# Mobile units -- self-sufficient motorized units
 
 	regiments = {
