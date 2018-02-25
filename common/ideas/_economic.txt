@@ -28,8 +28,10 @@ ideas = {
 			
 			available = {
 				OR = {
-					has_government = autocratic
-					has_government = communism
+					has_government = authoritarian_socialism
+					has_government = monarchism
+					has_government = dictatorship
+					has_government = junta
 					has_war = yes
 					threat > 0.20
 				}			
@@ -64,8 +66,10 @@ ideas = {
 			
 			available = {
 				OR = {
-					has_government = autocratic
-					has_government = communism
+					has_government = authoritarian_socialism
+					has_government = monarchism
+					has_government = dictatorship
+					has_government = junta
 					has_war = yes
 					threat > 0.50
 				}			
@@ -100,8 +104,10 @@ ideas = {
 			available = {
 				threat > 0.80
 				OR = {
-					has_government = autocratic
-					has_government = communism
+					has_government = authoritarian_socialism
+					has_government = monarchism
+					has_government = dictatorship
+					has_government = junta
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
 						has_war = yes
@@ -208,7 +214,7 @@ ideas = {
 		anarchism = {
 			
 			available = {
-				always = no
+				has_government = radical_socialism
 			}
 			cost = 0
 			removal_cost = -1
@@ -231,12 +237,11 @@ ideas = {
 		libertarian = {
 			
 			available = {
-#				OR = {
-#					has_government = autocratic
-#					has_government = communism
-#					has_war = yes
-#					threat > 0.20
-#				}			
+				OR = {
+					has_government = liberalism
+					has_war = yes
+					threat > 0.20
+				}			
 			}
 			
 			cost = 150
@@ -268,12 +273,14 @@ ideas = {
 		free = {
 			
 			available = {
-#				OR = {
-#					has_government = autocratic
-#					has_government = communism
-#					has_war = yes
-#					threat > 0.50
-#				}			
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+						has_government = social_democracy
+					}
+#					NOT = {
+#						has_idea = faux_democracy
+#					}		
 			}
 			
 			traits = { free_trait }
@@ -306,21 +313,23 @@ ideas = {
 			
 			
 			available = {
-#				threat > 0.80
-#				OR = {
-#					has_government = autocratic
-#					has_government = communism
-#					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
-#					AND = {
-#						has_war = yes
-#						any_enemy_country = {
-#							ic_ratio = { 
-#								tag = ROOT 
-#								ratio > 0.25
-#							}
-#						}
-#					}
-#				}			
+				threat > 0.80
+				OR = {
+					has_government = authoritarian_socialism
+					has_government = monarchism
+					has_government = dictatorship
+					has_government = junta
+					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+					AND = {
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = { 
+								tag = ROOT 
+								ratio > 0.25
+							}
+						}
+					}
+				}			
 			}
 			
 			traits = { surveillance_state_trait }
@@ -353,13 +362,12 @@ ideas = {
 			
 			
 			available = {
-#				has_war = yes
-#				any_enemy_country = {
-#					ic_ratio = { 
-#						tag = ROOT 
-#						ratio > 0.5
-#					}
-#				}
+				OR = {
+					has_government = authoritarian_socialism
+					has_government = monarchism
+					has_government = dictatorship
+					has_government = junta
+				}
 			}
 			
 			traits = { mass_surveillance_trait }
@@ -381,13 +389,12 @@ ideas = {
 			
 			
 			available = {
-#				has_war = yes
-#				any_enemy_country = {
-#					ic_ratio = { 
-#						tag = ROOT 
-#						ratio > 0.5
-#					}
-#				}
+				OR = {
+					has_government = authoritarian_socialism
+					has_government = monarchism
+					has_government = dictatorship
+					has_government = junta
+				}
 			}
 			
 			traits = { police_state_trait }
@@ -410,7 +417,7 @@ ideas = {
 			
 			
 			available = {
-#			
+
 			}
 			
 			traits = { martial_law_trait }
@@ -439,7 +446,9 @@ ideas = {
 		free_trade = {
 			
 			available = {
-						has_government = democratic
+				has_government = liberalism
+				has_government = conservatism
+				has_government = social_democracy
 			}
 			
 			cost = 200
@@ -497,7 +506,9 @@ ideas = {
 						}
 					}
 					AND = {
-						NOT = { has_government = democratic }
+						NOT = { has_government = liberalism }
+						NOT = { has_government = conservatism }
+						NOT = { has_government = social_democracy }
 					}
 				}
 			}
@@ -536,14 +547,10 @@ ideas = {
 			
 			available = {
 				OR = {
-					OR = { 
-						has_government = autocratic
-						has_government = communism
-					}
-					OR = {
-						has_idea = war_economy
-						has_idea = tot_economic_mobilisation
-					}
+					has_government = authoritarian_socialism
+					has_government = monarchism
+					has_government = dictatorship
+					has_government = junta
 				}
 			}
 			

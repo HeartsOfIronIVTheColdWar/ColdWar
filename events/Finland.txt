@@ -34,14 +34,14 @@ country_event = {
 		
 		retire_country_leader = yes 
 		
-		set_party_name = { ideology = democratic long_name = FIN_peoples_democratic_league_long name = FIN_peoples_democratic_league  }
+		set_party_name = { ideology = conservatism long_name = FIN_peoples_democratic_league_long name = FIN_peoples_democratic_league  }
 		
 		create_country_leader = {
 			name = "Mauno Pekkala"
 			desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 			picture = "Portrait_Finland_Mauno_Pekkala.dds"
 			expire = 2000.1.1 
-			ideology = conservatism
+			ideology = conservative
 		}
 		
 		set_country_flag = PEKKALA_WINS 
@@ -52,14 +52,14 @@ country_event = {
 	
 		retire_country_leader = yes 
 	
-		set_party_name = { ideology = democratic long_name = FIN_agrarian_party_long name = FIN_agrarian_party}
+		set_party_name = { ideology = liberalism long_name = FIN_agrarian_party_long name = FIN_agrarian_party}
 	
 		create_country_leader = {
 			name = "Urho Kekkonen"
 			desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 			picture = "Portrait_Finland_Urho_Kekkonen.dds"
 			expire = 2000.1.1
-			ideology = conservatism
+			ideology = conservative
 		}
 		
 		set_country_flag = KEKKONEN_WINS 
@@ -92,14 +92,14 @@ country_event = {
 	
 	retire_country_leader = yes 
 	
-	set_party_name = { ideology = democratic long_name = FIN_agrarian_party_long name = FIN_agrarian_party}
+	set_party_name = { ideology = conservatism long_name = FIN_agrarian_party_long name = FIN_agrarian_party}
 	
 		create_country_leader = {
 			name = "Urho Kekkonen"
 			desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 			picture = "Portrait_Finland_Urho_Kekkonen.dds"
 			expire = 2000.1.1
-			ideology = conservatism
+			ideology = conservative
 		}
 	}
 	
@@ -108,14 +108,14 @@ country_event = {
 		name = finland.561701.b
 		
 		retire_country_leader = yes 
-		set_party_name = { ideology = democratic long_name = FIN_SDP_long name = FIN_SDP}
+		set_party_name = { ideology = liberalism long_name = FIN_SDP_long name = FIN_SDP}
 		
 		create_country_leader = {
 			name = "Karl-August Fagerholm"
 			desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 			picture = "Portrait_Finland_Karl-August_Fagerholm.dds"
 			expire = 2000.1.1
-			ideology = conservatism
+			ideology = liberal
 		}
 	}
 }
@@ -151,14 +151,14 @@ country_event = {
 	
 	retire_country_leader = yes 
 	
-	set_party_name = { ideology = democratic long_name = FIN_agrarian_party_long name = FIN_agrarian_party}
+	set_party_name = { ideology = conservatism long_name = FIN_agrarian_party_long name = FIN_agrarian_party}
 	
 		create_country_leader = {
 			name = "Urho Kekkonen"
 			desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 			picture = "Portrait_Finland_Urho_Kekkonen.dds"
 			expire = 2000.1.1
-			ideology = conservatism
+			ideology = conservative
 		}
 	}
 }
@@ -193,14 +193,14 @@ country_event = {
 		name = finland.5617012.b
 		
 		retire_country_leader = yes 
-		set_party_name = { ideology = democratic long_name = FIN_SDP_long name = FIN_SDP}
+		set_party_name = { ideology = liberalism long_name = FIN_SDP_long name = FIN_SDP}
 		
 		create_country_leader = {
 			name = "Karl-August Fagerholm"
 			desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 			picture = "Portrait_Finland_Karl-August_Fagerholm.dds"
 			expire = 2000.1.1
-			ideology = conservatism
+			ideology = liberal
 		}
 	}
 }

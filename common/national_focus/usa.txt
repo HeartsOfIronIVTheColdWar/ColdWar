@@ -667,7 +667,7 @@ focus_tree = {
 						ideology = authoritarian_socialism
 						popularity = -0.1
 					}
-					add_ideas = banned_communism
+#					add_ideas = banned_communism
 				}
 
 	}

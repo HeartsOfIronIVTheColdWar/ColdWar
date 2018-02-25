@@ -27,11 +27,15 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_government = communism
+		OR = {
+		has_government = radical_socialism
+		has_government = marxism_leninism
+		has_government = authoritarian_socialism
+		
+		}
 	}
 	
 	can_take_level = {
-		communism < 0.3
 		has_global_flag = fall_of_the_ussr
 	}
 

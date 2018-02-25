@@ -8,7 +8,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 

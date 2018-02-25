@@ -9,7 +9,7 @@ ideas = {
 			removal_cost = -1
 			
 			available = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			modifier = {
@@ -22,7 +22,7 @@ ideas = {
 
    				modifier = {
 					factor = 2
-					has_government = democracy
+					OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 				}
    			}
 			
@@ -37,7 +37,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } }
 				}
 			}
 
@@ -53,18 +53,18 @@ ideas = {
 
    				modifier = {
 					factor = 2
-					has_government = democratic
+					OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 					has_war = yes
 				}
 				
 				modifier = {
 					factor = 10
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 				
 				modifier = {
 					factor = 10
-					has_government = autocratic
+					OR = { has_government = junta has_government = dictatorship has_government = monarchism }
 				}
    			}
 			default = yes
@@ -79,7 +79,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } }
 				}
 			}
 
@@ -121,7 +121,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } }
 				}
 			}
 
@@ -149,7 +149,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } }
 				}
 			}
 
@@ -178,7 +178,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } }
 				}
 			}
 
@@ -211,7 +211,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } }
 				}
 			}
 
@@ -240,7 +240,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_war = yes
-					NOT = { has_government = democratic }
+					NOT = { OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } }
 				}
 			}
 

@@ -1,62 +1,275 @@
-﻿capital = 604
+﻿capital = 616 #Baku
 
-oob = "null"
+oob = "XSM_1950"
+set_research_slots = 2
+set_convoys = 80
+set_national_unity = 0.55
 
-# Starting tech
-set_technology = { naval_stipulations = 1
-
-}
-
-1939.1.1 = {
-
-	add_political_power = 0
+1950.1.1 = {
 	
-	#generic focuses
-
-
+	oob = "XSM_1950"
 	add_ideas = {
 		#laws
-
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
 	}
+	set_politics = {
 
-	oob = "null"
-	
-	set_technology = { naval_stipulations = 1
-		#doctrines
+		parties = {
+			liberalism = { 
+				popularity = 100
+				#banned = no #default is no
+			}
 
-	}
-}
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
 
-set_politics = {
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		autocratic = {
-			popularity = 100
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-
+		ruling_party = liberalism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
 	}
-	ruling_party = dictatorship
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	set_technology = { naval_stipulations = 1
+	}
 }
 
-create_country_leader = {
-	name = "Ma Bufang"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
+1960.1.1 = {
+	
+	oob = "XSM_1960"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+
+	set_politics = {
+
+		parties = {
+			liberalism = { 
+				popularity = 100
+				#banned = no #default is no
+			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
+		}
+		
+		ruling_party = marxism_leninism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_technology = { naval_stipulations = 1
+	}
+}
+
+1970.1.1 = {
+	
+	oob = "XSM_1970"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+	set_politics = {
+
+		parties = {
+			liberalism = { 
+				popularity = 100
+				#banned = no #default is no
+			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
+		}
+		
+		ruling_party = marxism_leninism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+
+	set_technology = { naval_stipulations = 1
+	}
+}
+
+1980.1.1 = {
+	
+	oob = "XSM_1980"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+
+	set_politics = {
+
+		parties = {
+			liberalism = { 
+				popularity = 100
+				#banned = no #default is no
+			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
+		}
+		
+		ruling_party = marxism_leninism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_technology = { naval_stipulations = 1
 	}
 }

@@ -59,8 +59,8 @@ ideas = {
 				
 				OR = {
 					threat > 0.30
-					has_government = autocratic
-					has_government = communism
+					OR = { has_government = junta has_government = dictatorship has_government = monarchism }
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.5
@@ -93,8 +93,8 @@ ideas = {
 			
 			available = {
 				OR = {
-					has_government = autocratic
-					has_government = communism
+					OR = { has_government = junta has_government = dictatorship has_government = monarchism }
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.6

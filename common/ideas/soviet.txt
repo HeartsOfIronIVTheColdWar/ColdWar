@@ -53,13 +53,13 @@ ideas = {
 			picture = GFX_idea_SOV_deadhand	
 
 			modifier = {
-				communism_drift = 0.01
+				marxism_leninism_drift = 0.01
 			}
 		}
 		SOV_deadhand = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -79,7 +79,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = generic_production_bonus
@@ -97,7 +97,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = generic_production_bonus
@@ -115,7 +115,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = generic_production_bonus
@@ -135,7 +135,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = generic_wall_line
@@ -155,7 +155,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = trotskyite_plot_purged
@@ -178,7 +178,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = Generic_goods_red_bonus
@@ -198,7 +198,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = FRA_factory_strikes
@@ -216,7 +216,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			picture = Generic_goods_red_bonus
@@ -235,7 +235,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			modifier = {
@@ -256,7 +256,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			modifier = {
@@ -276,7 +276,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -292,7 +292,7 @@ ideas = {
 		KOMINFORM = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -318,7 +318,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -344,7 +344,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -370,7 +370,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -397,7 +397,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -422,7 +422,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -448,7 +448,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -474,7 +474,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -499,7 +499,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -527,7 +527,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -553,7 +553,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 			
 			research_bonus = {
@@ -575,7 +575,7 @@ ideas = {
 		heavy_factory_economy = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -589,7 +589,7 @@ ideas = {
 		heavy_plan_economy = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -612,7 +612,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			modifier = {
@@ -630,7 +630,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -644,7 +644,7 @@ ideas = {
 		light_factory_economy = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -659,7 +659,7 @@ ideas = {
 		light_factory_economy2 = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -676,7 +676,7 @@ ideas = {
 		light_factory_economy3 = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -693,7 +693,7 @@ ideas = {
 		SOV_consumerism = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -711,7 +711,7 @@ ideas = {
 		SOV_comecon = { #Renamed to COMECON reconstitution
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -726,7 +726,7 @@ ideas = {
 		SOV_comecon2 = { #Renamed to COMECON reconstitution
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -742,7 +742,7 @@ ideas = {
 		SOV_Gulags = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -759,7 +759,7 @@ ideas = {
 		SOV_role_model = {
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -777,7 +777,7 @@ ideas = {
 		SOV_economic_miracle = { 
 			allowed = {
 				always = no
-				has_government = communism
+				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 			}
 
 			removal_cost = -1
@@ -870,7 +870,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -894,7 +894,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -918,7 +918,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -948,7 +948,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -972,7 +972,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -996,7 +996,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1020,7 +1020,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1049,7 +1049,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1073,7 +1073,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1097,7 +1097,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1126,7 +1126,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1150,7 +1150,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1179,7 +1179,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			
@@ -1203,7 +1203,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 			}
 			

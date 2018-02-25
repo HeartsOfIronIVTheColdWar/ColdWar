@@ -30,12 +30,12 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } 
 						NOT = {
 							tag = ROOT
 						}
@@ -62,12 +62,12 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } 
 						NOT = {
 							tag = ROOT
 						}

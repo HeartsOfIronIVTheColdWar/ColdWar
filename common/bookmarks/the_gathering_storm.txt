@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				nato_idea
 				marshall_plan
@@ -23,7 +23,7 @@ bookmarks = {
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_democracy
 			ideas = {
 				nato_idea
 				FRA_disjointed_government
@@ -37,7 +37,7 @@ bookmarks = {
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_democracy
 			ideas = {
 				nato_idea
 				colonial_protests
@@ -48,7 +48,7 @@ bookmarks = {
 		}
 		"PRC"={
 			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = authoritarian_socialism
 			ideas = {
 				eastern_socialism
 				RAJ_agrarian_society
@@ -62,7 +62,7 @@ bookmarks = {
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = authoritarian_socialism
 			ideas = {
 				home_of_revolution
 				SOV_great_patriotic_war_winner
@@ -82,7 +82,7 @@ bookmarks = {
 		"WGR"={
 			minor = yes
 			history = "WGR_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				bundesbank_1
 				WGR_paperclip
@@ -97,7 +97,7 @@ bookmarks = {
 		"KOR"={
 			minor = yes
 			history = "KOR_GATHERING_STORM_DESC"
-			ideology = autocratic
+			ideology = junta
 			ideas = {
 			}
 			focuses = {
@@ -107,7 +107,7 @@ bookmarks = {
 		"EGY"={
 			minor = yes
 			history = "EGY_GATHERING_STORM_DESC"
-			ideology = autocratic
+			ideology = monarchism
 			ideas = {
 			arab_monarchy
 			political_instability
@@ -122,7 +122,7 @@ bookmarks = {
 		"RAJ"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservatism
 			ideas = {
 				RAJ_agrarian_society
 				RAJ_quit_india_movement
@@ -136,7 +136,7 @@ bookmarks = {
 		"PAK"={
 			minor = yes
 			history = "PAK_GATHERING_STORM_DESC"
-			ideology = autocratic
+			ideology = junta
 			ideas = {
 				RAJ_agrarian_society
 			}
@@ -146,7 +146,7 @@ bookmarks = {
 		"YUG"={
 			minor = yes
 			history = "YUG_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = marxism_leninism
 			ideas = {
 
 			}
@@ -156,7 +156,7 @@ bookmarks = {
 		"NKR"={
 			minor = yes
 			history = "NKR_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = authoritarian_socialism
 			ideas = {
 				nkr_factionalism
 				nkr_illiterate_country
@@ -170,7 +170,7 @@ bookmarks = {
 		"DDR"={
 			minor = yes
 			history = "DDR_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = authoritarian_socialism
 			ideas = {
 				soviet_occupation
 				loser_of_the_second_world_war

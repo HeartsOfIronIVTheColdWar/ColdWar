@@ -1,8 +1,27 @@
 ideas = {
 	country = {
-		RAJ_liquat_nehru_pact = {
+		
+		RAJ_smiling_buddha1 = {
 
 			picture = idea_RAJ_smiling_buddha
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				nuclear = 0.10
+			}
+		}
+		RAJ_liquat_nehru_pact = {
+
+			picture = focus_refugees
 
 			allowed = {
 				OR = {
@@ -24,7 +43,7 @@ ideas = {
 		}
 		RAJ_liquat_nehru_pact2 = {
 
-			picture = idea_RAJ_smiling_buddha
+			picture = focus_refugees
 
 			allowed = {
 				OR = {
@@ -61,7 +80,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				communism_drift = -0.001
+				marxism_leninism_drift = -0.001
+				authoritarian_socialism_drift = -0.001
 			}
 		}
 		RAJ_denounce_the_west = {
@@ -81,8 +101,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				autocratic_drift = -0.001
-				democratic_drift = -0.001
+				liberalism_drift = -0.001
+				conservatism_drift = -0.001
+				social_democracy_drift = -0.001
 			}
 		}
 		RAJ_banking_issues = {
@@ -273,8 +294,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = autocratic
+						OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+						OR = { has_government = junta has_government = dictatorship has_government = monarchism }
 					}
 				}
 			}
@@ -283,7 +304,9 @@ ideas = {
 			
 			modifier = {
 				unity_weekly = 0.001
-				democratic_drift = 0.01
+				liberalism_drift = 0.01
+				conservatism_drift = 0.01
+				social_democracy_drift = 0.01				
 			}
 		}
 		RAJ_backwards_classes_commission = {
@@ -297,8 +320,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = autocratic
+						OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+						OR = { has_government = junta has_government = dictatorship has_government = monarchism }
 					}
 				}
 			}
@@ -321,8 +344,8 @@ ideas = {
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = communism
-						has_government = autocratic
+						OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+						OR = { has_government = junta has_government = dictatorship has_government = monarchism }
 					}
 				}
 			}
@@ -658,8 +681,11 @@ ideas = {
 		designer = yes
 		mazagon_dock_limited = {
 			
+			available = {
+				has_completed_focus = RAJ_naval_reform_2b
+			}
+			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 
@@ -669,14 +695,13 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			traits = { convoy_escort_naval_manufacturer }
+			traits = { raiding_fleet_naval_manufacturer }
 
 		}
 		
 		garden_reach_shipbuilders = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 			
@@ -692,7 +717,6 @@ ideas = {
 		scindia_shipyard = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 			
@@ -724,7 +748,39 @@ ideas = {
 	###NAVY CHIEF###
 	
 	navy_chief = {
+		ram_dass_katari = {
+
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				has_completed_focus = RAJ_navy_reform_3a
+			}
+			cost = 75
+			traits = { navy_anti_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
+		bhaskar_sadashiv_soman = {
+
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				has_completed_focus = RAJ_navy_reform_3b
+			}
+			cost = 75
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 	###AIR CHEF###

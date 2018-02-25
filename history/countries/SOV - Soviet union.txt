@@ -358,20 +358,49 @@ set_national_unity = 0.8
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
+			liberalism = { 
 				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism
@@ -379,16 +408,7 @@ set_national_unity = 0.8
 		election_frequency = 48
 		elections_allowed = no
 	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }
@@ -405,20 +425,49 @@ set_national_unity = 0.8
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
+			liberalism = { 
 				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism
@@ -426,16 +475,7 @@ set_national_unity = 0.8
 		election_frequency = 48
 		elections_allowed = no
 	}	
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }
@@ -453,20 +493,49 @@ set_national_unity = 0.8
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
+			liberalism = { 
 				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism
@@ -474,16 +543,7 @@ set_national_unity = 0.8
 		election_frequency = 48
 		elections_allowed = no
 	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }

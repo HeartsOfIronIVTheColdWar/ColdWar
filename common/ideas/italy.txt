@@ -8,7 +8,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			modifier = {
@@ -25,7 +25,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			modifier = {
@@ -45,12 +45,11 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			modifier = {
 				unity_factor = 0.2
-				democratic_drift = 0.05
 				justify_war_goal_time = 0.05
 			}
 		}
@@ -63,7 +62,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			modifier = {
@@ -80,13 +79,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			modifier = {
 				political_power_factor = 0.05
 				drift_defence_factor = 0.1
-				democratic_drift = 0.05
 			}
 		}
 		
@@ -98,11 +96,11 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communist
+				OR = { has_government = marxism_leninism has_government = authoritarian_socialism }
 			}
 			
 			modifier = {
-				communism_drift = 0.1
+				marxism_leninism_drift = 0.1
 			}
 		}
 		ITA_has_command_economy = {
@@ -113,7 +111,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communist
+				OR = { has_government = marxism_leninism has_government = authoritarian_socialism }
 			}
 			
 			modifier = {
@@ -130,7 +128,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communist
+				OR = { has_government = marxism_leninism has_government = authoritarian_socialism }
 			}
 			
 			modifier = {
@@ -145,7 +143,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communist
+				OR = { has_government = marxism_leninism has_government = authoritarian_socialism }
 			}
 			
 			modifier = {
@@ -160,7 +158,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communist
+				OR = { has_government = marxism_leninism has_government = authoritarian_socialism }
 			}
 			
 			modifier = {

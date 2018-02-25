@@ -490,15 +490,15 @@ focus_tree = {
 		y = 5
 		
 		completion_reward = {
-			FRA = {
-				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
-			}
-			ENG = {
-				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
-			}
-			USA = {
-				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
-			}
+#			FRA = {
+#				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
+#			}
+#			ENG = {
+#				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
+#			}
+#			USA = {
+#				add_opinion_modifier = { target = GRE modifier = GRE_reconnection }
+#			}
 		}
 
 	}

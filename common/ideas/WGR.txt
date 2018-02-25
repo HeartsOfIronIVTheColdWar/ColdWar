@@ -16,7 +16,7 @@ ideas = {
 
 			modifier = {
 				unity_factor = 0.10
-				autocratic_drift = -0.05
+				dictatorship_drift = -0.05
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
@@ -231,7 +231,6 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.6
-				democratic_drift = 0.02
 				unity_factor = -0.05
 				army_morale_factor = -0.05 
 			}
@@ -253,7 +252,6 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.3
-				democratic_drift = 0.02 
 			}
 		}
 		
@@ -263,7 +261,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -281,7 +279,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -300,7 +298,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -318,7 +316,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -336,7 +334,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -354,7 +352,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -372,7 +370,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -390,7 +388,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -409,7 +407,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -430,7 +428,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -556,7 +554,10 @@ ideas = {
 			allowed = {
 				original_tag = WGR
 			}
-			
+			available = {
+				has_completed_focus = WGR_german_logistics
+			}
+			cost = 50
 			research_bonus = {
 				motorized_equipment = 0.10
 			}

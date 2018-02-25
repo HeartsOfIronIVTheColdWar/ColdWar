@@ -37,4 +37,12 @@ sub_unit_categories = {
 	category_MBT_1970_aa
 	category_MBT_1980_aa
 	category_MBT_1990_aa
+	category_APC_1950_art
+	category_APC_1960_art
+	category_APC_1970_art
+	category_APC_1980_art
+	category_APC_1950_aa
+	category_APC_1960_aa
+	category_APC_1970_aa
+	category_APC_1980_aa
 }

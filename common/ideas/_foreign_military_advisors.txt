@@ -56,21 +56,25 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				production_factory_efficiency_gain_factor = 0.15
 				
-				democratic_drift = 0.02
-				democratic_acceptance = 50
-				
 			}
 			
 			ai_will_do = {
    				factor = 1
 				modifier = {
 					factor = 3
-					has_government = democratic
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+						has_government = social_democracy
+					}
 				}
 				
 				modifier = {
 					factor = 0
-					has_government = communism
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
 				}
    			}
 			
@@ -111,8 +115,11 @@ ideas = {
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.15
 				
-				communism_drift = 0.02
-				communism_acceptance = 50
+				marxism_leninism_drift = 0.02
+				marxism_leninism_acceptance = 50
+				authoritarian_socialism_drift = 0.02
+				authoritarian_socialism_acceptance = 50
+				
 				
 			}
 			
@@ -120,12 +127,19 @@ ideas = {
    				factor = 1
 				modifier = {
 					factor = 0
-					has_government = democratic
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+						has_government = social_democracy
+					}
 				}
 				
 				modifier = {
 					factor = 3
-					has_government = communism
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
 				}
    			}
 			
@@ -164,21 +178,25 @@ ideas = {
 				trade_opinion_factor = 0.5 
 				
 				
-				democratic_drift = 0.02
-				democratic_acceptance = 50
-				
 			}
 			
 			ai_will_do = {
    				factor = 1
 				modifier = {
 					factor = 3
-					has_government = democratic
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+						has_government = social_democracy
+					}
 				}
 				
 				modifier = {
 					factor = 0
-					has_government = communism
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
 				}
    			}
 			
@@ -217,21 +235,25 @@ ideas = {
 				production_speed_air_base_factor = 0.15
 				production_speed_naval_base_factor = 0.15
 				
-				democratic_drift = 0.02
-				democratic_acceptance = 50
-				
 			}
 			
 			ai_will_do = {
    				factor = 1
 				modifier = {
 					factor = 3
-					has_government = democratic
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+						has_government = social_democracy
+					}
 				}
 				
 				modifier = {
 					factor = 0
-					has_government = communism
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
 				}
    			}
 			
@@ -273,8 +295,10 @@ ideas = {
 				army_core_defence_factor = 0.15
 				MONTHLY_POPULATION = 0.35
 				
-				communism_drift = 0.02
-				communism_acceptance = 50
+				marxism_leninism_drift = 0.02
+				marxism_leninism_acceptance = 50
+				authoritarian_socialism_drift = 0.02
+				authoritarian_socialism_acceptance = 50
 				
 				
 			}
@@ -283,12 +307,19 @@ ideas = {
    				factor = 1
 				modifier = {
 					factor = 0
-					has_government = democratic
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+						has_government = social_democracy
+					}
 				}
 				
 				modifier = {
 					factor = 3
-					has_government = communism
+					OR = {
+						has_government = marxism_leninism
+						has_government = authoritarian_socialism
+					}
 				}
    			}
 			

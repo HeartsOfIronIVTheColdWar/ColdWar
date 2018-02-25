@@ -8,7 +8,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -26,7 +26,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -36,10 +36,6 @@ ideas = {
 				industry_air_damage_factor = -0.25
 			}
 		}
-	}
-
-ideas = {
-	country = {
 		gustaf_v = {
 			
 			allowed = {
@@ -48,12 +44,12 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
-					has_government = communism
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ENG
-						has_government = democratic 
+						OR = { has_government = liberalism has_government = conservatism has_government = social_democracy } 
 						NOT = {
 							tag = ROOT
 						}
@@ -67,8 +63,6 @@ ideas = {
 			
 
 		}
-		
-	}
 	}
 ###ADVISORS AND STAFF###
 	
@@ -114,35 +108,145 @@ ideas = {
 	
 	minister_of_internal_affairs = {
 		
-		
+		swe1 = {
+			
+			
+			allowed = {
+				original_tag = "SWE"
+			}
+			
+			traits = { smooth_talking_charmer popular_figurehead }
+	
+			on_add = {
+#				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 	
 	###MINISTER OF INTERNATIONAL AFFAIRS###
 	
 	minister_of_international_affairs = {
-		
+		swe2 = {
+			
+			
+			allowed = {
+				original_tag = "SWE"
+			}
+			
+			traits = { smooth_talking_charmer popular_figurehead }
+	
+			on_add = {
+#				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 
 	###INTELLIGENCE MINISTER###
 	
 	intelligence_minister = {
-		
+		swe3 = {
+			
+			
+			allowed = {
+				original_tag = "SWE"
+			}
+			
+			traits = { smooth_talking_charmer popular_figurehead }
+	
+			on_add = {
+#				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 	}
 
 	###EDUCATION MINISTER###
 	
 	education_minister = {
+		swe4 = {
+			
+			
+			allowed = {
+				original_tag = "SWE"
+			}
+			
+			traits = { smooth_talking_charmer popular_figurehead }
 	
+			on_add = {
+#				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 	}
 	
 	###ECONOMIC MINISTER###
 	
 	economic_minister = {
+		swe5 = {
+			
+			
+			allowed = {
+				original_tag = "SWE"
+			}
+			
+			traits = { smooth_talking_charmer popular_figurehead }
 	
+			on_add = {
+#				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 ###ROW 3###

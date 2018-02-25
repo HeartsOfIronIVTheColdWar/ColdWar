@@ -4,7 +4,11 @@ spriteTypes = {
 		name = "GFX_idea_RAJ_smiling_buddha"
 		texturefile = "gfx/interface/ideas/RAJ_smiling_buddha_idea.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_focus_refugees"
+		texturefile = "gfx/interface/ideas/focus_refugees.dds"
+	}
+	
 ###FRA###
 	spriteType = {
 		name = "GFX_idea_FRA_indochina"

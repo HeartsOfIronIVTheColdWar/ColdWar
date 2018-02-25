@@ -18,6 +18,82 @@ set_national_unity = 0.55
 		
 		parties = {
 			liberalism = { 
+				popularity = 5
+				#banned = no #default is no
+			}
+
+			conservatism = {
+				popularity = 6
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 12
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 48
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 29
+				#banned = no #default is no
+			}
+		
+		}
+  		
+ 		ruling_party = dictatorship
+  		last_election = "1946.6.4"
+  		election_frequency = 48
+  		elections_allowed = no
+  	}
+	create_country_leader = {
+		name = "Juan Perón"
+		desc = "POLITICS_JUAN_PERON_DESC"
+		picture = "Portrait_Argentina_Juan_Peron.dds"
+		expire = "1974.7.1"
+		ideology = fascism
+		traits = {
+		}
+	}
+	set_technology = { naval_stipulations = 1
+	}
+}
+
+1960.1.1 = {
+	
+	oob = "ARG_1960"
+	add_ideas = {
+		#laws
+		low_economic_mobilisation
+		limited_conscription
+		#ideas
+	}
+
+	set_politics = {
+
+		parties = {
+			liberalism = { 
 				popularity = 100
 				#banned = no #default is no
 			}
@@ -61,70 +137,13 @@ set_national_unity = 0.55
 			}
 		
 		}
-  		
- 		ruling_party = dictatorship
-  		last_election = "1950.1.1"
-  		election_frequency = 48
-  		elections_allowed = no
-  	}
-	create_country_leader = {
-		name = "Juan Perón"
-		desc = "POLITICS_JUAN_PERON_DESC"
-		picture = "Portrait_Argentina_Juan_Peron.dds"
-		expire = "1974.7.1"
-		ideology = despotism
-		traits = {
-			stalins_puppet
-		}
-	}
-	set_technology = { naval_stipulations = 1
-	}
-}
-
-1960.1.1 = {
-	
-	oob = "ARG_1960"
-	add_ideas = {
-		#laws
-		low_economic_mobilisation
-		limited_conscription
-		#ideas
-	}
-
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }
@@ -141,20 +160,49 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
+			liberalism = { 
 				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism
@@ -162,16 +210,7 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}	
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }
@@ -189,20 +228,49 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
+			liberalism = { 
 				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism
@@ -210,16 +278,7 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }

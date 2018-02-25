@@ -69,9 +69,9 @@ set_national_unity = 0.55
 	}
 #	create_country_leader = {
 #	name = "Syngman Rhee"
-#	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+#	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 #	picture = "Portrait_South_KAZea_Syngman_Rhee.dds"
-#	expire = "1965.1.1"
+#	expire = 1965.1.1
 #	ideology = despotism
 #¤	traits = {
 #		#
@@ -117,9 +117,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_South_KAZea_Syngman_Rhee.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = despotism
 	traits = {
 		#
@@ -164,9 +164,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_South_KAZea_Syngman_Rhee.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = despotism
 	traits = {
 		#
@@ -212,9 +212,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Syngman Rhee"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_South_KAZea_Syngman_Rhee.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = despotism
 	traits = {
 		#

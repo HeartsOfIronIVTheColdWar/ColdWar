@@ -20,7 +20,11 @@ country_event = {
 		date > 1950.2.1
 		date < 1950.12.1
 		FRA = {
-			has_government = democratic
+			OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+}
 		}
 	}
 	
@@ -148,7 +152,7 @@ country_event = {
 	option = {
 		name = "Those idiots! Sacrebleu!"
 		FRA = {
-			add_timed_idea = { FRA_US_lowered_aid days = 365 }
+			add_timed_idea = { idea = FRA_US_lowered_aid days = 365 }
 		}
 	}
 }
@@ -226,7 +230,7 @@ country_event = { #Should I stay or should I go? ALG
 		FRA = { country_event = { days = 1 id = fra.621 } }
 		ALG = { country_event = { days = 1 id = fra.623 } }
 		FRA = { end_puppet = ALG }
-		ALG = { drop_cosmetic_tag = ALG_FRA }
+		ALG = { drop_cosmetic_tag = yes }
 	}
 	option = { #Stay with France
 		name = "Independence is a feeble solution."
@@ -259,7 +263,7 @@ country_event = { # ALG
 	option = {
 		name = "The Union is dead, they are on their own."
 		FRA = { end_puppet = ALG }
-		ALG = { drop_cosmetic_tag = ALG_FRA }
+		ALG = { drop_cosmetic_tag = yes }
 	}
 	
 }
@@ -289,7 +293,7 @@ country_event = { #Should I stay or should I go? TUN
 		FRA = { country_event = { days = 1 id = fra.626 } }
 		TUN = { country_event = { days = 1 id = fra.628 } }
 		FRA = { end_puppet = TUN }
-		TUN = { drop_cosmetic_tag = TUN_FRA }
+		TUN = { drop_cosmetic_tag = yes }
 	}
 	option = { #Stay with France
 		name = fra.625.b
@@ -322,7 +326,7 @@ country_event = { # TUN
 	option = {
 		name = fra.627.b #force them out
 		FRA = { end_puppet = TUN }
-		TUN = { drop_cosmetic_tag = TUN_FRA }
+		TUN = { drop_cosmetic_tag = yes }
 	}
 	
 }
@@ -352,7 +356,7 @@ country_event = { #Should I stay or should I go? MOR
 		FRA = { country_event = { days = 1 id = fra.631 } }
 		MOR = { country_event = { days = 1 id = fra.633 } }
 		FRA = { end_puppet = MOR }
-		MOR = { drop_cosmetic_tag = MOR_FRA }
+		MOR = { drop_cosmetic_tag = yes }
 	}
 	option = { #Stay with France
 		name = fra.630.b
@@ -385,7 +389,7 @@ country_event = { # MOR
 	option = {
 		name = fra.632.b #force them out
 		FRA = { end_puppet = MOR }
-		MOR = { drop_cosmetic_tag = MOR_FRA }
+		MOR = { drop_cosmetic_tag = yes }
 	}
 	
 }
@@ -415,7 +419,7 @@ country_event = { #Should I stay or should I go? FWA
 		FRA = { country_event = { days = 1 id = fra.636 } }
 		FWA = { country_event = { days = 1 id = fra.638 } }
 		FRA = { end_puppet = FWA }
-		FWA = { drop_cosmetic_tag = FWA_FRA }
+		FWA = { drop_cosmetic_tag = yes }
 	}
 	option = { #Stay with France
 		name = fra.635.b
@@ -448,7 +452,7 @@ country_event = { # FWA
 	option = {
 		name = fra.637.b #force them out
 		FRA = { end_puppet = FWA }
-		FWA = { drop_cosmetic_tag = FWA_FRA }
+		FWA = { drop_cosmetic_tag = yes }
 	}
 	
 }
@@ -478,7 +482,7 @@ country_event = { #Should I stay or should I go? FEA
 		FRA = { country_event = { days = 1 id = fra.641 } }
 		FEA = { country_event = { days = 1 id = fra.643 } }
 		FRA = { end_puppet = FEA }
-		FEA = { drop_cosmetic_tag = FEA_FRA }
+		FEA = { drop_cosmetic_tag = yes }
 	}
 	option = { #Stay with France
 		name = fra.640.b
@@ -511,7 +515,7 @@ country_event = { # FEA
 	option = {
 		name = fra.642.b #force them out
 		FRA = { end_puppet = FEA }
-		FEA = { drop_cosmetic_tag = FEA_FRA }
+		FEA = { drop_cosmetic_tag = yes }
 	}
 	
 }
@@ -541,7 +545,7 @@ country_event = { #Should I stay or should I go? MAD
 		FRA = { country_event = { days = 1 id = fra.646 } }
 		MAD = { country_event = { days = 1 id = fra.648 } }
 		FRA = { end_puppet = MAD }
-		MAD = { drop_cosmetic_tag = MAD_FRA }
+		MAD = { drop_cosmetic_tag = yes }
 		
 	}
 	option = { #Stay with France
@@ -575,7 +579,7 @@ country_event = { # MAD
 	option = {
 		name = fra.647.b #force them out
 		FRA = { end_puppet = MAD }
-		MAD = { drop_cosmetic_tag = MAD_FRA }
+		MAD = { drop_cosmetic_tag = yes }
 	}
 	
 }

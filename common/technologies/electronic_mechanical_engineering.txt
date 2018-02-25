@@ -1363,7 +1363,7 @@ technologies = {
         jet_cas = {
            	air_range = 0.25
         }
-        jet_mca = {
+        mca = {
            	air_range = 0.25
         }
         jet_interceptor = {
@@ -1400,7 +1400,7 @@ technologies = {
         jet_cas = {
            	air_range = 0.25
         }
-        jet_mca = {
+        mca = {
            	air_range = 0.25
         }
         jet_interceptor = {

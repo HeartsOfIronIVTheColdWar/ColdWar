@@ -10,7 +10,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = autocratic
+					OR = { has_government = junta has_government = dictatorship has_government = monarchism }
 				}
 			}
 

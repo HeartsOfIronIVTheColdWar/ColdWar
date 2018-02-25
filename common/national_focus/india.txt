@@ -94,11 +94,6 @@ focus_tree = {
 									}
 								}
 								else = {
-									limit = {
-										RAJ = {
-											has_idea = RAJ_trade_issues_ENG
-										}
-									}
 									RAJ = {
 										remove_ideas = RAJ_trade_issues_ENG
 									}
@@ -168,11 +163,6 @@ focus_tree = {
 									}
 								}
 								else = {
-									limit = {
-										RAJ = {
-											has_idea = RAJ_trade_issues_FRA
-										}
-									}
 									RAJ = {
 										remove_ideas = RAJ_trade_issues_FRA
 									}
@@ -242,11 +232,6 @@ focus_tree = {
 									}
 								}
 								else = {
-									limit = {
-										RAJ = {
-											has_idea = RAJ_trade_issues_POR
-										}
-									}
 									RAJ = {
 										remove_ideas = RAJ_trade_issues_POR
 									}
@@ -770,7 +755,7 @@ focus_tree = {
 		x = 3
 		y = 8
 		completion_reward = {
-			country_event = { days = 1 id = india.40 }
+			custom_effect_tooltip = "Will add decisions once cornflakes is out"
 		}
 	}
 	focus = {
@@ -832,7 +817,9 @@ focus_tree = {
 		x = 10
 		y = 5
 		completion_reward = {
-			country_event = { days = 1 id = india.31 }
+			USA = { 
+				add_opinion_modifier = { target = RAJ modifier = trade_boosted } 
+			}
 		}
 	}
 	focus = {
@@ -908,7 +895,7 @@ focus_tree = {
 		x = 14
 		y = 5
 		completion_reward = {
-		
+			custom_effect_tooltip = "Will add decisions once cornflakes is out"
 		}
 	}
 	focus = {
@@ -922,7 +909,9 @@ focus_tree = {
 		x = 12
 		y = 6
 		completion_reward = {
-		
+			PRC = { 
+				add_opinion_modifier = { target = RAJ modifier = embargo } 
+			}
 		}
 	}
 	focus = {
@@ -935,7 +924,36 @@ focus_tree = {
 		x = 12
 		y = 7
 		completion_reward = {
-		
+			custom_effect_tooltip = RAJ_chinese_forts
+			custom_effect_tooltip = RAJ_chinese_forts_decision
+			hidden_effect = {
+				434 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 1996
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12322
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 10810
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1116
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1023,7 +1041,9 @@ focus_tree = {
 		x = 18
 		y = 5
 		completion_reward = {
-		
+			SOV = { 
+				add_opinion_modifier = { target = RAJ modifier = trade_boosted } 
+			}
 		}
 	}
 	focus = {
@@ -1037,7 +1057,9 @@ focus_tree = {
 		x = 16
 		y = 6
 		completion_reward = {
-		
+			PAK = { 
+				add_opinion_modifier = { target = RAJ modifier = embargo } 
+			}
 		}
 	}
 	focus = {
@@ -1050,7 +1072,82 @@ focus_tree = {
 		x = 16
 		y = 7
 		completion_reward = {
-		
+			custom_effect_tooltip = RAJ_pakistani_forts
+			custom_effect_tooltip = RAJ_pakistani_forts_decision
+			hidden_effect = {
+				428 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 7020
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1061
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 4064
+						instant_build = yes
+					}
+				}
+				433 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12886
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 10847
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 10866
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12718
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12876
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12041
+						instant_build = yes
+					}
+				}
+				439 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 10772
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12822
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1108,7 +1205,15 @@ focus_tree = {
 		x = 21
 		y = 7
 		completion_reward = {
-		
+			add_equipment_to_stockpile = { type = MBT_1950_equipment_1 amount = 250 producer = SOV }
+			add_tech_bonus = {
+				name = WGR_A_German_Rifle
+				bonus = 0.5
+				uses = 3
+				category = engine_improvement
+				category = armor_improvements
+				category = turret_improvements
+			}
 		}
 	}
 	focus = {
@@ -1150,7 +1255,9 @@ focus_tree = {
 			add_ideas = RAJ_caste_system_broken
 			hidden_effect = {
 				IF = {
-					has_idea = RAJ_backwards_classes_commission
+					limit = { 
+						has_idea = RAJ_backwards_classes_commission
+					}
 					remove_ideas = RAJ_backwards_classes_commission
 				}
 			}
@@ -1241,7 +1348,7 @@ focus_tree = {
 		x = 25
 		y = 0
 		completion_reward = {
-		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -1254,7 +1361,7 @@ focus_tree = {
 		x = 20
 		y = 1
 		completion_reward = {
-		
+			custom_effect_tooltip = "Will add decisions once cornflakes is out"
 		}
 	}
 	focus = {
@@ -1267,7 +1374,13 @@ focus_tree = {
 		x = 20
 		y = 2
 		completion_reward = {
-		
+			air_experience = 75
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1283,7 +1396,58 @@ focus_tree = {
 		x = 19
 		y = 3
 		completion_reward = {
-		
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
 		}
 	}
 	focus = {
@@ -1299,7 +1463,28 @@ focus_tree = {
 		x = 21
 		y = 3
 		completion_reward = {
-		
+			air_experience = 75
+			add_ace = {
+				name = "Aspy"
+				surname = "Engineer"
+				callsign = "Quick"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Minoo"
+				surname = "Engineer"
+				callsign = "Manipur"
+				type = fighter_good
+				is_female = no
+			}
+			add_ace = {
+				name = "Jagdish"
+				surname = "Chandra Varma"
+				callsign = "Bandy"
+				type = fighter_good
+				is_female = no
+			}
 		}
 	}
 	focus = {
@@ -1316,7 +1501,13 @@ focus_tree = {
 		x = 19
 		y = 4
 		completion_reward = {
-		
+			air_experience = 75
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 1
+				category = heavy_air
+			}
 		}
 	}
 	focus = {
@@ -1333,20 +1524,28 @@ focus_tree = {
 		x = 21
 		y = 4
 		completion_reward = {
-		
+			air_experience = 75
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 	focus = {
 		id = RAJ_mil_reform_1
 		icon = GFX_focus_RAJ_indianisation_of_army
 		cost = 10
+		available = { RAJ = { has_completed_focus = RAJ_first_general_election } }
 		prerequisite = {
 			focus = RAJ_military_reforms
 		}
 		x = 25
 		y = 1
 		completion_reward = {
-		
+			custom_effect_tooltip = "Will add decisions once cornflakes is out"
+			army_experience = 15
 		}
 	}
 	focus = {
@@ -1363,7 +1562,15 @@ focus_tree = {
 		x = 23
 		y = 2
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = land_doctrine
+				category = marine_tech
+				category = para_tech
+			}
 		}
 	}
 	focus = {
@@ -1380,7 +1587,15 @@ focus_tree = {
 		x = 25
 		y = 2
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 2
+				category = artillery
+				category = infantry_weapons
+				category = support_tech
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1397,7 +1612,15 @@ focus_tree = {
 		x = 27
 		y = 2
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 2
+				category = armor
+				category = infantry_weapons
+				category = motorized_equipment
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1416,7 +1639,12 @@ focus_tree = {
 		x = 23
 		y = 3
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -1435,7 +1663,12 @@ focus_tree = {
 		x = 25
 		y = 3
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -1455,7 +1688,12 @@ focus_tree = {
 		x = 27
 		y = 3
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
 		}
 	}
 	focus = {
@@ -1474,7 +1712,7 @@ focus_tree = {
 		x = 23
 		y = 4
 		completion_reward = {
-		
+			custom_effect_tooltip = "Will add decisions once cornflakes is out"
 		}
 	}
 	focus = {
@@ -1493,7 +1731,31 @@ focus_tree = {
 		x = 25
 		y = 4
 		completion_reward = {
-		
+			custom_effect_tooltip = "Will add decisions once cornflakes is out"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1512,7 +1774,31 @@ focus_tree = {
 		x = 27
 		y = 4
 		completion_reward = {
-		
+			custom_effect_tooltip = "Will add decisions once cornflakes is out"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1529,7 +1815,7 @@ focus_tree = {
 		x = 29
 		y = 1
 		completion_reward = {
-		
+			custom_effect_tooltip = "Decision to buy ships from UK by event."
 		}
 	}
 	focus = {
@@ -1542,7 +1828,22 @@ focus_tree = {
 		x = 29
 		y = 2
 		completion_reward = {
-		
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			431 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1555,7 +1856,15 @@ focus_tree = {
 		x = 29
 		y = 3
 		completion_reward = {
-		
+			custom_effect_tooltip = available_chief_of_navy
+			show_ideas_tooltip = ram_dass_katari
+			navy_experience = 75
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	focus = {
@@ -1571,7 +1880,13 @@ focus_tree = {
 		x = 31
 		y = 1
 		completion_reward = {
-		
+			navy_experience = 75
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1584,7 +1899,7 @@ focus_tree = {
 		x = 31
 		y = 2
 		completion_reward = {
-		
+			add_ideas = mazagon_dock_limited
 		}
 	}
 	focus = {
@@ -1597,7 +1912,15 @@ focus_tree = {
 		x = 31
 		y = 3
 		completion_reward = {
-		
+			custom_effect_tooltip = available_chief_of_navy
+			show_ideas_tooltip = bhaskar_sadashiv_soman
+			navy_experience = 75
+			add_tech_bonus = {
+				name = RAJ_research_anything
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 	focus = {
@@ -1611,7 +1934,20 @@ focus_tree = {
 		x = 30
 		y = 4
 		completion_reward = {
-		
+			custom_effect_tooltip = RAJ_build_vikrant
+			hidden_effect = {
+				RAJ = {
+					add_equipment_production = { 
+						equipment = { 
+							type = carrier_1 
+							creator = "RAJ"
+						} 
+						requested_factories = 1
+						progress = 0.75 
+						amount = 1 
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1634,7 +1970,13 @@ focus_tree = {
 		x = 25
 		y = 6
 		completion_reward = {
-		
+			add_ideas = RAJ_smiling_buddha1
+			add_tech_bonus = {
+				name = med_armor_bonus
+				bonus = 0.75
+				ahead_reduction = 1
+				category = nuclear
+			}
 		}
 	}
 }

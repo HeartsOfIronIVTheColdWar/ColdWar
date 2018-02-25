@@ -88,7 +88,7 @@ country_event = {
 				
 				}
 			}
-			set_party_name = { ideology = autocratic long_name = EGY_brotherhood_long name = EGY_brotherhood }
+			set_party_name = { ideology = dictatorship long_name = EGY_brotherhood_long name = EGY_brotherhood }
 			remove_ideas = { brotherhood }
 		}
 	}

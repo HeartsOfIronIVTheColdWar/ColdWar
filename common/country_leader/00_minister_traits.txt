@@ -172,9 +172,6 @@ leader_traits = {
 	
 	int_industrial_spy = {
 		decryption_factor = 0.2
-		research_bonus = {
-				industry = 0.10
-			}
 	
 		random = no
 	}
@@ -192,10 +189,6 @@ leader_traits = {
 	
 	edu_fondamental_research = {
 		production_speed_nuclear_reactor_factor = 0.2
-		research_bonus = {
-			nuclear = 0.15
-			electronics = 0.15
-		}
 	
 		random = no
 	}
@@ -215,9 +208,6 @@ leader_traits = {
 	
 	edu_space_pionneer = {
 		production_speed_rocket_site_factor = 0.2
-		research_bonus = {
-			rocketry = 0.20
-		}
 	
 		random = no
 	}
@@ -328,22 +318,5 @@ leader_traits = {
 	## VARIOUS TRAITS
 	###########################
 	
-	var_communist_agitator = {
-		communism_drift = 0.1
-	
-		random = no
-	}
-	
-	var_democrat_figurehead = {
-		democratic_drift = 0.1
-	
-		random = no
-	}
-	
-	var_autocratic_demagogue = {
-		autocratic_drift = 0.1
-	
-		random = no
-	}
 	
 }

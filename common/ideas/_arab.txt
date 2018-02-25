@@ -11,7 +11,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				communism_acceptance = -85
+
 			}
 	
 			ai_will_do = {
@@ -29,7 +29,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				democratic_acceptance = -85
+#				democratic_acceptance = -85
 			}
 	
 			ai_will_do = {
@@ -47,8 +47,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				communism_acceptance = -85
-				democratic_acceptance = -85
+
 			}
 	
 			ai_will_do = {

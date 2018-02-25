@@ -16,7 +16,7 @@ ideas = {
 			picture = generic_spy_coup
 
 			modifier = {
-				communism_drift = 0.04
+				authoritarian_socialism_drift = 0.04
 				political_power_cost = 0.2
 				
 			}

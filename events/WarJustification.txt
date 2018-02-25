@@ -4,32 +4,6 @@
 
 add_namespace = war_justification 
 
-# Fascists vs Neutrals
-country_event = {
-	id = war_justification.1
-	title = war_justification.1.t
-	desc = war_justification.1.d
-	picture = GFX_report_event_fascist_speech  
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = fascism
-		FROM = { has_government = neutrality }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-	
-	option = {
-		name = war_justification.1.a
-		FROM = { country_event = { id = war_justification.201 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
 # Fascists vs Democrats
 country_event = {
 	id = war_justification.2
@@ -40,8 +14,16 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_government = fascism
-		FROM = { has_government = democratic }
+		OR = {
+			has_government = monarchism
+			has_government = dictatorship
+			has_government = junta
+		}
+		FROM = { OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 
@@ -66,8 +48,16 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_government = fascism
-		FROM = { has_government = communism }
+		OR = {
+	has_government = monarchism
+	has_government = dictatorship
+	has_government = junta
+}
+		FROM = { OR = {
+	has_government = radical_socialism
+	has_government = marxism_leninism
+	has_government = authoritarian_socialism
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 
@@ -92,40 +82,22 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = fascism
-		FROM = { has_government = fascism }
+		OR = {
+	has_government = monarchism
+	has_government = dictatorship
+	has_government = junta
+}
+		FROM = { OR = {
+	has_government = monarchism
+	has_government = dictatorship
+	has_government = junta
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
 	option = {
 		name = war_justification.4.a
 		FROM = { country_event = { id = war_justification.204 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
-# Communists vs Neutrals
-country_event = {
-	id = war_justification.5
-	title = war_justification.5.t
-	desc = war_justification.5.d
-	picture = GFX_report_event_nra_march
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = communism
-		FROM = { has_government = neutrality }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-	
-	option = {
-		name = war_justification.5.a
-		FROM = { country_event = { id = war_justification.205 } }
 		set_country_flag = war_justification_last_event_political
 		clr_country_flag = war_justification_last_event_generic
 		clr_country_flag = war_justification_last_event_neighbor
@@ -144,8 +116,16 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = communism
-		FROM = { has_government = democratic }
+		OR = {
+	has_government = radical_socialism
+	has_government = marxism_leninism
+	has_government = authoritarian_socialism
+} 
+		FROM = { OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -170,8 +150,16 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = communism
-		FROM = { has_government = communism }
+		OR = {
+	has_government = radical_socialism
+	has_government = marxism_leninism
+	has_government = authoritarian_socialism
+} 
+		FROM = { OR = {
+	has_government = radical_socialism
+	has_government = marxism_leninism
+	has_government = authoritarian_socialism
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -196,40 +184,22 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = communism
-		FROM = { has_government = fascism }
+		OR = {
+	has_government = radical_socialism
+	has_government = marxism_leninism
+	has_government = authoritarian_socialism
+} 
+		FROM = { OR = {
+	has_government = monarchism
+	has_government = dictatorship
+	has_government = junta
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
 	option = {
 		name = war_justification.8.a
 		FROM = { country_event = { id = war_justification.208 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
-# Democrats vs Neutrals
-country_event = {
-	id = war_justification.9
-	title = war_justification.9.t
-	desc = war_justification.9.d
-	picture = GFX_report_event_communist_leader
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = democratic
-		FROM = { has_government = neutrality }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-	
-	option = {
-		name = war_justification.9.a
-		FROM = { country_event = { id = war_justification.209 } }
 		set_country_flag = war_justification_last_event_political
 		clr_country_flag = war_justification_last_event_generic
 		clr_country_flag = war_justification_last_event_neighbor
@@ -248,8 +218,16 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
-		FROM = { has_government = democratic }
+		OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+}
+		FROM = { OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -274,8 +252,16 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
-		FROM = { has_government = communism }
+		OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+}
+		FROM = { OR = {
+	has_government = radical_socialism
+	has_government = marxism_leninism
+	has_government = authoritarian_socialism
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
@@ -300,118 +286,22 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
-		FROM = { has_government = fascism }
+		OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+}
+		FROM = { OR = {
+	has_government = monarchism
+	has_government = dictatorship
+	has_government = junta
+} }
 		NOT = { has_country_flag = war_justification_last_event_political }
 	}
 	
 	option = {
 		name = war_justification.12.a
 		FROM = { country_event = { id = war_justification.212 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
-# Neutrals vs Neutrals
-country_event = {
-	id = war_justification.13
-	title = war_justification.13.t
-	desc = war_justification.13.d
-	picture = GFX_report_event_soldiers_marching
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = neutrality
-		FROM = { has_government = neutrality }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-	
-	option = {
-		name = war_justification.13.a
-		FROM = { country_event = { id = war_justification.213 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
-# Neutrals vs Democrats
-country_event = {
-	id = war_justification.14
-	title = war_justification.14.t
-	desc = war_justification.14.d
-	picture = GFX_report_event_tanks_vietnam
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = neutrality
-		FROM = { has_government = democratic }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-	
-	option = {
-		name = war_justification.14.a
-		FROM = { country_event = { id = war_justification.214 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
-# Neutrals vs Communists
-country_event = {
-	id = war_justification.15
-	title = war_justification.15.t
-	desc = war_justification.15.d
-	picture = GFX_report_event_tanks_mexico_city
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = neutrality
-		FROM = { has_government = communism }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-	
-	option = {
-		name = war_justification.15.a
-		FROM = { country_event = { id = war_justification.215 } }
-		set_country_flag = war_justification_last_event_political
-		clr_country_flag = war_justification_last_event_generic
-		clr_country_flag = war_justification_last_event_neighbor
-		clr_country_flag = war_justification_last_event_mobilized
-		clr_country_flag = war_justification_last_event_borderthreat
-	}
-}
-
-# Neutrals vs Fascists
-country_event = {
-	id = war_justification.16
-	title = war_justification.16.t
-	desc = war_justification.16.d
-	picture = GFX_report_event_pla_in_beijing
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = neutrality
-		FROM = { has_government = fascism }
-		NOT = { has_country_flag = war_justification_last_event_political }
-	}
-	
-	option = {
-		name = war_justification.16.a
-		FROM = { country_event = { id = war_justification.216 } }
 		set_country_flag = war_justification_last_event_political
 		clr_country_flag = war_justification_last_event_generic
 		clr_country_flag = war_justification_last_event_neighbor
@@ -833,39 +723,29 @@ country_event = {
 	
 	option = {
 		name = war_justification.301.a
-		trigger = { has_government = democratic }
+		trigger = { OR = {
+	has_government = liberalism
+	has_government = conservatism
+	has_government = social_democracy
+} }
 		add_political_power = -30
 		add_national_unity = -0.03
-		add_popularity = {
-			ideology = democratic
-			popularity = -0.05
-		}
 	}
 
 	option = {
 		name = war_justification.301.b
-		trigger = { has_government = communism }
+		trigger = { OR = {
+	has_government = radical_socialism
+	has_government = marxism_leninism
+	has_government = authoritarian_socialism
+}  }
 		add_political_power = -30
 		add_national_unity = -0.03
-		add_popularity = {
-			ideology = communism
-			popularity = -0.05
-		}
 	}
 
 	option = {
 		name = war_justification.301.c
-		trigger = {
-			OR = {
-				has_government = autocratic
-				has_government = neutrality
-			}
-		}
 		add_political_power = -30
 		add_national_unity = -0.03
-		add_popularity = {
-			ideology = autocratic
-			popularity = -0.05
-		}
 	}
 }

@@ -113,7 +113,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_popularity = { ideology = communism popularity = 0.15 } 
+		add_popularity = { ideology = marxism_leninism popularity = 0.05 } 
 		}
 	}
     
@@ -133,21 +133,6 @@ focus_tree = {
 	}   
 
     focus = {
-		id = NOR_support_from_ussr
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = NOR_socialism_effort }
-		x = 1
-		y = 3
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-         
-		}
-	} 
-
-	focus = {
 		id = NOR_support_from_ussr
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = NOR_socialism_effort }

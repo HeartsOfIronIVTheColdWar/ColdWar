@@ -78,7 +78,7 @@ equipments = {
 
 	anti_tank_equipment_2 = {
 		archetype = anti_tank_equipment
-		parent = infantry_equipment_1
+		parent = anti_tank_equipment_1
 		priority = 10
 		visual_level = 2
 		

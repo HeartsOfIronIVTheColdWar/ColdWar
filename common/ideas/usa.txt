@@ -41,7 +41,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -62,7 +62,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -83,7 +83,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -94,7 +94,7 @@ ideas = {
 				consumer_goods_factor = 0.6
 				trade_opinion_factor = 0.1
 				industrial_capacity_factory = -0.4
-				communism_drift = 0.02
+				conservatism_drift = 0.02
 				
 			}
 		}
@@ -106,7 +106,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -129,7 +129,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -149,7 +149,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -169,7 +169,7 @@ ideas = {
 			} 
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -188,7 +188,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -203,14 +203,14 @@ ideas = {
 			}
 		}
 				
-		banned_communism = {		
+		banned_ = {		
 			
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -218,7 +218,8 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				communism_drift = -0.1 
+				marxism_leninism_drift = -0.1 
+				authoritarian_socialism_drift = -0.1 
 				unity_factor = -0.05
 			}
 		}
@@ -229,7 +230,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1 
@@ -247,7 +248,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			picture = generic_goods_red_bonus
@@ -265,7 +266,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -284,7 +285,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -303,7 +304,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -322,7 +323,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -342,7 +343,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -362,7 +363,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -382,7 +383,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -402,7 +403,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -425,7 +426,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -444,7 +445,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -462,7 +463,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -481,7 +482,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -499,7 +500,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 			
 			removal_cost = -1
@@ -518,7 +519,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -537,7 +538,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1
@@ -556,7 +557,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
 			}
 
 			removal_cost = -1

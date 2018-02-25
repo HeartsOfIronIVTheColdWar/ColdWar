@@ -71,7 +71,7 @@ set_national_unity = 0.55
 	name = "Ho Chi Minh"
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "Portrait_Vietnam_Ho_Chi_Minh.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = maoism
 	traits = {
 		#
@@ -99,36 +99,55 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			liberalism = { 
 				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 16
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 36
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 48
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
 	}
 	set_technology = {
 	}
@@ -146,20 +165,49 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			liberalism = { 
 				popularity = 0
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 0
-				banned = no
-			}
-			
-			communism = {
-				popularity = 100
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 16
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 36
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 48
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		
 		}
 		
 		ruling_party = marxism_leninism
@@ -167,16 +215,6 @@ set_national_unity = 0.55
 		election_frequency = 48
 		elections_allowed = no
 	}	
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
-	}
 	set_technology = {
 	}
 }
@@ -214,16 +252,6 @@ set_national_unity = 0.55
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = marxism_leninism
-	traits = {
-		#
-	}
 	}
 	set_technology = {
 	}

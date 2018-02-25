@@ -379,12 +379,12 @@ news_event = {
 					desc = "POLITICS_NAGUIB_DESC"
 					picture = "Portrait_Egypt_Mohammed_Naguib.dds"
 					expire = "1984.8.28"
-					ideology = despotism
+					ideology = junta_leader
 					traits = {
 				
 					}
 				}
-				set_party_name = { ideology = autocratic long_name = EGY_free_officers_movement name = EGY_free_officers_movement }
+				set_party_name = { ideology = junta long_name = EGY_free_officers_movement name = EGY_free_officers_movement }
 				add_timed_idea = { idea = EGY_revolution_triumphant days = 180 }
 				add_ideas = { brotherhood }
 				swap_ideas = {

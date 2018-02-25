@@ -287,7 +287,14 @@ opinion_modifiers = {
 		trade = yes
 		value = -20
 	}
-
+	trade_boosted = {
+		trade = yes
+		value = 25
+	}
+	trade_greatly_boosted = {
+		trade = yes
+		value = 50
+	}
 	unholy_alliance_opinion = {
 		value = 40
 	}
@@ -324,5 +331,4 @@ opinion_modifiers = {
 		value = 15
 		months = 120
 	}
-
 }	

@@ -69,9 +69,9 @@ set_national_unity = 0.55
 	}
 	create_country_leader = {
 	name = "Sir Terence Sydney Airey"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	desc = POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC
 	picture = "Portrait_Trieste_Some_dude.dds"
-	expire = "1965.1.1"
+	expire = 1965.1.1
 	ideology = occupation_government
 	traits = {
 		#
@@ -94,37 +94,57 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 66
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 32
-				banned = no
-			}
-			
-			communism = {
-				popularity = 2
+			liberalism = { 
+				popularity = 0
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = junta
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = yes
 	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }
@@ -141,37 +161,57 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 66
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 32
-				banned = no
-			}
-			
-			communism = {
-				popularity = 2
+			liberalism = { 
+				popularity = 0
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = junta
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = yes
 	}	
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }
@@ -189,37 +229,57 @@ set_national_unity = 0.55
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 66
-				banned = no
-			}
-
-			autocratic = {
-				popularity = 32
-				banned = no
-			}
-			
-			communism = {
-				popularity = 2
+			liberalism = { 
+				popularity = 0
 				#banned = no #default is no
 			}
+
+			conservatism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			social_democracy = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			radical_socialism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			marxism_leninism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			authoritarian_socialism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			monarchism = { 
+				popularity = 0
+				#banned = no #default is no
+			}
+
+			dictatorship = {
+				popularity = 0
+				#banned = no #default is no
+			}
+			
+			junta = {
+				popularity = 100
+				#banned = no #default is no
+			}
+		
 		}
 		
-		ruling_party = liberalism
+		ruling_party = junta
 		last_election = "1950.1.1"
 		election_frequency = 48
 		elections_allowed = yes
 	}
-	create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-	}
+
 	set_technology = { naval_stipulations = 1
 	}
 }
