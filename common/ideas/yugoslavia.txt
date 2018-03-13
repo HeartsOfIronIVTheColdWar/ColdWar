@@ -18,7 +18,7 @@ ideas = {
 			
 			modifier = {
 				ai_join_ally_desire_factor = -60
-				unity_factor = 0.15
+				stability_factor = 0.15
 				political_power_factor = -0.1
 			}
 		}

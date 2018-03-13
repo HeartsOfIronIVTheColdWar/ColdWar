@@ -3,15 +3,16 @@
 oob = "FRA_1950"
 set_research_slots = 4
 set_convoys = 300
-set_national_unity = 0.7
+set_stability = 0.5
+set_war_support = 0.5
 
 1950.1.1 = {
 	
 	oob = "FRA_1950"
 	add_ideas = {
+		nato_idea
 		FRA_disjointed_government
 		FRA_dilemmes_coloniaux
-		nato_idea
 		WGR_german_resentement
 	}
 	set_politics = {

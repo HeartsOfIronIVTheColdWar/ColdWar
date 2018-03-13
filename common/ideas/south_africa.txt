@@ -15,7 +15,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.55
-				unity_factor = -0.5
+				stability_factor = -0.5
 				political_power_gain = -0.1
 			}
 

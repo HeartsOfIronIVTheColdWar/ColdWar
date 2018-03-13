@@ -729,7 +729,7 @@ country_event = {
 	has_government = social_democracy
 } }
 		add_political_power = -30
-		add_national_unity = -0.03
+		add_stability = -0.03
 	}
 
 	option = {
@@ -740,12 +740,12 @@ country_event = {
 	has_government = authoritarian_socialism
 }  }
 		add_political_power = -30
-		add_national_unity = -0.03
+		add_stability = -0.03
 	}
 
 	option = {
 		name = war_justification.301.c
 		add_political_power = -30
-		add_national_unity = -0.03
+		add_stability = -0.03
 	}
 }

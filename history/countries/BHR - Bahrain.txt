@@ -3,7 +3,8 @@
 oob = "BHR_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_stability = 0.5
+set_war_support = 0.55
 
 1950.1.1 = {
 	

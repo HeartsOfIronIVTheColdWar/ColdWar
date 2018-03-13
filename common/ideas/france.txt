@@ -33,7 +33,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.08
-				unity_factor = -0.10
+				stability_factor = -0.10
 				
 			}
 		}
@@ -120,7 +120,7 @@ ideas = {
 			}
 
 			modifier = {
-				unity_weekly = 0.001
+				stability_weekly = 0.001
 				political_power_gain = 0.05
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
@@ -180,7 +180,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.3
-				unity_factor = -0.2
+				stability_factor = -0.2
 			}
 		}
 		
@@ -203,7 +203,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.4
-				unity_factor = -0.10
+				stability_factor = -0.10
 			}
 		}
 		
@@ -224,7 +224,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.15
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 		
@@ -642,7 +642,6 @@ ideas = {
 			picture = generic_tank_manufacturer_2
 
 			available = {
-				has_completed_focus = FRA_army_reform
 			}
 						
 			allowed = {

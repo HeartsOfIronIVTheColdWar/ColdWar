@@ -88,7 +88,7 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.6
 				authoritarian_socialism_drift = 0.02
-				unity_factor = -0.15
+				stability_factor = -0.15
 				army_morale_factor = -0.15
 			}
 		}
@@ -109,7 +109,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.25
-				unity_factor = -0.15
+				stability_factor = -0.15
 			}
 		}
 	}

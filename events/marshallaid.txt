@@ -13,7 +13,7 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		add_ideas = marshall_plan
+		add_ideas = marshall_plan_reciever
 		
 		USA = {
 			country_event = { id = usa.25 days = 1 }

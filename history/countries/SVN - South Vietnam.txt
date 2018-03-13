@@ -3,7 +3,8 @@
 oob = "SVN_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.80
+set_stability = 0.5
+set_war_support = 0.50
 
 1950.1.1 = {
 	set_cosmetic_tag = SVN_FRA
@@ -305,20 +306,35 @@ create_corps_commander = {
 	name = "Lam Xuan Hoang"
 	id = 10001
 	portrait_path = "gfx/leaders/SVN/svn_lam_xuan_hoang.dds"
-	#traits = { trickster commando }
-	skill = 1
+	#traits = { }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Truang Quang Ngo"
 	id = 10002
 	portrait_path = "gfx/leaders/NKR/Portrait_North_Korea_Kim_Chaek.dds"
-	#traits = { trickster commando }
-	skill = 3
+	#traits = { }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Khang Nguyen Le"
 	id = 10003
 	portrait_path = "gfx/leaders/NKR/Portrait_North_Korea_Kim_Chaek.dds"
-	#traits = { trickster commando }
-	skill = 3
+	#traits = { }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 }

@@ -148,7 +148,7 @@ leader_traits = {
 		random = no
 		sprite = 12
 		political_power_gain = 0.25
-		unity_factor = 0.15
+		stability_factor = 0.15
 #		political_advisor_cost_factor = -0.25
 		
 		ai_will_do = {
@@ -159,7 +159,7 @@ leader_traits = {
 	iron_grip = {
 		random = no
 		sprite = 12
-		political_power_gain = 0.1
+		stability_factor = 0.1
 		enemy_partisan_effect = -0.25
 		foreign_subversive_activites = -0.3
 
@@ -167,7 +167,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
+	
 	benevolent_dictator = {
 		random = no
 		sprite = 12
@@ -212,7 +212,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		political_power_gain = 0.3
-		unity_factor = 0.15
+		stability_factor = 0.15
 		army_morale_factor = 0.15
 
 		ai_will_do = {
@@ -224,7 +224,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		political_power_gain = -0.1
-		unity_factor = -0.05
+		stability_factor = -0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -260,7 +260,17 @@ leader_traits = {
 #ai_focus_naval_factor
 #ai_focus_naval_air_factor
 #ai_focus_aviation_factor 
-	
+
+
+	principled_leader = {
+		random = no
+		decryption = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+		stability_factor = 0.05
+	}
+
 	decryptor = {
 		random = no
 		decryption = 0.5
@@ -486,7 +496,7 @@ leader_traits = {
 	
 	popular_figurehead = {
 		sprite = 13
-		unity_factor = 0.15 
+		stability_factor = 0.15 
 		
 		ai_will_do = {
 			factor = 1

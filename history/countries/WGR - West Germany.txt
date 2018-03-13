@@ -3,7 +3,8 @@
 oob = "WGR_1950"
 set_research_slots = 2
 set_convoys = 65
-set_national_unity = 0.6
+set_stability = 0.5
+set_war_support = 0.5
 
 1950.1.1 = {
 	

@@ -1,585 +1,586 @@
-focus_tree = {
-	id = Spanish_Tree
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = SPR
-		}
-	}
-	default = no
-	focus = {
-		id = SEAT
-		text = SEAT
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 18
-		y = 0
-
-	}
-	focus = {
-		id = ENSIDESA
-		text = ENSIDESA
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 22
-		y = 0
-
-	}
-	focus = {
-		id = Continue_Defascistization
-		text = Continue_Defascistization
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 0
-		y = 0
-
-	}
-	focus = {
-		id = Barcelona_Strike
-		text = Barcelona_Strike
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 4
-		y = 0
-
-	}
-	focus = {
-		id = New_Concordat
-		text = New_Concordat
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 13
-		y = 0
-
-	}
-	focus = {
-		id = Change_HC
-		text = Change_HC
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 29
-		y = 0
-
-	}
-	focus = {
-		id = Airforce_Expansion
-		text = Airforce_Expansion
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 36
-		y = 0
-
-	}
-	focus = {
-		id = Navy_Expansion
-		text = Navy_Expansion
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 42
-		y = 0
-
-	}
-	focus = {
-		id = New_Government
-		text = New_Government
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Barcelona_Strike
-		}
-		prerequisite = {
-			focus = Continue_Defascistization
-		}
-		x = 2
-		y = 1
-
-	}
-	focus = {
-		id = Nationalcatholicism
-		text = Nationalcatholicism
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = New_Government
-		}
-		x = 2
-		y = 2
-
-	}
-	focus = {
-		id = Education_Expansion
-		text = Education_Expansion
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Nationalcatholicism
-		}
-		x = 1
-		y = 3
-
-	}
-	focus = {
-		id = New_Intellectuals
-		text = New_Intellectuals
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Nationalcatholicism
-		}
-		x = 3
-		y = 3
-
-	}
-	focus = {
-		id = 1956_events
-		text = 1956_events
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = New_Intellectuals
-		}
-		prerequisite = {
-			focus = Education_Expansion
-		}
-		x = 2
-		y = 4
-
-	}
-	focus = {
-		id = 56_government
-		text = 56_government
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = 1956_events
-		}
-		x = 2
-		y = 5
-
-	}
-	focus = {
-		id = Found_RTVE
-		text = Found_RTVE
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = 56_government
-		}
-		x = 3
-		y = 6
-
-	}
-	focus = {
-		id = Pacts_Madrid
-		text = Pacts_Madrid
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = New_Concordat
-		}
-		x = 8
-		y = 1
-
-	}
-	focus = {
-		id = War_Material
-		text = War_Material
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Pacts_Madrid
-		}
-		x = 6
-		y = 2
-
-	}
-	focus = {
-		id = Credit_Concession
-		text = Credit_Concession
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Pacts_Madrid
-		}
-		x = 8
-		y = 3
-
-	}
-	focus = {
-		id = Mutual_Defense
-		text = Mutual_Defense
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Pacts_Madrid
-		}
-		x = 10
-		y = 2
-
-	}
-	focus = {
-		id = End_Isolation
-		text = End_Isolation
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = New_Concordat
-		}
-		x = 13
-		y = 1
-
-	}
-	focus = {
-		id = Join_UN
-		text = Join_UN
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = End_Isolation
-		}
-		x = 13
-		y = 2
-
-	}
-	focus = {
-		id = African_Affairs
-		text = African_Affairs
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Join_UN
-		}
-		x = 13
-		y = 3
-
-	}
-	focus = {
-		id = Dealing_Morocco
-		text = Dealing_Morocco
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = African_Affairs
-		}
-		x = 11
-		y = 4
-
-	}
-	focus = {
-		id = Reaffirm_WR
-		text = Reaffirm_WR
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Dealing_Morocco
-		}
-		mutually_exclusive = {
-			focus = Declare_War
-		}
-		x = 10
-		y = 5
-
-	}
-	focus = {
-		id = Declare_War
-		text = Declare_War
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Dealing_Morocco
-		}
-		mutually_exclusive = {
-			focus = Reaffirm_WR
-		}
-		x = 12
-		y = 5
-
-	}
-	focus = {
-		id = Integrating_Guinea
-		text = Integrating_Guinea
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = African_Affairs
-		}
-		x = 15
-		y = 4
-
-	}
-	focus = {
-		id = Eisenhower_Visit
-		text = Eisenhower_Visit
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Integrating_Guinea
-		}
-		prerequisite = {
-			focus = Declare_War
-			focus = Reaffirm_WR
-		}
-		x = 13
-		y = 6
-
-	}
-	focus = {
-		id = End_Rationing
-		text = End_Rationing
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = ENSIDESA
-		}
-		prerequisite = {
-			focus = SEAT
-		}
-		x = 20
-		y = 1
-
-	}
-	focus = {
-		id = Budget_Balance
-		text = Budget_Balance
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = End_Rationing
-		}
-		x = 19
-		y = 2
-
-	}
-	focus = {
-		id = ENCE
-		text = ENCE
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Budget_Balance
-		}
-		x = 17
-		y = 3
-
-	}
-	focus = {
-		id = National_Silos
-		text = National_Silos
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = End_Rationing
-		}
-		x = 21
-		y = 2
-
-	}
-	focus = {
-		id = Leave_Autarky
-		text = Leave_Autarky
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = National_Silos
-		}
-		prerequisite = {
-			focus = Budget_Balance
-		}
-		x = 20
-		y = 3
-
-	}
-	focus = {
-		id = Agricultural_Expansion
-		text = Agricultural_Expansion
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = National_Silos
-		}
-		x = 23
-		y = 3
-
-	}
-	focus = {
-		id = 59_Stabilization
-		text = 59_Stabilization
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = ENCE
-		}
-		prerequisite = {
-			focus = Leave_Autarky
-		}
-		prerequisite = {
-			focus = Agricultural_Expansion
-		}
-		x = 20
-		y = 4
-
-	}
-	focus = {
-		id = Equipment_Rep_I
-		text = Equipment_Rep_I
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Change_HC
-		}
-		x = 29
-		y = 1
-
-	}
-	focus = {
-		id = American_Training_Land
-		text = American_Training_Land
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Equipment_Rep_I
-		}
-		x = 27
-		y = 2
-
-	}
-	focus = {
-		id = Equipment_Rep_II
-		text = Equipment_Mod_II
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Equipment_Rep_I
-		}
-		x = 29
-		y = 2
-
-	}
-	focus = {
-		id = Experimental_Divisions
-		text = Experimental_Divisions
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Equipment_Rep_II
-		}
-		x = 29
-		y = 3
-
-	}
-	focus = {
-		id = Paratroopers_I
-		text = Paratroopers_I
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Change_HC
-		}
-		prerequisite = {
-			focus = Airforce_Expansion
-		}
-		x = 33
-		y = 1
-
-	}
-	focus = {
-		id = Expand_Barajas
-		text = Expand_Barajas
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Airforce_Expansion
-		}
-		x = 35
-		y = 2
-
-	}
-	focus = {
-		id = New_Planes
-		text = New_Planes
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Airforce_Expansion
-		}
-		x = 37
-		y = 2
-
-	}
-	focus = {
-		id = American_Training_Air
-		text = American_Training_Air
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Airforce_Expansion
-		}
-		x = 38
-		y = 1
-
-	}
-	focus = {
-		id = American_Training_Navy
-		text = American_Training_Navy
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Navy_Expansion
-		}
-		x = 40
-		y = 1
-
-	}
-	focus = {
-		id = New_Boats
-		text = New_Boats
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Navy_Expansion
-		}
-		x = 42
-		y = 2
-
-	}
-	focus = {
-		id = Limit_FET
-		text = Limit_FET
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = 56_government
-		}
-		x = 1
-		y = 6
-
-	}
-	focus = {
-		id = Stabilize_Government
-		text = Stabilize_Government
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Found_RTVE
-		}
-		prerequisite = {
-			focus = Limit_FET
-		}
-		x = 2
-		y = 7
-
-	}
-	focus = {
-		id = Renew_Shipyards
-		text = Renew_Shipyards
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = Navy_Expansion
-		}
-		x = 44
-		y = 2
-
-	}
-}
+#focus_tree = {
+#	id = Spanish_Tree
+#	country = {
+#		factor = 0
+#		modifier = {
+#			add = 10
+#			tag = SPR
+#		}
+#	}
+#	default = no
+#	focus = {
+#		id = SEAT
+#		text = SEAT
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 18
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = ENSIDESA
+#		text = ENSIDESA
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 22
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = Continue_Defascistization
+#		text = Continue_Defascistization
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 0
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = Barcelona_Strike
+#		text = Barcelona_Strike
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 4
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = New_Concordat
+#		text = New_Concordat
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 13
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = Change_HC
+#		text = Change_HC
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 29
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = Airforce_Expansion
+#		text = Airforce_Expansion
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 36
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = Navy_Expansion
+#		text = Navy_Expansion
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		x = 42
+#		y = 0
+#
+#	}
+#	focus = {
+#		id = New_Government
+#		text = New_Government
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Barcelona_Strike
+#		}
+#		prerequisite = {
+#			focus = Continue_Defascistization
+#		}
+#		x = 2
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = Nationalcatholicism
+#		text = Nationalcatholicism
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = New_Government
+#		}
+#		x = 2
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = Education_Expansion
+#		text = Education_Expansion
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Nationalcatholicism
+#		}
+#		x = 1
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = New_Intellectuals
+#		text = New_Intellectuals
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Nationalcatholicism
+#		}
+#		x = 3
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = SPR_1956_events
+#		text = 1956_events
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = New_Intellectuals
+#		}
+#		prerequisite = {
+#			focus = Education_Expansion
+#		}
+#		x = 2
+#		y = 4
+#
+#	}
+#	focus = {
+#		id = SPR_56_government
+#		text = 56_government
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = 1956_events
+#		}
+#		x = 2
+#		y = 5
+#
+#	}
+#	focus = {
+#		id = Found_RTVE
+#		text = Found_RTVE
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = 56_government
+#		}
+#		x = 3
+#		y = 6
+#
+#	}
+#	focus = {
+#		id = Pacts_Madrid
+#		text = Pacts_Madrid
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = New_Concordat
+#		}
+#		x = 8
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = War_Material
+#		text = War_Material
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Pacts_Madrid
+#		}
+#		x = 6
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = Credit_Concession
+#		text = Credit_Concession
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Pacts_Madrid
+#		}
+#		x = 8
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = Mutual_Defense
+#		text = Mutual_Defense
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Pacts_Madrid
+#		}
+#		x = 10
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = End_Isolation
+#		text = End_Isolation
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = New_Concordat
+#		}
+#		x = 13
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = Join_UN
+#		text = Join_UN
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = End_Isolation
+#		}
+#		x = 13
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = African_Affairs
+#		text = African_Affairs
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Join_UN
+#		}
+#		x = 13
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = Dealing_Morocco
+#		text = Dealing_Morocco
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = African_Affairs
+#		}
+#		x = 11
+#		y = 4
+#
+#	}
+#	focus = {
+#		id = Reaffirm_WR
+#		text = Reaffirm_WR
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Dealing_Morocco
+#		}
+#		mutually_exclusive = {
+#			focus = Declare_War
+#		}
+#		x = 10
+#		y = 5
+#
+#	}
+#	focus = {
+#		id = Declare_War
+#		text = Declare_War
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Dealing_Morocco
+#		}
+#		mutually_exclusive = {
+#			focus = Reaffirm_WR
+#		}
+#		x = 12
+#		y = 5
+#
+#	}
+#	focus = {
+#		id = Integrating_Guinea
+#		text = Integrating_Guinea
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = African_Affairs
+#		}
+#		x = 15
+#		y = 4
+#
+#	}
+#	focus = {
+#		id = Eisenhower_Visit
+#		text = Eisenhower_Visit
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Integrating_Guinea
+#		}
+#		prerequisite = {
+#			focus = Declare_War
+#			focus = Reaffirm_WR
+#		}
+#		x = 13
+#		y = 6
+#
+#	}
+#	focus = {
+#		id = End_Rationing
+#		text = End_Rationing
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = ENSIDESA
+#		}
+#		prerequisite = {
+#			focus = SEAT
+#		}
+#		x = 20
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = Budget_Balance
+#		text = Budget_Balance
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = End_Rationing
+#		}
+#		x = 19
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = ENCE
+#		text = ENCE
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Budget_Balance
+#		}
+#		x = 17
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = National_Silos
+#		text = National_Silos
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = End_Rationing
+#		}
+#		x = 21
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = Leave_Autarky
+#		text = Leave_Autarky
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = National_Silos
+#		}
+#		prerequisite = {
+#			focus = Budget_Balance
+#		}
+#		x = 20
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = Agricultural_Expansion
+#		text = Agricultural_Expansion
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = National_Silos
+#		}
+#		x = 23
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = SPR_59_Stabilization
+#		text = 59_Stabilization
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = ENCE
+#		}
+#		prerequisite = {
+#			focus = Leave_Autarky
+#		}
+#		prerequisite = {
+#			focus = Agricultural_Expansion
+#		}
+#		x = 20
+#		y = 4
+#
+#	}
+#	focus = {
+#		id = Equipment_Rep_I
+#		text = Equipment_Rep_I
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Change_HC
+#		}
+#		x = 29
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = American_Training_Land
+#		text = American_Training_Land
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Equipment_Rep_I
+#		}
+#		x = 27
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = Equipment_Rep_II
+#		text = Equipment_Mod_II
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Equipment_Rep_I
+#		}
+#		x = 29
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = Experimental_Divisions
+#		text = Experimental_Divisions
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Equipment_Rep_II
+#		}
+#		x = 29
+#		y = 3
+#
+#	}
+#	focus = {
+#		id = Paratroopers_I
+#		text = Paratroopers_I
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Change_HC
+#		}
+#		prerequisite = {
+#			focus = Airforce_Expansion
+#		}
+#		x = 33
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = Expand_Barajas
+#		text = Expand_Barajas
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Airforce_Expansion
+#		}
+#		x = 35
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = New_Planes
+#		text = New_Planes
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Airforce_Expansion
+#		}
+#		x = 37
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = American_Training_Air
+#		text = American_Training_Air
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Airforce_Expansion
+#		}
+#		x = 38
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = American_Training_Navy
+#		text = American_Training_Navy
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Navy_Expansion
+#		}
+#		x = 40
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = New_Boats
+#		text = New_Boats
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Navy_Expansion
+#		}
+#		x = 42
+#		y = 2
+#
+#	}
+#	focus = {
+#		id = Limit_FET
+#		text = Limit_FET
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = 56_government
+#		}
+#		x = 1
+#		y = 6
+#
+#	}
+#	focus = {
+#		id = Stabilize_Government
+#		text = Stabilize_Government
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Found_RTVE
+#		}
+#		prerequisite = {
+#			focus = Limit_FET
+#		}
+#		x = 2
+#		y = 7
+#
+#	}
+#	focus = {
+#		id = Renew_Shipyards
+#		text = Renew_Shipyards
+#		icon = GFX_goal_unknown
+#		cost = 10
+#		prerequisite = {
+#			focus = Navy_Expansion
+#		}
+#		x = 44
+#		y = 2
+#
+#	}
+#}
+#

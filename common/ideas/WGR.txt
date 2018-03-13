@@ -15,7 +15,7 @@ ideas = {
 			picture = ENG_the_war_to_end_all_wars
 
 			modifier = {
-				unity_factor = 0.10
+				stability_factor = 0.10
 				dictatorship_drift = -0.05
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -231,7 +231,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.6
-				unity_factor = -0.05
+				stability_factor = -0.05
 				army_morale_factor = -0.05 
 			}
 		}

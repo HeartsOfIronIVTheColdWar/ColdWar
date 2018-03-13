@@ -16,7 +16,7 @@ ideas = {
 			picture = nkvd_2
 			
 			modifier = {
-				unity_factor = -0.3
+				stability_factor = -0.3
 				political_power_factor = -0.25
 			}
 		}
@@ -36,7 +36,7 @@ ideas = {
 			picture = nkvd
 			
 			modifier = {
-				unity_factor = -0.15
+				stability_factor = -0.15
 				political_power_factor = -0.10
 			}
 		}

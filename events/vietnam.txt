@@ -44,6 +44,9 @@ country_event = {
 			every_owned_state = {
 				remove_core_of = SVN
 			}
+			every_owned_state = {
+				add_core_of = VIN
+			}
 		}
 		CAM = {
 			drop_cosmetic_tag = yes

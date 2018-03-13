@@ -122,7 +122,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.1
-				unity_factor = 0.1
+				stability_factor = 0.1
 			}
 		} 
 		
@@ -145,29 +145,6 @@ ideas = {
     				production_speed_coastal_bunker_factor = 1    
 			}
 		} 
-
-		eastern_socialism = {
-			
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
-			}
-
-			picture = trotskyite_plot_purged
-			
-			modifier = {
-				production_speed_buildings_factor = 0.15
-				drift_defence_factor = 0.5
-			}
-			rule = {
-				can_create_factions = yes
-			}
-		}
 		
 		SOV_consumer_goods = {
 			
@@ -185,7 +162,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
-				unity_factor = 0.10
+				stability_factor = 0.10
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
@@ -227,25 +204,6 @@ ideas = {
 			}
 		}
 		
-		home_of_revolution = {
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				OR = { has_government = radical_socialism has_government = authoritarian_socialism has_government = marxism_leninism}
-			}
-			
-			modifier = {
-				drift_defence_factor = 0.8
-			}
-			rule = {
-				can_create_factions = yes
-			}
-		}
-		
 		SOV_rebuilding_the_nation = {
 			removal_cost = -1
 
@@ -260,6 +218,7 @@ ideas = {
 			}
 
 			modifier = {
+				war_support_factor = -0.3
 				conscription_factor = -0.2
 				production_speed_industrial_complex_factor = 0.15
 				industry_repair_factor = 0.25
@@ -269,7 +228,7 @@ ideas = {
 		SOV_great_patriotic_war_winner = {
 			removal_cost = -1
 
-			picture = SOV_great_patriotic_war
+			picture = home_of_revolution
 			
 			allowed = {
 				always = no # Added via event
@@ -283,7 +242,7 @@ ideas = {
 				land_doctrine = 0.05
 			}
 			modifier = {
-				unity_factor = 0.50
+				stability_factor = 0.2
 				army_leader_start_level = 2
 				army_attack_factor = 0.2
 				army_defence_factor = 0.2 
@@ -652,7 +611,7 @@ ideas = {
 			picture = generic_production_bonus		
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.02
 				industrial_capacity_factory = 0.1
 			}
 		}
@@ -667,10 +626,10 @@ ideas = {
 			picture = generic_production_bonus	
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.5
 				industrial_capacity_factory = 0.15
 				production_speed_industrial_complex_factor = 0.1
-				unity_factor = 0.1
+				stability_factor = 0.1
 			}
 		}
 		light_factory_economy3 = {
@@ -684,10 +643,10 @@ ideas = {
 			picture = generic_production_bonus	
 
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.1
 				industrial_capacity_factory = 0.25
 				production_speed_industrial_complex_factor = 0.15
-				unity_factor = 0.2
+				stability_factor = 0.2
 			}
 		}
 		SOV_consumerism = {
@@ -701,8 +660,8 @@ ideas = {
 			picture = generic_production_bonus	
 
 			modifier = {
-				consumer_goods_factor = 0.1
-				unity_factor = 0.2
+				consumer_goods_factor = 0.05
+				stability_factor = 0.2
 				trade_opinion_factor = 0.4
 				production_factory_efficiency_gain_factor = 0.25				
 			}
@@ -719,7 +678,7 @@ ideas = {
 			picture = GFX_idea_SOV_comecon	
 
 			modifier = {
-				political_power_factor = -0.1
+				political_power_gain = -0.1
 				trade_opinion_factor = 0.05
 			}
 		}
@@ -734,7 +693,6 @@ ideas = {
 			picture = GFX_idea_SOV_comecon	
 
 			modifier = {
-				political_power_factor = 0.05
 				industrial_capacity_factory = 0.1
 				trade_opinion_factor = 0.2
 			}
@@ -750,10 +708,10 @@ ideas = {
 			picture = GFX_idea_SOV_comecon	
 
 			modifier = {
-				political_power_factor = -0.1
-				unity_factor = -0.15
+				political_power_gain = -0.2
+				stability_factor = -0.2
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 		SOV_role_model = {
@@ -767,8 +725,8 @@ ideas = {
 			picture = GFX_idea_SOV_comecon	
 
 			modifier = {
-				political_power_factor = 0.05
-				unity_factor = 0.2
+				political_power_gain = 0.1
+				stability_factor = 0.15
 				industrial_capacity_factory = 0.10
 				army_morale_factor = 0.1
 			}
@@ -785,9 +743,8 @@ ideas = {
 			picture = GFX_idea_SOV_comecon	
 
 			modifier = {
-				unity_factor = 0.2
 				industrial_capacity_factory = 0.10
-				production_factory_efficiency_gain_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.2
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
@@ -2117,8 +2074,6 @@ ideas = {
 			}
 			available = 
 			{
-				NOT = { has_country_flag = purge_1_group_b }
-				has_completed_focus = SOV_positive_heroism
 			}
 			
 

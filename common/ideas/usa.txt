@@ -114,11 +114,31 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.25
 				industrial_capacity_factory = 0.15 
-				production_speed_industrial_complex_factor = 0.25
-				production_factory_efficiency_gain_factor = 0.25
+				production_speed_industrial_complex_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
 				trade_opinion_factor = 0.5
+			}
+		}
+		
+		marshall_plan_reciever = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = { has_government = liberalism has_government = conservatism has_government = social_democracy }
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 		
@@ -220,7 +240,7 @@ ideas = {
 			modifier = {
 				marxism_leninism_drift = -0.1 
 				authoritarian_socialism_drift = -0.1 
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 		
@@ -238,7 +258,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				unity_factor = 0.01 
+				stability_factor = 0.01 
 			}
 		}
 		
@@ -333,7 +353,7 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				consumer_goods_factor = 0.4			
-				unity_factor = -0.1 				
+				stability_factor = -0.1 				
 			}
 		}
 		
@@ -353,7 +373,7 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				consumer_goods_factor = 0.05			
-				unity_factor = 0.1 				
+				stability_factor = 0.1 				
 			}
 		}
 		
@@ -434,7 +454,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 
@@ -453,7 +473,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 
@@ -583,9 +603,9 @@ ideas = {
 			picture = saf_history_of_segregation
 
 			modifier = {
-				conscription_factor = -0.3
-				unity_factor = -0.3
-				political_power_gain = -0.1
+				conscription_factor = -0.1
+				stability_factor = -0.15
+				political_power_gain = -0.15
 			}
 
 		}

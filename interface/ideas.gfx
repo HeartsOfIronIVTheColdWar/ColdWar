@@ -9,6 +9,41 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/focus_refugees.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_RAJ_e_p_f"
+		texturefile = "gfx/interface/ideas/raj_external_influence_e_f_p.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RAJ_e_p"
+		texturefile = "gfx/interface/ideas/raj_external_influence_e_p.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RAJ_p_f"
+		texturefile = "gfx/interface/ideas/raj_external_influence_f_p.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RAJ_e_f"
+		texturefile = "gfx/interface/ideas/raj_external_influence_e_f.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RAJ_e"
+		texturefile = "gfx/interface/ideas/raj_external_influence_e.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RAJ_p"
+		texturefile = "gfx/interface/ideas/raj_external_influence_p.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RAJ_f"
+		texturefile = "gfx/interface/ideas/raj_external_influence_f.dds"
+	}
+	
+	
+###PRC###
+	spriteType = {
+		name = "GFX_idea_PRC_mao"
+		texturefile = "gfx/interface/ideas/PRC_mao.dds"
+	}
 ###FRA###
 	spriteType = {
 		name = "GFX_idea_FRA_indochina"

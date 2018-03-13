@@ -14,6 +14,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				stability_factor = 0.05
 				drift_defence_factor = 0.2
 				encryption_factor = 0.2
 				enemy_justify_war_goal_time = 0.25
@@ -32,8 +33,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				war_support_factor = 0.15
 				mobilization_laws_cost_factor = -0.33
 				industry_air_damage_factor = -0.25
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
 			}
 		}
 		gustaf_v = {

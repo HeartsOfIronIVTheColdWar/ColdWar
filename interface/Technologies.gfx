@@ -1,4 +1,25 @@
 spriteTypes = {
+	###GENERIC MOTORIZED###
+	SpriteType = {
+		name = "GFX_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/truck1.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry_1_medium"
+		texturefile = "gfx/interface/technologies/truck2.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/truck3.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry_3_medium"
+		texturefile = "gfx/interface/technologies/truck4.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry_4_medium"
+		texturefile = "gfx/interface/technologies/truck5.dds"
+	}
 	###GENERIC AIR###
 	SpriteType = {
 		name = "GFX_jet_engines_bombers_medium"
@@ -163,7 +184,7 @@ spriteTypes = {
 ###Heavy Air###
 	SpriteType = {
 		name = "GFX_heavy_air_1945_medium"
-		texturefile = "gfx/interface/technologies/strategic_bomber_1.dds"
+		texturefile = "gfx/interface/technologies/strategic_bomber3.dds"
 	}
 	SpriteType = {
 		name = "GFX_heavy_air_1950_medium"
@@ -197,7 +218,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_tac_air_1945_medium"
-		texturefile = "gfx/interface/technologies/tactical_bomber_1.dds"
+		texturefile = "gfx/interface/technologies/tactical_bomber3.dds"
 	}
 	SpriteType = {
 		name = "GFX_tac_air_1950_medium"
@@ -409,28 +430,44 @@ spriteTypes = {
 
 	###ARTILLERY STUFF###
 	SpriteType = {
-		name = "GFX_artillery_1950_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		name = "GFX_light_SPART_1950_medium"
+		texturefile = "gfx/interface/technologies/SPA1.dds"
 	}
 	SpriteType = {
-		name = "GFX_artillery_1970_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		name = "GFX_light_SPART_1960_medium"
+		texturefile = "gfx/interface/technologies/SPA2.dds"
 	}
 	SpriteType = {
-		name = "GFX_artillery_1990_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		name = "GFX_light_SPART_1970_medium"
+		texturefile = "gfx/interface/technologies/SPA3.dds"
 	}
 	SpriteType = {
-		name = "GFX_antiair_1950_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		name = "GFX_light_SPART_1980_medium"
+		texturefile = "gfx/interface/technologies/SPA4.dds"
 	}
 	SpriteType = {
-		name = "GFX_antiair_1970_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		name = "GFX_light_SPART_1990_medium"
+		texturefile = "gfx/interface/technologies/SPA5.dds"
 	}
 	SpriteType = {
-		name = "GFX_antiair_1990_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		name = "GFX_SPART_1950_medium"
+		texturefile = "gfx/interface/technologies/HSPA1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1960_medium"
+		texturefile = "gfx/interface/technologies/HSPA2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1970_medium"
+		texturefile = "gfx/interface/technologies/HSPA3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1980_medium"
+		texturefile = "gfx/interface/technologies/HSPA4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPART_1990_medium"
+		texturefile = "gfx/interface/technologies/HSPA5.dds"
 	}
 	## Anti Air improvement Icons ##
 		
@@ -451,46 +488,45 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/antiair14.dds"
 	}
 	### SPAA ###
-	
+	SpriteType = {
+		name = "GFX_light_SPAA_1950_medium"
+		texturefile = "gfx/interface/technologies/SPAA1.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_SPAA_1960_medium"
+		texturefile = "gfx/interface/technologies/SPAA2.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_SPAA_1970_medium"
+		texturefile = "gfx/interface/technologies/SPAA3.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_SPAA_1980_medium"
+		texturefile = "gfx/interface/technologies/SPAA4.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_SPAA_1990_medium"
+		texturefile = "gfx/interface/technologies/SPAA5.dds"
+	}
 	SpriteType = {
 		name = "GFX_SPAA_1950_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		texturefile = "gfx/interface/technologies/HSPAA1.dds"
 	}
 	SpriteType = {
 		name = "GFX_SPAA_1960_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		texturefile = "gfx/interface/technologies/HSPAA2.dds"
 	}
 	SpriteType = {
 		name = "GFX_SPAA_1970_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		texturefile = "gfx/interface/technologies/HSPAA3.dds"
 	}
 	SpriteType = {
 		name = "GFX_SPAA_1980_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		texturefile = "gfx/interface/technologies/HSPAA4.dds"
 	}
 	SpriteType = {
 		name = "GFX_SPAA_1990_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPART_1950_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPART_1960_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPART_1970_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPART_1980_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
-	}
-	SpriteType = {
-		name = "GFX_SPART_1990_medium"
-		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+		texturefile = "gfx/interface/technologies/HSPAA5.dds"
 	}
 	###NAVAL ICONS###
 	SpriteType = {
@@ -1041,13 +1077,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_infantry_at13_medium"
 		texturefile = "gfx/interface/technologies/antitank_equipment_4.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_SOV_infantry_weapons_2_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
 	}		
-
 	
 	SpriteType = {
 		name = "GFX_mechanised_infantry3_medium"
@@ -3016,8 +3046,31 @@ spriteTypes = {
 		textureFile = "gfx//interface//subtech_carrier_plane.dds"
 	}	
 
-	### SOV equipment ###		
-
+	### SOV equipment ###
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_1_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_0_vanilla.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_3_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_4_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_5_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_6_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_5.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_SOV_rocket_artillery4_medium"
@@ -3119,9 +3172,31 @@ spriteTypes = {
 #		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
 #	}
 	
-	### ENG equipment ###	
-
-
+	### ENG equipment ###			
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons_1_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons_3_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons_4_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons_5_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons_6_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_5.dds"
+	}
 	SpriteType = {
 		name = "GFX_ENG_rocket_artillery4_medium"
 		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
@@ -3637,7 +3712,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/JAP_superheavy_tank.dds"
 	}
 
-### Sovjet tanks ####	
+### Soviet tanks ####	
 
 	SpriteType = {
 		name = "GFX_SOV_basic_light_tank_medium"
@@ -3693,7 +3768,8 @@ spriteTypes = {
 		name = "GFX_SOV_super_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
 	}
-
+	
+	
 ### Italian equipment ###
 
 	SpriteType = {

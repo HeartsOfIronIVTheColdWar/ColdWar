@@ -3,7 +3,8 @@
 oob = "ROM_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_stability = 0.5
+set_war_support = 0.55
 
 1950.1.1 = {
 	
@@ -79,6 +80,86 @@ set_national_unity = 0.55
 	}
 }
 	set_technology = { naval_stipulations = 1
+		infantry_weapons_1 = 1
+		infantry_weapons_2 = 1
+		motorised_infantry = 1
+		tech_mountaineers = 1
+		advanced_medium_tank = 1
+		mechanised_infantry3 = 1
+		advanced_light_tank = 1
+		tech_support = 1
+		gw_artillery = 1
+		artillery4 = 1
+		antiair5 = 1
+	}
+	
+	create_field_marshal = {
+		name = "Constantin Gh. Popescu"
+		id = 800
+		picture = ""
+		traits = { old_guard }
+		skill = 3
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_field_marshal = {
+		name = "Leontin Sălăjan"
+		id = 801
+		picture = ""
+		traits = {  }
+		skill = 2
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Ion Mihai Pacepa"
+		picture = ""
+		traits = { }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Constantin Constantiniu"
+		picture = ""
+		traits = { }
+		skill = 3
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Gheorghe Ion"
+		picture = ""
+		traits = { }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Ion Tutoveanu"
+		picture = ""
+		traits = { }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}
 }
 

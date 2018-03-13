@@ -1283,6 +1283,14 @@ guiTypes = {
 		}
 		
 		checkboxType = {
+			name = "very_easy_cb"
+			position = { x=9 y=47}
+			quadTextureSprite ="GFX_difficulty_button_civilian"	
+			buttonText = "FE_DIFFICULTY_EASY"
+			buttonFont = "hoi_20b"
+			clicksound = click_checkbox
+		}
+		checkboxType = {
 			name = "easy_cb"
 			position = { x=12 y=47}
 			quadTextureSprite ="GFX_checkbox_button_149"	
@@ -1305,6 +1313,15 @@ guiTypes = {
 			position = { x=322 y=47}
 			quadTextureSprite ="GFX_checkbox_button_149"
 			buttonText = "FE_DIFFICULTY_HARD"
+			buttonFont = "hoi_20b"
+			clicksound = click_checkbox
+		}
+		
+		checkboxType = {
+			name = "very_hard_cb"
+			position = { x=473 y=47}
+			quadTextureSprite ="GFX_difficulty_button_elite"
+			buttonText = "FE_DIFFICULTY_VERY_HARD"
 			buttonFont = "hoi_20b"
 			clicksound = click_checkbox
 		}

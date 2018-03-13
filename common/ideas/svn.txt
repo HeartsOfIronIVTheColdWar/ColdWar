@@ -8,7 +8,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				unity_weekly = -0.001
+				stability_weekly = -0.001
 			}
 		}
 		svn_catholic_favoritism = {
@@ -19,7 +19,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				unity_weekly = -0.001
+				stability_weekly = -0.001
 				army_core_defence_factor = -0.05
 				army_core_attack_factor = -0.05
 				conscription_factor = -0.01
@@ -34,7 +34,7 @@ ideas = {
 
 			modifier = {
 				MONTHLY_POPULATION = 0.05
-				unity_weekly = -0.001
+				stability_weekly = -0.001
 			}
 		}
 		svn_five_year_plan = {

@@ -3,7 +3,8 @@
 oob = "PAL_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_stability = 0.5
+set_war_support = 0.55
 
 	set_technology = { naval_stipulations = 1
 		infantry_weapons_1 = 1
@@ -82,8 +83,13 @@ set_national_unity = 0.55
 	create_corps_commander = {
 		name = "Youssef el Agroudi"
 			picture = "Portrait_Arabia_Generic_land_1.dds"
-		traits = { incompetent }
-		skill = 1 
+		traits = { }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}
 }
 

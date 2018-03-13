@@ -4,13 +4,10 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }  		# 2x 100mm howitzer bns, on average
@@ -18,39 +15,28 @@
 	}
 }
 division_template = {
-	name = "Munte Brigada"		
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   
-	}
-}
-division_template = {
-	name = "Cavalerie Brigada" 
+	name = "Mecanizat Brigada" 
 	# Note: regiments within the brigade were battalion-sized units
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }			# one cav rgt upgraded to truck-bourne in 1939-40
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   			# recon bn of ACs
+		engineer = { x = 0 y = 1 }   
 	}
 }
 division_template = {
 	name = "Blindata Brigada" 
-	# Note: Represents 1st and 2nd Armor regiment; both created and merged with motorized inf to create Armor Division in 1940
 	regiments = {
-		light_armor = { x = 0 y = 0 }		# 1st Rgt: R-2 (Pz 35(t)) tanks
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 1 y = 0 }		# 2nd Rgt: Renault R-35 tanks
-		light_armor = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }         # added motorized not to make it a death trap
-		motorized = { x = 2 y = 1 }
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }   			# recon bn of ACs
@@ -60,7 +46,76 @@ division_template = {
 
 
 units = {
-					
+	division = {
+		name = "1st Divizia Infanterie"
+		location = 9617
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "2nd Divizia Infanterie"
+		location = 690
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "3rd Divizia Infanterie"
+		location = 6706
+		division_template = "Divizia Infanterie"
+	}
+	division = {
+		name = "4th Divizia Infanterie"
+		location = 746
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "5th Divizia Infanterie"
+		location = 11639
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "6th Divizia Infanterie"
+		location = 3741
+		division_template = "Divizia Infanterie"
+	}
+	division = {
+		name = "7th Divizia Infanterie"
+		location = 9716
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "8th Divizia Infanterie"
+		location = 687
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "9th Divizia Infanterie"
+		location = 657
+		division_template = "Divizia Infanterie"
+	}
+	division = {
+		name = "10th Divizia Infanterie"
+		location = 6652
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "11th Divizia Infanterie"
+		location = 6682
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "12th Divizia Infanterie"
+		location = 6682
+		division_template = "Divizia Infanterie"
+	}	
+	division = {
+		name = "1st Mecanizat Brigada"
+		location = 6711
+		division_template = "Mecanizat Brigada"
+	}
+	division = {
+		name = "1st Blindata Brigada"
+		location = 9617
+		division_template = "Blindata Brigada"
+	}
 }
 
 

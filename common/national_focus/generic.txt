@@ -795,7 +795,7 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			add_political_power = 150
-			add_national_unity = 0.05
+			add_stability = 0.05
 		}
 
 	}
@@ -809,6 +809,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = lean_USA
+		}
+		ai_will_do = {
+			factor = 5
 		}
 		available = {
 			OR = {
@@ -839,6 +842,9 @@ focus_tree = {
 		prerequisite = {
 			focus = lean_SOV
 		}
+		ai_will_do = {
+			factor = 5
+		}
 		mutually_exclusive = {
 			focus = chinese_advisors
 		}
@@ -861,6 +867,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = soviet_advisors
+		}
+		ai_will_do = {
+			factor = 3
 		}
 		completion_reward = {
 			PRC = {
@@ -919,6 +928,9 @@ focus_tree = {
 			focus = join_NATO
 			focus = join_warsaw_pact
 		}
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			if = {
 				limit = { NOT = { has_idea = non_aligned_movement_member } }
@@ -940,6 +952,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = lean_SOV
+		}
+		ai_will_do = {
+			factor = 5
 		}
 		available = {
 			NOT = { 
@@ -1258,6 +1273,9 @@ focus_tree = {
 		prerequisite = {
 			focus = lean_USA
 		}
+		ai_will_do = {
+			factor = 5
+		}
 		mutually_exclusive = {
 			focus = UK_advisors
 			focus = french_advisors
@@ -1279,6 +1297,9 @@ focus_tree = {
 		prerequisite = {
 			focus = lean_USA
 		}
+		ai_will_do = {
+			factor = 5
+		}
 		mutually_exclusive = {
 			focus = US_advisors
 			focus = french_advisors
@@ -1299,6 +1320,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = lean_USA
+		}
+		ai_will_do = {
+			factor = 5
 		}
 		mutually_exclusive = {
 			focus = UK_advisors

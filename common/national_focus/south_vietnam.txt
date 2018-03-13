@@ -303,7 +303,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
-			add_national_unity = 0.05
+			add_stability = 0.05
 			set_party_name = { 
 				ideology = dictatorship long_name = "Personalist Labor Revolutionary Party" name = "Can Lao"
 			}
@@ -329,7 +329,7 @@ focus_tree = {
 			focus = SVN_appoint_diem
 		}
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -345,7 +345,7 @@ focus_tree = {
 			focus = SVN_appoint_diem
 		}
 		completion_reward = {
-			add_national_unity = 0.05
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -445,7 +445,7 @@ focus_tree = {
 			focus = SVN_conservative_law
 		}
 		completion_reward = {
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 		
 	}
@@ -476,7 +476,7 @@ focus_tree = {
 			focus = SVN_can_lao_economics
 		}
 		completion_reward = {
-			add_national_unity = 0.05
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -506,7 +506,7 @@ focus_tree = {
 			focus = SVN_land_reform
 		}
 		completion_reward = {
-			add_national_unity = 0.05
+			add_stability = 0.05
 		}
 		
 	}

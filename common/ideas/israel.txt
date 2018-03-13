@@ -19,7 +19,7 @@ ideas = {
 				conscription = 0.05
 				MONTHLY_POPULATION = 2
 				political_power_factor = 0.2
-				unity_factor = 0.5
+				stability_factor = 0.5
 			}
 
 		}

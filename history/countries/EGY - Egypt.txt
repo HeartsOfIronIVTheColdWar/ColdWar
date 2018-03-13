@@ -3,7 +3,8 @@
 oob = "EGY_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_stability = 0.5
+set_war_support = 0.55
 
 	set_technology = { naval_stipulations = 1
 		infantry_weapons_1 = 1
@@ -120,42 +121,72 @@ set_national_unity = 0.55
 		name = "Abdel Hakim Amer"
 			picture = "Portrait_Arabia_Generic_land_1.dds"
 		traits = {  }
-		skill = 1 
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}
 	
 	create_corps_commander = {
 		name = "Mohammed Naguib"
 			picture = "Portrait_Egypt_Mohammed_Naguib.dds"
-		traits = { urban_assault_specialist }
-		skill = 3 
+		traits = {  }
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Gamal e-Din Ali"
 			picture = "Portrait_Arabia_Generic_land_2.dds"
 		traits = {  }
-		skill = 1 
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Jafr el Majid"
 			picture = "Portrait_Arabia_Generic_land_3.dds"
 		traits = {  }
-		skill = 1 
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Saad ed-Din Mutawally"
 			picture = "Portrait_Arabia_Generic_land_2.dds"
 		traits = {  }
-		skill = 1 
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}
 
 	create_corps_commander = {
 		name = "Talat Hassan Ali"
 			picture = "Portrait_Arabia_Generic_3.dds"
 		traits = {  }
-		skill = 1 
+		skill = 1
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 	}			
 }
 

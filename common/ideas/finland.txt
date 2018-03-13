@@ -15,6 +15,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				war_support_factor = 0.2
 				army_morale_factor = 0.25
 				attrition = -0.1
 				winter_attrition_factor = -0.25

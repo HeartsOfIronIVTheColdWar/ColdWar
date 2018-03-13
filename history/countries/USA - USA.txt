@@ -3,17 +3,16 @@
 oob = "USA_1950"
 set_research_slots = 5
 set_convoys = 1000
-set_national_unity = 0.85
+set_stability = 0.5
+set_war_support = 0.55
 
 1950.1.1 = { 
 	
 	oob = "USA_1950"
 	add_ideas = {
+		nato_idea
 		free
 		free_trade
-		home_of_the_free
-		marshall_plan
-		nato_idea
 		USA_segregation
 		USA_mad 
 	}
@@ -139,14 +138,24 @@ set_national_unity = 0.85
 	create_field_marshal = {
 	name = "Arturo Rawson"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	traits = { inspirational_leader organisational_leader offensive_doctrine logistics_wizard old_guard defensive_doctrine fast_planner thorough_planner }
-	skill = 5
+	traits = { }
+	skill = 1
+
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 	}
 	create_corps_commander = {
 	name = "Juan Pistarini"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = { urban_assault_specialist fortress_buster trickster winter_specialist trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger naval_invader }
-	skill = 5
+	traits = { }
+	skill = 1
+
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 	}
 }
 

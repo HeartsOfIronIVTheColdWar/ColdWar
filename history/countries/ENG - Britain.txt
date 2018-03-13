@@ -3,17 +3,17 @@
 oob = "ENG_1950"
 set_research_slots = 4
 set_convoys = 850
-set_national_unity = 0.85
+set_stability = 0.5
+set_war_support = 0.55
 
 1950.1.1 = {
 	
 	oob = "ENG_1950"
 	add_ideas = {
-		stiff_upper_lip
+		nato_idea
 		ENG_george_vi
 		colonial_protests
 		rationing_idea
-		nato_idea
 		low_economic_mobilisation
 		WGR_german_resentement
 	}

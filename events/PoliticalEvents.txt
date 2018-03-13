@@ -157,7 +157,7 @@
 #			ideology = communism
 #			popularity = 0.15
 #		}
-#		add_national_unity = -0.02
+#		add_stability = -0.02
 #	}
 #}
 #
@@ -659,7 +659,7 @@
 #			ideology = democratic
 #			popularity = 0.1
 #		}
-#		add_national_unity = -0.02
+#		add_stability = -0.02
 #		set_country_flag = democracy_opposition_formed
 #	}
 #}
@@ -781,7 +781,7 @@
 #			ruling_party = autocratic
 #			elections_allowed = no
 #		}
-#		add_national_unity = -0.05
+#		add_stability = -0.05
 #	}
 #}
 #
@@ -842,7 +842,7 @@
 #			ruling_party = communism
 #			elections_allowed = no
 #		}
-#		add_national_unity = -0.05
+#		add_stability = -0.05
 #	}
 #}
 #
@@ -901,7 +901,7 @@
 #			ruling_party = democratic
 #			elections_allowed = yes
 #		}
-#		add_national_unity = -0.05
+#		add_stability = -0.05
 #	}
 #}
 #

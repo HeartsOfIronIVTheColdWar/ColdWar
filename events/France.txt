@@ -277,7 +277,7 @@ country_event = { #FREEDOM! ALG
 	
 	option = {
 		name = "Independence!"
-		ALG = { add_national_unity = 0.2 }
+		ALG = { add_stability = 0.2 }
 	}
 }
 country_event = { #Should I stay or should I go? TUN
@@ -340,7 +340,7 @@ country_event = { #FREEDOM! TUN
 	
 	option = {
 		name = fra.628.a #Freedom!
-		TUN = { add_national_unity = 0.2 }
+		TUN = { add_stability = 0.2 }
 	}
 }
 country_event = { #Should I stay or should I go? MOR
@@ -403,7 +403,7 @@ country_event = { #FREEDOM! MOR
 	
 	option = {
 		name = fra.633.a #Freedom!
-		MOR = { add_national_unity = 0.2 }
+		MOR = { add_stability = 0.2 }
 	}
 }
 country_event = { #Should I stay or should I go? FWA
@@ -466,7 +466,7 @@ country_event = { #FREEDOM! FWA
 	
 	option = {
 		name = fra.638.a #Freedom!
-		FWA = { add_national_unity = 0.2 }
+		FWA = { add_stability = 0.2 }
 	}
 }
 country_event = { #Should I stay or should I go? FEA
@@ -529,7 +529,7 @@ country_event = { #FREEDOM! FEA
 	
 	option = {
 		name = fra.643.a #Freedom!
-		FEA = { add_national_unity = 0.2 }
+		FEA = { add_stability = 0.2 }
 	}
 }
 country_event = { #Should I stay or should I go? MAD
@@ -593,7 +593,7 @@ country_event = { #FREEDOM! MAD
 	
 	option = {
 		name = fra.648.a #Freedom!
-		MAD = { add_national_unity = 0.2 }
+		MAD = { add_stability = 0.2 }
 	}
 }
 country_event = { #Keep Colonies Focus

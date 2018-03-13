@@ -3,7 +3,8 @@
 oob = "PRC_1950"
 set_research_slots = 2
 set_convoys = 80
-set_national_unity = 0.55
+set_stability = 0.5
+set_war_support = 0.55
 
 1950.1.1 = {
 	
@@ -22,7 +23,6 @@ set_national_unity = 0.55
 		very_low_stability
 		nationalism_press
 		#ideas
-		eastern_socialism
 		RAJ_agrarian_society
 		PRC_improficient_government
 	}
@@ -94,8 +94,13 @@ set_national_unity = 0.55
 	create_field_marshal = {
 	name = "Mao Zedong"
 	portrait_path = "gfx/leaders/CHI/Portrait_China_Mao_Zedong.dds"
-	traits = { defensive_doctrine }
-	skill = 4
+	traits = {  }
+		skill = 2
+
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
 }
 }
 

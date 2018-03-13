@@ -50,9 +50,8 @@ bookmarks = {
 			history = "PRC_GATHERING_STORM_DESC"
 			ideology = authoritarian_socialism
 			ideas = {
-				eastern_socialism
-				RAJ_agrarian_society
 				PRC_improficient_government
+				RAJ_agrarian_society
 			}	
 			focuses = {
 				PRC_100_flowers
@@ -64,7 +63,6 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = authoritarian_socialism
 			ideas = {
-				home_of_revolution
 				SOV_great_patriotic_war_winner
 				SOV_rebuilding_the_nation
 			}

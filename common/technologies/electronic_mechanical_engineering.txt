@@ -1221,6 +1221,7 @@ technologies = {
 	nuclear_ship_reactor = {
 
 		# can build reactors for submarines / aircraft carriers
+		research_time_factor = -0.02
 		
 		start_year = 1955
 		research_cost = 3
