@@ -1,4 +1,5 @@
 
+
 state={
 	id=19
 	name="STATE_19"
@@ -14,6 +15,9 @@ state={
 		owner = FRA
 		victory_points = {
 			9737 20
+		}
+		victory_points = {
+			743 5
 		}
 		buildings = {
 			infrastructure = 6
