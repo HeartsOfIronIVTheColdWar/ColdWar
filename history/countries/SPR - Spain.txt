@@ -38,26 +38,26 @@ set_war_support = 0.55
 			}
 
 			marxism_leninism = {
-				popularity = 0
+				popularity = 5
 				#banned = no #default is no
 			}
 			
 			authoritarian_socialism = {
-				popularity = 0
+				popularity = 5
 				#banned = no #default is no
 			}
 			monarchism = { 
-				popularity = 0
+				popularity = 15
 				#banned = no #default is no
 			}
 
 			dictatorship = {
-				popularity = 56
+				popularity = 50
 				#banned = no #default is no
 			}
 			
 			junta = {
-				popularity = 44
+				popularity = 20
 				#banned = no #default is no
 			}
 		

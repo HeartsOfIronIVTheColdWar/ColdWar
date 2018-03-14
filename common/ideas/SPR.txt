@@ -1,0 +1,21 @@
+ideas = { 
+country = { 
+SPR_bad_living_conditions= {
+			
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ENG_the_war_to_end_all_wars
+
+			modifier = {
+				stability_factor = -0.10
+				conscription = -0.1 
+				monthly_population = -0.01
+			}
+		}
+ }
+ }
