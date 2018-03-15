@@ -1,0 +1,146 @@
+ideas = {
+
+	country = {
+
+		strikes_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				local_resources_factor = -0.25
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				stability_factor = -0.05
+				political_power_factor = -0.25
+			}
+		}
+		
+		strikes_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				local_resources_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				stability_factor = -0.1
+				political_power_factor = -0.5
+			}
+		}
+		
+		strikes_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.75
+				local_resources_factor = -0.75
+				industrial_capacity_factory = -0.75
+				industrial_capacity_dockyard = -0.75
+				stability_factor = -0.15
+				political_power_factor = -0.75
+			}
+		}
+		
+		mutiny_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.25
+				training_time_factor = 0.25
+				army_attack_factor = -0.25
+				experience_gain_army = -0.1
+				army_org_factor = -0.2
+			}
+		}
+		
+		mutiny_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.5
+				training_time_factor = 0.5
+				army_attack_factor = -0.5
+				experience_gain_army = -0.2
+				army_org_factor = -0.5
+			}
+		}
+		
+		mutiny_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.75
+				training_time_factor = 0.75
+				army_attack_factor = -0.75
+				experience_gain_army = -0.3
+				army_org_factor = -0.7
+			}
+		}
+	}
+}
