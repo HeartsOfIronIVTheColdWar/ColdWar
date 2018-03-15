@@ -168,49 +168,6 @@ ideologies = {
 		}
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
-	radical_socialism = {
-		
-		types = {
-		
-			anarchism = {
-			}
-			
-			anti_revisionism = {
-			}
-			
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
-		
-		color = { 233 58 58 }
-		
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
-		
-		ai_communist = yes # uses the commie AI behaviour
-		
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-		
-		modifiers = {
-			puppet_cost_factor = -0.3
-			drift_defence_factor = 0.25
-		}
-		
-		faction_modifiers = {
-			faction_trade_opinion_factor = 1 #plus 100% trade opinion
-		}
-
-	}
 	marxism_leninism = {
 		
 		types = {
