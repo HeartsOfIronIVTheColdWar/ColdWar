@@ -1,0 +1,97 @@
+crisis = {
+
+	strikes_mission = {
+
+		icon = generic_civil_support
+		
+		available = {
+			NOT = {
+				OR = {
+					has_idea = strikes_1
+					has_idea = strikes_2
+					has_idea = strikes_3
+				}
+				has_country_flag = crisis_in_progress
+			}
+		}
+
+		days_mission_timeout = 40
+
+		activation = {
+			OR = {
+				has_idea = strikes_1
+				has_idea = strikes_2
+				has_idea = strikes_3
+			}
+			has_country_flag = crisis_in_progress
+		}
+		visible = {
+			OR = {
+				has_idea = strikes_1 
+				has_idea = strikes_2
+				has_idea = strikes_3	
+			}
+			has_country_flag = crisis_in_progress
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = strikes_1
+				}
+				country_event = stability.20
+				clr_country_flag = crisis_in_progress
+			}
+			if = {
+				limit = {
+					has_idea = strikes_2
+				}
+				country_event = stability.21
+				clr_country_flag = crisis_in_progress
+			}
+			if = {
+				limit = {
+					has_idea = strikes_3
+				}
+				country_event = stability.22
+				clr_country_flag = crisis_in_progress
+			}
+		}
+		
+		timeout_effect = {
+			if = {
+				limit = {
+					has_idea = strikes_3
+				}
+				add_stability = -0.15
+				add_political_power = -100
+				country_event = stability.32		#Civil war
+			}
+			if = {
+				limit = { 
+					has_idea = strikes_2
+				}
+				swap_ideas = {
+					remove_idea = strikes_2
+					add_idea = strikes_3
+				}
+				add_stability = -0.1
+				add_political_power = -50
+				country_event = stability.31
+			}
+			if = {
+				limit = { 
+					has_idea = strikes_1
+				}
+				swap_ideas = {
+					remove_idea = strikes_1
+					add_idea = strikes_2
+				}
+				add_stability = -0.05
+				add_political_power = -25
+				country_event = stability.30
+			}	
+		}
+	}
+
+
+}
