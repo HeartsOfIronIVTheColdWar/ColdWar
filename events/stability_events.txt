@@ -4,8 +4,9 @@
 
 add_namespace = stability
 
+######## STRIKE
 
-#Strikes plague our country!
+#### Strikes plague our country!
 country_event = {
 	id = stability.1
 	title = stability.1.t	
@@ -61,6 +62,750 @@ country_event = {
 	
 	option = { 
 		name = stability.1.a
+	}
+}
+
+#### It's probably better to solve this problem...
+
+country_event = {
+	id = stability.20
+	title = stability.20.t	
+	desc = stability.20.desc
+	picture = GFX_report_event_generic_battle
+		
+	is_triggered_only = yes
+	
+	option = { # Negotiate with trade union (democracies only)
+		trigger = {
+			OR = {
+				has_government = social_democracy
+				has_government = liberalism
+				has_government = conservatism
+			}
+		}
+		name = stability.20.a
+		random_list = {
+			75 = {
+				set_stability = 0.6
+				add_political_power = -100
+				remove_ideas = strike_1
+				add_timed_idea = {
+					idea = workers_agreement
+					days = 365
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = marxism_leninism
+					popularity = 0.05
+				}
+			}
+			25 = {
+				add_stability = -0.1
+				add_political_power = -120
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = marxism_leninism
+					popularity = 0.1
+				}
+				swap_ideas = {
+					remove_idea = strikes_1
+					add_idea = strikes_2
+				}
+				country_event = stability.30
+			}	
+		}
+	}
+	
+	option = { # Arrest the leaders (autocracies only)
+		trigger = {
+			OR = {
+				has_government = marxism_leninism
+				has_government = authoritarian_socialism
+				has_government = monarchism
+				has_government = dictatorship
+				has_government = junta
+			}
+		}
+		name = stability.20.b
+		random_list = {
+			75 = {
+				set_stability = 0.6
+				add_political_power = -100
+				remove_ideas = strike_1
+				add_timed_idea = {
+					idea = tu_leaders_gulag
+					days = 365
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.05
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.05
+					}
+				}
+			}
+			25 = {
+				add_stability = -0.1
+				add_political_power = -50
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.1
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.1
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.1
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.1
+					}
+				}
+				swap_ideas = {
+					remove_idea = strikes_1
+					add_idea = strikes_2
+				}
+				country_event = stability.30
+			}	
+		}
+	}
+	
+	option = { # Send the police (everyone)
+		name = stability.20.c
+		random_list = {
+			75 = {
+				set_stability = 0.55
+				add_political_power = -50
+				add_manpower = -500
+				remove_ideas = strike_1
+				add_timed_idea = {
+					idea = police_charge
+					days = 180
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.12
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = social_democracy
+							has_government = liberalism
+							has_government = conservatism
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.12
+					}
+				}
+			}
+			25 = {
+				add_stability = -0.1
+				add_political_power = -200
+				swap_ideas = {
+					remove_idea = strikes_1
+					add_idea = strikes_2
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.12
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = social_democracy
+							has_government = liberalism
+							has_government = conservatism
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.12
+					}
+				}
+				country_event = stability.30
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = stability.21
+	title = stability.21.t	
+	desc = stability.21.desc
+	picture = GFX_report_event_generic_battle
+		
+	is_triggered_only = yes
+	
+	option = { # Negotiate with trade union (democracies only)
+		trigger = {
+			OR = {
+				has_government = social_democracy
+				has_government = liberalism
+				has_government = conservatism
+			}
+		}
+		name = stability.21.a
+		random_list = {
+			75 = {
+				set_stability = 0.6
+				add_political_power = -120
+				remove_ideas = strike_2
+				add_timed_idea = {
+					idea = workers_agreement
+					days = 730
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.08
+				}
+				add_popularity = {
+					ideology = marxism_leninism
+					popularity = 0.08
+				}
+			}
+			25 = {
+				add_stability = -0.15
+				add_political_power = -120
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.12
+				}
+				add_popularity = {
+					ideology = marxism_leninism
+					popularity = 0.12
+				}
+				swap_ideas = {
+					remove_idea = strikes_2
+					add_idea = strikes_3
+				}
+				country_event = stability.31
+			}	
+		}
+	}
+	
+	option = { # Arrest the leaders (autocracies only)
+		trigger = {
+			OR = {
+				has_government = marxism_leninism
+				has_government = authoritarian_socialism
+				has_government = monarchism
+				has_government = dictatorship
+				has_government = junta
+			}
+		}
+		name = stability.21.b
+		random_list = {
+			75 = {
+				set_stability = 0.6
+				add_political_power = -120
+				remove_ideas = strike_2
+				add_timed_idea = {
+					idea = tu_leaders_gulag
+					days = 730
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.1
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.1
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.1
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.1
+					}
+				}
+			}
+			25 = {
+				add_stability = -0.15
+				add_political_power = -150
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.12
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+				}
+				swap_ideas = {
+					remove_idea = strikes_2
+					add_idea = strikes_3
+				}
+				country_event = stability.31
+			}	
+		}
+	}
+	
+	option = { # Send the police (everyone)
+		name = stability.21.c
+		random_list = {
+			75 = {
+				set_stability = 0.55
+				add_political_power = -120
+				add_manpower = -700
+				remove_ideas = strike_2
+				add_timed_idea = {
+					idea = police_charge
+					days = 274
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.15
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.15
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.15
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.15
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = social_democracy
+							has_government = liberalism
+							has_government = conservatism
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.15
+					}
+				}
+			}
+			25 = {
+				add_stability = -0.25
+				add_political_power = -200
+				swap_ideas = {
+					remove_idea = strikes_2
+					add_idea = strikes_3
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.17
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.17
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.17
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.17
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = social_democracy
+							has_government = liberalism
+							has_government = conservatism
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.17
+					}
+				}
+				country_event = stability.31
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = stability.22
+	title = stability.22.t	
+	desc = stability.22.desc
+	picture = GFX_report_event_generic_battle
+		
+	is_triggered_only = yes
+	
+	option = { # Negotiate with trade union (democracies only)
+		trigger = {
+			OR = {
+				has_government = social_democracy
+				has_government = liberalism
+				has_government = conservatism
+			}
+		}
+		name = stability.22.a
+		random_list = {
+			75 = {
+				set_stability = 0.51
+				add_political_power = -200
+				remove_ideas = strike_3
+				add_timed_idea = {
+					idea = workers_agreement
+					days = 1095
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.12
+				}
+				add_popularity = {
+					ideology = marxism_leninism
+					popularity = 0.12
+				}
+			}
+			25 = {
+				country_event = stability.32
+			}	
+		}
+	}
+	
+	option = { # Arrest the leaders (autocracies only)
+		trigger = {
+			OR = {
+				has_government = marxism_leninism
+				has_government = authoritarian_socialism
+				has_government = monarchism
+				has_government = dictatorship
+				has_government = junta
+			}
+		}
+		name = stability.21.b
+		random_list = {
+			75 = {
+				set_stability = 0.55
+				add_political_power = -200
+				remove_ideas = strike_3
+				add_timed_idea = {
+					idea = tu_leaders_gulag
+					days = 912
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.12
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.12
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.12
+					}
+				}
+			}
+			25 = {
+				country_event = stability.32
+			}	
+		}
+	}
+	
+	option = { # Send the police (everyone)
+		name = stability.21.c
+		random_list = {
+			75 = {
+				set_stability = 0.51
+				add_political_power = -150
+				add_manpower = -1200
+				remove_ideas = strike_3
+				add_timed_idea = {
+					idea = police_charge
+					days = 365
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = marxism_leninism
+							has_government = authoritarian_socialism
+						} 
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.17
+					}
+					add_popularity = {
+						ideology = liberalism
+						popularity = 0.17
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = junta
+							has_government = monarchism
+							has_government = dictatorship
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.17
+					}
+					add_popularity = {
+						ideology = social_democracy
+						popularity = 0.17
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							has_government = social_democracy
+							has_government = liberalism
+							has_government = conservatism
+						} 
+					}
+					add_popularity = {
+						ideology = marxism_leninism
+						popularity = 0.17
+					}
+				}
+			}
+			25 = {
+				country_event = stability.32
+			}	
+		}
+	}
+}
+
+#### This is what happen when you don't deal with strikers!
+country_event = {
+	id = stability.30
+	title = stability.30.t	
+	desc = stability.30.desc
+	picture = GFX_report_event_generic_battle
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = stability.30.a
+		add_stability = -0.05
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = stability.31
+	title = stability.31.t	
+	desc = stability.31.desc
+	picture = GFX_report_event_generic_battle
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = stability.31.a
+		add_stability = -0.1
+		add_political_power = -50
 	}
 }
 
