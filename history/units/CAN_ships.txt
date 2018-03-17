@@ -1,14 +1,12 @@
-﻿# CAN secure the North Focus
+# CAN secure the North Focus
 
 units = {
 	navy = {
 		name = "Royal Canadian Arctic Patrol"
 		base = 3691
 		location = 3691
-		ship = { name = "Ayy" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = CAN creator = CAN } } }
-		ship = { name = "lmao" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = CAN creator = CAN } } }
-		ship = { name = "XD" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = CAN creator = CAN } } }
-
-		
+		ship = { name = "Test1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN  } } }
+		ship = { name = "Test2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN  } } }
+		ship = { name = "Test3" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN  } } }	
 	}
 }

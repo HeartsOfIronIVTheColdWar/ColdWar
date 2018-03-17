@@ -92,6 +92,69 @@ if = {
 	}
 	}
 	set_technology = { naval_stipulations = 1
+	infantry_weapons_1 = 1
+	infantry_weapons_2 = 1
+	marines = 1
+	tech_mountaineers = 1
+	basic_infantry_equipment = 1
+	support_weapons = 1
+	infantry_at = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_military_police2 = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	motorised_infantry = 1
+	advanced_medium_tank = 1
+	mechanised_infantry3 = 1
+	advanced_light_tank = 1
+	artillery4 = 1
+	artillery_1950 = 1
+	antiair5 = 1
+	ww2_destroyer = 1
+	ww2_cruiser = 1
+	ww2_battleship = 1
+	ww2_submarine = 1
+	ww2_carrier = 1
+	transport = 1
+	landing_craft = 1
+	early_fighter = 1
+	fighter_1945 = 1
+	cv_1945_fighter = 1
+	interceptor_1945 = 1
+	CAS_1945 = 1
+	cv_1945_CAS = 1
+	very_early_helicopter = 1
+	strategic_bomber1 = 1
+	heavy_air_1945 = 1
+	tac_bomber1 = 1
+	tac_air_1945 = 1
+	transport_air1 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	centimetric_radar = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	advanced_computing_machine = 1
+	basic_encryption = 1
+	improved_encryption = 1
+	advanced_encryption = 1
+	basic_decryption = 1
+	improved_decryption = 1
+	advanced_decryption = 1
+	experimental_rockets = 1
+	rocket_engines = 1
+	improved_rocket_engines = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+
 	}
 }
 

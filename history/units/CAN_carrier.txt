@@ -2,11 +2,14 @@
 
 units = {
 	navy = {
-		name = "Fleet of the HMCS Magnificent"
+		name = "Fleet of the Magnificent"
 		base = 7361
 		location = 7361
-		ship = { name = "HMCS Magnificent" definition = destroyer equipment = { carrier_2 = { amount = 1 owner = CAN creator = ENG } } }
-
-		
+		ship = { name = "HMCS Magnificent" definition = carrier equipment = { carrier_1 = { amount = 1 owner = CAN } }
+		air_wings = {
+                cv_fighter_equipment_1 =  { owner = "CAN" amount = 8 }
+                cv_CAS_equipment_1 =  { owner = "CAN" amount = 6 }
+           }
+        }   
 	}
 }
