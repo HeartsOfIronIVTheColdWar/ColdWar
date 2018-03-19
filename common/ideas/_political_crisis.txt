@@ -14,7 +14,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_production_bonus
+			picture = FRA_matignon_agreements
 			
 			modifier = {
 				production_speed_buildings_factor = -0.25
@@ -38,7 +38,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_production_bonus
+			picture = FRA_matignon_agreements
 			
 			modifier = {
 				production_speed_buildings_factor = -0.5
@@ -62,7 +62,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_production_bonus
+			picture = FRA_matignon_agreements
 			
 			modifier = {
 				production_speed_buildings_factor = -0.75
@@ -140,6 +140,186 @@ ideas = {
 				army_attack_factor = -0.75
 				experience_gain_army = -0.3
 				army_org_factor = -0.7
+			}
+		}
+		
+		workers_agreement_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				economy_cost_factor = 0.05
+			}
+		}
+		
+		workers_agreement_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+				economy_cost_factor = 0.1
+			}
+		}
+		
+		workers_agreement_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+				economy_cost_factor = 0.15
+			}
+		}
+		
+		tu_leaders_gulag_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_factor = -0.25
+			}
+		}
+		
+		tu_leaders_gulag_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_factor = -0.5
+			}
+		}
+		
+		tu_leaders_gulag_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_factor = -0.75
+			}
+		}
+		
+		police_charge_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_generic_oppression
+			
+			modifier = {
+				political_advisor_cost_factor = 0.25
+				trade_opinion_factor = -0.1
+			}
+		}
+		
+		police_charge_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_generic_oppression
+			
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				trade_opinion_factor = -0.15
+			}
+		}
+		
+		police_charge_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_generic_oppression
+			
+			modifier = {
+				political_advisor_cost_factor = 0.75
+				trade_opinion_factor = -0.2
 			}
 		}
 	}
