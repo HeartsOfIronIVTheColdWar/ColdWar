@@ -90,8 +90,8 @@ country_event = {
 				add_political_power = -100
 				remove_ideas = strike_1
 				add_timed_idea = {
-					idea = workers_agreement
-					days = 365
+					idea = workers_agreement_1
+					days = 180
 				}
 				add_popularity = {
 					ideology = social_democracy
@@ -139,8 +139,8 @@ country_event = {
 				add_political_power = -100
 				remove_ideas = strike_1
 				add_timed_idea = {
-					idea = tu_leaders_gulag
-					days = 365
+					idea = tu_leaders_gulag_1
+					days = 180
 				}
 				if = {
 					limit = { 
@@ -230,7 +230,7 @@ country_event = {
 				add_manpower = -500
 				remove_ideas = strike_1
 				add_timed_idea = {
-					idea = police_charge
+					idea = police_charge_1
 					days = 180
 				}
 				if = {
@@ -362,8 +362,8 @@ country_event = {
 				add_political_power = -120
 				remove_ideas = strike_2
 				add_timed_idea = {
-					idea = workers_agreement
-					days = 730
+					idea = workers_agreement_2
+					days = 274
 				}
 				add_popularity = {
 					ideology = social_democracy
@@ -411,8 +411,8 @@ country_event = {
 				add_political_power = -120
 				remove_ideas = strike_2
 				add_timed_idea = {
-					idea = tu_leaders_gulag
-					days = 730
+					idea = tu_leaders_gulag_2
+					days = 274
 				}
 				if = {
 					limit = { 
@@ -502,7 +502,7 @@ country_event = {
 				add_manpower = -700
 				remove_ideas = strike_2
 				add_timed_idea = {
-					idea = police_charge
+					idea = police_charge_2
 					days = 274
 				}
 				if = {
@@ -634,8 +634,8 @@ country_event = {
 				add_political_power = -200
 				remove_ideas = strike_3
 				add_timed_idea = {
-					idea = workers_agreement
-					days = 1095
+					idea = workers_agreement_3
+					days = 365
 				}
 				add_popularity = {
 					ideology = social_democracy
@@ -669,8 +669,8 @@ country_event = {
 				add_political_power = -200
 				remove_ideas = strike_3
 				add_timed_idea = {
-					idea = tu_leaders_gulag
-					days = 912
+					idea = tu_leaders_gulag_3
+					days = 365
 				}
 				if = {
 					limit = { 
@@ -721,7 +721,7 @@ country_event = {
 				add_manpower = -1200
 				remove_ideas = strike_3
 				add_timed_idea = {
-					idea = police_charge
+					idea = police_charge_3
 					days = 365
 				}
 				if = {
