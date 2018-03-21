@@ -2529,27 +2529,27 @@ spriteTypes = {
 	### INDUSRTY TECH ###
 
 	SpriteType = {
-		name = "GFX_excavation5_medium"
+		name = "GFX_excavation4_medium"
 		texturefile = "gfx/interface/technologies/excavation5.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_excavation4_medium"
+		name = "GFX_excavation3_medium"
 		texturefile = "gfx/interface/technologies/excavation4.dds"
 	}		
 	
 	SpriteType = {
-		name = "GFX_excavation3_medium"
+		name = "GFX_excavation2_medium"
 		texturefile = "gfx/interface/technologies/excavation3.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_excavation2_medium"
+		name = "GFX_excavation1_medium"
 		texturefile = "gfx/interface/technologies/excavation2.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_excavation1_medium"
+		name = "GFX_excavation0_medium"
 		texturefile = "gfx/interface/technologies/excavation1.dds"
 	}
 	
@@ -2584,7 +2584,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_concentrated_industry_medium"
+		name = "GFX_concentrated_industry1_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
 	}	
 	
@@ -2609,7 +2609,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_dispersed_industry_medium"
+		name = "GFX_dispersed_industry1_medium"
 		texturefile = "gfx/interface/technologies/dispersed_industry.dds"
 	}	
 
@@ -2642,68 +2642,93 @@ spriteTypes = {
 		name = "GFX_early_refining_medium"
 		texturefile = "gfx/interface/technologies/early_refining.dds"
 	}	
-	
+
 	SpriteType = {
-		name = "GFX_oil_plant_medium"
-		texturefile = "gfx/interface/technologies/oil_plant.dds"
+		name = "GFX_modern_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/modern_oil_processing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/advanced_oil_processing.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_improved_oil_plant_medium"
-		texturefile = "gfx/interface/technologies/improved_oil_plant.dds"
+		name = "GFX_improved_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/improved_oil_processing.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_advanced_oil_plant_medium"
-		texturefile = "gfx/interface/technologies/advanced_oil_plant.dds"
+		name = "GFX_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/oil_processing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/rubber_processing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/improved_rubber_processing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/advanced_rubber_processing.dds"
 	}	
 	
+	SpriteType = {
+		name = "GFX_modern_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/modern_rubber_processing.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_construction0_medium"
+		texturefile = "gfx/interface/technologies/basic_construction.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_construction1_medium"
-		texturefile = "gfx/interface/technologies/basic_construction.dds"
+		texturefile = "gfx/interface/technologies/improved_construction.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_construction2_medium"
-		texturefile = "gfx/interface/technologies/improved_construction.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_construction3_medium"
 		texturefile = "gfx/interface/technologies/advanced_construction.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_construction4_medium"
+		name = "GFX_construction3_medium"
 		texturefile = "gfx/interface/technologies/improved_conversion.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_construction5_medium"
+		name = "GFX_construction4_medium"
 		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}
 	SpriteType = {
-		name = "GFX_military_construction1_medium"
+		name = "GFX_military_construction0_medium"
 		texturefile = "gfx/interface/technologies/basic_construction.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_military_construction2_medium"
+		name = "GFX_military_construction1_medium"
 		texturefile = "gfx/interface/technologies/improved_construction.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_military_construction3_medium"
+		name = "GFX_military_construction2_medium"
 		texturefile = "gfx/interface/technologies/advanced_construction.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_military_construction4_medium"
+		name = "GFX_military_construction3_medium"
 		texturefile = "gfx/interface/technologies/improved_conversion.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_military_construction5_medium"
+		name = "GFX_military_construction4_medium"
 		texturefile = "gfx/interface/technologies/advanced_conversion.dds"
 	}	
 	

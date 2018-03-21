@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		svn_one_man_rule = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.001
+			}
+		}
+		svn_catholic_favoritism = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.001
+				army_core_defence_factor = -0.05
+				army_core_attack_factor = -0.05
+				conscription_factor = -0.01
+			}
+		}
+		svn_resettlement = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				stability_weekly = -0.001
+			}
+		}
+		svn_five_year_plan = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+	}
+
+}

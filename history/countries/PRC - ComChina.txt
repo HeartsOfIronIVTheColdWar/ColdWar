@@ -25,6 +25,7 @@ set_war_support = 0.55
 		#ideas
 		RAJ_agrarian_society
 		PRC_improficient_government
+		PRC_recovering_from_the_civil_war
 	}
 	set_politics = {
 

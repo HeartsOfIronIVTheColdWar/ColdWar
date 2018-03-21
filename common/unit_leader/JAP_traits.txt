@@ -34,9 +34,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 		allowed = {
-			FROM = {
-				tag = JAP
-			}
 		}
 		modifier = {
 			

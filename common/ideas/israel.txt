@@ -264,7 +264,7 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+				original_tag = ISR
 			}
 						
 			research_bonus = {
@@ -288,7 +288,7 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+				original_tag = ISR
 			}
 						
 			research_bonus = {
@@ -312,7 +312,7 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+				original_tag = ISR
 			}
 						
 			research_bonus = {
@@ -343,7 +343,7 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+				original_tag = ISR
 			}
 						
 			research_bonus = {

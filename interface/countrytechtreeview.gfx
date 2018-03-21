@@ -25,7 +25,26 @@ spriteTypes = {
 		textureFile = "gfx//interface//wonderweapons_bg.dds"
 		allwaystransparent = yes	
 	}
-	
+	spriteType = {
+		name = "GFX_refinery_bg"
+		textureFile = "gfx//interface//refinery_bg.dds"
+		allwaystransparent = yes	
+	}
+	spriteType = {
+		name = "GFX_construction_bg"
+		textureFile = "gfx//interface//construction_bg.dds"
+		allwaystransparent = yes	
+	}
+	spriteType = {
+		name = "GFX_factory_bg"
+		textureFile = "gfx//interface//factory_bg.dds"
+		allwaystransparent = yes	
+	}
+	spriteType = {
+		name = "GFX_factories_bg"
+		textureFile = "gfx//interface//factories_bg.dds"
+		allwaystransparent = yes	
+	}
 	corneredTileSpriteType = {
 		name = "GFX_tiled_research_bg"
 		size= { x=96 y=96 }
@@ -171,6 +190,12 @@ spriteTypes = {
 		noOfFrames = 2		
 	}
 
+	spriteType = {
+		name = "GFX_space_folder_tab"
+		textureFile = "gfx//interface//techtree_space_tab.dds"
+		noOfFrames = 2		
+	}
+	
 	spriteType = {
 		name = "GFX_techtree_engineering_tab"
 		textureFile = "gfx//interface//techtree//techtree_engineering_tab.dds"
@@ -562,6 +587,35 @@ spriteTypes = {
 
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_electronics_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}	
+	
+	##### secret weapons #####
+
+	spriteType = {
+		name = "GFX_technology_secret_weapons_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_technology_secret_weapons_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_secret_weapons_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_secret_weapons_folder_currently_researching_item_bg"
 		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
 		noOfFrames = 9
 		loadType = "INGAME"

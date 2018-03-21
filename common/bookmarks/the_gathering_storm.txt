@@ -52,6 +52,8 @@ bookmarks = {
 			ideas = {
 				PRC_improficient_government
 				RAJ_agrarian_society
+				PRC_recovering_from_the_civil_war
+				
 			}	
 			focuses = {
 				PRC_100_flowers
@@ -122,8 +124,9 @@ bookmarks = {
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = conservatism
 			ideas = {
-				RAJ_agrarian_society
+				RAJ_liquat_nehru_pact
 				RAJ_quit_india_movement
+				RAJ_trade_issues_POR_FRA_ENG
 			}
 			focuses = {
 				RAJ_us_spirit

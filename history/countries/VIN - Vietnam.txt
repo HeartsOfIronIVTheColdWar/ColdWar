@@ -11,6 +11,7 @@ set_war_support = 0.55
 	oob = "VIN_1950"
 	add_ideas = {
 		#laws
+		VIN_viet_minh
 		low_economic_mobilisation
 		service_by_requirement
 		#ideas
@@ -286,12 +287,23 @@ set_war_support = 0.55
 	set_technology = {
 	}
 }
+create_field_marshal = {
+	name = "Ho Chi Minh"
+	id = 20000
+	portrait_path = "gfx/leaders/VIN/Portrait_Vietnam_Ho_Chi_Minh.dds"
+	traits = {JAP_communist_sympathizer politically_connected inspirational_leader }
+		skill = 3
 
+		attack_skill = 1
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 4
+	}
 create_corps_commander = {
 	name = "Giap Nguyen Vo"
 	id = 20001
 	portrait_path = "gfx/leaders/NKR/Portrait_North_Korea_Kim_Chaek.dds"
-	traits = { trickster hill_fighter jungle_rat adaptable }
+	traits = {JAP_communist_sympathizer trickster hill_fighter jungle_rat adaptable }
 	skill = 4
 
 	attack_skill = 4
@@ -303,7 +315,7 @@ create_corps_commander = {
 	name = "Dung Tien Van"
 	id = 20002
 	portrait_path = "gfx/leaders/NKR/Portrait_North_Korea_Kim_Chaek.dds"
-	#traits = { commando trickster guerilla_fighter }
+	traits = {JAP_communist_sympathizer commando trickster guerilla_fighter }
 	skill = 3
 
 	attack_skill = 4
@@ -315,7 +327,7 @@ create_corps_commander = {
 	name = "Thai Van Hoang"
 	id = 20003
 	portrait_path = "gfx/leaders/NKR/Portrait_North_Korea_Kim_Chaek.dds"
-	#traits = { trickster scavenger camouflage_expert }
+	traits = {JAP_communist_sympathizer trickster scavenger camouflage_expert }
 	skill = 2
 
 	attack_skill = 1

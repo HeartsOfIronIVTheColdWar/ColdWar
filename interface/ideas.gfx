@@ -37,12 +37,19 @@ spriteTypes = {
 		name = "GFX_idea_RAJ_f"
 		texturefile = "gfx/interface/ideas/raj_external_influence_f.dds"
 	}
-	
-	
+###Vietnam###
+	spriteType = {
+		name = "GFX_idea_VIN_popular_viet_minh_support"
+		texturefile = "gfx/interface/ideas/VIN_popular_viet_minh_support.dds"
+	}
 ###PRC###
 	spriteType = {
 		name = "GFX_idea_PRC_mao"
 		texturefile = "gfx/interface/ideas/PRC_mao.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sino_japanese_war"
+		texturefile = "gfx/interface/ideas/idea_jap_ichi_go.dds"
 	}
 ###FRA###
 	spriteType = {
