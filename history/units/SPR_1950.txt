@@ -1,0 +1,359 @@
+#THE SPANISH ARMED FORCES IN THE 50'S WERE QUITE SHITTY
+
+
+division_template = {
+	name = "División de Infantería"	#Regular Infantry Division		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 } 
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+} 
+division_template = {
+	name = "División Acorazada"	#The shitty tank division Francoist generals created		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 } 
+		motorized = { x = 1 y = 0 } 
+		motorized = { x = 1 y = 1 }
+		light_armor = { x = 2 y = 0 }
+	}
+	priority = 0
+} 
+
+division_template = {
+	name = "Regimiento de Infantería" #Infantry Regiment			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 } 
+	}
+	priority = 0
+} 
+division_template = {
+	name = "Regimiento de Caballería" #Cavalry Regiment		
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 } 
+	}
+	priority = 0
+} 
+division_template = {
+	name = "Regimiento de Artillería" #Artillery Regiment			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 } 
+		artillery = { x = 0 y = 2 } 
+	} 
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0
+} 
+division_template = {
+	name = "Regimiento Antiaéreo"	#Antiair Regiment		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 } 
+		anti_air = { x = 0 y = 2 }
+	} 
+	support = {
+		anti_air = { x = 0 y = 0 }
+	}
+	priority = 0
+} 
+division_template = {
+	name = "Regimiento de Ingenieros" #Engineer Regiment			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 } 
+	} 
+	support = {
+		engineer = { x = 0 y = 0 } 
+		radio = { x = 0 y = 1 }
+	}
+	priority = 0
+} 
+
+units = {
+#FIRST MILITARY REGION (CAPTANCY GENERAL OF MADRID)
+	division= {	
+		name = "11ª División"
+		location = 3794
+		division_template = "División de Infantería"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "12ª División"
+		location = 6902
+		division_template = "División de Infantería"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "División Acorazada Brunete"
+		location = 3794
+		division_template = "División Acorazada"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 939
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 896
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 939
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 896
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Infantería"
+		location = 3938
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Caballería"
+		location = 3938
+		division_template = "Regimiento de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Caballería"
+		location = 3938
+		division_template = "Regimiento de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Caballería"
+		location = 3938
+		division_template = "Regimiento de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Caballería"
+		location = 896
+		division_template = "Regimiento de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Caballería"
+		location = 3938
+		division_template = "Regimiento de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Caballería"
+		location = 977
+		division_template = "Regimiento de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Artillería"
+		location = 977
+		division_template = "Regimiento de Artillería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Artillería"
+		location = 977
+		division_template = "Regimiento de Artillería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Artillería"
+		location = 9767
+		division_template = "Regimiento de Artillería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Artillería"
+		location = 9767
+		division_template = "Regimiento de Artillería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento Antiaéreo"
+		location = 9767
+		division_template = "Regimiento Antiaéreo"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Ingenieros"
+		location = 9767
+		division_template = "Regimiento de Ingenieros"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	division= {	
+		name = "Regimiento de Ingenieros"
+		location = 896
+		division_template = "Regimiento de Ingenieros"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+#SECOND MILITARY REGION (CAPTANCY GENERAL OF SEVILLE) 
+division= {	
+		name = "21ª División"
+		location = 1178
+		division_template = "División de Infantería"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+	} 
+	division= {	
+		name = "22ª División"
+		location = 7153
+		division_template = "División de Infantería"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+	} 
+
+#THIRD MILITARY REGION (CAPTANCY GENERAL OF VALENCIA) 
+division= {	
+		name = "31ª División"
+		location = 6906
+		division_template = "División de Infantería"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+	} 
+division= {	
+		name = "32ª División"
+		location = 6817
+		division_template = "División de Infantería"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.7
+	} 
+division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}  
+division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}  
+division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}  
+division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}  
+division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}  
+division= {	
+		name = "Regimiento de Infantería"
+		location = 977
+		division_template = "Regimiento de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	} 
+	}
