@@ -1717,6 +1717,97 @@
  ENG_APC_1990_equipment_1_short:0 "FV103 Spartan MK2"
  ENG_APC_1990_equipment_1_desc:0 "FV103 Spartan MK2"
 
+ ENG_fighter_equipment_0:0 "Gloster Gauntlet"
+ ENG_fighter_equipment_0_short:0 "Gauntlet"
+ ENG_fighter_equipment_0_desc:0 "Gloster Gauntlet
+#ENG_interceptor
+ ENG_interceptor_equipment_1:0 "Hawker Tempest"
+ ENG_interceptor_equipment_1_short:0 "Tempest"
+ ENG_interceptor_equipment_1_desc:0 "Hawker Tempest"
+ ENG_jet_interceptor_equipment_1:0 "Hawker Hunter"
+ ENG_jet_interceptor_equipment_1_short:0 "Hunter"
+ ENG_jet_interceptor_equipment_1_desc:0 "Hawker Hunter"
+ ENG_jet_interceptor_equipment_2:0 "Gloster Javelin"
+ ENG_jet_interceptor_equipment_2_short:0 "Javelin"
+ ENG_jet_interceptor_equipment_2_desc:0 "Gloster Javelin"
+ ENG_jet_interceptor_equipment_3:0 "McDonnell Douglas F-4K Phantom FG.1"
+ ENG_jet_interceptor_equipment_3_short:0 "F-4K Phantom FG.1"
+ ENG_jet_interceptor_equipment_3_desc:0 "Mcdonnell Douglas F-4K Phantom FG.1"
+ ENG_jet_interceptor_equipment_4:0 "Panavia Tornado ADV F.2"
+ ENG_jet_interceptor_equipment_4_short:0 "Tornado ADV F.2"
+ ENG_jet_interceptor_equipment_4_desc:0 "Panavia Tornado ADV F.2"
+ ENG_jet_interceptor_equipment_5:0 "Panavia Tornado ADV F.3"
+ ENG_jet_interceptor_equipment_5_short:0 "Tornado ADV F.3"
+ ENG_jet_interceptor_equipment_5_desc:0 "Panavia Tornado ADV F.3"
+#ENG_fighter
+ ENG_fighter_equipment_1:0 "Supermarine Spitfire Mk24"
+ ENG_fighter_equipment_1_short:0 "Spitfire Mk24"
+ ENG_fighter_equipment_1_desc:0 "Supermarine Spitfire Mk24"
+ ENG_cv_fighter_equipment_1:0 "Supermarine Seafire Mk17"
+ ENG_cv_fighter_equipment_1_short:0 "Seafire Mk17"
+ ENG_cv_fighter_equipment_1_desc:0 "Supermarine Seafire Mk17"
+ ENG_jet_fighter_equipment_1:0 "de Havilland Venom"
+ ENG_jet_fighter_equipment_1_short:0 "DH112 Venom"
+ ENG_jet_fighter_equipment_1_desc:0 "de Havilland Venom"
+ ENG_cv_jet_fighter_equipment_1:0 "de Havilland Sea Venom FAW.20"
+ ENG_cv_jet_fighter_equipment_1_short:0 "Sea Venom FAW.20"
+ ENG_cv_jet_fighter_equipment_1_desc:0 "de Havilland Sea Venom FAW.20"
+ ENG_jet_fighter_equipment_2:0 "English Electric Lightning F.1A"
+ ENG_jet_fighter_equipment_2_short:0 "Lightning F.1A"
+ ENG_jet_fighter_equipment_2_desc:0 "English Electric Lightning F.1A"
+ ENG_cv_jet_fighter_equipment_2:0 "English Electric Sea Lightning F.1A"        #blue recolour naval variant of lightning f.1a
+ ENG_cv_jet_fighter_equipment_2_short:0 "Sea Lightning F.1A"                   #blue recolour naval variant of lightning f.1a
+ ENG_cv_jet_fighter_equipment_2_desc:0 "English Electric Sea Lightning F.1A"   #blue recolour naval variant of lightning f.1a
+ ENG_jet_fighter_equipment_3:0 "English Electric Lightning F.6"
+ ENG_jet_fighter_equipment_3_short:0 "Lightning F.6"
+ ENG_jet_fighter_equipment_3_desc:0 "English Electric Lightning F.6"
+ ENG_cv_jet_fighter_equipment_3:0 "English Electric Sea Lightning F.6"        #blue recolour naval variant of lightning f.6
+ ENG_cv_jet_fighter_equipment_3_short:0 "Sea Lightning F.6"                   #blue recolour naval variant of lightning f.6
+ ENG_cv_jet_fighter_equipment_3_desc:0 "English Electric Sea Lightning F.6"   #blue recolour naval variant of lightning f.6
+#ENG_cas
+ ENG_CAS_equipment_1:0 "Blackburn Firebrand"
+ ENG_CAS_equipment_1_short:0 "Firebrand"
+ ENG_cv_CAS_equipment_1:0 "Blackburn Firecrest"
+ ENG_cv_CAS_equipment_1_short:0 "Firecrest"
+ ENG_cv_CAS_equipment_1_desc:0 "Blackburn Firecrest"
+ ENG_jet_CAS_equipment_1:0 "Westland Wyvern"
+ ENG_jet_CAS_equipment_1_short:0 "Wyvern"
+ ENG_jet_CAS_equipment_1_desc:0 "Westland Wyvern"
+ ENG_cv_jet_CAS_equipment_1:0 "Westland Sea Wyvern"           #blue recolour naval variant of wyvern
+ ENG_cv_jet_CAS_equipment_1_short:0 "Sea Wyvern"              #blue recolour naval variant of wyvern
+ ENG_cv_jet_CAS_equipment_1_desc:0 "Westland Sea Wyvern"      #blue recolour naval variant of wyvern
+ ENG_jet_CAS_equipment_2:0 "Blackburn Buccaneer"
+ ENG_jet_CAS_equipment_2_short:0 "Buccaneer"
+ ENG_jet_CAS_equipment_2_desc:0 "Blackburn Buccaneer"
+ ENG_cv_jet_CAS_equipment_2:0 "Blackburn Sea Buccaneer"       #blue recolour naval variant of buccaneer
+ ENG_cv_jet_CAS_equipment_2_short:0 "Sea Buccaneer"           #blue recolour naval variant of buccaneer
+ ENG_cv_jet_CAS_equipment_2_desc:0 "Blackburn Sea Buccaneer"  #blue recolour naval variant of buccaneer
+ ENG_jet_CAS_equipment_3:0 "Hawker Siddeley Harrier GR.1"
+ ENG_jet_CAS_equipment_3_short:0 "Harrier GR.1"
+ ENG_jet_CAS_equipment_3_desc:0 "Hawker Siddeley Harrier GR.1"
+ ENG_cv_jet_CAS_equipment_3:0 "Hawker Siddeley Sea Harrier GR.1"
+ ENG_cv_jet_CAS_equipment_3_short:0 "Sea Harrier GR.1"
+ ENG_cv_jet_CAS_equipment_3_desc:0 "Hawker Siddeley Sea Harrier GR.1"
+#ENG_mca
+ ENG_mca_equipment_1:0 "Panavia Tornado GR.1"
+ ENG_mca_equipment_1_short:0 "Tornado GR.1"
+ ENG_mca_equipment_1_desc:0 "Panavia Tornado GR.1"
+ ENG_cv_mca_equipment_1:0 "Panavia Sea Tornado GR.1"      #blue recolour naval variant of tornado gr.1
+ ENG_cv_mca_equipment_1_short:0 "Sea Tornado GR.1"        #blue recolour naval variant of tornado gr.1
+ ENG_cv_mca_equipment_1_desc:0 "Panavia Sea Tornado GR.1" #blue recolour naval variant of tornado gr.1
+ ENG_mca_equipment_2:0 "Panavia Tornado GR.4"
+ ENG_mca_equipment_2_short:0 "Tornado GR.4"
+ ENG_mca_equipment_2_desc:0 "Panavia Tornado GR.4"
+ ENG_cv_mca_equipment_2:0 "Panavia Sea Tornado GR.4"        #blue recolour naval variant of tornado gr.4
+ ENG_cv_mca_equipment_2_short:0 "Sea Tornado GR.4"          #blue recolour naval variant of tornado gr.4
+ ENG_cv_mca_equipment_2_desc:0 "Panavia Sea Tornado GR.4"   #blue recolour naval variant of tornado gr.4
+#ENG_stealth
+ ENG_light_stealth_equipment_1:0 "Panavia Stealth Tornado ADV F.2"        #black recolour varient of tornado adv f.2
+ ENG_light_stealth_equipment_1_short:0 "Stealth T-ADV F.2"                #black recolour varient of tornado adv f.2
+ ENG_light_stealth_equipment_1_desc:0 "Panavia Stealth Tornado ADV F.2"   #black recolour varient of tornado adv f.2
+ ENG_light_stealth_equipment_2:0 "Panavia Stealth Tornado ADV F.3"        #black recolour varient of tornado adv f.3
+ ENG_light_stealth_equipment_2_short:0 "Stealth T-ADV F.3"                #black recolour varient of tornado adv f.3
+ ENG_light_stealth_equipment_2_desc:0 "Panavia Stealth Tornado ADV F.3"   #black recolour varient of tornado adv f.3
 
  tank_armor_upgrade:0 "Armor"
  tank_armor_upgrade_desc:0 "Better armor than your enemies can penetrate is a huge advantage to your divisions but is probably going to slow you down."
