@@ -1347,4 +1347,612 @@ technologies = {
             jet_technology
         	}
 	}
+	
+	improved_jet_engines_bombers_1 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = improved_jet_engines_bombers_2
+            research_cost_coeff = 1
+        }
+		
+        start_year = 1955
+		
+        research_cost = 2
+
+        folder = {
+            name = air_techs_folder
+            position = { x = 4 y = 0 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            jet_technology
+        	}
+	}
+	
+	
+##################################
+###SPACE STUFF AND ROCKETRY#######	
+##################################
+	
+	ww_2_rocketry = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = ICBM_0
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = MRBM_0
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = SRBM_0
+            research_cost_coeff = 1
+        }
+		
+        start_year = 1945
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 6 y = -1 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            srbm
+        	}
+	}
+	SRBM_0 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = SRBM_1
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_0
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = MRBM_0
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1950
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 2 y = 2 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            srbm
+        	}
+	}
+	SRBM_1 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = SRBM_2
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_1
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = MRBM_1
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1960
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 2 y = 6 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            srbm
+        	}
+	}
+	SRBM_2 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = SRBM_3
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_2
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = MRBM_2
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1970
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 2 y = 10 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            srbm
+        	}
+	}
+	SRBM_3 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = SRBM_4
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_3
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = MRBM_3
+            research_cost_coeff = 0.75
+        }
+        start_year = 1980
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 2 y = 14 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            srbm
+        	}
+	}
+	SRBM_4 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = ICBM_4
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = MRBM_4
+            research_cost_coeff = 0.75
+        }
+        start_year = 1990
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 2 y = 18 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+			srbm
+        }
+	}
+	MRBM_0 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = MRBM_1
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_0
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_0
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1950
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 6 y = 2 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            mrbm
+        	}
+	}
+	MRBM_1 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = MRBM_2
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_1
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_1
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1960
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 6 y = 6 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            mrbm
+        	}
+	}
+	MRBM_2 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = MRBM_3
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_2
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_2
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1970
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 6 y = 10 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            mrbm
+        	}
+	}
+	MRBM_3 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = MRBM_4
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = ICBM_3
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_3
+            research_cost_coeff = 0.75
+        }
+        start_year = 1980
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 6 y = 14 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            mrbm
+        	}
+	}
+	MRBM_4 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = ICBM_4
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_4
+            research_cost_coeff = 0.75
+        }
+        start_year = 1990
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 6 y = 18 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+			mrbm
+        }
+	}
+	ICBM_0 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = ICBM_1
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = MRBM_0
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_0
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1950
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 10 y = 2 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            icbm
+        	}
+	}
+	ICBM_1 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = ICBM_2
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = MRBM_1
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_1
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1960
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 10 y = 6 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            icbm
+        	}
+	}
+	ICBM_2 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = ICBM_3
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = MRBM_2
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_2
+            research_cost_coeff = 0.75
+        }
+		
+        start_year = 1970
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 10 y = 10 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            icbm
+        	}
+	}
+	ICBM_3 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = ICBM_4
+            research_cost_coeff = 1
+        }
+        path = {
+            leads_to_tech = MRBM_3
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_3
+            research_cost_coeff = 0.75
+        }
+        start_year = 1980
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 10 y = 14 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+            icbm
+        	}
+	}
+	ICBM_4 = {
+	
+		jet_strat_bomber = {
+            air_range = 0.25
+        }
+        path = {
+            leads_to_tech = MRBM_4
+            research_cost_coeff = 0.75
+        }
+        path = {
+            leads_to_tech = SRBM_4
+            research_cost_coeff = 0.75
+        }
+        start_year = 1990
+		
+        research_cost = 2
+
+        folder = {
+            name = space_folder
+            position = { x = 10 y = 18 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        categories = {
+            rocketry
+			icbm
+        }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
+
+
+
+
+

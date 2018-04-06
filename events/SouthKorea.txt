@@ -1,1 +1,78 @@
-﻿
+﻿add_namespace = south_korea
+
+#Foreign Events
+#USA, South Korea asks for Aid!
+country_event = {
+	id = south_korea.101
+	title = south_korea.101.t
+	desc = south_korea.101.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_korea.101.a			
+		ai_chance = {
+			factor = 90
+		}
+		
+		KOR = {
+			country_event = { id = south_korea.102 days = 1 }
+		}
+	}
+
+	option = {
+		name = south_korea.1.b
+		ai_chance = {
+			factor = 10
+		}
+		
+		KOR = {
+			country_event = { id = south_korea.103 days = 1 }
+		}
+	}
+}
+
+#Korea: USA Rejects Aid
+country_event = {
+	id = south_korea.102
+	title = south_korea.102.t
+	desc = south_korea.102.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_korea.102.a	
+	}
+}
+
+#Korea: USA Accepts Aid
+country_event = {
+	id = south_korea.103
+	title = south_korea.103.t
+	desc = south_korea.103.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_korea.103.a	
+
+		KOR = {
+			if = {
+				limit = {
+					NOT = { has_idea = KOR_American_Influence_Idea }
+				}
+				add_idea = KOR_American_Influence_Idea
+				set_variable = {
+						var = KOR_American_Influence
+						value = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = KOR_American_Influence_Idea
+				}
+				add_to_variable = { var = KOR_American_Influence value = 1 }
+			}				
+		}
+	}
+}

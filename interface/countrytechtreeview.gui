@@ -2709,6 +2709,14 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
+			
+			gridboxtype = {
+				name = "ww_2_rocketry_tree"
+				position = { x=850 y=292 }
+				size = { width = 680 height = 500 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+			}
 			gridboxtype = {
 				name = "atomic_research_tree"
 				position = { x=850 y=292 }
@@ -2733,6 +2741,14 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
 
+			gridboxtype = {
+				name = "ww_2_rocketry_tree"
+				position = { x=850 y=292 }
+				size = { width = 680 height = 500 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+			}
+			
 		}
 		
 		containerWindowType = {
@@ -5198,10 +5214,26 @@ guiTypes = {
 
 		iconType = {
 			name = "Icon"
-			position = { x=34 y=35}
+			position = { x=34 y=35 }
 			spriteType = "GFX_technology_medium"
-			centerposition = yes
+			centerposition = yes	
 			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
 		}
 	}
 	containerWindowType = {

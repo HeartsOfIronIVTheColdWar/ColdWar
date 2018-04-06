@@ -8,12 +8,756 @@ focus_tree = {
 		}
 	}
 	default = no
+	
 	focus = {
-		id = KOR_firstthreeyear
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10 
-		x = 4
+		id = request_additional_american_support
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
 		y = 0
+		
+		completion_reward = {
+			USA = { country_event = { id = south_korea.101} }
+		}
+
+	}
+	
+	focus = {
+		id = american_arms_shipments
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		
+		prerequisite = {
+			focus = request_additional_american_support
+		}
+		
+		available = {
+			OR = {
+				has_country_flag = korean_war_begun
+				has_country_flag = americans_accept_support
+			}
+		}
+		
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 15000 producer = USA }
+		}
+
+	}
+	
+	focus = {
+		id = fortify_the_border
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 0
+		
+		completion_reward = {
+			828 = {
+				add_building_construction = { type = bunker province = 4107 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 1003 level = 2 instant_build = yes }
+			}
+			525 = {
+				add_building_construction = { type = bunker province = 7125 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 10036 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 7021 level = 2 instant_build = yes }
+			}
+		}
+
+	}
+	
+	focus = {
+		id = train_the_constabulary
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 1
+		
+		prerequisite = {
+			focus = fortify_the_border
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = constabulary_army_0
+				add_idea = constabulary_army_1
+			}
+		}
+
+	}
+	
+	focus = {
+		id = road_to_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 5
+		y = 0
+
+	}
+	
+	focus = {
+		id = reunification_by_expanding_northward
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 4
+		y = 1
+		
+		mutually_exclusive = { focus = defend_the_38th_parallel }
+		
+		prerequisite = {
+			focus = road_to_war
+		}
+		
+		completion_reward = {
+
+		}
+
+	}
+	
+	focus = {
+		id = defend_the_38th_parallel
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 6
+		y = 1
+		
+		mutually_exclusive = { focus = reunification_by_expanding_northward }
+		
+		prerequisite = {
+			focus = road_to_war
+		}
+		
+		completion_reward = {
+
+		}
+
+	}
+	
+	focus = {
+		id = the_cairo_declaration
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 8
+		y = 1
+		
+		prerequisite = {
+			focus = road_to_war
+		}
+		
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = foreign_aid
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = morning_calm
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 28
+		y = 0
+		
+		available = {
+			has_country_flag = korean_war_ended
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = veterans_programs
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 22
+		y = 0
+		
+		available = {
+			has_country_flag = korean_war_ended
+		}
+		
+		completion_reward = {
+			#Unlocks Army Reform Decisions
+			army_experience = 50
+		}
+
+	}
+	focus = {
+		id = naval_infrastructure
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 37
+		y = 0
+		
+		completion_reward = {
+			#Unlocks Army Reform Decisions
+			army_experience = 50
+		}
+
+	}
+	focus = {
+		id = air_infrastructure
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 41
+		y = 0
+		
+		completion_reward = {
+			#Unlocks Army Reform Decisions
+			army_experience = 50
+		}
+
+	}
+
+	focus = {
+		id = reconstruction_projects
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = foreign_aid
+		}
+		x = 13
+		y = 1
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = KOR_reconstruction_projects
+				bonus = 0.25
+				uses = 3
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = railroad_reconstruction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = reconstruction_projects
+		}
+		x = 10
+		y = 2
+		
+		completion_reward = {
+			add_ideas = KOR_railroad_reconstruction
+		}
+
+	}
+	focus = {
+		id = rail_expansion
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = railroad_reconstruction
+		}
+		x = 10
+		y = 3
+		
+		completion_reward = {
+			custom_effect_tooltip = KOR_infastructure_reconstruction
+			hidden_effect = {
+				525 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				827 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				758 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				759 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
+
+	}
+	focus = {
+		id = flood_prevention
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = reconstruction_projects
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = korean_mines
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = flood_prevention
+		}
+		x = 12
+		y = 3
+		
+		completion_reward = {
+			add_tech_bonus = {					
+				name = KOR_korean_mines
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
+
+	}
+	focus = {
+		id = attract_american_investors
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = rail_expansion
+		}
+		prerequisite = {
+			focus = korean_mines
+		}
+		x = 11
+		y = 4
+		
+		completion_reward = {
+			#Increases American Dependence
+		}
+
+	}
+	focus = {
+		id = appeal_to_the_UN
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = reconstruction_projects
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = the_KRA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = appeal_to_the_UN
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = the_KRA
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = the_KRA
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = american_armament_imports
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = veterans_programs
+		}
+		x = 18
+		y = 1
+		
+		completion_reward = {
+			#Increases American Dependence
+		}
+
+	}
+	focus = {
+		id = licensing_deals
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = american_armament_imports
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = korean_armament_industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = american_armament_imports
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = mountain_training
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = korean_armament_industry
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = secure_the_dmz
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = veterans_programs
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = anti_tank_developments
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = secure_the_dmz
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = formalize_the_UNC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = veterans_programs
+		}
+		prerequisite = {
+			focus = morning_calm
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = korean_officers
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = formalize_the_UNC
+		}
+		mutually_exclusive = {
+			focus = american_officers
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = american_officers
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = formalize_the_UNC
+		}
+		mutually_exclusive = {
+			focus = korean_officers
+		}
+		x = 26
+		y = 2
+		
+		completion_reward = {
+			#Increases American Dependence
+		}
+
+	}
+	focus = {
+		id = contingency_planning
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = korean_officers
+			focus = american_officers
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = mutual_defense_treaty
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = morning_calm
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = rhee_reforms
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = morning_calm
+		}
+		mutually_exclusive = {
+			focus = reject_rhee
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = reject_rhee
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = morning_calm
+		}
+		mutually_exclusive = {
+			focus = rhee_reforms
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = american_ships
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = naval_infrastructure
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = newfocus_49
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = american_ships
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_51
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_49
+		}
+		mutually_exclusive = {
+			focus = newfocus_53
+		}
+		
+		available = {
+			has_country_flag = korean_war_ended
+		}
+		
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = naval_legacy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = naval_infrastructure
+		}
+		mutually_exclusive = {
+			focus = to_the_skies
+		}
+		
+		available = {
+			has_country_flag = korean_war_ended
+		}
+		
+		x = 38
+		y = 1
+
+	}
+	focus = {
+		id = destroyer_models
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = naval_legacy
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_53
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = destroyer_models
+		}
+		mutually_exclusive = {
+			focus = newfocus_51
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = to_the_skies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = air_infrastructure
+		}
+		
+		mutually_exclusive = {
+			focus = naval_legacy
+		}
+		
+		available = {
+			has_country_flag = korean_war_ended
+		}
+		
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = fighter_designs
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = to_the_skies
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_54
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = fighter_designs
+		}
+		mutually_exclusive = {
+			focus = newfocus_52
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = decrease_foreign_dependence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = attract_american_investors
+		}
+		prerequisite = {
+			focus = newfocus_17
+		}
+		prerequisite = {
+			focus = newfocus_18
+		}
+		x = 13
+		y = 5
+
+	}
+	
+	focus = {
+		id = american_planes
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = air_infrastructure
+		}
+		x = 43
+		y = 1
+
+	}
+	focus = {
+		id = newfocus_50
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = american_planes
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_52
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_50
+		}
+		mutually_exclusive = {
+			focus = newfocus_54
+		}
+		
+		available = {
+			has_country_flag = korean_war_ended
+		}
+		
+		x = 42
+		y = 3
 
 	}
 }

@@ -1,0 +1,192 @@
+bookmarks = {
+	bookmark = {
+		name = "TEHRAN_BAGHDAD_NAME"
+		desc = "TEHRAN_BAGHDAD_DESC"
+		date = 1980.1.1.12
+		picture = "GFX_select_date_1980"
+		default_country = "USA"
+		default = yes
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = liberalism
+			ideas = {
+				nato_idea
+				marshall_plan
+				USA_mad
+			}
+			focuses = {
+				USA_american_economic_miracle
+				USA_ban_communism
+				USA_strategic_air_command
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = social_democracy
+			ideas = {
+				nato_idea
+				FRA_disjointed_government
+				FRA_dilemmes_coloniaux
+			}
+			focuses = {
+				FRA_european_cooperation
+				FRA_fifth_republic
+				FRA_anglo_french_union
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = social_democracy
+			ideas = {
+				nato_idea
+				colonial_protests
+				rationing_idea
+			}
+			focuses = {
+			}
+		}
+		"PRC"={
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = authoritarian_socialism
+			ideas = {
+				PRC_improficient_government
+				RAJ_agrarian_society
+				PRC_recovering_from_the_civil_war
+				
+			}	
+			focuses = {
+				PRC_100_flowers
+				PRC_the_great_leap
+				PRC_KMT_off_mainland
+			}		
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = authoritarian_socialism
+			ideas = {
+				SOV_great_patriotic_war_winner
+				SOV_rebuilding_the_nation
+			}
+			focuses = {
+				SOV_Socialist_Economic_Miracle
+				SOV_The_Warsaw_Pact
+				SOV_Nuclear_Submarines
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		"WGR"={
+			minor = yes
+			history = "WGR_GATHERING_STORM_DESC"
+			ideology = liberalism
+			ideas = {
+				bundesbank_1
+				WGR_paperclip
+				suppressed_wehrmacht_competence
+			}	
+			focuses = {
+				WGR_wirtschaftswunder
+				WGR_the_new_german_bundeswehr
+				WGR_european_coal_and_steel
+			}			
+		}
+		"KOR"={
+			minor = yes
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = junta
+			ideas = {
+			}
+			focuses = {
+#				KOR_unified_korea #Focus With Icon
+			}
+		}
+		"EGY"={
+			minor = yes
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+			arab_monarchy
+			political_instability
+			british_influence
+			}
+			focuses = {
+				EGY_seize_suez
+				EGY_islamic_republic
+				EGY_join_commonwealth
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = conservatism
+			ideas = {
+				RAJ_liquat_nehru_pact
+				RAJ_quit_india_movement
+				RAJ_trade_issues_POR_FRA_ENG
+			}
+			focuses = {
+				RAJ_us_spirit
+				RAJ_nuclear_effort_2
+				RAJ_sov_spirit
+			}
+		}
+		"PAK"={
+			minor = yes
+			history = "PAK_GATHERING_STORM_DESC"
+			ideology = junta
+			ideas = {
+				RAJ_agrarian_society
+			}
+			focuses = {
+			}
+		}
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = marxism_leninism
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"NKR"={
+			minor = yes
+			history = "NKR_GATHERING_STORM_DESC"
+			ideology = authoritarian_socialism
+			ideas = {
+				nkr_factionalism
+				nkr_illiterate_country
+			}
+			focuses = {
+				NKR_war
+				NKR_originofjuche
+				NKR_reunifiedkorea
+			}
+		}
+		"DDR"={
+			minor = yes
+			history = "DDR_GATHERING_STORM_DESC"
+			ideology = authoritarian_socialism
+			ideas = {
+				soviet_occupation
+				loser_of_the_second_world_war
+				DDR_osoaviakhim
+			}
+			focuses = {
+				DDR_Nationale_Volksarmee
+				DDR_aid_former_annexations
+				DDR_the_fourth_reich
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
